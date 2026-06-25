@@ -1,0 +1,10 @@
+thesis_break_price: 75  # significant foundry thesis impairment; below this the turnaround case is broken
+kill_conditions:
+  - "Apple deal scope revealed as limited to prototypes/non-production chips — June 18 rally was hype, not substance"
+  - "Intel 18A yield falls below 60% at qualification — technology narrative permanently impaired"
+  - "CEO Lip-Bu Tan departs within 18 months — confidence anchor for the entire turnaround"
+re_read_triggers:
+  - "Stock down >20% on no obvious catalyst (volatile turnaround stock)"
+  - "Missed quarter (Q2 July 23 earnings) — any foundry revenue or margin guide cut"
+  - "AMD server CPU share gains accelerate past 35% — legacy business deteriorating faster than foundry builds"
+  - "18A volume production timeline slips past H1 2027 — execution risk compounding"

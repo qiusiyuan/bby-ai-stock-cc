@@ -1,0 +1,10 @@
+thesis_break_price: 310  # ~18% below current; near lower bear-case boundary
+kill_conditions:
+  - "Azure growth decelerates below 20% for two consecutive quarters"
+  - "Microsoft 365 Copilot paid seat count disclosed below 10M by end of FY2026"
+  - "OpenAI moves bulk of inference workloads off Azure to own infrastructure"
+re_read_triggers:
+  - "Stock down >15% on no obvious news"
+  - "Missed quarter (revenue or EPS miss vs consensus)"
+  - "Operating margin falls below 38% as AI capex escalates without revenue acceleration"
+  - "EU DMA structural ruling requiring separation of Teams or Azure from Microsoft enterprise"

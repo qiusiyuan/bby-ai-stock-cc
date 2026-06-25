@@ -1,0 +1,10 @@
+thesis_break_price: 200
+kill_conditions:
+  - "AWS announces it is bringing Trainium design primarily in-house, reducing Marvell's design role materially"
+  - "Optical interconnect shows deceleration to below 30% growth for two consecutive quarters"
+  - "Customer concentration increases to >60% from a single hyperscaler"
+re_read_triggers:
+  - "Stock down >15% on no obvious news"
+  - "Missed quarter (revenue or EPS)"
+  - "TSMC 1.4nm partnership produces no announced products by end-2027"
+  - "Operating margin fails to reach 25% by end-FY2027 despite rapid revenue growth"

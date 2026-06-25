@@ -1,0 +1,10 @@
+thesis_break_price: 380
+kill_conditions:
+  - "Gross margin drops below 48% for two consecutive quarters (low-margin custom silicon mix shift)"
+  - "Hyperscaler customers publicly confirm Nvidia-only GPU procurement for 2027 cycle"
+  - "EPYC server CPU share growth stalls or reverses (Intel competitive recovery)"
+re_read_triggers:
+  - "Stock down >15% on no obvious news"
+  - "Missed quarter (revenue or EPS)"
+  - "Data Center revenue growth decelerates below 25% YoY for one quarter"
+  - "ROCm / GPU software ecosystem story materially weakened (framework drops AMD support)"

@@ -1,0 +1,10 @@
+thesis_break_price: 140  # ~19% below current; near bear-case floor (Hess lost + low oil)
+kill_conditions:
+  - "Hess arbitration ruling goes against Chevron and Guyana interest is lost"
+  - "WTI sustainably below $50/bbl for more than two consecutive quarters"
+  - "Dividend cut (confirmed FCF stress at the integrated level)"
+re_read_triggers:
+  - "Stock down >15% on no obvious news"
+  - "Missed quarter (EPS or FCF significantly below consensus)"
+  - "Hess arbitration preliminary ruling adverse to Chevron"
+  - "OPEC+ announces material production increase (>500K bbl/day) that breaks supply discipline"

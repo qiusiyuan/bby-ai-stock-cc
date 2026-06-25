@@ -1,0 +1,21 @@
+# Pre-commitment device. Confirm or edit values; reasoning below each.
+
+thesis_break_price: 190.00
+# ~24% below current $249.10. IBM at $190 would imply the bear case materializing
+# (consulting declines + WatsonX failing to gain traction). At that level,
+# the FCF yield is still attractive but the growth re-rate is off the table.
+
+kill_conditions:
+  - "Software segment revenue growth falls below 3% for two consecutive quarters (Red Hat stalling)"
+  - "WatsonX loses a marquee enterprise deal to Microsoft/Google in a disclosed defection"
+  - "Consulting organic revenue growth turns negative for two consecutive quarters"
+  - "Free cash flow falls below $10B TTM — structural margin erosion signal"
+  - "Debt rating downgrade to non-investment grade"
+
+re_read_triggers:
+  - "Stock down >15% on no obvious broad-market catalyst"
+  - "Missed quarter (software revenue or FCF)"
+  - "IBM announces a large acquisition (>$5B) — watch for deal quality and strategic fit"
+  - "Microsoft Azure or Google Vertex AI announces a major enterprise AI win from IBM's customer base"
+  - "Mainframe z-cycle refresh pulled forward or delayed"
+  - "CEO Arvind Krishna departure or major C-suite change"

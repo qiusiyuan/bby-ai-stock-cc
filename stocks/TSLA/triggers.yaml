@@ -1,0 +1,21 @@
+# Pre-commitment device. Confirm or edit values; reasoning below each.
+
+thesis_break_price: 250.00
+# ~37% below current $400.49. This level would imply the market is abandoning
+# the autonomy premium and pricing Tesla as a pure EV manufacturer — at which
+# point the thesis is either broken or the position has to be rebuilt from scratch.
+
+kill_conditions:
+  - "FSD/Robotaxi commercial timeline slips beyond 2028 with no credible replacement milestone"
+  - "EU formally rejects FSD approval (TCMV ruling blocks member-state approvals)"
+  - "Musk governance event: another contested pay package, board replacement, or conflict of interest finding"
+  - "Automotive gross margin ex-credits falls below 15% for two consecutive quarters"
+  - "BYD or another competitor establishes a meaningful and growing foothold in North American EV market"
+
+re_read_triggers:
+  - "Stock down >15% on no obvious broad-market catalyst"
+  - "Missed quarter (deliveries or automotive gross margin)"
+  - "FSD regulatory news — any country approval or rejection"
+  - "Cybercab/Robotaxi timeline announcement (positive or negative)"
+  - "Musk political controversy with measurable consumer sentiment data attached"
+  - "China monthly delivery data materially below prior year"

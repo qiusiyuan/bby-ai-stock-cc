@@ -1,0 +1,21 @@
+# Pre-commitment device. Confirm or edit values; reasoning below each.
+
+thesis_break_price: 150.00
+# ~29% below current $210.69. A decline this severe on no broad-market move would
+# imply either a data-center demand break or material AMD/custom-silicon share loss —
+# both of which are central to the thesis.
+
+kill_conditions:
+  - "Data-center revenue misses estimates two consecutive quarters (growth inflecting)"
+  - "One or more hyperscalers publicly shifts new workload procurement away from NVDA GPU to custom silicon (Trainium, TPU, MTIA) at scale"
+  - "AMD MI-series achieves >20% hyperscaler market share in a credible industry report"
+  - "Gross margin falls below 65% on competitive pricing pressure for two consecutive quarters"
+  - "Jensen Huang departure"
+
+re_read_triggers:
+  - "Stock down >15% on no obvious broad-market catalyst"
+  - "Missed quarter (data-center revenue or gross margin)"
+  - "Hyperscaler capex guidance cuts in any major earnings call (Microsoft, Amazon, Google, Meta)"
+  - "New AMD MI-series GPU announced with CUDA-compatible software stack"
+  - "BIS export-control tightening to China announced"
+  - "Blackwell backlog commentary turns cautious"

@@ -1,0 +1,10 @@
+thesis_break_price: 9
+kill_conditions:
+  - "Operating margin fails to reach 10% by H2 2027 (turnaround is not executing)"
+  - "A major 5G customer publicly selects Ericsson over Nokia for next network cycle"
+  - "Huawei is allowed back into major Western markets (removes protected-market tailwind)"
+re_read_triggers:
+  - "Stock down >15% on no obvious news"
+  - "Missed quarter (revenue or EPS)"
+  - "Nokia Technologies loses a major SEP licensing renewal at materially lower royalty rates"
+  - "Optical/photonic data center revenue fails to show growth in any two consecutive quarters"

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 06 25 Next Earnings Watchlist</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-06-25 10:23</div>
+<h1 id="mu-nvda">MU — 下次财报观察清单：评分「下一个 NVDA」叙事</h1>
+<p><strong>创建日期：</strong> 2026-06-25
+<strong>Q4 FY26 财报日：</strong> 2026 年 9 月下旬（具体日期待定；MU 财年通常 8 月底结束，财报约 3-4 周后）
+<strong>触发原因：</strong> 6/24/26 Q3 FY26 blowout 后，市场出现明确说法 — MU 是下一个 NVDA / AI 长期领头股。用户立场：这种说法只有在<strong>第二份</strong>类似的财报出来后才可信。</p>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><div class="tabs"><label class="tab-label" for="tabs1-0">Q3 FY26 基准 — 什么叫「类似」</label><label class="tab-label" for="tabs1-1">Q4 财报当天要看的指标（评分表）</label><label class="tab-label" for="tabs1-2">财报后如何打分</label><label class="tab-label" for="tabs1-3">可能伪装成 beat 的陷阱</label><label class="tab-label" for="tabs1-4">估值校准数学（参考）</label><label class="tab-label" for="tabs1-5">Q4 财报后要做的事</label><label class="tab-label" for="tabs1-6">一个提醒</label></div><div class="tab-panel" data-tab-for="tabs1-0"><p>下表是 Q4 必须达到的门槛，用来让 secular（结构性）叙事继续成立。数据源：Q3 财报 (6/24/26)，<code>dashboard/2026-06-24.md</code>。</p>
+<table class="compare"><thead><tr><th>指标</th><th>Q3 FY26 实际</th><th>Wall Street 预期</th><th>超预期幅度</th></tr></thead><tbody><tr><td>营收</td><td>$41.46B</td><td>$35.69B</td><td><span class="up"><span class="up">+16.2%</span></span></td></tr><tr><td>adj EPS</td><td>$25.11</td><td>$20.49</td><td><span class="up"><span class="up">+23.8%</span></span></td></tr><tr><td>adj 毛利率</td><td>85%</td><td>~80%</td><td>+500 bps</td></tr><tr><td>营收 YoY</td><td><span class="up"><span class="up">+346%</span></span></td><td>~280%</td><td>远超</td></tr><tr><td>Q4 guidance</td><td>&quot;significantly stronger&quot;</td><td>收紧上调已是 bull case</td><td>史诗级</td></tr><tr><td>HBM 营收 (隐含)</td><td>创纪录、供给受限</td><td>—</td><td>管理层：缺货延续到 2027+</td></tr><tr><td>长期合约</td><td>16 份合约 / ~$1000 亿（到 2030）</td><td>此前未披露</td><td>结构性</td></tr></tbody></table></div><div class="tab-panel" data-tab-for="tabs1-1"><p>每一行独立打分。最后的 verdict 来自<strong>整体模式</strong>，不是单一数字。决定性问题是：<strong>毛利率能否稳在 85% 附近？管理层 FY27 指引的措辞是「延续」还是「我们处于周期顶」？</strong></p>
+<h3>Tier 1 — 这些决定 verdict（必看）</h3>
+<table class="compare"><thead><tr><th>指标</th><th>「Secular 确认」（下一个 NVDA 叙事存活）</th><th>「Cycle peak」（叙事破裂）</th><th>为什么重要</th></tr></thead><tbody><tr><td>adj 毛利率</td><td>≥ 82%（距 Q3 的 85% 在 ~300 bps 内）</td><td>≤ 75%（明显收缩）</td><td>85% 是整个定价权故事；这里崩 = commodity 回归</td></tr><tr><td>营收</td><td>≥ $43B（Q3 已 guide「significantly stronger」，低于 $42B 是「软 beat 包装成 beat」）</td><td>&lt; $40B（环比下降）</td><td>Q3 guide 框定 Q4 加速，因此环比必须增长</td></tr><tr><td>adj EPS</td><td>≥ $27（环比增长，与毛利率稳定一致）</td><td>≤ $22（margin 收缩显现）</td><td>EPS 决定估值数学 — 季度 run-rate $27 → FY27 ~$110 → 当前 $1,215 的 fwd P/E ~11x</td></tr><tr><td>FY27 guide 措辞</td><td>「memory shortage 延续」/ 提到 2027 具体产能紧张 / 披露新合约</td><td>「normalizing」/「cyclical strength 放缓」/「我们偏谨慎」</td><td>财报电话会最重要的一句话。管理层语言本身就是信号</td></tr><tr><td>HBM 营收线</td><td>再创新高，披露 QoQ 增长 ≥ <span class="up"><span class="up">+20%</span></span></td><td>环比持平或下降</td><td>HBM 是故事里**唯一**真正 secular 的部分。它停下，其他都是普通 DRAM 周期</td></tr></tbody></table>
+<h3>Tier 2 — 印证或反驳 Tier 1 的解读</h3>
+<table class="compare"><thead><tr><th>指标</th><th>Bull 信号</th><th>Bear 信号</th><th>备注</th></tr></thead><tbody><tr><td>HBM 市场份额表述</td><td>管理层提到 vs SK Hynix 的份额获取；具体 Blackwell Ultra / Rubin 中标</td><td>不谈份额或承认份额下滑</td><td>SK Hynix 7/10 美股 ADR 上市 — 他们下次自己财报会大声讲 HBM 胜利</td></tr><tr><td>长期合约更新</td><td>新合约披露或既有合约扩大（总额 &gt; $1000 亿）</td><td>无新披露</td><td>$1000 亿/16 份合约的披露是 Q3 的 game-changer；继续增长 = 结构性</td></tr><tr><td>FY27 capex 指引</td><td>$140-160 亿，与 HBM 合约挂钩、克制</td><td>&gt; $180 亿、不受需求约束的产能扩张</td><td>&quot;Build it and they will come&quot; 过度投资 = 经典周期顶信号（MU 屡犯）</td></tr><tr><td>库存天数</td><td>持平或下降</td><td>大幅上升</td><td>顶部库存抬升 = 下行周期领先指标</td></tr><tr><td>价格表述</td><td>Tim Cook 的「百年一遇 flood」被重申；PC/mobile 价格坚挺</td><td>任何关于 DRAM ASP normalization、PC/mobile 软化的措辞</td><td>普通 DRAM 占营收 60% — 即使 HBM 承担 bull case 主升，它也必须稳住</td></tr><tr><td>客户集中度</td><td>NVIDIA + 超大规模 + Apple 同步增长</td><td>任一大客户份额下降</td><td>NVIDIA 份额下降，HBM 论点马上转弱</td></tr><tr><td>回购授权</td><td>提升，显示现金信心</td><td>不变或暂停</td><td>管理层用 balance sheet 押注 secular</td></tr></tbody></table>
+<h3>Tier 3 — 背景，不决定 verdict</h3>
+<table class="compare"><thead><tr><th>信号</th><th>关注点</th></tr></thead><tbody><tr><td>SK Hynix 9 月财报</td><td>大概率同期发布。HBM 营收增速 vs MU 直接对比 — MU 增速 &gt; Hynix = 份额获取确认</td></tr><tr><td>Samsung HBM 新闻</td><td>Samsung yield 问题 = MU 顺风延续</td></tr><tr><td>NVIDIA / 超大规模 capex</td><td>NVDA 8/26 财报 — Blackwell Ultra + Rubin 表述</td></tr><tr><td>Apple iPhone 18 发布定价</td><td>内存成本转嫁表述（2026 年 9 月）</td></tr><tr><td>PCE / Fed 路径</td><td>宏观重定价风险 — 若 Fed 在 Q4 前转鹰，估值倍数无视基本面都会被压缩</td></tr><tr><td>渠道库存检查</td><td>8-9 月任何 DRAM/NAND 渠道库存累积的评论 = 领先 bear 信号</td></tr></tbody></table></div><div class="tab-panel" data-tab-for="tabs1-2"><table>
+<thead>
+<tr>
+<th>Tier 1 命中模式</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5 个里命中 4-5 个「Secular 确认」</td>
+<td><strong>叙事获得验证。</strong> MU 估值上修。「下一个 NVDA」框架站住脚。可持有/加仓区域。买方很可能从 cyclical 重新定价为 secular，多重扩张持续</td>
+</tr>
+<tr>
+<td>5 个里命中 2-3 个</td>
+<td><strong>混合 — 叙事勉强活着但不加速。</strong> 股价大概率在当前水平附近震荡，直到 Q1 FY27 财报。Trim 立场不变。「下一个 NVDA」降级为「memory 板块最优」— 仍好，但非变革性</td>
+</tr>
+<tr>
+<td>5 个里命中 0-1 个</td>
+<td><strong>叙事破裂。</strong> 股价回归到 25× normalized earnings（$600-800 区间）。Cyclical 均值回归会很剧烈，因为它原本按 secular 定价。Thesis-break $650 被回测</td>
+</tr>
+</tbody>
+</table></div><div class="tab-panel" data-tab-for="tabs1-3"><p>不要被以下情况骗：</p>
+<ol>
+<li><strong>营收 beat 但 margin miss。</strong> 如果 GM 跌到 75%，营收落在 $43B，标题是「beat &amp; raise」，但<strong>真实</strong>故事是定价权流失 — 这正是周期顶信号。</li>
+<li><strong>靠预期下调实现的「beat」。</strong> Sell-side 在夏天大概率会上调预期。要把 Q4 实际数字对比的是 <strong>Q3 财报日的预期</strong> + Q3 的「significantly stronger」guide，<strong>不是</strong> 9 月时漂移到的 consensus。</li>
+<li><strong>一次性长期合约的 revenue recognition。</strong> 如果营收包含新合约签订的大额前置确认，run-rate 会失真。要看出货量和 ASP 表述。</li>
+<li><strong>HBM 营收增长来自 Hynix yield 问题。</strong> 真正 secular = MU 自己制程胜出。借 Hynix 出错而来的份额 = 他们修好后回吐。</li>
+</ol></div><div class="tab-panel" data-tab-for="tabs1-4"><p>按 Q3 EPS run-rate（$25.11 × 4 = 年化 $100/股），MU 在 $1,215 对应 <strong>~12× 当前 run-rate</strong>。市场已经定价了<strong>一些</strong>normalization。</p>
+<ul>
+<li>Q4 EPS = $27（secular 延续）→ FY27 run-rate ~$108-115 → 当前价 11x forward → 用「下一个 NVDA」视角仍便宜，用「memory 史上最强周期」视角合理</li>
+<li>Q4 EPS = $22（margin 早期收缩）→ FY27 run-rate ~$80-90 → 14x → 合理但「周期顶」标签变默认</li>
+<li>Q4 EPS &lt; $20（周期破裂确认）→ FY27 ~$40-60（memory 周期下行通常 overshoot）→ trough EPS 上 20-30x → 重定价严重</li>
+</ul>
+<p>市场当前定价大约介于场景 1 和场景 2 之间。Q4 决定走哪一边。</p></div><div class="tab-panel" data-tab-for="tabs1-5"><p>财报落地当天：
+1. 同日运行 watchlist on MU；拉电话会标题。
+2. 按上面的 bar 对每一行 Tier 1 打分。把 verdict 写入 <code>thesis.md</code> 的 <code>Stands &amp; Updates</code>。
+3. 如果 verdict 是「叙事验证」→ 更新 <code>triggers.yaml</code> thesis-break 价位（很可能从 $650 上调）。更新 thesis 里的 bull/base/bear 概率权重。
+4. 如果 verdict 是「叙事破裂」→ 根据 <code>triggers.yaml</code> 触发或确认卖出。框架的 kill condition 是<strong>毛利率</strong> — 那是最干净的 tripwire。
+5. 与 SK Hynix 同期财报对照，把相对强弱归因清楚。</p></div><div class="tab-panel" data-tab-for="tabs1-6"><p>这份文档的目的是给<strong>说法</strong>打分（「MU 是下一个 NVDA」），不是给 MU 这家公司打分。MU 可以有一份不错的 Q4，但<strong>说法</strong>仍可能破裂 — 比如 GM 78% + guide 温和，公司本身没问题，但「AI 长期领头股」叙事会瘪掉。这两件事要分开看。</p></div></div>
+</body>
+</html>

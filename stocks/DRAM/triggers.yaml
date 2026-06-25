@@ -1,0 +1,29 @@
+# DRAM is an ETF, normally no triggers. Adding watch-only triggers per user stand 2026-06-18.
+# These are NOT thesis-break levels — they are events the agent must surface on every check.
+
+watch_events:
+  - name: "SK Hynix US listing milestones"
+    why: "SK Hynix is ~25-30% of DRAM ETF. NYSE listing would add liquidity premium + clean swap structure."
+    check_on_every_run: true
+    sources:
+      - "SEC EDGAR: SK Hynix F-1 / DRS / DRSLTR filings going public"
+      - "Reuters / CNBC / Bloomberg US listing roadshow news"
+      - "Korean financial press for parent-side announcements"
+    surface_template: |
+      "SK Hynix listing status: {status}. Last filing: {date}. Public F-1: {yes/no}. Roadshow: {yes/no}."
+
+  - name: "Micron (MU) earnings + price action"
+    why: "MU is ~15-20% of DRAM and the only US-listed pure-play memory pricing read. Pre-prints + reactions move the ETF directly."
+    check_on_every_run: true
+    sources:
+      - "MU earnings calendar (next: 2026-06-24)"
+      - "MU pre-print analyst revisions"
+    surface_template: |
+      "MU: {price} ({±%} day, {±%} 30d). Next earnings: {date}. Pre-print sentiment: {summary}."
+
+re_read_triggers:
+  - "DRAM down >15% in 5 days (cycle-turn signal in memory)"
+  - "MU earnings miss or guide cut"
+  - "SK Hynix US listing roadshow opens (positive trigger)"
+  - "Major hyperscaler signals capex cut for AI infrastructure"
+  - "Breakthrough alternative memory tech announcement (e.g. CXL, HBM substitute)"

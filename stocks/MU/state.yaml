@@ -1,0 +1,18 @@
+ticker: MU
+active: true
+tags: [ai]
+added: 2026-06-18
+last_checked: 2026-06-18
+last_quarterly_review: null
+last_annual_refresh: 2026-06-18
+max_weight_pct: null
+
+# 下次财报评分卡 — 当 scoring_date 到来时，watchlist/report skill 必须自动拉出 scorecard
+# 对其中的 Tier 1 指标逐行打分，写入当天 dashboard 的 "## Earnings scorecard: MU" H2。
+earnings_watchlist:
+  scorecard: stocks/MU/research/2026-06-25-next-earnings-watchlist.md
+  scoring_date: 2026-09-25  # Q4 FY26 期，近似日期；以 timeline.yaml 上的 earnings 条目为准
+  scoring_window: 7d        # scoring_date 前后各 7 天内任何 watchlist/report 都要触发提醒
+  thesis_claim: "MU 是下一个 NVDA / AI 长期领头股"
+  baseline_print: 2026-06-24  # Q3 FY26 blowout — scorecard 用其作为对比基准
+  status: pending           # pending | scored | invalidated

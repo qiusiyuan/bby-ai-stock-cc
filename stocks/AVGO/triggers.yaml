@@ -1,0 +1,10 @@
+thesis_break_price: 300
+kill_conditions:
+  - "Google or Meta publicly announces a move away from Broadcom for next-generation XPU design"
+  - "VMware annual recurring revenue growth turns negative (enterprise churn accelerates)"
+  - "Hock Tan announces retirement with no credible successor named"
+re_read_triggers:
+  - "Stock down >15% on no obvious news"
+  - "Missed quarter (revenue or EPS)"
+  - "Adjusted gross margin falls below 65% for one quarter"
+  - "XPU/custom AI revenue growth decelerates below 30% YoY"

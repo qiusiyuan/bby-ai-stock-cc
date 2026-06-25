@@ -1,0 +1,10 @@
+thesis_break_price: 280  # ~24% below current; near bear-case scenario price
+kill_conditions:
+  - "Search query volume declines YoY for two consecutive quarters (AI substitution confirmed)"
+  - "DOJ wins structural remedy requiring sale of Chrome, Android, or forced separation of Search/ads"
+  - "Google Cloud loses market share to AWS/Azure for two consecutive quarters"
+re_read_triggers:
+  - "Stock down >15% on no obvious news"
+  - "Missed quarter (revenue or EPS miss vs consensus)"
+  - "Search revenue growth falls below 6% YoY"
+  - "Gemini lags competitors by more than one model generation for 12+ months"

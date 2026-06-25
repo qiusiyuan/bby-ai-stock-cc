@@ -1,0 +1,90 @@
+# Watchlist groups. Stocks can belong to multiple groups (e.g. NVDA in tech AND ai).
+# Edit freely. The agent uses these for "check tech", "compare ai stocks", etc.
+# Membership is also denormalized into each stock's state.yaml `tags` for skill convenience.
+
+## focus group — 重点观察名单
+# 今天 / 这周需要详细观察的股票。watchlist 模块为这些股票输出详细 KPI 块，
+# 其余 active 但非 focus 的折叠为简表。
+# 维护规则：
+#   - 手动: 用户说 "重点观察 X" / "X 加入 focus" → append; "X 移出 focus" → remove
+#   - 自动建议: 连续 3 天有异动 / 触发 trigger / 24h 内 mention 过 → agent 建议加入
+#   - 自动建议: focus 列表 7 天平静 → agent 建议移到普通 active
+focus:
+  description: 重点观察 — 当前阶段需要详细跟踪的名字 (flat list — superseded by focus_clusters below for tab emission)
+  members: [MU, TSLA, SPCX, DRAM]
+  updated: 2026-06-23
+
+## focus_clusters — 重点关注的 cluster (每个生成单独 tab)
+# Each cluster is a "lens" that produces one ## Focus: {name} H2 in dashboard/{date}.md.
+# Cluster kinds:
+#   - "stock"   : single ticker deep watch (e.g. TSLA alone)
+#   - "topic"   : multi-stock topic where movements are highly correlated (e.g. DRAM = MU + SK Hynix + Samsung + DRAM ETF)
+#   - "sector"  : broader sector with multiple distinct stocks (e.g. AI capex, 能源)
+#
+# The /cluster skill reads each cluster, fetches its members, surfaces today's story
+# for that lens, inter-stock dynamics, and verdict.
+#
+# Maintenance:
+#   - User: "添加 cluster: {name}" → agent appends a new entry
+#   - User: "X 加进 {cluster}" / "X 从 {cluster} 移走" → agent edits members
+#   - Order matters — earlier clusters render as earlier tabs.
+focus_clusters:
+  - name: TSLA
+    kind: stock
+    members: [TSLA]
+    description: Tesla — FSD / Robotaxi optionality + EU/中国销量
+    watch_items: [FSD regulatory news, NHTSA probes, China monthly deliveries, Robotaxi expansion, EU TCMV decision]
+
+  - name: SpaceX
+    kind: stock
+    members: [SPCX, SSPC]
+    description: SpaceX (SPCX) + 2x inverse (SSPC) — post-IPO duration play / lockup risk
+    watch_items: [bond/notes offering activity, Starlink ARPU, Starshield contracts, lockup 2026-12-09, AI capex rotation impact]
+
+  - name: DRAM/HBM
+    kind: topic
+    members: [MU, "000660.KS", "005930.KS", DRAM]
+    members_external: ["000660.KS (SK Hynix)", "005930.KS (Samsung)"]
+    description: HBM 周期 — MU / SK Hynix / Samsung / DRAM ETF 高度联动
+    watch_items: [MU Q3 earnings, HBM yield news, Korean FSS leveraged-ETF policy, Anthropic/hyperscaler memory deals]
+
+  - name: AI capex
+    kind: sector
+    members: [GOOG, AMZN, MSFT, META, NVDA, TSM]
+    external_refs: [OpenAI, Anthropic, xAI, Reflection AI]
+    description: Hyperscaler capex 开支方 + AI 算力底层；判断 "AI 投入产出" 叙事走向
+    watch_items: [hyperscaler earnings capex guide, AI revenue ramp signals, talent moves (e.g. Jumper → Anthropic), VC funding rounds, OpenAI/Anthropic ARR disclosures]
+
+  - name: 能源
+    kind: sector
+    members: [SU, CVX, CNQ, "HXE.TO", GEV]
+    description: 油气 + 能源基建 — WTI 价格 + Iran/Israel 地缘 + 数据中心电力 (GEV)
+    watch_items: [WTI/Brent moves, Strait of Hormuz / Iran-Israel state, OPEC+, US-Iran negotiations, data-center power demand (GEV)]
+
+  - name: 货币
+    kind: topic
+    members: ["DX-Y.NYB", "USDCAD=X", "USDCNY=X", "^TNX", TLT, UUP]
+    description: 美元 + 美联储 + 美国国债 + USD/CAD + USD/RMB — 用户持有 USD，跟踪换汇时机。**非 daily**，3-6 周中长期视角；只在有 Fed 动作、利率突破、汇率 52w 极值、或显著趋势变化时更新。
+    watch_items: [FOMC 决议与点阵图, Fed 官员发言 (Powell/Williams/Waller), 10Y/2Y 国债收益率与曲线, ISM/CPI/jobs report, BoC 利率决议, PBoC 中间价与逆回购, ECB/BOJ 联动效应]
+    cadence: weekly-or-on-event  # 不进 morning 默认菜单
+
+groups:
+  tech:
+    description: Mega-cap tech and large-cap software/platform names
+    members: [NVDA, TSLA, IBM, AMZN, AAPL, META, GOOG, MSFT]
+
+  index:
+    description: Broad market and Nasdaq index/leveraged trackers
+    members: ["^GSPC", "^DJI", QQQ, SQQQ]
+
+  energy:
+    description: Oil, gas, integrated energy, and the Canadian energy ETF
+    members: ["HXE.TO", SU, CVX, CNQ, GEV]
+
+  ai:
+    description: AI value chain — chips, memory, infra, networking, software
+    members: [TSM, MU, DRAM, NVDA, INTC, AMD, AVGO, NOK, SNOW, MRVL]
+
+  space:
+    description: Space exposure (SPCX direct, SSPC is the 2x short ETF on SPCX)
+    members: [SPCX, SSPC]

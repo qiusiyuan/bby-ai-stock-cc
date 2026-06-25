@@ -1,0 +1,10 @@
+thesis_break_price: 42  # ~24% below current; near lower bear-case boundary (~$50 WTI scenario)
+kill_conditions:
+  - "WTI oil price sustainably below $50/bbl for more than two consecutive quarters"
+  - "Suncor cuts its dividend (confirmed FCF stress)"
+  - "Canada imposes material windfall profits tax or adverse royalty change on oil sands"
+re_read_triggers:
+  - "Stock down >15% on no obvious news"
+  - "Missed quarter (AFFO significantly below consensus)"
+  - "WCS-WTI differential widens above $25/bbl for two consecutive months (pipeline constraint)"
+  - "Major operational safety incident causing sustained production outage"

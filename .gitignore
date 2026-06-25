@@ -1,0 +1,46 @@
+# ── Python ──
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.uv-cache/
+*.egg-info/
+
+# ── Editor / OS ──
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# ── Build artifacts ──
+dist/
+build/
+
+# ── Local cache for fetchers ──
+.cache/
+/tmp/
+
+# ── Old _rendered directory (replaced by site/reports/) ──
+dashboard/_rendered/
+
+# ── Defensive: anything memory-shaped that might appear here ──
+# (Real Claude memory lives in ~/.claude/, NOT in this workspace,
+#  but we ignore the name as a safety net.)
+memory/
+.memory/
+
+# ── Defensive: secret/credential filenames ──
+.env
+.env.*
+.envrc
+credentials*
+*.pem
+*.key
+secrets/
+
+# ── Defensive: any "private" or "personal" prefix ──
+private-*
+personal-*
+private/
+personal/

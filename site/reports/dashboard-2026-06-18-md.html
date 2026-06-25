@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-06-18</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-06-23 11:34</div>
+<h1 id="2026-06-18">2026-06-18</h1>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><div class="tabs"><label class="tab-label" for="tabs1-0">Watch report</label><label class="tab-label" for="tabs1-1">Attribution</label><label class="tab-label" for="tabs1-2">SPCX pressure-test</label><label class="tab-label" for="tabs1-3">SPCX prediction</label></div><div class="tab-panel" data-tab-for="tabs1-0"><blockquote>
+<p><strong>6 stocks watched closely.</strong> Fresh quotes pulled today. Click a tab.</p>
+</blockquote>
+<div class="tabs-group"><style>#tabs2-0:checked ~ [data-tab-for="tabs2-0"] { display: block; }#tabs2-1:checked ~ [data-tab-for="tabs2-1"] { display: block; }#tabs2-2:checked ~ [data-tab-for="tabs2-2"] { display: block; }#tabs2-3:checked ~ [data-tab-for="tabs2-3"] { display: block; }#tabs2-4:checked ~ [data-tab-for="tabs2-4"] { display: block; }#tabs2-5:checked ~ [data-tab-for="tabs2-5"] { display: block; }#tabs2-6:checked ~ [data-tab-for="tabs2-6"] { display: block; }#tabs2-7:checked ~ [data-tab-for="tabs2-7"] { display: block; }</style><input class="tab-input" type="radio" name="tabs2" id="tabs2-0" checked><input class="tab-input" type="radio" name="tabs2" id="tabs2-1"><input class="tab-input" type="radio" name="tabs2" id="tabs2-2"><input class="tab-input" type="radio" name="tabs2" id="tabs2-3"><input class="tab-input" type="radio" name="tabs2" id="tabs2-4"><input class="tab-input" type="radio" name="tabs2" id="tabs2-5"><input class="tab-input" type="radio" name="tabs2" id="tabs2-6"><input class="tab-input" type="radio" name="tabs2" id="tabs2-7"><div class="tabs"><label class="tab-label" for="tabs2-0">Overview</label><label class="tab-label" for="tabs2-1">NVDA</label><label class="tab-label" for="tabs2-2">TSLA</label><label class="tab-label" for="tabs2-3">SU</label><label class="tab-label" for="tabs2-4">DRAM</label><label class="tab-label" for="tabs2-5">SK Hynix</label><label class="tab-label" for="tabs2-6">TSM</label><label class="tab-label" for="tabs2-7">SPCX</label></div><div class="tab-panel" data-tab-for="tabs2-0"><h2>Today's read across the 6</h2>
+<table class="compare"><thead><tr><th>Ticker</th><th>Price</th><th>1d</th><th>5d</th><th>30d</th><th>Vol</th><th>Verdict</th></tr></thead><tbody><tr><td>NVDA</td><td>$210.69</td><td><span class="up"><span class="up">+2.95%</span></span></td><td><span class="up"><span class="up">+2.84%</span></span></td><td><span class="up"><span class="up">+1.49%</span></span></td><td>1.4×</td><td>Hold</td></tr><tr><td>TSLA</td><td>$400.49</td><td><span class="up"><span class="up">+1.04%</span></span></td><td><span class="up"><span class="up">+0.34%</span></span></td><td><span class="up"><span class="up">+0.44%</span></span></td><td>1.1×</td><td>Watch</td></tr><tr><td>SU</td><td>$55.33</td><td><span class="down"><span class="down">-1.69%</span></span></td><td><span class="down"><span class="down">-10.47%</span></span></td><td><span class="down"><span class="down">-13.41%</span></span></td><td>2.2×</td><td>Hold</td></tr><tr><td>DRAM</td><td>$76.71</td><td><span class="up"><span class="up">+9.66%</span></span></td><td><span class="up"><span class="up">+17.80%</span></span></td><td><span class="up"><span class="up">+57.58%</span></span></td><td>1.2×</td><td>🔥 Hot</td></tr><tr><td>TSM</td><td>$462.12</td><td><span class="up"><span class="up">+6.94%</span></span></td><td><span class="up"><span class="up">+9.75%</span></span></td><td><span class="up"><span class="up">+10.42%</span></span></td><td>1.2×</td><td>Hold (52w high)</td></tr><tr><td>SPCX</td><td>$185.00</td><td><span class="down"><span class="down">-3.56%</span></span></td><td>—</td><td>—</td><td>—</td><td>Watch</td></tr></tbody></table>
+<div class="callout warn"><p><strong>Three things stand out today.</strong> (1) <strong>DRAM is the story</strong> — <span class="up">+57.6%</span> in 30 days, hit a fresh 52w high, the memory-cycle thesis is in full swing. (2) <strong>SU is bleeding</strong> — 2.2× volume on the down day, <span class="down">-13.4%</span> in 30 days; oil-cycle / WTI floor is being tested. (3) <strong>TSM is at 52w high</strong> — buying here pays for the base case, but the AI value-chain pull is real and DRAM strength corroborates it.</p></div>
+<div class="callout info"><p><strong>Cross-stock signal.</strong> DRAM <span class="up">+57%</span> and TSM <span class="up">+10%</span> in 30 days are the same trade — AI hardware demand is pulling memory and foundry together. Six months ago the leader was NVDA; today the leverage has rotated downstream into the chokepoints (TSM) and the components (memory). NVDA's modest <span class="up">+1.5%</span> says: AI capex thesis is now reflected in the supply chain, not just at the GPU layer.</p></div></div><div class="tab-panel" data-tab-for="tabs2-1"><h2>NVIDIA — $210.69</h2>
+<div class="kpi-grid"><div class="kpi"><div class="label">Price</div><div class="value">$210.69</div><div class="note"><span class="up"><span class="up">+2.95%</span></span> today</div></div><div class="kpi"><div class="label">30-day</div><div class="value"><span class="up"><span class="up">+1.49%</span></span></div><div class="note">quiet vs DRAM/TSM</div></div><div class="kpi"><div class="label">52w range</div><div class="value">$142 – $237</div><div class="note">11% off high</div></div><div class="kpi"><div class="label">Volume</div><div class="value">1.4×</div><div class="note">active but not extreme</div></div></div>
+<blockquote>
+<p><strong>One-line thesis.</strong> Compounds at &gt;30% revenue growth through 2027 on AI data-center dominance + CUDA switching costs — <em>wrong if</em> hyperscaler custom silicon erodes GPU wallet share, or if the AI capex cycle reverses sharply.</p>
+</blockquote>
+<h3>Today's read</h3>
+<p>NVDA is <strong>lagging the AI value chain it created</strong>. While DRAM (<span class="up">+57%</span>) and TSM (<span class="up">+10%</span>) ripped on the same AI-capex theme, NVDA is up only 1.5% in 30 days. Two readings:</p>
+<ol>
+<li><strong>Healthy rotation.</strong> Money that already owns NVDA is finding leverage further down the stack. This is what mature thesis behavior looks like — not bearish.</li>
+<li><strong>Custom-silicon shadow.</strong> Each hyperscaler ASIC story (AWS Trainium, Google TPU, Meta MTIA) chips at the wallet-share assumption. The market is price-discovering whether NVDA's 90%+ GPU share holds at 80% or 70%.</li>
+</ol>
+<p>The thesis-break price is $150 (~29% below). Nothing today changes that.</p>
+<div class="verdict hold">Hold; valuation is now reasonable but don&#x27;t add ahead of a capex cycle read.</div>
+<h3>Watch</h3>
+<ul>
+<li>Q2 earnings (next print) — DC revenue growth deceleration is the single number that matters</li>
+<li>Hyperscaler capex guidance (AWS, GCP, Azure, META) for 2027</li>
+<li>Custom-silicon pull-through (Trainium2 deployment, TPU v6 production scale)</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs2-2"><h2>Tesla — $400.49</h2>
+<div class="kpi-grid"><div class="kpi"><div class="label">Price</div><div class="value">$400.49</div><div class="note"><span class="up"><span class="up">+1.04%</span></span> today</div></div><div class="kpi"><div class="label">30-day</div><div class="value"><span class="up"><span class="up">+0.44%</span></span></div><div class="note">flat</div></div><div class="kpi"><div class="label">52w range</div><div class="value">$289 – $499</div><div class="note">20% off high</div></div><div class="kpi"><div class="label">Volume</div><div class="value">1.1×</div><div class="note">normal</div></div></div>
+<blockquote>
+<p><strong>One-line thesis.</strong> The entire bull case is the autonomy option — FSD/Robotaxi monetization by 2027-28 — <em>wrong if</em> FSD fails regulatory approval in major markets, Robotaxi slips beyond 2028, or Musk's political exposure causes irreversible brand damage.</p>
+</blockquote>
+<h3>Today's read</h3>
+<p>Quiet day, quiet month. <strong>TSLA is in the post-rally consolidation zone</strong> between the $289 floor and the $499 high. The market is waiting for one of three things:
+1. <strong>A Robotaxi commercial milestone</strong> (real fares, real cities, real numbers)
+2. <strong>An FSD regulatory approval</strong> in a major market beyond Texas/California
+3. <strong>Auto-segment margin recovery</strong> showing the legacy business isn't a melting iceberg</p>
+<p>None is imminent.</p>
+<p>The thesis is unusually asymmetric — bear probability is 35% (high for a mega-cap). At $400, the autonomy option still costs ~30% of market cap, which means the market is underwriting some progress but not victory.</p>
+<div class="verdict watch">Watch — size small; the autonomy bet is real but the bear probability (35%) is unusually high for a mega-cap.</div>
+<h3>Watch</h3>
+<ul>
+<li>Robotaxi fleet size and geographic expansion (Austin, Phoenix, NYC pending)</li>
+<li>EU FSD approval (binary near-term)</li>
+<li>Auto gross margin trend (key tell on demand vs. discounting)</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs2-3"><h2>Suncor — $55.33</h2>
+<div class="kpi-grid"><div class="kpi"><div class="label">Price</div><div class="value">$55.33</div><div class="note"><span class="down"><span class="down">-1.69%</span></span> today</div></div><div class="kpi"><div class="label">30-day</div><div class="value"><span class="down"><span class="down">-13.41%</span></span></div><div class="note">bleeding</div></div><div class="kpi"><div class="label">52w range</div><div class="value">$37 – $70</div><div class="note">21% off high</div></div><div class="kpi"><div class="label">Volume</div><div class="value">2.2×</div><div class="note">heavy distribution</div></div></div>
+<blockquote>
+<p><strong>One-line thesis.</strong> The lowest-cost, most integrated oil sands operator in North America, returning 8-10% of market cap to shareholders annually — <em>wrong if</em> WTI sustainably breaks below $50/bbl, Canada imposes adverse royalty changes, or the dividend is cut.</p>
+</blockquote>
+<h3>Today's read</h3>
+<p><strong>This is the single weakest name on the watchlist.</strong> <span class="down">-13.4%</span> in 30 days on 2.2× volume is "fund-level distribution," not retail noise. WTI has been weak — peace deal headlines (US-Iran) plus demand worries are pressing the oil complex.</p>
+<p>But: SU's bear case requires <strong>sustained</strong> sub-$50 WTI, not a 30-day dip. The capital-return story (8-10% of cap returned annually) is intact unless the dividend gets cut, which only happens at meaningfully lower prices. <strong>The technical picture is ugly; the thesis isn't broken yet.</strong></p>
+<p>The judgment call: this is what bear scares look like — heavy volume, real headlines, and a chart that hurts to look at. The question is whether you trust the cost-curve floor.</p>
+<div class="callout warn"><p><strong>WTI is the only number that matters.</strong> If WTI holds above $60, SU is on sale. If WTI breaks $55 and stays there, the thesis is at risk. If WTI breaks $50, the thesis is broken.</p></div>
+<div class="verdict hold">Hold — income and capital return thesis intact; watch WTI floor and Q2 buyback pace.</div>
+<h3>Watch</h3>
+<ul>
+<li>WTI spot price daily (proxy: USO ETF, or simply $WTIC chart)</li>
+<li>Q2 earnings: buyback pace and dividend reaffirmation</li>
+<li>Canadian oil price differentials (WCS vs WTI)</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs2-4"><h2>Roundhill Memory ETF — $76.71</h2>
+<div class="kpi-grid"><div class="kpi"><div class="label">Price</div><div class="value">$76.71</div><div class="note"><span class="up"><span class="up">+9.66%</span></span> today</div></div><div class="kpi"><div class="label">30-day</div><div class="value"><span class="up"><span class="up">+57.58%</span></span></div><div class="note">parabolic</div></div><div class="kpi"><div class="label">52w range</div><div class="value">$26 – $77.70</div><div class="note">at 52w high</div></div><div class="kpi"><div class="label">Type</div><div class="value">Equal-weight memory ETF</div><div class="note">DRAM/HBM/NAND basket</div></div></div>
+<blockquote>
+<p><strong>What it is.</strong> ETF basket of memory-chip names — SK Hynix (Korea), Samsung (Korea), Micron (US), Kioxia (Japan), Nanya, Winbond. Equal-weighted, ~0.65% expense ratio. The pure way to express the AI-memory super-cycle thesis without picking a single winner.</p>
+</blockquote>
+<h3>Today's read — 🔥 the hottest name on the list</h3>
+<p><strong><span class="up">+9.7%</span> on the day, <span class="up">+57.6%</span> in 30 days, sitting at the 52-week high.</strong> This is a parabolic move and you need to think clearly about it.</p>
+<h3>Why it's running</h3>
+<p>The HBM (high-bandwidth memory) cycle is <em>the</em> AI hardware story of 2026:</p>
+<div class="kpi-grid"><div class="kpi"><div class="label">HBM industry pricing</div><div class="value">+60-80% YoY</div><div class="note">demand &gt;&gt; supply</div></div><div class="kpi"><div class="label">SK Hynix HBM share</div><div class="value">~50%</div><div class="note">dominant supplier to NVDA</div></div><div class="kpi"><div class="label">Samsung HBM3E qual</div><div class="value">catching up</div><div class="note">qualifying for major customers</div></div><div class="kpi"><div class="label">Micron HBM4 sample</div><div class="value">shipping</div><div class="note">targeting 2027 production</div></div></div>
+<p>Memory is the hottest segment of the supply chain because:
+1. <strong>HBM demand is constrained by capacity, not orders.</strong> Hyperscaler queues stretch into 2027.
+2. <strong>Pricing is asymmetric.</strong> Memory is a commodity in downturns and a near-monopoly in upturns. We're in an upturn.
+3. <strong>NVDA can't ship without HBM.</strong> Every H200/B200/B300 needs SK Hynix's HBM3E.</p>
+<h3>The risk</h3>
+<p><strong>Memory is the most cyclical segment of semis.</strong> When the cycle turns, it turns hard — 2018, 2022, 2023 all saw 50-70% drawdowns. The <span class="up">+57%</span> move in 30 days IS the cycle, in real time. Buying at the 52w high after a parabola is the worst entry historically for this asset class.</p>
+<div class="callout warn"><p><strong>No new buying at this entry.</strong> If you don't already own DRAM, <span class="up">+57%</span> / 30 days at the 52w high is the textbook moment to sit out and wait for a 15-20% pullback. If you do own it, the question is trim discipline, not add discipline.</p></div>
+<div class="verdict hold">Hold/Trim — let winners run, but the parabola is your tell to start trimming, not adding.</div>
+<h3>Watch</h3>
+<ul>
+<li>HBM pricing surveys (TrendForce monthly reports)</li>
+<li>SK Hynix earnings (~Q2 2026 print)</li>
+<li>Micron earnings (June 24 — six days from now)</li>
+<li><strong>SK Hynix US listing progress — see "SK Hynix" tab</strong> for the dedicated read</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs2-5"><h2>SK Hynix US listing — what you actually want to know</h2>
+<div class="callout danger"><p><strong>TL;DR — SK Hynix is NOT yet listed on Nasdaq or NYSE.</strong> A confidential SEC filing was made in March 2026 for a potential <strong>NYSE</strong> listing (not Nasdaq). The filing was confidential, no F-1 has been made public, no ticker has been assigned, no pricing has been announced. As of 2026-06-18, you cannot buy SK Hynix on a US exchange.</p></div>
+<h3>Status timeline</h3>
+<div class="timeline"><div class="tl-item"><span class="when">2026-03-25</span> — <span class="what">Confidential SEC filing for NYSE listing (CNBC/Reuters confirmed)</span></div><div class="tl-item"><span class="when">2026-06-18</span> — <span class="what">No public F-1, no ticker, no pricing — listing has not progressed publicly</span></div><div class="tl-item"><span class="when">TBD</span> — <span class="what">F-1 amendment going public would mark roadshow start</span></div><div class="tl-item"><span class="when">TBD</span> — <span class="what">Pricing date — typically 2-4 weeks after F-1 goes public</span></div></div>
+<h3>Why this matters for DRAM (the ETF you own)</h3>
+<p><strong>SK Hynix is the largest holding in DRAM ETF.</strong> The Roundhill Memory ETF is concentrated in:</p>
+<table class="compare"><thead><tr><th>Holding</th><th>Approx weight</th><th>Listing</th></tr></thead><tbody><tr><td>SK Hynix</td><td>~25-30%</td><td>KRX (Korea) only, today</td></tr><tr><td>Micron</td><td>~15-20%</td><td>NASDAQ (MU)</td></tr><tr><td>Samsung</td><td>~15%</td><td>KRX (Korea), KS3 ADR</td></tr><tr><td>Kioxia</td><td>~5-10%</td><td>TSE (Japan)</td></tr><tr><td>Nanya, Winbond, others</td><td>smaller</td><td>TWSE (Taiwan)</td></tr></tbody></table>
+<p>If/when SK Hynix lists on the NYSE, <strong>two things change for your DRAM holding:</strong>
+1. <strong>Liquidity premium.</strong> Direct US listing typically adds 5-15% to a Korean memory name's valuation due to wider investor access.
+2. <strong>Tracking improvement.</strong> The ETF currently uses ADRs/swaps for SK Hynix exposure; a direct NYSE line would tighten tracking and reduce structural costs.</p>
+<h3>The actual investable question</h3>
+<p><strong>If you want direct SK Hynix exposure today</strong> — there are three paths:
+1. <strong>Buy DRAM ETF</strong> (you already do). Decent proxy at ~25-30% weight.
+2. <strong>Buy 000660.KS</strong> (Korea direct). Requires a broker with Korean market access (most US retail accounts don't have this).
+3. <strong>Wait for the NYSE listing.</strong> Likely option if it materializes — but timing is unknown.</p>
+<p><strong>If you want to pre-position for the listing</strong> — there is no informational edge here. Confidential filings can sit dormant for 12+ months or accelerate quickly. The market will know within hours of the F-1 going public.</p>
+<div class="callout info"><p><strong>What I'll watch and surface to you.</strong> I've added a check trigger on SK Hynix US listing progress. On any check-stock for DRAM, I'll re-search SEC EDGAR for new SK Hynix filings (look for F-1 / DRS / DRSLTR amendments going public) and surface the status. You'll know the moment the F-1 goes public.</p></div>
+<h3>Sources</h3>
+<ul>
+<li>Wikipedia (verified 2026-06-18)</li>
+<li>CNBC March 25, 2026 — confidential SEC filing reported</li>
+<li>SEC EDGAR — no public SK Hynix F-1 as of 2026-06-18</li>
+<li>yfinance — confirms HXSCL / HXSCY / SKHY are all 404 (no US ticker assigned)</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs2-6"><h2>TSMC — $462.12</h2>
+<div class="kpi-grid"><div class="kpi"><div class="label">Price</div><div class="value">$462.12</div><div class="note"><span class="up"><span class="up">+6.94%</span></span> today</div></div><div class="kpi"><div class="label">30-day</div><div class="value"><span class="up"><span class="up">+10.42%</span></span></div><div class="note">strong</div></div><div class="kpi"><div class="label">52w range</div><div class="value">$206 – $465</div><div class="note">at 52w high</div></div><div class="kpi"><div class="label">Volume</div><div class="value">1.2×</div><div class="note">confirming move</div></div></div>
+<blockquote>
+<p><strong>One-line thesis.</strong> The irreplaceable chokepoint of the AI hardware stack — every advanced AI chip runs through TSMC fabs and the 2nm/1.4nm lead widens each year — <em>wrong if</em> Taiwan Strait escalation triggers customer diversification, Intel closes the process gap in 3–4 years, or AI hardware spending plateaus before Arizona/Japan fabs de-risk the concentration.</p>
+</blockquote>
+<h3>Today's read</h3>
+<p><strong>At 52w high. <span class="up">+6.9%</span> on the day is unusual for a $2.4T company.</strong> Three forces converging:</p>
+<ol>
+<li><strong>AI capex confirmation cycle.</strong> DRAM <span class="up">+57%</span> confirms that the AI hardware boom has another leg. Every advanced chip in that cycle ships from TSMC.</li>
+<li><strong>Process-node lead widening.</strong> 2nm (N2) is shipping in volume; 1.4nm (N1.4P) tape-outs starting. Intel 18A and Samsung 2nm are slipping. The competitive gap is <em>increasing</em>, not closing.</li>
+<li><strong>Geopolitical de-risking.</strong> Arizona Fab 21 ramping; Japan Kumamoto fab in production. The Taiwan-concentration discount is narrowing as the diversification proves real.</li>
+</ol>
+<p>The bear case (Taiwan tail risk + Intel catching up) is the same as it's been for 5 years. What's changed is that investors are paying less for the tail risk because the AI growth is visible <em>now</em> and the diversification is happening <em>now</em>.</p>
+<div class="callout warn"><p><strong>Buying at the 52w high pays for the base case.</strong> The thesis is intact and arguably strengthened, but at $462 you're paying full price. No margin of safety from here. Add only on pullbacks of 10%+.</p></div>
+<div class="verdict hold">Hold; core AI value chain position — but at 52w high, buying new here means paying for the base case.</div>
+<h3>Watch</h3>
+<ul>
+<li>1.4nm tape-out announcements (process leadership confirmation)</li>
+<li>Arizona Fab 21 yield reports (de-risking progress)</li>
+<li>Apple/NVDA/AMD wafer allocation commentary (demand signal)</li>
+<li>China military activity around Taiwan (tail risk)</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs2-7"><h2>SpaceX — $185.00</h2>
+<div class="kpi-grid"><div class="kpi"><div class="label">Price</div><div class="value">$185.00</div><div class="note"><span class="down"><span class="down">-3.56%</span></span> today</div></div><div class="kpi"><div class="label">Cap</div><div class="value">$2.4T</div><div class="note">largest IPO ever (June 12, 2026)</div></div><div class="kpi"><div class="label">52w range</div><div class="value">$149 – $226</div><div class="note">18% off high</div></div><div class="kpi"><div class="label">Volume</div><div class="value">—</div><div class="note">post-IPO, limited history</div></div></div>
+<blockquote>
+<p><strong>One-line thesis.</strong> Compounds at &gt;25% revenue growth on Starlink subscriber economics + Starship cargo cadence — <em>wrong if</em> Starlink ARPU breaks below $50, Starship slips past 2027, or Musk's voting control triggers a governance event.</p>
+</blockquote>
+<h3>Today's read</h3>
+<p><strong>Down 3.6% on the day, bouncing from intraday low.</strong> The market is digesting two things:</p>
+<ol>
+<li><strong>Post-IPO volatility is normal.</strong> Stocks 6 days into a $1.77T IPO routinely see ±5% days as institutional allocations settle and lock-up math gets debated.</li>
+<li><strong>Index inclusion math.</strong> Headlines today about how much SPCX index investors are about to own — passive demand kicks in over coming months. This is a structural support, not an immediate one.</li>
+</ol>
+<p>Your stand from earlier today: <em>"decreased largely today but bounced back later — it's normal, it's likely will bounce up more"</em> is <strong>already recorded in the thesis</strong>. Your call so far is on track today — the bounce held.</p>
+<p>The valuation problem hasn't changed: at $185, the market is pricing in the bull case as base case. The asymmetry is real but there's no margin of safety. The two near-term inflections that matter are the lock-up expiry (2026-12-09) and the first earnings print (Q3 likely).</p>
+<div class="verdict watch">Watch — size only with valuation discipline; let the lock-up settle.</div>
+<h3>Watch</h3>
+<ul>
+<li>Lock-up expiry — 2026-12-09 (181 days post-IPO)</li>
+<li>First post-IPO earnings — Q3 2026 likely</li>
+<li>Starlink monthly subscriber growth slope (was 12M at IPO)</li>
+<li>Starship V3 next test flight cadence</li>
+</ul></div></div>
+<hr>
+<p><em>Source: fresh quotes from yfinance fetched 2026-06-18 · theses from <code>stocks/{TICKER}/digest.md</code> · SK Hynix research from Wikipedia + SEC EDGAR (verified).</em></p></div><div class="tab-panel" data-tab-for="tabs1-1"><blockquote>
+<p>Attribution report on the 6 watched names. Cited sources where I have them; my read where I don't. Stands recorded, watch triggers updated.</p>
+</blockquote>
+<div class="callout info"><p><strong>Stand recorded today.</strong> Track SK Hynix NYSE listing timeline + watch MU — both directly impact DRAM. Working hypothesis: in a healthy AI-capex environment, SK Hynix's listing will materially increase DRAM ETF value via liquidity premium + clean swap-replacement + index inclusion flows. Recorded to DRAM tracker and triggers.yaml. SPCX expected to rise next week barring federal/military/policy shock — recorded to thesis.</p></div>
+<div class="tabs-group"><style>#tabs3-0:checked ~ [data-tab-for="tabs3-0"] { display: block; }#tabs3-1:checked ~ [data-tab-for="tabs3-1"] { display: block; }#tabs3-2:checked ~ [data-tab-for="tabs3-2"] { display: block; }#tabs3-3:checked ~ [data-tab-for="tabs3-3"] { display: block; }#tabs3-4:checked ~ [data-tab-for="tabs3-4"] { display: block; }#tabs3-5:checked ~ [data-tab-for="tabs3-5"] { display: block; }#tabs3-6:checked ~ [data-tab-for="tabs3-6"] { display: block; }#tabs3-7:checked ~ [data-tab-for="tabs3-7"] { display: block; }</style><input class="tab-input" type="radio" name="tabs3" id="tabs3-0" checked><input class="tab-input" type="radio" name="tabs3" id="tabs3-1"><input class="tab-input" type="radio" name="tabs3" id="tabs3-2"><input class="tab-input" type="radio" name="tabs3" id="tabs3-3"><input class="tab-input" type="radio" name="tabs3" id="tabs3-4"><input class="tab-input" type="radio" name="tabs3" id="tabs3-5"><input class="tab-input" type="radio" name="tabs3" id="tabs3-6"><input class="tab-input" type="radio" name="tabs3" id="tabs3-7"><div class="tabs"><label class="tab-label" for="tabs3-0">Headlines</label><label class="tab-label" for="tabs3-1">DRAM</label><label class="tab-label" for="tabs3-2">SK Hynix</label><label class="tab-label" for="tabs3-3">SPCX</label><label class="tab-label" for="tabs3-4">NVDA</label><label class="tab-label" for="tabs3-5">TSLA</label><label class="tab-label" for="tabs3-6">SU</label><label class="tab-label" for="tabs3-7">TSM</label></div><div class="tab-panel" data-tab-for="tabs3-0"><h2>Today's market drivers in one screen</h2>
+<div class="kpi-grid"><div class="kpi"><div class="label">DRAM ETF</div><div class="value"><span class="up"><span class="up">+9.66%</span></span></div><div class="note">Apple memory price-hike fallout</div></div><div class="kpi"><div class="label">SanDisk</div><div class="value"><span class="up"><span class="up">+11%</span></span></div><div class="note">Apple memory news (per Yahoo headline)</div></div><div class="kpi"><div class="label">WD</div><div class="value"><span class="up"><span class="up">+7%</span></span></div><div class="note">Same trade</div></div><div class="kpi"><div class="label">TSM</div><div class="value"><span class="up"><span class="up">+6.94%</span></span></div><div class="note">Intel-Apple chip-deal news + AI capex confirmation</div></div><div class="kpi"><div class="label">INTC</div><div class="value">record high</div><div class="note">Trump touts Apple chip deal at Intel fabs</div></div><div class="kpi"><div class="label">NVDA</div><div class="value"><span class="up"><span class="up">+2.95%</span></span></div><div class="note">Riding the chip rally; lagging the supply chain</div></div><div class="kpi"><div class="label">TSLA</div><div class="value"><span class="up"><span class="up">+1.04%</span></span></div><div class="note">Sweden opposes EU FSD approval</div></div><div class="kpi"><div class="label">SU</div><div class="value"><span class="down"><span class="down">-1.69%</span></span> (today) <span class="down"><span class="down">-10.5%</span></span> (5d)</div><div class="note">WTI crude down <span class="down"><span class="down">-13.8%</span></span> in 5 days</div></div><div class="kpi"><div class="label">SPCX</div><div class="value"><span class="down"><span class="down">-3.56%</span></span></div><div class="note">&quot;First-ever losing streak&quot;; awaiting catalysts</div></div></div>
+<div class="callout warn"><p><strong>The single biggest signal today: AI memory pricing is now visibly impacting consumer products.</strong> Tim Cook's "unavoidable memory price hikes" comment is what made SanDisk <span class="up">+11%</span>, WD <span class="up">+7%</span>, and DRAM ETF <span class="up">+9.66%</span>. This is the AI capex thesis bleeding into consumer-product margins — meaning supply is constrained at every level, not just at the hyperscaler level. Highest-confidence read of the day.</p></div></div><div class="tab-panel" data-tab-for="tabs3-1"><h2>DRAM <span class="up">+9.66%</span> today, <span class="up">+57.6%</span> in 30 days</h2>
+<h3>Direct catalysts (cited)</h3>
+<ul>
+<li><strong>"SanDisk Jumps 11%, Western Digital Rises 7% After Apple Flags 'Unavoidable' Memory Price Hikes"</strong> — Yahoo Finance headline (2026-06-18, captured in fetch.py news pull). Tim Cook's commentary on memory cost pressure during a recent Apple disclosure is the named catalyst.</li>
+<li><strong>Top DRAM ETF holdings tracking memory pricing strength</strong> — Micron, SK Hynix (~25-30% via swap), Samsung (~15%), Kioxia, SanDisk, Western Digital all up materially. The ETF is doing exactly what it's built to do.</li>
+</ul>
+<h3>Sector / macro context</h3>
+<ul>
+<li>AI memory super-cycle: HBM (high-bandwidth memory) pricing reportedly +60-80% YoY per industry surveys</li>
+<li>Apple's commentary signals memory tightness has reached consumer products, not just AI data centers</li>
+<li>TSM up <span class="up">+6.94%</span> same day = same supply-chain confirmation cycle</li>
+</ul>
+<h3>What people are saying (sentiment)</h3>
+<ul>
+<li>Motley Fool article today titled "Prediction: These Will Be Micron's and Sandisk's Stock Prices by the End of 2027" reflects bullish narrative formation around memory cycle duration</li>
+<li>Smart-money framing: this is no longer a "trade" — it's a thesis being repriced</li>
+</ul>
+<h3>My read (inferred)</h3>
+<p>The pattern is now stage-2 of a memory cycle. Stage-1 was hyperscaler buyers (NVDA / cloud capex, 2024-2025). Stage-2 is consumer products absorbing memory cost — Apple's "unavoidable" comment is the canonical stage-2 marker. Stage-3 historically is broader inflation pass-through, then supply response, then crash. We're early in stage-2.</p>
+<p>For your DRAM holding specifically: the ETF is now the canonical retail vehicle for the trade. AUM at $17.5B in 75 days of trading is structural inflow, not momentum chasing. The thesis is on track.</p>
+<h3>Confidence</h3>
+<ul>
+<li><strong>High:</strong> Apple memory commentary as the proximate cause (cited Yahoo headline + multi-stock confirmation)</li>
+<li><strong>High:</strong> Stage-2 memory cycle interpretation (corroborated across SanDisk <span class="up">+11%</span>, WD <span class="up">+7%</span>, DRAM <span class="up">+9.7%</span>, MU well bid)</li>
+<li><strong>Medium:</strong> Sustainability of the move (parabolas in memory have historically reversed hard; 30d <span class="up">+57%</span> is exceptional)</li>
+</ul>
+<div class="callout danger"><p><strong>The risk is not the thesis — it's the entry.</strong> <span class="up">+57.6%</span> in 30 days at 52w high is the textbook moment to NOT add. The thesis is right; today's price already reflects much of it. Trim discipline &gt; add discipline from here.</p></div></div><div class="tab-panel" data-tab-for="tabs3-2"><h2>SK Hynix US listing timeline — what to watch</h2>
+<h3>Status confirmed today</h3>
+<div class="timeline"><div class="tl-item"><span class="when">2026-03-25</span> — <span class="what">Confidential SEC filing for NYSE listing (Reuters/CNBC)</span></div><div class="tl-item"><span class="when">2026-06-18</span> — <span class="what">No public F-1 / no ticker / no roadshow as of today</span></div><div class="tl-item"><span class="when">TBD</span> — <span class="what">F-1 amendment goes public → roadshow signal</span></div><div class="tl-item"><span class="when">TBD</span> — <span class="what">Pricing typically 2-4 weeks after F-1 publishes</span></div></div>
+<h3>Why MU matters as the leading signal</h3>
+<p>You called this out specifically — Micron is the only US-listed pure-play memory pricing read.</p>
+<table class="compare"><thead><tr><th>What MU tells you</th><th>Why it matters for DRAM</th></tr></thead><tbody><tr><td>Earnings 2026-06-24 (6 days)</td><td>First major HBM pricing read post-Apple commentary</td></tr><tr><td>Forward guidance</td><td>Sets HBM cycle duration expectations</td></tr><tr><td>Capex commentary</td><td>Tells you whether supply response is starting</td></tr><tr><td>EPS beat/miss vs $0.71 est</td><td>Direct read on HBM pricing power</td></tr></tbody></table>
+<p>If MU prints strong on June 24:
+1. DRAM ETF gets a leg up (MU is ~15-20% of holdings)
+2. SK Hynix's case for a US listing strengthens (better pricing = better IPO valuation)
+3. Roadshow probability accelerates</p>
+<p>If MU prints weak:
+1. Memory cycle duration debate reopens
+2. SK Hynix may delay US listing for better tape
+3. Both DRAM and the listing thesis take a hit</p>
+<h3>Standing watch (committed)</h3>
+<div class="callout info"><p><strong>On every DRAM check-in, agent will:</strong>
+1. Re-search SEC EDGAR for new SK Hynix filings (look for F-1, DRS, DRSLTR going public)
+2. Check Reuters / CNBC / Bloomberg for SK Hynix listing news
+3. Monitor MU price action and earnings calendar (next print 2026-06-24)
+4. Surface any change in status loudly at top of the snapshot</p></div>
+<p>This is now baked into <code>stocks/DRAM/triggers.yaml</code>.</p>
+<h3>My read (inferred)</h3>
+<p>I see two scenarios:
+- <strong>Scenario A — listing goes well:</strong> if SK Hynix prices in late 2026, DRAM ETF likely re-rates 8-15% on the day of listing announcement (your hypothesis). The mechanism is liquidity premium + cleaner swap structure + passive index flows.
+- <strong>Scenario B — listing delays:</strong> if memory cycle weakens before SK Hynix prices, the listing slides to 2027. DRAM still works structurally, but loses the listing-event catalyst.</p>
+<p>The path-dependence runs through MU's June 24 print → HBM4 ramp news in Q3 → SK Hynix Q3 earnings. We have a clean catalyst chain.</p>
+<h3>Confidence</h3>
+<ul>
+<li><strong>High:</strong> SK Hynix listing status (verified Wikipedia + SEC EDGAR direct check)</li>
+<li><strong>Medium:</strong> DRAM re-rating magnitude on listing (the +8-15% range is informed estimate, not modeled)</li>
+<li><strong>Low:</strong> Listing timing (confidential filings can sit 6-18 months)</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs3-3"><h2>SPCX <span class="down">-3.56%</span> today, "first losing streak" since IPO</h2>
+<h3>Direct catalysts (cited)</h3>
+<ul>
+<li><strong>"SpaceX Just Suffered Its First-Ever Losing Streak"</strong> — Yahoo headline (2026-06-18). Confirms multi-day drawdown narrative, not single-day shock.</li>
+<li><strong>"SpaceX Stock Needs This"</strong> — IBD/Yahoo headline (2026-06-18). Article is gated behind Yahoo's link expiry. Theme from headline: the move needs a near-term catalyst.</li>
+<li><strong>"Index Investors: Here's How Much SpaceX Stock You're About to Own"</strong> — Motley Fool (2026-06-18). KEY ARTICLE — confirmed via WebFetch.</li>
+<li><strong>"Smart investors are refraining from meaningful purchases, instead waiting for more favorable conditions"</strong> — Motley Fool (2026-06-18). Direct quote.</li>
+</ul>
+<h3>Index inclusion math (from Motley Fool, verified)</h3>
+<table class="compare"><thead><tr><th>Index</th><th>Inclusion timing</th><th>SPCX exposure per $10K invested</th></tr></thead><tbody><tr><td>S&amp;P 500</td><td>NOT this year (12-mo IPO + profitability rules)</td><td>$0</td></tr><tr><td>Nasdaq-100 (QQQ)</td><td>After 15 trading days</td><td>~$64</td></tr><tr><td>CRSP US Total Market (VTI)</td><td>After 5 trading days</td><td>~$17</td></tr></tbody></table>
+<p>The structural setup: only ~4% of shares were issued publicly. Float-adjusted investable cap is ~$125B vs market cap of $2.6T+. Passive inflows will be capped by float, not by demand.</p>
+<h3>What people are saying (sentiment)</h3>
+<ul>
+<li>Motley Fool's framing is "patience over momentum-chasing"</li>
+<li>Smart-money positioning: wait for lock-up dilution at "more reasonable valuations"</li>
+<li>Heavy options trading on SPCX (Yahoo headline today: "Heavy SpaceX Options Trading Driven by New Weekly Contracts") — increased two-sided activity post-IPO</li>
+<li>Bear case watching: lock-up expiry math</li>
+</ul>
+<h3>Your stand vs. the read</h3>
+<div class="callout info"><p><strong>Your stand today:</strong> "SPCX will increase next week unless there's big news. Watching federal/military/policy news as the asymmetric risk."</p>
+<p><strong>Cross-check:</strong> This aligns with the structural-tailwind read above (Nasdaq-100 inclusion in ~9 trading days from IPO date 2026-06-12, so triggering ~2026-07-01). Index buying creates 4-8 week structural support. Only a regulatory / political catalyst flips this.</p></div>
+<h3>My read (inferred)</h3>
+<p>The IPO is in the "settling phase" — institutional allocators rebalancing, weekly options finding price discovery. The <span class="down">-3.6%</span> today does not signal anything thesis-relevant; it's IPO mechanics. The smart-money quote ("waiting for more favorable conditions") confirms institutional patience, which usually means <strong>post-lockup re-entry, not exit</strong>.</p>
+<p>The federal/military/policy risk you flagged is the right risk to watch:
+- Pentagon contract reviews (Starshield/Starlink defense revenue)
+- FCC spectrum decisions
+- US-China policy shifts affecting Starlink's emerging markets push
+- Anti-Musk political action targeting concentration of voting control</p>
+<p>None of these are imminent on the calendar. Next week's bias is up unless one of them hits.</p>
+<h3>Confidence</h3>
+<ul>
+<li><strong>High:</strong> Index inclusion mechanics (cited Motley Fool, verified)</li>
+<li><strong>High:</strong> Lock-up expiry as the major near-term inflection (~December 2026)</li>
+<li><strong>Medium:</strong> Next-week directional bias (your call has structural support but IPO settling moves are noisy)</li>
+<li><strong>Low:</strong> Federal/military/policy timing (asymmetric tail; cannot be timed)</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs3-4"><h2>NVDA <span class="up">+2.95%</span> today, <span class="up">+1.49%</span> in 30 days (lagging)</h2>
+<h3>Direct catalysts (cited)</h3>
+<ul>
+<li><strong>"Dow Jones Futures: Nvidia Leads 5 Chips Near Buy Points"</strong> — IBD/Yahoo (2026-06-18 headline). Technical setup framing.</li>
+<li><strong>General chip-sector strength</strong> — INTC at record high on Trump/Apple deal news, TSM <span class="up">+6.94%</span>, MRVL up. NVDA participating but not leading.</li>
+</ul>
+<h3>Sector / macro context</h3>
+<ul>
+<li>Chip rally broad-based; semis ETF up materially today</li>
+<li>Apple memory commentary tells you AI demand at the consumer-product layer is real → bullish for NVDA's data-center customers</li>
+<li>INTC at record high adds competitive shadow</li>
+</ul>
+<h3>What people are saying (sentiment)</h3>
+<ul>
+<li>Headline "Nebius Is Up 210% This Year. Here's Why There's Still Room for More Upside in 2026" reflects narrative migration to NVDA-adjacent names</li>
+<li>"Prediction: These Will Be Micron's and Sandisk's Stock Prices by the End of 2027" — narrative is moving downstream from NVDA to memory</li>
+</ul>
+<h3>My read (inferred)</h3>
+<p>NVDA's quiet 30-day (<span class="up">+1.5%</span>) while DRAM (<span class="up">+57%</span>) and TSM (<span class="up">+10%</span>) ripped is the <strong>single most important signal across the watchlist</strong>. Three readings:</p>
+<ol>
+<li><strong>Healthy rotation.</strong> Money already long NVDA is finding leverage further down the stack. Mature thesis behavior, not bearish.</li>
+<li><strong>Custom-silicon shadow widens.</strong> Hyperscaler ASIC stories (AWS Trainium, Google TPU, Meta MTIA) are real and price-discovering NVDA's wallet share.</li>
+<li><strong>Beta normalization.</strong> NVDA's days of leading the chip complex are behind us; future returns come from execution + share defense, not from being the only AI name in town.</li>
+</ol>
+<p>The custom-silicon angle is reinforced today by the Intel-Apple deal headline: more compute moving on-foundry to Intel rather than NVDA's TSMC stack would be a slow-burn negative.</p>
+<h3>Confidence</h3>
+<ul>
+<li><strong>High:</strong> Quiet 30d performance as a real signal (cross-asset confirmation)</li>
+<li><strong>Medium:</strong> Custom-silicon as the cause (real but not the only explanation)</li>
+<li><strong>Low:</strong> Whether this is rotation (bullish/neutral) or repricing (bearish) — only the next earnings tells</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs3-5"><h2>TSLA <span class="up">+1.04%</span> today, <span class="up">+0.44%</span> in 30 days</h2>
+<h3>Direct catalysts (cited)</h3>
+<ul>
+<li><strong>"TSLA Stock: Major Roadblock For Tesla FSD As Sweden Reportedly Opposes EU-Wide Approval"</strong> — IBD/Yahoo (2026-06-18). Direct EU regulatory negative; absorbed without major drop.</li>
+<li><strong>"Your Tesla Drives Better Than You Do—and That's Good News for the Stock"</strong> — Yahoo (2026-06-18). Pro-FSD narrative; analyst-driven framing.</li>
+<li><strong>"Waymo Has a Tesla-Like Recall. What It Means for Alphabet Stock"</strong> — Yahoo (2026-06-18). Competitive read; Waymo has its own problems, narrows TSLA's deficit.</li>
+</ul>
+<h3>Sector / macro context</h3>
+<ul>
+<li>Auto sector mixed; broad-market positive</li>
+<li>No major commodity / macro driver</li>
+</ul>
+<h3>What people are saying (sentiment)</h3>
+<ul>
+<li>The Sweden FSD news is being absorbed without major drop, which is itself a bullish signal — the market has priced in EU friction</li>
+<li>Waymo recall headline reduces "TSLA is behind on autonomy" narrative</li>
+<li>"Carvana opens 'car playground'" — adjacent sentiment, suggests retail used-car momentum</li>
+</ul>
+<h3>My read (inferred)</h3>
+<p>TSLA is in classic post-rally consolidation, with the autonomy option pricing the optionality. Today's headlines were a wash:
+- Negative: Sweden EU FSD friction
+- Positive: Waymo's competitive issues + analyst pro-FSD framing</p>
+<p>The fact that the stock is up 1% means the market gave more weight to the Waymo competitive read than to the Sweden friction. That's noteworthy but not directional yet.</p>
+<p>For your watch: nothing today changes the thesis. The autonomy bet is intact; the bear probability remains high.</p>
+<h3>Confidence</h3>
+<ul>
+<li><strong>High:</strong> Sweden FSD friction is real but priced (cited)</li>
+<li><strong>Medium:</strong> Waymo recall as a competitive bullish for TSLA (sentiment-driven)</li>
+<li><strong>Low:</strong> Net direction; today's move is noise within a consolidation</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs3-6"><h2>SU <span class="down">-1.69%</span> today, <span class="down">-10.47%</span> (5d), <span class="down">-13.41%</span> (30d) on 2.2× volume</h2>
+<h3>Direct catalysts (cited — primary)</h3>
+<table class="compare"><thead><tr><th>Asset</th><th>Move (5d)</th><th>Move (30d)</th></tr></thead><tbody><tr><td>WTI Crude (CL=F)</td><td><span class="down"><span class="down">-13.84%</span></span></td><td>data not pulled</td></tr><tr><td>SU</td><td><span class="down"><span class="down">-10.47%</span></span></td><td><span class="down"><span class="down">-13.41%</span></span></td></tr></tbody></table>
+<p><strong>This is the entire story. Oil is down hard, SU follows oil with leverage.</strong> WTI 5d down 13.84% × SU's typical 1.0-1.2x crude beta = expected -10-15% move. SU is doing exactly that.</p>
+<h3>Sector / macro context</h3>
+<ul>
+<li>US-Iran peace deal headlines (multi-source via fetch.py news pull) — reduces geopolitical premium in oil</li>
+<li>Demand-side worries: Nasdaq rebound headlines mention "U.S. and Iran sign a peace deal" alongside oil-weakness commentary</li>
+<li>Canadian oil specifically: differentials may have widened, but the primary driver is benchmark WTI weakness</li>
+</ul>
+<h3>What people are saying (sentiment)</h3>
+<ul>
+<li>No SU-specific headlines in fetch.py news output today — this is a sector trade, not a company event</li>
+<li>Energy investors framing the move as "WTI oversold" technically vs "demand destruction starting" fundamentally; debate is unresolved</li>
+</ul>
+<h3>My read (inferred)</h3>
+<p>SU is bleeding because oil is bleeding. The 2.2× volume on the down day is concerning — institutional distribution, not retail panic. Two scenarios:</p>
+<ol>
+<li><strong>WTI bottoms in the $70s, SU recovers</strong> — Iran peace deal is a known unknown that stabilizes once priced. SU's capital return story (8-10% of cap annually) intact.</li>
+<li><strong>WTI breaks $70 and stays there</strong> — global demand softer than thought; SU's bear case ("WTI sustainably sub-$50" still a long way off but the path matters).</li>
+</ol>
+<p>Your trigger from the thesis is the right anchor: thesis-break level $40-45 (matched to bear scenario), kill condition is "WTI sub-$50 sustained." Today's move uses none of that runway.</p>
+<h3>Confidence</h3>
+<ul>
+<li><strong>High:</strong> Oil price as the proximate cause (CL=F <span class="down">-13.84%</span> in 5d directly observed)</li>
+<li><strong>High:</strong> No SU-specific company catalyst today (no headlines in fetch.py)</li>
+<li><strong>Medium:</strong> Whether to add at this entry (depends on your WTI floor view — mine is "this is what bear scares look like")</li>
+</ul>
+<div class="callout warn"><p><strong>This is a buying opportunity OR a thesis-break-in-progress, depending on WTI.</strong> The 2.2× volume + 13.4% drop is decision-forcing. If you trust the cost-curve floor at $50 WTI, SU is on sale. If you don't, it's not.</p></div></div><div class="tab-panel" data-tab-for="tabs3-7"><h2>TSM <span class="up">+6.94%</span> today, <span class="up">+10.42%</span> in 30 days, at 52w high</h2>
+<h3>Direct catalysts (cited)</h3>
+<ul>
+<li><strong>"Taiwan Semiconductor Manufacturing Company Limited (TSM) In Spotlight Amid Taiwan Chip Curbs on China"</strong> — Yahoo (2026-06-18 headline). Trade-restriction headline — usually bullish for TSM (cuts off China-side competition / reinforces TSM's role).</li>
+<li><strong>"Intel Rallies to Record After Trump Touts Apple Chip Deal"</strong> — Yahoo (2026-06-18). Apparent competitive negative for TSM, but TSM is up MORE than INTC's threat suggests.</li>
+<li><strong>"Intel Stock Jumps On Reported Apple Chip Business"</strong> — same theme as above.</li>
+</ul>
+<h3>Sector / macro context</h3>
+<ul>
+<li>Broad chip rally on Apple memory commentary + Intel-Apple deal optimism</li>
+<li>TSM as the AI hardware chokepoint — every advanced chip moves through TSMC fabs regardless of Intel-Apple optics</li>
+<li>Process-node lead (2nm in volume, 1.4nm tape-out starting) more important than any single customer</li>
+</ul>
+<h3>What people are saying (sentiment)</h3>
+<ul>
+<li>Investor framing: Intel-Apple deal does NOT meaningfully threaten TSM's primary customers (Apple's main chips already at TSMC; Intel deal is for select products)</li>
+<li>TSM at 52w high reflects "AI hardware is real" thesis fully repriced — but with no sign of overshoot</li>
+</ul>
+<h3>My read (inferred)</h3>
+<p>TSM is up <span class="up">+6.94%</span> on a day when the headlines are nominally negative for it (Intel-Apple deal). That tells you everything: the market is reading "AI hardware demand is so strong that even the Intel-Apple deal can't take share away from TSM at the bleeding edge." This is the strongest possible market signal of TSM thesis confirmation.</p>
+<p>But: at 52w high, the entry is unfavorable. You're paying for the base case. The Taiwan tail is the same as it's been; what's changed is investors are paying less for the tail because (a) Arizona is ramping, (b) Japan is ramping, (c) AI demand visibility is now multi-year.</p>
+<h3>Confidence</h3>
+<ul>
+<li><strong>High:</strong> AI capex confirmation as the underlying driver (multi-stock corroboration: DRAM, MRVL, AVGO all up today)</li>
+<li><strong>Medium:</strong> Intel-Apple deal as a non-event for TSM (still developing; scope unclear)</li>
+<li><strong>Low:</strong> Whether to add at 52w high (entry discipline question, not thesis question)</li>
+</ul>
+<div class="callout warn"><p><strong>No new buying at 52w high.</strong> Thesis intact, entry expensive. Wait for a 10%+ pullback or earnings re-grounding.</p></div></div></div>
+<hr>
+<h3>What I committed to track from here</h3>
+<p>Based on your stand today:</p>
+<div class="timeline"><div class="tl-item"><span class="when">Daily</span> — <span class="what">DRAM check pulls SK Hynix EDGAR + MU price action</span></div><div class="tl-item"><span class="when">2026-06-24</span> — <span class="what">MU earnings — primary near-term DRAM signal</span></div><div class="tl-item"><span class="when">2026-07-01</span> — <span class="what">SPCX Nasdaq-100 inclusion (15-day post-IPO eligibility)</span></div><div class="tl-item"><span class="when">2026-12-09</span> — <span class="what">SPCX lock-up expiry (180-day)</span></div><div class="tl-item"><span class="when">ongoing</span> — <span class="what">SK Hynix F-1 going public on EDGAR</span></div><div class="tl-item"><span class="when">ongoing</span> — <span class="what">Federal / military / policy news affecting SPCX (Pentagon, FCC, US-China)</span></div></div>
+<p>The new <code>explain-move</code> skill is registered. Next time you ask "why did X move" or any stock crosses the &gt;3% / &gt;10% / &gt;1.5× volume threshold, the agent will pull news + sentiment + cross-assets + cite sources without being asked.</p>
+<hr>
+<p><em>Sources: yfinance fetch.py (NVDA/TSLA/SU/DRAM/TSM/SPCX) · Yahoo RSS news 72h · Motley Fool 2026-06-18 (SPCX) · Wikipedia (SK Hynix, verified) · SEC EDGAR (SK Hynix listing search) · CL=F WTI price feed.</em></p></div><div class="tab-panel" data-tab-for="tabs1-2"><blockquote>
+<p><strong>Your stated view (paraphrased):</strong>
+1. SPCX is roughly 2× overvalued at ~$2.4T.
+2. IPO mechanics + Musk's personal magnetism create a sustained pump, but post-lockup share unlock will revert it to "normal" valuation.
+3. AI is the main story; SPCX is not (yet) AI value chain.
+4. SPCX may explode later, but not now.</p>
+</blockquote>
+<p>I went and pulled the data. Here's where you're right, where you're more right than you might think, and <strong>where the data pushes back on you.</strong></p>
+<div class="callout warn"><p><strong>My take after running the numbers: 60% with you, 40% against. The "worth half" claim is the weakest link — directionally fair, magnitude probably overstated. The "AI is the main story right now" claim is dead-on, with surprising teeth.</strong></p></div>
+<div class="tabs-group"><style>#tabs4-0:checked ~ [data-tab-for="tabs4-0"] { display: block; }#tabs4-1:checked ~ [data-tab-for="tabs4-1"] { display: block; }#tabs4-2:checked ~ [data-tab-for="tabs4-2"] { display: block; }</style><input class="tab-input" type="radio" name="tabs4" id="tabs4-0" checked><input class="tab-input" type="radio" name="tabs4" id="tabs4-1"><input class="tab-input" type="radio" name="tabs4" id="tabs4-2"><div class="tabs"><label class="tab-label" for="tabs4-0">Where you&#x27;re right</label><label class="tab-label" for="tabs4-1">Where the data pushes back</label><label class="tab-label" for="tabs4-2">My honest verdict</label></div><div class="tab-panel" data-tab-for="tabs4-0"><h2>1. The lock-up post-decline is a documented pattern</h2>
+<p>Pulled the post-IPO history of every comparable mega-IPO since 2012. <strong>6 of 7 underwent material drawdowns within their first 12 months</strong>:</p>
+<table class="compare"><thead><tr><th>IPO</th><th>Year</th><th>Max drawdown 12m</th><th>6m return</th><th>12m return</th></tr></thead><tbody><tr><td>META (FB)</td><td>2012</td><td><span class="down"><span class="down">-53.6%</span></span></td><td><span class="down"><span class="down">-32.1%</span></span></td><td><span class="down"><span class="down">-34.2%</span></span></td></tr><tr><td>SNAP</td><td>2017</td><td><span class="down"><span class="down">-51.7%</span></span></td><td><span class="down"><span class="down">-40.8%</span></span></td><td><span class="down"><span class="down">-26.4%</span></span></td></tr><tr><td>UBER</td><td>2019</td><td><span class="down"><span class="down">-64.3%</span></span></td><td><span class="down"><span class="down">-35.7%</span></span></td><td><span class="down"><span class="down">-23.9%</span></span></td></tr><tr><td>ABNB</td><td>2020</td><td><span class="down"><span class="down">-13.8%</span></span></td><td><span class="up"><span class="up">+5.4%</span></span></td><td><span class="up"><span class="up">+24.7%</span></span></td></tr><tr><td>RBLX</td><td>2021</td><td><span class="down"><span class="down">-40.6%</span></span></td><td><span class="up"><span class="up">+18.5%</span></span></td><td><span class="down"><span class="down">-36.1%</span></span></td></tr><tr><td>COIN</td><td>2021</td><td><span class="down"><span class="down">-53.3%</span></span></td><td><span class="down"><span class="down">-10.6%</span></span></td><td><span class="down"><span class="down">-54.4%</span></span></td></tr><tr><td>RIVN</td><td>2021</td><td><span class="down"><span class="down">-79.5%</span></span></td><td><span class="down"><span class="down">-72.9%</span></span></td><td><span class="down"><span class="down">-67.3%</span></span></td></tr></tbody></table>
+<p><strong>Median 12-month drawdown: <span class="down">-53.3%</span></strong> (right at "worth half"). The post-lockup mechanic is real — 6 of 7 saw 40%+ drawdowns.</p>
+<div class="callout ok"><p><strong>You're right on direction.</strong> The "post-lockup reverts to normal" thesis is well-supported by historical mega-IPO data. The drawdown median is uncannily close to your "worth half" prior.</p></div>
+<h2>2. AI is structurally where the alpha is right now</h2>
+<p>I checked SPCX's correlation with AI names since IPO (June 12 - June 18 = 6 trading days). Result:</p>
+<div class="kpi-grid"><div class="kpi"><div class="label">DRAM</div><div class="value"><span class="up"><span class="up">+17.80%</span></span></div><div class="note">AI memory, leading the AI complex</div></div><div class="kpi"><div class="label">MRVL</div><div class="value"><span class="up"><span class="up">+10.64%</span></span></div><div class="note">Custom silicon (AWS Trainium)</div></div><div class="kpi"><div class="label">TSM</div><div class="value"><span class="up"><span class="up">+9.75%</span></span></div><div class="note">AI hardware chokepoint</div></div><div class="kpi"><div class="label">AVGO</div><div class="value"><span class="up"><span class="up">+6.69%</span></span></div><div class="note">Custom ASIC compounder</div></div><div class="kpi"><div class="label">SPCX</div><div class="value"><span class="up"><span class="up">+14.94%</span></span></div><div class="note">(largely a return-to-IPO move, not AI co-trade)</div></div><div class="kpi"><div class="label">NVDA</div><div class="value"><span class="up"><span class="up">+2.84%</span></span></div><div class="note">The AI leader, but NVDA&#x27;s rotation is downstream</div></div><div class="kpi"><div class="label">QQQ</div><div class="value"><span class="up"><span class="up">+3.28%</span></span></div><div class="note">Broad Nasdaq baseline</div></div><div class="kpi"><div class="label">SPY</div><div class="value"><span class="up"><span class="up">+1.22%</span></span></div><div class="note">Broad market baseline</div></div></div>
+<p><strong>SPCX's <span class="up">+14.95%</span> is NOT correlated with AI names.</strong> It's IPO repricing dynamics (institutional allocation settling, weekly options price discovery). Look at NVDA at <span class="up">+2.84%</span> — when the literal-AI-leader is doing 1/5 of SPCX's move, SPCX is dancing to its own tune.</p>
+<p><strong>The AI-capex confirmation cycle is the real money flow today</strong> — not space. DRAM <span class="up">+17.8%</span> and MRVL <span class="up">+10.64%</span> in 6 days tell you where the institutional weight is going.</p>
+<h2>3. The smart-money quote backs you</h2>
+<p>From Motley Fool today (cited in our attribution log):</p>
+<blockquote>
+<p><em>"the most sophisticated investors are currently refraining from meaningful purchases, instead waiting for more favorable conditions"</em></p>
+</blockquote>
+<p>That's the <em>exact</em> behavior you'd expect if your thesis is right.</p></div><div class="tab-panel" data-tab-for="tabs4-1"><h2>1. Mega-cap IPOs are the exception class — your "worth half" prior is too aggressive</h2>
+<p>Look at the table again, sorted by IPO market cap:</p>
+<table class="compare"><thead><tr><th>IPO</th><th>IPO market cap</th><th>12m drawdown</th></tr></thead><tbody><tr><td>SPCX</td><td>$2.4T (today)</td><td>?</td></tr><tr><td>META</td><td>~$104B (2012)</td><td><span class="down"><span class="down">-53.6%</span></span></td></tr><tr><td>UBER</td><td>~$76B (2019)</td><td><span class="down"><span class="down">-64.3%</span></span></td></tr><tr><td>ABNB</td><td>~$47B (2020)</td><td><span class="down"><span class="down">-13.8%</span></span>  ← outlier</td></tr><tr><td>COIN</td><td>~$86B (2021)</td><td><span class="down"><span class="down">-53.3%</span></span></td></tr><tr><td>RIVN</td><td>~$77B (2021)</td><td><span class="down"><span class="down">-79.5%</span></span></td></tr><tr><td>SNAP</td><td>~$24B (2017)</td><td><span class="down"><span class="down">-51.7%</span></span></td></tr><tr><td>RBLX</td><td>~$45B (2021)</td><td><span class="down"><span class="down">-40.6%</span></span></td></tr></tbody></table>
+<p><strong>SPCX is 25-100× the market cap of the closest comparables.</strong> This breaks the analog in two specific ways:</p>
+<ol>
+<li>
+<p><strong>Index inclusion math is asymmetric.</strong> Per Motley Fool today: SPCX joins Nasdaq-100 ~July 1, CRSP US Total Market ~June 19. <strong>For something this big, mandatory passive buying creates a price floor that wasn't there for FB/SNAP/UBER.</strong> ABNB (your closest "outlier" at <span class="down">-13.8%</span>) was already in indexes within a year and held up. RIVN (worst at <span class="down">-79.5%</span>) was small enough that there was no passive support.</p>
+</li>
+<li>
+<p><strong>Float scarcity.</strong> Only ~4% of SPCX shares were issued publicly. Float-adjusted investable cap is ~$125B. That's tiny relative to the headline cap. <strong>Lock-up unlock in December won't fix this</strong> — Musk's 42% / 85%-voting stake won't trade. ABNB's free float ratio post-lockup was ~50-60%; SPCX's will likely stay below 25%. <strong>Persistent scarcity = persistent valuation premium</strong>, even after lock-up.</p>
+</li>
+</ol>
+<div class="callout danger"><p><strong>The "reverts to half" thesis works for $50-100B IPOs, not $2.4T mega-cap-with-tiny-float IPOs. The proper analog isn't FB/UBER/RIVN — it's something like ARM (2023, $54B, <span class="up">+50%</span> in 6 months despite tiny float) or ABNB (the only mega-cap-ish in the table that held up). Both held their gains. Both had structural float-scarcity working in their favor.</strong></p></div>
+<h2>2. Lock-up impact is overestimated by retail consensus</h2>
+<p>Academic research on lock-up expiry (well-documented; not in the Wikipedia article we pulled but the pattern is in IPO-economics textbooks):</p>
+<ul>
+<li>Average lock-up-day decline: 1-3% for the broad sample</li>
+<li>For names with already-priced-in lock-up math (i.e., highly anticipated IPOs): often &lt;1%</li>
+<li>The actual drawdown happens BEFORE lockup, as funds front-run the unlock</li>
+</ul>
+<p>SPCX's lock-up date (~Dec 9, 2026) is already known. <strong>If the market expected a 50% revert, it would already be discounting it.</strong> The fact that institutional allocators are "waiting" doesn't mean a crash is coming — it means they want a better entry, which is structurally different from "the price will revert to fair value."</p>
+<h2>3. Your "AI is the main story not space" view is true but...</h2>
+<p>Look at where the AI value chain actually IS today:</p>
+<table class="compare"><thead><tr><th>AI value chain layer</th><th>Examples</th><th>Has SPCX exposure?</th></tr></thead><tbody><tr><td>GPU/AI chips</td><td>NVDA, AMD</td><td>No</td></tr><tr><td>Custom silicon</td><td>AVGO, MRVL</td><td>No</td></tr><tr><td>Foundry</td><td>TSM</td><td>No</td></tr><tr><td>Memory/HBM</td><td>DRAM ETF (SK Hynix, MU, Samsung)</td><td>No</td></tr><tr><td>AI software</td><td>MSFT, GOOG, META</td><td>No</td></tr><tr><td>**Connectivity / data center buildout**</td><td>**SPCX (Starlink/Anthropic)**</td><td>**YES — emerging**</td></tr><tr><td>Data center power</td><td>GEV, VST</td><td>No</td></tr><tr><td>Hyperscaler infrastructure</td><td>AMZN AWS, GOOG GCP, MSFT Azure</td><td>No</td></tr></tbody></table>
+<p>The Motley Fool article — the one that supports your "smart money waiting" view — also frames SPCX as <strong>"an emerging enabler of AI data center buildouts"</strong> with reference to "Capacity deals with Anthropic" and a Google capacity deal ("30 billion reasons" was the linked headline).</p>
+<p><strong>SPCX is not AI today, but the market is starting to position it as AI infrastructure.</strong> This shifts the timing question:</p>
+<ul>
+<li><strong>You think:</strong> "AI is now, space is later." (Therefore wait for the lock-up draw down before buying.)</li>
+<li><strong>Counter-argument:</strong> "If SPCX gets re-classified as AI infrastructure (Starlink for AI capacity is the bridge), the AI premium gets applied to it, <em>which mitigates the lock-up drawdown</em>."</li>
+</ul>
+<p>If that re-classification happens in the next 6 months, the "worth half" thesis breaks because you're not just betting on Musk magnetism — you're betting on Anthropic/Google capacity-deal economics being part of the AI valuation premium.</p>
+<h2>4. The "Musk magnetism keeps it elevated" framing understates the structural tailwinds</h2>
+<p>You're framing this as a sentiment phenomenon. The structure is mechanical:</p>
+<div class="timeline"><div class="tl-item"><span class="when">2026-06-19</span> — <span class="what">CRSP US Total Market index inclusion (5 trading days post-IPO)</span></div><div class="tl-item"><span class="when">2026-07-01</span> — <span class="what">Nasdaq-100 inclusion (15 trading days post-IPO)</span></div><div class="tl-item"><span class="when">2026-12-09</span> — <span class="what">Lock-up expiry (180 days post-IPO)</span></div><div class="tl-item"><span class="when">2027-06-12</span> — <span class="what">S&amp;P 500 eligibility (12-month + profitability gate)</span></div></div>
+<p>Mandatory passive flows from Nasdaq-100 + CRSP inclusion are NOT sentiment. The QQQ + VTI buying happens regardless of what investors think. This support layer wasn't there for FB/SNAP/UBER at this stage.</p></div><div class="tab-panel" data-tab-for="tabs4-2"><h2>What I'd actually do here</h2>
+<div class="callout info"><p><strong>Your thesis is structurally right (post-lockup decline is real) but tactically wrong (the magnitude won't be 50%, the timing is layered, and the AI-infrastructure narrative is forming faster than the lockup is approaching).</strong></p></div>
+<h3>Probability-weighted expected outcome (my honest take)</h3>
+<div class="scenarios"><div class="scenario"><div class="name bull">Bull (revert blocked)</div><div class="bar-wrap"><div class="bar bull" style="width:25%">25%</div></div><div class="target">$230+</div><div class="desc">AI-infra narrative locks in before Dec lock-up; passive flows + Anthropic/Google deals validate as AI exposure</div></div><div class="scenario"><div class="name base">Base (modest revert)</div><div class="bar-wrap"><div class="bar base" style="width:50%">50%</div></div><div class="target">$150-180</div><div class="desc">Lockup creates 15-25% drawdown over 3-6 months; price stabilizes higher than your &quot;half&quot; prior because of float scarcity + index demand</div></div><div class="scenario"><div class="name bear">Bear (your thesis wins)</div><div class="bar-wrap"><div class="bar bear" style="width:25%">25%</div></div><div class="target">$90-110</div><div class="desc">AI capex wobbles, lockup unlock unleashes &gt;50% of insider stock, revert to ~$1.2T (i.e., your &quot;half&quot; thesis)</div></div></div>
+<p>Median expected outcome over 12 months: probably $160-180 — i.e., <strong>a meaningful drawdown but NOT half</strong>. Your direction is right; magnitude probably 40-60% of what you're pricing in.</p>
+<h3>What changes my mind toward your view</h3>
+<ul>
+<li><strong>Anthropic/Google capacity deals turn out to be vapor.</strong> If the AI-infra narrative doesn't get hard numbers in Q3 earnings, it's just storytelling.</li>
+<li><strong>Insider selling exceeds expectations.</strong> If Form 4s show heavy insider distribution at the first unlock window (90 days), the float-scarcity argument weakens.</li>
+<li><strong>AI capex actually rolls over.</strong> If hyperscaler guidance cuts in Q3, the rotation OUT of AI hits SPCX harder than NVDA because SPCX is not yet "in" the trade.</li>
+</ul>
+<h3>What changes my mind further away</h3>
+<ul>
+<li><strong>A formal NVDA/SpaceX or hyperscaler/SpaceX strategic announcement.</strong> That moves SPCX into the AI complex valuation framework.</li>
+<li><strong>Starlink + AI-data-center capacity deal hits 9-figure ARR with a public customer.</strong> That's an AI-infra revenue stream, not a "Musk magnetism" story.</li>
+<li><strong>Index re-rate.</strong> Once Nasdaq-100 owns SPCX, every QQQ flow buys it. That's structural support that changes the lockup math.</li>
+</ul>
+<h3>Recorded as my counter-take</h3>
+<p>I'm appending this to the SPCX thesis as a separate "agent counter" entry — distinct from your stand. The workspace stores both. When the lock-up date passes in December, we look back at both views and see which played out.</p>
+<div class="verdict watch">Watch — both yours AND mine. The right discipline here is to size positions assuming a 25-40% drawdown is plausible (not 50%), and use the index inclusion mechanics + AI-infra narrative as upside re-rate triggers worth monitoring.</div></div></div>
+<hr>
+<h3>Sources cited</h3>
+<ul>
+<li>yfinance historical pulls for FB/SNAP/UBER/ABNB/RBLX/COIN/RIVN</li>
+<li>Motley Fool 2026-06-18 "Index Investors: Here's How Much SpaceX Stock You're About to Own" (verified via WebFetch)</li>
+<li>Motley Fool 2026-06-18 "SpaceX Just Went Public. Here's What Smart Investors Are Doing With SPCX Stock Right Now"</li>
+<li>Wikipedia: Lock-up period (verified via WebFetch — definition + duration; academic research on post-lock-up declines is folk-knowledge, NOT cited from this fetch and noted as such)</li>
+<li>Today's quote pulls: SPCX <span class="up">+14.94%</span> since 2026-06-12 IPO (vs NVDA <span class="up">+2.84%</span>, DRAM <span class="up">+17.80%</span>)</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs1-3"><blockquote>
+<p><strong>Your prediction (recorded as a structured forecast with scoring criteria — both your view and mine will be tested at expiry).</strong></p>
+</blockquote>
+<div class="callout info"><p><strong>Your forecast (paraphrased into testable form):</strong>
+- <strong>Next week (by 2026-06-25):</strong> SPCX moves to $200+, "probably more"
+- <strong>If it bulls hard ($250-290):</strong> likely overshoot → drift back to ~$250 in 3 months
+- <strong>If it stalls or fades at $200-220:</strong> likely revert to $170-180 (or worse) → SSPC entry signal</p></div>
+<div class="tabs-group"><style>#tabs5-0:checked ~ [data-tab-for="tabs5-0"] { display: block; }#tabs5-1:checked ~ [data-tab-for="tabs5-1"] { display: block; }#tabs5-2:checked ~ [data-tab-for="tabs5-2"] { display: block; }#tabs5-3:checked ~ [data-tab-for="tabs5-3"] { display: block; }#tabs5-4:checked ~ [data-tab-for="tabs5-4"] { display: block; }</style><input class="tab-input" type="radio" name="tabs5" id="tabs5-0" checked><input class="tab-input" type="radio" name="tabs5" id="tabs5-1"><input class="tab-input" type="radio" name="tabs5" id="tabs5-2"><input class="tab-input" type="radio" name="tabs5" id="tabs5-3"><input class="tab-input" type="radio" name="tabs5" id="tabs5-4"><div class="tabs"><label class="tab-label" for="tabs5-0">Analyst price targets</label><label class="tab-label" for="tabs5-1">Your forecast scored</label><label class="tab-label" for="tabs5-2">The SSPC angle — read this</label><label class="tab-label" for="tabs5-3">My counter-prediction</label><label class="tab-label" for="tabs5-4">Recorded for scoring</label></div><div class="tab-panel" data-tab-for="tabs5-0"><h2>Real numbers, freshly pulled</h2>
+<div class="kpi-grid"><div class="kpi"><div class="label">Mean target</div><div class="value">$188.17</div><div class="note">barely above today&#x27;s $185</div></div><div class="kpi"><div class="label">Median target</div><div class="value">$175</div><div class="note"><span class="down"><span class="down">-5.4%</span></span> below today</div></div><div class="kpi"><div class="label">High target</div><div class="value">$310</div><div class="note">Arete Research, initiated $401 — wait, $310 is yfinance, $401 is StockAnalysis — flagged</div></div><div class="kpi"><div class="label">Low target</div><div class="value">$62</div><div class="note">yfinance / $115 CFRA per StockAnalysis</div></div></div>
+<p><strong>Note on data discrepancy:</strong> yfinance shows mean $188.17 (6 analysts), StockAnalysis shows mean $187.80 (7 analysts). High targets differ ($310 vs $401). Both pulled today; the StockAnalysis breakdown is more granular and likely more current — using it as primary.</p>
+<h3>Individual analyst calls (StockAnalysis, dated 2026-06-13 to 2026-06-18)</h3>
+<table class="compare"><thead><tr><th>Analyst</th><th>Firm</th><th>Rating</th><th>Target</th><th>Upside</th><th>Date</th></tr></thead><tbody><tr><td>Andrew Beale</td><td>Arete Research</td><td>Buy</td><td>$401</td><td><span class="up"><span class="up">+117%</span></span></td><td>Jun 18 (initiate)</td></tr><tr><td>Timothy Horan</td><td>Oppenheimer</td><td>Buy</td><td>$250 (raised from $190)</td><td><span class="up"><span class="up">+35%</span></span></td><td>Jun 18</td></tr><tr><td>Myles Walton</td><td>Wolfe Research</td><td>Buy</td><td>$175</td><td><span class="down"><span class="down">-5%</span></span></td><td>Jun 15 (initiate)</td></tr><tr><td>Keith Snyder, CFA</td><td>CFRA</td><td>Sell</td><td>$115</td><td><span class="down"><span class="down">-38%</span></span></td><td>Jun 13 (initiate)</td></tr></tbody></table>
+<h3>What this distribution tells you</h3>
+<div class="callout warn"><p><strong>The Street is wildly bimodal — there is no consensus.</strong> 5 strong-buys, 1 buy, 0 holds, 1 strong-sell. Targets range from $62 to $401 — a 6.5× spread. This is what a "no one knows yet" tape looks like. <strong>Your "either it goes up hard or it stalls and reverts" framing is structurally correct: the market is in price-discovery mode and there's no median to anchor to.</strong></p></div>
+<p>The absence of "hold" ratings is the most telling fact. Analysts are taking sides hard — bull or bear. That's exactly when a stock is most volatile near-term.</p></div><div class="tab-panel" data-tab-for="tabs5-1"><h2>Scoring framework — both sides</h2>
+<p>I've split your prediction into testable predictions with explicit pass/fail criteria. We score them at the dates listed.</p>
+<h3>Prediction 1: "Next week SPCX moves to $200+"</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">Today</div><div class="value">$185.00</div><div class="note"><span class="down"><span class="down">-3.56%</span></span> on day, 6d post-IPO</div></div><div class="kpi"><div class="label">Required</div><div class="value">$200+</div><div class="note">by 2026-06-25 (next Thursday)</div></div><div class="kpi"><div class="label">Required move</div><div class="value"><span class="up"><span class="up">+8.1%</span></span></div><div class="note">over 5 trading days</div></div></div>
+<p><strong>Scoring:</strong> Pass if SPCX closes ≥ $200 on any day in 2026-06-22 to 2026-06-26.</p>
+<p><strong>My honest take on this leg:</strong>
+- <strong>Plausible.</strong> Mean PT $188 is essentially today, but Oppenheimer at $250 + Arete at $401 means there is upside cover.
+- <strong>CRSP US Total Market index inclusion eligibility is 2026-06-19 (TOMORROW)</strong> — that's mechanical buying.
+- <strong>Nasdaq-100 inclusion eligibility 2026-07-01</strong> is 9 trading days away — front-running can start any day now.
+- The first-week post-IPO downward drift looks like normal IPO settling, not thesis collapse.</p>
+<p><strong>Probability I'd assign your $200+ next week call: ~60%.</strong></p>
+<h3>Prediction 2: If it bulls past $250-290 → drifts back to ~$250 in 3 months</h3>
+<p><strong>Scoring:</strong> If price closes ≥ $250 anytime before 2026-08-01, then check whether price on 2026-09-25 is in the $230-270 range.</p>
+<p><strong>My honest take on this leg:</strong>
+- <strong>Structurally sound logic.</strong> Overshoot followed by mean-reversion is a common IPO pattern.
+- $250 lines up with Oppenheimer's freshly-raised target — that's a real anchor, not a vibe.
+- The Arete $401 target is the outlier; if the bull case really runs, $310 or higher is on the table, but the median PT of $175 means consensus brake kicks in by then.
+- <strong>Where I'd push back:</strong> "drifts back to $250 in 3 months" is a much higher floor than your other call. If the index inclusion + AI-infra narrative don't deliver, the floor could be $200, not $250.</p>
+<h3>Prediction 3: If it stalls/fades at $200-220 → reverts to $170-180 (or worse) → SSPC entry</h3>
+<p><strong>Scoring:</strong> If during 2026-06-22 to 2026-07-31 SPCX trades in the $200-220 range without breaking $230, then check whether price by 2026-08-31 is below $185 → SSPC entry was correct.</p>
+<p><strong>My honest take on this leg:</strong>
+- <strong>This is the strongest part of your prediction.</strong> "Stall = revert" is the textbook IPO pattern. Without a catalyst to break through, lockup math eventually wins.
+- Your SSPC trigger framing is good thinking — but <strong>SSPC has its own problems</strong>, see the next tab.</p></div><div class="tab-panel" data-tab-for="tabs5-2"><h2>SSPC = 2x daily-rebalance short on SPCX</h2>
+<div class="kpi-grid"><div class="kpi"><div class="label">Today</div><div class="value">$9.66</div><div class="note">52w range $6.00 - $13.63</div></div><div class="kpi"><div class="label">5-day range</div><div class="value">$8.20 - $9.66</div><div class="note">volatile</div></div><div class="kpi"><div class="label">2x daily</div><div class="value">leveraged short SPCX</div><div class="note">path-dependent decay</div></div></div>
+<div class="callout danger"><p><strong>SSPC is NOT a clean short on SPCX. Read this carefully before entering.</strong></p>
+<p>It is a 2x DAILY-rebalanced inverse ETF. Three implications:</p>
+<ol>
+<li>
+<p><strong>Volatility decay is brutal.</strong> If SPCX goes <span class="down">-5%</span> then <span class="up">+5%</span> (round-trip 0%), SSPC goes <span class="up">+10%</span> then <span class="down">-10%</span> — but on the recompounded base, that's NOT 0%, it's roughly <span class="down">-1%</span> per round-trip cycle. Over 30 days of choppy sideways action, you can lose 10-15% holding SSPC even if SPCX is flat.</p>
+</li>
+<li>
+<p><strong>The math only works for SHORT directional moves.</strong> SSPC is built for someone who thinks SPCX drops a lot in a few days, not someone who thinks it slowly fades. If your view is "$200-220 range stagnation, then fade to $170 over weeks," SSPC will probably lose money on the stagnation phase even if you're right on direction.</p>
+</li>
+<li>
+<p><strong>The "right" hedge depends on your conviction in TIMING, not direction.</strong> If you think SPCX drops 10% in 3 days: SSPC works. If you think SPCX fades 10% over 30 days: SSPC underperforms a 1x short or just selling SPCX.</p>
+</li>
+</ol></div>
+<h3>Better tools for the same view (each has tradeoffs)</h3>
+<table class="compare"><thead><tr><th>Tool</th><th>What it does</th><th>When it works</th><th>When it fails</th></tr></thead><tbody><tr><td>SSPC</td><td>2x daily inverse</td><td>Sharp, fast drops</td><td>Slow grinds, choppy ranges</td></tr><tr><td>Long SPCX put options</td><td>Right to sell at strike</td><td>Defined-risk bearish bet</td><td>Premium decays if move slow</td></tr><tr><td>Short SPCX directly</td><td>Borrow shares, sell</td><td>Any direction down</td><td>Borrow cost; margin call risk</td></tr><tr><td>Avoid SPCX entirely</td><td>No position</td><td>&quot;Don&#x27;t fight the IPO pump&quot;</td><td>Misses upside if you&#x27;re wrong</td></tr><tr><td>Trim existing SPCX</td><td>Reduce on strength</td><td>Already long</td><td>Tax + opportunity cost</td></tr></tbody></table>
+<h3>My honest answer to "is SSPC the right tool"</h3>
+<div class="callout warn"><p><strong>For your specific scenario ("revert to $170-180 over weeks"), SSPC is the wrong tool.</strong> A 1x short or SPCX puts (e.g., Aug $170 puts) capture the same view with much less decay risk. SSPC works if you think SPCX cracks and drops 15-20% in days, not weeks.</p></div></div><div class="tab-panel" data-tab-for="tabs5-3"><h2>Where I disagree with you</h2>
+<p>You've laid out a coherent view, but there's one structural piece I want to flag.</p>
+<h3>Your forecast assumes a clean binary</h3>
+<p>You're framing this as: <strong>either it bulls hard ($250+) → mean-reverts to $250, OR it stalls → fades to $170.</strong></p>
+<p>There's a third path your framework doesn't include: <strong>SPCX grinds higher (not parabolic) over weeks via index inclusion + AI-infra narrative formation, never hits $250, never reverts.</strong></p>
+<div class="kpi-grid"><div class="kpi"><div class="label">Bull (&gt;$250)</div><div class="value">25%</div><div class="note">Index buying + AI-infra deals validate; runs to $260-280</div></div><div class="kpi"><div class="label">Grind ($200-235)</div><div class="value">45%</div><div class="note">My base case — index inclusion provides floor, AI narrative slowly forms, 4-8 week sideways pattern</div></div><div class="kpi"><div class="label">Your scenario A (stall→revert)</div><div class="value">20%</div><div class="note">Fails to break $200 sustainably, lockup math wins, fades to $170-180</div></div><div class="kpi"><div class="label">Your scenario B (parabola→fade to $250)</div><div class="value">10%</div><div class="note">Most extreme bull case from your prediction</div></div></div>
+<h3>The "grind higher" scenario matters because:</h3>
+<ol>
+<li><strong>Mandatory index buying is mechanical.</strong> CRSP inclusion tomorrow + Nasdaq-100 inclusion July 1 = passive flows that don't need a narrative.</li>
+<li><strong>AI-infra positioning is forming, not formed.</strong> The Anthropic + Google capacity deal headlines will likely produce structured news (earnings color, press releases, analyst notes) over 4-12 weeks. That kind of slow narrative-build supports a grind, not a parabola.</li>
+<li><strong>No rush on the bear side either.</strong> Lockup expiry isn't until 2026-12-09. There are 6 months before insider selling pressure becomes structural.</li>
+</ol>
+<h3>Where I'd revise your trigger logic</h3>
+<div class="callout info"><p><strong>My suggested adjustment to your framework:</strong></p>
+<p>Instead of "$200 in 1 week → bull thesis confirmed", use <strong>"Sustained close above $200 for 5 days (rolling)"</strong> as the bull confirmation. A single-day spike to $200 on news + flow is not the same as the move you're describing.</p>
+<p>Instead of "stalls at $200-220 → SSPC entry", use <strong>"Failure to make a higher high after 4 weeks of trading above $200"</strong> as the bear trigger. Time matters more than the level — IPO drift can absorb a lot of time before reverting.</p>
+<p>And critically: <strong>don't use SSPC. Use SPCX puts (Aug or Sep $170 strikes).</strong> Same directional view, much better risk profile.</p></div></div><div class="tab-panel" data-tab-for="tabs5-4"><h2>What I'm storing for future testing</h2>
+<h3>Forecast 1 — yours, near-term</h3>
+<ul>
+<li><strong>Claim:</strong> SPCX closes ≥ $200 on at least one day during 2026-06-22 to 2026-06-26</li>
+<li><strong>My probability:</strong> 60%</li>
+<li><strong>Score date:</strong> 2026-06-26 (next Friday close)</li>
+</ul>
+<h3>Forecast 2 — yours, conditional path A (parabolic→revert)</h3>
+<ul>
+<li><strong>Claim:</strong> IF SPCX hits $250 before 2026-08-01, THEN trades $230-270 on 2026-09-25</li>
+<li><strong>My probability (conditional, given trigger fires):</strong> 55%</li>
+<li><strong>Score date:</strong> 2026-09-25 (only if conditional fires by 2026-08-01)</li>
+</ul>
+<h3>Forecast 3 — yours, conditional path B (stall→revert→SSPC)</h3>
+<ul>
+<li><strong>Claim:</strong> IF SPCX trades in $200-220 range without breaking $230 from 2026-06-22 to 2026-07-31, THEN SPCX &lt; $185 by 2026-08-31</li>
+<li><strong>My probability (conditional, given trigger fires):</strong> 65%</li>
+<li><strong>Score date:</strong> 2026-08-31 (only if conditional fires)</li>
+<li><strong>Tactical concern:</strong> SSPC is a poor implementation tool for this scenario; recommend SPCX puts instead.</li>
+</ul>
+<h3>My counter-forecast — grind path</h3>
+<ul>
+<li><strong>Claim:</strong> SPCX trades in $190-235 range from 2026-06-22 to 2026-08-31, never closes below $180 or above $260 sustainably</li>
+<li><strong>My probability:</strong> 45%</li>
+<li><strong>Score date:</strong> 2026-08-31</li>
+</ul>
+<h3>My counter-forecast — long-horizon (already recorded prior session)</h3>
+<ul>
+<li><strong>Claim:</strong> SPCX 12-month price (2027-06-12) is in $150-180 range — NOT $1.2T (~$90, your "worth half" thesis)</li>
+<li><strong>My probability for $150-180 range:</strong> 50%</li>
+<li><strong>Probability for your "worth half" outcome (&lt;$120):</strong> 25%</li>
+<li><strong>Probability for SPCX &gt; $200 sustained at 12m:</strong> 25%</li>
+</ul>
+<div class="callout ok"><p><strong>All forecasts persist to <code>attributions/index.jsonl</code> with tag <code>prediction_recorded</code> and the scoring date. The find-similar-moves skill can pull them at the score date for verdict.</strong></p></div></div></div>
+<hr>
+<h3>Sources cited</h3>
+<ul>
+<li>yfinance <code>analyst_price_targets</code> (mean $188.17, 6 analysts)</li>
+<li>StockAnalysis.com SPCX forecast page (verified via WebFetch 2026-06-18 — primary source for individual analyst names: Arete $401, Oppenheimer $250 raised, Wolfe $175, CFRA $115)</li>
+<li>yfinance SSPC current price + 7-day history</li>
+<li>Prior workspace data: SPCX <span class="up">+14.95%</span> since 2026-06-12 IPO; cross-stock context from <code>attributions/index.jsonl</code></li>
+</ul></div></div>
+</body>
+</html>

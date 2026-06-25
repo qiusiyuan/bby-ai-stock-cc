@@ -1,0 +1,21 @@
+# Pre-commitment device. Confirm or edit values; reasoning below each.
+
+thesis_break_price: 130.00
+# ~30% below current $185. If price closes below this, re-read thesis or sell.
+# Rationale: a drop of this magnitude on no broad-market move would imply either a
+# Starship setback or Starlink ARPU break — both of which are central to the thesis.
+
+kill_conditions:
+  - "Starship suffers a major catastrophic failure that delays cargo cadence by >18 months"
+  - "Starlink ARPU drops below $50 for two consecutive quarters"
+  - "Net insider selling exceeds $5B in any 90-day window post-lockup"
+  - "Material related-party transaction reduces SpaceX shareholder economics"
+  - "Major regulatory action revokes Starlink spectrum or causes multi-country bans"
+
+re_read_triggers:
+  - "Stock down >15% on no obvious news"
+  - "Missed quarter (revenue or Starlink subs)"
+  - "Starlink monthly subscriber growth turns negative"
+  - "Cluster insider selling reported on Form 4"
+  - "Starship test failure or schedule slip announcement"
+  - "Lock-up expiry approaching (180 days from IPO = ~2026-12-09)"

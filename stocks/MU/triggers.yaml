@@ -1,0 +1,10 @@
+thesis_break_price: 650  # bear-case fair value; implies HBM story fails and conventional DRAM cycle reverses
+kill_conditions:
+  - "June 24 earnings: HBM revenue below $2B or gross margin declines QoQ — HBM yield problem signal"
+  - "PC and mobile DRAM pricing indices fall >20% over two consecutive quarters — conventional DRAM collapse"
+  - "Samsung announces HBM market share recovery to 45%+ — Micron's HBM share thesis undermined"
+re_read_triggers:
+  - "Stock down >20% on no obvious news (the run has been steep; a sharp pullback may be technical)"
+  - "June 24 Q3 FY2026 earnings miss on any major metric"
+  - "Micron announces capex above $15B/yr — potential overinvestment signal at cycle peak"
+  - "NVIDIA guide down materially on Blackwell shipments — reduces HBM demand pull"

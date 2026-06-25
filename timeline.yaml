@@ -1,0 +1,60 @@
+# Workspace timeline — append manually as new catalysts come up.
+# Auto-merged with yfinance earnings dates + attribution score_dates by build_timeline.py.
+# Edit format: ISO date, kind, ticker (or "macro"), one-line description.
+
+# Kinds (used to colorize / categorize):
+#   earnings       company earnings release
+#   product        product launch / event
+#   macro          CPI / NFP / FOMC / GDP / PCE
+#   policy         tariff / sanction / regulatory deadline
+#   geopolitical   war / negotiation milestone
+#   lockup         post-IPO share unlock
+#   catalyst       specific stock catalyst (investigation result, FDA, etc.)
+#   prediction     score_date of a recorded prediction (auto-injected)
+
+events:
+  # ── 个股 catalyst（已知 / 高确定性）─────────────────────────────
+  - { date: 2026-06-24, kind: earnings, ticker: MU, note: "Q3 FY2026 earnings AMC — HBM revenue / GM / next-Q guide" }
+  - { date: 2026-09-25, kind: earnings, ticker: MU, note: "Q4 FY2026 earnings — SCORE 「next NVDA」claim against stocks/MU/research/2026-06-25-next-earnings-watchlist.md (Tier 1: GM ≥82%, rev ≥$43B, EPS ≥$27, FY27 guide tone, HBM QoQ ≥+20%)", scorecard: "stocks/MU/research/2026-06-25-next-earnings-watchlist.md" }
+  # NOTE: SPCX prediction score_dates are auto-injected from attributions/index.jsonl.
+  # Don't duplicate them here.
+  - { date: 2026-06-30, kind: catalyst, ticker: TSLA, note: "Q2 2026 global deliveries (company self-report)" }
+  - { date: 2026-07-07, kind: catalyst, ticker: TSLA, note: "NHTSA preliminary statement on Texas crash (estimate)" }
+  - { date: 2026-07-16, kind: earnings, ticker: TSM, note: "Q2 2026 earnings — CoWoS / 1.4nm / HBM" }
+  - { date: 2026-07-22, kind: earnings, ticker: TSLA, note: "Q2 2026 earnings — auto GM ex-credits, FSD revenue, Robotaxi update" }
+  - { date: 2026-07-22, kind: earnings, ticker: IBM, note: "Q2 2026 earnings" }
+  - { date: 2026-07-22, kind: earnings, ticker: GEV, note: "Q2 2026 earnings — Power margin, Wind losses" }
+  - { date: 2026-07-23, kind: earnings, ticker: GOOG, note: "Q2 2026 earnings — AI capex, ad growth" }
+  - { date: 2026-07-23, kind: earnings, ticker: INTC, note: "Q2 2026 earnings — foundry path" }
+  - { date: 2026-07-23, kind: earnings, ticker: NOK, note: "Q2 2026 earnings" }
+  - { date: 2026-07-29, kind: earnings, ticker: MSFT, note: "Q4 FY2026 earnings — Azure / AI capex" }
+  - { date: 2026-07-29, kind: earnings, ticker: META, note: "Q2 2026 earnings — Reels, capex" }
+  - { date: 2026-07-30, kind: earnings, ticker: AAPL, note: "Q3 FY2026 earnings — iPhone, services" }
+  - { date: 2026-07-30, kind: earnings, ticker: AMZN, note: "Q2 2026 earnings — AWS, retail margin" }
+  - { date: 2026-07-31, kind: earnings, ticker: CVX, note: "Q2 2026 earnings" }
+  - { date: 2026-08-04, kind: earnings, ticker: AMD, note: "Q2 2026 earnings — MI300/MI350 ramp" }
+  - { date: 2026-08-04, kind: earnings, ticker: SU, note: "Q2 2026 earnings — production, WCS spread" }
+  - { date: 2026-08-06, kind: earnings, ticker: CNQ, note: "Q2 2026 earnings" }
+  - { date: 2026-08-26, kind: earnings, ticker: NVDA, note: "Q2 FY2027 earnings — Blackwell shipments, DC growth" }
+  - { date: 2026-08-26, kind: earnings, ticker: SNOW, note: "Q2 FY2027 earnings" }
+  - { date: 2026-08-27, kind: earnings, ticker: MRVL, note: "Q2 FY2027 earnings — AWS Trainium ramp" }
+  - { date: 2026-09-03, kind: earnings, ticker: AVGO, note: "Q3 FY2026 earnings" }
+  - { date: 2026-12-09, kind: lockup, ticker: SPCX, note: "Post-IPO 180-day lockup expiry — significant share unlock" }
+  # SPCX 8/31 prediction #4 also auto-injected from attributions/index.jsonl
+
+  # ── Macro 数据（2026 年表）─────────────────────────────────────
+  # CPI: 第二周周三/周四，NFP: 第一周周五，FOMC: ~每 6 周
+  - { date: 2026-07-02, kind: macro, ticker: macro, note: "NFP / jobless claims" }
+  - { date: 2026-07-10, kind: macro, ticker: macro, note: "CPI June" }
+  - { date: 2026-07-15, kind: macro, ticker: macro, note: "PPI June" }
+  - { date: 2026-07-30, kind: macro, ticker: macro, note: "FOMC decision + dot plot" }
+  - { date: 2026-07-31, kind: macro, ticker: macro, note: "PCE inflation June" }
+  - { date: 2026-08-01, kind: macro, ticker: macro, note: "NFP July" }
+  - { date: 2026-08-12, kind: macro, ticker: macro, note: "CPI July" }
+  - { date: 2026-09-05, kind: macro, ticker: macro, note: "NFP August" }
+  - { date: 2026-09-11, kind: macro, ticker: macro, note: "CPI August" }
+  - { date: 2026-09-17, kind: macro, ticker: macro, note: "FOMC decision" }
+
+  # ── Policy / geopolitical 已知窗口 ────────────────────────────
+  - { date: 2026-Q3, kind: policy, ticker: macro, note: "EU TCMV decision on FSD (range — Sweden opposes, multi-state vote)" }
+  - { date: 2026-12, kind: policy, ticker: macro, note: "FCC 6GHz spectrum / Starshield contract renewal window (estimate)" }

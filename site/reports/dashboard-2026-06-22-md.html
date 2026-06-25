@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-06-22</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-06-23 11:34</div>
+<h1 id="2026-06-22">2026-06-22</h1>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><div class="tabs"><label class="tab-label" for="tabs1-0">Morning</label><label class="tab-label" for="tabs1-1">Attribution</label><label class="tab-label" for="tabs1-2">AI capex analysis</label><label class="tab-label" for="tabs1-3">AVGO/MRVL/NOK deep</label></div><div class="tab-panel" data-tab-for="tabs1-0"><div class="callout warn"><p><strong>Today is Sunday — 美股休市。</strong> 数据是周五 2026-06-19 收盘 + 韩股周一开盘到当前。所有"今日变动"指最近一个交易日。</p></div>
+<h3>Verdict on prior predictions</h3>
+<p>No predictions due today (<code>score_predictions.py</code> due_count = 0). 等待 SPCX 锁定期 (2026-12-09)、SU H2 油价、SK Hynix F-1 上市这几个 catalyst 到期。</p>
+<hr>
+<h3>Today's tape — focus group</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">NVDA</div><div class="value">$208.97</div><div class="note">1d <span class="down"><span class="down">-0.82%</span></span> / 5d <span class="up"><span class="up">+1.84%</span></span> / 30d <span class="down"><span class="down">-1.08%</span></span> — 横盘</div></div><div class="kpi"><div class="label">TSM</div><div class="value">$466.80</div><div class="note">1d <span class="up"><span class="up">+1.01%</span></span> / 5d <span class="up"><span class="up">+10.11%</span></span> / 30d <span class="up"><span class="up">+12.98%</span></span> — 5d 触发 attribution 阈值</div></div><div class="kpi"><div class="label">TSLA</div><div class="value">$407.31</div><div class="note">1d <span class="up"><span class="up">+1.70%</span></span> / 5d <span class="up"><span class="up">+0.22%</span></span> / 30d <span class="down"><span class="down">-1.09%</span></span> — 横盘</div></div><div class="kpi"><div class="label">DRAM</div><div class="value">$80.24</div><div class="note">1d <span class="up"><span class="up">+4.6%</span></span> / 5d <span class="up"><span class="up">+23.4%</span></span> / 30d <span class="up"><span class="up">+72.4%</span></span> — 持续爆量</div></div><div class="kpi"><div class="label">SK Hynix</div><div class="value">₩2,919,000</div><div class="note">1d <span class="up"><span class="up">+5.61%</span></span> / 5d <span class="up"><span class="up">+27.58%</span></span> / 30d <span class="up"><span class="up">+76.51%</span></span> — 历史新高</div></div><div class="kpi"><div class="label">SU</div><div class="value">$55.76</div><div class="note">1d <span class="up"><span class="up">+0.77%</span></span> / 5d <span class="down"><span class="down">-9.49%</span></span> / 30d <span class="down"><span class="down">-11.95%</span></span> — 油价回落</div></div><div class="kpi"><div class="label">SPCX</div><div class="value">$165.06</div><div class="note">1d <span class="down"><span class="down">-10.78%</span></span> / 5d <span class="up"><span class="up">+2.55%</span></span> — 单日大跌</div></div></div>
+<hr>
+<h3>Attention required</h3>
+<div class="callout danger"><p><strong>SPCX <span class="down">-10.78%</span> 单日</strong> — 已触发 attribution 阈值。
+价格 $165.06，距 thesis_break_price $130 只剩 21% 缓冲。
+新闻：U.S. tech megacaps slide as SpaceX extends slump, AI expense concerns grow.
+最近 catalyst：与 Reflection AI 签 $6.3B compute 协议 — 市场把它读作 AI capex 包袱，而不是利好。
+<strong>建议</strong>：run <code>/explain-move SPCX</code> 做完整归因，并对照 2026-06-18 那条 attribution 看延续性。</p></div>
+<div class="callout warn"><p><strong>SU 5d <span class="down">-9.49%</span>, 30d <span class="down">-11.95%</span></strong> — 触发 5d 阈值。
+催化剂：USO <span class="down">-2.88%</span> 1d / <span class="down">-11.06%</span> 5d / <span class="down">-17.34%</span> 30d，美-伊谈判推进压低油价。
+价格 $55.76 vs MA50 $63.83 / MA200 $51.82 — 已跌穿短均线，靠近长均线支撑。
+PE_forward 10.65，估值便宜。<strong>建议</strong>：观察是否接近 H2 油价临界，必要时 explain-move + 重读 thesis。</p></div>
+<div class="callout info"><p><strong>DRAM / SK Hynix / TSM 三个 AI memory + foundry 名义涨幅都触发了 attribution 阈值（1d 或 5d）</strong>
+- SK Hynix 周一开盘续涨 <span class="up">+5.61%</span>，30d <span class="up">+76.5%</span> — HBM 超级周期 + 上市窗口（F-1 概率上修）。
+- DRAM ETF 30d <span class="up">+72.4%</span>，与 SK Hynix 走势完全同步。
+- TSM 5d <span class="up">+10.11%</span>，受益 AI 资本开支轮换；Cerebras 看涨为代理信号。
+<strong>建议</strong>：考虑给 SK Hynix / DRAM / TSM 中至少一只跑一次 explain-move，把 HBM 行情的认知固定下来；如果观点已稳，至少在 thesis.md 追一笔 stands &amp; updates。</p></div>
+<hr>
+<h3>Triggers status (focus group)</h3>
+<table class="compare"><thead><tr><th>Ticker</th><th>Price</th><th>Thesis-break</th><th>Buffer</th><th>Status</th></tr></thead><tbody><tr><td>NVDA</td><td>$208.97</td><td>$150</td><td>39%</td><td>safe</td></tr><tr><td>TSM</td><td>$466.80</td><td>$280</td><td>67%</td><td>safe</td></tr><tr><td>TSLA</td><td>$407.31</td><td>$250</td><td>63%</td><td>safe</td></tr><tr><td>DRAM</td><td>$80.24</td><td>—</td><td>—</td><td>no triggers file</td></tr><tr><td>SU</td><td>$55.76</td><td>(check)</td><td>—</td><td>re-read trigger candidate (oil cycle)</td></tr><tr><td>SPCX</td><td>$165.06</td><td>$130</td><td>21%</td><td>**WARN — within 25%**</td></tr></tbody></table>
+<hr>
+<h3>Policy &amp; macro pulse</h3>
+<div class="timeline"><div class="tl-item"><span class="when">7/29</span> — <span class="what">JPMorgan exec flags FOMC — Kevin Warsh as potential Fed Chair raises rate-hike odds</span></div><div class="tl-item"><span class="when">持续</span> — <span class="what">美-伊核谈判推进 → 油价压力（USO 30d <span class="down">-17%</span>）</span></div><div class="tl-item"><span class="when">持续</span> — <span class="what">AI capex 担忧扩散到 mega-cap tech — 直接打压 SPCX</span></div><div class="tl-item"><span class="when">6/19</span> — <span class="what">黄金 <span class="down">-10.96%</span> / 30d（DXY 走强 + 风险情绪转向）</span></div></div>
+<div class="callout warn"><p><strong>两个高影响信号</strong>：
+1. <strong>Fed 鹰派化</strong>（Warsh 接任传闻 + 半数委员预期 2026 加息）→ 利空高 duration 名字（SPCX 首当其冲，TSLA / NVDA 次之）。
+2. <strong>美-伊谈判推进</strong> → 油价持续下行 → SU / CVX / CNQ 短期压制；但若谈判破裂会反转。</p></div>
+<hr>
+<h3>What I'd act on (if anything)</h3>
+<ul>
+<li><strong>SPCX</strong> — 优先做 explain-move（<span class="down">-10.78%</span> 单日 + 距离 thesis-break 仅 21% + AI capex 叙事转坏）。Catalyst 多重叠加，需要把今天这一根写进 attribution 库以便未来对照锁定期前后的走势。</li>
+<li><strong>SK Hynix / DRAM 二选一</strong>做归因更新 — 30d <span class="up">+70%</span>+ 的行情需要在 thesis 里固化"赢家集中"判断，否则未来 HBM 周期回调时容易乱出手。</li>
+<li><strong>SU</strong> — 不急着动作，但记下 5d <span class="down">-9.49%</span> 是 oil-cycle re-read 候选；若油价进一步走弱到 USO 30d <span class="down">-25%</span> 量级，再触发完整 thesis 重读。</li>
+</ul>
+<hr>
+<p><em>Generated by <code>/morning</code> flow — 2026-06-22</em></p></div><div class="tab-panel" data-tab-for="tabs1-1"><p>两条 attribution 已落库：<strong>SPCX 暴跌 <span class="down">-10.78%</span></strong> 与 <strong>SK Hynix 续涨 <span class="up">+5.61%</span> (30d <span class="up">+76.5%</span>)</strong>。</p>
+<hr>
+<h3>SPCX · <span class="down">-10.78%</span> · ❌ extreme · confidence: HIGH</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">Price</div><div class="value">$165.06</div><div class="note"><span class="down"><span class="down">-10.78%</span></span> / 1d · <span class="up"><span class="up">+2.56%</span></span> / 5d</div></div><div class="kpi"><div class="label">Volume</div><div class="value">92.9M</div><div class="note">第三个连续下跌日</div></div><div class="kpi"><div class="label">Distance to thesis-break</div><div class="value">21%</div><div class="note">$130 (thesis-break)</div></div><div class="kpi"><div class="label">Distance to user prediction #1</div><div class="value"><span class="down"><span class="down">-17%</span></span></div><div class="note">下周目标 $200</div></div></div>
+<h4>直接归因（板块抛售，不是 idiosyncratic）</h4>
+<table class="compare"><thead><tr><th>驱动</th><th>当日 1d</th><th>性质</th></tr></thead><tbody><tr><td>GOOGL</td><td><span class="down"><span class="down">-6%</span></span></td><td>Jumper 离职去 Anthropic; AI capex 怀疑论</td></tr><tr><td>AMZN</td><td><span class="down"><span class="down">-4.8%</span></span></td><td>AI 资本开支担忧</td></tr><tr><td>MSFT</td><td><span class="down"><span class="down">-3%</span></span></td><td>同上</td></tr><tr><td>META</td><td><span class="down"><span class="down">-3%</span></span></td><td>同上</td></tr><tr><td>SPCX</td><td><span class="down"><span class="down">-10.78%</span></span></td><td>**高 duration 新 IPO + 同日 notes offering + Reflection AI deal 被误读**</td></tr><tr><td>MU</td><td><span class="up"><span class="up">+5.8%</span></span></td><td>&quot;收支票的一方&quot; — Anthropic 战略协议</td></tr></tbody></table>
+<div class="callout warn"><p><strong>三条叠加诱因，缺一不可：</strong>
+1. <strong>AI capex 怀疑论扩散到 mega-cap</strong> — 第一次系统性质疑 hyperscaler 投入产出比。SPCX 是最高 duration 的新 IPO，板块抛售里跌得最狠。
+2. <strong>Notes offering 同日宣布</strong> — 高估值时增发债券，信号是"估值已到极致，公司也要套现现金窗口"。
+3. <strong>Reflection AI deal 被市场误读</strong> — 这是 Colossus 闲置算力变现的 <strong>revenue stream</strong>（$150M/月，2029 到期 $6.3B），但与 notes offering 同日发布 + AI capex 负面叙事，市场没拆开来读。</p></div>
+<h4>与历史预测的交叉验证</h4>
+<div class="callout danger"><p><strong>用户 6/18 prediction #1</strong> "SPCX 在 6/22-6/26 内至少有一日收盘 ≥ $200" 已严重不利。
+今日 <span class="down">-17%</span> 距目标，需要从 $165 涨 <span class="up">+21%</span> 到 $200，剩 4 个交易日。<strong>大概率 fail。</strong>
+打分日 2026-06-26 — 7 天后系统会自动 verdict。</p></div>
+<h4>我的判断（inferred）</h4>
+<p>板块抛售给出了一次"看清各方真实位置"的压力测试：
+- <strong>SPCX 不是 idiosyncratic 利空</strong>，但它是高 duration 名字，对 AI capex 叙事最敏感 — 这意味着只要"AI 投入产出比"成为板块叙事，SPCX 会持续承压。
+- <strong>Notes offering 是关键警示信号</strong> — 公司在 IPO 后立即增发债券，本质上承认 IPO 现金不够撑接下来的 capex 周期。这对 thesis 是 incremental negative。
+- <strong>Reflection AI $150M/月是真实 revenue</strong>，但市场要花时间消化。如果之后报表显示 Colossus 月营收 &gt;$150M、毛利率正常，会成为多头反击的事实依据。</p>
+<hr>
+<h3>SK Hynix (000660.KS) · <span class="up">+5.61%</span> · ✅ extreme · confidence: HIGH</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">Price</div><div class="value">₩2,919,000</div><div class="note"><span class="up"><span class="up">+5.61%</span></span> / 1d · <span class="up"><span class="up">+27.6%</span></span> / 5d · <span class="up"><span class="up">+76.5%</span></span> / 30d</div></div><div class="kpi"><div class="label">Status</div><div class="value">52-week high</div><div class="note">$1.5T 市值</div></div><div class="kpi"><div class="label">Volume</div><div class="value">1.01x avg</div><div class="note">正常成交量的历史新高 — 健康</div></div></div>
+<h4>三层 HBM Winner 结构（核心发现）</h4>
+<table class="compare"><thead><tr><th>层级</th><th>标的</th><th>30d 涨幅</th><th>驱动</th></tr></thead><tbody><tr><td>🥇 顶级</td><td>SK Hynix</td><td><span class="up"><span class="up">+76.5%</span></span></td><td>NVIDIA HBM3E 独占 + HBM4 领跑</td></tr><tr><td>🥈 次级</td><td>MU</td><td><span class="up"><span class="up">+84.6%</span></span></td><td>Anthropic 战略协议；消费端切入</td></tr><tr><td>🥉 掉队</td><td>Samsung</td><td><span class="up"><span class="up">+32.9%</span></span></td><td>落后 SK Hynix 43 个百分点</td></tr><tr><td>ETF</td><td>DRAM</td><td><span class="up"><span class="up">+72.4%</span></span></td><td>自动权重，与 SK Hynix 同步</td></tr></tbody></table>
+<div class="callout ok"><p><strong>赢家集中度信号在加强</strong>：30d spread SK Hynix - Samsung 从一周前的 38 个点扩到 <strong>43 个点</strong>。市场正在把 HBM 周期定义为"有具体 winner 的子周期"，而不是"memory 整体周期"。</p></div>
+<h4>上市窗口判断</h4>
+<div class="timeline"><div class="tl-item"><span class="when">当下</span> — <span class="what">SK Hynix 52w-high, $1.5T 市值 — equity window 完全打开</span></div><div class="tl-item"><span class="when">6-8 周</span> — <span class="what">NYSE F-1 confidential filing 大概率公开 — 公司不会在 ATH 时套牢窗口</span></div><div class="tl-item"><span class="when">HBM4 yield 报道</span> — <span class="what">一旦出现, spread 可能快速收敛</span></div><div class="tl-item"><span class="when">Samsung 反超新闻</span> — <span class="what">同上, 触发 re-read</span></div></div>
+<h4>我的判断（inferred）</h4>
+<p>如果用户持有 DRAM ETF：
+- <strong>优点</strong>: 自动权重 SK Hynix（约 25-30%）+ Samsung（约 15%）+ MU + Hynix。30d <span class="up">+72%</span> 已经接近 SK Hynix 直接持仓。
+- <strong>缺点</strong>: Samsung 拖后腿 — 想吃 SK Hynix 全部 alpha，要直接持 000660.KS 或转 MU。</p>
+<p>判断不变：当前 HBM 行情是"赢家集中"，不是"全行业共涨"。持仓不宜分散到 Samsung。</p>
+<hr>
+<h3>What changed today</h3>
+<div class="verdict watch">SPCX: 板块抛售 + Notes offering 叠加 — 距 thesis-break 仅 21%, 用户 prediction #1 大概率 fail
+SK Hynix / HBM: 赢家集中度从 38 点 → 43 点, F-1 上市窗口越来越确定</div>
+<hr>
+<p><em>Generated by <code>/explain-move</code> flow — 2026-06-22</em></p></div><div class="tab-panel" data-tab-for="tabs1-2"><h3>一句话定调</h3>
+<div class="callout danger"><p><strong>今天市场第一次清晰地"二分"了 AI 产业链</strong> — 上游（HBM / chips）历史新高，下游（hyperscaler）连续 derating。
+板块共识从"AI = 大家一起涨"切换到"AI = 谁在赚钱、谁在烧钱"。
+这是一个 narrative shift，不是单日 noise。</p></div>
+<hr>
+<h3>I. 今天到底发生了什么</h3>
+<table class="compare"><thead><tr><th>分类</th><th>代表</th><th>1D</th><th>30D</th><th>市场定性</th></tr></thead><tbody><tr><td>&quot;Writing the checks&quot;</td><td>GOOGL</td><td><span class="down"><span class="down">-5.68%</span></span></td><td><span class="down"><span class="down">-12.73%</span></span></td><td>烧钱方</td></tr><tr><td>&quot;Writing the checks&quot;</td><td>AMZN</td><td><span class="down"><span class="down">-4.45%</span></span></td><td><span class="down"><span class="down">-13.88%</span></span></td><td>烧钱方</td></tr><tr><td>&quot;Writing the checks&quot;</td><td>MSFT</td><td><span class="down"><span class="down">-2.69%</span></span></td><td><span class="down"><span class="down">-12.07%</span></span></td><td>烧钱方</td></tr><tr><td>&quot;Writing the checks&quot;</td><td>META</td><td><span class="down"><span class="down">-2.44%</span></span></td><td><span class="down"><span class="down">-8.62%</span></span></td><td>烧钱方</td></tr><tr><td>&quot;Receiving checks&quot;</td><td>NVDA</td><td><span class="down"><span class="down">-0.91%</span></span></td><td><span class="down"><span class="down">-1.18%</span></span></td><td>收钱方（横盘）</td></tr><tr><td>&quot;Receiving checks&quot;</td><td>AVGO</td><td><span class="down"><span class="down">-3.76%</span></span></td><td><span class="down"><span class="down">-4.04%</span></span></td><td>收钱方（轻微回调）</td></tr><tr><td>&quot;Receiving checks&quot;</td><td>AMD</td><td><span class="up"><span class="up">+1.26%</span></span></td><td>**<span class="up"><span class="up">+33.22%</span></span>**</td><td>收钱方</td></tr><tr><td>&quot;Receiving checks&quot;</td><td>MRVL</td><td><span class="down"><span class="down">-1.54%</span></span></td><td>**<span class="up"><span class="up">+91.11%</span></span>**</td><td>收钱方</td></tr><tr><td>Memory layer</td><td>SK Hynix</td><td><span class="up"><span class="up">+5.61%</span></span></td><td>**<span class="up"><span class="up">+76.51%</span></span>**</td><td>收钱方</td></tr><tr><td>Memory layer</td><td>MU</td><td><span class="up"><span class="up">+5.26%</span></span></td><td>**<span class="up"><span class="up">+84.6%</span></span>**</td><td>收钱方</td></tr><tr><td>Memory layer</td><td>DRAM ETF</td><td><span class="up"><span class="up">+4.60%</span></span></td><td>**<span class="up"><span class="up">+72.40%</span></span>**</td><td>收钱方</td></tr><tr><td>Consumer hedge</td><td>AAPL</td><td><span class="up"><span class="up">+0.51%</span></span></td><td><span class="up"><span class="up">+4.31%</span></span></td><td>中立</td></tr></tbody></table>
+<p><strong>"收支票" vs "开支票"</strong> —— 这是 Aptus Capital 的 David Wagner 今天给出的原话，也是市场新共识。</p>
+<hr>
+<h3>II. 触发点（为什么是今天，不是昨天）</h3>
+<div class="timeline"><div class="tl-item"><span class="when">6/19 周五</span> — <span class="what">半数 FOMC 委员预期 2026 加息 → 高 duration 资产受压</span></div><div class="tl-item"><span class="when">6/22 周一</span> — <span class="what">John Jumper（AlphaFold 诺奖得主）从 Google DeepMind 跳槽 Anthropic</span></div><div class="tl-item"><span class="when">6/22 周一</span> — <span class="what">SpaceX 与 Reflection AI 签 $6.3B/2029 compute 协议（被读作 capex 负担）</span></div><div class="tl-item"><span class="when">6/22 周一</span> — <span class="what">SpaceX 同日宣布 notes offering（债券增发 → 稀释信号）</span></div><div class="tl-item"><span class="when">6/22 周一</span> — <span class="what">Micron + Anthropic 战略协议公告 → 加强&quot;上游赢家&quot;叙事</span></div><div class="tl-item"><span class="when">6/22 周一</span> — <span class="what">Alphabet 单日蒸发 $256B 市值（May 2025 以来最大跌幅）</span></div></div>
+<p><strong>三层叠加诱因：</strong></p>
+<ol>
+<li>
+<p><strong>微观（公司）</strong> — Jumper 离开 Google 去 Anthropic。市场把它读作"Google 的 AI 人才优势在被 Anthropic 系吸走"。GOOGL 单日 <span class="down">-5.68%</span> 不是没有原因的 idiosyncratic。</p>
+</li>
+<li>
+<p><strong>板块（行业）</strong> — Hyperscaler 投入 vs 产出比的怀疑论在 mega-cap 内部扩散。Wagner 原话："hyperscalers 已经投了几十亿，但 AI 产品产生的 return 还无法 justify 这种投入水平"。这是第一次有主流声音说 <em>justify</em> 这两个字。</p>
+</li>
+<li>
+<p><strong>宏观（利率）</strong> — Fed 鹰派化（半数委员预期 2026 加息 + Warsh 接任传闻）→ 提高 hyperscaler 的折现率，更不利于"远期 ROI 假说"。</p>
+</li>
+</ol>
+<hr>
+<h3>III. 核心问题：Hyperscaler 在烧多少钱</h3>
+<p>虽然今天的文章没给数字，但行业共识级别的 2026 AI capex（数据来自之前的财报指引，标 <em>approx</em>）：</p>
+<table class="compare"><thead><tr><th>Company</th><th>2026 Capex Guide</th><th>YoY</th><th>主要去向</th></tr></thead><tbody><tr><td>MSFT</td><td>~$110B</td><td><span class="up"><span class="up">+25%</span></span></td><td>Azure GPU / OpenAI infra</td></tr><tr><td>GOOGL</td><td>~$95B</td><td><span class="up"><span class="up">+20%</span></span></td><td>TPU + GPU + DC</td></tr><tr><td>AMZN</td><td>~$120B</td><td><span class="up"><span class="up">+30%</span></span></td><td>AWS Trainium + NVDA GPU</td></tr><tr><td>META</td><td>~$90B</td><td><span class="up"><span class="up">+50%</span></span></td><td>自研 + NVDA / AMD</td></tr><tr><td>合计</td><td>**~$415B**</td><td>—</td><td>占四家自由现金流的 60-70%</td></tr></tbody></table>
+<p><strong>为什么市场现在才"突然"怀疑？</strong></p>
+<ul>
+<li>之前的板块假设：AI capex → 未来 AI revenue（chatGPT 类应用爆发） → 估值合理</li>
+<li>现实证据：</li>
+<li>ChatGPT 收入扩张快，但 <strong>它的收入流向 OpenAI / Anthropic，不是 hyperscaler</strong></li>
+<li>Hyperscaler 的"AI 自有产品"（Bedrock / Vertex / Copilot）收入贡献远小于 capex</li>
+<li><strong>Capex 转折旧周期 4-6 年</strong> —— 即使明天就停止投入，未来 4 年的财务报表都要承担每年 ~$80B 的折旧吞噬 OPEX</li>
+<li>市场情绪转折点：今天三件事叠加（人才流失 + 没有 ROI 数据 + Fed 鹰派化），让"<em>justify</em>"这个词第一次冒头。</li>
+</ul>
+<div class="callout warn"><p><strong>关键洞察</strong>：这不是说 AI 错了，而是说"AI 应用层赚钱的人 ≠ 上游 / 中游"。
+- OpenAI / Anthropic 是赢家（但没上市）
+- NVDA / TSM / SK Hynix / MU 是赢家（已经反映在股价里）
+- <strong>Hyperscaler 是中间商，可能既不是 winner 也不是 loser</strong> — 它们烧的钱让 AI 革命发生，但自己未必能 capture 大部分 value</p></div>
+<hr>
+<h3>IV. 对上游的影响 —— HBM / NVDA / 半导体</h3>
+<h4>短期（0-6 个月）：上游受益于"已下订单不会取消"</h4>
+<div class="callout ok"><p><strong>HBM 周期 in-flight 的订单是稳的</strong>。SK Hynix HBM3E NVIDIA 独占 + HBM4 领跑 — 这些产能是 <strong>已经 booked 到 2027 年的合同</strong>，不会因为今天的 narrative shift 就被取消。
+所以 SK Hynix 30d <span class="up">+76.5%</span>、MU 30d <span class="up">+85%</span>、MRVL 30d <span class="up">+91%</span> 还会持续到 2026 Q4 财报季。</p></div>
+<p><strong>机制</strong>：
+- Hyperscaler 已经签的合同有 take-or-pay 条款
+- HBM 产能瓶颈实际上有 18-24 个月的可见度
+- 即使 hyperscaler 想砍订单，最早也要等 2027 年的合同重谈</p>
+<h4>中期（6-12 个月）：分水岭 — 看 Q2/Q3 hyperscaler 财报</h4>
+<div class="callout warn"><p><strong>真正的风险窗口是接下来两个财报季</strong>。
+如果有任何一家（最可能是 META 或 AMZN）下调 2027 capex guidance —— <strong>上游会被波及，HBM cycle 会被市场打折扣</strong>。</p></div>
+<p><strong>关键监控</strong>：
+- META 2026 Q2 财报（约 7 月底）：扎克伯格在自研 vs 外购上的口风
+- AMZN 2026 Q2 财报（约 7 月底）：AWS Trainium ramp 进度（如果加速，NVDA 订单可能减）
+- MSFT / GOOGL 同期：是否第一次给"AI revenue contribution"具体数字</p>
+<p>如果有人减 capex：
+- NVDA 首当其冲（数据中心收入直接挂钩）
+- TSM 次之（NVDA 的代工方）
+- HBM 链条受影响但有 lag（已下订单 → 但新订单减少 → 6-12 个月后体现）</p>
+<h4>长期（12-24 个月）：两种情景</h4>
+<div class="scenarios"><div class="scenario"><div class="name bull">Bull</div><div class="bar-wrap"><div class="bar bull" style="width:0%">0%</div></div><div class="target">AI revenue 大爆发</div><div class="desc">Agentic AI / coding AI 成为主流 → hyperscaler 自有产品 ARPU 起来 → 整个 cycle 重启 → HBM 维持 high run-rate → 半导体周期延长到 2028</div></div><div class="scenario"><div class="name base">Base</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">Capex 微调 + 上游分化</div><div class="desc">Hyperscaler 收紧但不砍 capex → 上游 SK Hynix / MU / MRVL 维持 high water mark → 但 NVDA 增速放缓 → 板块从&quot;通涨&quot;切换到&quot;挑赢家&quot;</div></div><div class="scenario"><div class="name bear">Bear</div><div class="bar-wrap"><div class="bar bear" style="width:0%">0%</div></div><div class="target">Capex cut 一波</div><div class="desc">一家 hyperscaler 公开减投入 → 触发板块抛售 → NVDA <span class="down">-20%</span> / HBM 链条 <span class="down">-30%</span> / 半导体周期回调 2-3 个季度</div></div></div>
+<hr>
+<h3>V. 关键判断 —— 当前持仓含义</h3>
+<div class="meters"><div class="meter"><div class="name">持仓 NVDA 风险</div><div class="track"><div class="fill mid" style="width:60%"></div></div><div class="score">6/10</div><div class="note">已经横盘 30d，市场把它当 AI 板块代理。最大风险 = hyperscaler capex guidance cut。下次催化剂是 2026 Q3 财报（约 11 月）。</div></div><div class="meter"><div class="name">持仓 TSM 风险</div><div class="track"><div class="fill mid" style="width:40%"></div></div><div class="score">4/10</div><div class="note">受益 in-flight 订单，TSMC 与 NVIDIA 绑定深；台海地缘风险高于 capex 风险。</div></div><div class="meter"><div class="name">持仓 DRAM 风险</div><div class="track"><div class="fill low" style="width:30%"></div></div><div class="score">3/10</div><div class="note">HBM 赢家集中（SK Hynix）+ 已订单 take-or-pay。30d <span class="up">+72%</span> 跑赢 NVDA 70 点。</div></div><div class="meter"><div class="name">持仓 SPCX 风险</div><div class="track"><div class="fill high" style="width:90%"></div></div><div class="score">9/10</div><div class="note">高 duration + AI capex 叙事直接关联 + lockup 12/9 + 距 thesis-break 21%。今日就在第一道闸口。</div></div></div>
+<div class="callout info"><p><strong>最不被市场看到的赢家</strong>: MRVL 30d <span class="up">+91%</span>, MU 30d <span class="up">+85%</span>, SK Hynix 30d <span class="up">+77%</span>。
+这三个都是"上游里第二梯队"，但 30d 涨幅都超过 NVDA。
+说明：当板块共识从"AI 通涨"切换到"挑赢家"时，<strong>最大 alpha 不在 NVDA 自己，在 NVDA 上游的 supplier chain</strong>。</p></div>
+<hr>
+<h3>VI. 未来 30-60 天该看什么</h3>
+<div class="timeline"><div class="tl-item"><span class="when">7 月底</span> — <span class="what">META / AMZN Q2 财报 — capex guidance 是否调整？</span></div><div class="tl-item"><span class="when">8 月初</span> — <span class="what">GOOGL / MSFT Q2 财报 — AI revenue contribution 第一次给数字？</span></div><div class="tl-item"><span class="when">8 月底</span> — <span class="what">NVDA Q2 财报 — hyperscaler 订单 visibility 报告</span></div><div class="tl-item"><span class="when">持续</span> — <span class="what">任何 hyperscaler 高管首次说&quot;我们要 review AI 投入&quot;</span></div><div class="tl-item"><span class="when">持续</span> — <span class="what">OpenAI / Anthropic 估值变化（IPO 传闻、二级市场报价）</span></div><div class="tl-item"><span class="when">关键</span> — <span class="what">任何 hyperscaler 砍 capex guidance ≥ 10% → 全板块 re-rate</span></div></div>
+<div class="callout danger"><p><strong>Trip wire</strong>：如果 NVDA 单日跌幅 ≥ 3% 在没有公司特定坏消息的情况下，说明市场开始打破"已下订单不会变"的假设。这是上游周期回调的第一警讯，应该立即触发完整 thesis 重读。</p></div>
+<hr>
+<h3>VII. 我的总判断</h3>
+<div class="verdict watch">**这是 narrative shift，不是 noise**。市场从&quot;AI 是单一 trade&quot;切换到&quot;AI 链上分赢家 / 输家 / 中间商&quot;。
+- 短期：上游（HBM/chip）继续跑赢，下游（hyperscaler）继续 derate。
+- 中期：等 Q2/Q3 看 hyperscaler 是否真的减 capex。
+- 长期：取决于 OpenAI/Anthropic 之外，hyperscaler 能否找到 AI 自有 revenue。
+
+**操作含义**：
+1. 上游持仓（NVDA / TSM / DRAM）短期可继续持有，但要盯紧 NVDA 是否跟跌 — 那是上游周期第一警讯。
+2. 不要追 hyperscaler — derate 周期才刚开始。
+3. SPCX 是这一波 narrative shift 的最大受害者（高 duration + AI capex 标签），应单独管理风险。</div>
+<hr>
+<p><em>Generated by /explain-move expanded analysis — 2026-06-22</em></p></div><div class="tab-panel" data-tab-for="tabs1-3"><h3>TL;DR</h3>
+<div class="callout info"><p><strong>三只名字在新的"赢家集中"二分法下不在同一侧。</strong>
+- MRVL · 上游赢家最纯粹的代理 (30d <span class="up">+91%</span>, AWS Trainium + 光互联)
+- AVGO · 中段, custom ASIC 设计方, 但同日 <span class="down">-3.76%</span> 说明市场也开始挑剔
+- NOK · 真正的 outlier, AI 标签只占小部分, 主体是 5G + 国防 + 专利, narrative shift 的影响最小</p></div>
+<table class="compare"><thead><tr><th>Ticker</th><th>1D</th><th>5D</th><th>30D</th><th>52w range</th><th>PE_fwd</th><th>在 AI capex narrative 中的位置</th></tr></thead><tbody><tr><td>MRVL</td><td><span class="down"><span class="down">-1.48%</span></span></td><td><span class="up"><span class="up">+9.40%</span></span></td><td>**<span class="up"><span class="up">+91.23%</span></span>**</td><td>$61–$330</td><td>49.6×</td><td>最纯粹的 &quot;AI 上游 alpha&quot;</td></tr><tr><td>AVGO</td><td><span class="down"><span class="down">-3.76%</span></span></td><td><span class="up"><span class="up">+3.82%</span></span></td><td><span class="down"><span class="down">-3.85%</span></span></td><td>$246–$495</td><td>20.5×</td><td>&quot;收支票的&quot;，但同日跟跌说明溢价被挤压</td></tr><tr><td>NOK</td><td><span class="up"><span class="up">+6.23%</span></span></td><td><span class="down"><span class="down">-3.18%</span></span></td><td><span class="up"><span class="up">+16.03%</span></span></td><td>$4.00–$17.45</td><td>29.4×</td><td>半个 AI 外延，narrative 几乎不动</td></tr></tbody></table>
+<hr>
+<h3>I. MRVL · 上游 alpha 的纯粹代理（30d <span class="up">+91%</span>）</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">Price</div><div class="value">$305.99</div><div class="note"><span class="down"><span class="down">-1.48%</span></span> / 1d · <span class="up"><span class="up">+9.40%</span></span> / 5d</div></div><div class="kpi"><div class="label">30D</div><div class="value"><span class="up"><span class="up">+91.23%</span></span></div><div class="note">板块最强之一</div></div><div class="kpi"><div class="label">PE_fwd</div><div class="value">49.6×</div><div class="note">高估值已 priced in 高速增长</div></div><div class="kpi"><div class="label">MA50</div><div class="value">$202</div><div class="note">MA200 $114 — 经典加速上行</div></div></div>
+<h4>为什么 30d <span class="up">+91%</span></h4>
+<p>三条催化叠加：
+1. <strong>AWS Trainium 外卖</strong> — 6 月公布 Amazon 计划把 Trainium 卖给外部客户。MRVL 是 Trainium 的主设计/供应伙伴，等于把内部用量 + 外卖增量都吃下。
+2. <strong>TSMC 1.4nm 合作</strong> — 锁住下一代领先制程，技术路线确定性大幅提高。
+3. <strong>S&amp;P 500 纳入</strong> — 被动资金强制买入，机械催化。
+4. <strong>Teralynx T100 (102.4 Tbps)</strong> — AI 数据中心交换机的新一代旗舰，落座 AI cluster networking 赛道。</p>
+<h4>在 AI capex narrative 下的位置</h4>
+<div class="callout ok"><p><strong>MRVL 是今天叙事的最大受益者</strong>。
+- "收支票方"中最纯粹的代理 — 客户是 AWS（hyperscaler），但 AWS 的 capex 不论怎么收紧，Trainium 是定向 AI 投资，不会先砍。
+- 光互联是 AI cluster 物理瓶颈 — 100K+ GPU cluster 必须用 silicon photonics，这一段没替代品。
+- "Forget NVIDIA: Four Billionaires" 标题里的 chip stock 很可能是 AVGO 或 MRVL — 都是 NVDA 的替代代理。</p></div>
+<h4>但是…估值已经吃透了 base case</h4>
+<div class="scenarios"><div class="scenario"><div class="name bull">Bull</div><div class="bar-wrap"><div class="bar bull" style="width:0%">0%</div></div><div class="target">外卖 Trainium 起量 + 光互联跨 hyperscaler</div><div class="desc">$420+</div></div><div class="scenario"><div class="name base">Base</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">AWS 单一锚定客户 + 光互联 50% CAGR + 指数纳入</div><div class="desc">$330–350</div></div><div class="scenario"><div class="name bear">Bear</div><div class="bar-wrap"><div class="bar bear" style="width:0%">0%</div></div><div class="target">AWS in-house 设计份额下降 + 光互联商品化</div><div class="desc">$180-</div></div></div>
+<ul>
+<li><strong>Reverse-DCF 隐含</strong>: 当前 $306 价格已经 priced in 未来 3 年 <strong>40-50% 收入 CAGR + 营业利润率从 20% 扩张到 35%+</strong>。这是高度 demanding 的执行假设。</li>
+<li><strong>客户集中度风险</strong>: AWS 是头号客户，比 AVGO 集中度高得多 — AWS 若 in-house Trainium 设计份额，对 MRVL 是 <span class="down">-30%</span> 级别冲击。</li>
+<li><strong>Trip wire</strong>: 2026-08-27 Q2 财报，第一次披露 custom AI revenue 分项；若增速 &lt;60% YoY，估值难撑。</li>
+</ul>
+<div class="callout warn"><p><strong>判断</strong>: MRVL 是 narrative shift 的最大赢家，但 30d <span class="up">+91%</span> 后估值不便宜，进一步上行需要 Q2 财报 deliver；不要在此时追入，但已持仓不应卖。</p></div>
+<hr>
+<h3>II. AVGO · 中段，custom ASIC 设计方（30d <span class="down">-3.85%</span>）</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">Price</div><div class="value">$396.67</div><div class="note"><span class="down"><span class="down">-3.76%</span></span> / 1d</div></div><div class="kpi"><div class="label">30D</div><div class="value"><span class="down"><span class="down">-3.85%</span></span></div><div class="note">与 hyperscaler 同步回调</div></div><div class="kpi"><div class="label">PE_fwd</div><div class="value">20.5×</div><div class="note">估值仍合理</div></div><div class="kpi"><div class="label">MA50</div><div class="value">$412</div><div class="note">MA200 $360 — 短期跌穿但长期向上</div></div></div>
+<h4>为什么今天 <span class="down">-3.76%</span></h4>
+<p><strong>和 MRVL 同业、和 NVDA 同板块，但今天 AVGO 跟着 hyperscaler 跌而不是上游涨</strong>。这是一个值得分析的"分裂信号"：</p>
+<div class="callout warn"><p>AVGO 的 XPU 客户是 <strong>Google (TPU) + Meta (MTIA)</strong>，两个被点名"开支票方"的 hyperscaler。
+- 如果 GOOGL / META 真的减 AI capex，<strong>AVGO 第一个被影响</strong>（不是 NVDA，因为 NVDA 多元化更高）
+- 同日 <span class="down">-3.76%</span> 是市场给 AVGO 的"风险贴现" — 投资者开始担心 Google / Meta 的 capex 韧性
+- AVGO 在客户结构上比 MRVL 看似分散（多个 hyperscaler），但其客户都是今天被怀疑的那一组</p></div>
+<h4>但 AVGO 有 MRVL 没有的护城河</h4>
+<ol>
+<li><strong>VMware 现金奶牛</strong> — $61B 收购带来的稳定订阅收入，2026 FCF ~$20-25B/年。即使 AI capex 减速，VMware 部分照常运转。</li>
+<li><strong>以太网交换 ASIC (Tomahawk / Trident)</strong> — AI cluster 网络层的事实标准。即使 hyperscaler 减 GPU 采购，cluster 仍要建网络。</li>
+<li><strong>历史多元化</strong> — Wi-Fi、宽带、storage 等业务依然贡献，不是纯 AI 单点。</li>
+</ol>
+<h4>在 AI capex narrative 下的位置</h4>
+<div class="scenarios"><div class="scenario"><div class="name bull">Bull</div><div class="bar-wrap"><div class="bar bull" style="width:0%">0%</div></div><div class="target">Google + Meta XPU 项目继续扩张 + 以太网继续抢占 InfiniBand 份额</div><div class="desc">$600+</div></div><div class="scenario"><div class="name base">Base</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">XPU 收入 40%+ 复合 + VMware churn 受控</div><div class="desc">$480</div></div><div class="scenario"><div class="name bear">Bear</div><div class="bar-wrap"><div class="bar bear" style="width:0%">0%</div></div><div class="target">Google 或 Meta 把 XPU 设计内部化 / 大幅减 AI capex</div><div class="desc">$280-</div></div></div>
+<div class="callout warn"><p><strong>AVGO 的关键风险窗口和上游一致 — 7-8 月 Q2 财报</strong>。
+具体看：META 是否调整 Reality Labs / AI capex；GOOGL 是否第一次披露 TPU 收入占 capex 比例。
+两家任一减速 → AVGO 比 MRVL 更先受影响。</p></div>
+<div class="callout ok"><p><strong>操作含义</strong>: AVGO 在 <span class="down">-3.76%</span> 之后 forward P/E 20.5×，已经不贵 — 长期仍是 base case 持有的好标的。但短期等 Q2 财报后再加仓。</p></div>
+<hr>
+<h3>III. NOK · 真正的 outlier（30d <span class="up">+16%</span>）</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">Price</div><div class="value">$14.33</div><div class="note"><span class="up"><span class="up">+6.23%</span></span> / 1d</div></div><div class="kpi"><div class="label">30D</div><div class="value"><span class="up"><span class="up">+16.03%</span></span></div><div class="note">但 5d <span class="down"><span class="down">-3.18%</span></span> — 今天单日反弹</div></div><div class="kpi"><div class="label">PE_fwd</div><div class="value">29.4×</div><div class="note">主要靠 5G + 国防, 非 AI</div></div><div class="kpi"><div class="label">52w range</div><div class="value">$4.00–$17.45</div><div class="note">已经从底部翻 <span class="up"><span class="up">+257%</span></span></div></div></div>
+<h4>为什么 NOK 在今天反向 <span class="up">+6.23%</span></h4>
+<div class="callout info"><p><strong>NOK 不在 AI capex narrative 的两侧</strong> — 它的主体业务是 5G + 国防 + 专利, AI 仅是边缘标签。
+- 6/22 <span class="up">+6.23%</span> 单日: 一篇 Simply Wall St 文章 "after 173% year gain" — 1 年涨幅 <span class="up">+173%</span> 触发回顾性 momentum 文章，刺激买盘
+- 也有 quantum computing 题材的"short seller 列表"覆盖 — 这是题材热而非业绩
+- 板块抛售时 NOK 反而买点突显: 不烧 AI capex, 不靠 hyperscaler 订单</p></div>
+<h4>NOK 与本次 narrative 的弱关联</h4>
+<p>NOK 的 AI 关联只在一个角落：
+- <strong>2026-06 月公布</strong>: 美国宾州 photonic chip facility $30M 扩产, 明确写"AI-native networks"
+- <strong>光互联</strong> (7750 SR 系列) 在 hyperscaler fabric 里部署
+- 但 ↑ 这一块在 NOK 总收入里占比 &lt; 15%</p>
+<p><strong>剩下 85%</strong>:
+- Mobile Networks (5G RAN)：与 Ericsson / Huawei 缠斗，是传统电信 capex 周期
+- Nokia Defense (Banshee 5G 军用网络) — 欧洲国防开支重启的纯利
+- Nokia Technologies (专利授权) — 永续现金流</p>
+<h4>在 AI capex narrative 下的位置</h4>
+<div class="scenarios"><div class="scenario"><div class="name bull">Bull</div><div class="bar-wrap"><div class="bar bull" style="width:0%">0%</div></div><div class="target">光网络 AI 数据中心业务 2028 扩到 $5B+ + 5G 稳定 + 营业利润率扩到 12-14%</div><div class="desc">$20+</div></div><div class="scenario"><div class="name base">Base</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">4-6% 收入 CAGR + 光数据中心慢慢起量 + 营业利润率回到 10-12%</div><div class="desc">$16</div></div><div class="scenario"><div class="name bear">Bear</div><div class="bar-wrap"><div class="bar bear" style="width:0%">0%</div></div><div class="target">5G capex 持续下行 + 北美 + 印度差 + Ericsson 持续跑赢</div><div class="desc">$8-9</div></div></div>
+<div class="callout danger"><p><strong>关键警示</strong>: NOK 已经从 $4 翻到 $17，re-rate 大部分发生过了。
+当前 $14.33 距 52w high $17.45 只剩 22%，下行空间到 base case $16 反而靠近。
+PE_fwd 29× 不便宜 — 这不是一个还在 "discovery" 阶段的便宜票。</p></div>
+<div class="callout warn"><p><strong>核心判断</strong>: 
+- 如果你买 NOK 是为了 AI 敞口, <strong>错位</strong> — AVGO / MRVL / DRAM 更直接。
+- 如果你买 NOK 是为了 "防御性 + 5G + 国防 + 专利" 组合, <strong>合理</strong> — 但要承认它已经反映了多数好消息。
+- AI capex narrative shift 对 NOK 几乎不传导, 这正是它的优势 (decorrelation) 也是它的劣势 (没有上游 alpha)。</p></div>
+<hr>
+<h3>IV. 三只放在一起的相对价值判断</h3>
+<div class="meters"><div class="meter"><div class="name">MRVL 上行空间 (12m)</div><div class="track"><div class="fill mid" style="width:50%"></div></div><div class="score">5/10</div><div class="note">估值已透支 base case，看 Q2 财报；alpha 最大但不便宜</div></div><div class="meter"><div class="name">AVGO 上行空间 (12m)</div><div class="track"><div class="fill high" style="width:70%"></div></div><div class="score">7/10</div><div class="note">Forward PE 20×, 估值合理；客户结构 = Google+Meta 风险点</div></div><div class="meter"><div class="name">NOK 上行空间 (12m)</div><div class="track"><div class="fill mid" style="width:40%"></div></div><div class="score">4/10</div><div class="note">re-rate 大部分完成；防御性优势 + AI 敞口最弱</div></div></div>
+<table class="compare"><thead><tr><th>角度</th><th>MRVL</th><th>AVGO</th><th>NOK</th></tr></thead><tbody><tr><td>AI 敞口</td><td>极纯 (AWS + 光互联)</td><td>中等 (XPU + 网络)</td><td>边缘 (光互联 &lt;15% 收入)</td></tr><tr><td>narrative shift 受益度</td><td>最大</td><td>中等 (但被客户结构拉低)</td><td>几乎无</td></tr><tr><td>30d 涨幅</td><td><span class="up"><span class="up">+91%</span></span></td><td><span class="down"><span class="down">-4%</span></span></td><td><span class="up"><span class="up">+16%</span></span></td></tr><tr><td>当前估值</td><td>透支 base case</td><td>合理</td><td>re-rate 已完成</td></tr><tr><td>最大风险</td><td>AWS in-house Trainium</td><td>Google/Meta 减 capex</td><td>5G 周期 + Ericsson 竞争</td></tr><tr><td>最佳介入时机</td><td>Q2 财报后回踩</td><td>现在已是介入窗口</td><td>不建议追入</td></tr></tbody></table>
+<hr>
+<h3>V. 在你持仓里的具体建议</h3>
+<div class="verdict watch">**MRVL** — 短期持有, 不追入; Q2 财报 (8/27) 是关键
+**AVGO** — 现价合理, 可考虑分批加仓; 关键 trip wire = Google/Meta Q2 capex 指引
+**NOK** — 防御性配置 OK, 但不要把它当 AI 敞口的代理; 上行空间小, 下行有限</div>
+<div class="callout danger"><p><strong>最大盲点 (要主动监控)</strong>:
+1. 如果 GOOGL 或 META 在 Q2 财报中减 2027 capex guidance → AVGO 先受冲击 (<span class="down">-15%</span> 级别)
+2. 如果 AWS 公布 Trainium in-house 设计比例提高 → MRVL 直接 <span class="down">-25%</span> 级别
+3. 如果 5G 印度 / 北美 capex 数据走弱 → NOK 跌回 $10-12, 但跌幅相对 AVGO / MRVL 小得多</p></div>
+<div class="callout ok"><p><strong>洞察</strong>: 三只放一起看, 真正"narrative-proof"的反而是 NOK — 它没有上行 alpha, 但 也没有 AI capex 怀疑论的下行风险。
+当前 narrative 的"赢家集中"行情可能在 Q3 见顶 (8月底所有大公司财报披露完之后); 那时候 NOK 这种 decorrelated 持仓的相对吸引力会上升。</p></div>
+<hr>
+<p><em>Generated by /explain-move expanded — 2026-06-22</em></p></div></div>
+</body>
+</html>

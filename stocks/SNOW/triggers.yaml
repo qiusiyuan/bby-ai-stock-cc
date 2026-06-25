@@ -1,0 +1,10 @@
+thesis_break_price: 155
+kill_conditions:
+  - "Product revenue growth decelerates to below 20% for two consecutive quarters without acceleration narrative"
+  - "NRR falls below 115% (customers contracting, not expanding)"
+  - "A major Fortune 500 customer publicly migrates from Snowflake to Databricks or hyperscaler native tool"
+re_read_triggers:
+  - "Stock down >15% on no obvious news"
+  - "Missed quarter (revenue or EPS)"
+  - "Ramaswamy departure or major leadership change before AI pivot is proven"
+  - "Cortex AI / agentic workloads fail to register as material revenue by end-FY2027"

@@ -1,0 +1,10 @@
+thesis_break_price: 30  # bear-case fair value at $50 WTI; re-read or consider exit below this
+kill_conditions:
+  - "WTI falls below $50 and stays there for two consecutive quarters with no OPEC production cut response"
+  - "Canada introduces production caps on oil sands or materially raises royalty rates"
+  - "Management announces a large (>$5B) acquisition outside the Athabasca basin at cycle-high prices"
+re_read_triggers:
+  - "Stock down >15% on no obvious WTI catalyst"
+  - "Missed quarter (FCF or production guidance miss)"
+  - "WCS differential widens to $20+/bbl for more than 30 days"
+  - "Dividend growth rate falls below 10% annual increase (was 24 consecutive years of growth)"

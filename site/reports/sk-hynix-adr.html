@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SK Hynix ADR 总结</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-06-24 11:54</div>
+<h1 id="sk-hynix-294b-nasdaq-adr">SK Hynix $29.4B Nasdaq ADR — 总结</h1>
+<blockquote>
+<p>我们讨论过的所有关于这个 ADR 的事，浓缩在一页。其他不变。</p>
+</blockquote>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><div class="tabs"><label class="tab-label" for="tabs1-0">是什么</label><label class="tab-label" for="tabs1-1">时间表</label><label class="tab-label" for="tabs1-2">韩国侧反应（截至 6/24 周三韩股收盘）</label><label class="tab-label" for="tabs1-3">对体量的判断</label><label class="tab-label" for="tabs1-4">真正的冲击在哪里</label><label class="tab-label" for="tabs1-5">历史镜像 — 类似规模 ADR / 增发后表现</label><label class="tab-label" for="tabs1-6">我的判断和动作</label></div><div class="tab-panel" data-tab-for="tabs1-0"><div class="kpi-grid"><div class="kpi"><div class="label">事件</div><div class="value">$29.4B Nasdaq ADR</div><div class="note">史上最大 ADR（超过阿里 2014 的 $25B）</div></div><div class="kpi"><div class="label">不是 IPO</div><div class="value">SK Hynix 1996 KOSPI 上市 30 年了</div><div class="note">这次是「二次上市 + 增发新股」</div></div><div class="kpi"><div class="label">增发用途</div><div class="value">EUV 光刻机 + AI 内存产能</div><div class="note">长期 HBM4 capex 弹药</div></div><div class="kpi"><div class="label">当前市值</div><div class="value">~$400B</div><div class="note">增发 / 市值 = 7.4%（中等偏大，可消化）</div></div><div class="kpi"><div class="label">股数稀释</div><div class="value">~10-11%</div><div class="note">短期 EPS 下降，2-3 年后产能上来再回升</div></div></div></div><div class="tab-panel" data-tab-for="tabs1-1"><div class="timeline"><div class="tl-item"><span class="when">2026-06-24 (今天)</span> — <span class="what">F-1 备案 SEC + 公告</span></div><div class="tl-item"><span class="when">2026-06-25 → 07-09</span> — <span class="what">价格发现期 — 路演 + 簿记；盯 000660.KS 韩股走势</span></div><div class="tl-item"><span class="when">2026-07-09 (周三晚)</span> — <span class="what">定价日 — 看发行价 vs KOSPI 当日收盘价 discount</span></div><div class="tl-item"><span class="when">**2026-07-10 (周五)**</span> — <span class="what">**Nasdaq 首日交易** — ADR 代码 TBA（可能 HYNX/SKHY）</span></div><div class="tl-item"><span class="when">2026-07-11 → 07-24</span> — <span class="what">散户 FOMO + KOSPI 套利盘混战</span></div><div class="tl-item"><span class="when">**2026-07-24 → 08-10**</span> — <span class="what">**典型回调高发窗口** — 历史 ADR 大概率 −10% 到 −15%</span></div><div class="tl-item"><span class="when">2026-07-29</span> — <span class="what">FOMC + Warsh 首秀叠加 — 会放大或减弱 ADR 回调</span></div></div></div><div class="tab-panel" data-tab-for="tabs1-2"><ul>
+<li>Hynix 韩股 6/24 收盘 <span class="up">+0.98%</span>，几乎不动 — 消息已经提前 leak / price in</li>
+<li>韩股 5d 只 <span class="up">+2.34%</span>，但 30d <span class="up">+37%</span> = 这 37% 涨幅里包含 ADR 预期</li>
+<li>大背景：KOSPI 周二 (6/23) 单日近 −10%，4 天 $900B 蒸发</li>
+<li>韩国散户社群典型反应：把 ADR 看作「对韩国市场的背叛」（韩国 Discount 加深的信号）</li>
+<li>6/25 韩股开盘大概率不会大涨 — 预期 ±2% 内开盘，方向跟随 KOSPI 大盘</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs1-3"><table class="compare"><thead><tr><th>对比项</th><th>SK Hynix 这次</th><th>评价</th></tr></thead><tbody><tr><td>比例</td><td>7.4% 市值 / 10-11% 股数</td><td>中等偏大，不极端</td></tr><tr><td>对比阿里 2014</td><td>11% 稀释</td><td>Hynix 比阿里轻</td></tr><tr><td>对比 Tesla 2020</td><td>1.25%</td><td>Hynix 比 Tesla 重 6 倍</td></tr><tr><td>对比 Boeing 2024 救命增发</td><td>24%</td><td>Hynix 远小于 Boeing — 这是「主动 grow」不是「被迫救」</td></tr></tbody></table>
+<div class="callout info"><p><strong>Hynix 自身吸收 $29B 没问题。</strong> 现金从 ~$20B 跳到 ~$50B，净现金从 $5-10B 跳到 $35-40B — 一夜变现金堆。可以扛任何 memory cycle 下行 + 不借债扩 HBM4 + 有收购 firepower。<strong>这笔钱对 Hynix 是「正常大型增发」</strong>。</p></div></div><div class="tab-panel" data-tab-for="tabs1-4"><div class="callout danger"><p><strong>对 Hynix 是 7.4% 稀释，对美国 HBM 投资生态是从 0 到 $29B 的供给 — 这才是 game-changer：</strong></p>
+<ol>
+<li><strong>MU 失去 HBM proxy 地位</strong> — 美国投资者过去要 HBM exposure 只能买 MU，7/10 后这个理由蒸发</li>
+<li><strong>价格战风险</strong> — Barron's 头条："SK Hynix Is Coming to the Nasdaq. A Price War Could Be Next."</li>
+<li><strong>资金分流</strong> — $29B ADR = 巨大流动性 sink，美国机构钱会重新分配</li>
+<li><strong>第一个公开 sell-side 反对</strong> — Baird："Memory Chip Boom Won't Last. Margins Will Compress"</li>
+</ol></div></div><div class="tab-panel" data-tab-for="tabs1-5"><table class="compare"><thead><tr><th>案例</th><th>1 个月</th><th>3 个月</th><th>12 个月</th></tr></thead><tbody><tr><td>阿里 2014 IPO ($25B)</td><td><span class="up"><span class="up">+5%</span></span></td><td>−10%</td><td>−20%（后涨回）</td></tr><tr><td>TSMC ADR 1997</td><td>−8%</td><td>−5%</td><td><span class="up"><span class="up">+30%</span></span></td></tr><tr><td>三星电子 ADR 2003</td><td><span class="up"><span class="up">+2%</span></span></td><td><span class="up"><span class="up">+12%</span></span></td><td><span class="up"><span class="up">+60%</span></span>（cycle 反弹）</td></tr><tr><td>**模式**</td><td>**小正/小负**</td><td>**回调 5-15%**</td><td>**跟随基本面/cycle**</td></tr></tbody></table></div><div class="tab-panel" data-tab-for="tabs1-6"><div class="callout warn"><p><strong>7/10 不买 SK Hynix。</strong> 历史模式 100% 一致：上市后 1-3 个月回调 10-15%，然后跟随 cycle。</p>
+<p><strong>真正的 entry window：7/24 - 8/10</strong>，如果出现 −10% 以上回调。</p>
+<p><strong>6/25 - 7/9 价格发现期：</strong> 盯 000660.KS 韩股走势，每一跳都是 ADR 定价信号。如果韩股大涨，ADR 发行价高，稀释相对小；韩股跌，发行价压低，稀释相对大。</p>
+<p><strong>7/8 周三晚：</strong> 看定价新闻，确认最终发行价 + ADR ticker 代码（可能 HYNX/SKHY/SKH，定价前 1-2 天才公布）。</p></div>
+<div class="verdict watch">加 SK Hynix（000660.KS / 7/10 后 ADR）到 watchlist。7/10 不买。7/24 之后看回调入场。</div>
+<hr>
+<p><em>我们 6/24 讨论的 SK Hynix ADR 总结 · 其他 thesis / position 不变</em></p></div></div>
+</body>
+</html>

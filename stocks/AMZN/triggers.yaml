@@ -1,0 +1,21 @@
+# Pre-commitment device. Confirm or edit values; reasoning below each.
+
+thesis_break_price: 185.00
+# ~24% below current $244.39. This level aligns with AMZN's 52-week low (~$196)
+# and would signal that either AWS growth has visibly decelerated or retail
+# margins are not expanding as expected. Both would break the thesis.
+
+kill_conditions:
+  - "AWS revenue growth falls below 15% for two consecutive quarters (growth inflection)"
+  - "Azure or GCP closes to within 5 percentage points of AWS market share"
+  - "Retail operating margin fails to expand in any two consecutive quarters"
+  - "DOJ/FTC launches a structural breakup case (tail risk)"
+  - "Andy Jassy departure"
+
+re_read_triggers:
+  - "Stock down >15% on no obvious broad-market catalyst"
+  - "Missed quarter (AWS growth rate or retail operating margin)"
+  - "Any hyperscaler shift away from AWS announced by a major enterprise customer"
+  - "Trainium external sales program cancelled or significantly delayed"
+  - "Amazon consumer health: two consecutive quarters of Prime membership decline"
+  - "China tariff escalation materially impacting Amazon's third-party seller economics"

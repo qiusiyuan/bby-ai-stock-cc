@@ -1,0 +1,10 @@
+thesis_break_price: 450  # ~22% below current; near lower bound of bear scenario
+kill_conditions:
+  - "Two consecutive quarters of revenue growth below 10% YoY"
+  - "Court order requiring divestiture of Instagram or WhatsApp"
+  - "AI assistants cause measurable decline in time-spent on feed surfaces (disclosed in earnings)"
+re_read_triggers:
+  - "Stock down >15% on no obvious news"
+  - "Missed quarter (revenue or EPS miss vs consensus)"
+  - "Operating margin drops below 35% while capex continues to rise"
+  - "Zuckerberg announces a new multi-billion capex initiative outside current strategy"

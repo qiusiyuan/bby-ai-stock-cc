@@ -1,0 +1,22 @@
+# Pre-commitment device. Confirm or edit values; reasoning below each.
+
+thesis_break_price: 210.00
+# ~29% below current $298.01. This level would imply China + regulatory scenarios
+# compressing services economics simultaneously — the two-variable break of the thesis.
+# At $210, the stock would still be richly priced on auto fundamentals, but the
+# services re-rate story would be clearly challenged.
+
+kill_conditions:
+  - "China revenue falls below $14B/quarter on a sustained basis (structural share loss to Huawei)"
+  - "EU/U.S. regulatory ruling mandates sideloading that materially impairs App Store take-rate"
+  - "iPhone gross margin falls below 40% for two consecutive quarters (tariff/memory cost pass-through failure)"
+  - "Apple Intelligence demonstrably worse than Google/OpenAI alternatives across multiple credible benchmarks — brand risk"
+  - "Tim Cook departure without a credible succession plan"
+
+re_read_triggers:
+  - "Stock down >15% on no obvious broad-market catalyst"
+  - "Missed quarter (iPhone revenue or Services gross margin)"
+  - "China quarterly revenue decline >10% YoY"
+  - "EU DMA enforcement action that sets App Store precedent"
+  - "iPhone 17 pre-order data disappoints vs. iPhone 16 cycle (AI supercycle thesis test)"
+  - "Intel domestic chip deal costs materially disclosed — watch for margin guidance"

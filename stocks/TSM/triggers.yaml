@@ -1,0 +1,10 @@
+thesis_break_price: 280  # bear-case target; implies Taiwan risk premium + AI demand miss
+kill_conditions:
+  - "Taiwan Strait military escalation triggers formal customer contingency plans or fab disruption scenarios"
+  - "Intel Foundry demonstrates 2nm-equivalent yield rates within 18 months — closes technology gap structurally"
+  - "AI hardware capex plateau: NVIDIA revenue guide down >20% for two consecutive quarters"
+re_read_triggers:
+  - "Stock down >15% on no obvious semiconductor sector catalyst"
+  - "Missed quarter (revenue or gross margin miss vs guidance)"
+  - "Taiwan export restriction expands to advanced packaging — directly constrains NVIDIA shipments"
+  - "Apple-Intel chip deal scope announced as production volumes (not just prototypes)"

@@ -1,0 +1,10 @@
+thesis_break_price: 700  # bear-case scenario; implies expectations collapse on Power margins + Wind losses
+kill_conditions:
+  - "Hyperscalers (Microsoft, Google, Amazon, Meta) publicly cut data center buildout by >20% — removes the power demand driver"
+  - "Wind segment losses in 2026 exceed 2025 level — break-even timeline slips to 2028+"
+  - "Power segment margin guidance cut below 13% — pricing pressure overcoming improvement curve"
+re_read_triggers:
+  - "Stock down >15% on no obvious macro catalyst"
+  - "Missed quarter (backlog growth deceleration or margin miss)"
+  - "Competitor (Siemens Energy, MHI) wins a major gas turbine tender that GEV was expected to win"
+  - "Q2 2026 earnings (July 22) show Power margins flat or declining QoQ"
