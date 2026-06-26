@@ -228,6 +228,16 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
 .legend-note { color: var(--muted); margin-left: 4px; }
 """
 
+GA_ID = "G-2KN3NVQZ7P"
+GA_SNIPPET = f"""<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', '{GA_ID}');
+</script>"""
+
 PCT_RE = re.compile(r"(?<![\w.])([+-]?\d+\.?\d*)%")
 FENCE_RE = re.compile(r"```(\w+)([^\n]*)\n(.*?)```", re.DOTALL)
 
@@ -759,6 +769,7 @@ def render_html(md_text: str, title: str) -> str:
     return f"""<!doctype html>
 <html lang="en">
 <head>
+{GA_SNIPPET}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)}</title>
