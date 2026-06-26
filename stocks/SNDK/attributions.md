@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-06-26 · -6.69% day · ▼ major
+**Tags:** `sector_rotation`, `competitor_news`, `flow_event`
+**Confidence:** high
+
+**Primary cause.** SK Hynix 韩股盘前 -8.36% 收 ₩2,673,000 (vs ₩2,917,000) → 美股 memory cluster 联动 mean-reversion。触发新闻「Samsung, SK Hynix Slide 9% Before $646 Billion Investment Update」+「Micron, SanDisk, and Western Digital Fall 7% as Memory Rally Cools」。SNDK 作为「美国版 SK Hynix 替代品」最敏感传感器，单日同步砸盘 — 但传导系数从 6/23 的 1.67x 缩小到今天的 0.96x，说明市场已学习。盘前 $2,230 → $2,137 低点 (-8.48%) → 开盘 $2,173 反弹 → 早盘 $2,178.79，vol 0.12 极低 = 流动性主导非 capitulation。MU -7.04%, DRAM ETF -7.08% 同向印证。同时 Mag-7 出现 reversal：AAPL +0.33% / MSFT +1.29% / META +0.17% 不跟跌 + Barron's「Apple/MSFT face bigger problems than memory prices」narrative 翻面。基本面（HBM3E/HBM4/Anthropic-MU/8/24 Q4 财报）无任何实质变化。
+
+**Sources.**
+- {"title": "Samsung, SK Hynix Slide 9% Before $646 Billion Investment Update", "url": "https://finance.yahoo.com/", "type": "news"}
+- {"title": "Micron, SanDisk, and Western Digital Fall 7% as Memory Rally Cools", "url": "https://finance.yahoo.com/", "type": "news"}
+- {"title": "Semiconductor stocks retreat over worries about memory costs", "url": "https://finance.yahoo.com/markets/article/semiconductor-stocks-retreat-over-worries-about-memory-costs-131508185.html", "type": "news"}
+- {"title": "Apple, Sandisk, Marvell, and More Stocks That Explain Today's Market", "url": "https://barrons.com/", "type": "news"}
+- {"title": "Apple, Microsoft Face Bigger Problems Than Micron's Memory Prices", "url": "https://barrons.com/", "type": "news"}
+
+**Cross-assets.** SPY -0.92 · QQQ -1.77 · VIX 20.46 · 10Y 4.41 · MU -7.04 · 000660.KS -8.36 · DRAM -7.08 · NVDA -2.22 · TSM -3.36 · AAPL 0.33 · MSFT 1.29 · WTI -2.78
+
+**Agent read.** Smoking gun: Hynix 韩股 -8.36% 隔夜 + Samsung/SK Hynix $646B 投资公告前置 de-risking。SNDK 作为美股 memory cluster 第二敏感标的 (vol 0.12 = 早盘流动性盘) 砸 -6.69%，但传导效率较 6/23 大幅下降 (1.67x → 0.96x)。盘前 W-bottom 形态在 $2,137 测试两次未破 = 第一道 confluence 支撑。Mag-7 出现反向 narrative reversal (AAPL/MSFT 反弹 + Barron's 头条「他们有比 memory 更大的问题」) — narrative 24h 内已三度翻面：(1) bull memory + bull terminal (6/25 早) → (2) bull memory + bear terminal (6/25 收) → (3) bear memory + bull terminal (6/26 早盘)。本质上是单日 +22% 后的 mean-reversion + cluster contagion 二次释放。基本面 anchor 未变：8/24 Q4 财报。**SNDK 缺 thesis.md** 是当前最大 gap — 4 天内成为 memory cluster 第二号噪音放大器，无 thesis-break 监控机制。建议本周建一份 thesis brief。下一观察窗口：(1) $2,137 是否守住；(2) 韩股 6/27 收盘走势；(3) 7/10 ADR 前是否还会有二次 cluster reset。
+
+
+---
 ### 2026-06-23 · -14.01% day · ▼ extreme
 **Tags:** `regulatory_negative`, `policy_korea`, `flow_event`, `sector_rotation`
 **Confidence:** high
