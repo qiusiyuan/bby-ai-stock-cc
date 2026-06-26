@@ -22,12 +22,15 @@ Module 1. One H2 section combining big-picture market state + macro/policy signa
 - Indices: SPY QQQ + VIX + 10Y + DXY
 - Commodities: WTI oil, gold, silver (every day, even when quiet)
 - **FX**: USD/CAD, USD/CNY (small block; user holds USD and wants timing signals for converting to CAD or RMB)
+- **Crypto**: BTC + ETH (daily price check); IBIT / MSTR / COIN (weekly or when |1d| ≥ 5%). Crypto is a leading risk-asset indicator — BTC typically leads SPY 2-4 weeks; user does not directly hold crypto but wants the risk-hierarchy signal.
 
 ```bash
-for t in SPY QQQ DIA IWM ^VIX ^TNX "DX-Y.NYB" "USDCAD=X" "USDCNY=X" GLD SLV GC=F SI=F USO CL=F TLT ITA KWEB; do
+for t in SPY QQQ DIA IWM ^VIX ^TNX "DX-Y.NYB" "USDCAD=X" "USDCNY=X" GLD SLV GC=F SI=F USO CL=F TLT ITA KWEB BTC-USD ETH-USD; do
   uv run --project scripts scripts/fetch.py "$t" > "/tmp/pulse_$t.json" 2>/dev/null &
 done; wait
 ```
+
+For crypto-specific deeper view (when BTC moves >5% 1d OR > 15% 5d), also pull: IBIT (BlackRock spot BTC ETF), MSTR (Saylor leveraged proxy), COIN (Coinbase, US-regulated exchange).
 
 ### 2. Pull policy news from sensitive proxy tickers
 
@@ -78,6 +81,22 @@ WTI | $X / +-Y% | oil — geopolitics / demand read
 Gold | $X / +-Y% | safe-haven / real rates / dollar
 Silver | $X / +-Y% | industrial + monetary; gold/silver ratio = stress proxy
 ```
+
+### 🪙 Crypto (daily — leading risk-asset indicator)
+
+BTC + ETH every day. **BTC typically leads SPY by 2-4 weeks** — significant BTC drawdown without SPY follow-through is a yellow flag. Surface IBIT/MSTR/COIN proxies when BTC moves >5% 1d or >15% 5d, or when crypto-specific headlines (regulation, ETF flows, Saylor positioning) emerge.
+
+```kpi
+BTC | $X / +-Y% | 距 ATH / 52w low / MA200 status
+ETH | $X / +-Y% | BTC 对照
+IBIT (or MSTR/COIN when notable) | $X / +-Y% | 机构 / 杠杆 proxy
+```
+
+Flag as `callout danger` when ANY of:
+- BTC breaks below 52w low or MA200
+- MSTR < 52w low (Saylor leverage stress)
+- BTC 30d down > 15% AND SPY 30d down < 5% (risk-hierarchy divergence)
+- Coinbase / Strategy / Binance regulatory action announced
 
 ### 货币 / FX (small block; user holds USD, wants timing for converting to CAD/RMB)
 

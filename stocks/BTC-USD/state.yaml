@@ -1,0 +1,12 @@
+ticker: BTC-USD
+active: true
+tags: [macro, crypto, risk-indicator]
+added: 2026-06-26
+last_checked: 2026-06-26
+last_quarterly_review: null
+last_annual_refresh: null
+max_weight_pct: null
+notes: |
+  Bitcoin tracked as a leading risk-asset indicator, not as a position.
+  User does NOT directly hold crypto. BTC typically leads SPY by 2-4 weeks.
+  Trigger for deep-dive: |1d| ≥ 5% OR |5d| ≥ 15% OR BTC < 52w low OR Saylor/MSTR forced-sell news.
