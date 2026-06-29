@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-06-29 · +7.73% day · ▲ major
+**Tags:** `risk_on`, `macro_geopolitics`, `short_covering`
+**Confidence:** medium
+
+**Primary cause.** Beta + 30d -7.7% 后空头回补;US-Iran 缓和驱动整体 risk-on (QQQ +2.3%) + Trump 解雇 Powell 司法 block;新闻面 idiosyncratic 偏负或中性。Vol 0.79x 表明无大机构 capitulation 或建仓。明天 6/30 Q2 交付预设利好定价部分。
+
+**Sources.**
+- Yahoo: [US Equity Indexes Rise as Communication Services Tops Sector Charts, Trump Sends Envoys to Qatar for Iran Talks](https://finance.yahoo.com/)
+- Yahoo: [Tesla Faces Fierce New Rival in Self-Driving Race](https://finance.yahoo.com/)
+- Yahoo: [Comcast, Charter, Rocket Lab, SpaceX, Tesla, and More Stocks That Explain Today's Market](https://finance.yahoo.com/)
+
+**Cross-assets.** SPY PCT +1.55% · QQQ PCT +2.30% · VIX 17.78 · TNX 4.37
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-06-29.md`
+
+---
 ### 2026-06-23 · -4.81% day · ▼ material
 **Tags:** `regulatory_negative`, `safety_recall`
 **Confidence:** high

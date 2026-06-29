@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-06-29 · -1.59% day · ▼ major
+**Tags:** `memory_pricing`, `sector_rotation`, `thesis_debate`
+**Confidence:** high
+
+**Primary cause.** 6/23 板块 -11% 大跌的余震派发完毕过程;6/24 收 $69.93 → 6/26 $71.88 → 今 $70.74,$69-70 底部支撑测试 3 次。USER 6/23 预测「跌穿 $62」FAIL（窗口低位 $69.93）;AGENT counter「守住 $62」PASS。新增 narrative: Yahoo 'Memory makers price-gouging' + OpenAI '40% of world DRAM'。无 thesis-break;下个 truth event 是 9/25 MU Q4 评分。
+
+**Sources.**
+- Yahoo: [Micron Slides. Are Memory-Chip Makers Illegally Price-Gouging Customers?](https://finance.yahoo.com/)
+- Yahoo: [OpenAI's Wild Week: A Custom Chip, 40% of the World's DRAM, and a $500 Million Bet](https://finance.yahoo.com/)
+- Yahoo: [Micron Stock: Let's Talk About Those Long-Term Contracts](https://finance.yahoo.com/)
+
+**Cross-assets.** SPY PCT +1.55% · QQQ PCT +2.30% · MU PCT -1.55% · MRVL PCT +2.32%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-06-29.md`
+
+---
 ### 2026-06-23#agent-counter-mu-dram · n/a day · ▼ minor
 **Tags:** `prediction_recorded`, `thesis_debate`
 **Confidence:** medium
