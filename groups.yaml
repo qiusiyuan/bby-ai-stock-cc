@@ -11,8 +11,8 @@
 #   - 自动建议: focus 列表 7 天平静 → agent 建议移到普通 active
 focus:
   description: 重点观察 — 当前阶段需要详细跟踪的名字 (flat list — superseded by focus_clusters below for tab emission)
-  members: [MU, TSLA, SPCX, DRAM]
-  updated: 2026-06-23
+  members: [MU, TSLA, SPCX, DRAM, INTC]
+  updated: 2026-06-30
 
 ## focus_clusters — 重点关注的 cluster (每个生成单独 tab)
 # Each cluster is a "lens" that produces one ## Focus: {name} H2 in dashboard/{date}.md.
@@ -50,10 +50,10 @@ focus_clusters:
 
   - name: AI capex
     kind: sector
-    members: [GOOG, AMZN, MSFT, META, NVDA, TSM]
+    members: [GOOG, AMZN, MSFT, META, NVDA, TSM, AVGO, INTC]
     external_refs: [OpenAI, Anthropic, xAI, Reflection AI]
-    description: Hyperscaler capex 开支方 + AI 算力底层；判断 "AI 投入产出" 叙事走向
-    watch_items: [hyperscaler earnings capex guide, AI revenue ramp signals, talent moves (e.g. Jumper → Anthropic), VC funding rounds, OpenAI/Anthropic ARR disclosures]
+    description: Hyperscaler capex 开支方 + AI 算力底层 (含 AVGO custom ASIC 龙头 + INTC turnaround / foundry / Xeon-NVDA DGX 路径)；判断 "AI 投入产出" 叙事走向
+    watch_items: [hyperscaler earnings capex guide, AI revenue ramp signals, talent moves (e.g. Jumper → Anthropic), VC funding rounds, OpenAI/Anthropic ARR disclosures, AVGO custom-silicon (TPU/Trainium/MTIA) wins, INTC 14A process milestones, INTC foundry customer wins (Apple return?), INTC Xeon design wins, US government equity stake actions]
 
   - name: 能源(油气)
     kind: sector

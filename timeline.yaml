@@ -20,8 +20,12 @@ events:
   # Don't duplicate them here.
   - { date: 2026-06-30, kind: catalyst, ticker: TSLA, note: "Q2 2026 global deliveries (company self-report)" }
   - { date: 2026-07-07, kind: catalyst, ticker: TSLA, note: "NHTSA preliminary statement on Texas crash (estimate)" }
+  - { date: 2026-07-08, kind: earnings, ticker: "005930.KS", note: "Samsung Q2 2026 preliminary guidance (est) — early HBM/Memory revenue 信号；ADR=SSNLF (OTC pink, 低流动)。DRAM cluster 第一信号点" }
+  - { date: 2026-07-10, kind: catalyst, ticker: "000660.KS", note: "**SK Hynix Nasdaq ADS 上市日 (工作区原推测，待路演定价确认)** — Ticker=SKHY (Nasdaq Global Select)。SEC EDGAR 已验证：F-1 2026-06-24 申报，F-1/A 2026-06-30 修正（CIK 0002120882）。**重要纠正：交易所是 Nasdaq 不是 NYSE；术语是 ADS 不是 ADR；正式 IPO 价/日仍空白，需 final F-1 + 425 + EFFECT 后再确认。Lockup 90 天 (vs 标配 180)，承销商 BofA + Citi + Goldman + JPM。** DRAM cluster 关键结构事件 — 工作区分析见 dashboard/2026-06-24-dram.md" }
   - { date: 2026-07-16, kind: earnings, ticker: TSM, note: "Q2 2026 earnings — CoWoS / 1.4nm / HBM" }
   - { date: 2026-07-22, kind: earnings, ticker: TSLA, note: "Q2 2026 earnings — auto GM ex-credits, FSD revenue, Robotaxi update" }
+  - { date: 2026-07-24, kind: earnings, ticker: "000660.KS", note: "SK Hynix Q2 2026 earnings (est, 周四) — HBM3E/HBM4 营收占比、NVDA 供货指引。**若 SKHY Nasdaq ADS 已上市，则是上市后第一份财报** — 管理层有强烈动机讲 HBM 胜利故事。DRAM cluster 内 MU 双胞胎，直接 read-through 到 MU Q4 FY26 9/25 scorecard" }
+  - { date: 2026-07-31, kind: earnings, ticker: "005930.KS", note: "Samsung Q2 2026 final earnings (est) — DS (Memory) margin、HBM yield 进展、对 MU/SK Hynix 份额读法" }
   - { date: 2026-07-22, kind: earnings, ticker: IBM, note: "Q2 2026 earnings" }
   - { date: 2026-07-22, kind: earnings, ticker: GEV, note: "Q2 2026 earnings — Power margin, Wind losses" }
   - { date: 2026-07-23, kind: earnings, ticker: GOOG, note: "Q2 2026 earnings — AI capex, ad growth" }

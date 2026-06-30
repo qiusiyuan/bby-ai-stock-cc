@@ -1,8 +1,9 @@
 ticker: INTC
 active: true
-tags: [ai]
+tags: [ai, focus, ai_capex]
 added: 2026-06-18
-last_checked: 2026-06-18
+promoted_to_focus: 2026-06-30  # 触发: 30d +21% / 1d +7.5% / Lip-Bu Tan turnaround + 政府股权 + NVDA DGX Rubin Xeon 6 中标
+last_checked: 2026-06-30
 last_quarterly_review: null
 last_annual_refresh: 2026-06-18
 max_weight_pct: null
