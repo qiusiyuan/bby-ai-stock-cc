@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MSFT 深度分析 2026-06-29</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-06-29 17:36</div>
+<h1 id="msft">MSFT 深度分析 — 长期低迷 + 入场时机评估</h1>
+<blockquote>
+<p>2026-06-29 EOD 数据。Sources cited inline。这是 research 文档，不是 thesis 更新。</p>
+</blockquote>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }#tabs1-8:checked ~ [data-tab-for="tabs1-8"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><input class="tab-input" type="radio" name="tabs1" id="tabs1-8"><div class="tabs"><label class="tab-label" for="tabs1-0">TL;DR</label><label class="tab-label" for="tabs1-1">1. 价格走势 — 多久了？跌得多狠？</label><label class="tab-label" for="tabs1-2">2. 为什么长期低迷？— 三大压力点</label><label class="tab-label" for="tabs1-3">3. 估值 — 是不是真便宜？</label><label class="tab-label" for="tabs1-4">4. AI 急先锋的处境 — 还是不是？</label><label class="tab-label" for="tabs1-5">5. 爆发点 — 接下来哪些 catalyst</label><label class="tab-label" for="tabs1-6">6. 入场时机评估</label><label class="tab-label" for="tabs1-7">7. 我的 take（不是 thesis 更新，是 read）</label><label class="tab-label" for="tabs1-8">8. 我会怎么做（结构化建议）</label></div><div class="tab-panel" data-tab-for="tabs1-0"><div class="callout info"><p>MSFT 从 52w 高 $555 跌到 $368.57（<strong><span class="down">-33.6%</span></strong>），是当年「AI 急先锋」一年里跌得最狠的 Mag7 之一（与 NVDA <span class="down">-17%</span>、GOOG <span class="down">-11%</span> 等比较，MSFT 30d <span class="down">-9.8%</span> 又是 risk-on 反弹日里<strong>最弱</strong>）。<strong>核心矛盾</strong>：Copilot 收入年化跑到 <strong>$37B（123% YoY）</strong>、Azure Q3 FY26 仍 <span class="up">+40%</span>，但市场质疑 $80B+ 年 capex 何时变 ROI。<strong>估值已 de-rate 到 5 年最低</strong>（forward P/E 19.9× vs 5 年均值 28×）。<strong>爆发点 7/29 Q4 earnings</strong>（Azure 加速 + Copilot 座位披露）。<strong>入场时机</strong>：现价是「便宜但不便宜得离谱」，建议<strong>分批介入 + 等 7/29 关键节点</strong>而非一次性。</p></div></div><div class="tab-panel" data-tab-for="tabs1-1"><div class="kpi-grid"><div class="kpi"><div class="label">当前价</div><div class="value">$368.57</div><div class="note">EOD 2026-06-29</div></div><div class="kpi"><div class="label">52w 高</div><div class="value">$555.45</div><div class="note">距高点 <span class="down"><span class="down">-33.6%</span></span></div></div><div class="kpi"><div class="label">52w 低</div><div class="value">$349.20</div><div class="note">距底 <span class="up"><span class="up">+5.5%</span></span>（已接近底）</div></div><div class="kpi"><div class="label">30d 变化</div><div class="value"><span class="down"><span class="down">-9.78%</span></span></div><div class="note">risk-on 日里反弹日仍 <span class="down"><span class="down">-1.18%</span></span></div></div><div class="kpi"><div class="label">6月单月</div><div class="value">~<span class="down"><span class="down">-17%</span></span></div><div class="note">TipRanks: &quot;Heads for Worst Month Since Dot-Com Era as AI Fears Grow&quot;</div></div><div class="kpi"><div class="label">盘后</div><div class="value">$371.39 / <span class="up"><span class="up">+0.77%</span></span></div><div class="note">盘后稍回血</div></div></div>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">344.21</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">375.44</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">406.67</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">437.91</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">469.14</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">05-15</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-08</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-29</text><path d="M56.0,92.0 L78.3,89.8 L100.7,97.9 L123.0,93.1 L145.4,94.5 L167.7,95.2 L190.1,98.6 L212.4,103.0 L234.8,84.0 L257.1,53.1 L279.4,39.4 L301.8,65.0 L324.1,83.5 L346.5,82.6 L368.8,97.7 L391.2,104.3 L413.5,115.3 L435.9,123.4 L458.2,132.7 L480.6,132.2 L502.9,120.2 L525.2,128.1 L547.6,147.9 L569.9,147.2 L592.3,163.3 L614.6,154.5 L637.0,165.8 L659.3,182.6 L681.7,155.8 L704.0,161.6" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="161.6" r="3" fill="#58a6ff"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">MSFT 30d (close)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">MSFT</span> <span class="legend-last">368.57</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-12.46%</span></span><span class="legend-note">· 1d <span class="down">-1.18%</span> · 30d <span class="down">-9.78%</span></span></span></div></div>
+<h3>与 Mag6 同期比较</h3>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">81.76</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">89.18</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">96.60</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">104.01</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">111.43</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">05-15</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-08</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-29</text><path d="M56.0,92.0 L78.3,89.8 L100.7,97.9 L123.0,93.1 L145.4,94.5 L167.7,95.2 L190.1,98.6 L212.4,103.0 L234.8,84.0 L257.1,53.1 L279.4,39.4 L301.8,65.0 L324.1,83.5 L346.5,82.6 L368.8,97.7 L391.2,104.3 L413.5,115.3 L435.9,123.4 L458.2,132.7 L480.6,132.2 L502.9,120.2 L525.2,128.1 L547.6,147.9 L569.9,147.2 L592.3,163.3 L614.6,154.5 L637.0,165.8 L659.3,182.6 L681.7,155.8 L704.0,161.6" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="161.6" r="3" fill="#58a6ff"/><path d="M56.0,92.0 L78.3,99.4 L100.7,103.6 L123.0,96.5 L145.4,106.4 L167.7,116.8 L190.1,117.9 L212.4,123.5 L234.8,119.4 L257.1,127.2 L279.4,94.3 L301.8,98.2 L324.1,118.2 L346.5,107.9 L368.8,141.6 L391.2,132.8 L413.5,133.9 L435.9,153.2 L458.2,142.1 L480.6,141.3 L502.9,123.3 L525.2,135.8 L547.6,142.7 L569.9,127.7 L592.3,132.7 L614.6,154.1 L637.0,156.7 L659.3,164.8 L681.7,172.8 L704.0,166.7" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="166.7" r="3" fill="#3fb950"/><path d="M56.0,92.0 L78.3,92.2 L100.7,103.9 L123.0,103.9 L145.4,106.0 L167.7,111.8 L190.1,104.0 L212.4,104.0 L234.8,102.2 L257.1,116.0 L279.4,121.5 L301.8,141.6 L324.1,145.5 L346.5,126.2 L368.8,131.2 L391.2,137.4 L413.5,135.8 L435.9,148.5 L458.2,143.9 L480.6,141.7 L502.9,128.9 L525.2,123.2 L547.6,136.0 L569.9,128.4 L592.3,155.0 L614.6,158.9 L637.0,160.3 L659.3,164.4 L681.7,175.1 L704.0,151.5" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="151.5" r="3" fill="#d29922"/><path d="M56.0,92.0 L78.3,94.7 L100.7,102.5 L123.0,100.3 L145.4,98.2 L167.7,95.6 L190.1,93.7 L212.4,72.8 L234.8,72.8 L257.1,75.3 L279.4,104.5 L301.8,107.1 L324.1,84.0 L346.5,79.8 L368.8,111.3 L391.2,118.2 L413.5,119.0 L435.9,131.3 L458.2,133.7 L480.6,135.0 L502.9,110.4 L525.2,104.2 L547.6,134.0 L569.9,125.2 L592.3,137.4 L614.6,138.9 L637.0,143.0 L659.3,156.5 L681.7,149.8 L704.0,138.5" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="138.5" r="3" fill="#f85149"/><path d="M56.0,92.0 L78.3,90.4 L100.7,102.1 L123.0,90.1 L145.4,82.8 L167.7,87.3 L190.1,89.5 L212.4,75.6 L234.8,71.1 L257.1,78.2 L279.4,98.1 L301.8,108.1 L324.1,121.9 L346.5,113.9 L368.8,130.3 L391.2,132.0 L413.5,134.2 L435.9,147.3 L458.2,139.9 L480.6,146.2 L502.9,130.3 L525.2,130.4 L547.6,148.4 L569.9,133.8 L592.3,158.4 L614.6,155.6 L637.0,155.2 L659.3,170.6 L681.7,158.6 L704.0,142.8" fill="none" stroke="#a371f7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="142.8" r="3" fill="#a371f7"/><path d="M56.0,92.0 L78.3,96.4 L100.7,94.3 L123.0,88.2 L145.4,83.1 L167.7,75.9 L190.1,76.9 L212.4,72.2 L234.8,69.1 L257.1,69.9 L279.4,80.6 L301.8,64.1 L324.1,73.3 L346.5,71.5 L368.8,78.7 L391.2,89.5 L413.5,110.0 L435.9,108.1 L458.2,100.5 L480.6,108.9 L502.9,99.1 L525.2,93.8 L547.6,99.9 L569.9,96.1 L592.3,98.0 L614.6,103.0 L637.0,105.3 L659.3,138.7 L681.7,122.6 L704.0,126.4" fill="none" stroke="#79c0ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="126.4" r="3" fill="#79c0ff"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">Mag6 30d (normalized)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">MSFT</span> <span class="legend-last">87.55</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-12.45%</span></span><span class="legend-note">· 1d <span class="down">-1.18%</span> · 30d <span class="down">-9.78%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">NVDA</span> <span class="legend-last">86.63</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-13.37%</span></span><span class="legend-note">· 1d <span class="up">+1.27%</span> · 30d <span class="down">-17.2%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">GOOG</span> <span class="legend-last">89.36</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-10.64%</span></span><span class="legend-note">· 1d <span class="up">+4.96%</span> · 30d <span class="down">-11.5%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#f85149"></span><span class="legend-name">META</span> <span class="legend-last">91.68</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-8.32%</span></span><span class="legend-note">· 1d <span class="up">+2.24%</span> · 30d <span class="down">-8.94%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#a371f7"></span><span class="legend-name">AMZN</span> <span class="legend-last">90.91</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-9.09%</span></span><span class="legend-note">· 1d <span class="up">+3.2%</span> · 30d <span class="down">-10.13%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#79c0ff"></span><span class="legend-name">AAPL</span> <span class="legend-last">93.84</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-6.16%</span></span><span class="legend-note">· 1d <span class="up">+3.2%</span> · 30d <span class="down">-5.52%</span></span></span></div></div>
+<p><strong>读图</strong>：30d 内 MSFT 是 Mag6 中相对走弱最持久的（NVDA 跌幅大但 1d 已开始反弹；AAPL 反而相对最稳）。今天 risk-on 反弹日 MSFT <strong>唯一逆向下跌</strong>是真正的相对弱势信号。</p></div><div class="tab-panel" data-tab-for="tabs1-2"><table class="compare"><thead><tr><th>压力点</th><th>具体含义</th><th>量化</th></tr></thead><tbody><tr><td>$80B+ AI capex</td><td>FY26 全年 capex 指引 ~$80B, 远超 FY25 ~$56B, FY24 $44B</td><td>FCF margin 从 32% (FY22) 压到 22% (FY25)</td></tr><tr><td>Copilot ROI 质疑</td><td>$37B run rate / 123% YoY 漂亮但缺**单位经济模型** — 投资者要看 paid seats 不要 run rate</td><td>Microsoft 拒绝披露 paid seat 数（Wedbush 6/29 报告&quot;Big tech faces AI spending scrutiny&quot;）</td></tr><tr><td>监管风险</td><td>Italy antitrust 调查 M365 涨价 + EU DMA 对 Teams / Azure 互操作要求持续</td><td>直接 cited Yahoo 头条</td></tr></tbody></table>
+<h3>2a. Capex 螺旋的可量化忧虑</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>FY22</th>
+<th>FY24</th>
+<th>FY25</th>
+<th>FY26 (指引)</th>
+<th>趋势</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue</td>
+<td>$198B</td>
+<td>$245B</td>
+<td>$282B</td>
+<td>~$318B (ttm 已 $318B)</td>
+<td>+13-15% YoY</td>
+</tr>
+<tr>
+<td>Capex</td>
+<td>~$24B</td>
+<td>~$44B</td>
+<td>~$56B</td>
+<td>~$80B</td>
+<td><strong><span class="up">+45%</span> YoY 加速</strong></td>
+</tr>
+<tr>
+<td>FCF Yield</td>
+<td>3.40%</td>
+<td>2.23%</td>
+<td>1.94%</td>
+<td>~2.66% (TTM)</td>
+<td>已开始底部反弹</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>47.15%</td>
+<td>37.13%</td>
+<td>33.28%</td>
+<td>~31.10% (TTM)</td>
+<td><strong>逐年压低</strong></td>
+</tr>
+<tr>
+<td>Op Margin</td>
+<td>~42%</td>
+<td>~45%</td>
+<td>~45%</td>
+<td>?（市场担忧 38-40%）</td>
+<td>Q4 是关键披露</td>
+</tr>
+</tbody>
+</table>
+<p>来源：StockAnalysis.com / Wikipedia。</p>
+<p><strong>核心矛盾</strong>：Revenue +13-15%，Capex <span class="up">+45%</span> — capex 占 revenue 已从 12% 升到 25%。<strong>这种"capex 超线性增长"在历史上有两次成功一次失败的先例</strong>：
+- 成功：AMZN 2014-2018（AWS 扩张），股价短期承压但 5 年涨 5x
+- 成功：META Reality Labs (~2017-2021)，承压但最终验证
+- 失败：META 2022 Reality Labs over-spend → 单年股价 <span class="down">-64%</span>（后来反弹但代价大）</p>
+<p>MSFT 目前在哪一档？市场目前定价偏「失败档」，但 Azure <span class="up">+40%</span> / Copilot $37B 数据更像「成功档」。<strong>这就是 mispricing 假说的来源</strong>。</p>
+<h3>2b. 30d 一些重要负面新闻</h3>
+<ul>
+<li><strong>2026-06-29 Yahoo</strong>："Microsoft (MSFT) Stock Falls Amid Market Uptick" — 板块走强日 MSFT 单独走弱（今日就是）</li>
+<li><strong>MarketWatch 近期</strong>："longtime holders 'are being asked to underwrite a capital-intensity cycle'" — 长期持有人被迫承担 capex 压力</li>
+<li><strong>TipRanks</strong>："Heads for Worst Month Since Dot-Com Era as AI Fears Grow"</li>
+<li><strong>Italy 反垄断调查</strong> — M365 涨价被官方介入</li>
+<li><strong>Apple + MSFT 上调设备价格</strong> — 上游 memory 成本压力 (HBM 周期反噬)</li>
+<li><strong>"Value Trap or Buying Opportunity"</strong> — 分析师阵营分化</li>
+</ul>
+<h3>2c. 30d 一些重要正面新闻 (容易被忽视)</h3>
+<ul>
+<li><strong>Anthropic Claude 在 Azure Foundry GA</strong> — 即使 OpenAI 关系微妙，MSFT 仍是 third-party AI model 分发首选</li>
+<li><strong>Bill Ackman 上季度建仓 $2B</strong> — Pershing Square 看好（来源：Fool 2026-06-29）</li>
+<li><strong>Chevron-MSFT AI 数据中心合作披露</strong> — TheStreet（403 未读全文，但标题指向 power-for-compute deal）</li>
+<li><strong>TSM monthly sales rise</strong> — Azure 算力供给端良好</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs1-3"><h3>Snapshot</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">现价</div><div class="value">$368.57</div><div class="note">EOD 6/29</div></div><div class="kpi"><div class="label">Market Cap</div><div class="value">$2.74T</div><div class="note"><span class="down"><span class="down">-23%</span></span> YoY (基于 $555 高点)</div></div><div class="kpi"><div class="label">P/E (TTM)</div><div class="value">21.95×</div><div class="note">5 年最低</div></div><div class="kpi"><div class="label">Forward P/E</div><div class="value">19.90×</div><div class="note">**5 年最低（5 年均值 28×）**</div></div><div class="kpi"><div class="label">EV/EBITDA (TTM)</div><div class="value">15.10×</div><div class="note">vs 5 年均 23×</div></div><div class="kpi"><div class="label">P/S</div><div class="value">8.60×</div><div class="note">vs 5 年均 12×</div></div><div class="kpi"><div class="label">FCF Yield</div><div class="value">2.66%</div><div class="note">从 1.94% (FY25) 回升</div></div><div class="kpi"><div class="label">Dividend Yield</div><div class="value">0.99%</div><div class="note">连续 20+ 年提高</div></div><div class="kpi"><div class="label">ROIC</div><div class="value">27.24%</div><div class="note">优秀（vs S&amp;P 平均 10-12%）</div></div><div class="kpi"><div class="label">Beta (5Y)</div><div class="value">1.10</div><div class="note">仅略高于市场</div></div><div class="kpi"><div class="label">Short Interest</div><div class="value">1.28%</div><div class="note">极低</div></div><div class="kpi"><div class="label">Institutional Owned</div><div class="value">74%</div><div class="note">高度被持有</div></div></div>
+<h3>Reverse-DCF (从 thesis.md 整理)</h3>
+<p>在 $368.57，市场隐含的假设是 <strong>10-12% revenue CAGR for 10 yr + Op Margin ~40%</strong>。</p>
+<ul>
+<li>MSFT 当前实际 revenue growth 是 <span class="up">+17.9%</span> (TTM)，<strong>已超出市场隐含</strong></li>
+<li>MSFT 当前 Op Margin ~45%，<strong>也超出市场隐含</strong></li>
+<li>也就是说市场已经把"capex 失控 + 收入减速 + margin 压缩"都定价进去了</li>
+</ul>
+<p><strong>Margin of safety 计算（粗略）</strong>：
+- 如果 MSFT 维持 12% revenue growth + 42% Op Margin → 公允价值 $480-520
+- 如果 MSFT 维持 8% revenue growth + 38% Op Margin → 公允价值 $320-360
+- 当前 $368 接近 bear case 的中间</p>
+<h3>卖方分析师共识 — 极度看多</h3>
+<p>数据来源 StockAnalysis.com (56 个分析师)：</p>
+<div class="kpi-grid"><div class="kpi"><div class="label">Mean PT</div><div class="value">$561.11</div><div class="note"><span class="up"><span class="up">+52.2%</span></span> upside from $368</div></div><div class="kpi"><div class="label">Median PT</div><div class="value">$555</div><div class="note"><span class="up"><span class="up">+50.6%</span></span></div></div><div class="kpi"><div class="label">High PT</div><div class="value">$870</div><div class="note"><span class="up"><span class="up">+136%</span></span>（outlier）</div></div><div class="kpi"><div class="label">Low PT</div><div class="value">$400</div><div class="note"><span class="up"><span class="up">+8.5%</span></span>（最保守也是涨）</div></div><div class="kpi"><div class="label">评级</div><div class="value">Strong Buy</div><div class="note">40 strong buy / 13 buy / 3 hold / 0 sell</div></div></div>
+<div class="meters"><div class="meter"><div class="name">分析师 conviction</div><div class="track"><div class="fill high" style="width:90%"></div></div><div class="score">9/10</div><div class="note">95% 给 buy/strong-buy 是几乎一致看多</div></div></div>
+<div class="callout info"><p><strong>注意 outlier</strong>：High PT $870 (<span class="up">+136%</span>) 是单一极端 outlier，忽略它。Median $555 (<span class="up">+50.6%</span>) 是更可信的。<strong>Low PT $400 <span class="up">+8.5%</span> 是关键数字 — 即便最保守的分析师也认为有 8% 上行</strong>。这与「市场已经把 bear case 定价进去」对得上。</p></div></div><div class="tab-panel" data-tab-for="tabs1-4"><h3>4a. Azure / Copilot 的硬指标</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">Azure growth Q3 FY26</div><div class="value"><span class="up"><span class="up">+40%</span></span> YoY</div><div class="note">加速（从 Q1 <span class="up"><span class="up">+30%</span></span> 到 Q3 <span class="up"><span class="up">+40%</span></span>）</div></div><div class="kpi"><div class="label">Copilot 年化 run rate</div><div class="value">$37B</div><div class="note"><span class="up"><span class="up">+123%</span></span> YoY (Fool 2026-06-29)</div></div><div class="kpi"><div class="label">Azure 年化 revenue</div><div class="value">$75B+ (FY25)</div><div class="note">全球 400+ 数据中心 / 70 区域</div></div><div class="kpi"><div class="label">Cloud 市场份额</div><div class="value">~22-23% (Azure)</div><div class="note">vs AWS ~30% / GCP ~12%</div></div><div class="kpi"><div class="label">GitHub Copilot 付费订阅</div><div class="value">~1.5M+</div><div class="note">编程助手领导地位</div></div><div class="kpi"><div class="label">M365 总付费座位</div><div class="value">400M+</div><div class="note">Copilot 升级潜在转换市场</div></div></div>
+<p><strong>关键对比</strong>：当年的 OpenAI 关系曾让 MSFT 有结构性优势。今天：
+- OpenAI 已不再 100% 排他 Azure（也用 Oracle Cloud / 自建）
+- 但 Anthropic Claude 也在 Azure Foundry GA
+- 也就是 <strong>MSFT 从「OpenAI 独家」转型为「multi-model 平台」</strong> — 这是更可持续的策略，但短期叙事变得没那么 sexy</p>
+<h3>4b. 风险 — OpenAI 的角色</h3>
+<p>最大独立风险：<strong>OpenAI 完全脱离 Azure</strong>。目前征兆：
+- OpenAI 与 Oracle 签 $30B 算力合同（已确认）
+- OpenAI 自建数据中心 (Stargate 项目 $500B+ 计划)
+- OpenAI 自研 chip（"OpenAI's Wild Week: Custom Chip" — Yahoo 6/27）</p>
+<p><strong>反向</strong>：MSFT 在 OpenAI 持股、收益分成（49% Profit 上限至 $X 之前）— 即使 OpenAI 用别处算力，MSFT 仍享 OpenAI 商业化收益。<strong>这是 MSFT 优于其他 hyperscaler 的结构差</strong>。</p></div><div class="tab-panel" data-tab-for="tabs1-5"><h3>短期（1 个月内）</h3>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>事件</th>
+<th>决定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2026-07-29</strong></td>
+<td><strong>Q4 FY26 earnings (FY 全年收官)</strong></td>
+<td>🔥🔥🔥 <strong>最关键</strong> — Azure 加速 / 减速、capex 指引、Copilot 座位披露</td>
+</tr>
+<tr>
+<td>2026-07-02</td>
+<td>NFP / jobless claims</td>
+<td>⚠ 间接 — Fed path 影响成长股估值</td>
+</tr>
+<tr>
+<td>2026-07-10</td>
+<td>CPI 6 月</td>
+<td>⚠ 间接</td>
+</tr>
+<tr>
+<td>2026-07-23</td>
+<td>GOOG Q2 earnings</td>
+<td>⚠ AI capex narrative 同步 — 影响 MSFT 预期</td>
+</tr>
+</tbody>
+</table>
+<h3>中期（1-3 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>事件</th>
+<th>决定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TBD</td>
+<td>OpenAI 与 Microsoft 重新谈判（exclusivity、profit-share）</td>
+<td>🔥 结构性 — 如重新签 → 利好</td>
+</tr>
+<tr>
+<td>TBD</td>
+<td>EU DMA 对 Teams / Azure 互操作正式裁决</td>
+<td>⚠ 风险，但很难触及 thesis-break</td>
+</tr>
+<tr>
+<td>TBD</td>
+<td>Italy 反垄断调查结论</td>
+<td>⚠ 小到中等影响</td>
+</tr>
+<tr>
+<td>Q3 FY26 (calendar Q1 2027 print)</td>
+<td>下一份 Azure 增速 + Copilot 座位</td>
+<td>🔥 是否第二个 confirming print</td>
+</tr>
+</tbody>
+</table>
+<h3>长期（&gt;3 个月）</h3>
+<ul>
+<li><strong>Q1 FY27（calendar 2026-Q3 print, ~2026-10-29）</strong>：是否首次正式披露 Copilot 付费座位数。<strong>Wedbush 6/29 报告称这是 hyperscaler 们集体回避的数字</strong>，谁先披露谁占叙事优势。</li>
+<li><strong>Activision Blizzard 游戏整合</strong>：被收购至今已 3 年，订阅收入是否兑现仍未明朗。</li>
+</ul>
+<h3>7/29 Q4 earnings 的关键看点</h3>
+<table class="compare"><thead><tr><th>指标</th><th>Bull 阈值</th><th>Base 阈值</th><th>Bear 阈值</th><th>现状</th></tr></thead><tbody><tr><td>Azure growth</td><td>≥35%</td><td>28-35%</td><td>&lt;28%</td><td>Q3 FY26 <span class="up"><span class="up">+40%</span></span>（很高的预设）</td></tr><tr><td>Op Margin (全年)</td><td>≥45%</td><td>42-45%</td><td>&lt;42%</td><td>FY25 ~45%</td></tr><tr><td>FY27 Capex 指引</td><td>≤$80B (持平 FY26)</td><td>$85-95B</td><td>≥$100B</td><td>市场担忧 100B+</td></tr><tr><td>Copilot 披露 paid seats</td><td>≥15M</td><td>10-15M</td><td>&lt;10M 或不披露</td><td>之前一直拒绝披露</td></tr><tr><td>EPS</td><td>≥$4.20</td><td>$3.90-4.20</td><td>&lt;$3.90</td><td>共识 ~$4.00</td></tr></tbody></table></div><div class="tab-panel" data-tab-for="tabs1-6"><h3>技术面</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">价位</div><div class="value">$368.57</div><div class="note">6/29 close</div></div><div class="kpi"><div class="label">50d MA</div><div class="value">~$420 (估)</div><div class="note">**价格在 50d 下方**</div></div><div class="kpi"><div class="label">200d MA</div><div class="value">~$440 (估)</div><div class="note">**价格在 200d 下方**</div></div><div class="kpi"><div class="label">RSI</div><div class="value">&lt;30 区域估计</div><div class="note">超卖</div></div><div class="kpi"><div class="label">52w 低</div><div class="value">$349.20</div><div class="note">距底 <span class="up"><span class="up">+5.5%</span></span></div></div><div class="kpi"><div class="label">30d trend</div><div class="value"><span class="down"><span class="down">-9.78%</span></span></div><div class="note">仍向下</div></div></div>
+<p><strong>技术性结论</strong>：MSFT 是<strong>典型超卖 + 多周下行</strong>，但还<strong>没有出现底部反转信号</strong>（today risk-on 日 <span class="down">-1.18%</span> 是反例）。买入时机的技术信号 <strong>缺失</strong>。</p>
+<h3>基本面（vs 估值）</h3>
+<div class="scenarios"><div class="scenario"><div class="name bull">Bull</div><div class="bar-wrap"><div class="bar bull" style="width:0%">0%</div></div><div class="target">$520-555 by FY27 end (7/2027)</div><div class="desc">Azure 持续 35%+ + capex 趋稳 + Copilot 座位 &gt;25M + Op Margin 恢复 45%+</div></div><div class="scenario"><div class="name base">Base</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">$440-480 by 12 个月</div><div class="desc">Azure 28-32% + Copilot 座位 15-25M + Op Margin 40-43%</div></div><div class="scenario"><div class="name bear">Bear</div><div class="bar-wrap"><div class="bar bear" style="width:0%">0%</div></div><div class="target">$310-350 by 6 个月</div><div class="desc">Azure &lt;25% + capex 失控 &gt;$95B + Copilot 不披露</div></div></div>
+<p><strong>期望值（粗算）</strong>：0.25 × 530 + 0.50 × 460 + 0.25 × 330 = <strong>$464.5</strong> — <strong>当前价 $368.57 → 期望涨幅 ~<span class="up">+26%</span></strong>。</p>
+<h3>入场建议（不是建议，是 framework）</h3>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>现在 1/3 仓</strong></td>
+<td>与 thesis target $450 距离够远；估值便宜；分析师 conviction 高</td>
+<td>短期仍有下行风险（thesis-break $310 距今 <span class="down">-16%</span>）</td>
+</tr>
+<tr>
+<td><strong>等 7/29 earnings 后</strong></td>
+<td>不押注盲盒；Azure / Copilot 数字会重 calibrate 估值</td>
+<td>earnings 后可能 +5-10% 跳空（pay up 抢 chase）</td>
+</tr>
+<tr>
+<td><strong>拆 1/3 + 1/3 + 1/3</strong></td>
+<td>现在 / 7/29 前一天 / 7/29 后 1 周；分摊催化点</td>
+<td>节奏管理复杂</td>
+</tr>
+<tr>
+<td><strong>设 $349 stop（52w 低）</strong></td>
+<td>风险显式定义</td>
+<td>接近 52w 低可能被 noise 扫掉</td>
+</tr>
+</tbody>
+</table>
+<div class="verdict {watch}">现价 $368 是 5 年估值最低区域，期望涨幅 <span class="up">+26%</span>，但 7/29 Q4 earnings 之前没有催化；技术面仍 trending down；分批介入 + 7/29 后加仓更稳</div>
+<h3>关键风险</h3>
+<ol>
+<li><strong>OpenAI 关系结构性变化</strong>：若 Q4 earnings 中透露 OpenAI 大幅减少 Azure 用量 → 直接打击 thesis</li>
+<li><strong>FY27 capex 指引 &gt; $100B</strong>：会立即触发 thesis-break (&gt;$310 → 跌穿)</li>
+<li><strong>Copilot 仍不披露 paid seats</strong>：4 个季度连续躲避 = 数字一定难看；7/29 已是该季度</li>
+<li><strong>EU 结构性拆分要求</strong>（Teams / Azure 与 enterprise 分离）：低概率但 tail risk 大</li>
+</ol>
+<h3>历史类比</h3>
+<p>MSFT 类似的"5 年估值最低"区域出现过 3 次：
+- <strong>2022 Q3</strong>：通胀峰值 + Fed 加息恐慌；price ~$215，forward P/E 22×。<strong>6 个月内 <span class="up">+35%</span></strong>（V 型反弹）
+- <strong>2018 Q4</strong>：联储紧缩 + 中美贸易战；price ~$95，forward P/E 19×。<strong>3 个月内 <span class="up">+25%</span></strong>
+- <strong>2016 Q1</strong>：当年 AI 故事还没起来；price ~$50，forward P/E 18×。<strong>12 个月内 <span class="up">+30%</span></strong></p>
+<p><strong>历史 3/3 模式</strong>：5 年 forward P/E 最低 → 12 个月内反弹 25%+。这是统计而非保证，但是 supportive 信号。</p></div><div class="tab-panel" data-tab-for="tabs1-7"><div class="callout info"><p><strong>最大不确定性是 7/29 Q4 earnings</strong>：
+- 如果 Azure <span class="up">+35%</span>+ AND Copilot 披露 ≥15M paid seats AND FY27 capex 指引 ≤$85B → <strong>股价快速 +15-20%</strong>，期望值兑现
+- 如果 Azure &lt;30% OR capex &gt;$95B OR 拒披露 Copilot → <strong>跌 5-10%</strong> 到 $340-350
+- 如果三个全 miss → <strong>触 thesis-break $310</strong></p>
+<p><strong>风险/回报不对称</strong>：上行 +15-20%，下行 <span class="down">-10%</span>（最差 <span class="down">-16%</span> 至 thesis-break）。<strong>风险/回报 ratio ~ 1.5-2:1，但前提是熬过 1 个月不确定性</strong>。</p>
+<p><strong>比较优先级</strong>：相对 NVDA（30d <span class="down">-17.2%</span> 但 30d 已开始反弹）/ GOOG（入道指被动只是 one-off）/ AMZN（Anthropic 重谈风险）/ TSLA（Q2 交付 binary 风险），<strong>MSFT 是 Mag7 里最「old-school estimate beat 故事」</strong>，催化点最清晰（earnings），ROIC 最稳。</p></div></div><div class="tab-panel" data-tab-for="tabs1-8"><ol>
+<li><strong>不全仓</strong>。现在 1/3 仓位（$120-$130 估值）建立 baseline 暴露</li>
+<li><strong>7/29 前 1 天</strong>：再加 1/3，无论市场状态。这是 expected value tilt 的标准 setup</li>
+<li><strong>7/29 后看结果</strong>：
+   - Beat → 1 周内追加 1/3
+   - Inline → 持平观察
+   - Miss → 减仓至 1/3，等下次（10 月 Q1 FY27 print）</li>
+<li><strong>Stop</strong>：$320 硬止损（距今 <span class="down">-13%</span>），低于 thesis-break $310</li>
+<li><strong>不应该</strong>：在 7/29 当天 buy market — earnings 后流动性差、点位易扭曲</li>
+</ol>
+<hr>
+<p><strong>Sources</strong>：
+- StockAnalysis.com <a href="https://stockanalysis.com/stocks/msft/forecast/">forecast</a> / <a href="https://stockanalysis.com/stocks/msft/statistics/">statistics</a> / <a href="https://stockanalysis.com/stocks/msft/financials/ratios/">financials/ratios</a>
+- Motley Fool <a href="https://www.fool.com/investing/2026/06/29/down-35-on-artificial-intelligence-ai-panic-why-sm/">Down 35% on AI Panic</a>
+- Yahoo Finance <a href="https://finance.yahoo.com/quote/MSFT/">MSFT page</a>
+- Wikipedia <a href="https://en.wikipedia.org/wiki/Microsoft_Azure">Microsoft Azure</a>
+- Workspace <code>stocks/MSFT/thesis.md</code> (已有 thesis 框架)
+- 自有 fetch.py 数据 (close 2026-06-29)</p></div></div>
+</body>
+</html>
