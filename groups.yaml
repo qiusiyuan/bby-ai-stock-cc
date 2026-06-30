@@ -55,11 +55,18 @@ focus_clusters:
     description: Hyperscaler capex 开支方 + AI 算力底层；判断 "AI 投入产出" 叙事走向
     watch_items: [hyperscaler earnings capex guide, AI revenue ramp signals, talent moves (e.g. Jumper → Anthropic), VC funding rounds, OpenAI/Anthropic ARR disclosures]
 
-  - name: 能源
+  - name: 能源(油气)
     kind: sector
-    members: [SU, CVX, CNQ, "HXE.TO", GEV]
-    description: 油气 + 能源基建 — WTI 价格 + Iran/Israel 地缘 + 数据中心电力 (GEV)
-    watch_items: [WTI/Brent moves, Strait of Hormuz / Iran-Israel state, OPEC+, US-Iran negotiations, data-center power demand (GEV)]
+    members: [SU, CVX, CNQ, "HXE.TO"]
+    description: 上游/综合油气 — WTI 价格 + Iran/Israel 地缘 + Canadian crude differential
+    watch_items: [WTI/Brent moves, Strait of Hormuz / Iran-Israel state, OPEC+ 配额决定, US-Iran negotiations, WCS-WTI differential, TMX 管线 throughput]
+
+  - name: 电力/Grid
+    kind: sector
+    members: [GEV]
+    external_refs: ["Siemens Energy (ENR.DE / SMEGF)", "Mitsubishi Heavy Industries (7011.T)", "Hitachi Energy (6501.T)", "Eaton (ETN)", "Schneider Electric (SU.PA)", "ABB"]
+    description: AI 数据中心电力 + SMR/核电 + 电网硬件 — 燃气轮机 / 变压器 / 高压电网 / 核电汽轮机。GEV 是唯一 US-listed 同时覆盖 turbine + grid + service 的纯标的；Siemens Energy / Mitsubishi 是直接对手但 US 投资难度更高
+    watch_items: [hyperscaler PPA 签约（MSFT/GOOG/AMZN 直签 gas 容量), GEV Power segment margin, transformer/grid backlog 增长, SMR DOE deadline 进展, Wind 段 break-even 进度, Iran 重建合同, IRA / 基础设施法案落地]
 
   - name: 货币
     kind: topic
@@ -79,7 +86,11 @@ groups:
 
   energy:
     description: Oil, gas, integrated energy, and the Canadian energy ETF
-    members: ["HXE.TO", SU, CVX, CNQ, GEV]
+    members: ["HXE.TO", SU, CVX, CNQ]
+
+  power_grid:
+    description: AI 数据中心电力 + SMR + 电网硬件（燃气轮机 / 变压器 / 核电汽轮机）
+    members: [GEV]
 
   ai:
     description: AI value chain — chips, memory, infra, networking, software

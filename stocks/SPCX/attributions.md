@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-06-29 · +7.15% day · ▲ major
+**Tags:** `index_inclusion`, `post_ipo`
+**Confidence:** high
+
+**Primary cause.** EOD update: SPCX 收盘 +7.15% (盘中 +4.16%, 尾盘加速)。Nasdaq-100 纳入倒计时确认;期权链定价回归 cheap 启动衍生品 flow。SSPC -14.47% (反向 ETF, vol decay 加速)。6/18 user prediction「>=$200 by 6/26」仍然 FAIL;agent base case ($150-180) 当前价 $164.19 精确命中。距 thesis-break $130 缓冲扩大到 +26.3%。
+
+**Sources.**
+- Yahoo: [SpaceX joins Nasdaq-100 index weeks after SPCX IPO](https://finance.yahoo.com/)
+- Yahoo: [SpaceX Stock Options Are Now Cheap With Nasdaq-100 Inclusion Upcoming](https://finance.yahoo.com/)
+- Yahoo: [Comcast, Charter, Rocket Lab, SpaceX, Tesla, and More Stocks That Explain Today's Market](https://finance.yahoo.com/)
+
+**Cross-assets.** SPY PCT +1.65% · QQQ PCT +2.49% · SSPC PCT -14.47%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-06-29.md`
+
+---
 ### 2026-06-22 · -10.78% day · ▼ extreme
 **Tags:** `sector_rotation`, `ai_demand`, `secondary_offering`, `partnership_news`, `flow_event`
 **Confidence:** high

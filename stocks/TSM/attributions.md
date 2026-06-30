@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-06-29 · +5.26% day · ▲ major
+**Tags:** `risk_on`, `earnings_preview`
+**Confidence:** medium
+
+**Primary cause.** TSM 收盘 +5.26% (盘中 +4.7%);risk-on 反弹 + 月度销售上调 + 6/23 chip rout 后 mean reversion。Vol 1.11x = 真实买盘介入,不是 beta。下个 catalyst 7/16 Q2 earnings (CoWoS / 1.4nm / HBM)。
+
+**Sources.**
+- Yahoo: [Taiwan Semiconductor Manufacturing Company (TSM)'s Monthly Sales Rise](https://finance.yahoo.com/)
+- Yahoo: [Taiwan Semiconductor Manufacturing Company Ltd. (TSM) is Attracting Investor Attention](https://finance.yahoo.com/)
+
+**Cross-assets.** SPY PCT +1.65% · QQQ PCT +2.49% · VOLUME RATIO 1D 1.11
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-06-29.md`
+
+---
 ### 2026-06-18 · +6.94% day · ▲ major
 **Tags:** `ai_demand`, `sector_rotation`, `competitor_news`, `policy_china`, `production_milestone`
 **Confidence:** high

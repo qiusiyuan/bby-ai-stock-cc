@@ -4,18 +4,18 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
-### 2026-06-29 · +7.73% day · ▲ major
+### 2026-06-29 · +8.46% day · ▲ major
 **Tags:** `risk_on`, `macro_geopolitics`, `short_covering`
 **Confidence:** medium
 
-**Primary cause.** Beta + 30d -7.7% 后空头回补;US-Iran 缓和驱动整体 risk-on (QQQ +2.3%) + Trump 解雇 Powell 司法 block;新闻面 idiosyncratic 偏负或中性。Vol 0.79x 表明无大机构 capitulation 或建仓。明天 6/30 Q2 交付预设利好定价部分。
+**Primary cause.** EOD update: TSLA 收盘 +8.46% (盘中曾 +7.7%, 尾盘加速)。Beta + 6/30 Q2 交付预设利好 + 30d -7.7% 后空头回补;Vol 1.21x (升至均值之上,首次有 institutional 加码迹象) — 与盘中 0.79x 相比信号变了。新闻面 idiosyncratic 仍偏负 (Rivian quality, fierce new rival);涨幅完全靠 macro + 交付 expectation。明天交付数据是真正判定点;共识 ~460k,>=480k = 确认,<=445k = 大幅回吐。
 
 **Sources.**
 - Yahoo: [US Equity Indexes Rise as Communication Services Tops Sector Charts, Trump Sends Envoys to Qatar for Iran Talks](https://finance.yahoo.com/)
 - Yahoo: [Tesla Faces Fierce New Rival in Self-Driving Race](https://finance.yahoo.com/)
 - Yahoo: [Comcast, Charter, Rocket Lab, SpaceX, Tesla, and More Stocks That Explain Today's Market](https://finance.yahoo.com/)
 
-**Cross-assets.** SPY PCT +1.55% · QQQ PCT +2.30% · VIX 17.78 · TNX 4.37
+**Cross-assets.** SPY PCT +1.65% · QQQ PCT +2.49% · VIX 17.65 · TNX 4.37 · VOLUME RATIO 1D 1.21
 
 **Agent read.** 
  · Snapshot at `dashboard/2026-06-29.md`
