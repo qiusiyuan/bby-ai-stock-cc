@@ -32,6 +32,10 @@ SESSION_RE = re.compile(r"^session-(\d{4}-\d{2}-\d{2})\.html$")
 DEEP_DIVE_RE = re.compile(
     r"^stocks-(?P<ticker>[a-z0-9]+)-research-(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.+)-md\.html$"
 )
+# General research / topic deep-dive: research-{YYYY-MM-DD}-{slug}-md.html
+RESEARCH_RE = re.compile(
+    r"^research-(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.+)-md\.html$"
+)
 
 LATEST_COUNT = 5
 
@@ -187,6 +191,12 @@ def discover_reports() -> tuple[
         if m:
             deep_dives.append(
                 (m.group("date"), m.group("ticker").upper(), m.group("slug"), p)
+            )
+            continue
+        m = RESEARCH_RE.match(p.name)
+        if m:
+            deep_dives.append(
+                (m.group("date"), "TOPIC", m.group("slug"), p)
             )
             continue
     daily.sort(key=lambda x: x[0], reverse=True)
