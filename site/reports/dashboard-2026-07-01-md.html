@@ -171,7 +171,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
 </style>
 </head>
 <body>
-<div class="meta">📊 Stock workspace · rendered 2026-07-01 10:20</div>
+<div class="meta">📊 Stock workspace · rendered 2026-07-01 10:55</div>
 <h1 id="2026-07-01-daily-report">2026-07-01 Daily Report</h1>
 <div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }#tabs1-8:checked ~ [data-tab-for="tabs1-8"] { display: block; }#tabs1-9:checked ~ [data-tab-for="tabs1-9"] { display: block; }#tabs1-10:checked ~ [data-tab-for="tabs1-10"] { display: block; }#tabs1-11:checked ~ [data-tab-for="tabs1-11"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><input class="tab-input" type="radio" name="tabs1" id="tabs1-8"><input class="tab-input" type="radio" name="tabs1" id="tabs1-9"><input class="tab-input" type="radio" name="tabs1" id="tabs1-10"><input class="tab-input" type="radio" name="tabs1" id="tabs1-11"><div class="tabs"><label class="tab-label" for="tabs1-0">Pulse &amp; Macro</label><label class="tab-label" for="tabs1-1">Watchlist &amp; Movers</label><label class="tab-label" for="tabs1-2">Timeline 30d</label><label class="tab-label" for="tabs1-3">Focus: TSLA</label><label class="tab-label" for="tabs1-4">Focus: SpaceX</label><label class="tab-label" for="tabs1-5">Focus: DRAM/HBM</label><label class="tab-label" for="tabs1-6">Focus: AI capex</label><label class="tab-label" for="tabs1-7">Focus: 能源(油气)</label><label class="tab-label" for="tabs1-8">Deep Dive: MU</label><label class="tab-label" for="tabs1-9">Deep Dive: INTC</label><label class="tab-label" for="tabs1-10">Deep Dive: TSLA</label><label class="tab-label" for="tabs1-11">Brief</label></div><div class="tab-panel" data-tab-for="tabs1-0"><div class="callout danger"><p><strong>OpenAI 效率突破重锤半导体 — SOX <span class="down">-5%</span>，MU/INTC/TSM/MRVL 集体 -7~10%，META 领涨 <span class="up">+9.7%</span> 推动 rotation INTO 软件/广告。</strong> 半年度最后交易日最佳表现 (DJI 5y 最佳上半年) 翌日即遭 efficiency 叙事逆转。Fed Chair Warsh 国际亮相 + US-Iran 高层会谈 + ADP 跌破 +100K = 宏观三重背景。</p></div>
 <h3>Indices</h3>
@@ -310,11 +310,65 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
 <li><strong>"General Motors and Micron sign long-term memory chip supply deal"</strong> + <strong>"$250M backing Trump accounts"</strong> — 正面催化被完全淹没</li>
 <li>BofA from "buying opportunity" (6/23) to "bubble risk indicator" (7/1) in 8 days — analyst flip</li>
 </ul>
+<h3>OpenAI efficiency 技术细节 (The Information 报道)</h3>
+<p>这不是 OpenAI 正式公告 — 是 The Information 周二报道的内部消息:</p>
+<table>
+<thead>
+<tr>
+<th>细节</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>改进方向</td>
+<td><strong>推理 (inference) 成本</strong>，不是训练</td>
+</tr>
+<tr>
+<td>降幅</td>
+<td><strong>&gt;50%</strong> (more than halved)</td>
+</tr>
+<tr>
+<td>具体方法</td>
+<td>quantization, KV caching, batch processing, model routing</td>
+</tr>
+<tr>
+<td>震撼数字</td>
+<td>非登录 ChatGPT 用户流量仅需 <strong>"几百个 GPU"</strong></td>
+</tr>
+<tr>
+<td>OpenAI 毛利</td>
+<td>Q1 39% → 年底目标 52%；这些优化是达标路径</td>
+</tr>
+<tr>
+<td>Semi 权重</td>
+<td>半导体占 S&amp;P 500 权重达 <strong>19.7%</strong> (2020 年仅 5%) — 最大化暴露</td>
+</tr>
+<tr>
+<td>Q2 半导体市值增长</td>
+<td>MU + INTC + AMD 合计 <strong>+$2T</strong> — 回调基数大</td>
+</tr>
+</tbody>
+</table>
+<p><strong>市场的逻辑链:</strong>
+1. 推理成本砍半 → 每单位 AI output 需要更少 GPU/HBM
+2. → 前向 GPU 采购量可能低于华尔街模型假设
+3. → META 同日宣布卖云计算 = 暗示 hyperscaler <strong>已有多余算力</strong> (减少采购紧迫性)
+4. → 半导体 S&amp;P 权重 19.7% (历史最高) + Q2 刚涨 $2T = 获利了结诱因极大</p>
+<p><strong>关键 nuance — 对 MU/HBM 的实际冲击可能被高估:</strong>
+- 这是 <strong>inference</strong> 优化，不是 training — HBM 需求主要由 training 驱动 (每个 GPU 配 HBM stack)
+- Inference workload 用的 HBM 占总 TAM 比例远小于 training
+- NVDA 只跌 <span class="down">-1.7%</span> 因为 Broadcom "Jalapeño" 定制推理芯片说明需求是从通用 GPU <strong>转向</strong> custom ASIC，不是离开硅
+- 文章本身也问: "durable reassessment of AI hardware demand or a one-day repricing of tail risk?"</p>
 <h3>My read (inferred)</h3>
 <p>这是 <strong>narrative-level repricing</strong>, 不是 6/23 那种 technical mean-reversion。区别:
 1. 6/23 catalyst = Korean leverage unwind (技术性) → 恢复快
 2. 7/1 catalyst = OpenAI efficiency + BofA bubble indicator (叙事性) → 市场在问 "AI 硬件需求增长的 slope 是否被高估"</p>
-<p><strong>但:</strong> vol_ratio 0.5x 说明机构没有离场。MU 从 ATH $1,255 累计下跌 <span class="down">-16.6%</span>，8 天内两次 -9~11%。如果 narrative 是对的 (efficiency 真的减少 HBM demand)，确认点是 TSM 7/16 CoWoS 利用率和 SK Hynix 7/24 HBM 出货 guide。在此之前是情绪定价。</p>
+<p><strong>但有三个 counter-arguments:</strong>
+- 效率提升是 inference-side → HBM 需求主要 driven by training (每颗 Blackwell 需要 192GB HBM3E)
+- vol_ratio 0.5x 说明机构没有离场 — 仍是 retail/algo 恐慌
+- NVDA 仅 <span class="down">-1.7%</span> vs MU <span class="down">-9.3%</span> = GPU monopoly 地位未被质疑; demand 可能只是 reshuffle (通用→定制) 而非 destruction</p>
+<p>MU 从 ATH $1,255 累计下跌 <span class="down">-16.6%</span>，8 天内两次 -9~11%。确认点是 TSM 7/16 CoWoS 利用率和 SK Hynix 7/24 HBM 出货 guide。在此之前是情绪定价。</p>
 <p>GM 长期供应协议 + $250M Trump 账户投资是正面信号 (diversification beyond AI) 但完全被 efficiency 叙事淹没。</p>
 <h3>Confidence</h3>
 <ul>
