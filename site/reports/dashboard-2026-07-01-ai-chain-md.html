@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 价值链全景图 2026-07-01</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-07-01 11:44</div>
+<h1 id="ai">AI 价值链全景图 — 从硅到应用</h1>
+<blockquote>
+<p>专题分析 2026-07-01。基于 OpenAI efficiency 叙事触发的板块分裂，拆解 AI 链条每层的角色、公司归位、以及效率提升对各层的差异化影响。</p>
+</blockquote>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }#tabs1-8:checked ~ [data-tab-for="tabs1-8"] { display: block; }#tabs1-9:checked ~ [data-tab-for="tabs1-9"] { display: block; }#tabs1-10:checked ~ [data-tab-for="tabs1-10"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><input class="tab-input" type="radio" name="tabs1" id="tabs1-8"><input class="tab-input" type="radio" name="tabs1" id="tabs1-9"><input class="tab-input" type="radio" name="tabs1" id="tabs1-10"><div class="tabs"><label class="tab-label" for="tabs1-0">总览：7 层 AI 价值链</label><label class="tab-label" for="tabs1-1">❶ 制造层 (Foundry)</label><label class="tab-label" for="tabs1-2">❷ 通用 GPU / 加速器</label><label class="tab-label" for="tabs1-3">❸ 定制 ASIC (XPU)</label><label class="tab-label" for="tabs1-4">❹ 存储层 (HBM / DRAM)</label><label class="tab-label" for="tabs1-5">❺ 网络 / 互联层</label><label class="tab-label" for="tabs1-6">❻ 云 / 算力平台层</label><label class="tab-label" for="tabs1-7">❼ AI 应用 / 模型层</label><label class="tab-label" for="tabs1-8">效率叙事影响汇总 — &quot;谁受益谁受害&quot; 热力图</label><label class="tab-label" for="tabs1-9">关键洞察</label><label class="tab-label" for="tabs1-10">投资决策映射</label></div><div class="tab-panel" data-tab-for="tabs1-0"><table class="compare"><thead><tr><th></th><th>层</th><th>定义</th><th>代表公司</th><th>今日 1D%</th><th>效率影响</th></tr></thead><tbody><tr><td></td><td>❶ 制造 (Foundry)</td><td>把芯片设计变成物理硅</td><td>TSM, INTC(foundry), Samsung</td><td><span class="down"><span class="down">-6.7%</span></span>, <span class="down"><span class="down">-8.1%</span></span>, <span class="down"><span class="down">-5.8%</span></span></td><td>⚠ 间接负面</td></tr><tr><td></td><td>❷ 通用 GPU/加速器</td><td>设计并销售通用 AI 训练/推理芯片</td><td>NVDA, AMD</td><td><span class="down"><span class="down">-1.2%</span></span>, <span class="down"><span class="down">-5.2%</span></span></td><td>⚠ 中性偏负</td></tr><tr><td></td><td>❸ 定制 ASIC (XPU)</td><td>为特定客户设计专用 AI 芯片</td><td>AVGO, MRVL</td><td><span class="down"><span class="down">-2.0%</span></span>, <span class="down"><span class="down">-7.7%</span></span></td><td>✅ 潜在受益</td></tr><tr><td></td><td>❹ 存储 (HBM/DRAM)</td><td>为 GPU/ASIC 提供高带宽内存</td><td>MU, SK Hynix, Samsung, DRAM</td><td><span class="down"><span class="down">-9.3%</span></span>, <span class="down"><span class="down">-3.4%</span></span>, <span class="down"><span class="down">-5.8%</span></span>, <span class="down"><span class="down">-9.9%</span></span></td><td>⚠ 负面 (training); 中性 (inference)</td></tr><tr><td></td><td>❺ 网络/互联</td><td>连接 GPU 集群的高速网络</td><td>AVGO(ethernet), MRVL, NVDA(InfiniBand), NOK</td><td><span class="down"><span class="down">-2.0%</span></span>, <span class="down"><span class="down">-7.7%</span></span>, <span class="down"><span class="down">-1.2%</span></span>, <span class="down"><span class="down">-2.6%</span></span></td><td>中性</td></tr><tr><td></td><td>❻ 云/算力平台</td><td>拥有 GPU 集群并出租算力</td><td>MSFT(Azure), AMZN(AWS), GOOG(GCP), META, CoreWeave</td><td><span class="up"><span class="up">+3.7%</span></span>, <span class="up"><span class="up">+2.3%</span></span>, <span class="up"><span class="up">+0.7%</span></span>, <span class="up"><span class="up">+9.7%</span></span>, 大跌</td><td>✅ 正面 (margin 提升)</td></tr><tr><td></td><td>❼ AI 应用/模型</td><td>构建和部署 AI 产品</td><td>OpenAI, Anthropic, SNOW, MSFT(Copilot)</td><td>—</td><td>✅✅ 核心受益</td></tr></tbody></table>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-1"><h3>角色</h3>
+<p>把别人设计的芯片 (NVDA, AVGO, AMD, Apple 等的设计) 用先进制程变成物理晶圆。</p>
+<h3>公司归位</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">TSM</div><div class="value">$445.76 / $2.31T / PE 22x</div><div class="note">垄断地位: 全球 90%+ 先进制程 (≤5nm)。所有 AI 芯片最终都由 TSM 生产</div></div><div class="kpi"><div class="label">INTC (foundry)</div><div class="value">$128.30 / $0.71T</div><div class="note">挑战者: 18A 制程追赶中; Apple 回归传闻; 离量产仍有距离</div></div><div class="kpi"><div class="label">Samsung Foundry</div><div class="value">₩314,500</div><div class="note">韩国: 3nm GAA 量产但良率低; AI 芯片代工份额 &lt;5%</div></div></div>
+<h3>核心产能/技术</h3>
+<ul>
+<li><strong>CoWoS (Chip-on-Wafer-on-Substrate)</strong>: TSM 的先进封装技术，把 GPU + HBM 堆叠在一个基板上。NVDA Blackwell、AMD MI300 都依赖 CoWoS。<strong>瓶颈在这里 — 不是晶圆本身</strong></li>
+<li><strong>1.4nm (TSM A14)</strong>: 下一代制程，2027 量产目标</li>
+<li><strong>Intel 18A</strong>: INTC 的翻身制程，对标 TSM N2。2027 H1 量产目标</li>
+</ul>
+<h3>效率叙事影响</h3>
+<p><strong>间接负面但非致命。</strong> 如果下游需要更少芯片 → 代工订单减少。但 TSM 的 CoWoS 产能已经排满到 2027 (backlog)，短期无影响。真正的风险在 2027+ 如果效率提升持续侵蚀新增订单。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-2"><h3>角色</h3>
+<p>设计通用 AI 训练和推理芯片。"通用" = 不为特定客户定制，所有人都能买。</p>
+<h3>公司归位</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">NVDA</div><div class="value">$197.70 / $4.80T / PE 15.5x</div><div class="note">绝对垄断: GPU (Blackwell/Rubin) + CUDA 生态 + InfiniBand 网络。AI training 90%+ 份额</div></div><div class="kpi"><div class="label">AMD</div><div class="value">$550.45 / $0.89T / PE 41x</div><div class="note">挑战者: MI300X/MI350 追赶; ROCm 生态弱于 CUDA; 主要靠价格和大客户(MSFT)</div></div><div class="kpi"><div class="label">INTC (Gaudi)</div><div class="value">(含在 INTC 整体)</div><div class="note">远距离第三: Gaudi 3 有 AWS 订单但份额极小; 更多是 Xeon CPU 配角</div></div></div>
+<h3>核心产品线</h3>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th>用途</th>
+<th>关键指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVDA Blackwell (B200/GB200)</td>
+<td>Training + Inference</td>
+<td>每 rack 192GB HBM3E; 2026 量产中</td>
+</tr>
+<tr>
+<td>NVDA Rubin (2027)</td>
+<td>下一代; NVLink 6</td>
+<td>配 HBM4; Xeon 6 做 host CPU (INTC 利好)</td>
+</tr>
+<tr>
+<td>AMD MI300X</td>
+<td>Training 替代</td>
+<td>192GB HBM3; 价格低于 NVDA 20-30%</td>
+</tr>
+<tr>
+<td>AMD MI350 (2026 H2)</td>
+<td>Training + Inference</td>
+<td>追赶 Blackwell</td>
+</tr>
+</tbody>
+</table>
+<h3>效率叙事影响</h3>
+<p><strong>中性偏负 — 但 NVDA 的 moat 提供巨大缓冲。</strong></p>
+<p>关键逻辑: 如果推理效率提升 50% → 单位推理需要更少 GPU。但:
+- <strong>Jevons 悖论</strong>: 推理成本降低 → 更多应用部署 AI → 总 inference volume 可能不降反升
+- <strong>NVDA 只跌 <span class="down">-1.2%</span></strong>: 市场认为 GPU monopoly + training 需求未被挑战
+- <strong>AMD 跌 <span class="down">-5.2%</span></strong>: 市场认为 "me-too" player 在需求下行时先被砍</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-3"><h3>角色</h3>
+<p>为 <strong>特定 hyperscaler</strong> 量身定制 AI 芯片 — 比通用 GPU 更高效 (针对特定 workload 优化)，但只服务一个客户。</p>
+<h3>公司归位</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">AVGO</div><div class="value">$370.10 / $1.76T / PE 19x</div><div class="note">龙头: Google TPU (v4/v5/v6), Meta MTIA 的设计合伙人。同时做 AI 网络 ASIC</div></div><div class="kpi"><div class="label">MRVL</div><div class="value">$274.91 / $0.24T / PE 44x</div><div class="note">第二: AWS Trainium/Inferentia 的设计合伙人; 也做 DPU/网络</div></div></div>
+<h3>核心逻辑</h3>
+<ul>
+<li>Hyperscaler 不想 100% 依赖 NVDA (太贵 + 供给受限) → 自研定制芯片</li>
+<li>但芯片设计极复杂 (2-3 年周期) → 需要 AVGO/MRVL 做 co-design partner</li>
+<li><strong>切入点</strong>: Google TPU (AVGO), AWS Trainium (MRVL), Meta MTIA (AVGO), Microsoft Maia (未确认合伙人)</li>
+</ul>
+<h3>为什么 "Jalapeño" 对 AVGO 是利好</h3>
+<ul>
+<li>OpenAI 和 Broadcom 合作设计 "Jalapeño" 推理专用芯片</li>
+<li>= OpenAI 在 <strong>从 NVDA 通用 GPU 转向 AVGO 定制 ASIC</strong> 做推理</li>
+<li>= efficiency 叙事的逻辑终点是 <strong>更多定制 ASIC, 更少通用 GPU</strong></li>
+<li>= AVGO 是 efficiency shift 的受益者</li>
+</ul>
+<h3>效率叙事影响</h3>
+<p><strong>✅ 潜在受益。</strong> "推理更高效" 的物理载体就是定制 ASIC — inference-optimized chip 是 AVGO 的产品。需求从通用 GPU 流向定制 ASIC = AVGO TAM 增长。MRVL 跌 <span class="down">-7.7%</span> 是市场今天未细分 ASIC vs GPU，属于误杀。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-4"><h3>角色</h3>
+<p>为 GPU 和 ASIC 提供高带宽内存。每颗 AI 芯片需要配套 HBM stack (通过 CoWoS 封装在一起)。</p>
+<h3>公司归位</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">MU</div><div class="value">$1,047 / $1.18T / PE 7x fwd</div><div class="note">美国唯一 HBM 玩家; HBM3E 量产中; 份额 ~15% 但增长最快</div></div><div class="kpi"><div class="label">SK Hynix</div><div class="value">₩2,560,000 / ~$1.3T</div><div class="note">HBM 龙头: ~50% 市场份额; HBM4 领先; Nasdaq ADS (SKHY) 7/10 上市</div></div><div class="kpi"><div class="label">Samsung</div><div class="value">₩314,500 / ~$0.3T</div><div class="note">HBM 落后者: 良率问题; 份额 ~35% 但在流失; DRAM/NAND 仍是巨人</div></div><div class="kpi"><div class="label">DRAM ETF</div><div class="value">$66.50</div><div class="note">加权跟踪以上三家; 用 ETF 持有 = 自动获得 SK Hynix 25-30% 权重</div></div></div>
+<h3>HBM 代际路线图</h3>
+<table>
+<thead>
+<tr>
+<th>代际</th>
+<th>带宽</th>
+<th>容量</th>
+<th>领先者</th>
+<th>对应 GPU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HBM3</td>
+<td>819 GB/s</td>
+<td>24GB/stack</td>
+<td>Samsung</td>
+<td>H100</td>
+</tr>
+<tr>
+<td>HBM3E</td>
+<td>1.2 TB/s</td>
+<td>36GB/stack</td>
+<td><strong>SK Hynix</strong></td>
+<td>H200, Blackwell</td>
+</tr>
+<tr>
+<td>HBM4 (2026 H2)</td>
+<td>2+ TB/s</td>
+<td>48GB/stack</td>
+<td><strong>SK Hynix</strong></td>
+<td>Rubin</td>
+</tr>
+<tr>
+<td>HBM4E (2027+)</td>
+<td>3+ TB/s</td>
+<td>64GB+</td>
+<td>TBD</td>
+<td>Next-gen</td>
+</tr>
+</tbody>
+</table>
+<h3>效率叙事影响 — 需要区分 training vs inference</h3>
+<table>
+<thead>
+<tr>
+<th>Workload</th>
+<th>HBM 需求</th>
+<th>效率影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Training</strong> (模型训练)</td>
+<td>极高 — 每颗 GPU 配 192GB HBM3E</td>
+<td><strong>未受挑战</strong> — OpenAI 的效率提升是推理侧</td>
+</tr>
+<tr>
+<td><strong>Inference</strong> (模型推理)</td>
+<td>中等 — 但推理 GPU 数量远大于训练</td>
+<td><strong>负面</strong> — 更少 GPU = 更少配套 HBM</td>
+</tr>
+<tr>
+<td><strong>Net</strong></td>
+<td></td>
+<td><strong>混合</strong> — 取决于 inference GPU 减少量 vs training 继续增长</td>
+</tr>
+</tbody>
+</table>
+<p><strong>今天 MU <span class="down">-9.3%</span> 是过度反应的概率较高</strong> — 因为 MU 的 HBM 主要供给 training-side (NVDA Blackwell)，而 OpenAI 的效率提升是 inference-side。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-5"><h3>角色</h3>
+<p>连接数千颗 GPU 形成超级计算集群。AI training 需要 GPU 之间极高带宽通信。</p>
+<h3>公司归位</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">NVDA (InfiniBand/NVLink)</div><div class="value">(含在 NVDA 整体)</div><div class="note">垄断 AI training 网络: NVLink + InfiniBand。封闭生态。</div></div><div class="kpi"><div class="label">AVGO (Ethernet)</div><div class="value">(含在 AVGO 整体)</div><div class="note">Ethernet 替代路线: Tomahawk/Jericho switching ASIC。开放生态，追赶中。</div></div><div class="kpi"><div class="label">MRVL (DPU/PAM4)</div><div class="value">(含在 MRVL 整体)</div><div class="note">数据处理单元 + 光模块 PAM4 连接</div></div><div class="kpi"><div class="label">NOK</div><div class="value">$12.94 / PE n/a</div><div class="note">边缘: 5G backhaul; AI 数据中心网络不是核心业务</div></div></div>
+<h3>两条路线之争</h3>
+<ul>
+<li><strong>NVDA InfiniBand</strong>: 当前 AI training 网络标准。封闭、贵、但性能最好。</li>
+<li><strong>Ethernet (AVGO/MRVL)</strong>: 开放标准; 成本低 30-50%; 性能在追赶。Hyperscaler 倾向 Ethernet (不想被 NVDA lock-in)。</li>
+</ul>
+<h3>效率叙事影响</h3>
+<p><strong>中性。</strong> 网络需求主要由集群规模驱动 (GPU 数量)。如果 inference 需要更少 GPU → 集群不需要那么大 → 网络投资减少。但 training 集群仍在扩张 (10万+ GPU 集群是趋势) → 网络需求不减。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-6"><h3>角色</h3>
+<p>拥有并运营 GPU 集群，把算力以 API/云服务形式卖给下游客户。</p>
+<h3>公司归位</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">MSFT (Azure)</div><div class="value">$386.80 / $2.88T / PE 20x</div><div class="note">Azure AI: OpenAI 独家云 + Copilot。AI capex $80B/yr</div></div><div class="kpi"><div class="label">AMZN (AWS)</div><div class="value">$243.69 / $2.63T / PE 25x</div><div class="note">AWS: Trainium (自研) + NVDA GPU 双轨。最大云市场份额</div></div><div class="kpi"><div class="label">GOOG (GCP)</div><div class="value">$355.89 / $4.36T / PE 24x</div><div class="note">GCP: TPU (自研, AVGO 设计) + Gemini。AI-first 战略</div></div><div class="kpi"><div class="label">META</div><div class="value">$617.71 / $1.57T / PE 17x</div><div class="note">非卖算力 (internal); 但今天宣布卖 AI cloud 给外部 = 进入此层</div></div><div class="kpi"><div class="label">CoreWeave</div><div class="value">(private, 大跌)</div><div class="note">&quot;Neocloud&quot;: 纯 GPU-as-a-service; META 自建 cloud 直接冲击</div></div></div>
+<h3>效率叙事影响</h3>
+<p><strong>✅✅ 核心受益层。</strong></p>
+<p>逻辑极其直接:
+1. 推理成本降 50% → 同样 GPU 集群产出翻倍 → <strong>毛利率飙升</strong>
+2. OpenAI 毛利从 39% → 目标 52% (靠效率提升)
+3. Azure/AWS/GCP 如果自家 inference 也效率提升 → margin expansion
+4. META 今天 <span class="up">+9.7%</span> = 市场在价这个逻辑
+5. CoreWeave 等 neocloud 大跌 = 如果 hyperscaler 自己效率够高且有余力卖算力，neocloud 的存在价值被质疑</p>
+<p><strong>但有一个 nuance</strong>: 如果 inference 太便宜 → AI API 价格战 → revenue per query 下降。长期看是 Jevons (用量爆炸 &gt; 单价下降)，但短期价格战是风险。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-7"><h3>角色</h3>
+<p>开发和部署 AI 模型/产品。直接面向终端用户或企业客户。</p>
+<h3>公司归位</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">OpenAI</div><div class="value">(private, ~$300B 估值)</div><div class="note">ChatGPT/API; 效率提升的直接受益者 (毛利 39%→52%)</div></div><div class="kpi"><div class="label">Anthropic</div><div class="value">(private, ~$60B 估值)</div><div class="note">Claude; 同样受益于更便宜推理; MU 战略协议客户</div></div><div class="kpi"><div class="label">MSFT (Copilot)</div><div class="value">(含在 MSFT)</div><div class="note">企业 AI 产品; 嵌入 Office/Teams/GitHub</div></div><div class="kpi"><div class="label">GOOG (Gemini)</div><div class="value">(含在 GOOG)</div><div class="note">搜索 + 企业 AI; 自有 TPU 推理更便宜</div></div><div class="kpi"><div class="label">META (Llama)</div><div class="value">(含在 META)</div><div class="note">开源模型; 自用于 Reels/Ads; 现在也对外卖</div></div><div class="kpi"><div class="label">SNOW</div><div class="value">$260.84 / $0.09T / PE 97x</div><div class="note">AI 数据平台; 受益于企业 AI 采用; 但估值极高</div></div></div>
+<h3>效率叙事影响</h3>
+<p><strong>✅✅✅ 最大受益层 — 但不是上市 pure play。</strong></p>
+<p>推理效率提升 → COGS (inference 成本) 直降 → gross margin 暴涨 → 可以降价抢市场 OR 利润留存。OpenAI/Anthropic 是 private，上市公司受益排序: META &gt; GOOG &gt; MSFT &gt; AMZN &gt; SNOW。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-8"><div class="meters"><div class="meter"><div class="name">❼ 应用/模型 (OpenAI, Anthropic)</div><div class="track"><div class="fill high" style="width:100%"></div></div><div class="score">10/10</div><div class="note">核心受益: COGS 直降</div></div><div class="meter"><div class="name">❻ 云平台 (META, MSFT, AMZN, GOOG)</div><div class="track"><div class="fill high" style="width:80%"></div></div><div class="score">8/10</div><div class="note">margin 提升 + 可卖多余算力</div></div><div class="meter"><div class="name">❸ 定制 ASIC (AVGO, MRVL)</div><div class="track"><div class="fill mid" style="width:60%"></div></div><div class="score">6/10</div><div class="note">受益: 需求从通用 GPU 流向定制</div></div><div class="meter"><div class="name">❺ 网络 (AVGO, MRVL, NVDA)</div><div class="track"><div class="fill mid" style="width:50%"></div></div><div class="score">5/10</div><div class="note">中性: training 集群仍扩张</div></div><div class="meter"><div class="name">❷ 通用 GPU (NVDA, AMD)</div><div class="track"><div class="fill mid" style="width:40%"></div></div><div class="score">4/10</div><div class="note">中性偏负: 但 training moat 未动摇</div></div><div class="meter"><div class="name">❶ 制造 (TSM, INTC)</div><div class="track"><div class="fill low" style="width:30%"></div></div><div class="score">3/10</div><div class="note">间接: 少芯片 = 少代工; 但 backlog 满到 2027</div></div><div class="meter"><div class="name">❹ 存储 HBM (MU, SK Hynix)</div><div class="track"><div class="fill low" style="width:30%"></div></div><div class="score">3/10</div><div class="note">被错误归因: HBM 主要 driven by training 非 inference</div></div></div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-9"><h3>1. 今天的 selloff 是 "先卖再说" — 市场没有做这个细分</h3>
+<p>市场今天的反应:
+- 所有 "AI 供给侧" 一律暴跌 (MU <span class="down">-9.3%</span>, INTC <span class="down">-8.1%</span>, TSM <span class="down">-6.7%</span>, MRVL <span class="down">-7.7%</span>)
+- 所有 "AI 需求侧/部署侧" 一律暴涨 (META <span class="up">+9.7%</span>, MSFT <span class="up">+3.7%</span>)</p>
+<p>这是 <strong>粗暴的 binary rotation</strong>。实际上各层影响差异巨大:
+- AVGO 被归为 "供给侧" 跌了 <span class="down">-2%</span>，但它实际是 efficiency 受益者 (定制 ASIC 路线)
+- MU 被归为 "供给侧" 跌了 <span class="down">-9.3%</span>，但 HBM 需求主要来自 training (未受挑战)</p>
+<h3>2. Training vs Inference 是今天叙事的核心盲区</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Training</th>
+<th>Inference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需求方</td>
+<td>模型开发者 (OpenAI, Google, Meta)</td>
+<td>所有 AI 用户</td>
+</tr>
+<tr>
+<td>GPU 数量</td>
+<td>少 (万级集群)</td>
+<td>多 (百万级分布式)</td>
+</tr>
+<tr>
+<td>HBM 依赖</td>
+<td>极高 (每 GPU 192GB)</td>
+<td>中 (inference 可用更少内存)</td>
+</tr>
+<tr>
+<td>效率提升空间</td>
+<td>较小 (training 已高度优化)</td>
+<td><strong>大</strong> (今天的故事就在这里)</td>
+</tr>
+<tr>
+<td>增长方向</td>
+<td>模型越来越大 → 继续增长</td>
+<td>效率提升 → 单位下降，但总量 Jevons</td>
+</tr>
+</tbody>
+</table>
+<p>市场今天把 "inference 效率提升" 映射到了整个 AI 硬件链，但 training 的需求逻辑完全不同。</p>
+<h3>3. NVDA 的 <span class="down">-1.2%</span> 告诉你市场真正相信什么</h3>
+<p>如果市场真的相信 "AI 硬件需求 structurally 下降"，NVDA 应该跌最多 (最大 AI 硬件公司, $4.8T)。但它只跌 <span class="down">-1.2%</span>。这说明:
+- 市场 <strong>不</strong> 相信 training 需求被挑战
+- 市场在卖的是 <strong>高 beta + high recent gains</strong> (MU <span class="up">+54%</span> 30d, INTC <span class="up">+19%</span> 30d)
+- <strong>获利了结</strong> 披上了 "效率叙事" 的外衣</p>
+<h3>4. 长期 winner/loser</h3>
+<div class="callout info"><p><strong>长期受益</strong>: AVGO (定制 ASIC 路线是效率提升的物理载体), META/MSFT (cheaper AI = better margins), TSM (不管通用 vs 定制，都在 TSM 生产)</p>
+<p><strong>长期中性</strong>: NVDA (training moat 稳固; inference 份额可能被 ASIC 侵蚀但 NIM/CUDA 生态是防线), MU/SK Hynix (training HBM 需求不减; inference HBM 可能减但被 Jevons 补偿)</p>
+<p><strong>长期风险</strong>: AMD (在 GPU 里是 "me-too"; 在 ASIC 里没位置; inference 份额最可能被砍), CoreWeave/neoclouds (如果 hyperscaler 自建 + 有余力外卖, neocloud 的存在意义 = 0)</p></div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-10"><div class="verdict watch">效率叙事是真实的技术趋势 (inference 成本确实在快速下降)，但今天的 <span class="down">-9%</span> selloff 是情绪性的板块不分青红皂白抛售。真正的确认/否认要等 7/16-7/30 财报季。</div>
+<table>
+<thead>
+<tr>
+<th>如果你想...</th>
+<th>该看哪层</th>
+<th>具体标的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>押注 "效率提升 = 更多 AI 使用" (Jevons)</td>
+<td>❻❼ 应用+云</td>
+<td>META, MSFT, GOOG</td>
+</tr>
+<tr>
+<td>押注 "通用→定制" shift</td>
+<td>❸ ASIC</td>
+<td>AVGO (today <span class="down">-2%</span> = 买点?)</td>
+</tr>
+<tr>
+<td>认为 "training 需求不变"</td>
+<td>❹ HBM</td>
+<td>MU, DRAM (today <span class="down">-9%</span> = 过度反应?)</td>
+</tr>
+<tr>
+<td>认为 "整个 AI 都是泡沫"</td>
+<td>卖❶-❺</td>
+<td>Short SOX, buy SQQQ</td>
+</tr>
+<tr>
+<td>不确定但想持有最强 moat</td>
+<td>❷ NVDA</td>
+<td>NVDA 跌最少 = 市场的 consensus safe haven</td>
+</tr>
+</tbody>
+</table></div></div>
+</body>
+</html>
