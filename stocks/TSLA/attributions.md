@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-01 · +1.20% day · ▲ major
+**Tags:** `earnings_preview`, `risk_on`
+**Confidence:** high
+
+**Primary cause.** Q2 delivery pre-positioning; 3rd consecutive up day (6/29 +8.5%, 6/30 +2.1%, 7/1 +1.2%) into 7/2 delivery report. Gary Black: rising oil prices boosted Q2 expectations. Independent from semi selloff — Tesla is AI deployer not chip seller.
+
+**Sources.**
+- Yahoo: Tesla Stock Rides a 10% Weekly Gain Into a High-Stakes Delivery Report
+- Yahoo: Gary Black Dismisses FSD Hype, Says Rising Oil Prices Boosted Q2 Delivery Expectations
+- Yahoo: YPF to Collaborate With Tesla on Energy Storage + Fast-Charging
+- _Corroboration:_ Michael Burry shorts TSLA+NVDA (6/30 confirmed) — first named contrarian signal
+
+**Cross-assets.** SPY +0.08% · VIX 16.37 · TEN YEAR 4.47 · RIVN PCT weak · NIO PCT weak
+
+**Agent read.** 5d +13.3%全押Q2交付。Binary event 7/2: >=480K确认bull看7/22; 406-480K inline可能sell-the-news -3~5%; <=445K部分回吐5-8%。Vol从1.21x→0.89x→0.5x递减=追涨热度降低。Burry做空是记录但非timing信号(历史早6-12mo)。距thesis-break $250缓冲+70%。
+ · Snapshot at `dashboard/2026-07-01.md`
+
+---
 ### 2026-06-30 · +2.13% day · ▲ minor · Q2 季度截止日（非交付发布日）
 **Tags:** `earnings_preview`, `risk_on`, `thesis_debate`
 **Confidence:** medium

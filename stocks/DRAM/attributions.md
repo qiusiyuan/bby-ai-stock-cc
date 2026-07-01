@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-01 · -9.90% day · ▼ major
+**Tags:** `ai_demand`, `memory_pricing`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** ETF mechanically tracks MU/SK Hynix/Samsung selloff triggered by OpenAI efficiency announcement. 8天内第二次-10%级别(6/23 -12.6%)。
+
+**Sources.**
+- _Corroboration:_ MU -9.3%, SK Hynix -3.4%, Samsung -5.8% — ETF 加权跟踪
+
+**Cross-assets.** SPY +0.08% · MU -9.30% · SKHYNIX -3.40% · SAMSUNG -5.80%
+
+**Agent read.** ETF机械跟踪。注意SK Hynix仅-3.4%远小于MU -9.3% — 如果efficiency thesis真的结构性削弱HBM需求，SKH作为50% HBM份额应跌更多。MU跌幅>SKH说明今天更多是US投机头寸获利了结。
+ · Snapshot at `dashboard/2026-07-01.md`
+
+---
 ### 2026-06-29 · +0.08% day · ▼ major
 **Tags:** `memory_pricing`, `sector_rotation`, `thesis_debate`
 **Confidence:** high

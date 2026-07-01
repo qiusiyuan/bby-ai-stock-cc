@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-01 · -9.30% day · ▼ major
+**Tags:** `ai_demand`, `memory_pricing`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** OpenAI efficiency gains announcement reprices HBM demand slope; BofA bubble indicator same-day; SOX -5% broad semi selloff
+
+**Sources.**
+- market coverage: OpenAI efficiency gains hammer chip stocks; SOX slides 5%
+- Yahoo: BofA Bubble Risk Indicator Shows Rising Risks For Tech, Semiconductor Stocks
+- Yahoo: Micron Drops 8%, SanDisk Slumps 10%, Western Digital Falls 7% as Memory Stocks Pull Back
+- _Corroboration:_ DRAM -9.9%, SK Hynix -3.4%, Samsung -5.8%, TSM -6.7%, AMD -5.2%, MRVL -7.7% — full sector sync
+
+**Cross-assets.** SPY +0.08% · VIX 16.37 · TEN YEAR 4.47 · SKHYNIX -3.40% · DRAM ETF -9.90% · META +9.70%
+
+**Agent read.** 8天内第二次-9%+暴跌(6/23: Korean unwind, 7/1: OpenAI efficiency)。关键区别: 6/23是技术性(leverage unwind), 7/1是叙事性(efficiency reduces demand slope)。但vol 0.5x仍然低=非机构capitulation。从ATH $1,255累计-16.6%。确认点: TSM 7/16 CoWoS利用率 + SK Hynix 7/24 HBM出货guide。在此之前是情绪定价。距thesis-break $650缓冲+61%。
+ · Snapshot at `dashboard/2026-07-01.md`
+
+---
 ### 2026-06-23 · -11.09% day · ▼ extreme
 **Tags:** `memory_pricing`, `sector_rotation`, `ai_demand`
 **Confidence:** high

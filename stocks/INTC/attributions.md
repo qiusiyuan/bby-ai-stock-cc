@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-01 · -8.10% day · ▼ major
+**Tags:** `ai_demand`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** Sector-level selloff from OpenAI efficiency + BofA bubble indicator. INTC-specific: complete reversal of yesterday +7.5% (Xeon DGX Rubin); market still treats INTC as beta ticker not fundamental turnaround.
+
+**Sources.**
+- Yahoo: Intel Drops 7%, AMD Slides 5%, Taiwan Semiconductor Falls 6% as BoA Flags Bubble Risk
+- market: OpenAI efficiency gains hammer chip stocks
+- _Corroboration:_ SOX -5%; all semis down; INTC no idiosyncratic catalyst
+
+**Cross-assets.** SPY +0.08% · VIX 16.37 · TEN YEAR 4.47 · NVDA -1.20% · AMD -5.20% · TSM -6.70%
+
+**Agent read.** 昨天+7.5%今天-8.1% net 2d -1.2%。市场仍将INTC当beta交易不是turnaround。Turnaround stories在sector panic时first to sell — 没有moat buffer(对比NVDA -1.2%)。不改长期thesis(break $75, 缓冲+71%)但短期会继续高beta双向。7/23 Q2 earnings是真正的vol事件和turnaround确认点。
+ · Snapshot at `dashboard/2026-07-01.md`
+
+---
 ### 2026-06-30 · +7.5% day · ▲ major
 **Tags:** `risk_on`, `ai_demand`, `foundry`, `government_stake`, `thesis_validation`
 **Confidence:** high
