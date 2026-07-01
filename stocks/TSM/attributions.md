@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-06-30 · +4.90% day · ▲ material
+**Tags:** `sector_rotation`, `ai_demand`, `flow_event`
+**Confidence:** medium
+
+**Primary cause.** Broad semiconductor sector rotation back into chips after last week's pullback (SOXX +4.3%); AI-capex 'picks and shovels' narrative + record 19.7% semi weight in S&P 500 driving passive inflows. No TSM-specific catalyst.
+
+**Sources.**
+- Yahoo/GuruFocus: [Nvidia, AMD, Intel Lead AI Chip Stock Rally as Wall Street Rebounds](https://finance.yahoo.com/technology/ai/articles/nvidia-amd-intel-lead-ai-193407390.html)
+- Yahoo/Citadel Securities note: [Semiconductor stocks climb to record 19.7% of the S&P 500 as AI rally reshapes the index](https://investorshub.advfn.com/market-news/article/31198/)
+- _Corroboration:_ INTC +6%, MRVL +6%, AMD +4%, TSM/ARM ~3%, NVDA +2% per GuruFocus; SOXX +4.3% day confirms sector not stock-specific. Repeat of TSM 2026-06-18 +6.94% sector_rotation/ai_demand setup.
+
+**Cross-assets.** SECTOR ETF +4.30% · SPY +0.78% · VIX 16.45 · TEN YEAR 4.42
+
+**Agent read.** Sector beta day, not a TSM story. Second leg of the same AI-capex confirmation rotation that drove TSM +6.94% on 06-18; same cast (INTC, MRVL, AMD leading). The self-reinforcing passive bid (record 19.7% S&P semi weight) is now itself a flagged risk: BofA semi bubble indicator 0.91, Buffett indicator 231.8%. TSM at ~$478 is back near 52w highs into 07-16 earnings with no margin of safety. Q2 print (N2 ramp guidance + 2026 capex) is the next re-grounding event; positive flow tailwind until then but increasingly crowded.
+ · [Snapshot](snapshots/2026-06-30.md)
+
+---
 ### 2026-06-29 · +5.26% day · ▲ major
 **Tags:** `risk_on`, `earnings_preview`
 **Confidence:** medium
