@@ -14,6 +14,21 @@ Module 1. One H2 section combining big-picture market state + macro/policy signa
 - "any macro signals"
 - AUTOMATICALLY as the first module of [[report]]
 
+## Output checklist (每次 Pulse 必须包含以下所有 block — 缺一不可)
+
+- [ ] **Indices**: SPY, QQQ, Dow, VIX, 10Y yield — `kpi` block
+- [ ] **Commodities**: WTI oil, Gold, Silver — `kpi` block
+- [ ] **Crypto**: BTC, ETH (每天); IBIT/MSTR/COIN (当 BTC |1d|≥5%) — `kpi` block
+- [ ] **货币/FX**: DXY + USD/CAD + USD/CNY + 换汇判断 — `kpi` block + 短评
+- [ ] **重大宏观事件** (如有): NFP/CPI/FOMC/地缘 → 完整四步解读
+- [ ] **Headlines**: 当天 top 5-8 新闻
+- [ ] **政策/地缘快扫**: Fed, 美伊, 中国, EU, 其他
+- [ ] **Cross-ref**: 每个 signal → 影响哪些持仓
+
+**如果 subagent 执行此 skill: prompt 里必须逐条列出以上 8 个 block 的要求。** 不要假设 subagent 会自己去读 skill 文件。
+
+---
+
 ## Steps
 
 ### 1. Pull indices and risk proxies in parallel
