@@ -1,10 +1,10 @@
 # Stock Tracking Workspace
 
-This is a personal AI-driven stock-tracking workspace. The user is a serious individual investor doing fundamental research on individual names. Behavior is driven by skills in `.skills/`, invoked through natural language.
+This is a personal AI-driven stock-tracking workspace. The user is a serious individual investor doing fundamental research on individual names. Behavior is driven by skills in `.claude/skills/`, invoked through natural language.
 
 ## Core rules
 
-1. **Skills first.** When the user asks about a stock or the workspace, map the request to a skill in `.skills/` and follow it. Do not improvise routines — if a request doesn't fit an existing skill, suggest extracting one.
+1. **Skills first.** When the user asks about a stock or the workspace, map the request to a skill in `.claude/skills/` and follow it. Do not improvise routines — if a request doesn't fit an existing skill, suggest extracting one.
 
 2. **No auto-refresh.** Never fetch data without an explicit user request. Every data fetch is a deliberate user trigger.
 
@@ -95,7 +95,7 @@ Even on quiet days, run it — the absence of policy news is information.
 
 When a stock moves meaningfully (`|change_pct_1d| >= 3%` OR `|change_pct_5d| >= 10%` OR `volume_ratio >= 1.5x`), the agent MUST:
 
-1. **Attribute** the move with cited reasoning (see `.skills/deep-dive/SKILL.md`).
+1. **Attribute** the move with cited reasoning (see `.claude/skills/deep-dive/SKILL.md`).
 2. **Record** the attribution to persistent storage. This is mandatory, not optional.
 
 ### Why persist
@@ -157,7 +157,7 @@ The user explicitly asked for this behavior: *"对于这类用户问题，你其
 
 ## Skill extraction meta-rule
 
-When you notice a routine emerging across multiple sessions (e.g., "user keeps asking me to summarize the 10-K"), suggest extracting it into a new skill in `.skills/`. Skills are markdown files with YAML frontmatter that describes triggers; see existing skills for the pattern.
+When you notice a routine emerging across multiple sessions (e.g., "user keeps asking me to summarize the 10-K"), suggest extracting it into a new skill in `.claude/skills/`. Skills are markdown files with YAML frontmatter that describes triggers; see existing skills for the pattern.
 
 ## Python fetchers
 

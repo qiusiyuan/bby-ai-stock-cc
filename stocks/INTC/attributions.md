@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-02 · -5.61% day · ▼ major
+**Tags:** `sector_rotation`, `ai_demand`, `thesis_debate`
+**Confidence:** high
+
+**Primary cause.** Day-2 continuation of OpenAI efficiency sector selloff. Zero INTC-specific catalyst — no analyst action, no foundry news, no Apple deal update, no government stake change. INTC -5.61% is worse than AMD -5.06%, TSM -2.32%, NVDA -2.29% — confirming market still treats INTC as high-beta beta ticker with no moat buffer. Narrative headlines ('Lip-Bu Tan magic worn off') are ex-post rationalization, not new information.
+
+**Sources.**
+- 24/7 Wall St.: [Has Lip-Bu Tan's Magic Worn Off? Intel Just Gave Back Its Gains](https://247wallst.com/investing/2026/07/02/has-lip-bu-tans-magic-worn-off-intel-just-gave-back-its-gains/)
+- 24/7 Wall St.: [Forget Intel: Buy Microsoft Hand Over Fist on the Sector Rotation](https://247wallst.com/investing/2026/07/02/forget-intel-buy-microsoft-hand-over-fist-on-the-sector-rotation/)
+- Yahoo/Zacks: INTC Outpaces Industry in a Year: How to Play the Stock? (Zacks #1 Strong Buy)
+- _Corroboration:_ SOXX -6.22% today; MU -5.7%, AMD -5.06%, TSM -2.32%, NVDA -2.29% — INTC is 2nd worst semi after MU. No idiosyncratic catalyst found.
+
+**Cross-assets.** SPY -0.54% · VIX 16.75 · TEN YEAR 4.48 · SOX -6.22% · AMD -5.06% · NVDA -2.29% · MU -5.70% · TSM -2.32%
+
+**Agent read.** 2天累计 -13.7% (7/1 -8.1% + 7/2 -5.61%)。市场从 6/30 +7.5% 追高的 Xeon-Rubin/turnaround 叙事完全退潮回到 beta 交易。关键 tell: INTC -5.61% > AMD -5.06% > NVDA -2.29% — turnaround stocks 无 moat buffer, 在 sector panic 中 first to sell。但 vol_ratio 0.58x 依然低 = 无机构 capitulation, 情绪+algo 主导。距 thesis-break $75 仍有 +60% 缓冲, 7/23 Q2 earnings 是真正的判决日。此外 7/2 出现媒体转向 signal: '24/7 Wall St.' 从 6/30 bullish 'INTC AMD Jump 7%' 直接翻转到 7/2 'Lip-Bu Tan magic worn off' — sell-side sentiment 完成 180° 转向, 与 BofA MU flip 同步。
+ · Snapshot at `dashboard/2026-07-02.md`
+
+---
 ### 2026-07-01 · -8.10% day · ▼ major
 **Tags:** `ai_demand`, `sector_rotation`
 **Confidence:** high

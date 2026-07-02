@@ -4,6 +4,64 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-02 · -5.77% day · ▼ material
+**Tags:** `memory_pricing`, `ai_demand`, `hyperscaler_overcapacity`
+**Confidence:** high
+
+**发生了什么。**
+
+MU -5.77%, DRAM ETF -9.4%, SK Hynix -17.5%, Samsung -14.4%, CoreWeave -14%, Nebius -17%, SanDisk -11%。这不是一个 ticker 跌，是整条 "AI 需要硬件" 叙事链在被 reprice。
+
+**为什么跌 — 两条独立逻辑链在同一天汇聚:**
+
+**逻辑链 A: OpenAI efficiency (7/1 发酵 → 7/2 Korean 确认)**
+
+7/1 OpenAI 公布推理效率大幅提升。市场的推导路径是：
+- 推理效率 ↑ → 同样的 AI workload 需要的 GPU 算力 ↓ → 需要的 HBM 容量 ↓
+- 如果 AI 的 "产出/算力" 比在快速改善，那之前基于 "算力线性增长" 假设定价的 HBM 增速预期就太高了
+- 7/1 美股先杀 (MU -9.3%)，但当天 Korean 盘只跌了 -3~6% — 市场一度解读为 "美国散户过度反应"
+- 7/2 Korean 盘补跌: SK Hynix -17.5%, Samsung -14.4% — 本土机构用脚投票确认这不是 overreaction。这是关键拐点：不再只是美国人慌，韩国本土 (离 HBM 供给链最近的钱) 也开始卖了
+
+**逻辑链 B: Meta Compute (7/2 新催化剂)**
+
+7/2 CNBC Julia Boorstin 报道 Meta 将向企业出售 AI 算力 ("Meta Compute")，直接竞争 AWS/Azure/GCP/CoreWeave。市场的推导路径是：
+- Meta 是过去两年 AI capex 最激进的 hyperscaler ($60B+/yr) — 如果连他们都有 **过剩算力需要对外卖**，意味着什么？
+- 意味着: 当前这批 hyperscaler 的 GPU/HBM 采购已经 **超过了自身消化能力**
+- 推导: 如果已买的都用不完，那未来新增订单的增速必然放缓 → MU/SK Hynix 的 HBM 出货量 growth slope 被 reprice
+- CoreWeave -14%, Nebius -17% 是直接受害者 (他们的商业模式就是 "租 GPU 给企业"，现在 META 进场了)
+- 但对 MU 的冲击逻辑不同于 CoreWeave: 不是竞争压力，而是 **"最大买家承认 overcapacity" 这个信号本身**
+
+**两条链合在一起的 narrative:**
+
+市场在 48h 内连续收到两个信号，都指向同一个结论 —— **AI capex cycle 可能比预期短 / HBM demand slope 比 MU Q3 blowout 暗示的低:**
+1. 供给效率提升 (OpenAI: 用更少做更多)
+2. 买方承认过剩 (META: 多到要卖给别人)
+
+这不是 "MU 这家公司出了问题"，而是 "整个 HBM supercycle 的增速假设在被下修"。从 $1,255 ATH 到今天累计 -22.5%。
+
+**为什么不是 panic / 为什么还能 hold:**
+- Vol 0.69x — 三天连跌都没有机构 capitulation (vol > 1.5x 才算)，说明长线持仓者还没决定卖
+- META 自己也跌了 -4.7% — 市场短期没把 "卖算力" 读成 positive，而是 "你承认 overbuilt"。但如果后续证明 Meta Compute 有真实 enterprise revenue，这个 read 会反转
+- Thesis-break $650 仍有 +49% buffer
+- 确认点: 7/16 TSM CoWoS 利用率 (供给侧真相) + 7/24 SK Hynix HBM 出货 guide (需求侧真相)
+
+**什么会证伪这个 bearish narrative:**
+- TSM 7/16 说 CoWoS 仍然 supply-constrained → 效率提升没有减少 real demand (只是 reduce per-query cost → 更多 queries → net demand up)
+- SK Hynix 7/24 HBM guide 维持 / 上修 → overcapacity 是 Meta-specific 不是 industry-wide
+- 若两者都确认需求强劲 → 这轮 -22.5% 就是错杀，反弹空间巨大
+
+**Sources.**
+- CNBC (Julia Boorstin): Meta wants to sell AI compute to enterprises — confirmed "Meta Compute" launch
+- Motley Fool: CoreWeave -14%, Nebius -17% — "the most concerning part wasn't the size of the drops, it was who caused them"
+- 247wallst / Yahoo: SanDisk Sinks 11%, Seagate Falls 7%, Micron Slides 4% on Memory Supply-Glut Fears
+- 247wallst / Yahoo: Micron's CEO Says Even His Own Customers Couldn't See This Coming. Now He's Spending $200 Billion
+- _Data:_ SK Hynix -17.47%, Samsung -14.37% (Korean session 7/2); 5d cumulative SK -16.6%, Samsung -16.0%
+- _Data:_ DRAM ETF -8.96% vs MU -5.77% — ETF Korean weight 拖累更深
+
+**Cross-assets.** SPY -0.54% · VIX 16.75 · 10Y 4.48 · SK Hynix -17.47% · Samsung -14.37% · DRAM ETF -8.96% · META -4.68% · CRWV -14% · NBIS -17%
+ · Snapshot at `dashboard/2026-07-02.md`
+
+---
 ### 2026-07-01 · -9.30% day · ▼ major
 **Tags:** `ai_demand`, `memory_pricing`, `sector_rotation`
 **Confidence:** high

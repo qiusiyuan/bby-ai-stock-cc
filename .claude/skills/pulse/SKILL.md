@@ -55,6 +55,44 @@ For each signal:
 - **EU regulation** → SPCX, TSLA, GOOG, META
 - **Defense / Pentagon** → SPCX (Starshield), GEV
 
+### 3b. 重大宏观事件深度解读 (MANDATORY when triggered)
+
+**触发条件:** 当天有以下任一事件时，必须在 Pulse & Macro section 内插入一个独立的 `callout` + 详细解读块:
+- NFP / jobless claims 数据发布
+- CPI / PPI / PCE 数据发布
+- FOMC 决议 / 点阵图 / Powell 讲话
+- 地缘冲突状态变化 (战争升级/停火/新制裁)
+- 重大行政命令 / 关税变动 (>5%)
+- 重大公司事件影响整个市场 (e.g. 大型 hyperscaler 宣布改变 capex 策略)
+
+**解读结构 (每个重大事件都要走完这四步):**
+
+1. **是什么 (What):** 全称 + 一句话解释这个数据/事件衡量什么。不假设读者知道缩写含义。
+   - ❌ "NFP +57K miss" 
+   - ✅ "Non-Farm Payrolls (非农就业): 美国劳工部每月第一周五发布，衡量当月非农部门新增就业人数。今天报 +57K (预期 115K, 前值 172K) — 是预期的一半。"
+
+2. **为什么重要 (Why it matters today):** 对比预期/前值 + 处于什么趋势 + 为什么市场此刻格外在乎。
+   - 第几连月增长/下降? 趋势加速还是减速?
+   - 当前市场最关心的叙事是什么? (e.g. "到底是 soft landing 还是 recession")
+   - 这个数字对 Fed 下次决策意味着什么?
+
+3. **市场的推理路径 (How it transmits):** 画出传导图 — 不是所有持仓受同方向影响。
+   - 数字 → 对利率预期的影响 → 美元/债市反应 → 风险偏好变化 → 各板块差异化影响
+   - 明确哪些持仓受益、哪些受损、哪些不受影响、以及为什么
+   - 如果市场解读分裂 (e.g. "降息预期利好 growth" vs "经济放缓利空 growth")，把两面都写出来并说明今天实际走了哪一面
+
+4. **对每个持仓的具体影响 (Position impact map):**
+   用 compare 或 table 格式映射:
+   ```
+   | 持仓 | 影响方向 | 传导逻辑 |
+   | TSLA | ⬇️ 利空 | 高 beta growth, NFP weak = growth fear rotation |
+   | SU/CVX | ⬆️ 利好 | 降息预期 + value rotation bid |
+   | NVDA | ⬇️ 中性偏空 | duration 资产, 但 AI 需求独立于就业 |
+   | MSFT/AMZN | ⬆️ 利好 | defensive growth + 降息利好 |
+   ```
+
+**原则:** 宏观事件是当天所有个股 move 的 "公因子"。不解释清楚这个公因子，后面每个个股归因都缺根基。所以 Pulse 里的宏观解读是全天分析的地基 — 要写扎实。
+
 ### 4. Write H2 section to dashboard/{date}.md
 
 Replace any existing `## Pulse & Macro` H2 in place. Structure:

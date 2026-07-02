@@ -4,6 +4,67 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-02 · -8.03% day · ▼ major
+**Tags:** `earnings_pre_print`, `macro_data`, `flow_event`
+**Confidence:** high
+
+**发生了什么。**
+
+TSLA -8.03% ($390.83)。Q2 deliveries 480,126 units (+25% YoY)，beat 华尔街共识 406K 和 Deutsche Bank 416K est ~15%。数字是好数字。但股票大跌。
+
+**为什么一个 beat 会跌 -8% — 四层因素叠加:**
+
+**第 1 层: Sell-the-news 是预设的 (贡献约 -3~5%)**
+
+过去三天 6/29-7/1 累计涨 +13% (6/29 +8.5%, 6/30 +2.1%, 7/1 +1.2%)。这 13% 就是市场在 price in "交付会 beat"。480K 确实 beat 了 — 但买的人三天前就已经买了。当利好兑现时，这些人获利了结。这就是 sell-the-news 的机制: 不是数字不好，而是 **知道数字好的人已经在价格里了**。
+
+7/1 归因里预测 "480K inline → sell-the-news -3~5%" — 这部分完全对了。问题是: 为什么实际跌了 -8%? 多出来的 -3~5% 是什么?
+
+**第 2 层: NFP +57K 宏观 shock 叠加 (贡献约 -2~3%)**
+
+7/2 同一天早盘公布 June NFP +57K (预期 115K, prior 172K) — 四个月最弱。市场的解读分裂:
+- 债市/黄金读作 "降息来了" (gold +1.5%, DXY -0.5%)
+- 股市读作 "growth fear" → 经典 Dow-over-Nasdaq rotation: Dow +0.45%, Nasdaq -1.25%
+
+TSLA 是 Nasdaq 里 beta 最高的个股之一 — macro growth fear 对高估值 growth stock 的杀伤力不成比例。如果今天没有 NFP miss，TSLA 可能只跌 -4~5% (纯 sell-the-news)。**NFP 把一个 routine 的 sell-the-news 升级成了一次 growth-fear rotation。**
+
+**第 3 层: Michael Burry 做空 narrative anchoring**
+
+6/30 13F 披露 Burry 新建 TSLA + NVDA 空头 (framing 为 "AI bubble")。这本身不是 timing signal (Burry 历史上常早 6-12 个月)，但在 +13% 快速拉升后 + NFP miss 叠加的环境下，它成了**卖方 narrative anchor** — 给犹豫要不要获利了结的人提供了一个 "理由": "连 Burry 都在做空了"。不是 cause，是 catalyst amplifier。
+
+**第 4 层: Trefis $227 fair value 同日发布**
+
+Trefis 在交付数据出来后同日发布 TSLA fair value $227 (当前价 -46%)。在一个已经在卖的日子里，一个 -46% 的 fair value 目标为空方提供了弹药。不是独立催化剂，但在多空博弈中改变了叙事平衡。
+
+**关键逆向检验: RIVN +8%**
+
+Rivian 同日也是交付日，也 beat — 而且涨了 +8%。这是极重要的反例: 如果今天是 "EV sector 被砸"，RIVN 应该一起跌。RIVN 逆势涨证明: **今天的跌是 TSLA-specific 的仓位/估值事件，不是 EV 行业逻辑恶化。** 市场没有在卖 "EV 未来不好了" — 它在卖 "TSLA 太贵了 + 利好兑现了"。
+
+**为什么预测低估了幅度:**
+
+7/1 预测 -3~5% 只考虑了 "sell-the-news" 单一因素。但 7/2 是三个 independent 催化剂同时发生:
+- sell-the-news (TSLA-specific)
+- NFP miss (macro, affects all growth)  
+- Burry + Trefis narrative (TSLA-specific amplifier)
+
+经验教训: **binary events 叠加宏观 data release 时，standard single-factor 预测幅度会被 50-100% overshoot。** 以后遇到 "催化剂日 + macro data 同日" 的情况，预测幅度应 ×1.5~2。
+
+**什么会证伪 / 反转条件:**
+- 7/22 Q2 earnings: auto GM ex-credits ≥ 18% + FSD revenue 首次 breakout → 确认 "数字好" 而不只是 "交付量大"
+- 如果 7/22 auto GM < 15% → 交付量增长靠降价 → 利润质量差 → 这次 -8% 就不只是 sell-the-news 而是早期 warning
+
+**Sources.**
+- Yahoo/AFP: [Tesla global auto sales jump 25% in 2nd quarter, beating expectations](https://finance.yahoo.com/markets/stocks/articles/tesla-global-auto-sales-jump-164033967.html)
+- Yahoo: [Tesla Second-Quarter Deliveries Top Views; Shares Fall Intraday](https://finance.yahoo.com/markets/stocks/articles/tesla-second-quarter-deliveries-top-165145095.html)
+- TheStreet: [Michael Burry's newest short reveals what really worries him about AI](https://www.thestreet.com/investing/michael-burrys-newest-short-reveals-what-really-worries-him-about-ai)
+- Trefis/Yahoo: [Why Patience Is The Real Catalyst For Tesla Stock (fair value $227)](https://www.trefis.com/articles/605509/why-patience-is-the-real-catalyst-for-tesla-stock/2026-07-02)
+- BLS: June NFP +57K (vs est 115K, prior 172K)
+- _逆向检验:_ RIVN +8.08% (同日交付 beat) — EV sector 没问题，是 TSLA-specific
+
+**Cross-assets.** SPY -0.51% · Nasdaq -1.25% · Dow +0.45% · VIX 16.75 · RIVN +8.08% · Gold +1.5% · DXY -0.5%
+ · Snapshot at `dashboard/2026-07-02.md`
+
+---
 ### 2026-07-01 · +1.20% day · ▲ major
 **Tags:** `earnings_preview`, `risk_on`
 **Confidence:** high

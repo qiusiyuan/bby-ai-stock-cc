@@ -41,29 +41,49 @@ Generic skill: explain a stock's price action with cited sources, not vibes. The
    - Try Stocktwits: `stocktwits.com/symbol/{TICKER}` — note this is sentiment data, treat with skepticism
    - Don't pretend to have access to private posts or paywalled content
 
-6. **Synthesize attribution with explicit confidence levels.** Use this structure:
+6. **Synthesize attribution — 讲清叙事，不贴标签。**
+
+   核心原则: **归因的价值不在列出 "发生了什么"，而在讲清 "市场为什么在卖/买"。** 催化剂是事实，但市场的推理路径才是归因。
+
+   **叙事深度规则:**
+   - 如果一个 move 的原因是显而易见的（earnings miss, 明确的利空 headline），一句话带过。
+   - 如果原因复杂（多催化剂叠加、因果链 ≥ 3 步、多个板块联动、跌幅超预期），必须展开写:
+     - 每个催化剂各是什么（事实层）
+     - 市场怎么解读每个催化剂（推理层）
+     - 为什么这个解读导致卖出/买入（行为层）
+     - 各催化剂之间的关系 — 独立? 叠加? 互相强化?
+   - **特别注意 "跌幅超预期" 的情况**（e.g. 预测 -3~5% 实际 -8%）：这意味着有额外催化剂没被识别。必须追问: 超出部分是什么贡献的? 是宏观叠加? 是新催化剂? 是流动性/仓位结构?
+
+   **多源归因 checklist (每个 deep-dive 必须覆盖):**
+   - [ ] 公司层面: 有没有今天 specific 的 headline (earnings, guidance, product, personnel, legal)?
+   - [ ] 板块层面: 同行怎么动? 是 beta 还是 alpha? (比较 SOX/sector ETF)
+   - [ ] 宏观层面: 今天有没有 macro data release / Fed / geopolitics?
+   - [ ] 资金流/仓位层面: vol_ratio 高低? 大单? 空头? ETF rebalance? lockup?
+   - [ ] 叙事层面: 有没有更大的 narrative shift 在进行? (e.g. "AI efficiency reduces demand", "hyperscaler overcapacity") — 这往往是跌幅超预期的真正原因
+   - [ ] 跨市场确认: 其他相关资产的 move 是否 confirm 你的归因? (e.g. CoreWeave -14% 确认 META compute 冲击)
+   - [ ] 逆向检验: 有没有 "该跌没跌" 或 "该涨没涨" 的反例? (e.g. RIVN +8% 同日 → EV sector 没问题 → TSLA 是个股问题)
+
+   **输出结构:**
 
    ```markdown
-   ## What moved {TICKER} today  ({±%} on the day, {±%} 5d)
+   ## Deep Dive: {TICKER} ({±%} day, {±%} 5d)
 
-   ### Direct catalysts (cited)
-   - **{Headline}** — {source} [link]. {1-line summary}.
-   - **{Headline}** — {source} [link].
+   **发生了什么。**
+   {1-3 sentences: the raw facts — price, related assets, what's notable}
 
-   ### Sector / macro context
-   - {Sector ETF} {±%} today; {macro factor (oil, rates, dollar, geopolitics)}.
+   **为什么。** (核心叙事 — 逻辑链展开)
+   {如果简单: 1 段。如果复杂: 分链展开，每条链写清 "催化剂 → 市场解读 → 为什么导致卖/买"}
 
-   ### What investors are saying (sentiment)
-   - {Direct quote from article / forum / sentiment source}, attributed.
+   **为什么跌幅/涨幅超出预期。** (optional — 仅当幅度显著超出 "正常" 时)
+   {追问 extra 部分是什么贡献的}
 
-   ### My read (inferred — not cited)
-   {1-2 short paragraphs distinguishing what's clearly happening (cited above) from your interpretation of why it matters.}
+   **什么会证伪 / 反转条件。**
+   {具体数据点 + 日期: 如果 X 在 date 确认 → 当前 narrative 被推翻}
 
-   ### Confidence
-   - **High:** {direct catalyst with clean attribution}
-   - **Medium:** {sector / macro driver but not company-specific}
-   - **Low:** {flows / sentiment / unattributable}
+   **Cross-assets / confidence / sources.**
    ```
+
+   避免: "sell-off", "sector rotation", "supply-glut fears", "risk-off" 等标签。这些是描述，不是解释。如果你发现自己在用这类词，停下来问: "市场具体在想什么才导致了这个行为?"
 
 7. **NEVER fabricate sources.** If a URL 404s, say "Article URL no longer accessible — falling back to Wikipedia / Fool / etc." If sentiment isn't accessible (paywall, login required, blocked), say so plainly.
 
