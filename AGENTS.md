@@ -2,6 +2,10 @@
 
 This is a personal AI-driven stock-tracking workspace. The user is a serious individual investor doing fundamental research on individual names. Behavior is driven by skills in `.claude/skills/`, invoked through natural language.
 
+## Publishing rule (MANDATORY)
+
+**Every time content needs to go live (daily report, deep dive, research), use the [[publish]] skill (`.claude/skills/publish/SKILL.md`).** This is non-negotiable — publish handles render + index rebuild + commit + push atomically. Never manually `git add/commit/push` report artifacts without going through publish. The index is the source of truth for what readers can see; a rendered file without index rebuild = invisible.
+
 ## Core rules
 
 1. **Skills first.** When the user asks about a stock or the workspace, map the request to a skill in `.claude/skills/` and follow it. Do not improvise routines — if a request doesn't fit an existing skill, suggest extracting one.
