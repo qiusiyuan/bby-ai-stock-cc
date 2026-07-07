@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-07 · -7.43% day · ▼ major
+**Tags:** `memory_pricing`, `sector_rotation`, `supply_glut`
+**Confidence:** high
+
+**Primary cause.** Samsung Q2 prelim record quarter miss whisper rev ~1% + SK Hynix $28B Nasdaq ADS raise sparks cycle-peak/supply-overinvestment fears; Korean Samsung -7%; DRAM ETF enters bear market (>20% from ATH); first volume spike (DRAM vol 1.28x) since selloff began 6/23
+
+**Sources.**
+- Yahoo Finance: Micron, Samsung, SK Hynix just dragged memory stocks into a bear market
+- Yahoo Finance: AI Chip Stocks Fall Despite Samsung Blowout
+- 247wallst: Cramer: Samsung Is More Profitable Than Nvidia, but He Has a Warning on SK Hynix $28 Billion Raise
+- _Corroboration:_ DRAM ETF -7.73% (vol 1.28x), MU -7.43%, AMD -7.06%, TSM -4.39%, INTC -10.92%, MRVL -9.63%
+
+**Cross-assets.** SPY -0.59% · VIX 15.96 · TEN YEAR 4.53 · DRAM ETF -7.73% · META +3.40% · NVDA +0.45%
+
+**Agent read.** 第三腿暴跌性质不同: 前两腿(6/23 leverage unwind, 7/1-2 OpenAI efficiency)是需求侧恐惧; 今天是供给侧过度投资信号(SK Hynix $28B raise = capex arms race)。历史上 memory cycle peak 三标志: 三巨头同时扩产 + 新股/增发潮 + this-time-is-different叙事松动 — 今天第二标志正式点亮。但 vol_ratio 0.74 (MU自身) 仍非 capitulation level, 机构 flush 尚未发生(DRAM ETF 1.28x 是 ETF-level 流出不是个股大单)。距 thesis-break $650 缓冲 +40%。决定窗口: 7/10 SKHY IPO + 7/16 TSM CoWoS。
+ · Snapshot at `dashboard/2026-07-07.md`
+
+---
 ### 2026-07-02 · -5.77% day · ▼ material
 **Tags:** `memory_pricing`, `ai_demand`, `hyperscaler_overcapacity`
 **Confidence:** high
