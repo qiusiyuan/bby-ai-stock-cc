@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-09 · n/a day · ▲ 7.98
+**Tags:** `short_covering`, `analyst_upgrade`, `sector_rotation`, `memory_pricing`
+**Confidence:** high
+
+**Primary cause.** Bernstein Rasgon memory very tight + SK Hynix ADR 7x oversubscribed + risk-on
+
+**Sources.**
+- (none)
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-07-07 · -7.43% day · ▼ major
 **Tags:** `memory_pricing`, `sector_rotation`, `supply_glut`
 **Confidence:** high
