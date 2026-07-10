@@ -1,0 +1,10 @@
+thesis_break_price: 115
+kill_conditions:
+  - "Samsung passes NVIDIA HBM3E/HBM4 qualification (confirmed by NVIDIA or supply chain)"
+  - "SK Hynix HBM yield drops below 70% on next-gen (public report or supply chain whisper)"
+  - "Hyperscaler capex guidance collectively cuts >20% YoY in a single quarter"
+re_read_triggers:
+  - "Stock down >15% on no obvious news"
+  - "ADR trades at >10% persistent discount to KRX-implied price for 5+ days"
+  - "Samsung earnings call claims HBM qualification breakthrough"
+  - "Any NVIDIA next-gen GPU announcement that changes memory architecture"

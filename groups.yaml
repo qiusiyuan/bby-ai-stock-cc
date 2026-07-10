@@ -11,8 +11,8 @@
 #   - 自动建议: focus 列表 7 天平静 → agent 建议移到普通 active
 focus:
   description: 重点观察 — 当前阶段需要详细跟踪的名字 (flat list — superseded by focus_clusters below for tab emission)
-  members: [MU, TSLA, SPCX, DRAM, INTC]
-  updated: 2026-06-30
+  members: [MU, TSLA, SPCX, DRAM, INTC, SKHYV]
+  updated: 2026-07-10
 
 ## focus_clusters — 重点关注的 cluster (每个生成单独 tab)
 # Each cluster is a "lens" that produces one ## Focus: {name} H2 in dashboard/{date}.md.
@@ -43,10 +43,10 @@ focus_clusters:
 
   - name: DRAM/HBM
     kind: topic
-    members: [MU, "000660.KS", "005930.KS", DRAM]
-    members_external: ["000660.KS (SK Hynix)", "005930.KS (Samsung)"]
-    description: HBM 周期 — MU / SK Hynix / Samsung / DRAM ETF 高度联动
-    watch_items: [MU Q3 earnings, HBM yield news, Korean FSS leveraged-ETF policy, Anthropic/hyperscaler memory deals]
+    members: [MU, SKHYV, "005930.KS", DRAM]
+    members_external: ["005930.KS (Samsung)"]
+    description: HBM 周期 — MU / SK Hynix (SKHYV) / Samsung / DRAM ETF 高度联动
+    watch_items: [MU Q3 earnings, HBM yield news, SKHYV post-IPO price discovery, Samsung HBM qualification, Anthropic/hyperscaler memory deals]
 
   - name: AI capex
     kind: sector
@@ -94,7 +94,7 @@ groups:
 
   ai:
     description: AI value chain — chips, memory, infra, networking, software
-    members: [TSM, MU, DRAM, NVDA, INTC, AMD, AVGO, NOK, SNOW, MRVL]
+    members: [TSM, MU, SKHYV, DRAM, NVDA, INTC, AMD, AVGO, NOK, SNOW, MRVL]
 
   space:
     description: Space exposure (SPCX direct, SSPC is the 2x short ETF on SPCX)
