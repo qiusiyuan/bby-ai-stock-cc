@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GOOG Digest (updated 7/13)</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-07-13 11:56</div>
+<h1 id="goog-alphabet-digest">GOOG — Alphabet digest</h1>
+<blockquote>
+<p><strong>One-line thesis.</strong> Owns Search — the highest-intent ad surface ever built — and is defending it with Gemini AI while building the world's #2 cloud platform + new TPU external sales revenue — <em>wrong if</em> AI-native search erodes query volume materially, if $75B/yr AI capex produces sub-par returns, or if DOJ forces structural separation.</p>
+</blockquote>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><div class="tabs"><label class="tab-label" for="tabs1-0">Snapshot</label><label class="tab-label" for="tabs1-1">What it does</label><label class="tab-label" for="tabs1-2">Outlook</label><label class="tab-label" for="tabs1-3">How I score it</label><label class="tab-label" for="tabs1-4">The core debate (7/13)</label><label class="tab-label" for="tabs1-5">Watch list (next 30 days)</label><label class="tab-label" for="tabs1-6">Q2 scorecard (7/23)</label><label class="tab-label" for="tabs1-7">Position</label></div><div class="tab-panel" data-tab-for="tabs1-0"><div class="kpi-grid"><div class="kpi"><div class="label">Price</div><div class="value">$353</div><div class="note"><span class="down"><span class="down">-8.5%</span></span> 30d; <span class="down"><span class="down">-12.7%</span></span> from 52w-high $404</div></div><div class="kpi"><div class="label">Market cap</div><div class="value">$4.3T</div><div class="note">27× trailing P/E; 24× forward</div></div><div class="kpi"><div class="label">Revenue (TTM)</div><div class="value">$423B</div><div class="note"><span class="up"><span class="up">+21.8%</span></span> YoY (Q1 accelerating)</div></div><div class="kpi"><div class="label">Net Income (TTM)</div><div class="value">$160B</div><div class="note"><span class="up"><span class="up">+81%</span></span> YoY · 37.9% net margin</div></div><div class="kpi"><div class="label">Google Cloud run rate</div><div class="value">~$48B</div><div class="note"><span class="up"><span class="up">+28%</span></span> YoY — THE swing metric</div></div><div class="kpi"><div class="label">FCF (TTM)</div><div class="value">~$28B</div><div class="note">⚠️ <span class="down"><span class="down">-47%</span></span> YoY (capex consuming cash)</div></div></div></div><div class="tab-panel" data-tab-for="tabs1-1"><p>Google Search + YouTube (广告帝国, ~$300B+ revenue/yr) + Google Cloud (GCP #3, growing 28%) + Other Bets (Waymo, DeepMind). Gemini AI 正在嵌入所有产品。New 7/13: TPU 开始外卖给 neoclouds — 可能成为 $5-10B/年新收入线。</p></div><div class="tab-panel" data-tab-for="tabs1-2"><div class="scenarios"><div class="scenario"><div class="name bull">Bull</div><div class="bar-wrap"><div class="bar bull" style="width:0%">0%</div></div><div class="target">$550 (3Y)</div><div class="desc">Cloud ≥32% + TPU external rev + Search 20%+ + Waymo profitable + DOJ behavioral</div></div><div class="scenario"><div class="name base">Base</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">$430 (3Y)</div><div class="desc">Search 15-18%/yr; Cloud 25-28%; capex elevated; P/E compress to 22×</div></div><div class="scenario"><div class="name bear">Bear</div><div class="bar-wrap"><div class="bar bear" style="width:0%">0%</div></div><div class="target">$250 (3Y)</div><div class="desc">AI agents erode Search 15%+; $75B capex no ROI; DOJ structural remedy</div></div></div></div><div class="tab-panel" data-tab-for="tabs1-3"><div class="meters"><div class="meter"><div class="name">Moat</div><div class="track"><div class="fill high" style="width:90%"></div></div><div class="score">9/10</div><div class="note">25-year Search data flywheel; YouTube network effects; Android distribution</div></div><div class="meter"><div class="name">Management trust</div><div class="track"><div class="fill mid" style="width:60%"></div></div><div class="score">6/10</div><div class="note">Disciplined buybacks but 194K employees = efficiency gap vs META (67K); brain drain concern</div></div><div class="meter"><div class="name">Valuation discipline</div><div class="track"><div class="fill high" style="width:70%"></div></div><div class="score">7/10</div><div class="note">24× forward + 22% growth = PEG 1.4x (textbook fair); FCF impairment is the discount</div></div><div class="meter"><div class="name">Balance sheet</div><div class="track"><div class="fill high" style="width:70%"></div></div><div class="score">7/10</div><div class="note">$127B cash but debt <span class="up">+284%</span> YoY to $90B; FCF <span class="down">-47%</span> — no longer fortress-clean</div></div></div></div><div class="tab-panel" data-tab-for="tabs1-4"><div class="callout danger"><p><strong>"$75B/yr AI capex → 回报在哪？"</strong></p>
+<p>这是 GOOG 跑输 META (30d: <span class="down">-8.5%</span> vs <span class="up">+4.1%</span>) 的唯一原因。META 18× 已证明 AI → 广告变现。GOOG 24× 还在"投资期"。Q2 如果管理层首次量化 AI revenue → re-rate。如果继续"we're investing for the future" → market 继续 discount。</p></div></div><div class="tab-panel" data-tab-for="tabs1-5"><div class="timeline"><div class="tl-item"><span class="when">2026-07-14</span> — <span class="what">CPI June — 若 hot → GOOG 作为长久期 growth 承压</span></div><div class="tl-item"><span class="when">2026-07-23</span> — <span class="what">**Q2 earnings ⚡** — Cloud growth (≥30%?), Search (≥22%?), margin (≥33%?)</span></div><div class="tl-item"><span class="when">2026-07-23</span> — <span class="what">同日: INTC Q2 — AI capex 板块双验证</span></div><div class="tl-item"><span class="when">2026-07-29</span> — <span class="what">META Q2 — direct comparison (谁的 AI capex 先变现?)</span></div></div></div><div class="tab-panel" data-tab-for="tabs1-6"><table class="compare"><thead><tr><th>Line item</th><th>欢迎 (+5-10%)</th><th>中性 (±2%)</th><th>抛售 (-5-10%)</th></tr></thead><tbody><tr><td>Cloud growth</td><td>≥30%</td><td>27-29%</td><td>≤25%</td></tr><tr><td>Search growth</td><td>≥22%</td><td>19-21%</td><td>≤18%</td></tr><tr><td>Operating margin</td><td>≥34%</td><td>32-33%</td><td>≤30%</td></tr><tr><td>Capex 指引</td><td>不上调 or 给 ROI 量化</td><td>维持 $75B</td><td>再上调无解释</td></tr><tr><td>AI rev 披露</td><td>首次量化</td><td>不披露但 Cloud beat</td><td>不披露 + Cloud miss</td></tr></tbody></table></div><div class="tab-panel" data-tab-for="tabs1-7"><div class="kpi-grid"><div class="kpi"><div class="label">Target</div><div class="value">$430</div><div class="note">base case (3Y)</div></div><div class="kpi"><div class="label">Thesis-break</div><div class="value">$280</div><div class="note"><span class="down"><span class="down">-21%</span></span> from current; re-read or sell below</div></div><div class="kpi"><div class="label">vs META</div><div class="value">GOOG 24× vs META 18×</div><div class="note">META 是更干净的同类 AI 投注</div></div><div class="kpi"><div class="label">Analyst target</div><div class="value">$428 (中位)</div><div class="note">隐含 <span class="up"><span class="up">+21%</span></span> upside; TD Cowen 最高 $475</div></div></div>
+<div class="callout warn"><p><strong>Two risks that matter right now:</strong>
+1. <strong>CPI 7/14</strong> — if hot → 10Y spikes → all growth (including GOOG) sells
+2. <strong>Q2 7/23</strong> — Cloud ≤25% → "capex black hole" narrative = stock -8-10%</p>
+<p>The DOJ is background risk (2027-2028 timeline). The capex question is the HERE-AND-NOW risk.</p></div>
+<div class="verdict hold">Hold — 24× for 22% growth is fair. Don&#x27;t add before Q2 (risk/reward is ~1:1 pre-earnings). If Cloud ≥30% on 7/23 → add on confirmation. If ≤25% → re-read thesis.</div>
+<hr>
+<p><em>Source: <a href="thesis.md">thesis.md</a> · last updated 2026-07-13</em></p></div></div>
+</body>
+</html>

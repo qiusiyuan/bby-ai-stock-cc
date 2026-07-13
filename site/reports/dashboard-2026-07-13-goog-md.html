@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-07-13 GOOG 专题</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-07-13 11:58</div>
+<h1 id="goog-723-q2">GOOG 专题: 7/23 Q2 财报前的完整投资图景</h1>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><div class="tabs"><label class="tab-label" for="tabs1-0">一句话定位</label><label class="tab-label" for="tabs1-1">估值全景</label><label class="tab-label" for="tabs1-2">五大叙事 (投资者在辩论什么)</label><label class="tab-label" for="tabs1-3">Q2 财报 (7/23) — 什么数字会引发欢迎？</label><label class="tab-label" for="tabs1-4">GOOG 的长期故事: 三年维度</label><label class="tab-label" for="tabs1-5">当前操作建议</label><label class="tab-label" for="tabs1-6">你最应该关注的一个问题</label></div><div class="tab-panel" data-tab-for="tabs1-0"><p><strong>Google 是 Mag7 里"估值最合理但市场最不愿意下注"的那个。</strong> 24x forward P/E + 22% revenue growth = 数学上便宜。但 $75B/年 AI capex 的 ROI 还没被证明，而 META 18x 已经证明了 — 这就是 GOOG 30d <span class="down">-8.5%</span> 跑输板块的原因。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-1"><div class="kpi-grid"><div class="kpi"><div class="label">当前价</div><div class="value">$353</div><div class="note">距 52w-high $404 <span class="down"><span class="down">-12.7%</span></span></div></div><div class="kpi"><div class="label">Market Cap</div><div class="value">$4.3 Trillion</div><div class="note">全球第四大</div></div><div class="kpi"><div class="label">Trailing P/E</div><div class="value">27.0x</div><div class="note">Net Income TTM $160B</div></div><div class="kpi"><div class="label">Forward P/E</div><div class="value">24.1x</div><div class="note">隐含 EPS ~$14.6</div></div><div class="kpi"><div class="label">PEG Ratio</div><div class="value">1.4x</div><div class="note">教科书&quot;合理估值&quot; (1.0-1.5 = fair)</div></div><div class="kpi"><div class="label">EV/EBITDA</div><div class="value">19.7x</div><div class="note">vs META 14x · MSFT 22x</div></div><div class="kpi"><div class="label">Price/Sales</div><div class="value">10.3x</div><div class="note">Revenue TTM $423B</div></div><div class="kpi"><div class="label">FCF Yield</div><div class="value">~0.65% (annualized)</div><div class="note">FCF 暴跌 <span class="down"><span class="down">-47%</span></span> YoY ← capex 吞噬</div></div></div>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">76.16</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">84.15</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">92.13</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">100.12</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">108.10</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">05-29</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-22</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-13</text><path d="M56.0,70.1 L78.3,75.4 L100.7,95.0 L123.0,98.8 L145.4,80.0 L167.7,84.8 L190.1,90.9 L212.4,89.3 L234.8,101.7 L257.1,97.3 L279.4,95.0 L301.8,82.7 L324.1,77.2 L346.5,89.6 L368.8,82.2 L391.2,108.0 L413.5,111.7 L435.9,113.2 L458.2,117.1 L480.6,127.5 L502.9,104.5 L525.2,101.7 L547.6,95.4 L569.9,97.8 L592.3,85.7 L614.6,87.5 L637.0,94.3 L659.3,97.7 L681.7,99.4 L704.0,102.4" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="102.4" r="3" fill="#58a6ff"/><path d="M56.0,70.1 L78.3,96.4 L100.7,98.8 L123.0,77.9 L145.4,74.2 L167.7,102.6 L190.1,108.8 L212.4,109.5 L234.8,120.7 L257.1,122.8 L279.4,124.0 L301.8,101.7 L324.1,96.2 L346.5,123.0 L368.8,115.1 L391.2,126.1 L413.5,127.5 L435.9,131.2 L458.2,143.4 L480.6,137.3 L502.9,127.1 L525.2,126.6 L547.6,85.7 L569.9,110.4 L592.3,96.1 L614.6,83.6 L637.0,93.8 L659.3,70.5 L681.7,39.4 L704.0,46.4" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="46.4" r="3" fill="#3fb950"/><path d="M56.0,70.1 L78.3,58.2 L100.7,80.4 L123.0,96.5 L145.4,95.7 L167.7,108.9 L190.1,114.6 L212.4,124.2 L234.8,131.2 L257.1,139.3 L279.4,138.8 L301.8,128.4 L324.1,135.2 L346.5,152.4 L368.8,151.9 L391.2,165.8 L413.5,158.2 L435.9,168.0 L458.2,182.6 L480.6,159.3 L502.9,164.4 L525.2,159.2 L547.6,146.2 L569.9,139.1 L592.3,143.4 L614.6,141.0 L637.0,147.3 L659.3,146.2 L681.7,145.3 L704.0,136.7" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="136.7" r="3" fill="#d29922"/><path d="M56.0,70.1 L78.3,88.1 L100.7,97.2 L123.0,109.7 L145.4,102.5 L167.7,117.4 L190.1,118.9 L212.4,120.9 L234.8,132.8 L257.1,126.0 L279.4,131.7 L301.8,117.4 L324.1,117.4 L346.5,133.8 L368.8,120.5 L391.2,142.8 L413.5,140.3 L435.9,140.0 L458.2,153.9 L480.6,143.0 L502.9,128.7 L525.2,132.1 L547.6,125.7 L569.9,123.8 L592.3,121.0 L614.6,117.5 L637.0,122.0 L659.3,115.4 L681.7,118.7 L704.0,111.8" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="111.8" r="3" fill="#f85149"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">GOOG vs Mag7 peers 30d</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">GOOG</span> <span class="legend-last">93.78</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-6.22%</span></span><span class="legend-note">· 30d <span class="down">-8.6%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">META</span> <span class="legend-last">104.57</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+4.57%</span></span><span class="legend-note">· 30d <span class="up">+4.1%</span> ← 领涨</span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">MSFT</span> <span class="legend-last">87.20</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-12.80%</span></span><span class="legend-note">· 30d <span class="down">-8.1%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#f85149"></span><span class="legend-name">AMZN</span> <span class="legend-last">91.97</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-8.03%</span></span><span class="legend-note">· 30d <span class="down">-9.2%</span></span></span></div></div>
+<h3>估值对标 (横向对比)</h3>
+<table class="compare"><thead><tr><th>指标</th><th>GOOG</th><th>META</th><th>MSFT</th><th>AMZN</th><th>NVDA</th></tr></thead><tbody><tr><td>Forward P/E</td><td>24.1x</td><td>18.1x</td><td>20.3x</td><td>25.0x</td><td>16.0x</td></tr><tr><td>Revenue Growth (Q1 YoY)</td><td><span class="up"><span class="up">+21.8%</span></span></td><td><span class="up"><span class="up">+22%</span></span> (est)</td><td><span class="up"><span class="up">+13%</span></span></td><td><span class="up"><span class="up">+17%</span></span></td><td><span class="up"><span class="up">+69%</span></span></td></tr><tr><td>Net Margin</td><td>37.9%</td><td>34%</td><td>36%</td><td>11%</td><td>57%</td></tr><tr><td>FCF Trend</td><td><span class="down"><span class="down">-47%</span></span> YoY</td><td>stable</td><td>stable</td><td><span class="up"><span class="up">+20%</span></span></td><td><span class="up"><span class="up">+80%</span></span></td></tr><tr><td>30d Return</td><td><span class="down"><span class="down">-8.6%</span></span></td><td><span class="up"><span class="up">+4.1%</span></span></td><td><span class="down"><span class="down">-8.1%</span></span></td><td><span class="down"><span class="down">-9.2%</span></span></td><td><span class="down"><span class="down">-4.3%</span></span></td></tr><tr><td>市场叙事</td><td>&quot;Capex 黑洞&quot;</td><td>&quot;AI 已变现&quot;</td><td>&quot;Enterprise 稳&quot;</td><td>&quot;AWS 追赶&quot;</td><td>&quot;卖铲之王&quot;</td></tr></tbody></table>
+<p><strong>解读:</strong> GOOG 的 P/E (24x) 和增速 (22%) 在 Mag7 里属于"中等估值 + 高增速"——如果不看 FCF，这是最便宜的高增长票之一。但 FCF <span class="down">-47%</span> 是唯一一个现金流恶化的 Mag7。这就是市场给 GOOG discount 的原因: <strong>利润很好看但现金在消失。</strong></p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-2"><h3>叙事 1: AI Capex — "投资未来"还是"无底洞"？</h3>
+<div class="callout danger"><p><strong>核心数字:</strong>
+- AI 年化 capex: $75B+ (Morgan Stanley 7/13 上调估计)
+- Q1 FCF: <span class="down">-46.6%</span> YoY (operating cash flow <span class="up">+26.7%</span> 但被 capex 完全吃掉)
+- Total debt: <span class="up">+284%</span> YoY (从 ~$24B 到 ~$90B) — Google 在借钱搞 AI
+- 标题: "Hyperscalers are hemorrhaging cash" / "AI costs keep rising"</p></div>
+<p><strong>Bull 视角:</strong>
+- Google 训练 Gemini 2.0 需要的算力规模是史无前例的 — 不花就会被 OpenAI/Anthropic 超过
+- TPU v5/v6 是自研芯片，比买 NVIDIA GPU 长期更划算 (每 FLOP 成本 -30-50%)
+- 一旦 Gemini 商业化落地 (Cloud AI + Search AI + Workspace AI)，revenue 会 exponential 增长
+- Berkshire Hathaway 投 $20B+ 进 GOOG — Buffett 接班人 Greg Abel 认可长期 ROI</p>
+<p><strong>Bear 视角:</strong>
+- $75B/年 capex → 如果 3 年后 AI revenue 没达到 $50B+ 增量，这笔投资的 NPV 是负的
+- vs META: Meta 的 AI 投资已经在 Reels 广告变现上看到回报 (Reels 贡献 +5-8% 广告增量)。Google 的 AI 回报在哪？
+- 新闻标题 "Generational Transfer: Google/MSFT/AMZN are Losers, NVDA/MU are Winners" — 市场在说 hyperscaler 花的钱直接变成了 chip 公司的 revenue
+- FCF 恶化说明 <strong>Google 在用股东的未来回报换取 AI 能力</strong> — 如果你相信就等，如果不信就走</p>
+<p><strong>我的判断:</strong> Capex 是对的 (不花就死)，但市场需要一个"capex → revenue bridge"来重新定价。Q2 如果能给出 <strong>"AI 产品贡献了 X% 的 revenue 增量"</strong> 这种量化数据 → 估值 re-rate 向上。如果继续只讲"我们在投资未来" → 市场继续 discount。</p>
+<hr>
+<h3>叙事 2: Search 会被 AI 颠覆吗？</h3>
+<div class="callout warn"><p><strong>这是 Google 最大的存在性问题 — 但目前数据说"还没发生"。</strong></p>
+<p><strong>事实:</strong>
+- Search Revenue Q1 <span class="up">+21.8%</span> YoY — 加速 (不是减速)
+- Google 仍占全球搜索 90%+ 市场份额
+- 广告主仍然在 Google 上花更多钱 (还没有大规模转移到 ChatGPT/Perplexity)</p>
+<p><strong>但长期风险是真的:</strong>
+- OpenAI ChatGPT + SearchGPT → 直接替代"信息搜索"场景
+- Perplexity AI → "带源引用的 AI 搜索" 增长极快
+- Meta AI → Facebook/Instagram 内置 AI 可能截流广告预算
+- Apple Intelligence → 如果 Siri 变聪明了，iPhone 用户可能不需要 Google 了</p>
+<p><strong>Google 的回应:</strong>
+- AI Overviews (搜索顶部 AI 摘要) — 已全面上线
+- Gemini 2.0 集成进 Search — "AI-first search"
+- 问题: AI Overview 可能反而降低 ad clicks (用户看完答案就走了 = 不点广告了)</p></div>
+<p><strong>Seeking Alpha "agentic cannibalization"论:</strong>  如果 AI agents 能直接帮用户完成任务 (订机票、买东西、做研究)，用户就不需要"搜索"了。Google 的核心业务模式建立在"搜索 → 展示广告 → 用户点击"的链条上。如果链条的第一步消失了，整个商业模式就崩了。</p>
+<p><strong>但请注意:</strong> 这个叙事在 2024 年就有了，而 Google Search 收入过去两年持续加速增长。<strong>"AI 颠覆 Search"目前还是理论，不是现实。</strong> 真正的测试期是 2027-2028。</p>
+<hr>
+<h3>叙事 3: Google Cloud — 追赶 AWS/Azure 的最后机会</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">Cloud Revenue (Q1)</div><div class="value">~$12B (est)</div><div class="note"><span class="up"><span class="up">+28%</span></span> YoY</div></div><div class="kpi"><div class="label">vs AWS</div><div class="value">~$29B/quarter</div><div class="note"><span class="up"><span class="up">+19%</span></span> YoY (减速)</div></div><div class="kpi"><div class="label">vs Azure</div><div class="value">~$26B/quarter</div><div class="note"><span class="up"><span class="up">+31%</span></span> YoY (加速)</div></div><div class="kpi"><div class="label">Cloud Operating Margin</div><div class="value">~10-12% (improving)</div><div class="note">从亏损转盈</div></div></div>
+<p><strong>为什么 Cloud 是 Q2 最关键的 line item:</strong>
+- Cloud 是 Google 唯一能"量化证明 AI 赚钱"的业务线 (Vertex AI, Gemini API, BigQuery ML)
+- Azure 在加速 (<span class="up">+31%</span> → 可能 <span class="up">+33%</span>)，如果 Google Cloud 从 28% 降速 → 掉队信号
+- 如果 Cloud ≥30% → 市场会说"Google AI 在赢 enterprise 客户" → 估值 re-rate
+- <strong>TPU 卖给 neoclouds 的新闻 (7/13)</strong> — Google 开始把 TPU 作为外卖商品 (类似 NVIDIA GPU)，这是一个全新的 revenue stream (could be $5-10B/年 at scale)</p>
+<p><strong>Bear case:</strong> Cloud 份额仍然 #3 (AWS 31% &gt; Azure 25% &gt; GCP 11%)，差距没有收窄的迹象。</p>
+<hr>
+<h3>叙事 4: 人才流失 + 组织效率</h3>
+<ul>
+<li><strong>"Brain drain"叙事:</strong> 多位顶级 AI 研究员去了 OpenAI / Anthropic / 创业公司</li>
+<li><strong>Bulls 反驳:</strong> "Google 有 DeepMind + Gemini team + TPU hardware team。几个人走不影响机构能力。" (Seeking Alpha: "panic is pure noise")</li>
+<li><strong>更深层的问题:</strong> Google 19.4 万员工 → 效率问题。2023 年裁员 1.2 万后仍被批"臃肿"。META 的"year of efficiency"把员工砍到 6.7 万 → profit margin 飙升。Google 有没有同样的勇气？</li>
+<li><strong>Q2 信号:</strong> 如果 headcount 下降 + margin 扩张 → 市场欢迎。如果 headcount 继续增 → "还在烧钱养人"。</li>
+</ul>
+<hr>
+<h3>叙事 5: Antitrust + Waymo + Other Bets</h3>
+<p><strong>Antitrust (背景风险):</strong>
+- US DOJ 搜索垄断案进入 remedy 阶段 — worst case: Apple 默认搜索协议 ($20B+/年) 被拆
+- EU 罚款 lock in (可能 $5-10B，对 $4.3T 市值是 noise)
+- UK 云监管 — 新规把 Google/AWS/Azure/Oracle 纳入金融监管
+- <strong>投资者态度:</strong> 基本 priced in。真正的风险在 2027-2028 如果 remedy 要求结构性拆分 Search 默认权</p>
+<p><strong>Waymo (optionality):</strong>
+- 即将扩展到 4 个新美国城市
+- US 监管在探索"无方向盘车"
+- Morgan Stanley 单独估值 $100-200B (= GOOG 估值的 ~4%)
+- <strong>但:</strong> 仍然亏损，商业化 timeline 不清晰，对短期股价影响接近 0</p>
+<p><strong>Google Chips (新叙事 — 7/13):</strong>
+- "Google Pitches TPU to Neoclouds" — 开始外卖自研 AI 芯片
+- 如果成功 → Google 从"买 NVIDIA"变成"卖芯片" → 完全不同的利润结构
+- 这是一个 2027-2028 的故事，但 Q2 电话会议如果管理层 elaborate → 市场会给 premium</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-3"><h3>市场共识</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">Revenue consensus</div><div class="value">~$112-115B</div><div class="note">+20-22% YoY</div></div><div class="kpi"><div class="label">EPS consensus</div><div class="value">~$2.20-2.30</div><div class="note">(待确认，Q1 was $2.81)</div></div><div class="kpi"><div class="label">Cloud growth</div><div class="value">~28-30% YoY</div><div class="note">关键 swing line</div></div><div class="kpi"><div class="label">Search growth</div><div class="value">~20% YoY</div><div class="note">必须稳住</div></div><div class="kpi"><div class="label">Operating margin</div><div class="value">~32-33%</div><div class="note">不能收缩</div></div><div class="kpi"><div class="label">Capex</div><div class="value">~$17-18B/quarter</div><div class="note">已是天文数字</div></div></div>
+<h3>Scorecard — 什么触发什么反应</h3>
+<table class="compare"><thead><tr><th>数据点</th><th>欢迎 (stock +5-10%)</th><th>中性 (±2%)</th><th>抛售 (stock -5-10%)</th></tr></thead><tbody><tr><td>Cloud growth</td><td>≥30%</td><td>27-29%</td><td>≤25%</td></tr><tr><td>Search growth</td><td>≥22%</td><td>19-21%</td><td>≤18%</td></tr><tr><td>Operating margin</td><td>≥34%</td><td>32-33%</td><td>≤30%</td></tr><tr><td>Capex 指引</td><td>不上调 or 给出 ROI 量化</td><td>维持 $75B/年</td><td>再上调 $10B+ 无解释</td></tr><tr><td>AI revenue 披露</td><td>首次单独报告 AI revenue</td><td>不披露但 Cloud beat</td><td>不披露 + Cloud miss</td></tr><tr><td>YouTube</td><td>≥25% growth (Shorts 变现)</td><td>20-24%</td><td>≤18%</td></tr><tr><td>回购</td><td>新增 $50B+ announce</td><td>维持现有 pace</td><td>无提及</td></tr><tr><td>Waymo</td><td>明确 2027 profitability path</td><td>照常更新</td><td>延迟 or 关闭传闻</td></tr></tbody></table>
+<h3>什么组合最可能引发"暴涨 <span class="up">+10%</span>"?</h3>
+<div class="callout info"><p><strong>Golden scenario (概率 ~20%):</strong>
+1. Cloud <span class="up">+32%</span> (证明 AI enterprise 落地)
+2. Search <span class="up">+23%</span> (AI Overview 没杀广告)
+3. Operating margin 34%+ (效率改善)
+4. 管理层说: "Gemini API 产生了 $X billion annualized revenue" — 首次量化 AI 回报
+5. TPU 外卖 revenue 首次披露
+6. 新增回购 $70B</p>
+<p>这个组合说的是: "我们花了 $75B，但看，这是我们得到的。"</p></div>
+<div class="callout warn"><p><strong>Nightmare scenario (概率 ~15%):</strong>
+1. Cloud 减速到 25% (Azure 抢份额)
+2. Search 降到 18% (AI 替代信号出现)
+3. Capex 再加 $10B 但没解释 ROI
+4. 管理层回避 AI revenue 量化问题
+5. 更多人才流失 announce
+6. Antitrust remedy 不利时间线更新</p>
+<p>这个组合说的是: "我们花了更多钱但不知道得到了什么。" → stock <span class="down">-10%</span> 到 $315。</p></div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-4"><h3>Bull Case (3年 target $550 → <span class="up">+56%</span>)</h3>
+<ul>
+<li>AI Search 转型成功 → 广告 ARPU 因为 AI 精准度提升而增加 (每次搜索更值钱)</li>
+<li>Cloud 到 2028 达到 Azure 水平 ($100B/年 run rate) → margin 25%+</li>
+<li>Waymo 开始盈利 → 市场给 $200B+ standalone 估值</li>
+<li>TPU 外卖成为 $20B+ business → Google 从 buyer 变 seller</li>
+<li>整合效应: Search + Cloud + AI + Ads = 唯一一个端到端全栈 AI 公司</li>
+</ul>
+<h3>Bear Case (3年 $250 → <span class="down">-29%</span>)</h3>
+<ul>
+<li>AI agents 真的颠覆了 Search → 广告收入增长归零</li>
+<li>Cloud 份额持续被 AWS/Azure 压缩 → 永远是 #3</li>
+<li>$75B/年 capex 产出远低于预期 → 投资者要求回购/分红而不是继续投</li>
+<li>Antitrust remedy 拆分 Apple 默认协议 → 直接砍 $20B/年 revenue</li>
+<li>人才流失导致 Gemini 落后 GPT-5 / Claude 4+ → 技术优势消失</li>
+</ul>
+<h3>Base Case (3年 $430 → <span class="up">+22%</span>, ~7% CAGR)</h3>
+<ul>
+<li>Search 稳住 15-18% growth (AI 没颠覆但增速自然放缓)</li>
+<li>Cloud 25-28% growth (追不上 Azure 但稳定)</li>
+<li>Capex 逐步产出 revenue (但不是爆发式)</li>
+<li>P/E 从 24x 压缩到 22x (随增速放缓)</li>
+</ul>
+<div class="scenarios"><div class="scenario"><div class="name bull">Bull</div><div class="bar-wrap"><div class="bar bull" style="width:0%">0%</div></div><div class="target">$550 (3Y)</div><div class="desc">AI 全栈变现 + Cloud 追上 + Waymo 盈利</div></div><div class="scenario"><div class="name base">Base</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">$430 (3Y)</div><div class="desc">Search 稳 + Cloud 稳 + capex 温和回报</div></div><div class="scenario"><div class="name bear">Bear</div><div class="bar-wrap"><div class="bar bear" style="width:0%">0%</div></div><div class="target">$250 (3Y)</div><div class="desc">Search 被颠覆 + capex 无回报 + antitrust</div></div></div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-5"><div class="callout info"><p><strong>GOOG 不在工作区追踪名单中。是否值得加入?</strong></p>
+<p><strong>加入的理由:</strong>
+- 24x forward P/E 在 Mag7 里属于"估值洼地" (比 META 贵但比 AMZN 便宜)
+- 7/23 Q2 是 potential catalyst — 如果 Cloud beat → stock +8-10%
+- Analyst target $428 (中位) = <span class="up">+21%</span> upside
+- Berkshire $20B+ 持仓 = "smart money"背书
+- TPU 外卖 + Waymo 扩张 = 新的 optionality</p>
+<p><strong>不加入的理由:</strong>
+- META 更干净 (18x + 已证明 AI 变现) — 同样的"AI capex"赌注，META 风险更低
+- GOOG 30d <span class="down">-8.5%</span> 跑输板块 = 市场在"投票出局"
+- FCF <span class="down">-47%</span> YoY = 现金恶化中
+- Search 替代风险是真实的长期 overhang (即使短期不发生)
+- Antitrust 是 2027-2028 的定时炸弹</p></div>
+<h3>如果只是 trade Q2 (而不是长线持有):</h3>
+<div class="verdict watch">**当前位置:** $353 = 距 52w-high <span class="down">-12.7%</span>，距 MA50 ($370) <span class="down">-4.6%</span>。跌破均线，技术面弱。
+
+**Q2 trade 的 risk/reward:**
+- If beat (Cloud <span class="up">+30%</span>+): target $385-400 (+9-13%)
+- If miss (Cloud &lt;26%): target $315-330 (-6-11%)
+- Risk/reward 约 1:1 — 不够 asymmetric
+
+**建议:** 不做 pure bet on earnings。如果 CPI 温和 (7/14) + GOOG 反弹到 $365-370 (MA50 附近) 再决定。或者等 Q2 数据出来后追涨/杀跌 — post-earnings reaction trade 的 risk/reward 通常比 pre-earnings bet 更好。
+
+**如果真要 position:** 买 7/25 expiry 的 $360 call spread ($360/$380) — 用有限风险 play &quot;Cloud beat&quot; narrative。</div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-6"><blockquote>
+<p><strong>"Google 花的这 $75B AI capex，比例上有多少变成了 revenue？"</strong></p>
+</blockquote>
+<p>这是 7/23 电话会上最重要的问题。如果管理层能回答 (例如"Gemini API 年化 $8B") → stock re-rate。如果他们说"还在投资期" → market 继续给 discount。一切都围绕这一个问题展开。</p></div></div>
+</body>
+</html>
