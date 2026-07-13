@@ -70,3 +70,7 @@ No longer fortress-clean. Cash $127B is still massive but total debt surged to ~
 ### 2026-07-13 — Agent: refresh thesis (pre-Q2 earnings update)
 
 Major updates: (1) FCF -47% YoY is the single biggest change from June — Google is borrowing to fund AI capex, balance sheet no longer "fortress-clean." (2) TPU external sales is a genuinely new revenue optionality (7/13 news). (3) 30d -8.5% makes GOOG the weakest Mag7 alongside AMZN — market clearly wants "proof of capex ROI" before re-rating. (4) Berkshire $20B+ position is new validation. (5) Brain drain narrative is new headwind. Adjusted bull/base/bear to 25/50/25 (from 30/50/20) reflecting elevated capex risk. Core thesis unchanged: Search moat is real, AI integration is right strategy, Cloud is the growth engine. Q2 7/23 is the next binary event — Cloud ≥30% = thesis alive, ≤25% = re-evaluate.
+
+### 2026-07-13  Note — 7/23 Q2 核心观察点: 管理层敢不敢披露 AI revenue
+
+关键不仅是 Cloud 增速，更是 Google 管理层愿不愿意首次量化 AI 回报。如果不披露 = 仍在投资阶段，要看投资者耐心和 Google 底气。当前市场风气明确追逐"有 AI 收益的股票" — 只要你 show revenue, 资金会大度回报 (META 就是例子)。对比 MSFT: 一向 conservative，但 $37B Copilot ARR 一旦披露就可信度极高。Google 不确定 — 要么有意驱动市场 (首次给数字 → 大涨催化)，要么坚持自己路径 (不披露、表明还在建设)，也可能像 TSLA 一样两面性 (给 ambitious 数字但市场半信半疑)。这是 7/23 最该听的"管理层风格信号"，比任何单一数字更重要。
