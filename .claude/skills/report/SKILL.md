@@ -83,17 +83,29 @@ Example menu:
   [ ] Deep dive: SPCX (5d -15%)
 ```
 
-### 4. Run chosen modules — parallel where possible
+### 4. Run chosen modules — SEQUENTIALLY, one section at a time
 
-Dependencies:
-- Modules 1, 2, 3 (pulse / watchlist / timeline) are independent — run in parallel
-- Module 4 ([[cluster]] tabs) is independent of 1-3 — can run in parallel with them. Iterate every cluster in `groups.yaml::focus_clusters` and emit one tab per cluster.
+**CRITICAL: Write each H2 section to the dashboard file ONE AT A TIME.** Do NOT attempt to write the entire report in a single Edit/Write call — this causes context-window timeouts on large reports. The correct pattern:
+
+1. Create the file with `# Daily Report {date}` header
+2. Write `## Pulse & Macro` section → Edit/append to file
+3. Write `## Watchlist & Movers` section → Edit/append to file
+4. Write `## Timeline 30d` section → Edit/append to file
+5. Write each `## Focus: {cluster}` section → one Edit/append per cluster
+6. Write `## Brief` section LAST → Edit/append to file
+7. Write any Deep Dive sections → Edit/append to file
+
+Between sections: fetch data as needed for the next section. This keeps each tool call small and prevents timeouts.
+
+**Dependencies:**
+- Modules 1, 2, 3 (pulse / watchlist / timeline) are independent — data can be fetched in parallel, but sections are WRITTEN sequentially
+- Module 4 ([[cluster]] tabs) — one section per cluster, written one at a time
 - Module 5 ([[brief]]) depends on 1+2+3+4 outputs — runs sequentially LAST
-- Deep-dive / compare modules can run in parallel with 1-4
+- Deep-dive / compare modules are appended after Brief
 
 Each module skill writes its own H2 to `dashboard/{date}.md`. Idempotent: re-running replaces its H2 in place.
 
-**Resulting tab order** in the dashboard (with default modules + 5 clusters):
+**Resulting tab order** in the dashboard (with default modules + clusters):
 1. Pulse & Macro
 2. Watchlist & Movers
 3. Timeline 30d
@@ -102,7 +114,8 @@ Each module skill writes its own H2 to `dashboard/{date}.md`. Idempotent: re-run
 6. Focus: DRAM/HBM
 7. Focus: AI capex
 8. Focus: 能源
-9. Brief
+9. Focus: 电力/Grid
+10. Brief
 (Any user-requested Deep Dive / Compare tabs appended after Brief.)
 
 ### 5. Render and open
@@ -124,10 +137,11 @@ Don't dump module outputs into chat — the dashboard is the report.
 ## Hard rules
 
 - **Always show menu**. Don't infer "user wants everything" from the trigger; the menu is the control surface.
-- **Run parallel where modules are independent**. Saves 60-70% wall time.
+- **Write sections ONE AT A TIME.** Never write more than one H2 section in a single tool call. This is the #1 cause of timeouts. Fetch data → write one section → fetch more data → write next section.
 - **Idempotent re-runs**: same module on same day = replace its H2, don't append.
 - **Brief is last**. It reads 1+2+3 markdown to write the narrative; without them it's flying blind.
 - **One file, one URL**. Never open multiple browser tabs.
+- **Data fetching can be parallel** — batch `fetch.py` calls in one Bash command. But writing markdown is sequential.
 
 ## Skill linkage
 
