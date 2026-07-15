@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-15 · n/a day · ▼ moderate
+**Tags:** `lockup_fear`, `sector_rotation`, `thesis_break_approach`
+**Confidence:** high
+
+**Primary cause.** SPCX 跌破 IPO 发行价 — headline 确认 'SpaceX shares slide below IPO price for the first time'。5d -10.2%。距 thesis-break $130 仅 2.3% ($3.05)。驱动: AI capex rotation (资金从 Elon 系流向 GOOG/AMZN/META) + 12/9 lockup 恐惧提前定价。Deutsche Bank $255 target 未能止血。
+
+**Sources.**
+- Yahoo: SpaceX shares slide below IPO price for the first time as blistering rally unravels
+- Yahoo: SpaceX Stock Is Already Down 37% From Its Peak. Here's What Deutsche Bank's $255 Target Says
+- Yahoo: Is SpaceX Replacing Tesla as Elon Musk's Biggest Value Creator?
+- _Corroboration:_ SSPC (2x inverse) +4.5%, 5d +22.6% — 空头 ETF 暴涨确认方向性
+
+**Cross-assets.** SPY -0.10% · SSPC +4.50% · TSLA -1.10%
+
+**Agent read.** SPCX 破 IPO 价是心理支撑位失守的结构性事件。$130 thesis-break 仅剩 $3，明天若继续下穿且非系统性崩盘 → 需执行 thesis-break protocol (re-read thesis or exit)。SSPC 5d +22.6% 说明 short 方向在加速。12/9 lockup 仍有 5 个月但市场已在提前定价 dilution。
+
+
+---
 ### 2026-06-29 · +7.15% day · ▲ major
 **Tags:** `index_inclusion`, `post_ipo`
 **Confidence:** high

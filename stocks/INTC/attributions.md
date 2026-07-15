@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-15 · n/a day · ▼ major
+**Tags:** `sector_rotation`, `china_competition`
+**Confidence:** medium
+
+**Primary cause.** MU -10% China DRAM 竞争恐惧 spillover 到全 semi 板块。INTC 作为 high-beta turnaround 票在板块恐慌时优先被卖。讽刺: 同日 HSBC doubled PT + Stifel raised PT 被完全无视。无 INTC-specific 催化剂。
+
+**Sources.**
+- Yahoo: Micron Drops 8% on China Competition Fears, Dragging Intel, AMD, and Marvell
+- Yahoo: Here's Why HSBC Doubled The PT on Intel (INTC)
+- Yahoo: Stifel Raises PT on Intel (INTC)
+
+**Cross-assets.** SPY -0.10% · MU -9.90% · AMD -6.50% · NVDA -2.40%
+
+**Agent read.** 纯 MU drag，非 INTC-specific。HSBC/Stifel 同日上调 PT 被无视 = 市场短期不信 turnaround。但 vol 0.55x 低，非机构出货。7/23 Q2 earnings 是真正 binary event: foundry + 18A + Xeon momentum 验证。距 break $75 缓冲 33%。
+
+
+---
 ### 2026-07-02 · -5.61% day · ▼ major
 **Tags:** `sector_rotation`, `ai_demand`, `thesis_debate`
 **Confidence:** high

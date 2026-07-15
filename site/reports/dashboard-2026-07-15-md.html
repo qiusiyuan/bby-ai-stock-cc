@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-07-15</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-07-15 10:56</div>
+<h1 id="daily-report-2026-07-15">Daily Report 2026-07-15</h1>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }#tabs1-8:checked ~ [data-tab-for="tabs1-8"] { display: block; }#tabs1-9:checked ~ [data-tab-for="tabs1-9"] { display: block; }#tabs1-10:checked ~ [data-tab-for="tabs1-10"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><input class="tab-input" type="radio" name="tabs1" id="tabs1-8"><input class="tab-input" type="radio" name="tabs1" id="tabs1-9"><input class="tab-input" type="radio" name="tabs1" id="tabs1-10"><div class="tabs"><label class="tab-label" for="tabs1-0">Pulse &amp; Macro</label><label class="tab-label" for="tabs1-1">Watchlist &amp; Movers</label><label class="tab-label" for="tabs1-2">Focus: TSLA</label><label class="tab-label" for="tabs1-3">Focus: SpaceX</label><label class="tab-label" for="tabs1-4">Focus: DRAM/HBM</label><label class="tab-label" for="tabs1-5">Focus: AI capex</label><label class="tab-label" for="tabs1-6">Focus: 能源(油气)</label><label class="tab-label" for="tabs1-7">Focus: 电力/Grid</label><label class="tab-label" for="tabs1-8">Deep Dive: MU — 中国竞争恐惧重创 <span class="down">-9.9%</span></label><label class="tab-label" for="tabs1-9">Deep Dive: INTC — MU drag + 多重矛盾信号 <span class="down">-7.3%</span></label><label class="tab-label" for="tabs1-10">Deep Dive: TSM — earnings 前夜 <span class="down">-1.8%</span>，明天是关键</label></div><div class="tab-panel" data-tab-for="tabs1-0"><div class="kpi-grid"><div class="kpi"><div class="label">S&amp;P 500</div><div class="value">7,533 / <span class="up"><span class="up">+0.0%</span></span></div><div class="note">近乎持平；Semi 拖累 vs Big-Tech 对冲</div></div><div class="kpi"><div class="label">VIX</div><div class="value">15.91 / <span class="down"><span class="down">-3.6%</span></span></div><div class="note">恐慌继续消退；5d <span class="down"><span class="down">-5.9%</span></span></div></div><div class="kpi"><div class="label">10Y 国债</div><div class="value">4.55% / <span class="down"><span class="down">-0.8%</span></span></div><div class="note">CPI+PPI 双低 → 利率继续下行</div></div><div class="kpi"><div class="label">DXY 美元</div><div class="value">100.49 / <span class="down"><span class="down">-0.5%</span></span></div><div class="note">美元走弱；5d <span class="down"><span class="down">-0.6%</span></span></div></div><div class="kpi"><div class="label">WTI 原油</div><div class="value">$79.11 / <span class="down"><span class="down">-0.3%</span></span></div><div class="note">5d <span class="up"><span class="up">+7.6%</span></span> (上周反弹) 但今天持平</div></div><div class="kpi"><div class="label">GLD 黄金</div><div class="value">$372.87 / <span class="up"><span class="up">+0.2%</span></span></div><div class="note">Dollar 弱 → 金稳</div></div></div>
+<h3>今日宏观事件</h3>
+<p><strong>1. PPI June — 批发物价下跌 ✅ 通胀利好</strong></p>
+<p>"Gold Steady as Dollar and Yields Drop After <strong>US Wholesale Prices Fell in June</strong>" — 6 月 PPI 负增长，接在昨天 CPI 3.5% beat 之后，形成<strong>双重通缩信号</strong>。传导路径:
+- PPI 落 → 企业成本端压力缓解 → 未来 CPI 仍有下行空间
+- CPI + PPI 双低 → 市场 price in 更早降息 → 利率下行 (10Y <span class="down">-0.8%</span> today)
+- 利率下行 → USD 走弱 (DXY <span class="down">-0.5%</span>) → growth/duration 长的 megacap 涨 (GOOG/AMZN/META)</p>
+<p><strong>2. Fed Chair Kevin Warsh 发言 — "Stock Market's Biggest Fear"</strong></p>
+<p>Headline: "In 7 Words, Fed Chair Kevin Warsh May Have Just Confirmed the Stock Market's Biggest Fear"。Warsh 可能暗示了市场最担心的场景 — <strong>即使通胀回落，Fed 仍不急于降息</strong> (higher-for-longer lite)。这解释了为什么 CPI+PPI 双利好后，大盘只收平 (<span class="up">+0.0%</span>) 而非暴涨。</p>
+<p>→ 市场矛盾: 数据说降息 (CPI/PPI)，但 Fed Chair 信号说"别急" → 结果 = 持平 + rotation (growth up, cyclicals flat)。</p>
+<p><strong>3. "88% Chance S&amp;P 500 Will Plunge Soon" — 期权市场定价</strong></p>
+<p>"Traders Bet There's An 88% Chance The S&amp;P 500 Will Plunge Soon" — put/call 比例或 VIX term structure 暗示短期下行风险高。但 VIX 本身在 15.9 (<span class="down">-3.6%</span>)，并不算恐慌 — 这更像是 "尾部对冲在增加" 不是 "全面看空"。</p>
+<h3>宏观传导到持仓</h3>
+<table>
+<thead>
+<tr>
+<th>信号</th>
+<th>传导</th>
+<th>受益</th>
+<th>受损</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PPI 落 + CPI beat</td>
+<td>利率下行预期</td>
+<td>GOOG/AMZN/META/MSFT (duration)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>USD 走弱</td>
+<td>出口/海外收入 uplift</td>
+<td>TSM (台币升值利好), SU/CNQ (加币升值利好)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Warsh 鹰派暗示</td>
+<td>降息时点推后</td>
+<td>—</td>
+<td>利率敏感行业 (地产/utilities)</td>
+</tr>
+<tr>
+<td>WTI <span class="up">+7.6%</span> (5d)</td>
+<td>油价反弹中</td>
+<td>SU/CVX/CNQ/HXE.TO</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Semi-specific China fear</td>
+<td>板块性抛售</td>
+<td>—</td>
+<td>MU/SKHY/INTC/AMD/MRVL</td>
+</tr>
+</tbody>
+</table>
+<h3>地缘/政策扫描</h3>
+<ul>
+<li><strong>Iran/Israel</strong>: 无新进展。WTI 持平说明市场暂时没有 price in 新的 escalation。</li>
+<li><strong>US-China</strong>: MU 的 "China competition" headline 是 trade-adjacent — CXMT/YMTC 扩产得益于此前的技术积累 + 国内替代需求。但不是新关税/制裁 — 是存量竞争加剧。</li>
+<li><strong>Fed</strong>: 下次 FOMC 7/30。Warsh 今天的暗示可能为 7/30 "hold" 做铺垫。</li>
+<li><strong>SEC/FTC/DOJ</strong>: 无新动向。</li>
+</ul>
+<div class="callout info"><p><strong>今日宏观定性</strong>: 数据面极度友好 (CPI + PPI 双低)，但 Fed 信号克制 → 大盘收平。Semi 板块的中国恐惧是 idiosyncratic 而非 macro-driven。净效果: <strong>利好 growth/duration names, 中性 broad market, 不影响 fundamental 叙事</strong>。7/30 FOMC 是下一个 macro event。</p></div></div><div class="tab-panel" data-tab-for="tabs1-1"><div class="callout danger"><p>🚨 <strong>SPCX 距 thesis-break 仅 2.3%</strong> — $133.05 vs break $130。连续 5 天跌 <span class="down">-10.2%</span>。thesis_break 是 "post-IPO 叙事彻底破裂" 水位 — 如果不是大盘带崩，需要重新审视是否该 exit。</p></div>
+<div class="callout danger"><p>🚨 <strong>MRVL 距 thesis-break 仅 1.2%</strong> — $202.45 vs break $200。今天 <span class="down">-9.0%</span>, 5d <span class="down">-12.6%</span>。AWS Trainium 故事正在被市场质疑？</p></div>
+<h3>🔥 重点观察 (6 focus + 5 auto-promoted movers)</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">MU</div><div class="value">$885.31 / <span class="down"><span class="down">-9.9%</span></span></div><div class="note">🔥 Semi 板块性抛售；距 break $650 缓冲 36%</div></div><div class="kpi"><div class="label">DRAM</div><div class="value">$55.40 / <span class="down"><span class="down">-9.5%</span></span></div><div class="note">🔥 ETF 联动 MU 下跌</div></div><div class="kpi"><div class="label">INTC</div><div class="value">$99.94 / <span class="down"><span class="down">-7.3%</span></span></div><div class="note">🔥 5d <span class="down"><span class="down">-9.3%</span></span>；7/23 Q2 earnings 是生死局</div></div><div class="kpi"><div class="label">SPCX</div><div class="value">$133.05 / <span class="down"><span class="down">-2.2%</span></span></div><div class="note">⚠ 5d <span class="down"><span class="down">-10.2%</span></span> — break $130 仅剩 2.3%！</div></div><div class="kpi"><div class="label">TSLA</div><div class="value">$391.80 / <span class="down"><span class="down">-1.1%</span></span></div><div class="note">✅ 安静；7/22 Q2 earnings 一周后</div></div><div class="kpi"><div class="label">SKHY</div><div class="value">$171.91 / <span class="down"><span class="down">-11.4%</span></span></div><div class="note">🔥 MU 联动暴跌；IPO 后首次遭遇板块性抛售</div></div></div>
+<p><strong>Auto-promoted movers (非 focus 但今日异动):</strong></p>
+<div class="kpi-grid"><div class="kpi"><div class="label">MRVL</div><div class="value">$202.45 / <span class="down"><span class="down">-9.0%</span></span></div><div class="note">🔥 [mover] 5d <span class="down"><span class="down">-12.6%</span></span>；触及 thesis-break $200！</div></div><div class="kpi"><div class="label">AMD</div><div class="value">$512.42 / <span class="down"><span class="down">-6.5%</span></span></div><div class="note">🔥 [mover] Semi 板块联动</div></div><div class="kpi"><div class="label">GEV</div><div class="value">$1013.94 / <span class="down"><span class="down">-4.9%</span></span></div><div class="note">🔥 [mover] 5d <span class="down"><span class="down">-5.3%</span></span>；7/22 earnings 前承压</div></div><div class="kpi"><div class="label">NOK</div><div class="value">$10.86 / <span class="down"><span class="down">-7.2%</span></span></div><div class="note">🔥 [mover] 5d <span class="down"><span class="down">-9.1%</span></span></div></div><div class="kpi"><div class="label">AAPL</div><div class="value">$328.12 / <span class="up"><span class="up">+4.2%</span></span></div><div class="note">🔥 [mover] CPI beat 后涨</div></div></div>
+<p><strong>Key divergence</strong>: Semi 全线暴跌 (MU/DRAM/INTC/AMD/MRVL/NOK/SKHY) 同时 Big-Tech 反弹 (GOOG <span class="up">+3.8%</span>, AMZN <span class="up">+3.2%</span>, MSFT <span class="up">+2.9%</span>, AAPL <span class="up">+4.2%</span>, META <span class="up">+2.7%</span>)。Semi 板块无一幸免 — SKHY <span class="down">-11.4%</span> 甚至跌幅更大 (IPO 后流动性薄 + 无 buffer)。</p>
+<p><strong>Next catalysts (7 天内)</strong>:
+- 7/15 (今天): PPI June
+- 7/16: <strong>TSM Q2 earnings</strong> — CoWoS / HBM read-through
+- 7/22: TSLA Q2 earnings, IBM Q2 earnings, GEV Q2 earnings
+- 7/23: GOOG Q2, <strong>INTC Q2 (生死局)</strong>, NOK Q2</p>
+<h3>常规持仓 (quiet)</h3>
+<table class="compare"><thead><tr><th>Ticker</th><th>Price</th><th>1D%</th><th>5D%</th><th>Signal</th><th>Next catalyst</th></tr></thead><tbody><tr><td>GOOG</td><td>$370.88</td><td><span class="up"><span class="up">+3.8%</span></span></td><td><span class="up"><span class="up">+3.4%</span></span></td><td>🔥</td><td>7/23 Q2 earnings</td></tr><tr><td>AMZN</td><td>$255.48</td><td><span class="up"><span class="up">+3.2%</span></span></td><td><span class="up"><span class="up">+4.9%</span></span></td><td>⚠</td><td>7/30 Q2 earnings</td></tr><tr><td>MSFT</td><td>$395.99</td><td><span class="up"><span class="up">+2.9%</span></span></td><td><span class="up"><span class="up">+3.3%</span></span></td><td>✅</td><td>7/29 Q4 FY26 earnings</td></tr><tr><td>META</td><td>$678.61</td><td><span class="up"><span class="up">+2.7%</span></span></td><td><span class="up"><span class="up">+12.5%</span></span></td><td>🔥</td><td>7/29 Q2 earnings</td></tr><tr><td>AAPL</td><td>$328.12</td><td><span class="up"><span class="up">+4.2%</span></span></td><td><span class="up"><span class="up">+4.7%</span></span></td><td>🔥</td><td>7/30 Q3 FY26 earnings</td></tr><tr><td>IBM</td><td>$212.56</td><td><span class="down"><span class="down">-2.1%</span></span></td><td><span class="down"><span class="down">-29.6%</span></span></td><td>🔥</td><td>7/22 Q2 earnings</td></tr><tr><td>AVGO</td><td>$387.81</td><td><span class="down"><span class="down">-0.3%</span></span></td><td><span class="down"><span class="down">-0.2%</span></span></td><td>✅</td><td>9/3 Q3 FY26 earnings</td></tr><tr><td>TSM</td><td>$412.81</td><td><span class="down"><span class="down">-1.8%</span></span></td><td><span class="down"><span class="down">-5.5%</span></span></td><td>⚠</td><td>**明天 7/16 Q2 earnings**</td></tr><tr><td>NVDA</td><td>$206.69</td><td><span class="down"><span class="down">-2.4%</span></span></td><td><span class="up"><span class="up">+1.3%</span></span></td><td>✅</td><td>8/26 Q2 FY27 earnings</td></tr><tr><td>SNOW</td><td>$266.88</td><td><span class="down"><span class="down">-3.3%</span></span></td><td><span class="up"><span class="up">+2.1%</span></span></td><td>⚠</td><td>8/26 Q2 FY27 earnings</td></tr><tr><td>SU</td><td>$60.29</td><td><span class="down"><span class="down">-1.2%</span></span></td><td><span class="up"><span class="up">+2.1%</span></span></td><td>✅</td><td>8/4 Q2 earnings</td></tr><tr><td>CVX</td><td>$180.07</td><td><span class="down"><span class="down">-0.9%</span></span></td><td><span class="up"><span class="up">+2.3%</span></span></td><td>✅</td><td>7/31 Q2 earnings</td></tr><tr><td>CNQ</td><td>$42.65</td><td><span class="up"><span class="up">+0.1%</span></span></td><td><span class="up"><span class="up">+0.5%</span></span></td><td>✅</td><td>8/6 Q2 earnings</td></tr></tbody></table>
+<h3>Threshold-crossings → Deep-dive candidates</h3>
+<table>
+<thead>
+<tr>
+<th>Ticker</th>
+<th>Trigger</th>
+<th>Magnitude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MU</td>
+<td>1d ≥5%</td>
+<td><span class="down">-9.9%</span></td>
+</tr>
+<tr>
+<td>DRAM</td>
+<td>1d ≥5%</td>
+<td><span class="down">-9.5%</span></td>
+</tr>
+<tr>
+<td>INTC</td>
+<td>1d ≥5%</td>
+<td><span class="down">-7.3%</span></td>
+</tr>
+<tr>
+<td>MRVL</td>
+<td>1d ≥5% + 5d ≥10% + break zone</td>
+<td><span class="down">-9.0%</span> / <span class="down">-12.6%</span></td>
+</tr>
+<tr>
+<td>AMD</td>
+<td>1d ≥5%</td>
+<td><span class="down">-6.5%</span></td>
+</tr>
+<tr>
+<td>NOK</td>
+<td>1d ≥5%</td>
+<td><span class="down">-7.2%</span></td>
+</tr>
+<tr>
+<td>GEV</td>
+<td>1d ≥3%</td>
+<td><span class="down">-4.9%</span></td>
+</tr>
+<tr>
+<td>SKHY</td>
+<td>1d ≥5%</td>
+<td><span class="down">-11.4%</span></td>
+</tr>
+<tr>
+<td>SPCX</td>
+<td>5d ≥10% + break zone</td>
+<td><span class="down">-10.2%</span></td>
+</tr>
+<tr>
+<td>IBM</td>
+<td>5d ≥10%</td>
+<td><span class="down">-29.6%</span> (余震)</td>
+</tr>
+<tr>
+<td>META</td>
+<td>5d ≥10%</td>
+<td><span class="up">+12.5%</span></td>
+</tr>
+<tr>
+<td>AAPL</td>
+<td>1d ≥3%</td>
+<td><span class="up">+4.2%</span></td>
+</tr>
+<tr>
+<td>GOOG</td>
+<td>1d ≥3%</td>
+<td><span class="up">+3.8%</span></td>
+</tr>
+</tbody>
+</table></div><div class="tab-panel" data-tab-for="tabs1-2"><p><strong>$391.80 / <span class="down">-1.1%</span> / vol 0.4x</strong> — 安静的一天，市场注意力在 semi 和 CPI 后的 rotation。</p>
+<div class="kpi-grid"><div class="kpi"><div class="label">距 Q2 earnings</div><div class="value">7 天 (7/22 AMC)</div><div class="note"></div></div><div class="kpi"><div class="label">Wall St 共识 EPS</div><div class="value">$0.55 (YoY <span class="up"><span class="up">+38%</span></span>)</div><div class="note"></div></div><div class="kpi"><div class="label">距 thesis-break</div><div class="value">缓冲 57% ($250)</div><div class="note"></div></div><div class="kpi"><div class="label">30d 趋势</div><div class="value"><span class="down"><span class="down">-5.8%</span></span></div><div class="note"></div></div></div>
+<p><strong>今日叙事</strong>: TSLA 在 semi 崩盘日几乎无事。市场 narrative 分裂 — Wells Fargo 维持 Sell + $130 target (暗示 <span class="down">-67%</span>)，同时 Zacks 预计 EPS beat。Semi 回调背景下 TSLA 的 "AI + autonomy" 定价暂时没被波及。</p>
+<p><strong>关注点</strong>: 7/22 Q2 earnings 是下一个事件。华尔街关注: auto GM ex-credits, FSD revenue recognition, Robotaxi timeline update。Tesla Semi 商用测试进展 (Paper Transport 合作) 是 positive signal 但非股价驱动。</p>
+<div class="verdict hold">Q2 前静观。Wells Fargo $130 target 是市场熊端极限；7/22 看 GM + FSD 数字。</div></div><div class="tab-panel" data-tab-for="tabs1-3"><p><strong>SPCX $133.05 / <span class="down">-2.2%</span> / 5d <span class="down">-10.2%</span></strong></p>
+<div class="callout danger"><p>🚨 SPCX 已跌破 IPO 发行价！Deutsche Bank $255 target (<span class="down">-48%</span> upside claim) 没能止血。距 thesis-break $130 仅剩 $3.05 (2.3%)。这是 lockup 恐慌 + AI 资金轮动的组合打击。</p></div>
+<div class="kpi-grid"><div class="kpi"><div class="label">SPCX</div><div class="value">$133.05 / <span class="down"><span class="down">-2.2%</span></span></div><div class="note">破 IPO 价；距 break $130 仅 2.3%</div></div><div class="kpi"><div class="label">SSPC (2x inverse)</div><div class="value">$16.08 / <span class="up"><span class="up">+4.5%</span></span></div><div class="note">5d <span class="up"><span class="up">+22.6%</span></span> — 空头 ETF 暴涨</div></div></div>
+<p><strong>今日叙事</strong>: 新闻确认 "SpaceX shares slide below IPO price for the first time as blistering rally unravels"。这是结构性事件 — IPO 定价是心理支撑位，跌破后卖压可能加速。Deutsche Bank 给了 $255 target 也没用。</p>
+<p><strong>驱动因素分析</strong>:
+1. <strong>AI capex rotation</strong>: 市场资金从 "Elon 系" (TSLA 也在 30d <span class="down">-5.8%</span>) 轮动到 hyperscaler 受益名 (GOOG/AMZN/META 今天都涨 3%+)
+2. <strong>12/9 lockup 恐惧</strong>: 距 lockup 还有 5 个月，但市场提前定价 — IPO 后的 "稀释想象" 正在挤压估值
+3. <strong>叙事对比</strong>: "Is SpaceX Replacing Tesla as Elon Musk's Biggest Value Creator?" — 但价格走势不支持</p>
+<p><strong>行动建议</strong>: $130 是硬线。如果明天继续下穿 $130 且非大盘系统性崩盘，需要执行 thesis-break protocol。</p>
+<div class="verdict watch">$130 硬线。明日若收于 $130 以下 → re-read thesis 或 exit。</div></div><div class="tab-panel" data-tab-for="tabs1-4"><p><strong>主题日: 全 memory 板块暴跌 — MU <span class="down">-9.9%</span>, SKHY <span class="down">-11.4%</span>, DRAM ETF <span class="down">-9.5%</span>, MRVL <span class="down">-9.0%</span></strong></p>
+<div class="kpi-grid"><div class="kpi"><div class="label">MU</div><div class="value">$885.31 / <span class="down"><span class="down">-9.9%</span></span></div><div class="note">🔥 中国竞争恐惧；主催化剂</div></div><div class="kpi"><div class="label">SKHY</div><div class="value">$171.91 / <span class="down"><span class="down">-11.4%</span></span></div><div class="note">🔥 IPO 后首次板块性暴跌；流动性薄放大波动</div></div><div class="kpi"><div class="label">DRAM ETF</div><div class="value">$55.40 / <span class="down"><span class="down">-9.5%</span></span></div><div class="note">板块联动</div></div><div class="kpi"><div class="label">MRVL</div><div class="value">$202.45 / <span class="down"><span class="down">-9.0%</span></span></div><div class="note">🚨 距 break $200 仅 1.2%</div></div><div class="kpi"><div class="label">Samsung (005930.KS)</div><div class="value">—</div><div class="note">韩国盘未开</div></div></div>
+<p><strong>今日主催化剂</strong>: "Micron Drops 8% on China Competition Fears, Dragging Intel, AMD, and Marvell" — 中国存储芯片竞争加剧的报道触发抛售。市场担心 CXMT/YMTC 的 legacy DRAM 产能可能侵蚀 MU 的 conventional DRAM 利润池。</p>
+<p><strong>SKHY <span class="down">-11.4%</span> 更甚于 MU</strong>: SK Hynix ADS (7/10 上市) 跌幅超过 MU。解读:
+- IPO 后仅 5 个交易日，流动性极薄 → 卖压放大
+- 即使 HBM 技术壁垒更高，板块性恐慌无差别打击
+- 短期 ADS 定价还在 price discovery 阶段，没有 established buyer base 做 cushion</p>
+<p><strong>对 thesis 影响</strong>: MU 的 "next NVDA" 叙事 (scorecard 9/25) 核心假设是 HBM 占收入比继续上升 + gross margin 扩张。如果中国竞争侵蚀 conventional DRAM 利润，那 HBM mix shift 必须更快才能维持整体 margin → 加大了 Q4 scorecard 的紧迫性。SKHY 联动下跌说明市场暂时不区分 HBM-pure vs conventional — pure panic mode。</p>
+<p><strong>明天催化剂</strong>: TSM Q2 earnings (7/16) 是下一个信号 — CoWoS 产能 + HBM 需求 read-through。</p>
+<div class="verdict hold">MU 距 break $650 缓冲仍有 36%。中国竞争是 conventional DRAM 风险，HBM 逻辑未破但市场不在区分。关注明天 TSM earnings 的 read-through。</div></div><div class="tab-panel" data-tab-for="tabs1-5"><p><strong>板块大分裂: 芯片端暴跌 vs 应用端反弹</strong></p>
+<div class="kpi-grid"><div class="kpi"><div class="label">GOOG</div><div class="value">$370.88 / <span class="up"><span class="up">+3.8%</span></span></div><div class="note">CPI beat → growth rotation</div></div><div class="kpi"><div class="label">AMZN</div><div class="value">$255.48 / <span class="up"><span class="up">+3.2%</span></span></div><div class="note">同上</div></div><div class="kpi"><div class="label">MSFT</div><div class="value">$395.99 / <span class="up"><span class="up">+2.9%</span></span></div><div class="note">同上</div></div><div class="kpi"><div class="label">META</div><div class="value">$678.61 / <span class="up"><span class="up">+2.7%</span></span></div><div class="note">5d <span class="up"><span class="up">+12.5%</span></span></div></div><div class="kpi"><div class="label">NVDA</div><div class="value">$206.69 / <span class="down"><span class="down">-2.4%</span></span></div><div class="note">Semi 联动下跌但幅度可控</div></div><div class="kpi"><div class="label">TSM</div><div class="value">$412.81 / <span class="down"><span class="down">-1.8%</span></span></div><div class="note">明天 Q2 earnings；今天相对克制</div></div><div class="kpi"><div class="label">AVGO</div><div class="value">$387.81 / <span class="down"><span class="down">-0.3%</span></span></div><div class="note">Custom ASIC 龙头几乎不动</div></div><div class="kpi"><div class="label">INTC</div><div class="value">$99.94 / <span class="down"><span class="down">-7.3%</span></span></div><div class="note">MU 拖累 + 自身 turnaround 存疑</div></div></div>
+<p><strong>板块故事</strong>: 市场正在做一个清晰的 re-rating — "AI 的受益方在应用层 (GOOG/AMZN/META)，不在硬件层 (MU/AMD/INTC)"。这是短期 rotation 还是叙事转折？</p>
+<p>Evidence for "短期 rotation":
+- CPI 3.5% 大幅 beat 共识 → 利率下行预期 → growth/duration 长的 megacap 涨
+- Semi 跌幅集中在 "中国竞争" headline 驱动，非结构性需求问题
+- AVGO (<span class="down">-0.3%</span>) 和 NVDA (<span class="down">-2.4%</span>) 跌幅远小于 MU/AMD，说明市场区分了 "AI 核心基础设施" vs "commodity memory/logic"</p>
+<p>Evidence for "叙事转折":
+- 如果 hyperscaler 的 capex → revenue 转化被证实 (7/23 GOOG + 7/29 MSFT/META)，市场可能 permanently re-rate 应用层 &gt; 硬件层</p>
+<p><strong>INTC 特别关注</strong>: <span class="down">-7.3%</span> 今天不全是 MU drag — 消息面有 HSBC 和 Stifel 上调 PT，但股价反跌，说明市场对 turnaround 信心在短期走弱。7/23 Q2 earnings 是 foundry/18A 故事的验证点。</p>
+<div class="verdict hold">AI capex 叙事无损。今天的 rotation 是 &quot;rates down → growth up&quot; 的 CPI 后标准动作 + MU-specific China fear。7/16 TSM → 7/22-23 GOOG/INTC earnings 周是下一个集中信号窗口。</div></div><div class="tab-panel" data-tab-for="tabs1-6"><div class="kpi-grid"><div class="kpi"><div class="label">SU</div><div class="value">$60.29 / <span class="down"><span class="down">-1.2%</span></span></div><div class="note">✅ 安静</div></div><div class="kpi"><div class="label">CVX</div><div class="value">$180.07 / <span class="down"><span class="down">-0.9%</span></span></div><div class="note">✅ 安静</div></div><div class="kpi"><div class="label">CNQ</div><div class="value">$42.65 / <span class="up"><span class="up">+0.1%</span></span></div><div class="note">✅ 安静</div></div><div class="kpi"><div class="label">HXE.TO</div><div class="value">$57.11 / <span class="up"><span class="up">+0.2%</span></span></div><div class="note">✅ 安静</div></div></div>
+<p><strong>板块读法</strong>: 能源今天是 non-event。CPI beat 理论上利好 oil (通胀韧性 = 实体经济活跃)，但 oil names 没动。WTI 持平，Iran 局势无新进展。7/31 CVX earnings 是下一个催化剂。</p>
+<div class="verdict hold">无事发生。继续等 WTI 方向或地缘催化剂。</div></div><div class="tab-panel" data-tab-for="tabs1-7"><div class="kpi-grid"><div class="kpi"><div class="label">GEV</div><div class="value">$1013.94 / <span class="down"><span class="down">-4.9%</span></span></div><div class="note">⚠ 5d <span class="down"><span class="down">-5.3%</span></span>；earnings 前承压</div></div></div>
+<p><strong>今日故事</strong>: GEV 在 7/22 Q2 earnings 前回调。新闻面 neutral-to-positive ("Is GEV a smart investment before Q2?", "GEV earnings expected to grow")。下跌可能是:
+1. Semi 恐慌蔓延到 broad-market rotation 的副作用
+2. Earnings 前的获利了结 (GEV YTD 表现极强)</p>
+<p><strong>关注 7/22 earnings</strong>: Power segment margin 是核心；Wind 段 break-even 进度是 narrative 改善点。距 thesis-break $700 仍有 45% 缓冲，无压力。</p>
+<div class="verdict hold">Earnings 前正常回调。$700 break 极远。7/22 看 Power margin + Wind 亏损收窄。</div></div><div class="tab-panel" data-tab-for="tabs1-8"><h3>催化剂</h3>
+<p>主 headline: <strong>"Micron Slides on Fears of Fiercer Chinese Memory Chip Competition"</strong> (SOXS <span class="up">+11%</span>)。联动: Dell/SanDisk/MRVL/AMD/INTC 全部被拖下水。CoreWeave "Weighs Hedging Its Bet on Memory Chip Prices" 是第二催化剂 — 暗示下游 AI 客户也在担心存储价格可持续性。</p>
+<h3>逻辑链</h3>
+<pre><code class="language-text">中国 CXMT/YMTC 扩产报道
+  → 市场恐惧: conventional DRAM ASP 可能承压
+    → MU 收入结构中 HBM 虽高利润但体量仍非主体
+      → 如果 legacy DRAM 利润池被侵蚀，整体 GM 难以维持 85%
+        → CoreWeave hedging 报道 &quot;验证&quot; 了下游客户也在 worry
+          → SOXS <span class="up">+11%</span> (3x short semi ETF) 说明做空力量参与
+</code></pre>
+<h3>数据验证</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>值</th>
+<th>读法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>今日跌幅</td>
+<td><span class="down">-9.9%</span></td>
+<td>大但非 capitulation</td>
+</tr>
+<tr>
+<td>Vol ratio</td>
+<td>0.55x</td>
+<td><strong>低于平均</strong> — 不是机构出货</td>
+</tr>
+<tr>
+<td>距 thesis-break</td>
+<td>36% ($885 vs $650)</td>
+<td>安全</td>
+</tr>
+<tr>
+<td>30d 趋势</td>
+<td><span class="down">-14.5%</span></td>
+<td>从 $1,215 高点已回调 27%</td>
+</tr>
+<tr>
+<td>5d</td>
+<td><span class="down">-6.7%</span></td>
+<td>持续走弱</td>
+</tr>
+</tbody>
+</table>
+<h3>与上次 6/23 暴跌对比</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>6/23 (<span class="down">-11.09%</span>)</th>
+<th>7/15 (<span class="down">-9.9%</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>催化剂</td>
+<td>Korean crash spillover (板块性)</td>
+<td>China competition 特定 (MU-centric)</td>
+</tr>
+<tr>
+<td>Vol ratio</td>
+<td>0.65x</td>
+<td>0.55x</td>
+</tr>
+<tr>
+<td>卖方反应</td>
+<td>BofA/Wedbush 看多</td>
+<td>待看</td>
+</tr>
+<tr>
+<td>是否 MU-specific</td>
+<td>否，全板块</td>
+<td><strong>是</strong> — headline 点名 MU</td>
+</tr>
+<tr>
+<td>SKHY 同日</td>
+<td><span class="down">-7.6%</span></td>
+<td><strong><span class="down">-11.4%</span></strong> (联动！IPO 后流动性薄放大)</td>
+</tr>
+</tbody>
+</table>
+<p>关键区别: 6/23 是纯 beta panic，所有 memory 一起跌。7/15 也是全板块 panic — "中国竞争" headline 无差别打击。SKHY <span class="down">-11.4%</span> 甚至更惨 (IPO 仅 5 天，无 established buyer base)。但催化剂不同: 6/23 是 Korean crash spillover，7/15 是 MU-centric 的 China DRAM 竞争报道。</p>
+<h3>对 "next NVDA" 评分卡影响</h3>
+<p>9/25 scorecard 的 Tier 1 指标:
+- <strong>GM ≥82%</strong>: 如果 legacy DRAM ASP 承压，Q4 GM 可能被拉低。MU 上季 85% 的超强 GM 有部分来自 conventional DRAM 周期高点。
+- <strong>Rev ≥$43B</strong>: 取决于 HBM volume 增长能否 offset potential conventional weakness
+- <strong>HBM QoQ ≥<span class="up">+20%</span></strong>: 这个指标不受 China conventional 竞争影响 — HBM 中国追不上</p>
+<p>→ Net impact: 增加了 GM 指标的风险，但 HBM 核心逻辑未破。</p>
+<h3>Verdict</h3>
+<div class="verdict hold">持有不动。Vol ratio 0.55x = 非机构出货。中国竞争是 conventional DRAM 风险 (真实但非新信息)，HBM 护城河 (技术壁垒 + NVIDIA 认证) 未被触及。30d 回调 <span class="down">-27%</span> 正在 de-risk 估值。明天 TSM earnings 是 read-through: 如果 CoWoS 需求确认 → MU 的 HBM backlog 安全；如果 TSM 下调 → 需要 re-assess。</div></div><div class="tab-panel" data-tab-for="tabs1-9"><h3>催化剂</h3>
+<p><strong>无独立催化剂</strong> — 今天是纯 MU spillover ("Micron Drops, Dragging Intel, AMD, and Marvell")。讽刺的是，同日 HSBC 和 Stifel <strong>上调</strong> INTC PT。市场完全无视了利好。</p>
+<h3>逻辑链</h3>
+<pre><code class="language-text">MU 中国竞争恐惧
+  → 全 semi 板块 sell
+    → INTC 被当作 high-beta semi 票 (turnaround 故事 = 不确定性高 = 板块恐慌时优先卖)
+      → 尽管 INTC 的 foundry/Xeon 业务与 DRAM 竞争无直接关联
+        → 结果: <span class="down">-7.3%</span> vs MU 的 <span class="down">-10%</span> (correlation &gt; causation)
+</code></pre>
+<h3>INTC 此次下跌的特殊性</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">今日跌幅</div><div class="value"><span class="down"><span class="down">-7.3%</span></span></div><div class="note">Semi drag (非 INTC-specific)</div></div><div class="kpi"><div class="label">5d 趋势</div><div class="value"><span class="down"><span class="down">-9.3%</span></span></div><div class="note">从近期高点显著回调</div></div><div class="kpi"><div class="label">Vol ratio</div><div class="value">0.55x</div><div class="note">低 — 不是 capitulation</div></div><div class="kpi"><div class="label">PE</div><div class="value">None</div><div class="note">仍在亏损/低盈利阶段</div></div><div class="kpi"><div class="label">距 break</div><div class="value">33% ($99.9 vs $75)</div><div class="note">安全</div></div></div>
+<p><strong>多重矛盾信号</strong>:
+- 利好: HSBC doubled PT, Stifel raised PT, "What Intel Stock Was Saying Before Its 5x Climb" (媒体仍在讲 turnaround 故事)
+- 利空: <span class="down">-7.3%</span> 无视所有利好 → 短期市场不买账
+- 结构: 6/30 <span class="up">+7.5%</span> → 7/1 <span class="down">-8.1%</span> → 今天 <span class="down">-7.3%</span> — INTC 仍是 high-beta swing ticker，不是 steady compounder</p>
+<h3>7/23 Q2 earnings 前瞻</h3>
+<p>这是 INTC thesis 的验证点:
+1. <strong>Data Center &amp; AI revenue</strong>: Q1 $5.05B (YoY <span class="up">+22%</span>) — Q2 能否 sustain?
+2. <strong>Foundry 客户</strong>: Apple 回归进展？任何正式 win 的披露？
+3. <strong>18A process milestone</strong>: on track? Yield 数据?
+4. <strong>Xeon in DGX Rubin</strong>: 已中标 — Q2 收入贡献?</p>
+<p>如果 Q2 验证 turnaround → 股价可能从 $100 重新挑战 $140+
+如果 Q2 miss → $75 break level 会快速进入视线 (仅 33% buffer)</p>
+<h3>Verdict</h3>
+<div class="verdict hold">板块 drag，非 INTC-specific 风险。Turnaround thesis 未损。7/23 是真正的 binary event — Q2 若验证 foundry + Xeon momentum → 明显低估；若 miss → high-beta 特性会放大下跌。现在 $100 是短期支撑位。</div></div><div class="tab-panel" data-tab-for="tabs1-10"><h3>催化剂</h3>
+<p><strong>无独立催化剂</strong> — TSM 今天跌幅温和 (<span class="down">-1.8%</span>)，远小于 MU (<span class="down">-10%</span>) / INTC (<span class="down">-7.3%</span>)。市场明确区分了 "AI infrastructure core" (TSM/NVDA/AVGO) vs "vulnerable semi" (MU/AMD/INTC/MRVL)。</p>
+<h3>7/16 Q2 earnings 前瞻 (明天)</h3>
+<p>这是本周最重要的单一数据点。TSM 的 earnings 对整个 AI capex chain 有直接 read-through:</p>
+<p><strong>关注指标</strong>:
+| 指标 | 重要性 | 读法 |
+|------|--------|------|
+| CoWoS 产能利用率 | 🔥🔥🔥 | 直接反映 HBM/NVDA 需求强度 |
+| 2nm mass production 时间线 | 🔥🔥 | Apple iPhone 18 cycle + AI chip 2026 |
+| AI revenue 占比 | 🔥🔥 | 是否继续 &gt;50%? |
+| Capex guidance | 🔥 | 继续上调 = demand confidence |
+| Arizona fab 进展 | 🔥 | 地缘 de-risk narrative |
+| 中国收入占比变化 | ⚠ | 今天 MU 的 "China competition" 恐惧，TSM 是否也被问到? |</p>
+<p><strong>News context</strong>: 
+- "AI DATA CENTER DEMAND: capacity is 'tapped out'" — 供应紧张 narrative 利好 TSM
+- NVIDIA Jensen Huang: "Next product on pace for 'Giant' sales volumes" → Blackwell/Rubin = TSM CoWoS 占满
+- ASML earnings ride AI spending wave → litho 设备商确认需求 → TSM 订单支撑</p>
+<h3>对持仓 chain 的 read-through</h3>
+<pre><code class="language-text">TSM Q2 好 →
+  ├─ MU: CoWoS demand = HBM demand 安全 → 中国竞争恐惧可被 offset
+  ├─ NVDA: foundry partner 确认 Blackwell/Rubin volume on track
+  ├─ AVGO: custom silicon (Google TPU, AWS Trainium) 在 TSM 代工
+  ├─ INTC: TSM 强 = foundry 竞争对手强 = INTC 18A 必须更快交付
+  └─ AMD: MI300/350 在 TSM 代工; CoWoS 产能紧可能限制 AMD 出货
+
+TSM Q2 差 →
+  ├─ 全 AI semi 重估 (MU 可能加速下探)
+  ├─ &quot;AI capex peak&quot; 叙事复活
+  └─ 唯一缓冲: TSM 从未 miss — 连续多年 beat or meet
+</code></pre>
+<h3>当前定价</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">TSM</div><div class="value">$412.81</div><div class="note">5d <span class="down"><span class="down">-5.5%</span></span>, 30d <span class="down"><span class="down">-5.0%</span></span></div></div><div class="kpi"><div class="label">距 thesis-break</div><div class="value">47% ($280)</div><div class="note">极安全</div></div><div class="kpi"><div class="label">Vol ratio</div><div class="value">0.61x</div><div class="note">略低，earnings 前 wait-and-see</div></div></div>
+<p>TSM 从高点回调 ~5% 进入 earnings — 市场给了适度折让而非极端恐惧。这是 "wait and see" 不是 "pre-position for miss"。</p>
+<h3>Verdict</h3>
+<div class="verdict hold">明天 TSM Q2 是本周关键。CoWoS 利用率 + AI revenue 占比是最核心数字。TSM 从不 miss 的 track record 给了底气。如果 beat + 上调 capex guide → MU/NVDA/AVGO 全链受益。距 break $280 极远 (47%)，无紧迫风险。</div></div></div>
+</body>
+</html>

@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-15 · n/a day · ▼ extreme
+**Tags:** `china_competition`, `memory_pricing`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 中国 CXMT/YMTC 扩产恐惧 — 市场担忧 conventional DRAM ASP 承压。CoreWeave hedging memory prices 是第二催化剂。全 memory 板块无差别暴跌 (SKHY -11.4%, DRAM -9.5%)。Vol 0.55x 低 = 非机构 capitulation。
+
+**Sources.**
+- Yahoo: SOXS Jumps 11% as Micron Slides on Fears of Fiercer Chinese Memory Chip Competition
+- Yahoo: CoreWeave Weighs Hedging Its Bet on Memory Chip Prices
+- Yahoo: Dell, Micron, SanDisk tumble as AI hardware rally hits reversal
+- _Corroboration:_ DRAM ETF -9.5%, SKHY -11.4% (IPO 后流动性薄放大), AMD -6.5%, MRVL -9.0%, INTC -7.3%
+
+**Cross-assets.** SPY -0.10% · VIX 16.54 · DRAM ETF -9.50% · SKHY -11.35% · AMD -6.50% · MRVL -9.00% · INTC -7.30%
+
+**Agent read.** MU -10% 核心是 China conventional DRAM 竞争恐惧。全板块无差别打击 — SKHY (HBM pure-play) 同样暴跌 -11.4% 说明市场在 panic mode 不区分 HBM vs conventional。Vol 0.55x = retail/algo 砸不是机构出货。30d 从 $1215 peak 回调 27% 正在 de-risk。明天 TSM earnings 是 HBM demand chain 的 read-through 验证点。距 thesis-break $650 仍有 36% buffer。
+
+
+---
 ### 2026-07-09 · n/a day · ▲ 7.98
 **Tags:** `short_covering`, `analyst_upgrade`, `sector_rotation`, `memory_pricing`
 **Confidence:** high

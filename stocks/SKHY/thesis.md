@@ -1,10 +1,10 @@
-# SK Hynix (SKHYV) — Investment Thesis
+# SK Hynix (SKHY) — Investment Thesis
 
 ## Company
 
 SK Hynix is one of three global memory manufacturers alongside Samsung and Micron. Headquartered in Icheon, South Korea with ~48,000 employees, the company produces DRAM (server, mobile, PC, graphics), NAND flash, and SSDs. It's the undisputed leader in HBM (High Bandwidth Memory) for AI accelerators — the sole qualified supplier for NVIDIA's H100/H200/B200 HBM3E and the frontrunner for HBM4.
 
-**IPO context:** SKHYV listed on Nasdaq on 2026-07-10, raising $26.5B at $149/share — the second-largest US IPO ever (behind SpaceX). Opened at $170 (~+14%). This is a direct ADR listing from the Korea Exchange (000660.KS), giving US investors direct access to the HBM cycle's clearest winner.
+**IPO context:** SKHY listed on Nasdaq on 2026-07-10, raising $26.5B at $149/share — the second-largest US IPO ever (behind SpaceX). Opened at $170 (~+14%). This is a direct ADR listing from the Korea Exchange (000660.KS), giving US investors direct access to the HBM cycle's clearest winner.
 
 ## Industry & TAM
 
