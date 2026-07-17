@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SKHY + DRAM 板块深度研究</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-07-17 11:15</div>
+<h1 id="skhy-dramhbm">SKHY + DRAM/HBM 板块深度研究</h1>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><div class="tabs"><label class="tab-label" for="tabs1-0">估值概览</label><label class="tab-label" for="tabs1-1">新闻链 (时间线)</label><label class="tab-label" for="tabs1-2">数据链 (估值深度)</label><label class="tab-label" for="tabs1-3">板块整体画像</label><label class="tab-label" for="tabs1-4">核心问题: HBM 是结构性还是周期性?</label><label class="tab-label" for="tabs1-5">Catalyst 优先级</label><label class="tab-label" for="tabs1-6">投资判断</label></div><div class="tab-panel" data-tab-for="tabs1-0"><table class="compare"><thead><tr><th>指标</th><th>SKHY (SK Hynix)</th><th>MU (Micron)</th><th>Samsung (005930.KS)</th><th>DRAM ETF</th></tr></thead><tbody><tr><td>当前价</td><td>$160.3 (ADS)</td><td>$882</td><td>₩255,000</td><td>$54.2</td></tr><tr><td>市值</td><td>$1.14T</td><td>$997B</td><td>₩1,674T (~$248B*)</td><td>ETF</td></tr><tr><td>Trailing PE</td><td>23.3x</td><td>19.9x</td><td>N/A</td><td>24.4x</td></tr><tr><td>**Forward PE**</td><td>**4.0x**</td><td>**5.9x**</td><td>**3.9x**</td><td>—</td></tr><tr><td>距 52w High</td><td><span class="down"><span class="down">-17.7%</span></span></td><td><span class="down"><span class="down">-29.7%</span></span></td><td><span class="down"><span class="down">-32.0%</span></span></td><td><span class="down"><span class="down">-33.4%</span></span></td></tr><tr><td>距 52w Low</td><td><span class="up"><span class="up">+10.1%</span></span></td><td><span class="up"><span class="up">+753%</span></span></td><td><span class="up"><span class="up">+293%</span></span></td><td><span class="up"><span class="up">+107%</span></span></td></tr><tr><td>30d 回撤</td><td>~<span class="down"><span class="down">-5%</span></span> (仅7天)</td><td><span class="down"><span class="down">-18.1%</span></span></td><td><span class="down"><span class="down">-27.5%</span></span></td><td><span class="down"><span class="down">-22.0%</span></span></td></tr><tr><td>Put/Call ratio</td><td>2.23 (看空)</td><td>1.51 (偏空)</td><td>—</td><td>0.71 (偏多)</td></tr><tr><td>下次财报</td><td>7/24 (7天!)</td><td>9/25</td><td>7/31</td><td>—</td></tr></tbody></table>
+<p>*Samsung 市值为整体集团含手机/家电/显示器/晶圆代工；纯半导体(DS)分部约占 50-60% 营收。</p>
+<div class="callout info"><p><strong>核心估值判断: Forward PE 4-6x 是 "极度便宜" 还是 "cycle-peak trap"?</strong></p>
+<p>历史上 memory 股票在 forward PE 4-6x 时有两种结局:
+1. <strong>2017-18 DRAM 超级周期:</strong> forward PE 从 4x 涨到 8x (股价翻倍) → 然后 earnings 崩 → PE "便宜"是假象
+2. <strong>2023-24 AI 周期启动:</strong> forward PE 从 15x 压缩到 8x (市场不信) → 然后 earnings beat → PE 继续压缩但股价涨</p>
+<p><strong>当前更接近哪个?</strong> 取决于 HBM 是否真的 structural (非周期性)。这是 7/24 SK Hynix 财报要回答的核心问题。</p></div></div><div class="tab-panel" data-tab-for="tabs1-1"><div class="timeline"><div class="tl-item"><span class="when">7/17 盘后</span> — <span class="what">⚠️ &quot;China Unveils Powerful New AI Model&quot; (Kimi K3) → DeepSeek flashback → NVDA/AMD/MU/TSM 盘后暴跌 (&quot;AI bloodbath&quot;)</span></div><div class="tl-item"><span class="when">7/17 盘中</span> — <span class="what">&quot;SK Hynix Is Today&#x27;s Standout Chip Stock for an Unusual Reason&quot; — KRX 休市 → ADS 成为唯一交易窗口 → 流动性集中推高</span></div><div class="tl-item"><span class="when">7/17 盘中</span> — <span class="what">&quot;The Chip Selloff Has Gone Too Far — SOX Index Turns Positive&quot; → memory 领涨反弹</span></div><div class="tl-item"><span class="when">7/17 盘中</span> — <span class="what">HSBC reaffirm SKHY as top semiconductor pick → <span class="up">+8%</span> 反弹催化</span></div><div class="tl-item"><span class="when">7/17 盘中</span> — <span class="what">&quot;Analysts Still See Massive Upside for SK Hynix — AI Cycle Isn&#x27;t Done But Questions Remain&quot;</span></div><div class="tl-item"><span class="when">7/17 盘中</span> — <span class="what">&quot;Here&#x27;s What Can End Micron&#x27;s Stock Pain&quot; — 下一个 catalyst 才能止血</span></div><div class="tl-item"><span class="when">7/17 盘前</span> — <span class="what">Jensen Huang dismisses Vera Rubin delay report → NVDA 试图稳盘</span></div><div class="tl-item"><span class="when">7/16</span> — <span class="what">&quot;SOX Index Fell 16% in Less Than a Month&quot; → 技术性熊市边缘</span></div><div class="tl-item"><span class="when">7/16</span> — <span class="what">Samsung <span class="down">-8.8%</span> despite &quot;promising 1,800% jump in profits&quot; → profit ≠ HBM 份额</span></div><div class="tl-item"><span class="when">7/16</span> — <span class="what">&quot;South Korean market&#x27;s extreme volatility alarms regulators&quot;</span></div><div class="tl-item"><span class="when">7/15</span> — <span class="what">MU <span class="down">-9.9%</span> on CXMT/YMTC 中国扩产恐惧 + CoreWeave hedging memory prices</span></div><div class="tl-item"><span class="when">7/10</span> — <span class="what">SKHY Nasdaq IPO $149 → open $168 (<span class="up">+14%</span>) — 美国史上第二大 IPO</span></div><div class="tl-item"><span class="when">7/09</span> — <span class="what">MU <span class="up">+8%</span> Bernstein &quot;memory very tight&quot; + SK Hynix ADR 7x oversubscribed</span></div><div class="tl-item"><span class="when">7/07</span> — <span class="what">MU <span class="down">-7.4%</span> Samsung prelim + SK Hynix $28B raise → &quot;cycle-peak fear&quot;</span></div><div class="tl-item"><span class="when">7/02</span> — <span class="what">MU <span class="down">-5.8%</span> OpenAI efficiency → memory supply-glut headlines → Korean 全面崩</span></div><div class="tl-item"><span class="when">7/01</span> — <span class="what">MU <span class="down">-9.3%</span> OpenAI efficiency + BofA bubble indicator → SOX <span class="down">-5%</span></span></div><div class="tl-item"><span class="when">6/25</span> — <span class="what">MU <span class="up">+15.9%</span> Q3 FY26 blowout (rev $41.5B, adj GM 85%) → &quot;next NVDA&quot; narrative born</span></div><div class="tl-item"><span class="when">6/23</span> — <span class="what">MU <span class="down">-11.1%</span> Korean crash + leverage unwind → &quot;Brutal Tech Rout&quot;</span></div></div>
+<div class="callout danger"><p><strong>⚠️ 盘后新事件: Kimi K3 (中国 AI 模型) 引发 "DeepSeek 闪回"</strong></p>
+<p>"Wall Street plunges in AI bloodbath" — NVDA/AMD/MU/TSM 盘后全线下跌。这与 2025 年 1 月 DeepSeek 事件类似: 中国展示 AI 能力 → 市场恐慌 "如果中国不需要高端 HBM → 需求假设动摇"。</p>
+<p><strong>但 DeepSeek 后的 history:</strong> 2025年1月 DeepSeek 当天 NVDA <span class="down">-17%</span>, memory -10-15%。但 3 个月后全部创新高 — 因为高效模型 = 更多推理 = 更多 GPU/memory 需求。如果 Kimi K3 也是 "更高效但不替代算力" → 又是 buying opportunity。如果是 "真正替代 US AI 领导力" → 不同。需要明天开盘验证。</p></div></div><div class="tab-panel" data-tab-for="tabs1-2"><h3>SKHY 估值拆解</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">ADS 价格</div><div class="value">$160.3</div><div class="note">IPO $149, 开盘 $168, 一度 $194</div></div><div class="kpi"><div class="label">Market cap</div><div class="value">$1.14T</div><div class="note">全球第二大 memory (仅次 Samsung 整体)</div></div><div class="kpi"><div class="label">Trailing PE</div><div class="value">23.3x</div><div class="note">反映过去周期 trough 利润</div></div><div class="kpi"><div class="label">Forward PE</div><div class="value">4.0x</div><div class="note">基于 consensus FY2027 EPS — 如果 HBM 持续</div></div><div class="kpi"><div class="label">EV/Sales (est)</div><div class="value">~3.5x</div><div class="note">基于 HBM 收入 $50B+ 目标</div></div><div class="kpi"><div class="label">52w range</div><div class="value">$145.6 - $194.8</div><div class="note">仅 7 天历史!</div></div><div class="kpi"><div class="label">IPO 募资</div><div class="value">$26.5B</div><div class="note">美国史上第二大 (仅次 SpaceX)</div></div><div class="kpi"><div class="label">Lockup</div><div class="value">90 天 (vs 标配 180)</div><div class="note">解禁 ~10月初</div></div></div>
+<p><strong>为什么 forward PE 4x 可能是真便宜:</strong>
+- HBM 收入不是周期性的 — 每一代 AI GPU 需要更多 HBM (H100→H200→B200→Rubin 每代 2x)
+- 供给 capex 即使 SK Hynix 花 $28B，新产能要 18-24 个月才 online
+- CEO 公开声明 "2027 will be the worst supply shortage year in memory history"
+- Samsung 掉队 = 双寡头格局 (SK Hynix + Micron)，定价权更强</p>
+<p><strong>为什么 forward PE 4x 可能是 trap:</strong>
+- Memory 行业 forward PE 在 cycle peak 永远看起来便宜 (因为 forward earnings = peak earnings)
+- 如果 AI capex 任何一家 hyperscaler 砍投入 → HBM 需求增速断崖
+- 中国 CXMT/YMTC 在 conventional DRAM 扩产 → 即使 HBM 稳，conventional DRAM ASP 可能崩
+- Kimi K3 类事件 → 如果推理效率提升 10x → 每 GPU 需要的 memory 量下降</p>
+<h3>MU 估值拆解</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">股价</div><div class="value">$882</div><div class="note">距 ATH $1,255 回撤 <span class="down"><span class="down">-30%</span></span></div></div><div class="kpi"><div class="label">Market cap</div><div class="value">$997B</div><div class="note">接近跌破 $1T 心理关口</div></div><div class="kpi"><div class="label">Trailing PE</div><div class="value">19.9x</div><div class="note">包含上一周期尾部低利润</div></div><div class="kpi"><div class="label">Forward PE</div><div class="value">5.9x</div><div class="note">基于 FY27 consensus ~$150 EPS</div></div><div class="kpi"><div class="label">MA50</div><div class="value">$934</div><div class="note">当前在 MA50 以下 (偏弱)</div></div><div class="kpi"><div class="label">MA200</div><div class="value">$483</div><div class="note">远高于 — 长期趋势仍完好</div></div><div class="kpi"><div class="label">Thesis-break</div><div class="value">$650</div><div class="note">当前 buffer <span class="up"><span class="up">+36%</span></span></div></div><div class="kpi"><div class="label">Scorecard date</div><div class="value">9/25</div><div class="note">Q4 FY26 验证 &quot;next NVDA&quot; claim</div></div></div>
+<p><strong>MU vs SKHY 估值对比:</strong>
+- MU forward PE 5.9x vs SKHY 4.0x → SKHY 更便宜
+- 原因: Korean discount + IPO 初期定价保守 + HBM 纯度更高 (SK Hynix HBM 收入占比 &gt; MU)
+- MU 有 35% NAND 业务拖累混合估值; SKHY 的 HBM premium 更纯</p>
+<h3>Samsung 为什么暴跌</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">Samsung 股价</div><div class="value">₩255,000</div><div class="note">30d <span class="down"><span class="down">-27.5%</span></span> — 跌幅远超板块</div></div><div class="kpi"><div class="label">Forward PE</div><div class="value">3.9x</div><div class="note">看起来最便宜!</div></div><div class="kpi"><div class="label">HBM 市占率</div><div class="value">~15%</div><div class="note">落后 SK Hynix (~50%) 和 MU (~25%)</div></div><div class="kpi"><div class="label">HBM3E 良率</div><div class="value">50-60% (传闻)</div><div class="note">vs SK Hynix 80%+</div></div><div class="kpi"><div class="label">NVDA 验证</div><div class="value">未通过 (HBM3E)</div><div class="note">结构性份额损失</div></div></div>
+<p><strong>Samsung "便宜" 是 value trap:</strong>
+- 利润增长 1,800% (from trough) 但 HBM 份额在缩小
+- "Samsung stock drops DESPITE profit jump" = 市场在定价 <strong>结构性落后</strong> 不是周期
+- 如果 Samsung 不能通过 NVDA HBM4 验证 → 份额继续流向 SK Hynix/MU</p></div><div class="tab-panel" data-tab-for="tabs1-3"><h3>30d 回撤对比</h3>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">76.21</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">88.74</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">101.26</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">113.79</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">126.32</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-04</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-26</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-17</text><path d="M56.0,115.2 L78.3,159.1 L100.7,130.7 L123.0,135.2 L145.4,149.8 L167.7,115.2 L190.1,120.0 L212.4,84.6 L234.8,106.9 L257.1,99.5 L279.4,69.3 L301.8,43.5 L324.1,96.6 L346.5,97.7 L368.8,42.8 L391.2,69.8 L413.5,65.5 L435.9,62.5 L458.2,103.1 L480.6,122.0 L502.9,118.9 L525.2,134.3 L547.6,130.8 L569.9,116.6 L592.3,120.7 L614.6,134.8 L637.0,119.4 L659.3,145.6 L681.7,162.6 L704.0,152.3" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="152.3" r="3" fill="#58a6ff"/><path d="M56.0,115.2 L78.3,146.1 L100.7,64.1 L123.0,98.5 L145.4,146.1 L167.7,130.0" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="167.7" cy="130.0" r="3" fill="#3fb950"/><path d="M56.0,115.2 L78.3,165.2 L100.7,141.3 L123.0,144.6 L145.4,157.2 L167.7,118.1 L190.1,118.7 L212.4,88.1 L234.8,103.0 L257.1,93.8 L279.4,59.7 L301.8,39.4 L324.1,97.4 L346.5,93.9 L368.8,58.8 L391.2,84.0 L413.5,83.7 L435.9,74.1 L458.2,114.4 L480.6,140.7 L502.9,119.9 L525.2,141.0 L547.6,133.6 L569.9,121.9 L592.3,128.6 L614.6,157.5 L637.0,137.7 L659.3,157.0 L681.7,182.6 L704.0,172.2" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="172.2" r="3" fill="#d29922"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">MU vs SKHY vs DRAM ETF (normalized from SKHY IPO 7/10)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">MU</span> <span class="legend-last">88.79</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-11.21%</span></span><span class="legend-note">· 1d <span class="up">+3.64%</span> · 30d <span class="down">-18.08%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">SKHY</span> <span class="legend-last">95.52</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-4.48%</span></span><span class="legend-note">· 1d <span class="up">+5.37%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">DRAM</span> <span class="legend-last">82.78</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-17.22%</span></span><span class="legend-note">· 1d <span class="up">+3.92%</span> · 30d <span class="down">-21.98%</span></span></span></div></div>
+<h3>Selloff 驱动因素分解 (6/23 → 7/17)</h3>
+<table>
+<thead>
+<tr>
+<th>驱动因素</th>
+<th>占比</th>
+<th>证据链</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. AI demand slope 质疑</td>
+<td>30%</td>
+<td>OpenAI efficiency (7/1), Kimi K3 (7/17 after-hours), MSFT 自研 chip</td>
+</tr>
+<tr>
+<td>2. Supply-side overinvestment恐惧</td>
+<td>25%</td>
+<td>SK Hynix $28B raise, Samsung capex, CXMT/YMTC 中国扩产</td>
+</tr>
+<tr>
+<td>3. 技术性 mean-reversion</td>
+<td>20%</td>
+<td>MU 从 $103 → $1,255 (+1,118%) 一年内; 回撤 <span class="down">-30%</span> = 正常</td>
+</tr>
+<tr>
+<td>4. Semi sector rotation (非 memory specific)</td>
+<td>15%</td>
+<td>SOX <span class="down">-16%</span>, MRVL <span class="down">-36%</span>, INTC <span class="down">-13%</span> — 全板块无差别</td>
+</tr>
+<tr>
+<td>5. 地缘/宏观</td>
+<td>10%</td>
+<td>中国限制传闻, 韩国市场 bear market, VIX <span class="up">+19%</span></td>
+</tr>
+</tbody>
+</table>
+<h3>谁在买/谁在卖</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">SKHY put/call</div><div class="value">2.23</div><div class="note">做空力量大 — 对冲基金在 bet 反弹失败</div></div><div class="kpi"><div class="label">MU put/call</div><div class="value">1.51</div><div class="note">偏空但不极端 — 机构在等 9/25 earnings</div></div><div class="kpi"><div class="label">DRAM ETF put/call</div><div class="value">0.71</div><div class="note">偏多! ETF 层面反而有人在建仓</div></div><div class="kpi"><div class="label">MU volume ratio</div><div class="value">0.87x</div><div class="note">今天反弹量不充分 (&lt; 1x)</div></div><div class="kpi"><div class="label">DRAM ETF vol ratio</div><div class="value">1.71x</div><div class="note">ETF 放量! 资金通过 ETF 进入</div></div></div>
+<p><strong>解读:</strong> 个股层面做空力量仍在 (SKHY 2.23 极高 put/call = 很多人在 bet IPO breakdown)。但 ETF 层面放量 + 偏多 = <strong>机构在用 DRAM ETF 建底仓</strong>，不想暴露个股敞口。这是经典的 "early accumulation via ETF" 行为。</p></div><div class="tab-panel" data-tab-for="tabs1-4"><div class="scenarios"><div class="scenario"><div class="name base">结构性 (HBM 非周期)</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">SKHY → $200-250, MU → $1,100+</div><div class="desc">每代 GPU 需 2x HBM; 供给追不上; Samsung 无法追赶</div></div><div class="scenario"><div class="name base">周期性 (memory 本色)</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">SKHY → $130-150, MU → $700-800</div><div class="desc">2027 年供给上线 + hyperscaler 砍 capex → 传统周期回归</div></div><div class="scenario"><div class="name base">黑天鹅 (AI paradigm shift)</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">SKHY → $100, MU → $500</div><div class="desc">中国 AI 模型证明不需要 HBM → DeepSeek 2.0 剧本</div></div></div></div><div class="tab-panel" data-tab-for="tabs1-5"><div class="timeline"><div class="tl-item"><span class="when">7/18 (明天!)</span> — <span class="what">Kimi K3 反应 — 开盘是否复制 DeepSeek 剧本? 关键看幅度和持续性</span></div><div class="tl-item"><span class="when">7/24</span> — <span class="what">SK Hynix Q2 earnings — HBM3E 收入占比、HBM4 时间表、NVDA 供货 guide</span></div><div class="tl-item"><span class="when">7/28</span> — <span class="what">SKHY next_earnings (yfinance 显示 7/28) — 可能就是同一个 7/24 KRX earnings 的 ADS call</span></div><div class="tl-item"><span class="when">7/31</span> — <span class="what">Samsung Q2 final — HBM yield 进展、份额变化</span></div><div class="tl-item"><span class="when">8/26</span> — <span class="what">NVDA Q2 FY27 — HBM 消费量 = 对 SKHY/MU 最终验证</span></div><div class="tl-item"><span class="when">9/25</span> — <span class="what">MU Q4 FY26 — &quot;next NVDA&quot; scorecard 验证</span></div></div></div><div class="tab-panel" data-tab-for="tabs1-6"><div class="verdict hold">**整体 HOLD — 不加仓但不卖。** Forward PE 4-6x 在 HBM 叙事未被证伪前确实便宜。但三重逆风 (VIX 上升 + 中国 AI 事件 + 韩国 bear market 监管恐慌) 意味着短期还有下行风险。关键验证点是 7/24 SK Hynix Q2 — 如果 HBM 收入超预期 + 管理层确认 &quot;supply shortage extending&quot; → 加仓窗口打开。如果 in-line 或 disappoint → SKHY 会重新测试 $145 (52w low = IPO 低点区域)。</div>
+<h3>具体场景</h3>
+<div class="callout warn"><p><strong>如果明天 Kimi K3 = DeepSeek 2.0 (开盘 <span class="down">-10%</span>+):</strong>
+- 不恐慌卖出 — DeepSeek 历史: 当天 <span class="down">-17%</span> → 3 个月后全部新高
+- 但如果连续 3 天跌 + 卖方下调 → re-assess
+- SKHY thesis-break $115 是安全线 (当前 buffer 28%)</p>
+<p><strong>如果 7/24 SK Hynix beat:</strong>
+- 确认 HBM structural → SKHY 目标 $200-220 (thesis base case)
+- MU 联动 → 9/25 scorecard 预期被抬高</p>
+<p><strong>如果 7/24 SK Hynix miss/in-line:</strong>
+- "Dead-cat bounce confirmed" → SKHY 可能回测 $145-150
+- 等更好价格再评估 entry</p></div></div></div>
+</body>
+</html>
