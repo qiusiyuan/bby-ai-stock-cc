@@ -1,9 +1,7 @@
 # Pre-commitment device. Confirm or edit values; reasoning below each.
 
-thesis_break_price: 130.00
-# ~30% below current $185. If price closes below this, re-read thesis or sell.
-# Rationale: a drop of this magnitude on no broad-market move would imply either a
-# Starship setback or Starlink ARPU break — both of which are central to the thesis.
+thesis_break_price: null
+# 用户无持仓, 纯跟踪模式 — 不触发卖出提醒。
 
 kill_conditions:
   - "Starship suffers a major catastrophic failure that delays cargo cadence by >18 months"

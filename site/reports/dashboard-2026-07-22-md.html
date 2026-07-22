@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-07-22</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-07-22 11:58</div>
+<h1 id="daily-report-2026-07-22">Daily Report 2026-07-22</h1>
+<div class="callout danger"><p>🚨 SPCX THESIS BREAK 已触发: 当前 $117.38 已跌破 thesis_break $130 (低于 break <span class="down">-9.7%</span>)。5d <span class="down">-13.2%</span>。需要立即决策: 执行卖出 or 修订 thesis。</p></div>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }#tabs1-8:checked ~ [data-tab-for="tabs1-8"] { display: block; }#tabs1-9:checked ~ [data-tab-for="tabs1-9"] { display: block; }#tabs1-10:checked ~ [data-tab-for="tabs1-10"] { display: block; }#tabs1-11:checked ~ [data-tab-for="tabs1-11"] { display: block; }#tabs1-12:checked ~ [data-tab-for="tabs1-12"] { display: block; }#tabs1-13:checked ~ [data-tab-for="tabs1-13"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><input class="tab-input" type="radio" name="tabs1" id="tabs1-8"><input class="tab-input" type="radio" name="tabs1" id="tabs1-9"><input class="tab-input" type="radio" name="tabs1" id="tabs1-10"><input class="tab-input" type="radio" name="tabs1" id="tabs1-11"><input class="tab-input" type="radio" name="tabs1" id="tabs1-12"><input class="tab-input" type="radio" name="tabs1" id="tabs1-13"><div class="tabs"><label class="tab-label" for="tabs1-0">Pulse &amp; Macro</label><label class="tab-label" for="tabs1-1">Watchlist &amp; Movers</label><label class="tab-label" for="tabs1-2">Timeline 30d</label><label class="tab-label" for="tabs1-3">Focus: TSLA</label><label class="tab-label" for="tabs1-4">Focus: SpaceX</label><label class="tab-label" for="tabs1-5">Focus: DRAM/HBM</label><label class="tab-label" for="tabs1-6">Focus: AI capex</label><label class="tab-label" for="tabs1-7">Focus: 能源(油气)</label><label class="tab-label" for="tabs1-8">Focus: 电力/Grid</label><label class="tab-label" for="tabs1-9">Brief</label><label class="tab-label" for="tabs1-10">Deep Dive: GEV</label><label class="tab-label" for="tabs1-11">Deep Dive: SKHY</label><label class="tab-label" for="tabs1-12">Deep Dive: SPCX</label><label class="tab-label" for="tabs1-13">Deep Dive: NVDA &amp; AMD</label></div><div class="tab-panel" data-tab-for="tabs1-0"><div class="kpi-grid"><div class="kpi"><div class="label">S&amp;P 500</div><div class="value">7,507 (<span class="down"><span class="down">-0.03%</span></span>)</div><div class="note">50MA上方, 距52w高 <span class="down"><span class="down">-1.5%</span></span></div></div><div class="kpi"><div class="label">Nasdaq/QQQ</div><div class="value">$706.5 (<span class="down"><span class="down">-0.35%</span></span>)</div><div class="note">5d <span class="down"><span class="down">-1.6%</span></span>, mega-cap 拖累</div></div><div class="kpi"><div class="label">DJI</div><div class="value">52,288 (<span class="up"><span class="up">+0.12%</span></span>)</div><div class="note">Dow跑赢 (防御性轮动)</div></div><div class="kpi"><div class="label">VIX</div><div class="value">17.0 (<span class="down"><span class="down">-0.4%</span></span>)</div><div class="note">平稳, 偏低</div></div><div class="kpi"><div class="label">10Y Treasury</div><div class="value">4.657% (<span class="up"><span class="up">+0.6%</span></span>)</div><div class="note">上行压力 (5d <span class="up"><span class="up">+2.5%</span></span>)</div></div><div class="kpi"><div class="label">DXY 美元</div><div class="value">101.13 (<span class="down"><span class="down">-0.05%</span></span>)</div><div class="note">窄幅震荡</div></div><div class="kpi"><div class="label">WTI 原油</div><div class="value">$86.93 (<span class="up"><span class="up">+2.4%</span></span>)</div><div class="note">5d <span class="up"><span class="up">+9.2%</span></span> — 霍尔木兹海峡紧张</div></div><div class="kpi"><div class="label">USD/CAD</div><div class="value">1.4088 (<span class="up"><span class="up">+0.12%</span></span>)</div><div class="note">油价利好CAD但今日小幅走弱</div></div></div>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">97.43</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">99.49</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">101.56</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">103.62</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">105.68</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-09</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-01</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-22</text><path d="M56.0,142.3 L78.3,174.9 L100.7,140.2 L123.0,130.1 L145.4,96.6 L167.7,108.3 L190.1,133.2 L212.4,111.3 L234.8,118.9 L257.1,148.1 L279.4,150.1 L301.8,150.3 L324.1,151.2 L346.5,127.7 L368.8,111.6 L391.2,116.0 L413.5,116.0 L435.9,101.2 L458.2,110.4 L480.6,116.2 L502.9,99.5 L525.2,90.9 L547.6,107.3 L569.9,99.5 L592.3,91.7 L614.6,102.2 L637.0,123.0 L659.3,126.9 L681.7,108.9 L704.0,108.9" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="108.9" r="3" fill="#58a6ff"/><path d="M56.0,142.3 L78.3,182.6 L100.7,115.9 L123.0,103.9 L145.4,39.4 L167.7,79.7 L190.1,100.6 L212.4,49.1 L234.8,54.3 L257.1,123.5 L279.4,132.2 L301.8,115.8 L324.1,143.8 L346.5,93.8 L368.8,58.8 L391.2,90.7 L413.5,126.5 L435.9,97.4 L458.2,135.6 L480.6,129.8 L502.9,96.1 L525.2,89.8 L547.6,129.0 L569.9,106.3 L592.3,111.9 L614.6,145.5 L637.0,175.7 L659.3,173.6 L681.7,136.9 L704.0,142.4" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="142.4" r="3" fill="#3fb950"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">SPX vs QQQ (30d)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">^GSPC</span> <span class="legend-last">101.66</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+1.66%</span></span><span class="legend-note">· 1d +<span class="down">-0.0%</span> · 30d <span class="up">+1.4%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">QQQ</span> <span class="legend-last">100.00</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-0.00%</span></span><span class="legend-note">· 1d <span class="down">-0.27%</span> · 30d <span class="down">-1.15%</span></span></span></div></div>
+<h3>宏观与政策</h3>
+<p><strong>霍尔木兹海峡 / 红海航运扰动升级</strong> — Trump 威胁报复 Strait of Hormuz 攻击。WTI 原油 5 日暴涨 9.2% (从 $79.6 → $86.9)，创近一个月最大幅度上涨。能源股集体走强 (SU <span class="up">+1.5%</span>, CVX <span class="up">+1.1%</span>, CNQ <span class="up">+1.7%</span>)。</p>
+<div class="callout danger"><p>地缘风险升温: 若 Hormuz 航运实质中断 → 油价可能冲 $95-100 (2024H1 类比)。直接利多 SU/CVX/CNQ，传导路径: 更高油价 → CPI 反弹风险 → Fed 推迟降息 → 10Y上行 → 成长股估值压力。当前 10Y 已从 4.54 → 4.66 一周涨 12bp。</p></div>
+<p><strong>AI 投入产出叙事加速</strong> — Morgan Stanley 报告预计 AI 支出 2028 年达 $1.4T，但 60% 在美国以外。Anthropic 与 AMD 签署数十亿美元 MI450 GPU 合约 (详见 AI capex cluster)。</p>
+<p><strong>超级财报周开启</strong> — 今晚 AMC: GOOG (AI capex + 广告增长) + TSLA (auto GM + FSD + Robotaxi update) + IBM。明天: INTC (foundry path)。下周密集: MSFT/META 7/29, AAPL/AMZN 7/30, Samsung 7/31, AMD 8/4。</p>
+<p><strong>FOMC 下周三 (7/30)</strong> — 利率决议 + PCE 同日 (7/31)。当前 10Y 走高反映市场不再押注 7 月降息，焦点完全在 earnings vs 地缘。</p>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">66.83</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">73.06</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">79.29</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">85.52</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">91.75</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-09</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-01</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-22</text><path d="M56.0,51.6 L78.3,39.4 L100.7,54.9 L123.0,73.8 L145.4,101.3 L167.7,132.6 L190.1,127.7 L212.4,128.9 L234.8,140.8 L257.1,151.5 L279.4,170.6 L301.8,160.1 L324.1,178.0 L346.5,167.9 L368.8,176.2 L391.2,182.4 L413.5,181.6 L435.9,182.6 L458.2,170.0 L480.6,149.4 L502.9,159.0 L525.2,163.5 L547.6,118.7 L569.9,110.7 L592.3,108.9 L614.6,113.3 L637.0,89.7 L659.3,84.8 L681.7,73.6 L704.0,60.2" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="60.2" r="3" fill="#58a6ff"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">WTI Crude Oil (30d)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">CL=F</span> <span class="legend-last">86.92</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-1.45%</span></span><span class="legend-note">· 1d <span class="up">+2.37%</span> · 30d <span class="down">-4.8%</span></span></span></div></div></div><div class="tab-panel" data-tab-for="tabs1-1"><h3>重点观察 (Focus)</h3>
+<div class="callout danger"><p>SPCX $117.38 (<span class="down">-4.99%</span>) — 已跌破 thesis_break $130。5d <span class="down">-13.2%</span>, 30d 从 $161 跌至此。需立即决策。</p></div>
+<div class="kpi-grid"><div class="kpi"><div class="label">GEV</div><div class="value">$997.4 (<span class="down"><span class="down">-7.55%</span></span>)</div><div class="note">Q2 beat rev, miss EPS; Wind亏损加深 — vol 1.16x</div></div><div class="kpi"><div class="label">SPCX</div><div class="value">$117.38 (<span class="down"><span class="down">-4.99%</span></span>)</div><div class="note">THESIS BREAK! 5d <span class="down"><span class="down">-13.2%</span></span> 持续下行</div></div><div class="kpi"><div class="label">SKHY</div><div class="value">$166.1 (<span class="down"><span class="down">-3.4%</span></span>)</div><div class="note">SK Hynix 否认收购 INTC 厂 → 卖压</div></div><div class="kpi"><div class="label">MU</div><div class="value">$966.4 (<span class="down"><span class="down">-0.46%</span></span>)</div><div class="note">5d <span class="up"><span class="up">+6.9%</span></span> 后企稳; PE_fwd 6.3x (极便宜)</div></div><div class="kpi"><div class="label">INTC</div><div class="value">$103.7 (<span class="down"><span class="down">-1.7%</span></span>)</div><div class="note">SK Hynix 否认 + 明天财报</div></div><div class="kpi"><div class="label">NVDA</div><div class="value">$213.6 (<span class="up"><span class="up">+3.02%</span></span>)</div><div class="note">Grace Blackwell 德州建厂 + Oklo核AI合作</div></div></div>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">110.15</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">137.34</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">164.52</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">191.70</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">218.89</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-12</text><text x="380.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-02</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-22</text><path d="M56.0,116.5 L80.9,68.3 L105.8,39.4 L130.8,69.3 L155.7,79.7 L180.6,126.1 L205.5,123.8 L230.5,126.2 L255.4,128.6 L280.3,128.2 L305.2,111.5 L330.2,101.3 L355.1,121.7 L380.0,114.8 L404.9,117.3 L429.8,134.0 L454.8,135.8 L479.7,129.9 L504.6,140.3 L529.5,149.7 L554.5,154.4 L579.4,155.7 L604.3,162.0 L629.2,172.9 L654.2,179.2 L679.1,173.6 L704.0,182.6" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="182.6" r="3" fill="#58a6ff"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">SPCX (30d)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">SPCX</span> <span class="legend-last">117.65</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-26.90%</span></span><span class="legend-note">· 1d <span class="down">-4.77%</span></span></span></div></div>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">841.99</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">931.37</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">1,021</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">1,110</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">1,200</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-09</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-01</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-22</text><path d="M56.0,157.9 L78.3,182.6 L100.7,164.1 L123.0,148.4 L145.4,130.6 L167.7,128.8 L190.1,98.0 L212.4,69.7 L234.8,61.4 L257.1,104.4 L279.4,93.9 L301.8,81.0 L324.1,99.7 L346.5,73.0 L368.8,39.4 L391.2,58.3 L413.5,68.1 L435.9,50.0 L458.2,84.8 L480.6,87.7 L502.9,85.7 L525.2,78.1 L547.6,100.9 L569.9,90.0 L592.3,95.0 L614.6,103.8 L637.0,93.8 L659.3,83.9 L681.7,84.0 L704.0,120.4" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="120.4" r="3" fill="#58a6ff"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">GEV (30d)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">GEV</span> <span class="legend-last">1,001</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+8.79%</span></span><span class="legend-note">· 1d <span class="down">-7.26%</span> · 30d <span class="up">+7.19%</span></span></span></div></div>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">84.66</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">97.00</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">109.33</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">121.67</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">134.00</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-09</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-01</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-22</text><path d="M56.0,142.4 L78.3,158.2 L100.7,120.8 L123.0,126.0 L145.4,87.7 L167.7,111.9 L190.1,103.8 L212.4,71.2 L234.8,43.4 L257.1,100.7 L279.4,101.9 L301.8,42.6 L324.1,71.8 L346.5,67.1 L368.8,63.9 L391.2,107.7 L413.5,128.1 L435.9,124.8 L458.2,141.4 L480.6,137.7 L502.9,122.3 L525.2,126.7 L547.6,141.9 L569.9,125.4 L592.3,153.7 L614.6,172.1 L637.0,173.6 L659.3,167.7 L681.7,129.8 L704.0,131.4" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="131.4" r="3" fill="#58a6ff"/><path d="M56.0,142.4 L78.3,173.8 L100.7,90.5 L123.0,125.5 L145.4,173.8 L167.7,170.4 L190.1,176.1 L212.4,134.5 L234.8,145.6" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="234.8" cy="145.6" r="3" fill="#3fb950"/><path d="M56.0,142.4 L78.3,145.1 L100.7,114.2 L123.0,90.5 L145.4,80.2 L167.7,113.9 L190.1,101.3 L212.4,61.1 L234.8,39.4 L257.1,66.4 L279.4,68.4 L301.8,64.6 L324.1,78.8 L346.5,68.2 L368.8,43.5 L391.2,82.8 L413.5,103.6 L435.9,97.9 L458.2,134.7 L480.6,135.2 L502.9,128.0 L525.2,136.4 L547.6,157.4 L569.9,142.9 L592.3,157.8 L614.6,176.5 L637.0,182.6 L659.3,176.3 L681.7,150.1 L704.0,155.4" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="155.4" r="3" fill="#d29922"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">DRAM/HBM Cluster (30d)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">MU</span> <span class="legend-last">103.25</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+3.25%</span></span><span class="legend-note">· 1d <span class="down">-0.51%</span> · 30d <span class="up">+1.77%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">SKHY</span> <span class="legend-last">99.04</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-0.96%</span></span><span class="legend-note">· 1d <span class="down">-3.23%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">INTC</span> <span class="legend-last">96.14</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-3.86%</span></span><span class="legend-note">· 1d <span class="down">-1.57%</span> · 30d <span class="down">-5.88%</span></span></span></div></div>
+<h3>常规持仓 (Regular)</h3>
+<table>
+<thead>
+<tr>
+<th>Ticker</th>
+<th>Price</th>
+<th>1d</th>
+<th>5d</th>
+<th>Signal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AMD</td>
+<td>$553.8</td>
+<td><span class="up">+1.73%</span></td>
+<td><span class="up">+4.67%</span></td>
+<td>Anthropic deal; 30d <span class="up">+13.2%</span> 领跑</td>
+</tr>
+<tr>
+<td>AVGO</td>
+<td>$396.4</td>
+<td><span class="up">+2.55%</span></td>
+<td><span class="up">+0.53%</span></td>
+<td>custom-ASIC 叙事受益</td>
+</tr>
+<tr>
+<td>TSLA</td>
+<td>$375.3</td>
+<td><span class="down">-0.97%</span></td>
+<td><span class="down">-4.86%</span></td>
+<td><strong>今晚 Q2 AMC</strong> — pre-earnings drift down</td>
+</tr>
+<tr>
+<td>GOOG</td>
+<td>$346.1</td>
+<td><span class="down">-0.04%</span></td>
+<td><span class="down">-6.52%</span></td>
+<td><strong>今晚 Q2 AMC</strong> — Reddit限制AI访问影响</td>
+</tr>
+<tr>
+<td>META</td>
+<td>$625.9</td>
+<td><span class="down">-2.79%</span></td>
+<td><span class="down">-8.14%</span></td>
+<td>板块联动跌; 7/29 earnings</td>
+</tr>
+<tr>
+<td>MSFT</td>
+<td>$388.6</td>
+<td><span class="down">-2.31%</span></td>
+<td><span class="down">-1.79%</span></td>
+<td>板块联动; 7/29 earnings</td>
+</tr>
+<tr>
+<td>AMZN</td>
+<td>$243.0</td>
+<td><span class="down">-1.84%</span></td>
+<td><span class="down">-4.69%</span></td>
+<td>板块联动; 7/30 earnings</td>
+</tr>
+<tr>
+<td>TSM</td>
+<td>$421.6</td>
+<td><span class="down">-0.72%</span></td>
+<td><span class="up">+0.5%</span></td>
+<td>上周财报后盘整</td>
+</tr>
+<tr>
+<td>SU</td>
+<td>$64.7</td>
+<td><span class="up">+1.53%</span></td>
+<td><span class="up">+6.65%</span></td>
+<td>油价飙升受益; Q2 7/22发布</td>
+</tr>
+<tr>
+<td>CVX</td>
+<td>$193.1</td>
+<td><span class="up">+1.06%</span></td>
+<td><span class="up">+6.33%</span></td>
+<td>Hormuz紧张 + 7/31 earnings</td>
+</tr>
+<tr>
+<td>CNQ</td>
+<td>$45.7</td>
+<td><span class="up">+1.67%</span></td>
+<td><span class="up">+6.83%</span></td>
+<td>Canadian oil跟涨</td>
+</tr>
+<tr>
+<td>GEV</td>
+<td>$997.4</td>
+<td><span class="down">-7.55%</span></td>
+<td><span class="down">-5.49%</span></td>
+<td>详见 deep-dive</td>
+</tr>
+<tr>
+<td>MRVL</td>
+<td>$212.3</td>
+<td><span class="up">+2.07%</span></td>
+<td><span class="up">+2.91%</span></td>
+<td>AI networking 受Anthropic/AMD 扩张利好</td>
+</tr>
+<tr>
+<td>SSPC</td>
+<td>$20.1</td>
+<td><span class="up">+9.33%</span></td>
+<td><span class="up">+29.1%</span></td>
+<td>2x short SPCX — 镜像SPCX下跌</td>
+</tr>
+</tbody>
+</table>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">90.10</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">98.71</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">107.32</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">115.93</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">124.54</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-09</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-01</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-22</text><path d="M56.0,146.3 L78.3,164.3 L100.7,154.0 L123.0,153.2 L145.4,136.4 L167.7,148.1 L190.1,154.5 L212.4,140.5 L234.8,145.2 L257.1,165.2 L279.4,167.6 L301.8,175.1 L324.1,182.6 L346.5,176.9 L368.8,165.0 L391.2,170.9 L413.5,177.2 L435.9,175.6 L458.2,172.4 L480.6,155.7 L502.9,158.8 L525.2,139.9 L547.6,157.1 L569.9,137.9 L592.3,136.3 L614.6,148.1 L637.0,158.7 L659.3,157.7 L681.7,148.4 L704.0,133.7" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="133.7" r="3" fill="#58a6ff"/><path d="M56.0,146.3 L78.3,169.7 L100.7,133.2 L123.0,109.7 L145.4,73.6 L167.7,114.1 L190.1,108.8 L212.4,83.6 L234.8,69.1 L257.1,101.3 L279.4,101.5 L301.8,88.5 L324.1,99.6 L346.5,81.4 L368.8,39.4 L391.2,80.0 L413.5,103.4 L435.9,68.7 L458.2,105.1 L480.6,103.8 L502.9,74.1 L525.2,62.8 L547.6,86.6 L569.9,72.7 L592.3,91.9 L614.6,120.5 L637.0,125.8 L659.3,117.8 L681.7,76.4 L704.0,65.5" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="65.5" r="3" fill="#3fb950"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">NVDA vs AMD (30d)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">NVDA</span> <span class="legend-last">102.62</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+2.62%</span></span><span class="legend-note">· 1d <span class="up">+3.06%</span> · 30d <span class="up">+2.4%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">AMD</span> <span class="legend-last">116.76</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+16.76%</span></span><span class="legend-note">· 1d <span class="up">+1.98%</span> · 30d <span class="up">+13.23%</span></span></span></div></div>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">86.08</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">91.36</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">96.64</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">101.93</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">107.21</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-09</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-01</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-22</text><path d="M56.0,84.6 L78.3,73.2 L100.7,76.9 L123.0,79.5 L145.4,104.5 L167.7,123.6 L190.1,147.8 L212.4,160.0 L234.8,148.4 L257.1,145.0 L279.4,171.1 L301.8,172.4 L324.1,178.3 L346.5,179.5 L368.8,181.1 L391.2,182.6 L413.5,163.6 L435.9,165.4 L458.2,142.9 L480.6,112.1 L502.9,119.4 L525.2,109.7 L547.6,83.7 L569.9,86.7 L592.3,91.8 L614.6,91.3 L637.0,68.8 L659.3,71.1 L681.7,52.5 L704.0,39.4" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="39.4" r="3" fill="#58a6ff"/><path d="M56.0,84.6 L78.3,71.8 L100.7,88.6 L123.0,82.7 L145.4,111.4 L167.7,112.6 L190.1,123.2 L212.4,139.8 L234.8,133.8 L257.1,130.0 L279.4,149.0 L301.8,145.7 L324.1,150.7 L346.5,161.5 L368.8,172.9 L391.2,173.2 L413.5,158.5 L435.9,163.1 L458.2,138.3 L480.6,130.0 L502.9,138.1 L525.2,128.2 L547.6,103.8 L569.9,105.7 L592.3,106.3 L614.6,96.8 L637.0,82.0 L659.3,72.2 L681.7,66.5 L704.0,58.1" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="58.1" r="3" fill="#3fb950"/><path d="M56.0,84.6 L78.3,72.2 L100.7,73.6 L123.0,76.0 L145.4,98.6 L167.7,111.1 L190.1,126.5 L212.4,150.5 L234.8,137.6 L257.1,143.4 L279.4,172.4 L301.8,168.5 L324.1,170.5 L346.5,173.7 L368.8,170.3 L391.2,180.6 L413.5,167.8 L435.9,173.0 L458.2,149.2 L480.6,118.4 L502.9,128.1 L525.2,129.4 L547.6,107.4 L569.9,115.0 L592.3,113.1 L614.6,110.8 L637.0,92.5 L659.3,91.5 L681.7,74.6 L704.0,61.4" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="61.4" r="3" fill="#d29922"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">能源 (30d)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">SU</span> <span class="legend-last">105.75</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+5.75%</span></span><span class="legend-note">· 1d <span class="up">+1.6%</span> · 30d <span class="up">+2.32%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">CVX</span> <span class="legend-last">103.37</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+3.37%</span></span><span class="legend-note">· 1d <span class="up">+1.04%</span> · 30d <span class="up">+2.02%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">CNQ</span> <span class="legend-last">102.95</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+2.95%</span></span><span class="legend-note">· 1d <span class="up">+1.66%</span> · 30d <span class="down">-0.34%</span></span></span></div></div></div><div class="tab-panel" data-tab-for="tabs1-2"><div class="timeline"><div class="tl-item"><span class="when">TODAY 7/22</span> — <span class="what">📊 TSLA Q2 earnings AMC — auto GM, FSD revenue, Robotaxi</span></div><div class="tl-item"><span class="when">TODAY 7/22</span> — <span class="what">📊 GOOG Q2 earnings AMC — AI capex guide, ad growth</span></div><div class="tl-item"><span class="when">TODAY 7/22</span> — <span class="what">📊 IBM Q2 earnings</span></div><div class="tl-item"><span class="when">TODAY 7/22</span> — <span class="what">📊 GEV Q2 earnings (已出: beat rev, miss EPS, wind亏损)</span></div><div class="tl-item"><span class="when">7/23 (明天)</span> — <span class="what">📊 INTC Q2 earnings — foundry path, 14A update</span></div><div class="tl-item"><span class="when">7/23 (明天)</span> — <span class="what">📊 NOK Q2 earnings</span></div><div class="tl-item"><span class="when">7/24 (周四)</span> — <span class="what">📊 SK Hynix Q2 earnings — HBM3E/4 营收, NVDA 供货</span></div><div class="tl-item"><span class="when">7/29 (下周二)</span> — <span class="what">📊 MSFT Q4 FY26 — Azure AI, capex</span></div><div class="tl-item"><span class="when">7/29 (下周二)</span> — <span class="what">📊 META Q2 — Reels, AI capex</span></div><div class="tl-item"><span class="when">7/30 (下周三)</span> — <span class="what">🏛️ FOMC 利率决议</span></div><div class="tl-item"><span class="when">7/30 (下周三)</span> — <span class="what">📊 AAPL Q3 FY26 / AMZN Q2</span></div><div class="tl-item"><span class="when">7/31</span> — <span class="what">📊 Samsung Q2 final — DS margin, HBM yield</span></div><div class="tl-item"><span class="when">7/31</span> — <span class="what">📊 CVX Q2 earnings</span></div><div class="tl-item"><span class="when">7/31</span> — <span class="what">🏛️ PCE inflation June</span></div><div class="tl-item"><span class="when">8/4</span> — <span class="what">📊 AMD Q2 — MI300/MI350 (Anthropic deal validation)</span></div><div class="tl-item"><span class="when">8/4</span> — <span class="what">📊 SU Q2 — production, WCS spread</span></div><div class="tl-item"><span class="when">8/6</span> — <span class="what">📊 CNQ Q2 earnings</span></div><div class="tl-item"><span class="when">8/26</span> — <span class="what">📊 NVDA Q2 FY27 — Blackwell shipments</span></div><div class="tl-item"><span class="when">9/17</span> — <span class="what">🏛️ FOMC September decision</span></div><div class="tl-item"><span class="when">9/25</span> — <span class="what">📊 MU Q4 FY26 — 🎯 SCORECARD scoring date</span></div><div class="tl-item"><span class="when">12/9</span> — <span class="what">🔓 SPCX lockup expiry (180d post-IPO)</span></div></div>
+<div class="callout warn"><p>超级财报周: 今晚 GOOG+TSLA 定调, 明天 INTC+SK Hynix 定义 semi 走向, 下周 MSFT/META/AAPL/AMZN 四大 mega-cap + FOMC。10 天内的信息量 = 平常一个季度。</p></div></div><div class="tab-panel" data-tab-for="tabs1-3"><div class="kpi-grid"><div class="kpi"><div class="label">Price</div><div class="value">$375.27 (<span class="down"><span class="down">-0.97%</span></span>)</div><div class="note">距52w高 $498.8 差 <span class="down"><span class="down">-24.8%</span></span></div></div><div class="kpi"><div class="label">5d</div><div class="value"><span class="down"><span class="down">-4.86%</span></span></div><div class="note">pre-earnings drift down</div></div><div class="kpi"><div class="label">30d</div><div class="value"><span class="down"><span class="down">-8.24%</span></span></div><div class="note">持续回调中</div></div><div class="kpi"><div class="label">PE forward</div><div class="value">146x</div><div class="note">估值仍极高</div></div><div class="kpi"><div class="label">vs MA50</div><div class="value">$407.5</div><div class="note">在50MA下方 <span class="down"><span class="down">-7.9%</span></span></div></div><div class="kpi"><div class="label">vs MA200</div><div class="value">$416.0</div><div class="note">在200MA下方 <span class="down"><span class="down">-9.8%</span></span></div></div></div>
+<p><strong>今晚 Q2 AMC — 本季度最重要催化剂</strong></p>
+<p>关注要点:
+- <strong>Auto gross margin (ex-credits)</strong>: 上季 ~17-18%，共识需回到 20%+ 才能证明降价告一段落
+- <strong>FSD revenue recognition</strong>: 累计递延收入的释放节奏 + FSD v13 订阅增长
+- <strong>Robotaxi update</strong>: Austin 无人出租何时开始收费？ 许可进展？
+- <strong>能源/储能</strong>: Megapack 部署速度 + Powerwall 3 需求
+- <strong>Musk 参与度</strong>: DOGE 回归后 CEO 精力分配</p>
+<div class="callout info"><p>Pre-positioning: 股价已从 52w 高下跌 25%，今晚 earnings 若 miss → 可能测试 $340-350 (200MA breakaway gap fill)。若 beat + Robotaxi 进展 → 反弹至 $400+ 可能性大。高 beta 事件。</p></div></div><div class="tab-panel" data-tab-for="tabs1-4"><div class="kpi-grid"><div class="kpi"><div class="label">SPCX</div><div class="value">$117.38 (<span class="down"><span class="down">-4.99%</span></span>)</div><div class="note">🚨 THESIS BREAK (break=$130)</div></div><div class="kpi"><div class="label">SSPC (2x short)</div><div class="value">$20.05 (<span class="up"><span class="up">+9.33%</span></span>)</div><div class="note">镜像暴涨，5d <span class="up"><span class="up">+29.1%</span></span></div></div><div class="kpi"><div class="label">5d SPCX</div><div class="value"><span class="down"><span class="down">-13.23%</span></span></div><div class="note">连续下行无反弹</div></div><div class="kpi"><div class="label">距 IPO 高点</div><div class="value">-$94 (<span class="down"><span class="down">-44.5%</span></span>)</div><div class="note">从 $211 峰值腰斩</div></div><div class="kpi"><div class="label">Lockup expiry</div><div class="value">2026-12-09</div><div class="note">距 lockup 还有 140 天</div></div></div>
+<div class="callout danger"><p>SPCX 已实质跌破 thesis_break $130 (当前 $117.38, 低于 break <span class="down">-9.7%</span>)。</p>
+<p>触发分析:
+- 非公司基本面恶化: 无 Starship 事故、无 Starlink ARPU 下降报告
+- 催化剂: (1) AT&amp;T CEO 公开驳斥 Starlink 威胁 → 市场叙事"Starlink 并非颠覆者"; (2) AI capex 轮动持续从 "概念股" 撤向有实际 revenue 的半导体; (3) Charter 股票反弹 (Starlink 竞争威胁减弱叙事)
+- 结构性: IPO 后 speculative capital 出逃 + 无 short 可做 (ETF 溢价)，资金只能单向走</p>
+<p><strong>需要决策</strong>: 原 thesis 依据 (Starlink $50B ARPU story + Starshield 军事合同) 是否仍成立？还是 $130 break 应执行？</p></div></div><div class="tab-panel" data-tab-for="tabs1-5"><div class="kpi-grid"><div class="kpi"><div class="label">MU</div><div class="value">$966.4 (<span class="down"><span class="down">-0.46%</span></span>)</div><div class="note">5d <span class="up"><span class="up">+6.9%</span></span> (BofA US 1 List 余波); PE_fwd 6.3x</div></div><div class="kpi"><div class="label">SKHY</div><div class="value">$166.1 (<span class="down"><span class="down">-3.4%</span></span>)</div><div class="note">否认收购 INTC 厂 → 卖压</div></div><div class="kpi"><div class="label">INTC</div><div class="value">$103.7 (<span class="down"><span class="down">-1.7%</span></span>)</div><div class="note">SK Hynix 否认 + 明天 Q2 earnings</div></div><div class="kpi"><div class="label">Samsung</div><div class="value">(待查)</div><div class="note">7/31 final earnings</div></div></div>
+<p><strong>今日核心叙事: SK Hynix 否认收购 Intel 晶圆厂</strong></p>
+<p>"SK Hynix Denies It's Buying Intel Plant. Why the Stock Is Falling." — 市场此前将该传闻定价为 positive (SK Hynix 扩产能 = HBM 产能上限提升 = 利好整个 DRAM 估值链)。否认后:
+- SKHY <span class="down">-3.4%</span>: 直接去掉产能扩张溢价
+- INTC <span class="down">-1.7%</span>: 少了一个潜在 foundry 客户 / 资产出售对象
+- MU <span class="down">-0.46%</span>: 影响最小（MU 靠自建 HBM 产能，不依赖收购叙事）</p>
+<p><strong>明后天催化剂密集</strong>:
+- 7/23 INTC Q2 earnings → 14A foundry update, 如果 foundry 路径清晰，INTC 可能走出独立行情
+- 7/24 SK Hynix Q2 earnings → HBM3E/HBM4 营收占比是核心数字。若 HBM 占比 &gt; 50% 且 QoQ 增长 &gt; 20%，直接 read-through 到 MU Q4 FY26 scorecard</p>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">84.66</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">97.00</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">109.33</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">121.67</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">134.00</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-09</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-01</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-22</text><path d="M56.0,142.4 L78.3,158.2 L100.7,120.8 L123.0,126.0 L145.4,87.7 L167.7,111.9 L190.1,103.8 L212.4,71.2 L234.8,43.4 L257.1,100.7 L279.4,101.9 L301.8,42.6 L324.1,71.8 L346.5,67.1 L368.8,63.9 L391.2,107.7 L413.5,128.1 L435.9,124.8 L458.2,141.4 L480.6,137.7 L502.9,122.3 L525.2,126.7 L547.6,141.9 L569.9,125.4 L592.3,153.7 L614.6,172.1 L637.0,173.6 L659.3,167.7 L681.7,129.8 L704.0,131.4" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="131.4" r="3" fill="#58a6ff"/><path d="M56.0,142.4 L78.3,173.8 L100.7,90.5 L123.0,125.5 L145.4,173.8 L167.7,170.4 L190.1,176.1 L212.4,134.5 L234.8,145.6" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="234.8" cy="145.6" r="3" fill="#3fb950"/><path d="M56.0,142.4 L78.3,145.1 L100.7,114.2 L123.0,90.5 L145.4,80.2 L167.7,113.9 L190.1,101.3 L212.4,61.1 L234.8,39.4 L257.1,66.4 L279.4,68.4 L301.8,64.6 L324.1,78.8 L346.5,68.2 L368.8,43.5 L391.2,82.8 L413.5,103.6 L435.9,97.9 L458.2,134.7 L480.6,135.2 L502.9,128.0 L525.2,136.4 L547.6,157.4 L569.9,142.9 L592.3,157.8 L614.6,176.5 L637.0,182.6 L659.3,176.3 L681.7,150.1 L704.0,155.4" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="155.4" r="3" fill="#d29922"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">DRAM/HBM Cluster (30d)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">MU</span> <span class="legend-last">103.25</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+3.25%</span></span><span class="legend-note">· 1d <span class="down">-0.51%</span> · 30d <span class="up">+1.77%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">SKHY</span> <span class="legend-last">99.04</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-0.96%</span></span><span class="legend-note">· 1d <span class="down">-3.23%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">INTC</span> <span class="legend-last">96.14</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-3.86%</span></span><span class="legend-note">· 1d <span class="down">-1.57%</span> · 30d <span class="down">-5.88%</span></span></span></div></div></div><div class="tab-panel" data-tab-for="tabs1-6"><div class="kpi-grid"><div class="kpi"><div class="label">NVDA</div><div class="value">$213.6 (<span class="up"><span class="up">+3.02%</span></span>)</div><div class="note">Grace Blackwell 德州 + Oklo 核AI; 8/26 Q2</div></div><div class="kpi"><div class="label">AMD</div><div class="value">$553.8 (<span class="up"><span class="up">+1.73%</span></span>)</div><div class="note">Anthropic MI450 mega-deal; 8/4 Q2</div></div><div class="kpi"><div class="label">AVGO</div><div class="value">$396.4 (<span class="up"><span class="up">+2.55%</span></span>)</div><div class="note">custom-ASIC (TPU/Trainium/MTIA) 受益</div></div><div class="kpi"><div class="label">TSM</div><div class="value">$421.6 (<span class="down"><span class="down">-0.72%</span></span>)</div><div class="note">上周 record earnings 后盘整</div></div><div class="kpi"><div class="label">GOOG</div><div class="value">$346.1 (<span class="down"><span class="down">-0.04%</span></span>)</div><div class="note">今晚 Q2; 5d <span class="down"><span class="down">-6.5%</span></span></div></div><div class="kpi"><div class="label">MSFT</div><div class="value">$388.6 (<span class="down"><span class="down">-2.31%</span></span>)</div><div class="note">7/29 Q4; 板块联动</div></div><div class="kpi"><div class="label">META</div><div class="value">$625.9 (<span class="down"><span class="down">-2.79%</span></span>)</div><div class="note">7/29 Q2; 5d <span class="down"><span class="down">-8.1%</span></span></div></div><div class="kpi"><div class="label">AMZN</div><div class="value">$243.0 (<span class="down"><span class="down">-1.84%</span></span>)</div><div class="note">7/30 Q2; AWS AI</div></div></div>
+<p><strong>今日核心叙事: Anthropic + AMD = GPU 双寡头确认</strong></p>
+<p>"Anthropic Commits Tens of Billions to AMD Server Chips" — 这是 AI GPU 市场结构的转折点:
+1. <strong>AMD MI450 拿下 Anthropic 大单</strong>: 验证了 MI450 不是纸面产品，有真实 hyperscaler 采购承诺
+2. <strong>对 NVDA 不是利空而是利好</strong>: Morgan Stanley 报告 $1.4T AI spending by 2028 — 蛋糕够大，双寡头确认意味着 AI capex 的 TAM ceiling 比预期更高
+3. <strong>NVDA 同日独立催化剂</strong>: Grace Blackwell 组装在德州 (reshoring narrative) + Oklo/MSFT 核能 AI initiative ($200M)
+4. <strong>Mega-cap 承压但分化</strong>: 纯 AI supply-side (NVDA/AMD/AVGO) 涨，AI demand-side (GOOG/META/MSFT/AMZN) 跌 — 市场在 earnings 前 de-risk buyer 侧，因为 AI capex 的 ROI 问题仍未解答</p>
+<p><strong>关键判读</strong>: AI capex 分化正在加深。Supply-side 有订单确认 (AMD deal, NVDA Blackwell backlog)，但 demand-side 需要今晚 GOOG earnings 证明 ad revenue 能跟上 capex 投入。若 GOOG capex guide 再提 &gt; 25% → "overbuild" 叙事回归 → 整个 AI chain 周四可能承压。</p>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">90.10</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">98.71</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">107.32</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">115.93</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">124.54</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-09</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-01</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-22</text><path d="M56.0,146.3 L78.3,164.3 L100.7,154.0 L123.0,153.2 L145.4,136.4 L167.7,148.1 L190.1,154.5 L212.4,140.5 L234.8,145.2 L257.1,165.2 L279.4,167.6 L301.8,175.1 L324.1,182.6 L346.5,176.9 L368.8,165.0 L391.2,170.9 L413.5,177.2 L435.9,175.6 L458.2,172.4 L480.6,155.7 L502.9,158.8 L525.2,139.9 L547.6,157.1 L569.9,137.9 L592.3,136.3 L614.6,148.1 L637.0,158.7 L659.3,157.7 L681.7,148.4 L704.0,133.7" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="133.7" r="3" fill="#58a6ff"/><path d="M56.0,146.3 L78.3,169.7 L100.7,133.2 L123.0,109.7 L145.4,73.6 L167.7,114.1 L190.1,108.8 L212.4,83.6 L234.8,69.1 L257.1,101.3 L279.4,101.5 L301.8,88.5 L324.1,99.6 L346.5,81.4 L368.8,39.4 L391.2,80.0 L413.5,103.4 L435.9,68.7 L458.2,105.1 L480.6,103.8 L502.9,74.1 L525.2,62.8 L547.6,86.6 L569.9,72.7 L592.3,91.9 L614.6,120.5 L637.0,125.8 L659.3,117.8 L681.7,76.4 L704.0,65.5" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="65.5" r="3" fill="#3fb950"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">NVDA vs AMD (30d)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">NVDA</span> <span class="legend-last">102.62</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+2.62%</span></span><span class="legend-note">· 1d <span class="up">+3.06%</span> · 30d <span class="up">+2.4%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">AMD</span> <span class="legend-last">116.76</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+16.76%</span></span><span class="legend-note">· 1d <span class="up">+1.98%</span> · 30d <span class="up">+13.23%</span></span></span></div></div></div><div class="tab-panel" data-tab-for="tabs1-7"><div class="kpi-grid"><div class="kpi"><div class="label">WTI</div><div class="value">$86.93 (<span class="up"><span class="up">+2.4%</span></span>)</div><div class="note">5d <span class="up"><span class="up">+9.2%</span></span> — Hormuz/红海航运紧张</div></div><div class="kpi"><div class="label">SU</div><div class="value">$64.68 (<span class="up"><span class="up">+1.53%</span></span>)</div><div class="note">5d <span class="up"><span class="up">+6.7%</span></span>; Q2 report 7/22 发布</div></div><div class="kpi"><div class="label">CVX</div><div class="value">$193.1 (<span class="up"><span class="up">+1.06%</span></span>)</div><div class="note">5d <span class="up"><span class="up">+6.3%</span></span>; Q2 7/31</div></div><div class="kpi"><div class="label">CNQ</div><div class="value">$45.65 (<span class="up"><span class="up">+1.67%</span></span>)</div><div class="note">5d <span class="up"><span class="up">+6.8%</span></span> 跟涨</div></div></div>
+<p><strong>地缘升温 = 油气全线走强</strong></p>
+<p>Trump 威胁报复 Strait of Hormuz 攻击 + Red Sea chokepoint disruption → WTI 从 $79.6 (5天前) 暴涨到 $86.9 (<span class="up">+9.2%</span>)。</p>
+<p>传导链:
+- 短期: 供应溢价 = 所有上游/综合油气受益 (SU/CVX/CNQ 5d 全涨 6-7%)
+- 中期风险: 若 escalation → $95-100 WTI → CPI 反弹 → Fed 不降息 → risk-off
+- 对冲: SU Q2 report 今日发布 (加拿大时间)，若 production guidance 强 + WCS-WTI spread tight → double catalyst</p>
+<div class="callout info"><p>能源在 30d 图上刚从低点反弹回到 par (SU <span class="up">+2.3%</span>, CVX <span class="up">+2.0%</span>)。当前的上行是地缘驱动而非需求驱动 — 如果 Hormuz 局势平息，回吐速度会很快。但若升级，这组是天然对冲。</p></div>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">86.08</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">91.36</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">96.64</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">101.93</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">107.21</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-09</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-01</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-22</text><path d="M56.0,84.6 L78.3,73.2 L100.7,76.9 L123.0,79.5 L145.4,104.5 L167.7,123.6 L190.1,147.8 L212.4,160.0 L234.8,148.4 L257.1,145.0 L279.4,171.1 L301.8,172.4 L324.1,178.3 L346.5,179.5 L368.8,181.1 L391.2,182.6 L413.5,163.6 L435.9,165.4 L458.2,142.9 L480.6,112.1 L502.9,119.4 L525.2,109.7 L547.6,83.7 L569.9,86.7 L592.3,91.8 L614.6,91.3 L637.0,68.8 L659.3,71.1 L681.7,52.5 L704.0,39.4" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="39.4" r="3" fill="#58a6ff"/><path d="M56.0,84.6 L78.3,71.8 L100.7,88.6 L123.0,82.7 L145.4,111.4 L167.7,112.6 L190.1,123.2 L212.4,139.8 L234.8,133.8 L257.1,130.0 L279.4,149.0 L301.8,145.7 L324.1,150.7 L346.5,161.5 L368.8,172.9 L391.2,173.2 L413.5,158.5 L435.9,163.1 L458.2,138.3 L480.6,130.0 L502.9,138.1 L525.2,128.2 L547.6,103.8 L569.9,105.7 L592.3,106.3 L614.6,96.8 L637.0,82.0 L659.3,72.2 L681.7,66.5 L704.0,58.1" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="58.1" r="3" fill="#3fb950"/><path d="M56.0,84.6 L78.3,72.2 L100.7,73.6 L123.0,76.0 L145.4,98.6 L167.7,111.1 L190.1,126.5 L212.4,150.5 L234.8,137.6 L257.1,143.4 L279.4,172.4 L301.8,168.5 L324.1,170.5 L346.5,173.7 L368.8,170.3 L391.2,180.6 L413.5,167.8 L435.9,173.0 L458.2,149.2 L480.6,118.4 L502.9,128.1 L525.2,129.4 L547.6,107.4 L569.9,115.0 L592.3,113.1 L614.6,110.8 L637.0,92.5 L659.3,91.5 L681.7,74.6 L704.0,61.4" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="61.4" r="3" fill="#d29922"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">能源 (30d)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">SU</span> <span class="legend-last">105.75</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+5.75%</span></span><span class="legend-note">· 1d <span class="up">+1.6%</span> · 30d <span class="up">+2.32%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">CVX</span> <span class="legend-last">103.37</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+3.37%</span></span><span class="legend-note">· 1d <span class="up">+1.04%</span> · 30d <span class="up">+2.02%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">CNQ</span> <span class="legend-last">102.95</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+2.95%</span></span><span class="legend-note">· 1d <span class="up">+1.66%</span> · 30d <span class="down">-0.34%</span></span></span></div></div></div><div class="tab-panel" data-tab-for="tabs1-8"><div class="kpi-grid"><div class="kpi"><div class="label">GEV</div><div class="value">$997.4 (<span class="down"><span class="down">-7.55%</span></span>)</div><div class="note">Q2 beat rev $10.9B, miss EPS; Wind亏损加深</div></div><div class="kpi"><div class="label">vol_ratio</div><div class="value">1.16x</div><div class="note">放量下跌 (唯一今日vol&gt;1的名字)</div></div><div class="kpi"><div class="label">PE forward</div><div class="value">40.5x</div><div class="note">从上周 ~44x 压缩</div></div><div class="kpi"><div class="label">vs 52w high</div><div class="value">$1,175 (<span class="down"><span class="down">-15.1%</span></span>)</div><div class="note">已从高点回落显著</div></div><div class="kpi"><div class="label">30d return</div><div class="value"><span class="up"><span class="up">+7.2%</span></span></div><div class="note">中期趋势仍在</div></div></div>
+<p><strong>GEV Q2 解读 — "Beat revenue &amp; raised guidance, stock falls anyway"</strong></p>
+<p>核心数据:
+- Revenue beat: 实际 &gt; $10.8B 共识
+- Orders: <span class="up">+88%</span> YoY → 创历史新高 (gas turbine sold out through 2029)
+- Full-year guidance: 上调
+- <strong>但</strong>: EBITDA slightly light + <strong>Wind segment 亏损加深</strong> (Motley Fool: "investors didn't care about the beat")
+- 同时宣布 $6.96B 回购 (12.4M shares retired)</p>
+<p>为什么跌 <span class="down">-7.5%</span>?
+1. Wind 是 GEV 的"毒瘤": 市场已习惯 Power (gas turbine) 和 Electrification (grid) 赚钱，但 Wind 持续亏 → 问号是何时 break-even
+2. 估值已经 rich (PE_fwd 40x for industrial) — beat 不够大就卖
+3. 回购价格在高位执行 ($560/share average) → 资本配置质疑</p>
+<p><strong>中期判断</strong>: Power segment (AI 数据中心 gas turbine) 仍是 secular winner。Gas turbine backlog sold out to 2029 = 确定性收入。Wind 是拖累但不影响核心逻辑。<span class="down">-7.5%</span> 是 de-rating opportunity if Wind eventually breaks even。</p></div><div class="tab-panel" data-tab-for="tabs1-9"><p><strong>一句话</strong>: Anthropic-AMD mega-deal 确认 AI GPU 双寡头格局 + 霍尔木兹地缘升温推油 5d <span class="up">+9%</span> — 市场在超级财报周开幕夜分化为 "AI supply 赢家" vs "AI demand 待验证者"。</p>
+<div class="kpi-grid"><div class="kpi"><div class="label">今日主线</div><div class="value">Dual narrative: AI deal + geopolitical oil</div><div class="note">两条线互不干扰</div></div><div class="kpi"><div class="label">最大赢家</div><div class="value">NVDA <span class="up"><span class="up">+3%</span></span>, AMD <span class="up"><span class="up">+1.7%</span></span>, AVGO <span class="up"><span class="up">+2.6%</span></span></div><div class="note">AI supply chain 受 Anthropic deal 催化</div></div><div class="kpi"><div class="label">最大输家</div><div class="value">GEV <span class="down"><span class="down">-7.6%</span></span>, SPCX <span class="down"><span class="down">-5%</span></span>, SKHY <span class="down"><span class="down">-3.4%</span></span></div><div class="note">earnings miss / thesis break / 收购否认</div></div><div class="kpi"><div class="label">关键决策</div><div class="value">SPCX thesis break 已触发</div><div class="note">需要你的判断</div></div><div class="kpi"><div class="label">今晚事件</div><div class="value">GOOG + TSLA earnings AMC</div><div class="note">定义明天走向</div></div></div>
+<table class="compare"><thead><tr><th>维度</th><th>AI Supply (NVDA/AMD/AVGO)</th><th>AI Demand (GOOG/META/MSFT/AMZN)</th><th>能源 (SU/CVX/CNQ)</th></tr></thead><tbody><tr><td>今日表现</td><td><span class="up"><span class="up">+1.7%</span></span> ~ <span class="up"><span class="up">+3%</span></span></td><td><span class="down"><span class="down">-0.04%</span></span> ~ <span class="down"><span class="down">-2.8%</span></span></td><td><span class="up"><span class="up">+1%</span></span> ~ <span class="up"><span class="up">+1.7%</span></span></td></tr><tr><td>5d 趋势</td><td>平/微涨</td><td><span class="down"><span class="down">-1.8%</span></span> ~ <span class="down"><span class="down">-8.1%</span></span> 显著走弱</td><td><span class="up"><span class="up">+6.3%</span></span> ~ <span class="up"><span class="up">+6.8%</span></span> 强势</td></tr><tr><td>催化剂</td><td>Anthropic deal (实锤)</td><td>今晚/下周 earnings (未验证)</td><td>Hormuz 地缘 (持续中)</td></tr><tr><td>风险</td><td>GOOG capex 过高 → overbuild叙事</td><td>AI ROI 不及预期</td><td>局势缓和 → 回吐</td></tr></tbody></table>
+<div class="scenarios"><div class="scenario"><div class="name bull">Bull (30%)</div><div class="bar-wrap"><div class="bar bull" style="width:0%">0%</div></div><div class="target">GOOG/TSLA 双 beat + AI capex ROI confirmed → mega-cap反弹 + semi继续</div></div><div class="scenario"><div class="name base">Base (50%)</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">财报 mixed, 市场消化分化, VIX stays 15-18</div></div><div class="scenario"><div class="name bear">Bear (20%)</div><div class="bar-wrap"><div class="bar bear" style="width:0%">0%</div></div><div class="target">GOOG miss + Hormuz escalation → risk-off + 10Y &gt; 4.75%</div></div></div>
+<h3>七日聚焦</h3>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>事件</th>
+<th>影响判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>今晚</td>
+<td>GOOG Q2 + TSLA Q2</td>
+<td>AI capex guide 是 single most important number</td>
+</tr>
+<tr>
+<td>7/23</td>
+<td>INTC Q2 + NOK Q2</td>
+<td>INTC foundry 若有进展 → cluster rerating</td>
+</tr>
+<tr>
+<td>7/24</td>
+<td>SK Hynix Q2</td>
+<td>HBM 占比数字 → MU scorecard read-through</td>
+</tr>
+<tr>
+<td>7/29-30</td>
+<td>MSFT/META + FOMC + AAPL/AMZN</td>
+<td>连续 48h 决定 Q3 方向</td>
+</tr>
+<tr>
+<td>7/31</td>
+<td>Samsung + CVX + PCE</td>
+<td>Memory 完整拼图 + 通胀最终读数</td>
+</tr>
+</tbody>
+</table>
+<h3>行动建议</h3>
+<div class="verdict watch">维持观望直到今晚 GOOG/TSLA earnings 落地。SPCX thesis-break 需要你的决策 — 执行卖出 or 更新 thesis。GEV <span class="down">-7.5%</span> 看起来是机会但需等 Wind segment trend clarify。能源组 hold — 地缘驱动，短期有支撑。</div></div><div class="tab-panel" data-tab-for="tabs1-10"><h3>为什么 beat + raise guidance 还跌 7.5%?</h3>
+<p><strong>Q2 2026 数据</strong>:
+- Revenue: &gt;$10.8B (beat consensus)
+- Orders: <span class="up">+88%</span> YoY — 历史新高
+- Gas turbines: <strong>sold out through 2029</strong>
+- Full-year guidance: raised (EBITDA + revenue)
+- Buyback: retired 12.4M shares for $6.96B
+- <strong>EBITDA: slightly below consensus</strong> (miss 幅度小但方向错)
+- <strong>Wind segment: 亏损加深</strong> — 这是核心问题</p>
+<h3>结构性分析</h3>
+<p>GEV 三个 segment 的故事完全不同:</p>
+<table>
+<thead>
+<tr>
+<th>Segment</th>
+<th>趋势</th>
+<th>收入贡献</th>
+<th>利润贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Power</strong> (gas turbines)</td>
+<td>强势 — sold out to 2029, AI DC demand</td>
+<td>~55%</td>
+<td>主力利润</td>
+</tr>
+<tr>
+<td><strong>Electrification</strong> (grid/transformers)</td>
+<td>增长 — backlog 创新高</td>
+<td>~25%</td>
+<td>正贡献</td>
+</tr>
+<tr>
+<td><strong>Wind</strong> (onshore + offshore)</td>
+<td>持续亏损加深</td>
+<td>~20%</td>
+<td>负贡献 (拖累 EBITDA)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>市场的矛盾</strong>: 投资者买 GEV 是为了 Power + Electrification (AI 数据中心电力需求 secular story)，但 Wind 像绑在身上的铁球 — 每次 earnings 都被它拖低整体利润率。</p>
+<h3>估值快照</h3>
+<ul>
+<li>当前 PE_fwd: 40.5x (vs 30d 前 ~44x — 已经压缩)</li>
+<li>对标: Siemens Energy 因 "gas turbine + grid" 逻辑从 $20 涨到 $70+ (3x)</li>
+<li>GEV 从去年 Q4 的 ~$350 涨到上周 $1,079 高点 = 也是 3x</li>
+<li><span class="down">-7.5%</span> 后回到 ~$997 = 仍然很贵，但 gas turbine backlog 确定性给了 premium 理由</li>
+</ul>
+<h3>判决</h3>
+<div class="verdict watch">GEV 核心逻辑 (AI DC 电力 secular demand) 未变。<span class="down">-7.5%</span> 是 Wind segment 的短期 de-rating，不是 thesis break。如果下一季 Wind losses narrow → 重大 re-rate 机会。当前 PE 40x 对 industrial 仍贵 — 等 $900-950 区间 (再跌 5-10%) 会是更好的 entry。不急。</div></div><div class="tab-panel" data-tab-for="tabs1-11"><h3>SK Hynix 否认收购 Intel 晶圆厂 — 为什么 SKHY <span class="down">-3.4%</span></h3>
+<p><strong>事件</strong>: Barron's / 多家媒体报道 "SK Hynix Denies It's Buying Intel Plant" — 此前市场传闻 SK Hynix 有意收购 Intel 的晶圆厂以扩张 HBM 先进封装产能。</p>
+<p><strong>为什么此前涨</strong>: SKHY 上周 <span class="up">+7.7%</span> (HSBC top pick 推动 + 收购传闻溢价)。市场逻辑是:
+- SK Hynix HBM 产能是瓶颈 (供不应求)
+- 收购 Intel 厂 → 快速扩产 → 更多 HBM 出货 → revenue upside</p>
+<p><strong>否认后</strong>: 上述"快速扩产"溢价被移除。SKHY 从 $171.9 (昨收) → $166.1 (<span class="down">-3.4%</span>)。</p>
+<h3>IPO 以来表现</h3>
+<p>SKHY 于 7/10 上市 (Nasdaq)，交易仅 9 个工作日:
+- IPO 后波动极大: 从 100 → 最高 115 → 最低 89 → 现在 99 (标准化)
+- 本质上: 还在 IPO 定价区间内震荡，流动性仍在建立中</p>
+<h3>明日催化: SK Hynix Q2 (7/24)</h3>
+<p>这是 SKHY 上市后的<strong>第一份财报</strong>。管理层有极强动机讲好 HBM 故事:
+- 核心数字: HBM3E / HBM4 营收占比 (&gt;50%?)
+- 对 NVDA 供货 guidance
+- 全年 HBM capex plan
+- Read-through: 直接映射到 MU Q4 FY26 scorecard (9/25)</p>
+<div class="verdict watch">SKHY <span class="down">-3.4%</span> 是收购传闻落空的合理回调。明天 Q2 earnings 是真正的定价事件 — 如果 HBM 数字炸裂，今天的跌是 buying opportunity。反之若 HBM guide disappoints，SKHY 可能回测 IPO 低点。等明天再判断。</div></div><div class="tab-panel" data-tab-for="tabs1-12"><h3>Thesis Break Analysis — $117.38 vs break $130</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">当前价</div><div class="value">$117.38</div><div class="note"><span class="down"><span class="down">-4.99%</span></span> today, <span class="down"><span class="down">-13.2%</span></span> 5d</div></div><div class="kpi"><div class="label">Thesis break</div><div class="value">$130.00</div><div class="note">已跌破 <span class="down"><span class="down">-9.7%</span></span></div></div><div class="kpi"><div class="label">距 IPO 峰值</div><div class="value">$211.39 → $117</div><div class="note">下跌 <span class="down"><span class="down">-44.4%</span></span></div></div><div class="kpi"><div class="label">SSPC (2x short)</div><div class="value">$20.05</div><div class="note"><span class="up"><span class="up">+29.1%</span></span> 5d (镜像)</div></div></div>
+<h3>下跌归因</h3>
+<p>非公司基本面事件驱动。无 Starship 事故、无 Starlink subscriber 数据恶化、无内部人减持。</p>
+<p><strong>驱动因素</strong> (按影响权重排序):
+1. <strong>AT&amp;T CEO 驳斥 Starlink 威胁</strong> ("They're coming to the game very late") → narrative shift: Starlink 的 "颠覆电信" 故事被头部运营商正面否定
+2. <strong>Charter 股价反弹</strong> (vs SPCX 负相关) → 市场共识: Starlink 对 cable/wireline 的威胁被高估
+3. <strong>AI capex 轮动</strong> → 资金从 "概念性 tech stories" (SPCX = no earnings, pure narrative) 流向 "有实际订单确认的 AI 半导体" (NVDA, AMD, MU)
+4. <strong>技术性</strong>: IPO 后 speculative money 持续出逃 + ETF 结构无法做空 → 单向下行无缓冲</p>
+<h3>原 Thesis 的关键假设 vs 当前现实</h3>
+<table>
+<thead>
+<tr>
+<th>原假设</th>
+<th>当前状态</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Starlink ARPU &gt;$50 持续</td>
+<td>未否证 (无新数据)</td>
+<td>✅ 仍有可能</td>
+</tr>
+<tr>
+<td>Starlink 颠覆 wireline</td>
+<td>AT&amp;T/Charter 公开否认</td>
+<td>⚠️ 叙事弱化</td>
+</tr>
+<tr>
+<td>Starshield 军事合同</td>
+<td>无新合同公告</td>
+<td>⚠️ 未验证</td>
+</tr>
+<tr>
+<td>SpaceX 估值 $350B+</td>
+<td>最新报道: 估值讨论中</td>
+<td>🔄 待确认</td>
+</tr>
+<tr>
+<td>Starship 进展顺利</td>
+<td>未出事故</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<h3>决策框架</h3>
+<p><strong>执行卖出 (thesis break discipline)</strong>: 原设 $130 break 理由是 "a drop of this magnitude on no broad-market move would imply Starship setback or Starlink ARPU break"。当前下跌原因<strong>不是</strong>这两个 — 而是叙事弱化 + 资金轮动。严格按 trigger 逻辑，这不完全是预设的 break scenario。</p>
+<p><strong>修订 thesis</strong>: 如果认为 Starlink 基本面未变 (只是市场叙事周期性弱化)，可以将 break 下移到 $100 (反映"更长 duration play"的 risk tolerance)。</p>
+<p><strong>我的判读</strong>: SPCX 的下跌是 speculative de-rating，不是基本面恶化。但 thesis_break 的存在就是 pre-commitment device — 设了就该执行，否则这个机制毫无意义。建议: <strong>至少减半仓 (honor the discipline)，保留剩余作 lottery ticket 等 lockup 12/9。</strong></p>
+<div class="verdict trim">已触发 thesis_break。建议执行纪律: 减仓 50%+。理由: thesis break discipline &gt; 事后合理化。保留少量作 lockup / Starship 催化剂的 optionality。</div></div><div class="tab-panel" data-tab-for="tabs1-13"><h3>Anthropic-AMD Deal: AI GPU 双寡头时代确认</h3>
+<p><strong>核心事件</strong>: "Anthropic Commits Tens of Billions to AMD Server Chips" — Anthropic 与 AMD 签署长期 MI450 GPU 采购合约，规模数十亿美元级别。</p>
+<p><strong>为什么这很重要</strong>:
+1. <strong>MI450 从 roadmap 走向 production commitment</strong>: 此前市场对 AMD GPU 的最大质疑是 "有产品但没大客户"。Anthropic 是全球 top-3 AI lab — 这是 MI450 的"NVDA moment"
+2. <strong>AMD 30d <span class="up">+13.2%</span> 已经 price in 部分</strong>: 股价从 $474 → $554，Anthropic deal 是这轮上涨的核心催化剂
+3. <strong>对 NVDA 的影响 = net positive</strong>: NVDA <span class="up">+3%</span> 今天涨的比 AMD 多 — 市场解读为 "AI GPU TAM 比预想更大，不是零和游戏"</p>
+<h3>NVDA 独立催化剂</h3>
+<ul>
+<li><strong>Grace Blackwell 在德州组装</strong>: reshoring + Made in USA narrative</li>
+<li><strong>Oklo + MSFT + NVDA: $200M 核AI initiative</strong>: 数据中心核电直接对接 NVDA 算力 — vertical integration story</li>
+<li>PE_fwd 16.6x — 在 mega-cap tech 中仍偏 "value"（AMD 41x, AVGO 20x）</li>
+</ul>
+<h3>AMD 估值讨论</h3>
+<p>AMD PE_fwd 41x vs NVDA 16.6x — 市场给 AMD 更高估值是因为:
+- MI450 是高增长弧的<strong>起点</strong>而非中段
+- Anthropic deal = revenue visibility 跳升
+- 但 8/4 Q2 earnings 必须验证: MI300/MI350 实际出货量 + guidance</p>
+<div class="callout info"><p>NVDA vs AMD 30d 走势分化明显: AMD <span class="up">+13.2%</span>, NVDA <span class="up">+2.4%</span>。AMD 在 catch up。如果 AMD 8/4 earnings beat + guide up (有 Anthropic deal 支撑的 confidence)，AMD 可能继续跑赢。但当前 41x PE 意味着 miss tolerance = 0。</p></div>
+<div class="verdict hold">NVDA: 估值合理 (16.6x PE_fwd), Blackwell ramp confirmed, hold。AMD: Anthropic deal 催化强，但 41x PE 对 8/4 earnings 有高要求 — 观望到财报后再评估加仓。</div></div></div>
+</body>
+</html>
