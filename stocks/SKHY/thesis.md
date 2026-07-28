@@ -82,3 +82,22 @@ Net debt position is manageable given the massive capex cycle. The $26.5B IPO pr
 ## Stands & Updates
 
 *(Append-only. New entries go at top.)*
+
+### 2026-07-28  ALL TIME LOW — 套牢结构极端, 无 support level
+
+**观察:** SKHY $133, 上市 18 天即创 ATL。从 IPO 首日 $168 → 高点 $194 → 今天 $133, **所有买家 100% 套牢**。过去 13 个交易日中 12 天收盘价高于今天。
+
+**结构性问题:**
+- 没有任何历史 support level — 因为从未在 $133 以下交易过, 技术面无参考
+- IPO 打新盘 ($168) 套 -21%, 首周追高盘 ($194) 套 -32% → 解套意愿极强
+- $150-170 区间是 IPO 首两周密集成交区 → 任何反弹到此区间都面临巨大卖压
+- Lockup 90 天 (vs 标配 180) → 约 10 月初到期, 届时内部人可抛 → 又一重 overhang
+
+**与 MU 对比:** MU 至少有 MA200 ($509) 作为长期 support + 历史底部参考; SKHY 完全没有历史底, 只有 fundamental floor (IPO price $140? / thesis-break $115)
+
+**今天 AMC 报 Q2:** 如果 beat → 可能 gap up 到 $145-155 → 但 $150-170 套牢区会立即施压。如果 miss → 打开向 $115 (thesis-break) 的下行空间, 因为没有任何技术支撑。
+
+**催化剂路径:**
+- 近期唯一希望: 今天 Q2 大幅 beat + HBM4 指引超强 → 尝试填补部分 gap
+- 中期: NVDA 8/26 如果强调 SK Hynix 供货 → 最有力的外部背书
+- 结构性转折: 需要 Samsung HBM4 qualification 失败 (= SK Hynix monopoly 强化) 才能 re-rate

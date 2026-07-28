@@ -67,6 +67,32 @@ Approximately $8–9B net cash; long-term debt ~$13B (manageable, funded by ~$40
 
 ## Stands & Updates
 
+### 2026-07-28  套牢结构分析 — overhead supply 将压制反弹至 9/25
+
+**观察:** MU 从 $1,255 ATH 跌至 $824 (-34%). 过去 30 天内每一天收盘价都高于今天 — **100% 全员套牢**。最密集套牢区在 $900-1000 (该区间有 14/30 天交易日)。
+
+**含义:**
+- 即使利好 (SK Hynix beat, MSFT Azure beat), 每次反弹到 $900-1000 区间都会遭遇 "回本就跑" 的解套盘卖压
+- 消化套牢盘需要: ① 时间 (2-3个月让弱手割肉) 或 ② 巨量突破 (需要极强单一催化剂)
+- **在 9/25 MU 自己的 Q4 财报之前, 没有单一催化剂能产生足够动能打穿 $900-1000 区间**
+
+**催化剂能量评估:**
+- SK Hynix Q2 (今天): 中 — read-through 但不是 MU 自己的数字
+- MSFT Azure (7/29): 中 — 间接改善 sentiment
+- NVDA Q2 (8/26): 高 — 如果强调 HBM 供不应求, 是 9/25 前最有力的催化
+- MU Q4 FY26 (9/25): 最高 — 唯一能直接证明 "PE 5x 是错误定价" 的数据
+
+**策略选项:**
+1. 持有等 9/25 (时间换空间, 接受横盘磨底)
+2. 反弹到 $870-900 减仓一部分, 低位补回 (降低成本)
+3. 转移 semi exposure 到套牢更轻的标的 (AVGO/NVDA)
+
+**更大级别 regime change 可能:**
+- NVDA 8/26 说 "HBM 供不应求到 2027" → 打破 "memory is commodity" 叙事
+- Anthropic/OpenAI 签超大 memory 供货协议 → 证明 pricing power
+- DRAM ASP 连续 2 季度涨价 → 周期投资者最看重的信号
+- Fed 降息 (9/17?) → semi multiple expansion
+
 ### 2026-06-25  Note — "next NVDA" narrative is single-print, needs Q4 confirmation
 Q3 FY26 was a 5/5 blowout (rev $41.46B vs $35.69B est, adj EPS $25.11 vs $20.49, **adj GM 85%** vs ~80% est, +346% YoY revenue, $100B in 16 long-term contracts through 2030). Stock closed +15.86% at $1,214.80; sell-side narrative is "boom-bust chip cycle is dead" + Tim Cook's "hundred-year flood" + BofA "trading under 10x earnings, Wall Street is missing it" — explicit "next NVDA / long-term AI leader" framing.
 
