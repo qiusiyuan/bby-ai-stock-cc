@@ -50,10 +50,10 @@ focus_clusters:
 
   - name: AI capex
     kind: sector
-    members: [GOOG, AMZN, MSFT, META, NVDA, TSM, AVGO, INTC]
+    members: [GOOG, AMZN, MSFT, META, NVDA, TSM, AVGO, MRVL, INTC]
     external_refs: [OpenAI, Anthropic, xAI, Reflection AI]
-    description: Hyperscaler capex 开支方 + AI 算力底层 (含 AVGO custom ASIC 龙头 + INTC turnaround / foundry / Xeon-NVDA DGX 路径)；判断 "AI 投入产出" 叙事走向
-    watch_items: [hyperscaler earnings capex guide, AI revenue ramp signals, talent moves (e.g. Jumper → Anthropic), VC funding rounds, OpenAI/Anthropic ARR disclosures, AVGO custom-silicon (TPU/Trainium/MTIA) wins, INTC 14A process milestones, INTC foundry customer wins (Apple return?), INTC Xeon design wins, US government equity stake actions]
+    description: Hyperscaler capex 开支方 + AI 算力底层 (含 AVGO custom ASIC 龙头 + MRVL AWS Trainium互联 + INTC turnaround / foundry / Xeon-NVDA DGX 路径)；判断 "AI 投入产出" 叙事走向
+    watch_items: [hyperscaler earnings capex guide, AI revenue ramp signals, talent moves (e.g. Jumper → Anthropic), VC funding rounds, OpenAI/Anthropic ARR disclosures, AVGO custom-silicon (TPU/Trainium/MTIA) wins, MRVL Trainium 2/3 SerDes ramp, INTC 14A process milestones, INTC foundry customer wins (Apple return?), INTC Xeon design wins, US government equity stake actions]
 
   - name: 能源(油气)
     kind: sector
