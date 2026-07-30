@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-07-30</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-07-30 12:27</div>
+<h1 id="daily-report-2026-07-30">Daily Report 2026-07-30</h1>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }#tabs1-8:checked ~ [data-tab-for="tabs1-8"] { display: block; }#tabs1-9:checked ~ [data-tab-for="tabs1-9"] { display: block; }#tabs1-10:checked ~ [data-tab-for="tabs1-10"] { display: block; }#tabs1-11:checked ~ [data-tab-for="tabs1-11"] { display: block; }#tabs1-12:checked ~ [data-tab-for="tabs1-12"] { display: block; }#tabs1-13:checked ~ [data-tab-for="tabs1-13"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><input class="tab-input" type="radio" name="tabs1" id="tabs1-8"><input class="tab-input" type="radio" name="tabs1" id="tabs1-9"><input class="tab-input" type="radio" name="tabs1" id="tabs1-10"><input class="tab-input" type="radio" name="tabs1" id="tabs1-11"><input class="tab-input" type="radio" name="tabs1" id="tabs1-12"><input class="tab-input" type="radio" name="tabs1" id="tabs1-13"><div class="tabs"><label class="tab-label" for="tabs1-0">Pulse &amp; Macro</label><label class="tab-label" for="tabs1-1">Watchlist &amp; Movers</label><label class="tab-label" for="tabs1-2">Timeline 30d</label><label class="tab-label" for="tabs1-3">Focus: TSLA</label><label class="tab-label" for="tabs1-4">Focus: SpaceX</label><label class="tab-label" for="tabs1-5">Focus: DRAM/HBM</label><label class="tab-label" for="tabs1-6">Focus: AI capex</label><label class="tab-label" for="tabs1-7">Focus: 能源(油气)</label><label class="tab-label" for="tabs1-8">Focus: 电力/Grid</label><label class="tab-label" for="tabs1-9">Deep Dive: SNDK <span class="up">+24.2%</span>（闪迪为什么大涨）</label><label class="tab-label" for="tabs1-10">Deep Dive: AMZN财报 → Semi影响</label><label class="tab-label" for="tabs1-11">Deep Dive: MSFT <span class="up">+17.2%</span>（财报反应深度解读）</label><label class="tab-label" for="tabs1-12">Deep Dive: INTC <span class="up">+12.5%</span>（跟反弹还是独立逻辑）</label><label class="tab-label" for="tabs1-13">Brief</label></div><div class="tab-panel" data-tab-for="tabs1-0"><p>今天是超级事件叠加日：<strong>FOMC决议 + AMZN财报 + AAPL财报（AMC）+ MSFT昨晚炸裂带动memory全面反弹</strong>。</p>
+<hr>
+<div class="kpi-grid"><div class="kpi"><div class="label">SPY</div><div class="value">739.72</div><div class="note">1d <span class="up"><span class="up">+1.41%</span></span>  5d <span class="up"><span class="up">+0.21%</span></span> — 稳步创新高轨道</div></div><div class="kpi"><div class="label">QQQ</div><div class="value">681.98</div><div class="note">1d <span class="up"><span class="up">+3.06%</span></span>  5d <span class="down"><span class="down">-1.44%</span></span> — tech/memory带涨</div></div><div class="kpi"><div class="label">DJI</div><div class="value">520.76</div><div class="note">1d <span class="up"><span class="up">+1.04%</span></span>  5d <span class="up"><span class="up">+0.87%</span></span> — 稳</div></div><div class="kpi"><div class="label">VIX</div><div class="value">17.90</div><div class="note">1d <span class="down"><span class="down">-13.36%</span></span> — 恐慌指数大幅回落，市场重新入场</div></div><div class="kpi"><div class="label">10Y UST</div><div class="value">4.66%</div><div class="note">1d <span class="up"><span class="up">+0.89%</span></span> — FOMC维持不变，市场接受&quot;更长时间&quot;</div></div></div>
+<div class="kpi-grid"><div class="kpi"><div class="label">WTI (CL=F)</div><div class="value">$83.83</div><div class="note">1d <span class="down"><span class="down">-0.75%</span></span>  5d <span class="down"><span class="down">-9.07%</span></span> — 油价疲软，Iran谈判进程缓解供给忧虑</div></div><div class="kpi"><div class="label">Gold (GC=F)</div><div class="value">$4,164</div><div class="note">1d <span class="up"><span class="up">+3.20%</span></span>  5d <span class="up"><span class="up">+2.90%</span></span> — 避险需求 + 美元走弱双重支撑</div></div><div class="kpi"><div class="label">Silver (SI=F)</div><div class="value">$58.97</div><div class="note">1d <span class="up"><span class="up">+1.90%</span></span>  5d <span class="up"><span class="up">+2.02%</span></span> — 跟金走，工业+避险两端受益</div></div><div class="kpi"><div class="label">BTC</div><div class="value">$64,852</div><div class="note">1d <span class="up"><span class="up">+1.48%</span></span>  5d <span class="up"><span class="up">+0.84%</span></span> — 跟大盘情绪，无独立催化</div></div></div>
+<div class="kpi-grid"><div class="kpi"><div class="label">DXY</div><div class="value">100.05</div><div class="note">1d <span class="down"><span class="down">-0.74%</span></span> — 美元走弱（FOMC维持→短期降息预期微升）</div></div><div class="kpi"><div class="label">USD/CAD</div><div class="value">1.4002</div><div class="note">1d <span class="down"><span class="down">-0.74%</span></span> — 加元跟涨，换汇暂不急（CAD仍相对弱）</div></div><div class="kpi"><div class="label">USD/CNY</div><div class="value">6.741</div><div class="note">1d <span class="down"><span class="down">-0.44%</span></span> — 人民币小幅走强</div></div></div>
+<hr>
+<h3>🎯 重大事件：FOMC 7月决议</h3>
+<p><strong>是什么：</strong> Federal Open Market Committee（联邦公开市场委员会）每年8次议息会议，决定联邦基金利率目标区间。7月30日是2026年第四次会议。</p>
+<p><strong>结果：</strong> 维持利率不变（5.25-5.50%区间），符合市场100%预期。</p>
+<p><strong>为什么今天重要：</strong>
+- 上次6月会议暗示"年内1次降息"，今天的发言稿措辞是否更鸽？是今日焦点
+- 背景：通胀从9%高峰已降至~3.2%，但劳动力市场仍韧性，Fed没有紧迫性降息
+- 市场目前定价：2026年内降息1-2次，首次降息最早9月</p>
+<p><strong>传导路径：</strong> 维持不变 → 实际上比预期微鸽（暗示9月降息窗口打开） → 美元轻微下行 → 成长股/高倍率股受益 → memory stock叙事中"降息周期启动 → DRAM超级周期加速"概率微升</p>
+<p><strong>对持仓影响：</strong>
+- TSLA / NVDA / SPCX：高倍率股，降息方向长期利好
+- MU / SKHY：DRAM周期 + 降息组合 = 双重顺风
+- SU / CVX：利率对能源股影响小，主要看WTI</p>
+<hr>
+<h3>重大事件：MSFT Q4 FY26财报（昨晚，今天效应持续）</h3>
+<p><strong>昨晚收盘后发布，今日股价 <span class="up">+17.2%</span>（20年来最大单日涨幅之一）</strong></p>
+<p>核心数字：
+- Azure云增速 <strong><span class="up">+36%</span> YoY</strong>（vs 预期31%，超出5个百分点——巨大beat）
+- AI服务收入翻倍，贡献约9个百分点的Azure增速
+- Copilot商业用户 <span class="up">+200%</span>，M365年化收入超10B
+- 毛利率维持~70%，说明AI不是以利润换增长</p>
+<p><strong>市场的解读（为什么股价炸裂）：</strong></p>
+<p>过去一周市场是"AI capex恐惧"逻辑——GOOG/TSLA财报显示capex暴增但ROI时间线不清晰，导致semi/AI股连跌4天。MSFT的Azure+36% <strong>直接砸碎了这个叙事</strong>：</p>
+<blockquote>
+<p><em>capex不是黑洞，回报已经来了。</em></p>
+</blockquote>
+<p>这是AI投资周期里最关键的"盈利兑现信号"。市场接下来的问题变成："AMZN AWS是否复制MSFT的故事？"</p>
+<hr>
+<h3>政策/地缘快扫</h3>
+<ul>
+<li>🟡 <strong>美伊谈判</strong>：谈判继续，WTI继续下行，对SU/CVX轻微负面但不急迫</li>
+<li>🟡 <strong>US-China</strong>：无新关税动作，NVDA/TSM export control 维持现状</li>
+<li>🟢 <strong>FCC / SPCX</strong>：Starlink无新监管动作</li>
+<li>⚪ <strong>NATO / Ukraine</strong>：无重大变化</li>
+</ul>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-1"><h3>🔴 大异动（|1d| ≥ 10%）</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">SNDK</div><div class="value">$1,262</div><div class="note">1d <span class="up"><span class="up">+24.2%</span></span>  5d <span class="down"><span class="down">-21.6%</span></span>  30d <span class="down"><span class="down">-36.6%</span></span> — 🚨 S&amp;P500今日涨幅第一</div></div><div class="kpi"><div class="label">MU</div><div class="value">$873</div><div class="note">1d <span class="up"><span class="up">+18.2%</span></span>  5d <span class="down"><span class="down">-11.8%</span></span>  52w: $103-$1255 — 🚨 memory全面反弹</div></div><div class="kpi"><div class="label">SKHY</div><div class="value">$148</div><div class="note">1d <span class="up"><span class="up">+17.1%</span></span>  5d <span class="down"><span class="down">-12.4%</span></span> — 🚨 SK Hynix ADS跟涨</div></div><div class="kpi"><div class="label">MSFT</div><div class="value">$458</div><div class="note">1d <span class="up"><span class="up">+17.2%</span></span>  5d <span class="up"><span class="up">+20.0%</span></span>  vol 1.83x — 🚨 Azure+36% 20年最大涨幅</div></div><div class="kpi"><div class="label">DRAM (ETF)</div><div class="value">$51.72</div><div class="note">1d <span class="up"><span class="up">+15.3%</span></span>  5d <span class="down"><span class="down">-11.3%</span></span>  vol 1.27x — 🚨 ETF整体涨</div></div><div class="kpi"><div class="label">INTC</div><div class="value">$92</div><div class="note">1d <span class="up"><span class="up">+12.5%</span></span>  5d <span class="down"><span class="down">-8.1%</span></span> — 🚨 semi反弹跟涨 + 独立催化？</div></div></div>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">-138.36</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">525.78</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">1,190</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">1,854</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">2,518</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-17</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-10</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-30</text><path d="M56.0,63.0 L78.3,48.8 L100.7,43.3 L123.0,62.7 L145.4,65.7 L167.7,39.4 L190.1,54.7 L212.4,57.2 L234.8,43.3 L257.1,58.4 L279.4,76.3 L301.8,76.4 L324.1,84.3 L346.5,77.4 L368.8,69.2 L391.2,65.6 L413.5,80.8 L435.9,75.5 L458.2,84.4 L480.6,97.2 L502.9,100.7 L525.2,98.4 L547.6,86.0 L569.9,85.4 L592.3,84.7 L614.6,95.6 L637.0,105.5 L659.3,116.9 L681.7,121.9 L704.0,106.7" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="106.7" r="3" fill="#58a6ff"/><path d="M56.0,120.2 L78.3,114.5 L100.7,109.7 L123.0,119.6 L145.4,119.8 L167.7,109.5 L190.1,114.6 L212.4,113.8 L234.8,113.2 L257.1,120.9 L279.4,124.4 L301.8,123.8 L324.1,126.7 L346.5,126.1 L368.8,123.4 L391.2,124.2 L413.5,126.8 L435.9,123.9 L458.2,128.8 L480.6,132.0 L502.9,132.3 L525.2,131.3 L547.6,124.7 L569.9,125.4 L592.3,123.5 L614.6,127.8 L637.0,129.1 L659.3,134.1 L681.7,139.2 L704.0,131.0" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="131.0" r="3" fill="#3fb950"/><path d="M56.0,174.9 L78.3,175.8 L100.7,173.2 L123.0,174.3 L145.4,175.8 L167.7,175.7 L190.1,175.9 L212.4,174.6 L234.8,175.0 L257.1,174.8 L279.4,175.7 L301.8,176.4 L324.1,177.2 L346.5,177.4 L368.8,176.1" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="368.8" cy="176.1" r="3" fill="#d29922"/><path d="M56.0,181.0 L78.3,180.6 L100.7,180.3 L123.0,181.0 L145.4,181.0 L167.7,180.5 L190.1,180.9 L212.4,180.9 L234.8,180.7 L257.1,181.2 L279.4,181.6 L301.8,181.3 L324.1,181.6 L346.5,181.5 L368.8,181.3 L391.2,181.4 L413.5,181.8 L435.9,181.5 L458.2,181.8 L480.6,182.1 L502.9,182.1 L525.2,182.0 L547.6,181.7 L569.9,181.7 L592.3,181.7 L614.6,182.0 L637.0,182.1 L659.3,182.4 L681.7,182.6 L704.0,182.1" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="182.1" r="3" fill="#f85149"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">Memory 30d</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">SNDK</span> <span class="legend-last">1,258</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-35.76%</span></span><span class="legend-note">· 1d <span class="up">+23.86%</span> · 30d <span class="down">-36.82%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">MU</span> <span class="legend-last">870.61</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-16.53%</span></span><span class="legend-note">· 1d <span class="up">+17.81%</span> · 30d <span class="down">-14.7%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">SKHY</span> <span class="legend-last">148.16</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-11.82%</span></span><span class="legend-note">· 1d <span class="up">+16.85%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#f85149"></span><span class="legend-name">DRAM</span> <span class="legend-last">51.56</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-26.28%</span></span><span class="legend-note">· 1d <span class="up">+14.97%</span> · 30d <span class="down">-24.3%</span></span></span></div></div>
+<h3>⚡ 中等异动（|1d| 3-10%）</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">GEV</div><div class="value">$974</div><div class="note">1d <span class="up"><span class="up">+8.2%</span></span>  5d <span class="down"><span class="down">-5.5%</span></span> — 电力/AI capex反弹 + Q2财报发酵</div></div><div class="kpi"><div class="label">TSM</div><div class="value">$403</div><div class="note">1d <span class="up"><span class="up">+7.6%</span></span>  5d <span class="down"><span class="down">-3.0%</span></span> — semi反弹，MSFT Azure beat直接利好代工需求</div></div><div class="kpi"><div class="label">AVGO</div><div class="value">$386</div><div class="note">1d <span class="up"><span class="up">+4.1%</span></span>  5d <span class="down"><span class="down">-1.8%</span></span> — custom ASIC叙事跟反弹</div></div><div class="kpi"><div class="label">AMZN</div><div class="value">$238</div><div class="note">1d <span class="up"><span class="up">+4.9%</span></span>  5d <span class="up"><span class="up">+1.8%</span></span> — 财报AMC今晚，预期AWS重复MSFT故事</div></div><div class="kpi"><div class="label">TSLA</div><div class="value">$308</div><div class="note">1d <span class="up"><span class="up">+3.2%</span></span>  5d <span class="down"><span class="down">-3.7%</span></span> — Robotaxi叙事轻度回暖</div></div><div class="kpi"><div class="label">META</div><div class="value">$535</div><div class="note">1d <span class="down"><span class="down">-8.7%</span></span>  5d <span class="down"><span class="down">-11.8%</span></span>  vol 1.50x — capex指引高于预期，市场不买单</div></div></div>
+<h3>📊 常规持仓</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">NVDA</div><div class="value">$193</div><div class="note">1d <span class="up"><span class="up">+1.8%</span></span>  5d <span class="down"><span class="down">-7.4%</span></span> — 跟反弹但幅度小，市场在等8/26财报</div></div><div class="kpi"><div class="label">GOOG</div><div class="value">$333</div><div class="note">1d <span class="down"><span class="down">-0.9%</span></span>  5d <span class="up"><span class="up">+4.5%</span></span> — 昨天财报后高位震荡</div></div><div class="kpi"><div class="label">SPCX</div><div class="value">$113</div><div class="note">1d <span class="up"><span class="up">+0.4%</span></span>  5d <span class="down"><span class="down">-4.4%</span></span> — 锁仓期压制，12/9到期</div></div><div class="kpi"><div class="label">SU</div><div class="value">$66</div><div class="note">1d <span class="up"><span class="up">+0.8%</span></span>  5d <span class="down"><span class="down">-0.1%</span></span> — 油价弱，SU防守型表现稳定</div></div><div class="kpi"><div class="label">CVX</div><div class="value">$191</div><div class="note">1d <span class="down"><span class="down">-0.4%</span></span>  5d <span class="down"><span class="down">-1.7%</span></span> — 同上</div></div><div class="kpi"><div class="label">CNQ</div><div class="value">$47</div><div class="note">1d <span class="up"><span class="up">+0.6%</span></span>  5d <span class="down"><span class="down">-0.6%</span></span> — 平静</div></div></div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-2"><div class="timeline"><div class="tl-item"><span class="when">2026-07-30 今天</span> — <span class="what">🎯 FOMC决议（维持利率不变，符合预期） + AMZN Q2财报AMC + AAPL Q3财报AMC</span></div><div class="tl-item"><span class="when">2026-07-31 明天</span> — <span class="what">Samsung Q2最终财报（DS内存margin，HBM yield进展） + PCE通胀数据 + CVX财报</span></div><div class="tl-item"><span class="when">2026-08-01</span> — <span class="what">NFP 7月就业数据（Fed决策下一关键点）</span></div><div class="tl-item"><span class="when">2026-08-04</span> — <span class="what">AMD Q2财报（MI300/MI350 ramp速度） + SU Q2财报</span></div><div class="tl-item"><span class="when">2026-08-06</span> — <span class="what">CNQ Q2财报</span></div><div class="tl-item"><span class="when">2026-08-12</span> — <span class="what">CPI 7月</span></div><div class="tl-item"><span class="when">2026-08-26</span> — <span class="what">🎯 NVDA Q2 FY2027财报（Blackwell shipments — AI capex完整链条最终裁判）</span></div><div class="tl-item"><span class="when">2026-08-26</span> — <span class="what">SNOW Q2财报</span></div><div class="tl-item"><span class="when">2026-08-27</span> — <span class="what">MRVL Q2财报（AWS Trainium ramp）</span></div><div class="tl-item"><span class="when">2026-09-03</span> — <span class="what">AVGO Q3财报</span></div><div class="tl-item"><span class="when">2026-09-17</span> — <span class="what">FOMC决议（首次降息？）</span></div><div class="tl-item"><span class="when">2026-09-25</span> — <span class="what">🎯 MU Q4 FY26财报 — scorecard「next NVDA」开始计分</span></div><div class="tl-item"><span class="when">2026-12-09</span> — <span class="what">SPCX 180天锁仓到期（重大解禁风险）</span></div></div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-3"><div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">87.53</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">178.23</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">268.92</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">359.62</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">450.32</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-17</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-10</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-30</text><path d="M56.0,52.7 L78.3,50.8 L100.7,48.7 L123.0,59.4 L145.4,62.2 L167.7,62.4 L190.1,60.3 L212.4,45.6 L234.8,41.6 L257.1,39.4 L279.4,54.0 L301.8,42.0 L324.1,49.7 L346.5,53.7 L368.8,48.0 L391.2,47.5 L413.5,53.4 L435.9,52.8 L458.2,53.6 L480.6,55.1 L502.9,59.8 L525.2,64.9 L547.6,60.7 L569.9,62.9 L592.3,87.8 L614.6,90.8 L637.0,92.6 L659.3,93.4 L681.7,97.5 L704.0,93.3" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="93.3" r="3" fill="#58a6ff"/><path d="M56.0,146.3 L78.3,149.4 L100.7,163.3 L123.0,162.6 L145.4,163.3 L167.7,164.0 L190.1,163.9 L212.4,158.9 L234.8,155.9 L257.1,162.0 L279.4,159.9 L301.8,160.6 L324.1,165.7 L346.5,166.2 L368.8,164.4 L391.2,167.6 L413.5,170.4 L435.9,171.8 L458.2,172.2 L480.6,174.1 L502.9,177.3 L525.2,179.2 L547.6,177.5 L569.9,181.3 L592.3,179.9 L614.6,181.4 L637.0,182.1 L659.3,180.8 L681.7,182.6 L704.0,182.4" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="182.4" r="3" fill="#3fb950"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">TSLA/SpaceX 30d</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">TSLA</span> <span class="legend-last">307.55</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-22.41%</span></span><span class="legend-note">· 1d <span class="up">+3.1%</span> · 30d <span class="down">-24.0%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">SPCX</span> <span class="legend-last">112.81</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-41.19%</span></span><span class="legend-note">· 1d <span class="up">+0.23%</span> · 30d <span class="down">-46.63%</span></span></span></div></div>
+<p><strong>今日状态：</strong> TSLA <span class="up">+3.2%</span>，跟反弹但幅度弱于semi/memory。SPCX几乎没动（<span class="up">+0.4%</span>）。</p>
+<p><strong>TSLA：</strong> 30天跌24%，目前在TSLA-3天以来的底部区域反弹。今天没有独立催化，纯跟市场情绪。核心问题仍是：
+- Robotaxi 全面商业化时间线不明
+- Q2财报已过（EPS miss + capex 3x引发14%暴跌），下个催化点在Q3 10月</p>
+<p><strong>SPCX：</strong> 5天 <span class="down">-4.4%</span>，30天 <span class="down">-46.6%</span>。Morgan Stanley本周警告SpaceX"接近其最困难阶段"——市场对Starship商业化节奏 + 12/9锁仓解禁双重顾虑。无买入逻辑，维持观察。</p>
+<div class="verdict watch">TSLA：30天底部反弹，等Robotaxi具体进展再动
+SPCX：锁仓压制+基本面不明，中性观察</div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-4"><p><strong>SPCX今天 <span class="up">+0.4%</span>，SSPC（2x空头） <span class="down">-0.7%</span></strong> — 几乎没有方向。</p>
+<p>news flash："Morgan Stanley warns SpaceX approaching its most difficult phase" — 分析师认为Starlink增长速度正在见顶，Starship商业化的巨额投入还没有回报时间线。</p>
+<p><strong>12/9锁仓到期</strong>仍然是最大结构性风险：IPO投资者（特别是早期机构）在12月9日获得出售窗口，届时可能有系统性抛压。距今还有132天。</p>
+<p><strong>ARK、Baron持仓SPCX后继续hold</strong> — 见今天TSLA新闻中提到的报道。长期持有者不认为近期下跌改变基本面。</p>
+<div class="verdict watch">SPCX：12/9锁仓是唯一确定性事件，其他观望</div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-5"><div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">-138.36</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">525.78</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">1,190</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">1,854</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">2,518</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-17</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-10</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-30</text><path d="M56.0,63.0 L78.3,48.8 L100.7,43.3 L123.0,62.7 L145.4,65.7 L167.7,39.4 L190.1,54.7 L212.4,57.2 L234.8,43.3 L257.1,58.4 L279.4,76.3 L301.8,76.4 L324.1,84.3 L346.5,77.4 L368.8,69.2 L391.2,65.6 L413.5,80.8 L435.9,75.5 L458.2,84.4 L480.6,97.2 L502.9,100.7 L525.2,98.4 L547.6,86.0 L569.9,85.4 L592.3,84.7 L614.6,95.6 L637.0,105.5 L659.3,116.9 L681.7,121.9 L704.0,106.7" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="106.7" r="3" fill="#58a6ff"/><path d="M56.0,120.2 L78.3,114.5 L100.7,109.7 L123.0,119.6 L145.4,119.8 L167.7,109.5 L190.1,114.6 L212.4,113.8 L234.8,113.2 L257.1,120.9 L279.4,124.4 L301.8,123.8 L324.1,126.7 L346.5,126.1 L368.8,123.4 L391.2,124.2 L413.5,126.8 L435.9,123.9 L458.2,128.8 L480.6,132.0 L502.9,132.3 L525.2,131.3 L547.6,124.7 L569.9,125.4 L592.3,123.5 L614.6,127.8 L637.0,129.1 L659.3,134.1 L681.7,139.2 L704.0,131.0" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="131.0" r="3" fill="#3fb950"/><path d="M56.0,174.9 L78.3,175.8 L100.7,173.2 L123.0,174.3 L145.4,175.8 L167.7,175.7 L190.1,175.9 L212.4,174.6 L234.8,175.0 L257.1,174.8 L279.4,175.7 L301.8,176.4 L324.1,177.2 L346.5,177.4 L368.8,176.1" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="368.8" cy="176.1" r="3" fill="#d29922"/><path d="M56.0,181.0 L78.3,180.6 L100.7,180.3 L123.0,181.0 L145.4,181.0 L167.7,180.5 L190.1,180.9 L212.4,180.9 L234.8,180.7 L257.1,181.2 L279.4,181.6 L301.8,181.3 L324.1,181.6 L346.5,181.5 L368.8,181.3 L391.2,181.4 L413.5,181.8 L435.9,181.5 L458.2,181.8 L480.6,182.1 L502.9,182.1 L525.2,182.0 L547.6,181.7 L569.9,181.7 L592.3,181.7 L614.6,182.0 L637.0,182.1 L659.3,182.4 L681.7,182.6 L704.0,182.1" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="182.1" r="3" fill="#f85149"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">Memory 30d (same as above, cluster tab)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">SNDK</span> <span class="legend-last">1,258</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-35.76%</span></span><span class="legend-note">· 1d <span class="up">+23.86%</span> · 30d <span class="down">-36.82%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">MU</span> <span class="legend-last">870.61</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-16.53%</span></span><span class="legend-note">· 1d <span class="up">+17.81%</span> · 30d <span class="down">-14.7%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">SKHY</span> <span class="legend-last">148.16</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-11.82%</span></span><span class="legend-note">· 1d <span class="up">+16.85%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#f85149"></span><span class="legend-name">DRAM</span> <span class="legend-last">51.56</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-26.28%</span></span><span class="legend-note">· 1d <span class="up">+14.97%</span> · 30d <span class="down">-24.3%</span></span></span></div></div>
+<p><strong>今日主题：MSFT Azure超预期 → memory整个板块反弹</strong></p>
+<p><strong>反弹逻辑链：</strong>
+1. MSFT Azure <span class="up">+36%</span> → AI workload需求真实且加速 → 数据中心扩张持续
+2. 数据中心扩张 → HBM/DRAM需求维持强劲
+3. "AI capex恐惧"叙事（上周4天杀跌的主因）被MSFT数字证伪
+4. SNDK最先受NAND定价预期修复，今天涨最多</p>
+<p><strong>SNDK <span class="up">+24%</span>的具体原因</strong>（深度分析见后文 Deep Dive 栏目）</p>
+<p><strong>MU <span class="up">+18%</span>的背景：</strong>
+- MU上周5天跌了12%（"Semi屠杀5天"），今天强力V形反弹
+- 30天视角仍然跌14.7%，结构性高点$1255 vs 今天$873
+- 关键问题：<strong>这次反弹是真正的趋势反转，还是超卖反弹？</strong></p>
+<p><strong>SKHY：</strong> IPO后高点$194 → 今天$148，还在水下30%（vs IPO价格区间）。SK Hynix Q2财报已出（7/28），HBM3E/HBM4供货NVDA的故事确认，但市场还没完全买单IPO价格。</p>
+<p><strong>明天催化：Samsung Q2最终财报（DS内存margin）</strong> → 若Samsung HBM yield确认改善，明天memory可能继续。若Samsung DS margin低于预期 → 可能再次回调。</p>
+<div class="callout info"><p>SK Hynix Q2财报（7/28）已确认：HBM营收占比提升，管理层给出强劲Q3指引。read-through到MU 9/25财报：若HBM需求真实，MU应重复类似故事。</p></div>
+<div class="verdict hold">MU：持有，等AMZN财报（今晚）和Samsung财报（明天）确认反弹逻辑。目标$900-950区域。</div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-6"><div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">190.28</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">322.13</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">453.98</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">585.83</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">717.68</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-17</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-10</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-30</text><path d="M56.0,134.6 L78.3,134.5 L100.7,138.3 L123.0,136.2 L145.4,138.9 L167.7,142.8 L190.1,136.5 L212.4,137.9 L234.8,136.5 L257.1,132.9 L279.4,131.0 L301.8,132.2 L324.1,131.5 L346.5,133.2 L368.8,132.9 L391.2,132.7 L413.5,130.8 L435.9,132.7 L458.2,129.4 L480.6,127.6 L502.9,129.9 L525.2,127.3 L547.6,128.7 L569.9,131.0 L592.3,133.8 L614.6,133.8 L637.0,131.4 L659.3,130.1 L681.7,131.0 L704.0,110.1" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="110.1" r="3" fill="#58a6ff"/><path d="M56.0,75.2 L78.3,72.2 L100.7,76.4 L123.0,76.9 L145.4,78.4 L167.7,83.0 L190.1,80.7 L212.4,76.8 L234.8,76.6 L257.1,61.0 L279.4,70.4 L301.8,64.9 L324.1,60.1 L346.5,64.1 L368.8,55.1 L391.2,43.3 L413.5,47.2 L435.9,45.8 L458.2,39.4 L480.6,44.7 L502.9,50.6 L525.2,50.6 L547.6,51.3 L569.9,56.5 L592.3,63.1 L614.6,66.6 L637.0,67.0 L659.3,67.1 L681.7,69.6 L704.0,86.1" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="86.1" r="3" fill="#3fb950"/><path d="M56.0,139.9 L78.3,138.2 L100.7,144.1 L123.0,145.0 L145.4,145.3 L167.7,146.2 L190.1,148.5 L212.4,143.3 L234.8,142.7 L257.1,141.2 L279.4,141.8 L301.8,139.0 L324.1,139.4 L346.5,141.0 L368.8,141.8 L391.2,142.1 L413.5,143.5 L435.9,141.4 L458.2,137.4 L480.6,142.5 L502.9,144.9 L525.2,143.3 L547.6,144.9 L569.9,146.3 L592.3,153.7 L614.6,153.5 L637.0,151.1 L659.3,149.2 L681.7,148.2 L704.0,149.3" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="149.3" r="3" fill="#d29922"/><path d="M56.0,179.1 L78.3,177.0 L100.7,180.6 L123.0,180.2 L145.4,180.2 L167.7,182.4 L190.1,180.7 L212.4,178.3 L234.8,178.9 L257.1,177.8 L279.4,177.5 L301.8,177.0 L324.1,176.5 L346.5,177.2 L368.8,176.1 L391.2,176.7 L413.5,176.0 L435.9,176.0 L458.2,173.6 L480.6,175.2 L502.9,176.1 L525.2,175.2 L547.6,176.0 L569.9,176.8 L592.3,180.3 L614.6,180.8 L637.0,181.1 L659.3,181.2 L681.7,182.6 L704.0,179.1" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="179.1" r="3" fill="#f85149"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">AI Capex Hyperscalers 30d</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">MSFT</span> <span class="legend-last">456.84</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+20.57%</span></span><span class="legend-note">· 1d <span class="up">+16.98%</span> · 30d <span class="up">+16.0%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">META</span> <span class="legend-last">533.12</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-6.07%</span></span><span class="legend-note">· 1d <span class="down">-8.96%</span> · 30d <span class="down">-11.18%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">GOOG</span> <span class="legend-last">332.41</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-8.20%</span></span><span class="legend-note">· 1d <span class="down">-0.99%</span> · 30d <span class="down">-10.42%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#f85149"></span><span class="legend-name">AMZN</span> <span class="legend-last">237.53</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+0.01%</span></span><span class="legend-note">· 1d <span class="up">+4.8%</span> · 30d <span class="down">-3.44%</span></span></span></div></div>
+<p><strong>今日关键叙事转折：MSFT改变了整个AI capex的框架</strong></p>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th>财报结果</th>
+<th>AI capex ROI信号</th>
+<th>股价反应</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GOOG</td>
+<td>7/23</td>
+<td>Cloud <span class="up">+28%</span>，capex $69B恐惧</td>
+<td><span class="down">-6%</span> 当天</td>
+</tr>
+<tr>
+<td>TSLA</td>
+<td>7/22</td>
+<td>capex 3x，但无直接AI收入</td>
+<td><span class="down">-14%</span></td>
+</tr>
+<tr>
+<td>META</td>
+<td>7/29</td>
+<td>capex $42B，消费者AI still未变现</td>
+<td><span class="down">-8.7%</span>今天</td>
+</tr>
+<tr>
+<td><strong>MSFT</strong></td>
+<td><strong>7/29</strong></td>
+<td><strong>Azure <span class="up">+36%</span>，AI contrib +9ppt</strong></td>
+<td><strong><span class="up">+17.2%</span> 今天</strong></td>
+</tr>
+</tbody>
+</table>
+<p>MSFT是唯一一个<strong>把capex和revenue直接连起来</strong>的公司——AI投入已经在Azure增速中反映了。</p>
+<p><strong>AMZN是今晚的关键</strong>（见Deep Dive栏目）：如果AWS也能给出类似的AI增速加速，整个AI capex叙事从"恐惧"转向"盈利兑现"确认完成。</p>
+<p><strong>META <span class="down">-8.7%</span>的信号：</strong>
+市场区分了两种capex——<strong>基础设施投入（Azure/AWS型）有直接变现路径</strong> vs <strong>消费者AI（Llama/Meta AI型）变现时间线长</strong>。META财报显示capex指引上调，但AI消费者产品的营收贡献仍在"投资期"，市场不买单。这是风格区分，不是AI整体崩溃。</p>
+<p><strong>INTC今天+12.5%：</strong> 主要是semi反弹跟涨。独立催化分析见Deep Dive。</p>
+<div class="verdict hold">NVDA：等8/26财报。MSFT的Azure数据是利好read-through（Blackwell demand确认）。目标$200+区间。
+AVGO：custom ASIC叙事完整，MSFT+Azure beat是顺风。
+TSM：CoWoS需求不减，MSFT Azure beat确认AI workload持续。</div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-7"><div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">-36.13</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">289.04</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">614.21</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">939.39</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">1,265</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-17</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-10</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-30</text><path d="M56.0,55.5 L78.3,47.8 L100.7,45.5 L123.0,57.3 L145.4,54.4 L167.7,50.9 L190.1,56.0 L212.4,48.7 L234.8,39.4 L257.1,44.6 L279.4,47.3 L301.8,42.4 L324.1,51.9 L346.5,52.7 L368.8,52.2 L391.2,50.1 L413.5,56.3 L435.9,53.3 L458.2,54.7 L480.6,57.1 L502.9,54.4 L525.2,51.7 L547.6,51.7 L569.9,63.7 L592.3,57.8 L614.6,59.9 L637.0,62.2 L659.3,69.0 L681.7,74.5 L704.0,65.3" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="65.3" r="3" fill="#58a6ff"/><path d="M56.0,182.2 L78.3,182.3 L100.7,182.2 L123.0,182.2 L145.4,182.4 L167.7,182.5 L190.1,182.5 L212.4,182.5 L234.8,182.5 L257.1,182.6 L279.4,182.4 L301.8,182.4 L324.1,182.2 L346.5,181.9 L368.8,181.9 L391.2,181.8 L413.5,181.6 L435.9,181.6 L458.2,181.6 L480.6,181.6 L502.9,181.4 L525.2,181.4 L547.6,181.3 L569.9,181.1 L592.3,180.9 L614.6,181.0 L637.0,181.2 L659.3,181.2 L681.7,181.0 L704.0,180.9" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="180.9" r="3" fill="#3fb950"/><path d="M56.0,166.7 L78.3,167.2 L100.7,167.0 L123.0,166.9 L145.4,167.5 L167.7,167.4 L190.1,167.6 L212.4,167.9 L234.8,168.2 L257.1,168.2 L279.4,167.8 L301.8,167.9 L324.1,167.2 L346.5,166.9 L368.8,167.2 L391.2,166.9 L413.5,166.1 L435.9,166.2 L458.2,166.2 L480.6,165.9 L502.9,165.5 L525.2,165.2 L547.6,165.0 L569.9,164.8 L592.3,164.6 L614.6,164.5 L637.0,165.1 L659.3,165.4 L681.7,164.9 L704.0,165.0" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="165.0" r="3" fill="#d29922"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">Power/Energy 30d</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">GEV</span> <span class="legend-last">972.54</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-7.28%</span></span><span class="legend-note">· 1d <span class="up">+8.03%</span> · 30d <span class="down">-1.0%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">SU</span> <span class="legend-last">66.39</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+17.97%</span></span><span class="legend-note">· 1d <span class="up">+0.9%</span> · 30d <span class="up">+14.16%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">CVX</span> <span class="legend-last">191.31</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+7.73%</span></span><span class="legend-note">· 1d <span class="down">-0.29%</span> · 30d <span class="up">+6.22%</span></span></span></div></div>
+<p><strong>今日状态：</strong> WTI继续疲软（CL=F <span class="down">-0.75%</span>，5天 <span class="down">-9.1%</span>），能源股平静。</p>
+<ul>
+<li><strong>SU <span class="up">+0.8%</span></strong>：稳定，30天+14%是今日表现最好的能源名字。Q2财报8/4即将发布，市场已预期。</li>
+<li><strong>CVX <span class="down">-0.4%</span></strong>：明天Q2财报。当前WTI $83.8，低于大多数分析师"盈利敏感点"$85，财报可能提供减产/回购进展以抵消低油价。</li>
+<li><strong>GEV <span class="up">+8.2%</span></strong>：见下方电力/Grid模块。</li>
+</ul>
+<p><strong>伊朗/Hormuz：</strong> 谈判进展持续，油价承压。没有新的军事升级信号。对SU/CVX维持现状。</p>
+<div class="verdict hold">SU：防守性持仓，Q2财报前维持。
+CVX：明天财报，密切关注production数字和buyback指引。</div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-8"><p><strong>GEV <span class="up">+8.2%</span>今天</strong> — 今日表现最亮眼的非memory名字之一。</p>
+<p><strong>驱动因素：</strong>
+- MSFT Azure <span class="up">+36%</span> → 数据中心扩张加速 → 燃气轮机/电力基础设施需求确认
+- GEV Q2财报（7/22已发布）发酵效果延续：Power segment margin超预期，Wind segment break-even进度快于预期
+- GE HealthCare（GEHC，与GEV不同公司）今日财报大涨也带动"GE"品牌情绪</p>
+<p><strong>结构性逻辑不变：</strong> 超大型数据中心需要on-site发电，燃气轮机是唯一现实的短期解决方案。GEV积压订单已超过$100B，交付期延伸至2029年。</p>
+<div class="verdict hold">GEV：AI电力基础设施最直接受益者，维持持有。结构性需求未变。</div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-9"><p><strong>SNDK今天是S&amp;P500涨幅第一名，<span class="up">+24.2%</span></strong></p>
+<h3>背景：SNDK是什么</h3>
+<p>闪迪（SanDisk）2023年从Western Digital分拆独立上市，专注<strong>NAND闪存</strong>（区别于DRAM）。主要产品：企业级SSD、消费级存储。在memory stock里，SNDK代表NAND侧，MU/SKHY/Samsung代表DRAM/HBM侧。</p>
+<h3>SNDK今天涨的具体原因</h3>
+<p><strong>1. 直接触发：MSFT Azure beat <span class="up">+36%</span> → NAND需求重估</strong></p>
+<p>数据中心扩张 = 更多服务器 = 更多SSD需求（每台AI服务器需要数TB的NVMe SSD用于模型权重/checkpointing/caching）。MSFT的Azure数据证明hyperscaler采购周期不减速。</p>
+<p><strong>2. 技术性超卖反弹</strong></p>
+<p>SNDK 5天跌了 <span class="down">-21.6%</span>，30天跌了 <span class="down">-36.6%</span>，离52周高点$2354已经跌了近50%。forward P/E只有5.9x——vs 历史平均15-20x。在"AI capex恐惧"叙事驱动的杀跌里，SNDK被过度卖出。</p>
+<p>MSFT的数字提供了"恐惧叙事是错的"的反证，超卖股票弹得最猛。</p>
+<p><strong>3. 中国NAND竞争叙事暂时搁置</strong></p>
+<p>近期压制SNDK的主要叙事之一是"中国NAND（YMTC）产能扩张 → NAND价格战 → SNDK利润压缩"。今天MSFT数据暂时让市场关注需求侧（hyperscaler需求强劲）而非供给侧（中国竞争），导致这个负面叙事被搁置。</p>
+<p>注意：明天的新闻已经有"Sandisk (SNDK) Stock Slides As Chinese Memory Competition Rattles NAND Outlook"标题出现——这个叙事可能明天重回主导，需要密切观察。</p>
+<h3>这次涨能持续吗？</h3>
+<p><strong>支持持续的：</strong>
+- Forward P/E 5.9x极低，AMZN财报若继续确认AI需求，NAND估值修复有空间
+- hyperscaler采购通常提前6-12个月锁定，MSFT/AMZN的capex支出意味着NAND实际采购已经发生</p>
+<p><strong>反对持续的：</strong>
+- 中国NAND竞争是结构性问题，今天的新闻只是暂时搁置
+- SNDK还在$1262，离MA50 $1712还有35%的距离，技术面仍然偏弱
+- 本质上，今天的涨是"恐惧叙事证伪 + 超卖反弹"的组合，不是"SNDK基本面改变"</p>
+<div class="callout warn"><p>SNDK未追踪持仓，纯分析参考。若用户考虑参与memory反弹，MU是更直接的HBM/AI capex对齐标的。</p></div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-10"><p><strong>AMZN Q2财报今晚（7/30 AMC，北京时间明天凌晨）</strong></p>
+<h3>为什么AMZN财报对semi重要</h3>
+<p>AMZN是全球最大的云服务提供商（AWS），也是AI芯片最大买家之一。AWS的capex和AI增速信号 = semi需求最直接的forecast。</p>
+<p><strong>如果AMZN重复MSFT的故事（AWS增速加速 + AI contribution增加）：</strong></p>
+<table>
+<thead>
+<tr>
+<th>Semi标的</th>
+<th>传导逻辑</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVDA</td>
+<td>AWS继续买Blackwell，需求确认</td>
+<td>强力利好，Blackwell交付节奏确认</td>
+</tr>
+<tr>
+<td>MU</td>
+<td>数据中心DRAM/HBM需求不减</td>
+<td>延续今天反弹</td>
+</tr>
+<tr>
+<td>TSM</td>
+<td>CoWoS封装需求稳定</td>
+<td>确认</td>
+</tr>
+<tr>
+<td>AVGO</td>
+<td>Trainium (AWS自研芯片) 叙事</td>
+<td>AMZN会提AI training芯片比例，AVGO是竞争者AVGO还是受益者？</td>
+</tr>
+<tr>
+<td>INTC</td>
+<td>Xeon + Gaudi 买家是企业，AWS叙事间接</td>
+<td>弱相关</td>
+</tr>
+</tbody>
+</table>
+<p><strong>华尔街对AMZN AWS的具体预期：</strong>
+- AWS增速：预期 +26-27% YoY（vs Q1 <span class="up">+29%</span>，共识认为会小幅减速）
+- AI services contrib：市场要看是否从"几个百分点"升至"5ppt+"
+- Capex guide：Q3全年资本开支预期在$70-80B区间，若提高，短期读法是"demand强但margin压力"</p>
+<p><strong>关键问题：</strong> AMZN会不会重复MSFT的故事？</p>
+<p><strong>我的判断：</strong> 大概率会。理由：
+1. MSFT Azure的AI workload包括OpenAI API flow，AMZN AWS的AI workload来自Anthropic + 企业客户。Anthropic已公开ARR超$4B，增速快
+2. AWS在AI训练基础设施的投入不比MSFT少（Trainium2已量产）
+3. AMZN股价今天+4.9%，市场已经在pre-price "good outcome"</p>
+<p><strong>风险：</strong> 若AWS增速 &lt; <span class="up">+25%</span>（低于MSFT Azure的+36%水平，但从趋势看AMZN的云增速慢于MSFT），市场可能失望。</p>
+<h3>AMZN财报后semi可能的走势</h3>
+<div class="scenarios"><div class="scenario"><div class="name bull">Bull: AMZN AWS <span class="up">+28%</span>+ 且 AI contrib &gt;5ppt</div><div class="bar-wrap"><div class="bar bull" style="width:0%">0%</div></div><div class="target">明天semi继续</div><div class="desc">整个AI capex叙事&quot;盈利兑现&quot;完全确认，NVDA/MU/TSM全线再涨</div></div><div class="scenario"><div class="name base">Base: AWS +25-27% inline</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">维持今天反弹水平</div><div class="desc">无新catalysts，等8/4 AMD财报</div></div><div class="scenario"><div class="name bear">Bear: AWS &lt; 25% 或 capex surprise低</div><div class="bar-wrap"><div class="bar bear" style="width:0%">0%</div></div><div class="target">回吐今天涨幅</div><div class="desc">&quot;MSFT是例外不是规律&quot;，AI capex恐惧叙事回归</div></div></div>
+<p><strong>注：</strong> AMZN今天+4.9%，可以认为Bull scenario已经部分price in了。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-11"><p><strong>MSFT昨晚（7/29 AMC）Q4 FY2026财报，今日股价 <span class="up">+17.2%</span></strong></p>
+<h3>核心数字</h3>
+<ul>
+<li><strong>Azure</strong>: <span class="up">+36%</span> YoY（vs 预期 ~31%，超出约5个百分点）</li>
+<li><strong>AI contrib to Azure</strong>: ~9个百分点（vs 上季度~7ppt，持续加速）</li>
+<li><strong>Copilot M365</strong>：商业用户数 <span class="up">+200%</span> YoY，AI服务年化收入超$10B</li>
+<li><strong>整体营收</strong>：$72.5B，YoY <span class="up">+16%</span></li>
+<li><strong>毛利率</strong>：~70%，AI业务<strong>没有以利润换增长</strong></li>
+</ul>
+<h3>为什么市场反应这么大（不仅仅是一次好财报）</h3>
+<p>这次财报具有<strong>叙事纠偏</strong>价值。上周市场的逻辑是：</p>
+<blockquote>
+<p><em>"hyperscalers把$300B+投到AI基础设施，但用户实际愿意为AI付多少钱？如果ROI不清晰，capex是销毁价值的。"</em></p>
+</blockquote>
+<p>MSFT的数字给出了实证：</p>
+<ol>
+<li><strong>Azure AI revenue有量有价</strong>：<span class="up">+36%</span>的增速，且AI是驱动因子（+9ppt），不是靠打折抢市场</li>
+<li><strong>Copilot有付费意愿</strong>：Copilot for M365每月$30，商业用户翻倍意味着企业愿意为AI生产力付钱</li>
+<li><strong>毛利率维持</strong>：说明AI投入的边际成本在可控范围内，scale不是以利润换的</li>
+</ol>
+<p>这就是为什么MSFT今天+17%，而不是+5%：这是<strong>叙事级别的改变</strong>，不只是业绩beat。</p>
+<h3>对AI capex链条的read-through</h3>
+<table class="compare"><thead><tr><th></th><th>受益者</th><th>逻辑</th><th>强度</th><th></th></tr></thead><tbody><tr><td></td><td>NVDA</td><td>Blackwell是Azure AI的底层，<span class="up"><span class="up">+36%</span></span> Azure = Blackwell demand real</td><td>★★★★★</td><td></td></tr><tr><td></td><td>TSM</td><td>NVDA Blackwell的代工，CoWoS先进封装</td><td>★★★★</td><td></td></tr><tr><td></td><td>MU</td><td>Azure AI workload = 高内存密度，HBM需求确认</td><td>★★★★</td><td></td></tr><tr><td></td><td>AVGO</td><td>MSFT自有ASIC (Maia)是AVGO竞争者，但AVGO也有其他客户</td><td>★★★</td><td></td></tr><tr><td></td><td>INTC</td><td>Gaudi AI加速器在Azure上有部署，但份额小</td><td>★★</td><td></td></tr><tr><td></td><td>SPCX</td><td>间接，MSFT是Starlink用户，无直接利好</td><td>★</td><td></td></tr></tbody></table>
+<h3>MSFT后续还值得追吗？</h3>
+<p>今天$458，30天前$379，涨了21%。Forward P/E约33x（AI溢价已充分反映）。</p>
+<p><strong>我的判断：</strong> 短期不追。今天的涨已经price in了"AI叙事确认"的溢价。接下来的边际催化是AMZN财报（今晚）和NVDA财报（8/26）——如果两个都beat，AI整个叙事会再升一级，MSFT会再涨，但上涨空间不如MU/NVDA等还没完全反映的标的。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-12"><p><strong>Intel今天+12.5%，是今日涨幅第三位（次于SNDK和MU/MSFT）</strong></p>
+<h3>是跟反弹为主，还是有独立逻辑？</h3>
+<p><strong>结论：主要是跟反弹，但有1-2个独立催化加速。</strong></p>
+<p><strong>跟反弹成分（大约60%）：</strong>
+- INTC 5天跌了 <span class="down">-8.1%</span>，30天处于重要支撑位
+- MSFT Azure <span class="up">+36%</span> → 整个data center供应链集体反弹 → INTC Xeon服务器CPU的需求间接受益
+- 大semi股反弹时INTC几乎总是一起动，因为大量ETF持有INTC</p>
+<p><strong>独立催化（约40%）：</strong></p>
+<ol>
+<li>
+<p><strong>"Intel Is Opening a Door It Usually Keeps Closed"</strong>（7/30新闻）
+   - INTC宣布将允许外部客户访问其Gaudi AI加速器的某些IP/设计细节
+   - 这是Intel Foundry战略的一部分——不只做代工，而是提供AI工具链
+   - 市场解读：INTC在Foundry+AI两线突破，且愿意开放生态，是Lip-Bu Tan就任CEO以来最明显的战略转型信号</p>
+</li>
+<li>
+<p><strong>INTC财报（7/23）后效应延续</strong>
+   - INTC Q2财报已发布（5天前），guidance暗示Foundry拿到了新客户
+   - "Taiwan Semiconductor Is Copying One of Intel's Best Ideas"（TSM报道）暗示INTC的IDM 2.0策略在市场眼中开始有差异化价值</p>
+</li>
+</ol>
+<h3>结构性判断</h3>
+<p>INTC是今天涨幅中<strong>最值得深想</strong>的一个。它比MU/SKHY的涨更"贵"——因为INTC没有MU那样明确的HBM order book，也没有SNDK的超卖弹性。</p>
+<p><strong>如果Foundry逻辑是真的</strong>（即INTC能拿到Apple 2nm、或者Amazon Trainium的代工订单）：INTC的上涨空间远不只是反弹，是重新定价到$120-150。</p>
+<p><strong>如果Foundry逻辑是PR/wishful thinking</strong>（产品良率还是差，拿不到大客户）：今天的+12.5%只是semi ETF调仓效应，后续没有持续动力。</p>
+<p><strong>我的倾向：</strong> 观察为主，等INTC给出具体Foundry客户名称和量产时间线再决定。目前$92，距MA50 $100仍有空间。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-13"><h3>今天的核心叙事</h3>
+<p><strong>"AI capex盈利兑现确认日"</strong> — MSFT炸裂了上周"AI capex黑洞"的恐慌叙事。今天的市场是上周恐惧的镜像：memory/semi全面大反弹，VIX <span class="down">-13%</span>，QQQ <span class="up">+3%</span>。</p>
+<h3>Cluster Verdicts</h3>
+<table class="compare"><thead><tr><th>Cluster</th><th>今日表现</th><th>核心驱动</th><th>短期展望</th></tr></thead><tbody><tr><td>TSLA</td><td><span class="up"><span class="up">+3.2%</span></span></td><td>跟涨，无独立催化</td><td>等Robotaxi，Q3 10月</td></tr><tr><td>SpaceX/SPCX</td><td>平</td><td>锁仓压制，Morgan Stanley负面</td><td>中性等12/9</td></tr><tr><td>DRAM/HBM</td><td>MU+18% SNDK+24% SKHY+17%</td><td>MSFT Azure beat证伪AI capex恐惧</td><td>今晚AMZN是关键</td></tr><tr><td>AI capex</td><td>MSFT+17% META-9%</td><td>MSFT vs META的叙事分化</td><td>AMZN今晚决定下周走向</td></tr><tr><td>能源</td><td>SU+0.8% CVX-0.4%</td><td>油价疲软，等明天CVX财报</td><td>稳定区间</td></tr><tr><td>电力/Grid</td><td>GEV+8.2%</td><td>AI capex反弹 + Q2财报发酵</td><td>结构性多头维持</td></tr></tbody></table>
+<h3>三个关键问题</h3>
+<div class="callout info"><ol>
+<li>
+<p>AMZN今晚财报：AWS是否重复MSFT故事（<span class="up">+28%</span>+，AI contrib加速）？这是决定memory反弹能否持续的关键。</p>
+</li>
+<li>
+<p>Samsung明天财报：DS（内存）margin和HBM yield进展？若Samsung确认HBM良率改善，DRAM/HBM反弹有第二腿。</p>
+</li>
+<li>
+<p>SNDK反弹后的中国NAND叙事：明天已有"Chinese memory competition rattles NAND outlook"新闻——这是否重新压制SNDK？</p>
+</li>
+</ol></div>
+<h3>概率判断</h3>
+<div class="scenarios"><div class="scenario"><div class="name base">Memory反弹持续（AMZN beat + Samsung confirm）</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">MU $900+</div><div class="desc">AI capex盈利兑现叙事完整确认</div></div><div class="scenario"><div class="name base">Memory整固（AMZN inline，Samsung无惊喜）</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">MU $850-875</div><div class="desc">维持今天水平，等8/26 NVDA</div></div><div class="scenario"><div class="name base">Memory回调（AMZN miss 或 SNDK被中国叙事拖累）</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">MU $800以下</div><div class="desc">上周杀跌逻辑部分回归</div></div></div>
+<h3>今天的用户问题回答</h3>
+<p><strong>用户问：AMZN财报对整个semi的影响，以及semi现在的反弹是否考虑了AMZN财报？</strong></p>
+<p><strong>回答：</strong></p>
+<p>今天memory/semi的反弹，<strong>主要是MSFT（昨晚）的功劳，不是AMZN的</strong>。市场在今天已经pre-price了AMZN "会跟MSFT一样好"的预期（AMZN <span class="up">+4.9%</span>）。</p>
+<p>但有个重要区分：
+- MSFT Azure是"语言模型/Copilot类AI"的主战场 → Azure AI revenue已经有实际用户付费
+- AWS是"训练基础设施 + Anthropic"的主战场 → AWS的AI营收更多在训练侧，商业化路径不同</p>
+<p><strong>如果AMZN财报确认AWS AI增速加速</strong>：今天的semi反弹得到"第二次确认"，大概率继续（不是今天这种级别，但方向维持）。</p>
+<p><strong>如果AMZN财报AWS增速在预期内、没有超预期惊喜</strong>：市场可能认为"MSFT是特例"，semi在$MU $870-900区间整固等NVDA财报（8/26）。</p>
+<p><strong>结论：semi已经部分考虑了AMZN好结果，但没有全押AMZN beat。今晚财报是一个择机点，不是必须行动的点。</strong></p>
+<div class="verdict watch">关键行动：今晚AMZN财报后判断是否加仓MU/DRAM，不在财报前行动。</div></div></div>
+</body>
+</html>

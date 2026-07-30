@@ -62,3 +62,13 @@ Strong: $38B cash, minimal long-term debt, robust free cash flow (~$60B+ annuali
 
 ## Stands & Updates
 <!-- add-stock initial add 2026-06-18 — leave this line, write your own entries below -->
+
+### 2026-07-30  AI行情急先锋讨论 — NVDA体积问题（评分日: 2026-08-26 财报后）
+
+**用户观点:** NVDA体积已经很大（$4.7T），上涨空间相对有限，AI行情谁是急先锋难以判断。
+
+**Agent分析:** NVDA是"AI信仰指数"而非最好的%收益工具。$4.7T市值再翻倍需要增加$4.7T，难度远大于MU（$1T→$1.5T只需$0.5T）。NVDA在QQQ/SPY占6-9%权重，被动资金不会抛弃，但主动超配价值有限。中期（2-3个月）MU/TSM的弹性更大。
+
+**具体可证伪指标（截至2026-08-26）:**
+- 若 MU 30d涨幅 > NVDA 30d涨幅 → agent判断正确（semi弹性>NVDA）
+- 若 NVDA 涨幅领先 → 用户"难判断"的不确定性被市场解决，NVDA仍是急先锋
