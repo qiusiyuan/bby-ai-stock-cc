@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MRVL 投资专题 2026-07-30</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-07-30 17:23</div>
+<h1 id="mrvl-marvell-technology">MRVL — Marvell Technology 投资专题</h1>
+<blockquote>
+<p><strong>Research note</strong> · 2026-07-30 · 长期 sizing / AWS AI capex押注
+涵盖: 业务结构 · 客户集中度分析 · SerDes/ASIC护城河 · vs AVBO对比 · 三场景估值 · 8/27财报前checklist
+下次 review: 2026-08-27 MRVL Q2财报 / 或价格突破$220（MA50方向）</p>
+</blockquote>
+<div class="callout info"><p>本专题回答一个问题：MRVL是真正的AI infrastructure护城河，还是一个高beta的AMZN代理？以及：在$183，这笔押注值不值得？</p></div>
+<hr>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }#tabs1-8:checked ~ [data-tab-for="tabs1-8"] { display: block; }#tabs1-9:checked ~ [data-tab-for="tabs1-9"] { display: block; }#tabs1-10:checked ~ [data-tab-for="tabs1-10"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><input class="tab-input" type="radio" name="tabs1" id="tabs1-8"><input class="tab-input" type="radio" name="tabs1" id="tabs1-9"><input class="tab-input" type="radio" name="tabs1" id="tabs1-10"><div class="tabs"><label class="tab-label" for="tabs1-0">背景：为什么今天写这个</label><label class="tab-label" for="tabs1-1">一、MRVL是什么公司（用三句话）</label><label class="tab-label" for="tabs1-2">二、客户结构：高度集中的双刃剑</label><label class="tab-label" for="tabs1-3">三、护城河分析：SerDes是真正的壁垒</label><label class="tab-label" for="tabs1-4">四、MRVL vs AVGO：30天对比</label><label class="tab-label" for="tabs1-5">五、当前估值：$183值不值</label><label class="tab-label" for="tabs1-6">六、三个场景</label><label class="tab-label" for="tabs1-7">七、8/27财报前的关键问题</label><label class="tab-label" for="tabs1-8">八、什么情况下会改变判断</label><label class="tab-label" for="tabs1-9">综合判断</label><label class="tab-label" for="tabs1-10">重读触发条件</label></div><div class="tab-panel" data-tab-for="tabs1-0"><p>MRVL今日 <span class="up">+12.2%</span>，触发因素是昨晚AMZN Q2财报AWS <span class="up">+37%</span>（五年最快，超预期约10ppt）。</p>
+<p>这是MRVL今年内的第二次重大行情：</p>
+<ul>
+<li><strong>第一次</strong>（2026年5-6月）：从$61涨到$330，<span class="up">+440%</span>。触发：S&amp;P 500纳入预期 + AWS外部销售Trainium的消息</li>
+<li><strong>第二次</strong>（今天起）：从30天低点-34%开始反弹。触发：MSFT Azure <span class="up">+36%</span> + AMZN AWS <span class="up">+37%</span>双确认</li>
+</ul>
+<p><strong>问题的核心不是"今天涨了"，而是：MRVL作为AWS AI押注是否值得长期持有？</strong></p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-1"><p>Marvell是一家<strong>半导体IP和定制ASIC公司</strong>，核心价值是帮AI数据中心里的芯片"互相说话"。</p>
+<ol>
+<li>
+<p><strong>SerDes IP（串行/解串器）</strong>：芯片间高速通信的基础技术。任何AI训练集群里的Accelerator要互联，都要用到MRVL在112G/224G PAM4 SerDes上的专有IP。这是MRVL的最深护城河。</p>
+</li>
+<li>
+<p><strong>定制ASIC（Custom XPU）</strong>：给AWS（Trainium）、Google（部分网络芯片）、微软（Maia互联部分）设计定制训练/推理芯片。MRVL是AVGO在这个赛道最直接的竞争对手，但规模小11倍，客户集中度更高。</p>
+</li>
+<li>
+<p><strong>光互联（Optical Interconnect）</strong>：硅光、共封装光学（Co-Packaged Optics）、线性可插拔光学（LPO）——当数据中心AI集群从万卡扩展到十万卡，光互联是唯一能撑住带宽需求的基础设施。Inphi收购（2021年，$10B）给了MRVL这条护城河。</p>
+</li>
+</ol>
+<p><strong>不是什么</strong>：MRVL不是GPU公司，不和NVDA正面竞争。MRVL是NVDA集群的使能者——NVDA卖了越多GPU，MRVL的互联芯片需求越大。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-2"><table class="compare"><thead><tr><th>客户</th><th>MRVL角色</th><th>占AI营收比重（估算）</th><th>近期动向</th></tr></thead><tbody><tr><td>Amazon AWS</td><td>Trainium 2/3 SerDes + 定制ASIC主设计方</td><td>~50-60%</td><td>2026-07-30: AWS <span class="up"><span class="up">+37%</span></span>，五年最快 ✅</td></tr><tr><td>Google</td><td>网络/部分定制</td><td>~20-25%</td><td>2026-07-23: Cloud <span class="up"><span class="up">+28%</span></span>（强但市场不买单）</td></tr><tr><td>Microsoft</td><td>部分Maia芯片互联</td><td>~10%</td><td>2026-07-29: Azure <span class="up"><span class="up">+36%</span></span> ✅</td></tr><tr><td>Meta</td><td>极少</td><td>&lt;5%</td><td>2026-07-29: capex↑但AI收入慢</td></tr><tr><td>其他（新客户？）</td><td>未披露</td><td>潜在</td><td>管理层暗示H2 2026可能有新公告</td></tr></tbody></table>
+<p><strong>核心判断：MRVL的命运和Amazon AWS高度绑定。</strong></p>
+<p>这个集中度是风险（AWS一旦改变Trainium策略，MRVL直接受损），也是弹性的来源（AWS加速=MRVL直接受益，不需要等传导）。</p>
+<p><strong>为什么AWS不会轻易换掉MRVL：</strong></p>
+<p>Trainium的SerDes IP设计是一个2-3年的联合开发周期。AWS和MRVL的工程师联合在一起，把MRVL的SerDes集成进Trainium的die之中。这不是"采购零件"——这是"把供应商的IP焊进你的芯片"。切换成本是2-3年的重新设计周期+可观的工程人力成本，不是一个季度能做的事。</p>
+<p><strong>真正的风险场景：</strong></p>
+<p>不是"AWS换掉MRVL"，而是"Trainium 3之后的一代（Trainium 4）AWS决定把SerDes设计in-house"。这个风险存在，但需要AWS在芯片设计上的投入大幅升级。目前迹象：AWS还在加大和MRVL的合作深度，不是减少。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-3"><div class="meters"><div class="meter"><div class="name">SerDes IP深度</div><div class="track"><div class="fill high" style="width:90%"></div></div><div class="score">9/10</div><div class="note">112G/224G PAM4市场领先，积累多年，不是钱能买到的</div></div><div class="meter"><div class="name">光互联IP（Inphi）</div><div class="track"><div class="fill high" style="width:80%"></div></div><div class="score">8/10</div><div class="note">硅光/CPO是最复杂的光电融合技术，2-3年追赶周期</div></div><div class="meter"><div class="name">客户切换成本</div><div class="track"><div class="fill high" style="width:80%"></div></div><div class="score">8/10</div><div class="note">定制芯片深度集成，切换=重新设计整颗ASIC</div></div><div class="meter"><div class="name">客户集中度</div><div class="track"><div class="fill mid" style="width:40%"></div></div><div class="score">4/10</div><div class="note">AWS占50%+，单点风险高——这是护城河的弱点</div></div><div class="meter"><div class="name">规模 vs AVGO</div><div class="track"><div class="fill mid" style="width:50%"></div></div><div class="score">5/10</div><div class="note">市值小11倍，研发投入差距大，但专注度更高</div></div><div class="meter"><div class="name">新竞争威胁</div><div class="track"><div class="fill mid" style="width:60%"></div></div><div class="score">6/10</div><div class="note">Architect Labs等新兴竞争者，但仍处早期</div></div></div>
+<p><strong>对比AVGO护城河差异：</strong></p>
+<p>AVGO更像"宽护城河矮城墙"——客户分散（Google/Meta/Apple/ByteDance），有VMware软件现金流兜底，PE给折价。MRVL更像"窄护城河高城墙"——深度绑定AWS，专注度更高，但没有安全垫。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-4"><div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">52.38</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">67.12</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">81.86</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">96.60</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">111.33</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-17</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-10</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-30</text><path d="M56.0,59.9 L78.3,39.4 L100.7,42.1 L123.0,70.1 L145.4,72.4 L167.7,68.0 L190.1,82.1 L212.4,71.4 L234.8,51.8 L257.1,76.9 L279.4,102.9 L301.8,99.1 L324.1,117.1 L346.5,116.2 L368.8,104.9 L391.2,112.1 L413.5,129.9 L435.9,125.1 L458.2,140.9 L480.6,158.3 L502.9,158.0 L525.2,151.9 L547.6,139.2 L569.9,136.3 L592.3,137.9 L614.6,152.6 L637.0,157.5 L659.3,171.8 L681.7,182.6 L704.0,163.2" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="163.2" r="3" fill="#58a6ff"/><path d="M56.0,59.9 L78.3,46.7 L100.7,60.0 L123.0,68.6 L145.4,67.2 L167.7,69.5 L190.1,79.5 L212.4,74.1 L234.8,70.3 L257.1,76.4 L279.4,82.8 L301.8,73.1 L324.1,75.3 L346.5,62.5 L368.8,53.6 L391.2,54.4 L413.5,65.8 L435.9,62.2 L458.2,58.5 L480.6,72.7 L502.9,75.3 L525.2,70.0 L547.6,64.1 L569.9,56.7 L592.3,59.8 L614.6,67.3 L637.0,66.4 L659.3,68.1 L681.7,75.7 L704.0,63.1" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="63.1" r="3" fill="#3fb950"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">MRVL vs AVGO 30d（归一化）</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">MRVL</span> <span class="legend-last">63.32</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-36.68%</span></span><span class="legend-note">· 1d <span class="up">+12.18%</span> · 30d <span class="down">-34.21%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">AVGO</span> <span class="legend-last">98.87</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-1.13%</span></span><span class="legend-note">· 1d <span class="up">+4.73%</span> · 30d <span class="up">+3.12%</span></span></span></div></div>
+<p>图表说明了一切：<strong>同赛道，AVGO 30天+3%，MRVL 30天-34%然后今天弹12%</strong>。</p>
+<table class="compare"><thead><tr><th>维度</th><th>AVGO</th><th>MRVL</th></tr></thead><tbody><tr><td>市值</td><td>~$1,845B</td><td>~$165B（小11倍）</td></tr><tr><td>客户集中度</td><td>分散（Google/Meta/Apple/MS/ByteDance）</td><td>集中（Amazon主导~50-60%）</td></tr><tr><td>收入可见度</td><td>高（多年锁定合同）</td><td>中低（Trainium ramp节奏不确定）</td></tr><tr><td>波动性</td><td>低（30天+3%）</td><td>高（30天-34%，今天+12%）</td></tr><tr><td>Forward PE</td><td>~20x</td><td>~29x</td></tr><tr><td>软件现金流</td><td>有（VMware $200B收购后稳定）</td><td>无</td></tr><tr><td>上涨弹性</td><td>有限（体积大，难以翻倍）</td><td>极大（体积小，beta高）</td></tr><tr><td>适合</td><td>稳定持有，AI infra复利机器</td><td>高风险押注AWS AI加速</td></tr></tbody></table>
+<p><strong>结论：不是非此即彼。</strong></p>
+<ul>
+<li>如果你要"稳定持有AI infra"→ AVGO，PE折价、多客户、有软件护城河</li>
+<li>如果你要"押注AWS AI加速放量"→ MRVL，高beta，但upside更大</li>
+<li>MRVL的问题不是"不好"，是"太集中"——需要你接受-34%这样的回调随时可能再次发生</li>
+</ul>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-5"><div class="kpi-grid"><div class="kpi"><div class="label">当前价格</div><div class="value">$183.3</div><div class="note">今日 <span class="up"><span class="up">+12.2%</span></span>，30天 <span class="down"><span class="down">-34.2%</span></span></div></div><div class="kpi"><div class="label">市值</div><div class="value">$165B</div><div class="note">vs 52周前的$61（14个月+3x），vs 近期高点$330（<span class="down"><span class="down">-44%</span></span>）</div></div><div class="kpi"><div class="label">Forward P/E</div><div class="value">29.4x</div><div class="note">含义：市场预期未来12个月EPS大幅增长</div></div><div class="kpi"><div class="label">Forward P/E隐含假设</div><div class="value">~40-50% EPS CAGR</div><div class="note">需要Trainium持续放量 + 利润率扩张才能justify</div></div><div class="kpi"><div class="label">MA50</div><div class="value">~$239</div><div class="note">当前价格在MA50下方约23%</div></div><div class="kpi"><div class="label">52周范围</div><div class="value">$61-$330</div><div class="note">$183处于中间区域，距高点-44%</div></div></div>
+<p><strong>反向DCF推导（$183）：</strong></p>
+<p>在$183，市场大约在定价：
+- 未来3年营收CAGR约35-40%
+- 营业利润率从当前~20%扩张到28-30%
+- 没有客户集中度惩罚（即AWS不会缩减Trainium投入）</p>
+<p>这个假设在今晚AWS <span class="up">+37%</span>的背书下是<strong>可以成立的</strong>，但仍然需要8/27财报的具体数字确认。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-6"><div class="scenarios"><div class="scenario"><div class="name bull">Bull</div><div class="bar-wrap"><div class="bar bull" style="width:0%">0%</div></div><div class="target">$280-320</div><div class="desc">Trainium 2/3持续放量，8/27财报AI营收&gt;50% YoY，MRVL从&quot;SerDes供应商&quot;升级为&quot;全栈ASIC合作伙伴&quot;，新客户公告（Google/Meta扩大定制）；PE回归35-40x</div></div><div class="scenario"><div class="name base">Base</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">$200-240</div><div class="desc">Trainium稳定增长但不超预期；MRVL回归MA50区间（~$239）；AWS AI叙事维持不变；等8/27财报再做下一步判断</div></div><div class="scenario"><div class="name bear">Bear</div><div class="bar-wrap"><div class="bar bear" style="width:0%">0%</div></div><div class="target">$120-140</div><div class="desc">AWS改变Trainium策略（缩减投入或部分in-house），MRVL AI营收低于预期；Trainium客户集中度成为市场重新定价的理由；快速跌回$120水平</div></div></div>
+<p><strong>当前风险/回报：</strong></p>
+<p>从$183出发：
+- Bull case: +55-75%（$280-320）
+- Base case: +10-30%（$200-240）
+- Bear case: -25-35%（$120-140）</p>
+<p><strong>不对称性存在，但不是压倒性的</strong>——bear case的触发（AWS策略转变）虽然概率低，但一旦发生下跌速度会很快，因为MRVL的高beta双向有效。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-7"><p><strong>这是MRVL thesis的裁判时刻</strong>，届时看三件事：</p>
+<div class="timeline"><div class="tl-item"><span class="when">2026-07-31 明天</span> — <span class="what">AMZN电话会议：分析师追问Trainium具体出货量（MRVL最直接参考）</span></div><div class="tl-item"><span class="when">2026-08-04</span> — <span class="what">AMD Q2：MI300/350 ramp速度（custom ASIC整体需求指示）</span></div><div class="tl-item"><span class="when">2026-08-26</span> — <span class="what">NVDA Q2：若提及AWS订单变化 = MRVL间接信号</span></div><div class="tl-item"><span class="when">2026-08-27</span> — <span class="what">🎯 MRVL Q2 FY2027财报 — AI/DC营收增速 + Q3指引</span></div></div>
+<p><strong>8/27当天看这三个数字：</strong></p>
+<ol>
+<li><strong>AI/Data Center营收增速</strong> — 需要 &gt;50% YoY才能justify 29x forward PE。低于40%是yellow flag。</li>
+<li><strong>Trainium相关营收或管理层措辞</strong> — 若管理层直接提"Amazon"并给增速，是强烈信号。若模糊带过，是风险信号。</li>
+<li><strong>Q3指引</strong> — 比当季数字更重要。若指引加速（&gt;Q2增速），bull case概率上升。</li>
+</ol>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-8"><p><strong>买点加强条件：</strong>
+- 8/27财报：AI营收增速 &gt;50% YoY + 正向Q3指引
+- AMZN电话会议：明确提及Trainium出货量加速
+- 新增客户公告（非AWS的大型hyperscaler定制合同）</p>
+<p><strong>减仓/观望条件：</strong>
+- 8/27财报：AI营收低于40% YoY 或 Q3指引下调
+- AWS公开讨论"降低外部芯片依赖"或"Trainium设计内部化"
+- 光互联增速连续两季度低于30%（高增长主线熄灭）</p>
+<p><strong>论文失效条件（直接卖出）：</strong>
+- AWS宣布显著削减Trainium外采，转向in-house设计
+- MRVL营业利润率连续两季度下滑而不是扩张
+- 客户集中度升至&gt;65%（单点风险无法接受）</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-9"><div class="callout ok"><p>MRVL是真正的AWS AI capex押注——不是间接的，是直接的（SerDes嵌进Trainium芯片）。今晚AWS <span class="up">+37%</span>是迄今为止最直接的基本面背书。</p>
+<p>当前$183，距52周高点-44%，在AI capex双确认（MSFT+AMZN）后技术面和叙事面都在好转。高beta特性意味着upside可观，但要接受波动不会消失。</p>
+<p>8/27财报是真正的裁判。在那之前：有叙事支撑的跟踪仓位，不是高确定性重仓。</p></div>
+<div class="verdict watch">$183：有叙事，有催化，但8/27财报前不是加仓时机。等数字说话。</div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-10"><ul>
+<li><strong>日期触发</strong>：2026-08-27 Q2 FY2027财报（必读）</li>
+<li><strong>价格触发</strong>：突破$220（MA50上方）→ 技术面转强，考虑加仓</li>
+<li><strong>价格触发</strong>：跌破$155 → 接近bear case区间，重新评估thesis完整性</li>
+<li><strong>事件触发</strong>：AMZN宣布Trainium外部销售扩大 → bull case概率上升</li>
+<li><strong>事件触发</strong>：AMZN电话会议提及削减MRVL合作 → 立即重新评估</li>
+<li><strong>半年回顾</strong>：2027-01-31（MRVL FY2027财年结束）</li>
+</ul></div></div>
+</body>
+</html>
