@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-31 · -2.87% day · ▼ minor
+**Tags:** `sector_rotation`, `flow_event`, `macro_rates`, `analyst_downgrade`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** Technical give-back after yesterday's +18% (0.79x volume = short-term profit-taking, not institutional selling), amplified by Michael Burry publicly increasing short bets naming NVDA and MU, plus forced liquidation of Aschenbrenner's $45B AI fund selling leveraged AI-infra longs to Citadel, plus 10Y hitting a 52-week high at 4.74%. Zero of the four causes are memory-fundamental.
+
+**Sources.**
+- TheStreet via Yahoo: Michael Burry Sends Fresh Warning on Nvidia and Micron Stocks / Michael Burry Targets Nvidia, Micron With Bigger AI Downside Bets
+- Yahoo Finance: Leopold Aschenbrenner's AI hedge fund collapses after margin calls — $45B fund forced to sell leveraged AI infrastructure bets to Citadel at a discount
+- Yahoo Finance: Samsung expects memory shortage to worsen through 2027 and last until 2028
+- _Corroboration:_ MAJOR DISLOCATION: Samsung (005930.KS) +26.81% and SK Hynix (000660.KS) +30% in Korea the same session, while US-listed SKHY ADS -0.60% and MU -2.87%. Headline: 'SK Hynix Stock Surged 30% in South Korea. It's Dropping in the U.S.'
+
+**Cross-assets.** SECTOR ETF +1.50% · SPY +0.58% · VIX 16.58 · 10Y 4.74 · WTI 84.97
+
+**Agent read.** Textbook fundamentals-improve-while-price-falls dislocation. Today added THREE positive fundamental data points and ONE negative: (1) Samsung officially extended shortage duration to 2028 — supply side, (2) Tim Cook called it a '100-year flood' not receding — demand side, against its own interest, (3) AAPL gross margin cut due to memory cost = price hikes verified as passing through to end products, vs (4) Burry increasing shorts — a position, not an argument. Supply-and-demand-side agreement on shortage duration is a mid-cycle signature, not a top (tops feature sellers shouting and buyers cutting orders/finding substitutes). Burry's strongest argument (depreciation from $220B hyperscaler capex) targets 2027, but MU's scorecard settles 9/25 — time-horizon mismatch; do not let a 2027 thesis change a 9/25 judgment. Fwd P/E 5.4x is not evidence of cheapness — it is evidence the market prices this as peak earnings. The 9/25 scorecard exists precisely to adjudicate peak-vs-mid cycle. NEW RESEARCH ITEM: SKHY ADS vs 000660.KS Korea discount — is it liquidity (converges) or the 10/8 90-day lockup (does not)?
+
+
+---
 ### 2026-07-15 · n/a day · ▼ extreme
 **Tags:** `china_competition`, `memory_pricing`, `sector_rotation`
 **Confidence:** high

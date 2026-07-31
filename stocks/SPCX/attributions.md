@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-31 · -2.99% day · ▼ material
+**Tags:** `flow_event`, `macro_rates`, `lockup_expiry`, `regulatory_positive`
+**Confidence:** high
+
+**Primary cause.** Good news fully ineffective: Space Force awarded SpaceX two task orders totalling $1.6B for 18 Falcon 9 military satellite launches, Musk warned shorts have 'very low' survival probability, and WSJ reported a possible TSLA-SpaceX merger path — stock still fell 3%. Selling is mechanical post-IPO supply plus 10Y at a 52-week high crushing the longest-duration asset in the book, not fundamental.
+
+**Sources.**
+- TheStreet via Yahoo: SpaceX turns heads ahead of earnings with new mega deal — Space Force awards two task orders worth $1.6B for 18 Falcon 9 launches
+- Motley Fool via Yahoo: Elon Musk Says SpaceX Short-Sellers Have a 'Very Low' Survival Probability
+- Bloomberg via Yahoo: Combining Tesla and SpaceX Makes 'A Ton of Sense' Says Munster — WSJ reports TSLA weighing China business separation
+- _Corroboration:_ SSPC (2x inverse) +6.14% today, +155.44% over 30d. 2x inverse returning >2x the underlying's 43% decline means volatility decay did NOT erode leverage — the fall is exceptionally smooth/one-directional, confirming supply-driven rather than news-driven selling. Volume 0.40x.
+
+**Cross-assets.** SPY +0.58% · VIX 16.58 · 10Y 4.74 · WTI 84.97
+
+**Agent read.** Textbook case worth preserving: post-IPO structural supply + longest-duration asset meeting a rising-rate regime = double kill. The diagnostic is that a $1.6B government contract moved the stock NEGATIVE. Sellers here are not making judgments — they are IPO allocations, early investors, and inverse-ETF hedging flow, none of which read the news. SSPC's +155% vs the underlying's -43% (>2x) proves smooth one-directional decline, i.e. supply-driven. Implication: any SpaceX business good news will be absorbed until either (a) the 12/09 lockup is digested — current bleed is likely front-running the unlock, and historically the true bottom forms 2-4 weeks AFTER the unlock, not before, or (b) 10Y falls below ~4.3%. No position — pure tracking for pattern library on high-valuation new IPOs.
+
+
+---
 ### 2026-07-15 · n/a day · ▼ moderate
 **Tags:** `lockup_fear`, `sector_rotation`, `thesis_break_approach`
 **Confidence:** high

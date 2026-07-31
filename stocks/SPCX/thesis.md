@@ -100,3 +100,32 @@ Pulled mega-IPO post-lockup data on FB/SNAP/UBER/ABNB/RBLX/COIN/RIVN. **6 of 7 s
 3. **AI-infrastructure re-rate is in motion.** Anthropic + Google capacity deals (per Motley Fool 2026-06-18) frame SPCX as "emerging enabler of AI data center buildouts." If this narrative locks in before Dec lockup, SPCX gets the AI premium applied, mitigating the drawdown.
 **Probability-weighted 12m view:** Bull 25% / Base 50% (15-25% drawdown to $150-180 range) / Bear 25% (user's thesis wins, ~$110). Median ~$160-180 — meaningful drawdown but NOT half. Both this view and the user's view are recorded. We score them at lockup expiry (2026-12-09) and 12-month mark.
 _See `dashboard/spcx-thesis-pressure-test-2026-06-18.md` for full data + sources._
+
+### 2026-07-31  Note — 教科书级信号：$16亿军方合同当天股价 -2.99%。利好完全失效 = 结构性卖压主导
+
+**事实：** SPCX $108.84 (-2.99%, **0.40x 极度缩量**)，30d **-43.26%**（$185 → $108.84）。同日三条明确利好：
+1. **Space Force 授予两个任务订单，合计 $16亿，发射 18 枚 Falcon 9 军用卫星**
+2. Musk 公开警告 SpaceX 空头"生存概率极低"
+3. WSJ 报道 TSLA 考虑分拆中国业务，为可能的 SpaceX 合并铺路（Munster: "makes a ton of sense"）
+
+**三条利好同一天，股价还跌 3%。这是本轮最干净的诊断信号。**
+
+**为什么利好失效 —— 三层，按解释力排序：**
+
+**第一层（最重要）：卖压是机械性的，不是判断性的。** 0.40x 成交量 + 连续 30 天几乎单向下跌 = 这不是"投资者读了新闻决定卖出"的形态。卖家是 post-IPO 的 IPO 分配盘、锁定期外早期投资者、以及 SSPC 这类反向 ETF 的机械对冲需求 —— **这些卖家不读新闻。** $16亿合同对他们的决策毫无影响。
+
+**第二层：$16亿 在 SpaceX 的估值体系里是零。** SpaceX 上市估值在数千亿量级，$16亿 发射合同是一个季度的边角收入，且是市场早已默认的业务（SpaceX 本来就垄断美国政府发射）。这是"确认既有事实"，不是新信息。
+
+**第三层：10Y 4.74% 创 52周新高，直接杀 SPCX 的 DCF。** SPCX 是持仓里久期最长的资产 —— Starship、火星、Starlink 全球覆盖，现金流全在 2030 之后。**贴现率上行对这类资产的打击是数学性的，不是情绪性的。今天 10Y +7.4bp 创新高，这是 SPCX 今天跌 3% 最直接的解释，比任何 SpaceX 自己的新闻都重要。**
+
+**SSPC 的镜像证据（重要的量化线索）：** SSPC（2x 反向）30d **+155.44%**，而标的跌 43.26%。**+155% > 2×43% = 86%，意味着波动衰减（volatility decay）没有吃掉杠杆收益，复利在起作用 → 下跌极其平滑单向。** 如果 SPCX 是剧烈震荡下跌，2x 反向的表现会远差于 86%。**平滑单向下跌 = 供给驱动，独立印证第一层原因。** 这是一个可复用的量化诊断工具。
+
+**结构判断：SPCX 处于"利好无效期"，直到两个条件之一出现：**
+- **(a) 12/09 lockup 到期消化完。** 当前的持续渗漏很可能是市场提前 front-run 解禁。历史上大型 IPO 在 lockup 前 3-6 个月常出现这种缩量单边下跌，**真正的底通常在解禁后 2-4 周形成，而不是解禁日之前。**
+- **(b) 利率转向。** 10Y 从 4.74% 回落到 4.3% 以下。需要 8/12 CPI 显著降温 + 9/17 FOMC 转鸽。
+
+在这之前，任何 SpaceX 的业务利好（合同、Starlink 用户数、Starship 成功）都会像今天一样被吸收。**这不代表公司不好，代表股价的驱动变量当前不在公司手里。**
+
+**TSLA 合并线的意义：** 若合并推进，SPCX 的股价逻辑会从"独立长久期太空资产"变成"换股比例套利标的"，届时与 TSLA 强相关而非与利率相关。今天 SPCX -3% 而 TSLA +0.74% 说明市场认为传闻不成立，或 SPCX 股东在换股中处于劣势方。跟踪但不行动。
+
+**注：工作区无 SPCX 持仓 —— 纯跟踪学习。** 保存价值在于这是一个教科书级的「post-IPO 结构性卖压 + 长久期资产遇利率上行」双杀案例，可用于未来判断任何高估值新 IPO。跟踪节点 12/09，观察点是解禁前后各两周的成交量与价格形态 —— 若解禁日放量而价格不再新低，那就是底。

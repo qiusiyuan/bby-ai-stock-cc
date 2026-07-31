@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-07-31 · +5.99% day · ▲ material
+**Tags:** `sector_rotation`, `ai_demand`, `competitor_news`
+**Confidence:** medium
+
+**Primary cause.** Sector re-rating spillover, not company news. AMZN's AWS +37% raised the market's baseline confidence in the cloud+AI monetization link, so GOOG Cloud's +28% looks acceptable under the new baseline and last week's ~10% overshoot punishment reverses.
+
+**Sources.**
+- IBD via Yahoo: Amazon Stock Soars As AI Strategy Sends It To 'Top Of The Cloud Wars'
+- Benzinga via Yahoo: RDDT Stock Set For Worst Day On Record — Reddit Advances Copyright Suit Against Perplexity, amid Google search traffic fluctuations
+- _Corroboration:_ Volume only 0.76x — low-volume advance = short covering + reversal of last week's overshoot, NOT new institutional buying. MRVL +5.53% same day on the same AMZN-capex read-through.
+
+**Cross-assets.** SECTOR ETF +3.70% · SPY +0.58% · VIX 16.58 · 10Y 4.74 · WTI 84.97
+
+**Agent read.** Low-volume recovery caps the upside at roughly the pre-earnings level (~$360-365) because the actual bear thesis — Search AI monetization opacity — is unimproved. GOOG needs its own evidence, not AMZN's. The July pattern held all month: the market pays only for currently-measurable revenue acceleration (MSFT/AMZN rewarded, GOOG/META punished); today is that same rule applied in reverse when the baseline shifted. Radar item: AI-search erosion of traditional search (Reddit v. Perplexity litigation as a marker) is the long-term structural risk, not today's driver.
+
+
+---
 ### 2026-06-29 · +4.96% day · ▲ major
 **Tags:** `index_inclusion`, `passive_flows`
 **Confidence:** high

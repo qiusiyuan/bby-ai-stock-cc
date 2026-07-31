@@ -36,7 +36,10 @@ events:
   - { date: 2026-07-30, kind: earnings, ticker: AAPL, note: "Q3 FY2026 earnings — iPhone, services" }
   - { date: 2026-07-30, kind: earnings, ticker: AMZN, note: "Q2 2026 earnings — AWS, retail margin" }
   - { date: 2026-07-31, kind: earnings, ticker: CVX, note: "Q2 2026 earnings" }
-  - { date: 2026-08-04, kind: earnings, ticker: AMD, note: "Q2 2026 earnings — MI300/MI350 ramp" }
+  - { date: 2026-08-04, kind: earnings, ticker: AMD, note: "Q2 2026 earnings — MI300/MI350 ramp。**AMD 是 AMZN 利好唯一没吃到的大型 AI 芯片股 (7/31 时 5d -6.09%) —— semi 反弹能否扩散的测试**" }
+  - { date: 2026-10-07, kind: lockup, ticker: SKHY, note: "SK Hynix ADS 90天 lockup 到期 — **SEC 424B4 确认：90天自招股书日 2026-07-09 起**。⚠️ **研究结论：这不是主要变量。** 100% 增发无老股东减持（股本 711,075,500→728,865,500，增量=发行量 17,790,000），且 SK square 受韩国《垄断规制与公平交易法》**永久 20% 持股下限**约束（比 90天合约更强的长期限制）。不存在解禁抛售的经典结构。数据缺口：424B4 Underwriting(p.176) 与 Shares Eligible for Future Sale(p.151) 未取全文，受限方名单未确认。**观察点：到期前后放量下跌 = 我漏掉了受限股东；无异动 = 判断成立。** 完整研究 stocks/SKHY/research/2026-07-31-ads-premium-structure.md", scorecard: "stocks/SKHY/research/2026-07-31-ads-premium-structure.md" }
+  - { date: 2026-10-26, kind: earnings, ticker: "000660.KS", note: "SK Hynix Q3 2026 earnings (SKHY ADS 同期 10/27) — **比 MU (9/23) 晚一个月。MU 是 memory cluster 里最早给出可验证数字的标的，这是 MU 相对 SKHY/Samsung 的独立时序优势**" }
+  - { date: 2026-10-29, kind: earnings, ticker: AMZN, note: "Q3 2026 earnings — **7/31 上调的 $2,200亿 capex 开始交答案。关键跟踪指标：AWS 营业利润率（当前 ~39%）。若利润率下降 + 收入增速同时减速 = 卖出信号。这是下一代空头论点（折旧压 EPS）的第一个检查点**" }
   - { date: 2026-08-04, kind: earnings, ticker: SU, note: "Q2 2026 earnings — production, WCS spread" }
   - { date: 2026-08-06, kind: earnings, ticker: CNQ, note: "Q2 2026 earnings" }
   - { date: 2026-08-26, kind: earnings, ticker: NVDA, note: "Q2 FY2027 earnings — Blackwell shipments, DC growth" }

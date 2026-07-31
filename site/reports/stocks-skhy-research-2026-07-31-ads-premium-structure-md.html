@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SKHY ADS 溢价结构研究</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-07-31 12:12</div>
+<h1 id="skhy-ads-30">SKHY — ADS「折价」结构研究：结论是溢价 30%，不是折价</h1>
+<blockquote>
+<p><strong>Research note</strong> · 2026-07-31 · scope: 结构性定价 / 入场决策 / 反驳工作区既有假设
+涵盖: ADS 比率验证 · 折溢价逐日计算 · 时区滞后校正 · lockup 真实条款 · 流动性与套利机制 · cornerstone 投资人风险 · 与 MU 的估值对比
+下次 review: <strong>2026-10-08（lockup 到期）</strong>，或 SKHY 溢价收敛到 <span class="up">+10%</span> 以下时</p>
+</blockquote>
+<div class="callout danger"><p><strong>这份研究推翻了它自己的立项前提。</strong></p>
+<p>7/31 日报里我写下待研究项时的假设是：「SKHY 相对韩股<strong>折价</strong>，Fwd P/E 4.42x vs MU 5.4x，可能是 memory cluster 里性价比最高的入口」。</p>
+<p>用 SEC 最终招股书确认 ADS 比率后重算：<strong>SKHY 相对韩股是持续 <span class="up">+30%</span> 左右的溢价，不是折价。</strong> 上市以来 14 个交易日，经时区滞后校正后 <strong>14/14 全部溢价</strong>，均值 <span class="up">+32.3%</span>，区间 <span class="up">+19.3%</span> ~ <span class="up">+42.4%</span>。</p>
+<p><strong>「性价比最高的入口」这个结论是错的，方向完全相反。</strong> SKHY 是这个 cluster 里最贵的入口。</p></div>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }#tabs1-8:checked ~ [data-tab-for="tabs1-8"] { display: block; }#tabs1-9:checked ~ [data-tab-for="tabs1-9"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><input class="tab-input" type="radio" name="tabs1" id="tabs1-8"><input class="tab-input" type="radio" name="tabs1" id="tabs1-9"><div class="tabs"><label class="tab-label" for="tabs1-0">为什么原来的判断会错</label><label class="tab-label" for="tabs1-1">逐日折溢价（上市以来全序列）</label><label class="tab-label" for="tabs1-2">Lockup：日期确认，但它不是主要变量</label><label class="tab-label" for="tabs1-3">溢价的真实来源：极薄流通盘 + 单向套利摩擦</label><label class="tab-label" for="tabs1-4">⚠️ 意外发现：Cornerstone 投资人正是本周爆仓的那只基金</label><label class="tab-label" for="tabs1-5">与 MU 的估值对比 —— 修正后</label><label class="tab-label" for="tabs1-6">关键判断</label><label class="tab-label" for="tabs1-7">重读触发条件</label><label class="tab-label" for="tabs1-8">数据来源</label><label class="tab-label" for="tabs1-9">未解决的问题（明确的数据缺口）</label></div><div class="tab-panel" data-tab-for="tabs1-0"><p>错误源于一个具体的技术遗漏：<strong>没有验证 ADS 比率</strong>。</p>
+<p>7/31 我看到的是 SKHY $148.10 和韩股 1,718,000 KRW（≈$1,190）。直觉上 $148 远低于 $1,190，加上 Fwd P/E 4.42x（SKHY）vs 3.84x（韩股）看起来接近，就默认了「ADS 大致对应 1 股，且在折价」。</p>
+<p><strong>实际比率来自 SEC 424B4 最终招股书（2026-07-09 定价）：</strong></p>
+<blockquote>
+<p>"Each ADS represents <strong>one-tenth</strong> of a common share (par value W5,000 per common share)."
+— <a href="https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm">424B4 final prospectus</a></p>
+</blockquote>
+<p><strong>1 ADS = 0.1 普通股。</strong> 所以正确的对标价格是韩股价 ÷ 10 ÷ 汇率：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>韩股 7/31 收盘</td>
+<td>1,718,000 KRW</td>
+</tr>
+<tr>
+<td>USDKRW 7/31</td>
+<td>1,442.96</td>
+</tr>
+<tr>
+<td>每股美元</td>
+<td>$1,190.61</td>
+</tr>
+<tr>
+<td><strong>每 ADS 的 NAV（÷10）</strong></td>
+<td><strong>$119.06</strong></td>
+</tr>
+<tr>
+<td><strong>SKHY 实际收盘</strong></td>
+<td><strong>$147.11</strong></td>
+</tr>
+<tr>
+<td><strong>溢价</strong></td>
+<td><strong><span class="up">+23.6%</span></strong></td>
+</tr>
+</tbody>
+</table>
+<p>Fwd P/E 的对比也误导了我：4.39x（SKHY）vs 3.84x（韩股）—— 这两个数字本身就直接说明 SKHY <strong>贵 14.4%</strong>，我当时把它读成了「接近」。这是第二个独立的、当时就在手边的反证，我漏掉了。</p></div><div class="tab-panel" data-tab-for="tabs1-1"><p>同日收盘对比（Korea 06:30 UTC / US 20:00 UTC，同一日历日）：</p>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>韩股 KRW</th>
+<th>NAV/ADS</th>
+<th>SKHY</th>
+<th>溢价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>07-10（上市）</td>
+<td>2,180,000</td>
+<td>$144.76</td>
+<td>$168.01</td>
+<td><span class="up">+16.1%</span></td>
+</tr>
+<tr>
+<td>07-13</td>
+<td>1,845,000</td>
+<td>$123.12</td>
+<td>$152.35</td>
+<td><span class="up">+23.7%</span></td>
+</tr>
+<tr>
+<td>07-14</td>
+<td>1,913,000</td>
+<td>$127.73</td>
+<td>$193.92</td>
+<td><strong><span class="up">+51.8%</span></strong></td>
+</tr>
+<tr>
+<td>07-15</td>
+<td>2,082,000</td>
+<td>$139.93</td>
+<td>$176.46</td>
+<td><span class="up">+26.1%</span></td>
+</tr>
+<tr>
+<td>07-16</td>
+<td>1,842,000</td>
+<td>$123.94</td>
+<td>$152.31</td>
+<td><span class="up">+22.9%</span></td>
+</tr>
+<tr>
+<td>07-20</td>
+<td>1,764,000</td>
+<td>$118.60</td>
+<td>$151.16</td>
+<td><span class="up">+27.5%</span></td>
+</tr>
+<tr>
+<td>07-21</td>
+<td>1,836,000</td>
+<td>$124.47</td>
+<td>$171.94</td>
+<td><span class="up">+38.1%</span></td>
+</tr>
+<tr>
+<td>07-22</td>
+<td>1,830,000</td>
+<td>$123.67</td>
+<td>$165.27</td>
+<td><span class="up">+33.6%</span></td>
+</tr>
+<tr>
+<td>07-23</td>
+<td>1,919,000</td>
+<td>$130.05</td>
+<td>$169.50</td>
+<td><span class="up">+30.3%</span></td>
+</tr>
+<tr>
+<td>07-24</td>
+<td>1,759,000</td>
+<td>$119.33</td>
+<td>$154.57</td>
+<td><span class="up">+29.5%</span></td>
+</tr>
+<tr>
+<td>07-27</td>
+<td>1,816,000</td>
+<td>$124.55</td>
+<td>$143.02</td>
+<td><span class="up">+14.8%</span></td>
+</tr>
+<tr>
+<td>07-28</td>
+<td>1,550,000</td>
+<td>$105.84</td>
+<td>$130.17</td>
+<td><span class="up">+23.0%</span></td>
+</tr>
+<tr>
+<td>07-29</td>
+<td>1,401,000</td>
+<td>$96.41</td>
+<td>$126.79</td>
+<td><span class="up">+31.5%</span></td>
+</tr>
+<tr>
+<td>07-30</td>
+<td>1,322,000</td>
+<td>$91.66</td>
+<td>$149.00</td>
+<td><strong><span class="up">+62.6%</span></strong></td>
+</tr>
+<tr>
+<td><strong>07-31</strong></td>
+<td>1,718,000</td>
+<td>$119.06</td>
+<td><strong>$147.11</strong></td>
+<td><strong><span class="up">+23.6%</span></strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>均值 <span class="up">+30.3%</span>，最小 <span class="up">+14.8%</span>，从未出现折价。</strong></p>
+<h3>时区滞后校正 —— 更严格的检验</h3>
+<p>同日对比有个方法论缺陷：韩国收盘（06:30 UTC）<strong>早于</strong>美国收盘（20:00 UTC）13.5 小时，所以韩股收盘时还没看到当天的美股走势。更公平的比法是把 SKHY 的 D 日收盘对标韩国 <strong>D+1</strong> 的收盘（那时韩国已消化美国信息）：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>同日对比</th>
+<th>滞后校正</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>均值溢价</td>
+<td><span class="up">+30.3%</span></td>
+<td><strong><span class="up">+32.3%</span></strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td><span class="up">+14.8%</span> ~ <span class="up">+62.6%</span></td>
+<td><span class="up">+19.3%</span> ~ <span class="up">+42.4%</span></td>
+</tr>
+<tr>
+<td>溢价交易日</td>
+<td>15/15</td>
+<td><strong>14/14</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>两种算法都得出持续溢价，且滞后校正后溢价更高、波动更小。</strong> 说明溢价是结构性的，不是时区错位的假象。</p>
+<div class="callout warn"><p><strong>这同时推翻了 7/31 日报里另一个判断。</strong> 我当时写「7/31 韩股 <span class="up">+30%</span> 而 ADS <span class="down">-0.6%</span>，是严重脱钩」，并推断是流动性未同步。</p>
+<p>滞后校正后的真相：<strong>7/30 SKHY 先涨 <span class="up">+17.5%</span>（$126.79 → $149.00），7/31 韩国开盘才补涨 <span class="up">+30%</span>。韩股是在跟随美股，不是脱钩。</strong> 两个市场对同一批信息（MSFT/AMZN 财报 + Samsung 指引）的反应只是隔了一个时区。</p>
+<p>7/30 那天溢价冲到 <span class="up">+62.6%</span> 的峰值，正是因为美股已经涨完而韩国还没开盘。7/31 韩国补涨后溢价回落到 <span class="up">+23.6%</span> —— <strong>这是溢价的正常呼吸，不是新的脱钩。</strong></p></div></div><div class="tab-panel" data-tab-for="tabs1-2"><p><strong>原假设：</strong> 折价可能由 10/8 的 90 天 lockup 造成，若如此则不会收敛。</p>
+<p><strong>确认的条款</strong>（424B4，招股书日期 2026-07-09）：</p>
+<blockquote>
+<p>"We and certain of our affiliates may agree with the underwriters, subject to certain exceptions, not to sell, transfer or otherwise dispose of any ADSs, common shares or similar securities for a period of <strong>90 days</strong> after the date of this prospectus."</p>
+</blockquote>
+<p>90 天自 2026-07-09 起 → <strong>到期约 2026-10-07</strong>（我原先估的 10/08 基本正确，差一天）。</p>
+<p><strong>但 lockup 在这里几乎不重要，原因有三，且第三条是决定性的：</strong></p>
+<p><strong>1. 这是 100% 增发（primary），没有老股东减持。</strong> 股份从 711,075,500 增至 728,865,500，增量 17,790,000 正好等于发行量。募资 $26.5B 全部进公司。<strong>没有 IPO 前股东在这次发行里卖出，所以没有"解禁后老股东抛售"的经典结构。</strong> 这跟 SPCX 的情形完全不同。</p>
+<p><strong>2. Lockup 覆盖的是发行人和"某些关联方"，条款措辞是"may agree"（可能同意），不是确定性表述。</strong> 招股书摘要没有点名 SK square，也没有列出受限股东清单。真正的条款在 Underwriting 章节（p.176）和 "Shares Eligible for Future Sale"（p.151），这两节在我抓取的内容里被截断了 —— <strong>这是本研究的一个明确数据缺口，我不做推断。</strong></p>
+<p><strong>3. 真正约束大股东的不是 lockup，是韩国法律。</strong></p>
+<blockquote>
+<p>"the requirement under the Monopoly Regulation and Fair Trade Act that SK square Co., Ltd. ('SK square'), our largest shareholder, maintain ownership of <strong>at least 20%</strong> of our issued common shares"</p>
+</blockquote>
+<p>这是《垄断规制与公平交易法》对控股公司的<strong>长期持股要求</strong>，不是 90 天的合约限制。发行规模被刻意压到只有 2.50% 就是为了满足这条。<strong>一个永久性的法定持股下限，比任何 lockup 都更能限制大股东供给。</strong></p>
+<div class="callout ok"><p><strong>结论：lockup 假设不成立。</strong> 10/07-10/08 不会有老股东抛售潮，因为(a)这是纯增发无老股减持，(b)最大股东受法定 20% 下限约束。</p>
+<p><strong>所以"折价源于 lockup、不会收敛"这条推断从根上就不适用 —— 因为首先就不存在折价。</strong></p></div></div><div class="tab-panel" data-tab-for="tabs1-3"><p>既然是溢价，要解释的问题变成「为什么美国投资者愿意为同一份现金流多付 30%」。</p>
+<h3>流通盘只有公司的 2.44%</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>发行普通股</td>
+<td>17,790,000 股</td>
+</tr>
+<tr>
+<td>发行后总股本</td>
+<td>728,865,500 股</td>
+</tr>
+<tr>
+<td><strong>美国线流通占比</strong></td>
+<td><strong>2.44%</strong></td>
+</tr>
+<tr>
+<td>对应 ADS 数量</td>
+<td>177,900,000 ADS</td>
+</tr>
+<tr>
+<td>发行价</td>
+<td>$149.00 / ADS</td>
+</tr>
+<tr>
+<td>募资总额</td>
+<td>~$26.5B</td>
+</tr>
+</tbody>
+</table>
+<p><strong>约 97.6% 的股份留在 KOSPI，美国线是一个极小的独立池子。</strong> 需求（想在美股账户买 HBM 龙头的美国机构和散户）撞上固定的小供给，价格必然高于 NAV。这就是溢价的第一性原因。</p>
+<h3>套利机制是单向可堵的</h3>
+<p>正常情况下 ADS 溢价会被套利抹平：买韩股 → 存入托管行 → 生成 ADS → 在美国卖出。但招股书明确警告反向路径受限：</p>
+<blockquote>
+<p>"If you surrender your ADSs in order to withdraw the underlying common shares, you may not be allowed to deposit the common shares again to obtain ADSs."</p>
+</blockquote>
+<p><strong>存入端（创造新 ADS）如果受韩国外汇管制或托管协议限制，溢价就无法被套利消除。</strong> 这是 ADR 溢价能长期存在的标准机制 —— 历史上韩国、台湾、印度的 ADR 都出现过长期两位数溢价，正是因为跨境存管有额度或审批限制。</p>
+<p>具体的 ADS 创造额度写在 "Korean Foreign Exchange Controls and Securities Regulations"（p.153），我抓取时被截断。<strong>这是第二个数据缺口，也是判断溢价能否收敛的最关键一环。</strong></p>
+<h3>溢价历史参照的诚实标注</h3>
+<p>我没有拉到韩国 ADR 长期溢价的历史统计数据来做定量对标。<strong><span class="up">+30%</span> 是高还是正常，我无法给出有数据支撑的判断。</strong> 只能说：溢价的机制（薄流通盘 + 单向套利摩擦）是清晰且可验证的，但「它会不会收敛到 <span class="up">+10%</span>」这个问题我没有历史基准来回答。这是本研究的第三个缺口。</p></div><div class="tab-panel" data-tab-for="tabs1-4"><p>这是本研究最重要的意外收获。</p>
+<p>424B4 列出三家 cornerstone investors，表达了最多 <strong>$7B</strong>（占发行额 26%）的认购意向：</p>
+<ol>
+<li>Baillie Gifford Overseas Limited</li>
+<li>Coatue 管理的基金</li>
+<li><strong>Situational Awareness Partners LP</strong></li>
+</ol>
+<p>而 7/31 的新闻（Quartz，URL slug 直接确认基金名）：</p>
+<blockquote>
+<p>"Leopold Aschenbrenner's AI hedge fund collapses after margin calls — The fund, which peaked at <strong>$45 billion</strong> this month, was forced to sell leveraged bets on AI infrastructure stocks to Ken Griffin's <strong>Citadel at a discount</strong>"
+— <a href="https://qz.com/situational-awareness-hedge-fund-margin-call-citadel-fire-sale-073126">qz.com/situational-awareness-hedge-fund-margin-call-citadel-fire-sale-073126</a></p>
+</blockquote>
+<p><strong>Situational Awareness = Aschenbrenner 的基金 = SKHY 的 cornerstone 投资人之一 = 本周被迫向 Citadel 折价抛售杠杆 AI 基础设施持仓的那只基金。</strong></p>
+<div class="callout danger"><p><strong>这条把两件原本无关的事连起来了，且对 SKHY 是特定的、当前的供给风险。</strong></p>
+<p><strong>关键限定（必须诚实标注）：</strong> 招股书明确说 cornerstone 的意向 <strong>"not binding agreements or commitments to purchase"</strong>（非约束性），所以我<strong>无法确认 Situational Awareness 实际获配了多少 SKHY，甚至无法确认它是否真的买了</strong>。招股书也没有显示 cornerstone 配额本身受 lockup 限制。</p>
+<p><strong>但如果它确实持有 SKHY：</strong>
+- 一只被迫清算的基金，持有一个流通盘只有 2.44% 的标的
+- 三家 cornerstone 最多认购 26% 的发行量 —— 相对于极薄的流通盘，任何一家的清仓都是巨量
+- 强制卖家不看基本面，会砸价出货
+- <strong>这可能同时解释了 7/27-7/29 SKHY 的暴跌</strong>（$154.57 → $126.79，三天 <span class="down">-18%</span>）—— 当时正是该基金爆仓的时间窗口</p>
+<p><strong>更大的结构含义：</strong> 一只在一个月内从峰值 $45B 崩掉的基金，持有杠杆 AI 基础设施多头。这可能也是 7/27-7/29 整个 semi 板块「无公司层面利空」暴跌的真实主因（当时新闻原话："Memory stocks are cratering for the second straight session with no company-specific bombshell to blame"）。这条已记入 7/31 日报和 MU thesis。</p></div>
+<p><strong>待确认（无法从当前来源解决）：</strong> Situational Awareness 是否实际持有 SKHY、持仓规模、以及清算是否已完成。13F 不覆盖（外国私人发行人的 ADS 持仓披露有滞后且规则不同），最快的信号是 SKHY 的成交量异常。</p></div><div class="tab-panel" data-tab-for="tabs1-5"><p>原假设「SKHY Fwd P/E 4.42x vs MU 5.4x，SKHY 更便宜」。这个比较本身没错，但要放进正确的语境：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>SKHY (US ADS)</th>
+<th>000660.KS (韩股)</th>
+<th>MU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fwd P/E</td>
+<td>4.39x</td>
+<td><strong>3.84x</strong></td>
+<td>5.42x</td>
+</tr>
+<tr>
+<td>Trailing P/E</td>
+<td>20.27x</td>
+<td>—</td>
+<td>18.84x</td>
+</tr>
+<tr>
+<td>隐含市值</td>
+<td><strong>$1,045B</strong></td>
+<td><strong>$845B</strong></td>
+<td>$942B</td>
+</tr>
+<tr>
+<td>30d</td>
+<td>— (上市仅3周)</td>
+<td><span class="down">-36.0%</span></td>
+<td><span class="down">-20.0%</span></td>
+</tr>
+<tr>
+<td>距 52周高</td>
+<td><span class="down">-24.5%</span></td>
+<td><span class="down">-42.5%</span></td>
+<td><span class="down">-33.5%</span></td>
+</tr>
+<tr>
+<td>下次财报</td>
+<td>2026-10-27</td>
+<td>2026-10-26</td>
+<td><strong>2026-09-23</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>三个独立指标一致指向同一结论：</strong>
+1. Fwd P/E：SKHY 比韩股贵 <strong>14.4%</strong>
+2. 隐含市值：SKHY $1,045B vs 韩股 $845B → 贵 <strong>23.6%</strong>
+3. 价格 vs NAV：贵 <strong>23.6%</strong></p>
+<p><strong>所以真正的排序是：韩股（3.84x）&lt; MU（5.42x）&lt; SKHY（4.39x 但含 24% 溢价，实际对应韩股的 3.84x + 溢价）。</strong></p>
+<p><strong>如果目标是「买 HBM 短缺周期的最便宜入口」，答案是韩股 000660.KS，不是 SKHY。</strong> SKHY 的唯一优势是美股账户可直接买、无需韩国券商和外汇手续 —— 这个便利性的定价是 <span class="up">+24%</span>~32%。</p>
+<div class="callout info"><p><strong>注意 MU 的财报日期优势：MU 2026-09-23（yfinance 最新口径，比我原先记的 9/25 早两天），SK Hynix 2026-10-26/27。</strong></p>
+<p>MU 先出数据，且 MU 有工作区预先承诺的 scorecard（GM ≥82%、rev ≥$43B、EPS ≥$27、HBM QoQ ≥<span class="up">+20%</span>）。<strong>MU 的财报是整个 memory cluster 在 9 月的唯一裁判，SKHY/韩股要多等一个月。</strong> 这意味着 MU 仍然是这个 cluster 里信息效率最高的持仓 —— 它最早给出可验证的数字。</p></div></div><div class="tab-panel" data-tab-for="tabs1-6"><div class="verdict watch">不买 SKHY。溢价 <span class="up">+30%</span> 是结构性的（2.44% 流通盘 + 单向套利摩擦），不是待收敛的错价。真正的便宜标的是韩股，但美股账户买不到。现有 MU 持仓不动。</div>
+<p><strong>1. 原立项假设完全错误，方向相反。</strong> SKHY 不是折价而是持续溢价 <span class="up">+30%</span>（14/14 交易日），不是「性价比最高的入口」而是最贵的入口。<strong>教训：任何跨市场比价，第一步必须验证 ADS/ADR 比率，这是一次 SEC 文件查询就能解决的事。</strong> 我在 7/31 报告里基于未验证的比率写了一条投资含义 —— 这个流程错误比结论错误更值得记住。</p>
+<p><strong>2. Lockup 假设不适用。</strong> 10/07 到期，但这是 100% 增发无老股减持，且大股东受韩国法定 20% 持股下限（永久约束）限制。<strong>不存在解禁抛售的经典结构。</strong> 与 SPCX 的 12/09 lockup 是完全不同的性质 —— SPCX 有真实的老股东和 IPO 分配盘要解禁，SKHY 没有。</p>
+<p><strong>3. 溢价大概率不收敛，但我无法定量证明。</strong> 机制清晰（薄流通盘 + 存管单向受限），但缺三个数据：ADS 创造的具体额度限制、韩国 ADR 长期溢价的历史基准、以及 Underwriting 章节的完整 lockup 条款。<strong>在补上这些之前，"溢价会不会收敛"是开放问题，我不给结论。</strong></p>
+<p><strong>4. Situational Awareness 的连结是当前最值得跟踪的单一风险。</strong> 一只爆仓基金可能持有一个 2.44% 流通盘标的的大额头寸。这既是 SKHY 的特定下行风险，也可能是 7/27-7/29 整个 semi 暴跌的真实解释。<strong>但因为 cornerstone 意向是非约束性的，我无法确认它实际持有 —— 这是推测，标注为 medium confidence。</strong></p>
+<p><strong>5. 对现有持仓的操作含义：什么都不做。</strong> 结论是「不买 SKHY」，而工作区本来也没有 SKHY 持仓。MU 持仓的逻辑不受本研究影响 —— 反而因为发现 MU 财报（9/23）比 SK Hynix（10/26）早一个月，MU 作为 cluster 信息入口的地位被加强了。</p>
+<p><strong>6. 如果一定要在 memory cluster 加仓，排序是：</strong> 韩股 000660.KS（3.84x，最便宜，但需韩国券商 + 外汇）&gt; MU（5.42x，美股可买，9/23 最早给数据，有 scorecard）&gt;&gt; SKHY（含 +24~32% 溢价，无独立优势）。</p></div><div class="tab-panel" data-tab-for="tabs1-7"><ul>
+<li><strong>2026-10-07/08（lockup 到期）</strong> — 验证「无老股减持 → 无抛售潮」这个判断。若 SKHY 在到期前后放量下跌，说明我漏掉了受限股东清单里的某方（Underwriting 章节缺口）</li>
+<li><strong>SKHY 溢价收敛到 <span class="up">+10%</span> 以下</strong> — 说明套利通道比我判断的通畅，需重新评估存管限制的实际约束力</li>
+<li><strong>SKHY 溢价扩张到 <span class="up">+50%</span> 以上并维持</strong> — 说明供需失衡加剧，届时韩股-SKHY 价差可能成为可交易机会（需先确认存管机制）</li>
+<li><strong>Situational Awareness 清算细节披露</strong> — 若确认持有 SKHY 且尚未出清，是明确的短期下行风险</li>
+<li><strong>2026-09-23 MU Q4 FY26 财报</strong> — cluster 层面的裁判日，会重设整个 memory 的估值基准</li>
+<li><strong>2026-10-26/27 SK Hynix Q3 财报</strong> — SKHY 上市后第二份财报</li>
+<li><strong>补齐三个数据缺口</strong> — 424B4 的 Underwriting（p.176）、Shares Eligible for Future Sale（p.151）、Korean Foreign Exchange Controls（p.153）三节全文。这是把本研究从「机制清晰但无定量」升级到「可定价」的必要条件</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs1-8"><ul>
+<li>ADS 比率 / lockup / 发行结构 / cornerstone 名单：<a href="https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm">SEC 424B4 final prospectus, 2026-07-10</a>（定价日 2026-07-09，发行价 $149.00/ADS）</li>
+<li>完整申报记录：<a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0002120882">SEC EDGAR CIK 0002120882</a>（DRS 2026-03-24 → F-1 06-24 → F-1/A 06-30, 07-06 → F-6 07-01 → EFFECT + CERT + 8-A12B 07-09 → 424B4 07-10 → 6-K ×5）</li>
+<li>价格 / 汇率 / 估值：yfinance via <code>scripts/fetch.py</code>（SKHY, 000660.KS, 005930.KS, MU, USDKRW=X），2026-07-31</li>
+<li>Situational Awareness 爆仓：<a href="https://qz.com/situational-awareness-hedge-fund-margin-call-citadel-fire-sale-073126">Quartz, 2026-07-31</a></li>
+<li>相关工作区文档：<a href="../../MU/thesis.md">MU thesis</a> · <a href="../../MU/research/2026-06-23-business-structure.md">MU 业务结构</a> · <a href="../../MU/research/2026-06-25-next-earnings-watchlist.md">MU earnings scorecard</a> · <a href="../../../dashboard/2026-07-31.md">2026-07-31 日报</a></li>
+</ul></div><div class="tab-panel" data-tab-for="tabs1-9"><ol>
+<li><strong>ADS 创造的具体额度限制</strong> — 决定溢价能否被套利消除。在 424B4 p.153「Korean Foreign Exchange Controls and Securities Regulations」</li>
+<li><strong>完整 lockup 条款</strong> — 受限方名单、carve-outs、是否有价格触发的提前解禁。在 p.176「Underwriting」</li>
+<li><strong>韩国 ADR 长期溢价的历史基准</strong> — <span class="up">+30%</span> 是异常还是常态，需要历史统计</li>
+<li><strong>Situational Awareness 是否实际持有 SKHY 及规模</strong> — cornerstone 意向非约束性，无法从招股书确认</li>
+<li><strong>DRAM 反垄断诉讼</strong> — 424B4 披露 2026-06-25 加州北区间接购买者集体诉讼。本研究未评估其影响</li>
+</ol></div></div>
+</body>
+</html>

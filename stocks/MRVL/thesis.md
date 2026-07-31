@@ -68,3 +68,23 @@ Moderate leverage from acquisitions (Inphi). FCF generation is increasing with s
 ## Stands & Updates
 
 _No entries yet._
+
+### 2026-07-31  Note — +5.53%，但当天出现两条互相矛盾的公司新闻。8/27 是裁判日
+
+**事实：** MRVL $192.06 (+5.53%, **0.50x 极度缩量**)。距 52周高 **-41.8%**（$329.88 → $192，全 semi 跌幅最大），距 MA50 -19.8%，月内最大跌幅 -32%。Fwd P/E 30.8x / Trailing 66x。
+
+**今天涨的原因：** AMZN capex 上调 $200亿 到 $2,200亿 + AMZN 明确**淡化 Trainium 与 NVDA 的竞争关系**（Barron's）。后者表面看利空 MRVL（若 Trainium 不替代 NVDA，量还大吗？），但市场读的是"AMZN 两条路都投，$2,200亿 里 Trainium 和 NVDA 都有份，不是零和" —— 所以 NVDA (+2.23%) 和 MRVL (+5.53%) 同涨。
+
+**但当天有两条互相矛盾的 MRVL 新闻，必须放在一起读：**
+
+**矛盾一（🔴 关键）："Marvell Is Betting More Of Its Revenue On One End Market"** —— 数据中心已占营收 3/4，公司自己的指引还要**扩大**这个比例，同时**"plans for cloud spending growth to cool"（为云支出增速降温做准备）**。
+
+**这句话是 MRVL 管理层自己说的，跟今天市场买它的理由（AMZN capex 上调）直接矛盾。** 管理层在为云支出降温做准备，同时把营收集中度往数据中心进一步提高 —— 这是一个"知道风险但没有别的选择"的姿态。
+
+**矛盾二（🟡）："Marvell Down Huge This Month: The Pros See 120% Returns in 12 Months"** —— 股价单月崩 32%，**44 位分析师集体拒绝下调目标价**，形成罕见的目标价-股价缺口。
+
+**我的判断：这种情形历史上的解决方式通常是目标价集体下修，而不是股价补涨。** 卖方分析师的目标价调整总是滞后于股价，且在财报后集中修正。**8/27 MRVL 自己的财报是这个矛盾的裁判日。**
+
+**定性（与 7/30 加入 watchlist 时记录的一致，今天的 +5.5% 不改变它）：MRVL 是高度押注 AMZN 单一客户的高 beta 跟踪标的，不是核心持仓。** 利好时弹得猛（7/30 +12.2%、7/31 +5.5%），利空时跌得惨（月内 -32%）。**评分日 8/27。在那之前是"有叙事支撑的跟踪"，不给它核心仓位的确定性待遇。**
+
+**与 AVGO 的结构差异（复述以固化）：** AVGO 是"多客户、多年锁定合同、季度可预测"，市场给稳定溢价（Fwd P/E 19.9x）；MRVL 是"高度集中 AMZN 一个客户的押注"，Trainium ramp 节奏不确定，市场不给稳定溢价（Fwd P/E 30.8x 但波动极大）。**同一个 AI 叙事，两种完全不同的风险定价。**

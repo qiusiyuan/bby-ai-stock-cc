@@ -2,8 +2,13 @@ ticker: SKHY
 active: true
 tags: [ai, focus]
 added: 2026-07-10
-last_checked: 2026-07-10
+last_checked: 2026-07-31
 last_quarterly_review: null
 last_annual_refresh: 2026-07-10
 max_weight_pct: null
-notes: "US ADR listing day 1. KRX ticker 000660.KS retained in DRAM cluster for cross-ref."
+notes: "US ADS listing (Nasdaq, 2026-07-09 priced @ $149.00/ADS, 100% primary, ~$26.5B raised). KRX ticker 000660.KS retained in DRAM cluster for cross-ref. **1 ADS = 1/10 common share** (SEC 424B4 confirmed) — always divide Korea price by 10 before comparing."
+last_research: 2026-07-31
+research_notes:
+  - path: stocks/SKHY/research/2026-07-31-ads-premium-structure.md
+    finding: "SKHY trades at a persistent ~+30% PREMIUM to the Korea line (14/14 sessions, lag-corrected mean +32.3%), NOT a discount. Overturns the 2026-07-31 daily-report premise. Cause: 2.44% float + one-way deposit friction. Lockup (expires ~2026-10-07) is NOT the driver — 100% primary issuance, no selling shareholders, and SK square is bound by a permanent Korean 20% ownership floor. Cheapest memory-cycle entry is the Korea line (fwd P/E 3.84x), not SKHY (4.39x + premium). Do not buy SKHY."
+    review_trigger: "2026-10-07 lockup expiry, or premium converging below +10%"
