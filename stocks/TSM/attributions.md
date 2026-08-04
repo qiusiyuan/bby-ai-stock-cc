@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-04 · +3.28% day · ▲ moderate
+**Tags:** `sector_rotation`, `ai_demand`
+**Confidence:** medium
+
+**Primary cause.** Broad semiconductor risk-on rally (PLTR earnings, US-Iran draft deal lowering oil and rates, HBF memory standard). No TSM-specific catalyst; as the foundry for essentially the entire AI complex, TSM tracks sector sentiment.
+
+**Sources.**
+- Yahoo: [Marvell, Sandisk, SK Hynix lead semiconductor stock rally as S&P 500 trades at record highs](https://finance.yahoo.com/)
+- _Corroboration:_ TSM +3.3% versus SMH +6.0% — underperformed the sector ETF, similar to NVDA +3.1%.
+
+**Cross-assets.** SPY +2.02% · VIX 16.34 · TEN YEAR 4.627 · WTI 75.82
+
+**Agent read.** TSM tracked the sector but underperformed the ETF, landing in the same underperformance bucket as NVDA (+3.3% and +3.1% versus SMH +6.0%). The shared characteristic of the two laggards is that both are incumbent leaders, while the outperformers were either deeply oversold (INTC, SNDK, MRVL) or custom-ASIC levered (AVGO, MRVL). Today's capital went to beta and to NVDA-alternatives, not to incumbents. TSM remains -10.3% over 30 days and 1.5% below its 50MA ($425.41). Next print is 10/15, a long way out, so TSM will drift on sector sentiment until then. Forward PE 19.4 is reasonable relative to the cluster.
+ · Snapshot at `dashboard/2026-08-04.md`
+
+---
 ### 2026-06-30 · +4.90% day · ▲ material
 **Tags:** `sector_rotation`, `ai_demand`, `flow_event`
 **Confidence:** medium

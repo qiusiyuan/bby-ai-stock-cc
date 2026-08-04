@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-04 · +3.06% day · ▲ moderate
+**Tags:** `sector_rotation`, `ai_demand`, `competitor_news`, `macro_rates`
+**Confidence:** medium
+
+**Primary cause.** Participated in the broad semiconductor risk-on rally (PLTR earnings validating enterprise AI + US-Iran draft deal + HBF memory standard) and reclaimed its 50MA at $205.67, but MATERIALLY UNDERPERFORMED the sector: +3.06% versus SMH +6.0%, MRVL +13.8%, AMD +9.3%, AVGO +7.4%. Financial media addressed the gap directly, noting NVDA still trades at a heavy discount to chip rivals and has lagged the PHLX Semiconductor Index, which is up 61% year to date.
+
+**Sources.**
+- Barron's/Yahoo: [Why Nvidia Stock Still Trades at a Heavy Discount to Chip Rivals](https://finance.yahoo.com/)
+- Investor's Business Daily/Yahoo: [Nvidia Tops Key Level As AMD Heads Into Earnings; Is Nvidia A Buy Now](https://finance.yahoo.com/)
+- Barron's/Yahoo: [Today's Trade Is to Buy Chips and Sell the Magnificent 7](https://finance.yahoo.com/)
+- _Corroboration:_ NVDA underperformed every tracked semi peer today: MRVL +13.8%, INTC +11.0%, AMD +9.3%, AVGO +7.4%, SMH +6.0%, TSM +3.3%, NVDA +3.1%. Forward PE 16.5 is the CHEAPEST in the cluster (AMD 38, AVGO 21.6, MRVL 35, INTC 49, PLTR 74.7).
+
+**Cross-assets.** SPY +2.02% · VIX 16.34 · TEN YEAR 4.627 · WTI 75.82
+
+**Agent read.** The signal today is not the +3.1%, it is the underperformance, and it deserves dedicated research. NVDA is the cheapest name in its own cluster at fPE 16.5 while trading up only half as much as the sector ETF on a day when every AI-positive catalyst fired at once. Two readings point in opposite directions. Bullish: NVDA is mispriced, and the 8/26 print is the re-rating catalyst. Bearish: the market is actively pricing share erosion, with the custom-ASIC path represented by AVGO and MRVL (TPU, Trainium, MTIA) taking hyperscaler sockets away from merchant GPUs — and it is precisely AVGO +7.4% and MRVL +13.8% that outran NVDA today, which is exactly what money buying 'the NVDA alternatives' looks like. I weight the second reading higher, because the underperformance is not a one-day artifact: SOX is up 61% YTD while NVDA has lagged all year. A single day of discount can be mispricing; a year of persistent underperformance in the sector leader is usually a structural judgment. The 8/26 Q2 FY2027 print (Blackwell shipments, data-center growth rate) is the only event that can falsify this, and it is the largest single event in the tracked universe this month. Worth noting alongside this: today marked the first session since July in which AI suppliers outran AI spenders (AMZN -2.4%, META -0.1% versus the semi complex up 6-14%), reversing the dominant 30-day pattern in which spenders crushed suppliers.
+ · Snapshot at `dashboard/2026-08-04.md`
+
+---
 ### 2026-07-10 · +4.03% day · ▲ major
 **Tags:** `ai_demand`, `competitor_news`, `sector_rotation`, `supply_chain`
 **Confidence:** high

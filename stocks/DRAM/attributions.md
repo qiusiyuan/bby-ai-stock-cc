@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-04 · +7.92% day · ▲ major
+**Tags:** `sector_rotation`, `memory_pricing`, `ai_demand`, `tech_breakthrough`, `flow_event`
+**Confidence:** medium
+
+**Primary cause.** Mechanical follow-through of constituent moves after the SNDK + SK Hynix HBF (High Bandwidth Flash) AI memory standard launch and accompanying Wall Street price-target hikes across the memory group. Constituents: SNDK +11.7%, MU +8.4%, SKHY +7.8%. Broad risk-on tape (S&P record high on US-Iran draft deal, WTI -5.6%) amplified the beta.
+
+**Sources.**
+- Yahoo: [Semiconductor ETFs Surge up to 19% in Huge Rally as the AI Trade Ramps Back Up](https://finance.yahoo.com/)
+- Yahoo: [MU, SNDK, DRAM Stocks Advance Premarket: Samsung Reclaims DRAM Lead, Micron Narrows Gap With SK Hynix](https://finance.yahoo.com/)
+- _Corroboration:_ ETF tracked constituents faithfully: SNDK +11.7%, MU +8.4%, SKHY +7.8%, DRAM +7.9%. Whole complex bottomed 7/29 and has now rallied six sessions.
+
+**Cross-assets.** SPY +2.02% · VIX 16.34 · TEN YEAR 4.627 · WTI 75.82
+
+**Agent read.** The ETF is the cleanest read on the memory complex as a whole, and its message is that this is a rebound, not a repair: +7.9% today only lifts 30-day performance from about -37% to -31.6%, still 11% below the 50MA ($61.89) and -32% from the 52-week high ($81.34). The complex bottomed on 7/29 and has rallied six sessions, with SNDK up roughly 41% off that low versus MU up 22% — the dispersion shows the market paying specifically for SNDK's HBF-driven re-classification rather than for a generic cycle bounce. volr 0.57x means no volume confirmation. Two verification points land tomorrow, 8/5: the SNDK Q4 FY26 print (first cash-flow test of the HBF narrative) and the Korean open for 000660.KS (tests whether the SKHY ADS premium reflects fundamentals or one-sided US sentiment). Both confirming would materially raise the credibility of the complex rebound and improve the outlook for MU's 9/23 scorecard; both disappointing would mark today as a one-day sentiment bounce with the 7/29 low still in play.
+ · Snapshot at `dashboard/2026-08-04.md`
+
+---
 ### 2026-07-01 · -9.90% day · ▼ major
 **Tags:** `ai_demand`, `memory_pricing`, `sector_rotation`
 **Confidence:** high

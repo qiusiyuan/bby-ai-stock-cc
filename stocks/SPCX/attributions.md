@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-04 · +9.81% day · ▲ major
+**Tags:** `earnings_pre_print`, `flow_event`, `executive_comment`, `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** Short-covering ahead of SpaceX's first-ever earnings report (tonight, 8/4 AMC), not any positive news. Short interest was reported at historic highs with soaring put/call ratios and a deeply shorted float; Musk publicly warned short sellers. Mechanically confirmed by SSPC (2x inverse SPCX) falling -20.0%, roughly double SPCX's gain, indicating inverse positions being liquidated. Secondary driver: as a high-duration, fPE-139 asset, SPCX is among the most rate-sensitive names in the workspace, so the WTI -5.6% / 10Y -1.3% move mechanically re-rated it alongside the broad risk-on tape.
+
+**Sources.**
+- Barron's/Yahoo: [SpaceX Faces a $225 Billion Earnings Test — options traders expect a 15% move as short bets and a massive share unlock raise the stakes](https://finance.yahoo.com/)
+- Yahoo: [Elon Musk issues ominous warning as SpaceX short interest hits danger zone](https://finance.yahoo.com/)
+- Yahoo: [SpaceX Shows Life at $114: A Classic Bull Trap?](https://finance.yahoo.com/)
+- Investor's Business Daily/Yahoo: [SpaceX Earnings Due. Fewer Falcon 9 Launches, Tesla Merger, Share Lockup In Focus.](https://finance.yahoo.com/)
+- _Corroboration:_ SSPC (2x inverse) -20.01% vs SPCX +9.81% — leverage-consistent, confirming inverse-position liquidation. SPCX volr 1.07x was the only focus-list name with above-average volume.
+
+**Cross-assets.** SPY +2.02% · VIX 16.34 · TEN YEAR 4.627 · WTI 75.82
+
+**Agent read.** Quality 3/10 — a large gain with no good news behind it. The move is position-driven (short covering into a binary event), and one analyst explicitly labelled it 'a classic bull trap', reasoning that the lockup is unresolved, put/call ratios are soaring, and the float is deeply shorted — all of which are fuel for DOWN moves too, since a heavily shorted stock has no long-holder cushion under bad news. Tonight's print is genuinely regime-changing for analysis quality: until now SPCX could only be assessed from the IPO prospectus and secondhand reporting, and after tonight it becomes a stock with actual financial statements. Four variables to watch: (1) Falcon 9 launch cadence reportedly DECLINED this quarter — the most direct revenue-side risk; (2) Starlink ARPU, which anchors the existing kill_condition of 'ARPU below $50 for two consecutive quarters'; (3) capex trajectory — reports expect revenue growth accelerating but capex accelerating too, which for an fPE-139 name pushes free-cash-flow breakeven further out and is the most likely source of downside; (4) any Musk commentary on the Tesla relationship, Starship, or the 12/9 lockup, which is the only plausible large upside variable. My scenario split for the five sessions after the print: Bull 30% ($150-165), Base 45% ($110-135), Bear 25% ($95-108). I lean Base with respect for the Bear tail because today's +9.8% already front-ran good news. SEPARATE AND IMPORTANT: my own 6/18 counter-prediction (#4: SPCX rangebound $190-235 through 8/31, never closing below $180) is now DEFINITIVELY FAILED at $126, and tonight cannot change that. The user's 'worth half' bear thesis was directionally correct and closely matched the -53.3% median 12-month drawdown I myself computed across mega-IPO analogs. My error was treating the ~4% float plus Nasdaq-100 passive inflows as a mechanical floor; in reality a tiny float is an AMPLIFIER under sell pressure, not a shock absorber, because passive inflows are far smaller than early-holder and short-seller supply. I will correct that prior at the 8/31 scoring date. User holds no position — tracking only, no sell alerts.
+ · Snapshot at `dashboard/2026-08-04.md`
+
+---
 ### 2026-07-31 · -2.99% day · ▼ material
 **Tags:** `flow_event`, `macro_rates`, `lockup_expiry`, `regulatory_positive`
 **Confidence:** high

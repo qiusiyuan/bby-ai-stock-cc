@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-04 · +11.02% day · ▲ major
+**Tags:** `sector_rotation`, `flow_event`, `unattributed`, `ai_demand`
+**Confidence:** low
+
+**Primary cause.** No identifiable company-specific catalyst. INTC rose purely on risk-on sector rotation and oversold-bounce/short-squeeze mechanics after falling 35% in July. Financial media flagged the disconnect explicitly, noting the biggest winner of the day was 'the one that fell 24% last month and still has no trailing earnings to justify the bounce'. Macro backdrop: S&P record high on US-Iran draft-deal progress, WTI -5.6%, 10Y -1.3%, SQQQ -10.6% signalling systematic short-cover across the tape.
+
+**Sources.**
+- Yahoo: [Intel Soars 10%, AMD Jumps 8%, Broadcom Rises 6% as Chip Stocks Ride a Risk-On Rally](https://finance.yahoo.com/)
+- Motley Fool: [Why Intel Stock Fell 35% Last Month](https://www.fool.com/)
+- _Corroboration:_ Whole-sector move with no INTC news: SMH +6.0%, AMD +9.3%, AVGO +7.4%, MRVL +13.8%. Inverse ETFs crushed (SQQQ -10.6%) confirming short-squeeze mechanics.
+
+**Cross-assets.** SPY +2.02% · VIX 16.34 · TEN YEAR 4.627 · WTI 75.82
+
+**Agent read.** Quality 2/10 — the lowest-quality large gain in the entire tracked universe today, and confidence is deliberately set to LOW because there is genuinely nothing to attribute it to beyond flows. Three compounding problems. First, zero company catalyst: unlike SNDK (HBF standard), MRVL (China component restriction report), or SKHY (coverage initiations), INTC produced no news at all — a financial-media headline called out this exact incoherence. Second, valuation: forward PE 49 makes INTC the MOST expensive name in a sector where peers trade at 5-38x (MU 5.8, SNDK 6.8, NVDA 16.5, AVGO 21.6, MRVL 35, AMD 38). Paying 49x for the turnaround story while a 16.5x AI leader sits next to it is hard to defend on any framework. Third, volr 0.71x means even this 11% move lacked volume confirmation. The mechanism is almost certainly short-covering: INTC was a crowded short after -35% in July, and inverse-ETF liquidation across the tape (SQQQ -10.6%, SSPC -20.0%) shows systematic de-grossing rather than accumulation. Practical implication: this is the name most likely to give the gains straight back once the squeeze exhausts, because nothing changed about the foundry thesis. Distance to thesis_break_price of $75 is -26%, so no alert, but INTC remains -28% over 30 days and 10% below its 50MA ($112). The genuine INTC questions — 14A process milestones, foundry customer wins, Xeon design wins, US government equity stake actions — all remain unanswered and the next scheduled catalyst is not until the 10/22 print.
+ · Snapshot at `dashboard/2026-08-04.md`
+
+---
 ### 2026-07-15 · n/a day · ▼ major
 **Tags:** `sector_rotation`, `china_competition`
 **Confidence:** medium

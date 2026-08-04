@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-04 · -8.21% day · ▼ major
+**Tags:** `sector_rotation`, `memory_pricing`, `competitor_news`, `unattributed`
+**Confidence:** medium
+
+**Primary cause.** SK Hynix's Korean local listing fell -8.21% on the SAME DAY its US ADS (SKHY) rose +7.79% — a 16-percentage-point divergence in one company. Primary explanation is timing plus venue: the Korean close precedes the US open by roughly 13 hours, so the local market traded on 8/3 US memory sentiment and captured NEITHER the HBF standard launch NOR the six brokerage coverage initiations, both of which are US-ADS-specific events (research quiet-period expiry only reaches the ADS market). Contributing negative: Counterpoint data showed Samsung reclaiming the #1 DRAM position at 39% Q2 share.
+
+**Sources.**
+- _Data:_ 000660.KS -8.21% versus SKHY ADS +7.79% same date — 16pp gap. Korean market closes ~13 hours before US open. ()
+- Yahoo: [MU, SNDK, DRAM Stocks Advance Premarket: Samsung Reclaims DRAM Lead, Micron Narrows Gap With SK Hynix](https://finance.yahoo.com/)
+- Yahoo: [SK Hynix rises as brokerages launch coverage with bullish ratings](https://finance.yahoo.com/)
+
+**Cross-assets.** SPY +2.02% · VIX 16.34 · TEN YEAR 4.627 · WTI 75.82
+
+**Agent read.** This is the single most diagnostic anomaly in today's tape and it is worth logging precisely because it will recur. A 16-point same-day divergence between an ADS and its home listing is not a data error; it is the predictable result of venue-specific catalysts (coverage initiations reach only ADS holders) landing inside a 13-hour timezone gap. TESTABLE PREDICTION for the 8/5 Korean open: if 000660.KS rallies 6% or more, the timezone-plus-venue explanation is confirmed and the ADS premium is justified by information that the local market simply had not yet seen; if it gains under 3% or falls again, then today's ADS +7.8% was one-sided US sentiment and the premium should mean-revert. The local listing is also -43.0% over 30 days versus the ADS being far shallower, which is itself evidence that the ADS has been carrying a widening premium — exactly the structure flagged in the existing 7/31 research (stocks/SKHY/research/2026-07-31-ads-premium-structure.md). Today supplies the first live stress test of that framework. Separately, the Samsung share-reclaim datapoint is a genuine competitive negative for SK Hynix that the Korean market may have weighted more heavily than US ADS buyers did, and it carries a mildly negative read-through to MU's 9/23 scorecard on HBM share dynamics.
+ · Snapshot at `dashboard/2026-08-04.md`
+
+---
 ### 2026-06-22 · +5.61% day · ▲ extreme
 **Tags:** `ai_demand`, `memory_pricing`, `production_milestone`, `sector_rotation`
 **Confidence:** high

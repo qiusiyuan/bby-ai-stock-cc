@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-04 · +8.40% day · ▲ major
+**Tags:** `sector_rotation`, `memory_pricing`, `ai_demand`, `pt_change`, `tech_breakthrough`
+**Confidence:** medium
+
+**Primary cause.** Pure sector-complex follow-through with NO MU-specific catalyst. MU was neither an HBF standard co-author (SNDK + SK Hynix) nor the subject of the coverage-initiation wave (SKHY only). It rose because the entire memory complex re-rated on the HBF standard launch plus broad risk-on (S&P record high on US-Iran draft deal, WTI -5.6%). Analyst PT hikes across the memory group provided a mild direct lift. Confidence is medium, not high, precisely because the driver is sector/macro rather than company-specific.
+
+**Sources.**
+- Yahoo: [Sandisk Jumps 8%, Micron Gains 6%, SK Hynix Climbs 4% as Wall Street Hikes Price Targets on AI Memory Boom](https://finance.yahoo.com/)
+- Yahoo: [MU, SNDK, DRAM Stocks Advance Premarket: Samsung Reclaims DRAM Lead, Micron Narrows Gap With SK Hynix](https://finance.yahoo.com/)
+- Yahoo: [Just How Wide Is the Potential Swing in Micron Stock?](https://finance.yahoo.com/)
+- _Corroboration:_ Complex moved as one: SNDK +11.7%, SKHY +7.8%, DRAM ETF +7.9%, MU +8.4%. MU had the LOWEST volume ratio in the group at 0.55x.
+
+**Cross-assets.** SPY +2.02% · VIX 16.34 · TEN YEAR 4.627 · WTI 75.82
+
+**Agent read.** Quality 4/10 — the weakest-quality large gain in the memory complex, and the reason is structural rather than incidental. Today's ordering of gains within the cluster was 'names with their own story (SNDK +11.7%) > names with a one-time event (SKHY +7.8%) > pure followers (MU +8.4%, volr 0.55x)'. That is a healthy market allocating by information content, but it places MU last in line — meaning MU is also first to give the gains back when sector sentiment fades. Volume ratio 0.55x was the lowest of any mover today; the advance is sell-pressure exhaustion, not new capital. MU remains 7% below its 50MA ($969) and -25.8% over 30 days. The forward PE of 5.8 looks extremely cheap but rests entirely on next-year EPS delivery, and there is no company-specific information between now and the 9/23 print — a 50-day news vacuum during which MU will simply drift on SKHY/SNDK/Samsung headlines. Two near-term read-throughs to the 9/23 scorecard on the 'MU is the next NVDA' claim: POSITIVE — Wedbush cited persistently tight memory supply and RBC sees the demand upswing running through 2027, both directly supporting the HBM thesis; NEGATIVE — Counterpoint's Q2 data shows Samsung reclaiming the #1 DRAM position at 39% share, which is a competitive-share warning even as MU narrowed its gap with SK Hynix. The single most informative near-term event for MU is not an MU event at all: tomorrow's 8/5 SNDK Q4 print is the first cash-flow test of the AI-memory demand narrative and functions as an advance sentinel for the 9/23 scorecard. Distance to thesis_break_price of $650 is -28%, so no alert.
+ · Snapshot at `dashboard/2026-08-04.md`
+
+---
 ### 2026-07-31 · -2.87% day · ▼ minor
 **Tags:** `sector_rotation`, `flow_event`, `macro_rates`, `analyst_downgrade`, `memory_pricing`
 **Confidence:** medium

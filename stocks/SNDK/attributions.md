@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-04 · +11.68% day · ▲ major
+**Tags:** `tech_breakthrough`, `partnership_news`, `pt_change`, `memory_pricing`, `ai_demand`, `sector_rotation`, `earnings_pre_print`
+**Confidence:** high
+
+**Primary cause.** SNDK + SK Hynix jointly launched the HBF (High Bandwidth Flash) AI memory standard — a common memory architecture letting AI systems using different vendors' processors (NVDA/AMD/custom ASIC) interoperate. Wall Street hiked price targets across the board. The event re-classifies SNDK from 'NAND commodity cycle stock' to 'AI memory architecture participant', which carries far more valuation elasticity than a single-quarter number. Amplified by risk-on tape (S&P record high on US-Iran draft deal) and Q4 FY26 earnings due 8/5.
+
+**Sources.**
+- Yahoo: [SNDK, SKHY Stocks Gain After Launching New AI Memory Standard – Wall Street Hikes Price Targets](https://finance.yahoo.com/)
+- Motley Fool: [Why Sandisk Stock Soared Today — Did Sandisk and SK Hynix just solve the HBM supply crisis?](https://www.fool.com/)
+- Yahoo: [Sandisk Jumps 8%, Micron Gains 6%, SK Hynix Climbs 4% as Wall Street Hikes Price Targets on AI Memory Boom](https://finance.yahoo.com/)
+- _Corroboration:_ Full memory complex moved together: MU +8.4%, SKHY ADS +7.8%, DRAM ETF +7.9%. SNDK's 1.4x beta vs MU confirms it is the highest-leverage AI-memory expression.
+- _Data:_ Counterpoint Q2 DRAM share: Samsung reclaimed #1 at 39%, MU narrowed gap with SK Hynix — competitive backdrop for the SNDK+SKHY standards alliance. ()
+
+**Cross-assets.** SPY +2.02% · VIX 16.34 · TEN YEAR 4.627 · WTI 75.82
+
+**Agent read.** Quality of this move rates 7/10. The catalyst is a genuine industry-standard event (real, structural, not a rumor) and it changes SNDK's valuation category rather than just its quarterly numbers — that is why SNDK (+11.7%) outran MU (+8.4%) by 1.4x. Two flaws: (a) volr only 0.76x — no volume confirmation, the move is short-covering plus sell-pressure exhaustion after July's -47% collapse; (b) expectations now elevated INTO tomorrow's 8/5 Q4 FY26 print, so the report must beat a raised bar. Forward PE 6.8 vs trailing 49.2 implies EPS must grow ~7x — that assumption is what tomorrow tests. Key structural note: SNDK is the best available thermometer for market confidence in AI memory demand (highest beta, 58x 52-week range), NOT a directional indicator for the sector. If SNDK drops hard post-print while MU holds, it is idiosyncratic; if both fall together, the AI-memory demand narrative is being falsified — a material negative read-through to MU's 9/23 scorecard on the 'MU is the next NVDA' claim.
+ · Snapshot at `dashboard/2026-08-04.md`
+
+---
 ### 2026-06-26 · -6.69% day · ▼ major
 **Tags:** `sector_rotation`, `competitor_news`, `flow_event`
 **Confidence:** high

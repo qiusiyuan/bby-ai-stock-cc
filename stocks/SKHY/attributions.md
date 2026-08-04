@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-04 · +7.79% day · ▲ major
+**Tags:** `analyst_upgrade`, `pt_change`, `tech_breakthrough`, `partnership_news`, `memory_pricing`, `ai_demand`
+**Confidence:** high
+
+**Primary cause.** Six brokerages initiated coverage of the newly listed SKHY ADS on the same day, all with bullish ratings — the mechanical expiry of the underwriter research quiet period following the 7/9 IPO pricing. Wedbush initiated Outperform with a KRW 2,560,000 target (implying +62% vs the Korean local price of KRW 1,577,000), citing persistently tight memory supply; RBC said the current chip demand upswing runs through 2027. Secondary catalyst: SKHY co-launched the HBF AI memory standard with SNDK. CRITICAL ANOMALY: the Korean local listing 000660.KS fell -8.2% the same day — a 16-percentage-point divergence in the same company.
+
+**Sources.**
+- Yahoo: [SK Hynix rises as brokerages launch coverage with bullish ratings](https://finance.yahoo.com/)
+- Investing.com/Yahoo: [SK Hynix backed by Wedbush as memory undersupply persists — Outperform, KRW 2.56M PT](https://finance.yahoo.com/)
+- MT Newswires/Yahoo: [SK hynix Seen Benefiting From Memory Upswing, Strength in Advanced Chips, RBC Says](https://finance.yahoo.com/)
+- _Data:_ ADS/local divergence: SKHY (Nasdaq ADS) +7.79% vs 000660.KS (Korean local) -8.21% on the same date — 16pp gap. Korean close precedes US open by ~13 hours, so the local market had not absorbed either the HBF standard or the coverage initiations. ()
+- _Data:_ Counterpoint Q2 DRAM share: Samsung reclaimed #1 at 39%; MU narrowed the gap with SK Hynix — mildly negative competitive read for SKHY, contributing to local-market weakness. ()
+
+**Cross-assets.** SPY +2.02% · VIX 16.34 · TEN YEAR 4.627 · WTI 75.82
+
+**Agent read.** Quality of this move rates only 4/10 despite the +7.8% headline — the dominant driver is a ONE-TIME, NON-REPEATABLE mechanical event. Research quiet-period expiry produces exactly one synchronized wave of initiations and never recurs; it is a calendar artifact of the 7/9 IPO, not new information about HBM demand. The 16pp ADS-vs-local divergence is the key diagnostic and it resolves the puzzle cleanly: coverage initiations only reach the US ADS market, and the Korean close leads the US open by ~13 hours, so 000660.KS traded on 8/3 US memory sentiment without the HBF or coverage news. TESTABLE PREDICTION for 8/5 Korean open: if 000660.KS rallies >=6%, the timezone/coverage explanation holds and the ADS premium is justified; if it gains <3% or falls further, today's ADS +7.8% was one-sided US sentiment and the premium should mean-revert. This connects directly to the existing 7/31 research on ADS premium structure (stocks/SKHY/research/2026-07-31-ads-premium-structure.md), which already flagged premium mechanics as the thing to monitor — today supplies the first live stress test of that framework. Separately, the substantive content in the coverage (Wedbush: tight supply; RBC: upswing through 2027) is a positive read-through to MU's 9/23 scorecard, since both are levered to the same HBM cycle.
+ · Snapshot at `dashboard/2026-08-04.md`
+
+---
 ### 2026-07-31 · -0.60% day · ▼ minor
 **Tags:** `thesis_debate`, `flow_event`, `lockup_expiry`, `sector_rotation`
 **Confidence:** high
