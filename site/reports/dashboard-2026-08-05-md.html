@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-08-05</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-08-05 12:13</div>
+<h1 id="daily-report-2026-08-05">Daily Report 2026-08-05</h1>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><div class="tabs"><label class="tab-label" for="tabs1-0">Pulse &amp; Macro</label><label class="tab-label" for="tabs1-1">Watchlist &amp; Movers</label><label class="tab-label" for="tabs1-2">Timeline 30d</label><label class="tab-label" for="tabs1-3">Deep Dive: SPCX</label><label class="tab-label" for="tabs1-4">Deep Dive: AMD</label><label class="tab-label" for="tabs1-5">Brief</label><label class="tab-label" for="tabs1-6">Deep Dive: SNDK</label></div><div class="tab-panel" data-tab-for="tabs1-0"><div class="callout info"><p><strong>今日一句话</strong>：SpaceX 首份财报把 AI 主线切成两半 —— <strong>SpaceX 选了 NVIDIA 做 AI 基建，NVDA <span class="up">+4.3%</span> / AMD <span class="down">-6.4%</span></strong>，「供应商内部分化」正式开始；同时 SpaceX $15.8B AI capex 吓崩 SPCX <span class="down">-10.8%</span>（利多变利空）。宏观面：Iran-Oman 霍尔木兹通航协议压油价（WTI 5d <span class="down">-11.8%</span>），黄金却 <span class="up">+5%</span> 创新高 —— 避险与风险偏好同时在跑，是典型的「分化市」而非趋势市。</p></div>
+<div class="kpi-grid"><div class="kpi"><div class="label">S&amp;P 500</div><div class="value">7,739</div><div class="note"><span class="up"><span class="up">+0.03%</span></span> 日 / <span class="up"><span class="up">+5.8%</span></span> 周 — 指数级新高附近盘整</div></div><div class="kpi"><div class="label">Nasdaq (QQQ)</div><div class="value">721</div><div class="note"><span class="down"><span class="down">-0.39%</span></span> 日 / <span class="up"><span class="up">+9.0%</span></span> 周 — 科技分化，权重股歇脚</div></div><div class="kpi"><div class="label">道指</div><div class="value">54,567</div><div class="note"><span class="up"><span class="up">+0.89%</span></span> 日 — 霍尔木兹协议 + 防御板块领涨</div></div><div class="kpi"><div class="label">VIX</div><div class="value">15.9</div><div class="note"><span class="down"><span class="down">-3.5%</span></span> 日 / <span class="down"><span class="down">-22.9%</span></span> 周 — 恐慌回落，风险偏好在位</div></div><div class="kpi"><div class="label">10Y 美债</div><div class="value">4.62%</div><div class="note">基本持平 — 较 7/31 的 4.74% 高点回落 12bp</div></div><div class="kpi"><div class="label">美元 DXY</div><div class="value">99.74</div><div class="note"><span class="down"><span class="down">-0.15%</span></span> 日 / <span class="down"><span class="down">-1.05%</span></span> 周 — 美元走弱</div></div><div class="kpi"><div class="label">WTI 原油</div><div class="value">$74.53</div><div class="note"><span class="down"><span class="down">-1.6%</span></span> 日 / **<span class="down"><span class="down">-11.8%</span></span> 周** — 霍尔木兹通航协议杀地缘溢价</div></div><div class="kpi"><div class="label">黄金</div><div class="value">$4,299</div><div class="note">**<span class="up"><span class="up">+4.96%</span></span> 日** / <span class="up"><span class="up">+6.5%</span></span> 周 — 创新高，避险+央行需求</div></div></div>
+<h3>宏观/政策脉搏</h3>
+<p><strong>1. Iran-Oman 霍尔木兹通航协议（能源持仓直接相关）</strong> — 多家媒体报道 Iran 与 Oman 就霍尔木兹海峡替代通航路线达成协议，市场解读为地缘紧张显著缓和。传导路径：<strong>地缘溢价被抽走 → WTI 一周跌 11.8%（$84 → $74.5）→ 直接压制 SU / CVX / CNQ 上游油气估值</strong>（今日 SU <span class="down">-2.2%</span> / CVX <span class="down">-2.0%</span> / CNQ <span class="down">-1.6%</span>）。这是本周能源板块走弱的最直接解释，比任何公司新闻都重要。对照历史：这类地缘缓和往往一次性重定价油价 5-10%，随后回归供需基本面 —— 关注 OPEC+ 下次配额决定是否对冲。</p>
+<p><strong>2. 黄金 <span class="up">+5%</span> 创新高 vs 风险资产同涨 —— 分化信号</strong>。黄金单日 <span class="up">+4.96%</span> 到 $4,299 属于极端异动。在 VIX 回落、S&amp;P 新高的背景下黄金还创新高，通常反映：央行持续购金 + 实际利率预期下行（10Y 从 4.74% 回落）+ 对财政/美元长期担忧。这不是「避险恐慌」（VIX 在跌），而是「结构性配置」。对持仓无直接影响，但作为宏观温度计值得记录 —— 黄金和股指同创新高，是流动性充裕的信号。</p>
+<p><strong>3. 利率环境转松</strong>。10Y 从 7/31 的 52 周高点 4.74% 回落到 4.62%，VIX <span class="down">-22.9%</span> 周。对长久期资产（SPCX、AI 成长股）本应是顺风 —— 但今天 SPCX 仍暴跌，说明<strong>公司特定的 capex 冲击盖过了利率顺风</strong>（详见 Deep Dive）。</p>
+<div class="callout info"><p><strong>无高冲击政策警报</strong>。今日无 Fed 动作、无针对持仓的监管行动、无新关税。霍尔木兹协议是缓和性事件（利多大盘、利空油气），非危机。地缘方向：中东降温、油价下行趋势确立。</p></div></div><div class="tab-panel" data-tab-for="tabs1-1"><div class="callout info"><p><strong>今日异动 flag</strong>（|1d|≥3% 或 |5d|≥10% 或 vol≥1.5x）：
+- 🔴 <strong>SPCX <span class="down">-10.8%</span></strong>（vol 1.49x）— 首份财报后暴跌，AI capex 冲击 → 见 Deep Dive
+- 🔴 <strong>AMD <span class="down">-6.4%</span></strong>（vol 1.18x）— 财报后回吐，SpaceX 选 NVIDIA → 见 Deep Dive
+- 🟢 <strong>NVDA <span class="up">+4.3%</span></strong> — 拿下 SpaceX AI 基建订单
+- 🟢 <strong>MU <span class="up">+3.2%</span> / 5d <span class="up">+24.6%</span></strong> — HBM/memory 主线延续（Musk 喊「memory 是下一个 AI 赢家」）
+- 🟢 <strong>SSPC <span class="up">+24.7%</span></strong>（2x 反向 SPCX）— 镜像确认 SPCX 跌势
+- 🟡 <strong>GOOG <span class="down">-4.2%</span></strong> — AI capex 支出方回调</p></div>
+<h3>🎯 重点观察（FOCUS）</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">MU</div><div class="value">$921</div><div class="note"><span class="up"><span class="up">+3.2%</span></span> 日 / **<span class="up"><span class="up">+24.6%</span></span> 周** — memory 主线，fPE 5.9 极低；50MA $973 仍在上方</div></div><div class="kpi"><div class="label">TSLA</div><div class="value">$323</div><div class="note"><span class="down"><span class="down">-1.3%</span></span> 日 / <span class="up"><span class="up">+8.3%</span></span> 周 — 无新催化，随大盘</div></div><div class="kpi"><div class="label">SPCX</div><div class="value">$112</div><div class="note">**<span class="down"><span class="down">-10.8%</span></span> 日** / <span class="down"><span class="down">-0.6%</span></span> 周 — 首份财报 AI capex 冲击（纯跟踪）</div></div><div class="kpi"><div class="label">DRAM</div><div class="value">$54.7</div><div class="note"><span class="down"><span class="down">-0.3%</span></span> 日 / <span class="up"><span class="up">+22.0%</span></span> 周 — HBM ETF，与 MU 联动</div></div><div class="kpi"><div class="label">INTC</div><div class="value">$102</div><div class="note"><span class="up"><span class="up">+0.7%</span></span> 日 / <span class="up"><span class="up">+24.0%</span></span> 周 — turnaround 交易延续，周涨幅居前</div></div><div class="kpi"><div class="label">SKHY</div><div class="value">$152</div><div class="note"><span class="down"><span class="down">-1.2%</span></span> 日 / <span class="up"><span class="up">+20.3%</span></span> 周 — SK Hynix ADS，HBM 主线</div></div></div>
+<h3>常规持仓（REGULAR）</h3>
+<table class="compare"><thead><tr><th>板块</th><th>代表</th><th>今日</th><th>本周</th><th>备注</th></tr></thead><tbody><tr><td>AI 算力</td><td>NVDA <span class="up"><span class="up">+4.3%</span></span></td><td>AVGO <span class="up"><span class="up">+0.4%</span></span> MRVL <span class="down"><span class="down">-2.1%</span></span> TSM <span class="down"><span class="down">-0.6%</span></span></td><td>NVDA 5d <span class="up"><span class="up">+16%</span></span></td><td>供应商内部分化开始</td></tr><tr><td>Hyperscaler</td><td>MSFT <span class="down"><span class="down">-0.9%</span></span></td><td>AMZN <span class="down"><span class="down">-2.1%</span></span> GOOG <span class="down"><span class="down">-4.2%</span></span> META <span class="down"><span class="down">-0.8%</span></span></td><td>MSFT 5d <span class="up"><span class="up">+25%</span></span></td><td>支出方今日普跌，资金转向供应商</td></tr><tr><td>大科技</td><td>AAPL <span class="up"><span class="up">+0.2%</span></span></td><td>IBM <span class="up"><span class="up">+1.5%</span></span></td><td>AAPL 5d <span class="down"><span class="down">-8.4%</span></span></td><td>AAPL 弱势，IBM 稳</td></tr><tr><td>能源油气</td><td>SU <span class="down"><span class="down">-2.2%</span></span></td><td>CVX <span class="down"><span class="down">-2.0%</span></span> CNQ <span class="down"><span class="down">-1.6%</span></span></td><td>全周走弱</td><td>霍尔木兹协议压油价</td></tr><tr><td>电力/Grid</td><td>GEV <span class="up"><span class="up">+1.1%</span></span></td><td>—</td><td>5d <span class="up"><span class="up">+14.4%</span></span></td><td>独立于 AI 芯片波动，稳步走高</td></tr><tr><td>软件/其他</td><td>SNOW <span class="up"><span class="up">+0.2%</span></span></td><td>NOK <span class="down"><span class="down">-2.1%</span></span></td><td>SNOW 5d <span class="up"><span class="up">+12%</span></span></td><td>无异动</td></tr><tr><td>加密</td><td>BTC $64.7k</td><td><span class="up"><span class="up">+1.0%</span></span> 日</td><td>5d <span class="up"><span class="up">+3.0%</span></span></td><td>平静</td></tr></tbody></table>
+<p><strong>一句话</strong>：这是一个「AI 主线内部换位」的日子 —— 不是 risk-off，而是资金从 AI <strong>支出方</strong>（MSFT/AMZN/GOOG/AMD）转向 <strong>供应商</strong>（NVDA/MU），叠加 SpaceX 用一份「烧钱换 AI」的财报把整个板块的注意力拉到 capex 可持续性上。能源是独立的地缘故事（油价下行）。</p></div><div class="tab-panel" data-tab-for="tabs1-2"><div class="timeline"><div class="tl-item"><span class="when">明天 8/06</span> — <span class="what">🛢️ CNQ Q2 2026 财报 — 加拿大油砂产量 / WCS 价差（霍尔木兹协议压油价的背景下看成本韧性）</span></div><div class="tl-item"><span class="when">8/12</span> — <span class="what">📊 CPI July — 关键通胀数据，决定 9/17 FOMC 鸽鹰。CPI 降温 → 利多长久期资产（SPCX/成长股）</span></div><div class="tl-item"><span class="when">8/26</span> — <span class="what">🟢 NVDA Q2 FY2027 财报 — Blackwell 出货 + DC 增速。今日刚拿下 SpaceX 订单，财报会验证订单能见度</span></div><div class="tl-item"><span class="when">8/26</span> — <span class="what">SNOW Q2 FY2027 财报</span></div><div class="tl-item"><span class="when">8/27</span> — <span class="what">MRVL Q2 FY2027 财报 — AWS Trainium ramp（AI 供应商主线的下一个检查点）</span></div><div class="tl-item"><span class="when">9/03</span> — <span class="what">AVGO Q3 FY2026 财报 — custom ASIC 龙头</span></div><div class="tl-item"><span class="when">9/05</span> — <span class="what">📊 NFP August — 就业数据</span></div><div class="tl-item"><span class="when">9/11</span> — <span class="what">📊 CPI August</span></div><div class="tl-item"><span class="when">9/17</span> — <span class="what">🏦 FOMC 决议 — 无点阵图，市场当前 price in 降息路径</span></div><div class="tl-item"><span class="when">9/25</span> — <span class="what">🎯 **MU Q4 FY26 财报 — 评分卡到期日！** score「MU 是下一个 NVDA」论点（Tier1: GM≥82% / rev≥$43B / EPS≥$27 / HBM QoQ≥<span class="up">+20%</span>）</span></div><div class="tl-item"><span class="when">10/07</span> — <span class="what">SKHY ADS 90天 lockup 到期（研究结论：非主要变量，观察是否放量）</span></div><div class="tl-item"><span class="when">12/09</span> — <span class="what">⚠️ SPCX post-IPO 180天 lockup 到期 — 重大解禁，SPCX 预测评分日</span></div></div>
+<p><strong>时序解读</strong>：未来 3 周相对平静，<strong>8/12 CPI 是第一个宏观关口</strong>（决定利率对成长股的顺风能否延续），<strong>8/26 NVDA 财报</strong>是 AI 供应商主线的核心验证点 —— 今天刚赢下 SpaceX，市场会盯订单能见度。真正的重头戏在 <strong>9/25 MU 评分卡</strong>（memory「下一个 NVDA」论点结算）和 <strong>12/9 SPCX 解禁</strong>（长久期太空资产的结构性卖压检验）。</p></div><div class="tab-panel" data-tab-for="tabs1-3"><div class="verdict {watch}">纯跟踪 · 首份财报「利好变利空」的教科书案例 · 结构判断不变</div>
+<p><strong>今日：SPCX $111.8（<span class="down">-10.8%</span>，vol 1.49x）</strong>。这是 SpaceX <strong>上市以来第一份财报</strong>（8/4 AMC）后的反应日。昨天（8/4）SPCX 因财报前空头回补 <span class="up">+9.8%</span>，今天财报落地后不仅回吐昨日涨幅、还再跌破，两天净跌约 3%。</p>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">-2.60</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">43.98</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">90.56</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">137.13</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">183.71</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-24</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-16</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">08-05</text><path d="M56.0,54.0 L78.3,55.4 L100.7,55.2 L123.0,45.4 L145.4,39.4 L167.7,51.3 L190.1,47.3 L212.4,48.8 L234.8,58.5 L257.1,59.5 L279.4,56.1 L301.8,62.2 L324.1,67.7 L346.5,70.4 L368.8,71.2 L391.2,74.9 L413.5,81.2 L435.9,84.9 L458.2,81.6 L480.6,89.0 L502.9,86.3 L525.2,89.2 L547.6,90.6 L569.9,88.0 L592.3,91.4 L614.6,91.7 L637.0,95.1 L659.3,89.6 L681.7,80.0 L704.0,92.0" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="92.0" r="3" fill="#58a6ff"/><path d="M56.0,180.2 L78.3,180.1 L100.7,180.0 L123.0,181.7 L145.4,182.6 L167.7,181.2 L190.1,181.7 L212.4,181.6 L234.8,180.2 L257.1,180.0 L279.4,180.5 L301.8,179.6 L324.1,178.6 L346.5,178.0 L368.8,177.8 L391.2,177.0 L413.5,175.4 L435.9,174.4 L458.2,175.3 L480.6,173.2 L502.9,174.1 L525.2,173.2 L547.6,172.6 L569.9,173.7 L592.3,172.5 L614.6,172.4 L637.0,171.0 L659.3,173.4 L681.7,177.2 L704.0,173.7" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="173.7" r="3" fill="#3fb950"/></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">SPCX</span> <span class="legend-last">111.88</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-27.60%</span></span><span class="legend-note">· 1d <span class="down">-10.74%</span> · 30d <span class="down">-28.34%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">SSPC</span> <span class="legend-last">20.23</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+57.19%</span></span><span class="legend-note">· 1d <span class="up">+24.65%</span> · 30d <span class="up">+61.32%</span></span></span></div></div>
+<h3>财报数字（Yahoo Finance / Wells Fargo）</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">Q2 营收</div><div class="value">$7.8B</div><div class="note">强劲增长 — 收入不是问题</div></div><div class="kpi"><div class="label">AI capex</div><div class="value">**$15.8B**</div><div class="note">是营收的 2 倍 — 这是市场恐慌的核心</div></div><div class="kpi"><div class="label">TTM 净利润</div><div class="value">-$9.36B</div><div class="note">利润率 <span class="down"><span class="down">-45%</span></span> — 深度亏损换 AI 卡位</div></div><div class="kpi"><div class="label">xAI 整合</div><div class="value">Grok LLM</div><div class="note">2026 初收购 xAI，现运营垂直整合 AI 平台</div></div><div class="kpi"><div class="label">Wells Fargo</div><div class="value">Overweight, PT $230→$215</div><div class="note">维持增持但下调目标价</div></div><div class="kpi"><div class="label">分析师均值 PT</div><div class="value">$223</div><div class="note">vs 现价 $112 — 理论上翻倍空间但市场不信</div></div></div>
+<h3>为什么利好（NVIDIA 大单）当天股价还跌 10%？—— 三层逻辑</h3>
+<p><strong>第一层（最重要）：市场把 $15.8B AI capex 读成「烧钱」而非「投资」。</strong> SpaceX 收购 xAI 后，把自己从「太空/卫星公司」重新定位成「AI 巨头」，本季 AI 相关支出 $15.8B —— 是季度营收 $7.8B 的两倍。一则头条直接点破：这是「成为 AI 巨头的代价」（the cost of becoming an AI giant）。<strong>对一家已经深度亏损（TTM 净利 -$9.36B）的公司，市场此刻不给「AI 期权」溢价，只看到自由现金流的黑洞。</strong> 这与 7 月 AMZN/MSFT 上调 capex 后股价上涨形成鲜明对比 —— 差别在于 hyperscaler 有成熟的现金牛业务托底，SpaceX 没有。</p>
+<p><strong>第二层：NVIDIA 订单利好 NVDA，不利好 SPCX。</strong> 「SpaceX 选 NVIDIA 做 AI 基建」这条新闻的受益者是<strong>卖铲子的 NVDA（<span class="up">+4.3%</span>）</strong>，而 SpaceX 是<strong>买铲子、掏钱的一方</strong>。市场逻辑很干脆：这笔 deal 确认了 SpaceX 要为 AI 基建持续大额支出 —— 对 NVDA 是收入，对 SPCX 是成本。所以同一条新闻，NVDA 涨、SPCX 跌，AMD 跌（丢单）。</p>
+<p><strong>第三层（结构性，延续 7/31 判断）：SPCX 仍处「利好无效期」，卖压是机械性的。</strong> 参见 7/31 记录 —— SPCX 是持仓里久期最长的资产，且 post-IPO 结构性卖压（IPO 分配盘 + 反向 ETF 对冲）主导定价。虽然今天利率是顺风（10Y 从 4.74% 回落到 4.62%），但<strong>公司特定的 capex 冲击这次盖过了利率顺风</strong>。SSPC（2x 反向）今日 <span class="up">+24.7%</span>，镜像确认跌势真实。</p>
+<h3>结构判断（不变）</h3>
+<p>7/31 的核心结论依然成立：<strong>SPCX 的股价驱动变量当前不在公司手里</strong>，任何业务新闻（哪怕是 NVIDIA 大单这种重磅）都会被结构性卖压和 capex 担忧吸收。今天新增一个变量：<strong>市场对 SpaceX「AI 转型」的估值方式尚未确定</strong> —— 是给 xAI/Grok 的 AI 溢价，还是罚它的现金消耗？在 12/9 解禁消化完之前，这个问题不会有答案。</p>
+<div class="callout info"><p><strong>无持仓 —— 纯跟踪学习</strong>。今日案例的保存价值：①「买铲子 vs 卖铲子」在同一条 AI 新闻里的镜像反应（NVDA↑/SPCX↓/AMD↓）；②深度亏损公司的巨额 AI capex 被读成利空，与有现金牛托底的 hyperscaler 完全相反 —— 这是判断任何「AI 转型」故事的可复用框架。跟踪节点：12/9 解禁前后放量与价格形态。</p></div></div><div class="tab-panel" data-tab-for="tabs1-4"><div class="verdict {watch}">财报后回吐 · 昨日预判精准命中 · 数字很强、期望更高 + 丢掉 SpaceX 单</div>
+<p><strong>今日：AMD $485.6（<span class="down">-6.4%</span>，vol 1.18x）</strong>。这是 Q2 2026 财报（8/4 AMC）后的反应日。<strong>昨天日报的 agent read 几乎逐字命中了今天</strong> —— 原话：「AMD 在别人的财报上涨了 9.3%……一份仅仅 in-line 的财报很可能把涨幅吐回去」。事实：AMD 昨天 read-through Palantir 财报涨 9.3%，今天自己财报出来，尽管数字创纪录，还是跌了 6.4%。<strong>期望被提前打满，是这次回吐的根本机制。</strong></p>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">80.32</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">88.76</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">97.21</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">105.65</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">114.10</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">06-24</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-16</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">08-05</text><path d="M56.0,97.3 L78.3,85.2 L100.7,95.5 L123.0,78.6 L145.4,39.4 L167.7,77.3 L190.1,99.1 L212.4,66.7 L234.8,100.7 L257.1,99.5 L279.4,71.8 L301.8,61.2 L324.1,83.4 L346.5,70.4 L368.8,88.4 L391.2,115.1 L413.5,120.0 L435.9,112.6 L458.2,73.9 L480.6,66.5 L502.9,78.4 L525.2,95.2 L547.6,120.7 L569.9,158.9 L592.3,182.6 L614.6,129.8 L637.0,138.5 L659.3,130.5 L681.7,98.4 L704.0,129.0" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="129.0" r="3" fill="#58a6ff"/><path d="M56.0,97.3 L78.3,105.3 L100.7,113.3 L123.0,107.2 L145.4,94.6 L167.7,100.8 L190.1,107.6 L212.4,105.8 L234.8,102.4 L257.1,84.6 L279.4,88.0 L301.8,67.7 L324.1,86.1 L346.5,65.7 L368.8,63.9 L391.2,76.5 L413.5,87.9 L435.9,86.7 L458.2,76.8 L480.6,65.0 L502.9,73.2 L525.2,77.9 L547.6,103.4 L569.9,102.2 L592.3,119.5 L614.6,107.1 L637.0,93.0 L659.3,78.4 L681.7,65.3 L704.0,42.9" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="42.9" r="3" fill="#3fb950"/></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">AMD</span> <span class="legend-last">93.54</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-6.46%</span></span><span class="legend-note">· 1d <span class="down">-6.25%</span> · 30d <span class="down">-6.48%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">NVDA</span> <span class="legend-last">111.08</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+11.08%</span></span><span class="legend-note">· 1d <span class="up">+4.29%</span> · 30d <span class="up">+10.5%</span></span></span></div></div>
+<p><em>(归一化。注意剪刀差：过去两天 NVDA 拉开、AMD 掉头 —— 供应商内部开始分化)</em></p>
+<h3>财报数字（yfinance / CNBC / Motley Fool）</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">Q2 营收</div><div class="value">$11.54B</div><div class="note">**创纪录** — 收入端毫无问题</div></div><div class="kpi"><div class="label">数据中心营收</div><div class="value">$6.7B</div><div class="note">**同比 <span class="up"><span class="up">+107%</span></span>（翻倍）** — MI 系列 GPU ramp 强劲</div></div><div class="kpi"><div class="label">Morningstar FV</div><div class="value">$530</div><div class="note">维持，「对 CPU/GPU 前景满意」</div></div><div class="kpi"><div class="label">Susquehanna PT</div><div class="value">$450→$500</div><div class="note">7/30 上调，维持正面</div></div><div class="kpi"><div class="label">分析师均值 PT</div><div class="value">$579</div><div class="note">vs 现价 $486 — 华尔街仍看多</div></div><div class="kpi"><div class="label">fPE</div><div class="value">66x</div><div class="note">高估值 = 对「完美执行」的定价，容错率低</div></div></div>
+<h3>为什么创纪录财报还跌 6%？—— 三个原因</h3>
+<p><strong>1. 指引不及预期 + 「令人震惊的 capex」。</strong> 收入和数据中心都创纪录，但市场对<strong>前瞻指引</strong>失望，且对高额资本开支有担忧（一则视频直接用「shocking capex」形容）。在 fPE 66x 的估值上，AMD 被定价为「完美执行」，一个「优秀但不惊艳」（"not an exceptional result"，一位策略师原话）的季度就足以触发获利了结。</p>
+<p><strong>2. 期望被昨天提前打满（最重要的机制）。</strong> 见上 —— AMD 昨天在 Palantir 的财报上涨 9.3%，等于市场提前把好消息 price in 了。今天财报无论多好，都要清算这份被抬高的期望。这是「buy the rumor, sell the news」的标准形态，昨天的 agent read 已经预警。</p>
+<p><strong>3. 丢掉 SpaceX AI 大单给 NVDA。</strong> 同日「SpaceX 选 NVIDIA」的新闻，直接头条「Nvidia 赢下 SpaceX 大单，AMD 下沉」。这在情绪面强化了「AI GPU 竞争中 AMD 仍是老二」的叙事 —— NVDA <span class="up">+4.3%</span> / AMD <span class="down">-6.4%</span> 的镜像走势就是市场对竞争格局的实时投票。</p>
+<h3>判断</h3>
+<p><strong>这不是基本面转坏 —— 数据中心翻倍、营收创纪录、华尔街目标价 $579 仍在现价上方 20%。</strong> 这是「优秀财报撞上过高期望 + 估值容错率低 + 竞争叙事」的三杀，本质是<strong>技术性回吐</strong>，不是论点破裂。30d 只跌 6.5%，远好于 MRVL / INTC 之前的 <span class="down">-28%</span>。真正的结构信号是<strong>供应商内部开始分化</strong>：NVDA（拿单、龙头）与 AMD（丢单、老二）过去两天走出剪刀差 —— 这比「supplier vs spender」的板块轮动更细一层。若 8/26 NVDA 财报再超预期，这个剪刀差可能延续。</p>
+<div class="callout info"><p><strong>无持仓 —— 跟踪学习</strong>。核心 takeaway：①「财报前 read-through 别人的好消息大涨」是明确的卖出预警信号（昨日 agent read 精准命中，方法论有效）；②在高 fPE 股票上，创纪录数字 + 平庸指引 = 跌，估值本身就是风险；③AI GPU 竞争中，「谁拿下旗舰客户」的叙事对老二（AMD）的情绪杀伤是实时的。</p></div></div><div class="tab-panel" data-tab-for="tabs1-5"><div class="callout info"><p><strong>今日一句话</strong>：一条新闻（SpaceX 选 NVIDIA 做 AI 基建）把整个 AI 板块切成了三份 —— <strong>卖铲子的赢（NVDA <span class="up">+4.3%</span>）、买铲子的输（SPCX <span class="down">-10.8%</span>）、丢单的老二被罚（AMD <span class="down">-6.4%</span>）</strong>。这不是 risk-on/off，是 AI 主线内部的精细化分化。能源是独立的地缘故事（霍尔木兹协议 → 油价周跌 12%）。</p></div>
+<div class="kpi-grid"><div class="kpi"><div class="label">最强</div><div class="value">NVDA <span class="up"><span class="up">+4.3%</span></span></div><div class="note">拿下 SpaceX AI 基建单，供应商龙头地位强化</div></div><div class="kpi"><div class="label">最弱</div><div class="value">SPCX <span class="down"><span class="down">-10.8%</span></span></div><div class="note">首份财报 $15.8B AI capex 吓崩，利好变利空</div></div><div class="kpi"><div class="label">Memory 主线</div><div class="value">MU <span class="up"><span class="up">+3.2%</span></span> / 周 <span class="up"><span class="up">+24.6%</span></span></div><div class="note">Musk 喊「memory 是下一个 AI 赢家」助攻</div></div><div class="kpi"><div class="label">能源逆风</div><div class="value">SU/CVX/CNQ 全周 -3~4%</div><div class="note">霍尔木兹通航协议抽走地缘溢价</div></div></div>
+<h3>各 cluster 判断</h3>
+<table class="compare"><thead><tr><th>Cluster</th><th>今日读法</th><th>Verdict</th></tr></thead><tbody><tr><td>AI 供应商</td><td>NVDA↑ vs AMD↓ 剪刀差 — 内部按「谁拿旗舰客户」分化</td><td>龙头 (NVDA) 强、老二 (AMD) 技术回吐非破位</td></tr><tr><td>AI 支出方</td><td>MSFT/AMZN/GOOG 普跌，资金流出</td><td>短期轮动至供应商，非趋势逆转 (仅一日)</td></tr><tr><td>Memory/HBM</td><td>MU/DRAM/SKHY 周涨 20%+，独立走强</td><td>主线最强，9/25 MU 评分卡是结算点</td></tr><tr><td>SpaceX</td><td>「AI 转型」估值方式未定 + capex 恐慌</td><td>纯跟踪；结构性卖压主导直到 12/9 解禁</td></tr><tr><td>能源油气</td><td>地缘缓和 → 油价下行趋势确立</td><td>逆风，看 OPEC+ 是否对冲 + 成本韧性</td></tr><tr><td>电力/Grid</td><td>GEV 独立于芯片波动，周 <span class="up"><span class="up">+14%</span></span> 稳步走高</td><td>最稳健，与 AI 芯片情绪脱钩</td></tr></tbody></table>
+<h3>7 天焦点</h3>
+<div class="timeline"><div class="tl-item"><span class="when">本周</span> — <span class="what">CNQ 财报 (8/6) — 能源成本韧性；油价下行背景下看现金流</span></div><div class="tl-item"><span class="when">下周</span> — <span class="what">8/12 CPI — 决定利率对成长股的顺风能否延续（SPCX/AI 成长最敏感）</span></div><div class="tl-item"><span class="when">两周后</span> — <span class="what">8/26 NVDA 财报 — 今日刚赢 SpaceX，财报验证订单能见度 = AI 供应商主线核心检查点</span></div></div>
+<div class="scenarios"><div class="scenario"><div class="name bull">Bull</div><div class="bar-wrap"><div class="bar bull" style="width:35%">35%</div></div><div class="target">AI 供应商延续</div><div class="desc">NVDA 拿单效应 + 8/12 CPI 降温 → 供应商 (NVDA/MU) 继续领涨，memory 主线兑现</div></div><div class="scenario"><div class="name base">Base</div><div class="bar-wrap"><div class="bar base" style="width:45%">45%</div></div><div class="target">分化市延续</div><div class="desc">无单一趋势，AI 内部按个股 catalyst 分化，能源震荡下行，指数高位盘整</div></div><div class="scenario"><div class="name bear">Bear</div><div class="bar-wrap"><div class="bar bear" style="width:20%">20%</div></div><div class="target">capex 恐慌扩散</div><div class="desc">SPCX 的「烧钱换 AI」担忧蔓延到 hyperscaler，AI capex 可持续性被质疑 → 板块回调</div></div></div>
+<div class="callout info"><p><strong>Do</strong>：① 记住今日「买铲子 vs 卖铲子」框架 —— 同一条 AI 新闻对产业链不同位置是相反信号；② 盯 8/12 CPI 和 8/26 NVDA 作为下一个方向确认点；③ MU 周涨 24% 但仍在 50MA 下方，memory 主线强但等 9/25 评分卡验证。
+<strong>Don't</strong>：① 别把今天 AMD <span class="down">-6%</span> 读成论点破裂 —— 是估值容错 + 期望透支，数据中心还在翻倍；② 别追 SPCX 抄底 —— 结构性卖压 + capex 估值未定，纯跟踪；③ 别因油价下行恐慌能源持仓 —— 这是地缘缓和的一次性重定价，看基本面。</p></div>
+<p><strong>元观察</strong>：昨天（8/4）的 agent read 对 AMD 和 SPCX 都做了精准预判 —— AMD「read-through 别人财报大涨→自己财报吐回」逐字命中，SPCX「利好无效期、结构性卖压主导」持续验证。<strong>这说明工作区的归因方法论（把涨跌拆成机械性 vs 判断性、区分产业链位置、跟踪期望 vs 现实的差）在起作用。</strong> 今日新增的可复用框架是「深度亏损公司的巨额 AI capex 被罚，有现金牛的 hyperscaler 被奖」—— 存入归因库供未来「AI 转型」故事参照。</p></div><div class="tab-panel" data-tab-for="tabs1-6"><div class="verdict {watch}">财报今晚 AMC · 收入端几乎必 beat，但「beat ≠ 涨」— 短期 sell-the-news 是基准情形，中期有恢复空间</div>
+<p><strong>一句话结论</strong>：SNDK 今晚（Q4 FY26, 8/5 AMC）大概率交出又一份大幅超预期数字（连续三季 40-65% beat），<strong>但股价短期上涨空间有限</strong> —— 因为 5 天已 <strong><span class="up">+38.9%</span></strong> 提前 price in，且今天同一个市场刚用 AMD（<span class="down">-6.4%</span>）和 SPCX（<span class="down">-10.8%</span>）演示了「创纪录数字 + 期望透支 = 卖出」。<strong>关键区别</strong>：SNDK 30 天仍 <strong><span class="down">-28%</span></strong>、距 52 周高点还有 40%，是从 7 月 <span class="down">-47%</span> 崩盘的<strong>恢复位</strong>而非新高欢愉 —— 故中期比 AMD 有更多向上空间。</p>
+<div class="kpi-grid"><div class="kpi"><div class="label">现价</div><div class="value">$1,411</div><div class="note">5d <span class="up"><span class="up">+38.9%</span></span> / 30d <span class="down"><span class="down">-28%</span></span> / 52w 区间 $40.5–$2,354</div></div><div class="kpi"><div class="label">市值</div><div class="value">$209B</div><div class="note">从 WDC 分拆后独立 NAND/存储龙头</div></div><div class="kpi"><div class="label">fPE</div><div class="value">6.6x</div><div class="note">看似极便宜 — 周期顶部估值幻觉（trailing PE 47x）</div></div><div class="kpi"><div class="label">分析师</div><div class="value">23 家 Buy, 均值 PT $2,218</div><div class="note">理论 <span class="up"><span class="up">+57%</span></span>，但都是 beat 后追高上调</div></div><div class="kpi"><div class="label">beta vs MU</div><div class="value">~1.4x</div><div class="note">memory cluster 最高杠杆的 AI 存储温度计（52w 振幅 58 倍）</div></div></div>
+<h3>收入端 — 强，且在加速（几乎不可能 miss）</h3>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">1.87</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">3.46</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">5.05</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">6.65</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">8.24</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">Q1FY26</text><text x="488.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">Q3FY26</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">Q4FY26(今晚)</text><path d="M56.0,182.6 L272.0,163.8 L488.0,87.7 L704.0,39.4" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="39.4" r="3" fill="#58a6ff"/></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">营收$B</span> <span class="legend-last">7.80</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+237.66%</span></span><span class="legend-note">· 环比爆发式爬坡</span></span></div></div>
+<p><em>(Q4 为估算；Q3 已确认 $5.95B <span class="up">+251%</span> YoY)</em></p>
+<p>三个驱动全部向上：①<strong>NAND 进入价格+出货双击的爆发式上行周期</strong>（Q3 营收 <span class="up">+251%</span> YoY）；②<strong>HBF 新标准</strong>（昨与 SK Hynix 联合发布）把 SNDK 从「NAND 商品股」re-rate 成「AI 内存架构参与者」，昨日 <span class="up">+11.7%</span> 跑赢 MU 1.4 倍；③<strong>连续三季分析师严重低估</strong>（Q1 EPS $1.22 vs $0.58、Q2 $6.20 vs $3.31、Q3 <strong>$23.41 vs $14.17 beat 65%</strong>）—— 华尔街模型跟不上涨价，今晚 beat 概率我估 85%+。<strong>真正问题不在「有没有 beat」，在幅度够不够清算 <span class="up">+39%</span> 涨幅 + 下季指引够不够强。</strong></p>
+<h3>支出端 — 真正的胜负手</h3>
+<p><strong>① 毛利率周期位置（最关键）</strong>：NAND 毛利率随价格剧烈摆动，上行周期增量收入几乎直接落到营业利润（经营杠杆 = EPS beat 65% 远大于收入 beat 的原因）。<strong>若管理层暗示价格见顶 / 下季毛利率回落 → fPE 6.6 的「便宜」幻觉立刻破裂</strong>（建立在峰值盈利可持续的假设上）。</p>
+<p><strong>② Capex 纪律 vs 扩产</strong>：SanDisk 与 Kioxia 有合资晶圆厂。今天市场刚因 AMD「shocking capex」和 SpaceX「$15.8B 烧钱」惩罚两只股。<strong>若 SNDK 大幅扩产 = 双重利空</strong>（短期 FCF 承压 + 播下未来供给过剩种子，NAND 历史上死于自己的扩产）；<strong>保持产能纪律 = 强化涨价持续性，利多</strong>。</p>
+<h3>结合这两天市场 — 为什么 sell-the-news 是基准</h3>
+<table class="compare"><thead><tr><th>案例</th><th>数字</th><th>财报前动能</th><th>结果</th><th>机制</th></tr></thead><tbody><tr><td>AMD</td><td>营收创纪录, 数据中心 <span class="up"><span class="up">+107%</span></span></td><td>前一日 read-through 涨 9.3%</td><td><span class="down"><span class="down">-6.4%</span></span></td><td>期望透支 + 高估值容错低</td></tr><tr><td>SPCX</td><td>营收 $7.8B 强劲</td><td>财报前空头回补 <span class="up"><span class="up">+9.8%</span></span></td><td><span class="down"><span class="down">-10.8%</span></span></td><td>capex 恐慌 + 利好归属错位</td></tr><tr><td>SNDK(预判)</td><td>大概率再 beat 40%+</td><td>5d <span class="up"><span class="up">+38.9%</span></span>, 昨日 HBF <span class="up"><span class="up">+11.7%</span></span></td><td>？</td><td>同样期望透支 — 但恢复位而非高位</td></tr></tbody></table>
+<p>共同机制：<strong>带着已涨上去的期望进财报，好数字只是清算被抬高的预期。</strong> 但 SNDK 有 AMD/SPCX 都没有的缓冲 —— AMD 财报前在接近高位（30d 仅 <span class="down">-6%</span>）无恢复空间；<strong>SNDK 是深度恢复位（30d <span class="down">-28%</span>，距高点 40%），5d <span class="up">+39%</span> 只是从崩盘往回爬。</strong> 所以短期大概率 sell-the-news，但中期只要 NAND 上行被数字确认，估值有重新扩张余地。<strong>向下容易向上难，不对称。</strong></p>
+<h3>概率化上涨空间</h3>
+<div class="scenarios"><div class="scenario"><div class="name bull">Bull</div><div class="bar-wrap"><div class="bar bull" style="width:30%">30%</div></div><div class="target">财报后上涨</div><div class="desc">beat 40%+ 且下季毛利率/capex 双强 + AI 存储订单能见度 → 突破 $1,600 重启恢复</div></div><div class="scenario"><div class="name base">Base</div><div class="bar-wrap"><div class="bar base" style="width:45%">45%</div></div><div class="target">卖出兑现(盘后/次日)</div><div class="desc">beat 但幅度不够清算 <span class="up">+39%</span> 涨幅, 或毛利率指引谨慎 → -5~12% 回吐不破位(类似今天 AMD)</div></div><div class="scenario"><div class="name bear">Bear</div><div class="bar-wrap"><div class="bar bear" style="width:25%">25%</div></div><div class="target">周期顶部信号</div><div class="desc">毛利率见顶 + 大 capex 扩产 → -12~20% 急跌, 拖累 MU/SKHY/DRAM, 负面传导 MU 9/25 评分卡</div></div></div>
+<div class="callout info"><p><strong>今晚电话会听这四件事（按重要性）</strong>：①<strong>下季毛利率指引</strong> — 持平/升=还在爬坡(利多)，回落=峰值信号(利空)；②<strong>Capex 计划</strong> — 纪律=利多，大幅扩产=capex 恐慌再现(利空)；③<strong>AI 企业级 SSD 订单能见度</strong> — 有无 hyperscaler 具名订单/HBF 商用时间表；④<strong>SNDK vs MU 相对走势</strong> — SNDK 盘后独跌=期望透支专属问题；两者同跌=AI 存储需求叙事被证伪，负面 read-through 到 MU 9/25「下一个 NVDA」评分卡。<strong>纯跟踪无持仓 —— 预测已记录，评分日 8/6。可复用判据：任何股票带 &gt;30% 的 5 日涨幅进财报，好数字都要打折。</strong></p></div></div></div>
+</body>
+</html>

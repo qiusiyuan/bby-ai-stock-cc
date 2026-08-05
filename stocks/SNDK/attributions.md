@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-05 · -1.13% day · ● minor
+**Tags:** `prediction_recorded`, `earnings_pre_print`, `ai_demand`, `memory_pricing`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** 财报前瞻预测（Q4 FY26 今晚 8/5 AMC）。收入端：几乎必 beat（连续三季 40-65% beat，Q3 EPS $23.41 vs $14.17 est，营收 +251% YoY，NAND 上行周期 + HBF 标准 re-rate）。支出端是胜负手：毛利率周期位置 + capex 纪律 vs 扩产。结合今日市场：AMD(-6.4%) 与 SPCX(-10.8%) 均在强数字上因期望透支被卖出，SNDK 带 5d +38.9% 进财报踩同一陷阱。关键区别：SNDK 30d 仍 -28%、距 52w 高点 40%，是从 7 月 -47% 崩盘的恢复位而非高位，故短期 sell-the-news 但中期比 AMD 有更多向上空间。
+
+**Sources.**
+- _Data:_ Q3 FY26 EPS $23.41 vs $14.17 est (beat 65%), 营收 $5.95B +251% YoY (MarketBeat); TTM rev $13.18B +83%; fPE 6.6 vs trailing 47; 23 analysts Buy 均值 PT $2,218 ()
+- Barron's/Yahoo: [Sandisk Just Had Its Worst Month Ever. Earnings Should Prove AI Demand Is Here to Stay.](https://finance.yahoo.com/quote/SNDK/)
+- _Corroboration:_ 同日活样本：AMD -6.4% 与 SPCX -10.8% 均强数字被卖出；memory cluster 5d 同步走强 MU +24% SKHY +20% DRAM +22% WDC +18%
+
+**Cross-assets.** SPY +0.03% · VIX 15.93 · TEN YEAR 4.62 · WTI 74.53
+
+**Agent read.** 延续昨日(8/4)SNDK agent read 的核心担忧：'expectations elevated INTO tomorrow print, must beat a raised bar; fPE 6.8 vs trailing 49 implies EPS 7x growth'。今日新增两个同构活样本(AMD/SPCX)强化 sell-the-news 基准。收入端不是问题，支出端(毛利率指引+capex)是胜负手。SNDK 恢复位属性给它 AMD 没有的中期空间。研究详见 stocks/SNDK/research/2026-08-05-earnings-preview.md。纯跟踪无持仓。
+ · [Snapshot](research/2026-08-05-earnings-preview.md)
+
+---
 ### 2026-08-04 · +11.68% day · ▲ major
 **Tags:** `tech_breakthrough`, `partnership_news`, `pt_change`, `memory_pricing`, `ai_demand`, `sector_rotation`, `earnings_pre_print`
 **Confidence:** high

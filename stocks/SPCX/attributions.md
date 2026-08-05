@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-05 · -10.75% day · ▼ major
+**Tags:** `earnings_post_print`, `competitor_news`, `flow_event`, `ai_demand`
+**Confidence:** high
+
+**Primary cause.** SpaceX 上市以来第一份财报（8/4 AMC）后的反应日。营收 $7.8B 强劲，但 AI capex 高达 $15.8B（营收的两倍），市场把 SpaceX 收购 xAI 后的『AI 转型』读成烧钱而非投资，头条直指『成为 AI 巨头的代价』。对已深度亏损（TTM 净利 -$9.36B）的公司，市场此刻不给 AI 期权溢价，只看到自由现金流黑洞——与 7 月有现金牛托底的 hyperscaler 上调 capex 后股价上涨完全相反。同日『SpaceX 选 NVIDIA 做 AI 基建』新闻的受益者是卖铲子的 NVDA（+4.3%），SpaceX 是买铲子掏钱的一方，deal 确认其将持续大额支出=成本。昨日（8/4）SPCX 因财报前空头回补 +9.8%，今天回吐并跌破，两天净跌约 3%。结构性卖压（post-IPO 分配盘 + 反向 ETF 对冲）延续 7/31 判断，SSPC 2x 反向 +24.7% 镜像确认跌势真实。利率是顺风（10Y 4.74%→4.62%）但被 capex 冲击盖过。
+
+**Sources.**
+- Yahoo Finance: [Why SpaceX stock is falling despite strong revenue growth — the cost of becoming an AI giant](https://finance.yahoo.com/quote/SPCX/)
+- GuruFocus: [Nvidia Just Won a Major SpaceX AI Deal. Stock Jumps as AMD Sinks](https://finance.yahoo.com/)
+- _Corroboration:_ Wells Fargo 维持 Overweight 但下调 PT $230→$215 (8/5)；分析师均值 PT $223 vs 现价 $112；SSPC (2x 反向) +24.7% 镜像确认
+
+**Cross-assets.** SPY +0.03% · VIX 15.93 · TEN YEAR 4.62 · WTI 74.53
+
+**Agent read.** 利好当天股价跌 10% 的三层逻辑：(1) $15.8B AI capex 被读成烧钱不是投资——深度亏损公司不给 AI 期权溢价；(2) NVIDIA 订单利好卖铲子的 NVDA 不利好买铲子的 SPCX，同一新闻 NVDA↑/SPCX↓/AMD↓ 三方镜像；(3) 结构性卖压主导（延续 7/31），公司新闻被吸收，驱动变量不在公司手里。新增可复用框架：深度亏损公司的巨额 AI capex 被罚 vs 有现金牛的 hyperscaler 被奖。纯跟踪无持仓。跟踪节点 12/9 解禁。
+ · Snapshot at `dashboard/2026-08-05.md`
+
+---
 ### 2026-08-04 · +9.81% day · ▲ major
 **Tags:** `earnings_pre_print`, `flow_event`, `executive_comment`, `macro_rates`, `sector_rotation`
 **Confidence:** medium

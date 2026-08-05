@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-05 · +4.27% day · ▲ major
+**Tags:** `partnership_news`, `competitor_news`, `ai_demand`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** SpaceX 选定 NVIDIA 为其 AI 基础设施供应商（配合 SpaceX 收购 xAI/运营 Grok LLM 的垂直整合 AI 平台）。头条『Nvidia 赢下 SpaceX 大单，AMD 下沉』——同一条新闻里 NVDA 是卖铲子的受益方 (+4.3%)，SpaceX 是买铲子掏钱方 (-10.8%)，AMD 是丢单老二 (-6.4%)。SpaceX $15.8B AI capex 意味着对 NVDA 的持续收入。在 AMD 财报后回吐、SPCX capex 恐慌的背景下，资金明确流向 AI 供应商龙头。5d +16.3% 显示龙头地位在过去一周持续强化。
+
+**Sources.**
+- Zacks/Yahoo: [NVIDIA to Power SpaceX AI Infrastructure: Will This Fuel NVDA's Growth?](https://finance.yahoo.com/quote/NVDA/)
+- GuruFocus: [Nvidia Just Won a Major SpaceX AI Deal. Stock Jumps as AMD Sinks](https://finance.yahoo.com/)
+- _Corroboration:_ MU +3.2% (memory 主线同步走强)；vs AMD -6.4% 剪刀差；vol 0.74x 低于均值——上涨非放量驱动而是叙事+相对强度
+
+**Cross-assets.** SPY +0.03% · VIX 15.93 · TEN YEAR 4.62 · WTI 74.53
+
+**Agent read.** 『买铲子 vs 卖铲子』框架的教科书正例：同一条 AI 新闻，产业链不同位置反应相反。NVDA 拿下 SpaceX 旗舰客户，强化供应商龙头地位；与 AMD 走出剪刀差=供应商内部按『谁拿旗舰客户』分化，比 supplier-vs-spender 轮动更细。8/26 NVDA 财报会验证订单能见度。vol 0.74x 提示这是叙事+相对强度驱动，非资金蜂拥，可持续性需 8/26 财报确认。
+ · Snapshot at `dashboard/2026-08-05.md`
+
+---
 ### 2026-08-04 · +3.06% day · ▲ moderate
 **Tags:** `sector_rotation`, `ai_demand`, `competitor_news`, `macro_rates`
 **Confidence:** medium

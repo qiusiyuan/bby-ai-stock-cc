@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-05 · -6.36% day · ▼ major
+**Tags:** `earnings_post_print`, `guidance_inline`, `competitor_news`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** Q2 2026 财报（8/4 AMC）后回吐。数字创纪录：营收 $11.54B，数据中心 $6.7B 同比 +107%（翻倍）——收入端毫无问题。但股价跌 6.4%，三个原因：(1) 前瞻指引不及预期 + 『令人震惊的 capex』担忧，在 fPE 66x 的估值上被定价为完美执行，一个『优秀但不惊艳』的季度即触发获利了结；(2) 期望被昨天提前打满——AMD 昨天 read-through Palantir 财报涨 9.3%（8/4 记录已预警『in-line 财报很可能吐回涨幅』），标准 buy-rumor-sell-news；(3) 同日『SpaceX 选 NVIDIA』新闻头条『Nvidia 赢下 SpaceX 大单，AMD 下沉』，强化 AI GPU 竞争中 AMD 是老二的叙事，NVDA +4.3%/AMD -6.4% 镜像。
+
+**Sources.**
+- Investor's Business Daily: [AMD Stock Tanks After Earnings, But The Dip Isn't Changing Wall Street's Or Retail Investors' Bullish View](https://finance.yahoo.com/quote/AMD/)
+- GuruFocus: [Nvidia Just Won a Major SpaceX AI Deal. Stock Jumps as AMD Sinks](https://finance.yahoo.com/)
+- _Corroboration:_ Morningstar 维持 FV $530；Susquehanna 7/30 上调 PT $450→$500；分析师均值 PT $579 vs 现价 $486（仍看多）；策略师原话『not an exceptional result』；数据中心 +107% 翻倍到 $6.7B
+
+**Cross-assets.** SPY +0.03% · VIX 15.93 · TEN YEAR 4.62 · WTI 74.53
+
+**Agent read.** 昨日（8/4）agent read 几乎逐字命中今天——原话『AMD 在别人的财报上涨 9.3%……一份仅仅 in-line 的财报很可能把涨幅吐回去』。这不是基本面转坏（数据中心翻倍、营收创纪录、华尔街 PT $579 仍在现价上方 20%），是『优秀财报撞过高期望 + 高 fPE 容错率低 + 竞争叙事』三杀，本质技术性回吐。30d 仅 -6.5% 远好于 MRVL/INTC 之前的 -28%。真正结构信号：供应商内部开始分化，NVDA（拿单龙头）vs AMD（丢单老二）过去两天走出剪刀差——比 supplier-vs-spender 板块轮动更细一层。可复用 takeaway：财报前 read-through 别人好消息大涨=明确卖出预警。
+ · Snapshot at `dashboard/2026-08-05.md`
+
+---
 ### 2026-08-04 · +9.26% day · ▲ major
 **Tags:** `earnings_pre_print`, `sector_rotation`, `ai_demand`, `competitor_news`
 **Confidence:** medium
