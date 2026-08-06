@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-06 · +3.80% day · ▲ material
+**Tags:** `flow_event`, `unattributed`
+**Confidence:** low
+
+**Primary cause.** SPCX +3.8% 放量 2.6x，2x 反向 SSPC 对称 -7.57% 确认真实资金流入（非报价噪音）。无具体公司新闻催化——post-IPO 深跌后（30d -27%）的技术性反弹/超跌修复。属流动性/情绪驱动，无 named catalyst。lockup 2026-12-09 仍是核心风险时点，尚远。
+
+**Sources.**
+- _Corroboration:_ SSPC (2x inverse) -7.57% @1.76x vol 对称确认；无 SpaceX/Starlink 公司新闻驱动，纯技术反弹
+
+**Cross-assets.** SPY -0.15% · VIX 15.18
+
+**Agent read.** 无持仓纯跟踪。放量上涨 + 反向对称是真实资金流的标志，但缺 named catalyst，判定为超跌反弹/情绪修复而非叙事转折。30d 仍 -27%，未脱离下行趋势。真正的结构变量是 12/9 lockup，此前的日内波动多为流动性噪音。不弹卖出提醒（无持仓）。
+ · Snapshot at `dashboard/2026-08-06.md`
+
+---
 ### 2026-08-05 · -10.75% day · ▼ major
 **Tags:** `earnings_post_print`, `competitor_news`, `flow_event`, `ai_demand`
 **Confidence:** high

@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-06 · -4.59% day · ▼ material
+**Tags:** `competitor_news`, `memory_pricing`, `ai_demand`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** 内存板块因 NVIDIA Rubin Ultra 减 HBM 用量传闻回调，SKHY 领跌 -4.59%，DRAM ETF -3.66% 同步。逻辑链：报道称 Rubin Ultra（2027 产品）单卡可能只带 192GB on-package HBM，较 Rubin 288GB 缩水 33%，用于缓解 HBM 供应瓶颈、便于 procurement 重新规划 → 市场解读为『最大买家 NVDA 单卡 HBM 用量下降 → HBM 单位需求叙事第一次出现裂缝 → 内存超级周期永远缺货的假设被挑战』。这是 6 月 MU blowout 以来第一次回调不是估值消化而是需求侧被质疑。为什么 SKHY 领跌而 MU 几乎不动 (+0.04%)：① SK Hynix 供全球 >50% HBM，对该新闻的边际弹性天然最大；② MU 已在 7 月经历 -15% 估值杀、情绪出清；③ SKHY 仅 2.44% 极低流通盘 + 单向存托摩擦，任何情绪冲击被结构性放大（见 7/31 ADS 溢价结构研究）。属传闻级利空，非财报确认——8/26 NVDA 财报前无官方 HBM 口径可证伪/证实。
+
+**Sources.**
+- Tech Times / MSN: [NVIDIA Rubin Ultra AI chip may deliver less HBM than Rubin, forcing procurement replanning (192GB vs 288GB, -33%)](https://www.msn.com/en-us/money)
+- Yahoo Finance: [NVDA Reportedly Weighs Lower-Memory Rubin Ultra GPU Designs To Ease HBM Bottleneck](https://finance.yahoo.com/quote/NVDA/)
+- _Corroboration:_ DRAM ETF -3.66% 同步下跌确认板块事件；MU +0.04% 抗跌 = 敞口结构差异（HBM 占比 + 7月已出清估值），非分歧。多头叙事仍在场：2027 RAM sold-out 报道 + SK Hynix/SanDisk HBF 新标准 (512GB/stack @1.6TB/s)
+
+**Cross-assets.** SPY -0.15% · VIX 15.18 · TEN YEAR 4.67 · WTI 77.64
+
+**Agent read.** 内存周期第一次出现『需求侧』信号——此前所有回调（6/24 起 cluster -15~26%）都是估值消化或 SKHY 上市抛压，供给端叙事（永远缺货）从未被挑战。Rubin 减 HBM 若属实，符合工作区 6/18 记录的『内存周期三阶段』框架里 Stage-2 晚期→Stage-3 的转折信号（供给响应/需求见顶）。但三点使我保持 medium 而非 high 置信：① 传闻级、非官方，8/26 NVDA 财报才有口径；② SKHY 的 -4.6% 含 2.44% 低流通盘放大器，不全是基本面；③ 多头叙事（sold-out + HBF 新品类）仍在场，非单边利空。裁决时序：MU 9/23 财报（peak vs mid-cycle 第一个硬数据）> SKHY 10/7 lockup > SK Hynix 10/26 财报。MU 是 cluster 内相对最稳仓位。
+ · Snapshot at `dashboard/2026-08-06.md`
+
+---
 ### 2026-08-04 · +7.79% day · ▲ major
 **Tags:** `analyst_upgrade`, `pt_change`, `tech_breakthrough`, `partnership_news`, `memory_pricing`, `ai_demand`
 **Confidence:** high

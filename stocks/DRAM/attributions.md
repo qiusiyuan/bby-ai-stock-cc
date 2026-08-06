@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-06 · -3.66% day · ▼ material
+**Tags:** `competitor_news`, `memory_pricing`, `ai_demand`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** DRAM ETF -3.66%，与 SKHY -4.59% 同步，同一驱动：NVIDIA Rubin Ultra 减 HBM 用量传闻（192GB vs Rubin 288GB，-33%）。ETF 层面反映整个内存板块对『HBM 单位需求叙事出现裂缝』的定价。属延续 6/24 以来下行通道（30d -26%），今日只是老趋势加了一条新叙事，非新趋势起点。成分内部分化：SKHY 领跌（HBM 敞口最大 + 低流通盘放大），MU 抗跌（估值已出清）。
+
+**Sources.**
+- Tech Times / MSN: [NVIDIA Rubin Ultra AI chip may deliver less HBM than Rubin (192GB vs 288GB, -33%)](https://www.msn.com/en-us/money)
+- _Corroboration:_ SKHY -4.59% 同步；MU +0.04% 抗跌。ETF 无 vol 异常 (0.62x)，属情绪性回调非恐慌抛售
+
+**Cross-assets.** SPY -0.15% · VIX 15.18 · TEN YEAR 4.67
+
+**Agent read.** ETF 是 cluster 情绪温度计。今日 -3.66% 在低量能下（0.62x）发生，说明不是恐慌抛售而是买盘缩手 + 传闻驱动的情绪性回调。cluster 从 6/24 高点起持续下行，Rubin 传闻是第一次『需求侧』叙事介入。8/26 NVDA 财报是方向裁决点。参见同日 SKHY 归因的完整逻辑链。
+ · Snapshot at `dashboard/2026-08-06.md`
+
+---
 ### 2026-08-04 · +7.92% day · ▲ major
 **Tags:** `sector_rotation`, `memory_pricing`, `ai_demand`, `tech_breakthrough`, `flow_event`
 **Confidence:** medium
