@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-06 · -5.40% day · ▼ major
+**Tags:** `prediction_passed`, `earnings_post_print`, `guidance_inline`, `memory_pricing`, `ai_demand`
+**Confidence:** high
+
+**Primary cause.** SNDK Q4 FY26 财报后 sell-the-news，精准验证 8/5 记录的基准情形(45%)。实际：EPS $39.25 (beat 13.5% vs $34.59)、营收 $8.97B (beat 6.5% vs $8.42B)、non-GAAP 毛利率 84.6% (去年同期 26.4%——爆炸性经营杠杆)、数据中心营收环比 +103% 到 $2.98B。Q1 FY27 指引营收 $10.3-10.8B / EPS $44-46——强但被读成 'measured/in-line' 而非大幅上行惊喜。盘后一度 -12%，8/6 收 -5.4%。机制完全如预测：带 5d +38.9% 涨幅进财报，beat 只是清算被抬高的期望，好数字要打折。read-through 检查点：SNDK -5.4% + WDC -5.36%(同为 NAND) 但 MU +0.06%/SKHY -2.2%/DRAM -2.1%——NAND 双雄独跌、DRAM/HBM 相对抗跌，说明是 NAND 个股期望透支 + 消费段疲软(-32%)问题，不是 AI 存储需求叙事被证伪，对 MU 9/25 评分卡无负面传导。
+
+**Sources.**
+- _Data:_ SNDK Q4 FY26: EPS $39.25 (beat 13.5%), 营收 $8.97B (beat 6.5%), non-GAAP GM 84.6% (vs 26.4% YoY), 数据中心 +103% QoQ 到 $2.98B, 消费段 -32% 到 $556M; Q1 FY27 指引 营收 $10.3-10.8B/EPS $44-46 (Investing.com) ()
+- Yahoo: [SNDK Stock Dips After-Hours As Sandisk's Q1 FY27 Outlook Misses Expectations Despite Memory-Driven Q4 Profit](https://finance.yahoo.com/quote/SNDK/)
+- Motley Fool: [Sandisk Earnings Soar, but the Stock Is Still Dropping](https://finance.yahoo.com/)
+- _Corroboration:_ Read-through: SNDK -5.4% + WDC -5.36% (NAND 双雄) 独跌，MU +0.06%/SKHY -2.2%/DRAM -2.1% 相对抗跌——NAND 个股问题非 AI 存储需求证伪；vr 0.99 接近均值(比 8/4 的 0.76x 更实)
+
+**Cross-assets.** VIX 15.93 · TEN YEAR 4.62
+
+**Agent read.** 干净的预测验证：8/5 基准情形(45%)几乎逐字命中——beat 但 sell-the-news、-5~12% 回吐不破位、毛利率爆表但焦点转向 in-line 指引。三个同周活样本(AMD 8/5 -6.4%、SPCX 8/5 -10.8%、SNDK 8/6 -5.4%)共同确认『>30% 5日涨幅进财报好数字打折』的可复用判据。关键 nuance：Q1 FY27 指引其实很强(营收环比再 +15%)，跌是纯预期问题不是基本面转坏——SNDK 30d 仍 -31% 深度恢复位，中期空间判断(比 AMD 多)待后续验证。消费段 -32% 是唯一真实瑕疵但占比小。纯跟踪无持仓。
+ · Snapshot at `dashboard/2026-08-05.md`
+
+---
 ### 2026-08-05 · -1.13% day · ● minor
 **Tags:** `prediction_recorded`, `earnings_pre_print`, `ai_demand`, `memory_pricing`, `sector_rotation`
 **Confidence:** medium
