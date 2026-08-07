@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-07 · +12.10% day · ▲ major
+**Tags:** `analyst_upgrade`, `sector_rotation`, `flow_event`
+**Confidence:** medium
+
+**Primary cause.** SPCX 放量暴涨 +12.1% (vol 1.74x)，三重利好共振：① 华尔街对空间股集体『全清』(SpaceX/Intuitive Machines/Rocket Lab 齐涨，头条 'Wall Street Gives the All-Clear on Space Stocks')；② 锁定期恐慌缓解 —— 尽管 9.11 亿股解锁头条仍在，情绪已从『解禁抛售』转向『利空出尽』(头条 'SpaceX Jumps 10% as Lockup Fears Ease')；③ 一则分析师升级 ('SpaceX upgraded' in top analyst calls)。SSPC(2x 反向)-25.4% @1.62x vol 精确镜像，确认真实资金流入而非噪音。宏观背景：7 月非农意外走弱触发降息交易，高 beta 投机名字全线回归，S&P 触及 ATH。对照 8/6：昨日刚归因 +3.8%(vol 2.6x)为『超跌反弹无 named catalyst』，今天是同一超跌修复叙事的加速版，但这次有了具体催化剂。30d 仍 -15%，未脱离下行趋势 —— 本轮是深跌后技术性+情绪性修复，非基本面转折。
+
+**Sources.**
+- Yahoo Finance: [SpaceX Rises 11%, Intuitive Machines Gains 9%, Rocket Lab Jumps 8% as Wall Street Gives the All-Clear on Space Stocks](https://finance.yahoo.com/quote/SPCX/)
+- Yahoo Finance: [SpaceX Jumps 10% as Lockup Fears Ease](https://finance.yahoo.com/quote/SPCX/)
+- Yahoo Finance: [SpaceX upgraded, Trade Desk downgraded: Wall Street's top analyst calls](https://finance.yahoo.com/quote/SPCX/)
+- _Corroboration:_ SSPC (2x inverse) -25.4% @1.62x vol 精确镜像，确认真实买盘
+
+**Cross-assets.** SPY +0.46% · 10Y 4.65 · WTI 78.4
+
+**Agent read.** 无持仓纯跟踪。这次比 8/6 强的地方是有 named catalyst(华尔街 all-clear + 升级)，而非纯情绪。但 30d 仍 -15%，本轮定性为深跌后的技术性+情绪性修复，叠加降息交易的高 beta 属性放大，非基本面转折。真正的结构变量仍是 12/9 lockup。不弹卖出提醒(无持仓)。
+ · Snapshot at `dashboard/2026-08-07.md`
+
+---
 ### 2026-08-06 · +3.80% day · ▲ material
 **Tags:** `flow_event`, `unattributed`
 **Confidence:** low

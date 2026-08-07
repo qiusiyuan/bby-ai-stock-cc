@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-07 · -5.59% day · ▼ material
+**Tags:** `competitor_news`, `memory_pricing`, `ai_demand`
+**Confidence:** medium
+
+**Primary cause.** SK Hynix 董事会批准 $38B (54 万亿韩元) 在龙仁 Y2 + 清州 M17 两座新内存厂投资。市场把大规模扩产读成供给侧信号 —— 未来产能大增可能压制 HBM/DRAM 涨价周期。这是继 8/6『NVIDIA Rubin Ultra 减 HBM 用量』需求侧裂缝之后，内存超级周期连续第二天被从两侧质疑(前天需求侧，今天供给侧)。为什么 SKHY 领跌 -5.6% 而 MU 仅 -2.3%：① SK Hynix 是扩产主体，直接承担 capex 消化与产能过剩边际风险；② SKHY 极低流通盘(2.44% ADS)+ 单向存托摩擦，情绪冲击被结构性放大(见 7/31 ADS 溢价结构研究)；③ MU 已在 7 月经历 -28% 估值杀、情绪出清，对同类利空钝化。对冲逻辑头条 'Why SK Hynix $38B Splurge Is No Problem for Micron' —— 一部分分析认为扩产反而确认需求强劲。属供给侧解读，非财报确认(SKHY Q2 已于 7/28 出)。
+
+**Sources.**
+- Reuters/Yahoo: [SK Hynix board approves $38 billion investments for South Korea's Yongin, Cheongju chip plants](https://finance.yahoo.com/quote/SKHY/)
+- Yahoo Finance: [SKHY Stock Slips Premarket After Korean Memory Giant Reveals $38B Expansion Plan Amid AI Hyperscaler Capex Frenzy](https://finance.yahoo.com/quote/SKHY/)
+- Yahoo Finance: [Why SK Hynix's $38 Billion Memory Splurge Is No Problem for Micron Stock](https://finance.yahoo.com/quote/MU/)
+- _Corroboration:_ DRAM ETF -2.7% 同步下行确认板块级供给担忧；MU -2.3% 相对抗跌
+
+**Cross-assets.** SPY +0.46% · 10Y 4.65 · WTI 78.4
+
+**Agent read.** 连续两天内存叙事被两侧夹击：8/6 需求侧(Rubin Ultra 减 HBM) + 8/7 供给侧(SK Hynix $38B 扩产)。但两者时序不同 —— 扩产的供给冲击要到 2027+ 产能落地才兑现，当前纯预期博弈；需求侧口径 8/26 NVDA 财报官方裁决。SKHY 的超额跌幅主要是低流通盘结构放大，不宜过度解读为基本面转坏。MU 相对抗跌延续 7/31 判断(已出清)。MU 评分卡 9/25 到期(pending)。
+ · Snapshot at `dashboard/2026-08-07.md`
+
+---
 ### 2026-08-06 · -4.59% day · ▼ material
 **Tags:** `competitor_news`, `memory_pricing`, `ai_demand`, `sector_rotation`
 **Confidence:** medium
