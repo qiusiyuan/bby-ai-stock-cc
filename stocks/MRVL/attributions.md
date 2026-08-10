@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-10 · -2.49% day · ▲ medium
+**Tags:** `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** 5d +10% 由 AI custom silicon (AWS Trainium SerDes) 叙事驱动，但今日 -2.5% 跟随 AI 芯片全线回吐 ($500B 财团报道 = vendor-financing 担忧)。30d 仍 -20%，深坑未填。
+
+**Sources.**
+- Barron's/IBD: Wall Street Mobilizes $500 Billion Consortium With Nvidia to Underwrite AI Infrastructure
+
+**Cross-assets.** NVDA -2.17% · INTC -2.58%
+
+**Agent read.** 5d 触发 (+10%) 但今日方向向下。MRVL/INTC 是 AI capex cluster 弱势一端 (30d -20%/-23%)。8/27 财报 (Trainium ramp) 是下一个验证点。
+
+
+---
 ### 2026-08-04 · +13.80% day · ▲ major
 **Tags:** `policy_us`, `geopolitical_trade`, `policy_china`, `ai_demand`, `sector_rotation`
 **Confidence:** high

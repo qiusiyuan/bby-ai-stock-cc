@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-10 · +2.21% day · ▲ large
+**Tags:** `flow_event`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** post-lockup 恐慌后持续 V 型反弹：8/5 触底 $108 后四个交易日 +27%。主催化 Cathie Wood/ARK 加仓 $37–40M。5d +18.8%，vol 1.48x 放量。
+
+**Sources.**
+- news: Cathie Wood Puts $37 Million Into SpaceX
+- Motley Fool: Cathie Wood's ARK Bought $40 Million of Nvidia, Tesla, and SpaceX During Last Month's AI Sell-Off
+
+**Cross-assets.** SSPC -5.19% · SSPC PCT 5D -40.93%
+
+**Agent read.** 无持仓纯跟踪，不弹卖出提醒。情绪修复行情 (post-lockup 恐慌 → ARK 抄底)。真正结构变量是 12/9 的 180 天 lockup 到期。SSPC 2x 反向被碾压 -41%/5d。
+
+
+---
 ### 2026-08-07 · +12.10% day · ▲ major
 **Tags:** `analyst_upgrade`, `sector_rotation`, `flow_event`
 **Confidence:** medium

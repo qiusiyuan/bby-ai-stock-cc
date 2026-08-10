@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-10 · +4.61% day · ▲ medium
+**Tags:** `macro_oil`, `geopolitical_war`, `earnings_post_print`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 油气板块集体反弹：(1) Hormuz 海峡地缘紧张 (媒体标题点名 'worsening Iran geopolitics'/'Hormuz reopening uncertainty')，WTI intraday 跳升；(2) Suncor Q2 earnings & revenue 双 beat Y/Y 增长。宏观+财报双催化，三只加拿大/综合油气同步 +4%。
+
+**Sources.**
+- Zacks: Suncor Energy Q2 Earnings & Revenues Beat Estimates, Rise Y/Y
+- MT Newswires: Update: US Equity Indexes Mixed as Crude Oil, Treasury Yields Jump Amid Worsening Iran Geopolitics
+
+**Cross-assets.** CVX +4.17% · CNQ +4.09%
+
+**Agent read.** 宏观驱动而非个股 alpha (三只联动度极高)。能源今日是大盘唯一红色主线。可持有但 4% 反弹的根基是地缘+油价，宏观也能反转。
+
+
+---
 ### 2026-08-04 · -1.92% day · ▼ moderate
 **Tags:** `geopolitical_war`, `macro_oil`, `commodity_move`, `earnings_pre_print`, `policy_us`
 **Confidence:** high
