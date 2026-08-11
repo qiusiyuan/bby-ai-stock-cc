@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-11 · +3.10% day · ▲ material
+**Tags:** `competitor_news`, `memory_pricing`, `ai_demand`
+**Confidence:** medium
+
+**Primary cause.** Terrafab 供给侧威胁公布日，内存龙头逆势收涨 —— 这是本周第三次供给侧信号（8/6 NVDA Rubin 减 HBM 需求侧、8/7 SK Hynix $38B 供给侧、今天 SpaceX Terrafab 供给侧），市场反应一次比一次钝化。SpaceX 宣布休斯顿郊外 100M sqft（五角大楼 15 倍）、10GW、$300-500B 2027 capex 的内存超级工厂 Terrafab，公开目标打破 Micron/SK Hynix/Samsung 寡头定价权。但 SKHY +3.1%、Samsung +3.7%、DRAM ETF +2.2% 全线逆势上涨，只有 MU -0.7%。市场用价格投票：Terrafab 的 capex 标 2027、产能 2028+，属远端威胁；内存近端紧缺（2026-27）真实且已定价，资金按时间距离贴现，近端赢。良率爬坡、设备交期、专利壁垒非资本可立即购买。
+
+**Sources.**
+- 247wallst/Yahoo: [Elon Musk's Newest Factory is 15X The Size of The Pentagon. Micron and Memory Stocks Should be Terrified.](https://247wallst.com/investing/2026/08/11/elon-musks-newest-factory-is-15x-the-size-of-the-pentagon-micron-and-memory-stocks-should-be-terrified/)
+- Motley Fool/Yahoo: [Elon Musk Says Memory Is Now AI's Biggest Bottleneck. Here's What That Means for Micron and Sandisk.](https://www.fool.com/investing/2026/08/11/elon-musk-says-memory-is-now-ais-biggest-bottlenec/)
+- _Corroboration:_ SemiAnalysis 估 10GW 计划 2027 capex $300-500B；Samsung 005930.KS +3.7%、DRAM ETF +2.2% 同向逆势涨；MU 仅 -0.7% 缩量（0.5x）
+
+**Cross-assets.** SPY -0.35% · VIX 15.29 · 10Y 4.69 · WTI 83.08
+
+**Agent read.** 供给侧威胁三连击的钝化模式确认：8/7 SKHY $38B 日 SKHY -5.6%/MU -2.3%；今天 Terrafab 日 SKHY 反涨 +3.1%/MU -0.7%。市场对同类利空的边际反应递减 = 情绪出清 + 时间贴现逻辑生效。观察点：若未来出现近端（2026-27）产能/需求裂缝才是真威胁；远端建厂消息已被 price through。read-through 到 MU 9/23 评分卡：龙头逆势涨间接支持近端紧缺论。
+
+
+---
 ### 2026-08-07 · -5.59% day · ▼ material
 **Tags:** `competitor_news`, `memory_pricing`, `ai_demand`
 **Confidence:** medium

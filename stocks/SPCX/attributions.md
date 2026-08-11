@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-11 · -5.40% day · ▼ material
+**Tags:** `sector_rotation`, `flow_event`
+**Confidence:** medium
+
+**Primary cause.** 急涨后的技术性回吐，非新利空。SPCX 从 8/3 低点 $108 反弹到 8/10 $139（+28%，7 个交易日）后，今天 -5.4% 是这波获利了结的第一次显著兑现，5d 仍 +4.9%，趋势未破。SSPC (2x 反向) +10.1% 镜像确认。叠加噪音：同一天 SpaceX 公布 Terrafab 内存超级工厂（100M sqft，$300-500B 2027 capex），对一个 post-IPO、仍在 12/9 lockup 风险窗口内的名字，天量 capex 承诺可能加剧稀释/现金流担忧，含一部分基本面情绪。但无单一决定性 catalyst，故 medium confidence。
+
+**Sources.**
+- Barrons/Yahoo: [Micron, SpaceX, Nvidia, Intel, Rocket Lab... Stocks That Explain Today's Market](https://finance.yahoo.com/m/94261b05-0288-3d65-a248-d76403e2cb46/)
+- _Corroboration:_ SSPC (2x inverse SPCX) +10.1% 同日；SPCX 30d 图显示 8/3->8/10 +28% 急涨在前
+
+**Cross-assets.** SPY -0.35% · VIX 15.29 · 10Y 4.69 · WTI 83.08
+
+**Agent read.** post-IPO 高波动名字的正常抖动。真正的结构风险日期仍是 12/9 lockup。Terrafab 对 SPCX 是双刃：作为公司是 TAM 扩张，作为股票是 capex/稀释压力。
+
+
+---
 ### 2026-08-10 · +2.21% day · ▲ large
 **Tags:** `flow_event`, `sector_rotation`
 **Confidence:** medium
