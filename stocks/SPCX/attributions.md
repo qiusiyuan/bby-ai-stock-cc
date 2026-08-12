@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-12 · +9.87% day · ▲ major
+**Tags:** `executive_comment`, `analyst_upgrade`, `flow_event`, `ai_demand`
+**Confidence:** high
+
+**Primary cause.** 叙事切换驱动的具名催化暴涨。三重共振: ① Musk 全员会喊出 $500B AI 收入目标, 并称 SpaceX AI 收入'下个月'超过整个太空主业 (executive_comment) — 对一个被当卫星发射公司估值的名字, 这是估值框架重定价燃料; ② Morgan Stanley 出报告明确说投资者低估了 SPCX 的 AI 业务, SPCX 冲破 $140; ③ 挪威主权财富基金披露 $1.2B SPCX 持仓 — 最保守长线钱进场, 削弱'只有投机资金买'的空头论点。从 8/5 低点 $108 已 +37%。定性为叙事切换 (post-IPO 太空股 revert -> 被错估的 AI 基础设施股), 非纯情绪反弹, 质量高于 8/7 那波。
+
+**Sources.**
+- Yahoo: Elon Musk: SpaceX's AI Revenue Will Surpass Its Entire Space Business Next Month
+- Yahoo: SpaceX Shares Jump as Musk Targets $500 Billion AI Revenue
+- Yahoo: SPCX Stock Climbs Past $140 As August Rebound Continues - Morgan Stanley Says Investors Are Undervaluing SpaceX's AI Business
+- Yahoo: Norway's Wealth Fund Reveals $1.2 Billion SpaceX Stake
+- _Corroboration:_ SSPC (2x inverse) -22.6% @放量精确镜像, 确认真实买盘涌入而非低量逼空
+
+**Cross-assets.** SPY +0.37% · VIX 14.53 · TEN YEAR 4.68 · WTI 83.38
+
+**Agent read.** 无持仓纯跟踪, 不弹卖出提醒。这是 agent 6/18 counter-take 第三点 (Anthropic/Google capacity deals 把 SPCX 定位成 AI 基础设施, 可能 12/9 lockup 前 re-rate) 的加速兑现。路径明显偏向当初 Bull 25%/Base 50% 分布的上沿。结构风险仍在: 12/9 180天 lockup (9.11亿股), Terrafab $300-500B capex 稀释双刃剑。⚠️ 8/31 的 SPCX pred#3/#4 参考价 ($185/$230) 写于 SPCX ~$200 时, 现价 $146 已过时, 评分需重校或标 N/A。
+
+
+---
 ### 2026-08-11 · -5.40% day · ▼ material
 **Tags:** `sector_rotation`, `flow_event`
 **Confidence:** medium

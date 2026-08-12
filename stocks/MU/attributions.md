@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-12 · +7.26% day · ▲ major
+**Tags:** `sector_rotation`, `ai_demand`, `memory_pricing`, `earnings_print`
+**Confidence:** medium
+
+**Primary cause.** 存储复合体集体 re-rating, 主催化来自板块外: CoreWeave (AI云) + Supermicro (AI服务器) Q2 双双超预期 -> 'AI infrastructure stocks surge' 头条, 存储作为 AI 算力核心瓶颈直接 read-through 需求侧信号。叠加 MU 自身两条: ① 'Micron set a margin record on prices it has agreed to cap' (锁价保利润率, 缓解价格血战论); ② 多头文章 'memory cyclicality 恐惧范式已死, 所以我在买 Micron'。复合体联动确认: MU/SKHY/DRAM 三名 +7~9% 同步。几乎是 8/4 (+8.4% 纯板块跟涨) 的翻版, MU vol 0.59x 依然偏低 = 抛压枯竭而非增量资金。
+
+**Sources.**
+- Yahoo: AI infrastructure stocks surge after strong earnings from CoreWeave, Supermicro
+- Yahoo: Why Micron Stock Is Surging Today
+- Yahoo: Micron Set A Margin Record On Prices It Has Agreed To Cap
+- Yahoo: The Old Fear-Based Paradigm Around Memory Cyclicality is Dead, So I'm Buying Micron
+- _Corroboration:_ 复合体联动: SKHY +8.6%, DRAM ETF +8.2%, MU +7.3%。杂音: Netlist(NLST) 在 ITC 对 MU/SMCI/HPE 提专利侵权诉讼, 但市场判可和解(Roth看和解上行)未压制 MU
+
+**Cross-assets.** SPY +0.37% · VIX 14.53 · TEN YEAR 4.68 · CPI 3.4% headline in-line
+
+**Agent read.** 板块 beta 行情, 非 MU-specific 强势 (vol 0.59x)。对 9/25 scorecard 的 read-through: 正面 = 锁价保利润率支撑 GM>=82% 门槛, CoreWeave/SMCI 需求财报支撑 HBM QoQ>=+20% 前提; 谨慎 = 仍板块跟涨, MU 距财报 44 天新闻真空会继续跟 SKHY/Samsung 头条漂。距 thesis_break $650 尚 +43%, 无 alert。MU 9/25 出数字比 SKHY 10/26 早一月, 时序优势不变。
+
+
+---
 ### 2026-08-04 · +8.40% day · ▲ major
 **Tags:** `sector_rotation`, `memory_pricing`, `ai_demand`, `pt_change`, `tech_breakthrough`
 **Confidence:** medium

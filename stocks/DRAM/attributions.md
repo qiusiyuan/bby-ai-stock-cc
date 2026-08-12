@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-12 · +8.15% day · ▲ major
+**Tags:** `sector_rotation`, `ai_demand`, `memory_pricing`, `flow_event`
+**Confidence:** medium
+
+**Primary cause.** 存储 ETF 跟随复合体集体 re-rating。催化: CoreWeave/Supermicro Q2 强财报 -> AI infrastructure surge, 存储瓶颈联动。作为 ETF 直接反映整个 DRAM/HBM 板块情绪, MU/SKHY/DRAM 三名 +7~9% 同步。
+
+**Sources.**
+- Yahoo: AI infrastructure stocks surge after strong earnings from CoreWeave, Supermicro
+- _Corroboration:_ 复合体联动: MU +7.3%, SKHY +8.6%, DRAM +8.2%
+
+**Cross-assets.** SPY +0.37% · VIX 14.53 · TEN YEAR 4.68
+
+**Agent read.** 板块 beta 的纯 ETF 表达。30d 仍 -16.4%, 本轮是超跌反弹 + AI 需求财报催化, 非趋势反转。
+
+
+---
 ### 2026-08-06 · -3.66% day · ▼ material
 **Tags:** `competitor_news`, `memory_pricing`, `ai_demand`, `sector_rotation`
 **Confidence:** medium

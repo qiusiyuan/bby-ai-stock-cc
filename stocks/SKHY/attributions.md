@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-12 · +8.62% day · ▲ major
+**Tags:** `sector_rotation`, `ai_demand`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** DRAM/HBM 复合体集体 re-rating 的一员。同一催化: CoreWeave/Supermicro Q2 强财报点燃 'AI infrastructure stocks surge', 存储作为 AI 算力瓶颈联动。SKHY/MU/DRAM 三名 +7~9% 同步, 是板块级 beta 而非 SK Hynix 独立催化。
+
+**Sources.**
+- Yahoo: AI infrastructure stocks surge after strong earnings from CoreWeave, Supermicro
+- _Corroboration:_ 复合体联动: MU +7.3%, DRAM ETF +8.2%, SKHY +8.6%
+
+**Cross-assets.** SPY +0.37% · VIX 14.53 · TEN YEAR 4.68
+
+**Agent read.** SKHY post-IPO 价格发现期, 跟随存储复合体 beta。真正结构事件是 10/7 ADS lockup (研究结论: 非主要变量, 100% 增发无老股减持) 和 10/26 Q3 财报。今天涨主要是板块顺风+AI需求财报, 非 SK Hynix 独立故事。
+
+
+---
 ### 2026-08-11 · +3.10% day · ▲ material
 **Tags:** `competitor_news`, `memory_pricing`, `ai_demand`
 **Confidence:** medium
