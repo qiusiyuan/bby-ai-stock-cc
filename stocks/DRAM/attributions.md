@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-13 · n/a day · ▲ +5.33%
+**Tags:** `memory_pricing`, `guidance_raise`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** SanDisk Investor Day: multi-year financial model (revenue CAGR / margin / capital return) all raised. Market reads 'NAND supply side won't price-cut' -> read-through to HBM. Entire memory sector +5-15% same day.
+
+**Sources.**
+- Yahoo Finance: Sandisk Unveils Multi-Year Financial Model and Growth Strategy, Memory Stocks Soar
+- Yahoo Finance: Memory Stocks Open Flat Then Soar: Micron Up 6%, SK Hynix 8%, SanDisk Up 15%
+- Yahoo Finance: Lam Research, Applied Materials Rise After SanDisk Issues Bullish Financial Targets
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-08-12 · +8.15% day · ▲ major
 **Tags:** `sector_rotation`, `ai_demand`, `memory_pricing`, `flow_event`
 **Confidence:** medium
