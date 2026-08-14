@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-14 · -6.82% day · ▼ major
+**Tags:** `ai_demand`, `sector_rotation`, `analyst_downgrade`
+**Confidence:** medium
+
+**Primary cause.** AVGO −6.8% 领跌 AI 芯片，导火索是媒体头条『Broadcom Plunges 5% as Its AI Boom Faces a $370 Billion Financing Question』。空头论点：AVGO 的 custom ASIC 增长（OpenAI/Google TPU/Meta MTIA 大客户）部分依赖客户端 vendor-financing 撑起的巨额资本开支，媒体测算相关融资敞口 ~$370B；若 AI capex 周期收缩或融资收紧，custom silicon 订单能见度最先受冲击（不像 NVDA 标准 GPU 有二级市场，ASIC 绑定单一客户）。市场解读为 AVGO 商业模式风险 + 高估值无安全垫（pe_ttm 64.7 vs pe_fwd 19.9）→ 获利盘先跑（30d 仍 +8%）。这是 8/10『$500B 财团=vendor-financing 担忧』（当时 NVDA −2.2%）主题的个股化延续。关键：这是叙事风险非基本面证伪 —— NVDA +0.0%/MRVL −1.2%/TSM −1.0% 零传导，说明是针对 AVGO 客户集中+融资依赖的个股担忧，不是 AI 需求崩盘；volr 0.92 低于均值=非机构恐慌抛售，更像获利盘+算法在高估值上顺势砸。$370B 是媒体测算敞口非已发生订单取消，真正裁决在 9/3 AVGO 财报 custom silicon backlog。今天跌破 MA50($390)，MA200 $368 是第一支撑。
+
+**Sources.**
+- Yahoo/Barron's: [Broadcom Plunges 5% as Its AI Boom Faces a $370 Billion Financing Question](https://finance.yahoo.com/quote/AVGO/)
+- _Corroboration:_ 零传导确认个股性质：NVDA +0.0%, MRVL −1.2%, TSM −1.0%。若 AI 需求崩盘龙头 NVDA 不可能纹丝不动。volr 0.92 低于均值=非 capitulation。
+- _Data:_ AVGO pe_ttm 64.7 / pe_fwd 19.9（巨大 gap = price-in 爆发增长）；市值 $1.85T；跌破 MA50 $390，下方 MA200 $368。 ()
+
+**Cross-assets.** SPY -0.22% · VIX 14.32 · TEN YEAR 4.3
+
+**Agent read.** vendor-financing 担忧是 2026 年 8 月反复出现的『情绪弹簧』——8/10 首次以 $500B 财团形式砸 NVDA(−2.2%)，被 8/4-8/5 SpaceX 大单+PLTR 财报反向 de-risk；今天(8/14)个股化专砸 AVGO。每次都在等一个正面催化压回。区别于真正的基本面证伪的判据：看龙头 NVDA 是否传导。今天零传导 = 纯 AVGO 商业模式/估值担忧。平衡点 MA200 $368：放量失守=叙事转向第一技术信号；8/26 NVDA 强财报会把 AVGO 一起拉起。这不是 thesis-break，是估值高位(pe_ttm 64.7)遇反复出现的融资叙事。裁决日 9/3 AVGO 财报 custom silicon 订单能见度。
+ · Snapshot at `dashboard/2026-08-14.md`
+
+---
 ### 2026-08-04 · +7.40% day · ▲ major
 **Tags:** `sector_rotation`, `ai_demand`, `competitor_news`
 **Confidence:** medium
