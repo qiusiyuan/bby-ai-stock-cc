@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-08-14</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-08-14 11:24</div>
+<h1 id="daily-report-2026-08-14">Daily Report 2026-08-14</h1>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }#tabs1-8:checked ~ [data-tab-for="tabs1-8"] { display: block; }#tabs1-9:checked ~ [data-tab-for="tabs1-9"] { display: block; }#tabs1-10:checked ~ [data-tab-for="tabs1-10"] { display: block; }#tabs1-11:checked ~ [data-tab-for="tabs1-11"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><input class="tab-input" type="radio" name="tabs1" id="tabs1-8"><input class="tab-input" type="radio" name="tabs1" id="tabs1-9"><input class="tab-input" type="radio" name="tabs1" id="tabs1-10"><input class="tab-input" type="radio" name="tabs1" id="tabs1-11"><div class="tabs"><label class="tab-label" for="tabs1-0">Pulse &amp; Macro</label><label class="tab-label" for="tabs1-1">Watchlist &amp; Movers</label><label class="tab-label" for="tabs1-2">Timeline 30d</label><label class="tab-label" for="tabs1-3">Focus: DRAM/HBM</label><label class="tab-label" for="tabs1-4">Focus: AI capex</label><label class="tab-label" for="tabs1-5">Focus: TSLA</label><label class="tab-label" for="tabs1-6">Focus: SpaceX</label><label class="tab-label" for="tabs1-7">Focus: 能源(油气)</label><label class="tab-label" for="tabs1-8">Focus: 电力/Grid</label><label class="tab-label" for="tabs1-9">Deep Dive: AVGO (−6.8% today)</label><label class="tab-label" for="tabs1-10">Deep Dive: SNDK — 动能、还能涨多久、平衡点</label><label class="tab-label" for="tabs1-11">Brief</label></div><div class="tab-panel" data-tab-for="tabs1-0"><div class="callout info"><p><strong>一句话</strong>：大盘在 ATH 附近横盘消化 CPI（VIX 14.3，拥挤但无恐慌），板块内部剧烈分化 —— <strong>memory 超级周期叙事从 MU/HBM 扩散到 NAND 龙头 SNDK（Investor Day 续涨）</strong>，而 <strong>AI 定制芯片龙头 AVGO 因「$370B vendor-financing 问题」单日 <span class="down">-6.8%</span></strong>。钱在同一个「AI」大伞下从「算力供给方的融资风险」流向「存储的产能确定性」。</p></div>
+<div class="kpi-grid"><div class="kpi"><div class="label">S&amp;P 500</div><div class="value"><span class="down"><span class="down">-0.22%</span></span></div><div class="note">ATH 附近横盘</div></div><div class="kpi"><div class="label">Nasdaq (QQQ)</div><div class="value"><span class="down"><span class="down">-0.32%</span></span></div><div class="note">高位消化，5d <span class="up"><span class="up">+0.9%</span></span></div></div><div class="kpi"><div class="label">VIX</div><div class="value">14.3</div><div class="note">低波动，拥挤交易未松动</div></div><div class="kpi"><div class="label">10Y UST</div><div class="value">~4.3–4.7%</div><div class="note">数据源噪声，无突破性变化</div></div></div>
+<p><strong>宏观底色</strong>：8/12 CPI in-line + 8/13 soft PPI 已把 risk-on 底色钉住，今天没有新增宏观催化，指数层面是「等下一个数据」的横盘。真正的行情在板块内部：</p>
+<ul>
+<li><strong>Memory 板块</strong>：昨天（8/13）SanDisk Investor Day 公布 multi-year FCF 模型点燃全板块（SNDK <span class="up">+15.3%</span> / SKHY <span class="up">+8.3%</span> / MU <span class="up">+6.28%</span>）。今天（8/14）<strong>SNDK 续涨 <span class="up">+6.9%</span></strong>，说明这不是一日情绪，而是卖方模型在重定价（JPMorgan $2,250 目标、RBC「定价模型可持续」）。</li>
+<li><strong>AI 芯片板块</strong>：<strong>AVGO <span class="down">-6.8%</span></strong> 领跌，导火索是 Barron's/媒体的「Broadcom 的 AI boom 面临 $370B 融资问题」—— 这是 8/10 就出现过的 <code>$500B 财团 = vendor-financing 担忧</code> 叙事的延续和放大，专门砸向「靠客户融资撑起订单」的定制芯片龙头。NVDA 今天几乎平（<span class="up">+0.0%</span>），MRVL <span class="down">-1.2%</span>，TSM <span class="down">-1.0%</span> —— 说明这是 <strong>AVGO 个股/商业模式担忧</strong>，不是全 AI 芯片崩盘。</li>
+</ul>
+<div class="callout warn"><p><strong>政策/地缘 pulse（例行扫描）</strong>：今日无 war-state 变化、无 Fed 意外、无针对持仓的新监管/关税动作。8/12 CPI 已消化。下一个宏观窗口是 NVDA 8/26 财报（AI 资本开支的终极答卷）。地缘（Hormuz/Iran）无升级 —— 能源今天的强势（SU 5d <span class="up">+10%</span>）是 Q2 beat + 油价，不是地缘。</p></div></div><div class="tab-panel" data-tab-for="tabs1-1"><div class="callout danger"><p><strong>异动 flag（|1d|≥3% 或 |5d|≥10% 或 volr≥1.5x）</strong>
+- <strong>SNDK <span class="up">+6.9%</span> today / <span class="up">+34.8%</span> 5d</strong> — Investor Day 续涨，全场最强（见 Deep Dive）
+- <strong>AVGO −6.8% today / −9.0% 5d</strong> — vendor-financing 担忧，AI 芯片唯一大跌（见 Deep Dive）
+- <strong>SKHY <span class="up">+19.7%</span> 5d</strong> — memory 超级周期，SK Hynix 领涨
+- <strong>DRAM <span class="up">+12.8%</span> 5d / SU <span class="up">+10.2%</span> 5d / MU <span class="up">+9.7%</span> 5d</strong> — memory 板块 + 能源双主线</p></div>
+<h3>🔍 FOCUS（重点观察）</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">SNDK</div><div class="value">$1634</div><div class="note"><span class="up"><span class="up">+6.9%</span></span> ▲ / 5d <span class="up"><span class="up">+34.8%</span></span> — 距 52w高 $2354 仍 −31%，站上 MA50</div></div><div class="kpi"><div class="label">MU</div><div class="value">$963</div><div class="note"><span class="up"><span class="up">+1.4%</span></span> / 5d <span class="up"><span class="up">+9.7%</span></span> — 磨底后回升，pe 仍低</div></div><div class="kpi"><div class="label">SKHY</div><div class="value">$165</div><div class="note">−0.3% / 5d <span class="up"><span class="up">+19.7%</span></span> — 上市后价格发现，板块最强 beta</div></div><div class="kpi"><div class="label">DRAM (ETF)</div><div class="value">$57.1</div><div class="note"><span class="up"><span class="up">+0.2%</span></span> / 5d <span class="up"><span class="up">+12.8%</span></span> — 板块温度计，跟随反弹</div></div><div class="kpi"><div class="label">TSLA</div><div class="value">$341</div><div class="note"><span class="up"><span class="up">+0.3%</span></span> / 5d <span class="up"><span class="up">+3.8%</span></span> — 平静，volr 0.9</div></div><div class="kpi"><div class="label">SPCX</div><div class="value">$140</div><div class="note">−0.9% / 5d <span class="up"><span class="up">+5.2%</span></span> — 高位盘整，5d 前暴涨后回吐消化</div></div><div class="kpi"><div class="label">INTC</div><div class="value">$102.8</div><div class="note">−1.7% / 5d <span class="up"><span class="up">+1.1%</span></span> — 无新催化</div></div></div>
+<h3>常规持仓（compact）</h3>
+<table class="compare"><thead><tr><th>Ticker</th><th>1d</th><th>5d</th><th>备注</th></tr></thead><tbody><tr><td>NVDA</td><td><span class="up"><span class="up">+0.0%</span></span></td><td><span class="up"><span class="up">+0.6%</span></span></td><td>AVGO 大跌未传导，AI 芯片龙头稳</td></tr><tr><td>TSM</td><td>−1.0%</td><td><span class="up"><span class="up">+1.3%</span></span></td><td>跟随芯片小幅回落</td></tr><tr><td>MRVL</td><td>−1.2%</td><td><span class="up"><span class="up">+0.5%</span></span></td><td>8/27 财报前平静</td></tr><tr><td>AVGO</td><td>−6.8%</td><td>−9.0%</td><td>vendor-financing 担忧领跌</td></tr><tr><td>GOOG</td><td>−0.4%</td><td>−3.1%</td><td>mega-cap 小幅回调</td></tr><tr><td>AMZN</td><td>−0.7%</td><td>−4.1%</td><td>AWS capex 折旧论点发酵中</td></tr><tr><td>MSFT</td><td>−0.2%</td><td>−0.8%</td><td>横盘</td></tr><tr><td>META</td><td>−0.6%</td><td>−0.1%</td><td>横盘</td></tr><tr><td>SU</td><td><span class="up"><span class="up">+1.2%</span></span></td><td><span class="up"><span class="up">+10.2%</span></span></td><td>Q2 beat + 油价，能源主线</td></tr><tr><td>SSPC (2x inv SPCX)</td><td><span class="up"><span class="up">+1.6%</span></span></td><td>−14.4%</td><td>反映 SPCX 近期强势</td></tr></tbody></table>
+<div class="callout info"><p><strong>要不要记一笔？</strong> 今天 memory（SNDK/SKHY/MU）与 AI 芯片（AVGO）走出反向，这是「AI」内部第一次明显的多空分化。你对 memory 续涨 vs AVGO 融资担忧有什么 take？任何观察（"memory 太热了想减"、"AVGO 这跌法是机会"、"再看一周"）都值得记进对应 thesis。</p></div></div><div class="tab-panel" data-tab-for="tabs1-2"><p>未来 30 天（8/14 → 9/13）catalyst 日历：</p>
+<div class="timeline"><div class="tl-item"><span class="when">8/26</span> — <span class="what">NVDA Q2 FY27 财报 — Blackwell 出货 + DC 增长。**AI 资本开支叙事的终极答卷**，直接检验 AVGO 今天的 vendor-financing 空头论点是被证伪还是坐实</span></div><div class="tl-item"><span class="when">8/26</span> — <span class="what">SNOW Q2 FY27 财报</span></div><div class="tl-item"><span class="when">8/27</span> — <span class="what">MRVL Q2 FY27 财报 — AWS Trainium 2/3 SerDes ramp（custom silicon read-through 到 AVGO）</span></div><div class="tl-item"><span class="when">9/03</span> — <span class="what">AVGO Q3 FY26 财报 — 今天大跌后的第一个正面对质，管理层需回应「$370B 融资」质疑 + custom ASIC 订单能见度</span></div><div class="tl-item"><span class="when">9/13</span> — <span class="what">（窗口边缘）无已知重大事件</span></div></div>
+<div class="callout info"><p><strong>再往后的关键锚点</strong>（超出 30d 但需预置）：
+- <strong>9/23–9/25 MU Q4 FY26 财报</strong> → 🎯 <strong>「MU 是下一个 NVDA」评分卡到期</strong>（Tier 1: GM ≥82% / rev ≥$43B / EPS ≥$27 / HBM QoQ ≥<span class="up">+20%</span>）。今天距评分日约 40 天，进入 ±7d 窗口时会自动弹出。memory cluster 里 MU 最早给出可验证数字。
+- <strong>10/7 SKHY ADS 90天 lockup 到期</strong> — 研究结论：非主要变量（100% 增发无老股减持）。观察点：到期前后放量下跌 = 漏掉受限股东。
+- <strong>12/9 SPCX 180天 lockup 到期</strong> — 显著解禁。</p></div></div><div class="tab-panel" data-tab-for="tabs1-3"><p>今天的主角。SanDisk Investor Day 的 read-through 从 NAND 扩散到整个 memory 板块，全线续涨。</p>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">-104.84</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">437.77</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">980.38</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">1,523</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">2,066</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-06</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-27</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">08-14</text><path d="M56.0,52.6 L78.3,62.3 L100.7,53.9 L123.0,43.9 L145.4,39.4 L167.7,58.0 L190.1,51.5 L212.4,62.5 L234.8,78.1 L257.1,82.4 L279.4,79.6 L301.8,64.4 L324.1,63.7 L346.5,62.8 L368.8,76.1 L391.2,88.2 L413.5,102.1 L435.9,108.3 L458.2,88.1 L480.6,93.1 L502.9,87.5 L525.2,76.8 L547.6,82.7 L569.9,89.7 L592.3,93.3 L614.6,91.3 L637.0,88.8 L659.3,83.2 L681.7,69.1 L704.0,61.0" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="61.0" r="3" fill="#58a6ff"/><path d="M56.0,110.7 L78.3,114.2 L100.7,113.4 L123.0,110.1 L145.4,111.1 L167.7,114.3 L190.1,110.8 L212.4,116.8 L234.8,120.7 L257.1,121.1 L279.4,119.8 L301.8,111.7 L324.1,112.6 L346.5,110.2 L368.8,115.5 L391.2,117.1 L413.5,123.2 L435.9,129.5 L458.2,119.1 L480.6,123.0 L502.9,122.5 L525.2,117.7 L547.6,117.7 L569.9,118.6 L592.3,118.9 L614.6,120.1 L637.0,119.6 L659.3,116.3 L681.7,113.3 L704.0,112.3" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="112.3" r="3" fill="#3fb950"/><path d="M56.0,173.1 L78.3,174.3 L100.7,171.2 L123.0,172.5 L145.4,174.3 L167.7,174.2 L190.1,174.4 L212.4,172.8 L234.8,173.3 L257.1,173.0 L279.4,174.2 L301.8,175.0 L324.1,176.0 L346.5,176.3 L368.8,174.6 L391.2,175.0 L413.5,175.1 L435.9,174.2 L458.2,174.4 L480.6,175.0 L502.9,175.4 L525.2,175.6 L547.6,175.1 L569.9,174.2 L592.3,173.3 L614.6,173.3" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="614.6" cy="173.3" r="3" fill="#d29922"/><path d="M56.0,181.0 L78.3,181.3 L100.7,181.2 L123.0,181.1 L145.4,181.2 L167.7,181.6 L190.1,181.3 L212.4,181.6 L234.8,182.0 L257.1,181.9 L279.4,181.9 L301.8,181.5 L324.1,181.6 L346.5,181.5 L368.8,181.9 L391.2,182.0 L413.5,182.3 L435.9,182.6 L458.2,182.0 L480.6,182.1 L502.9,182.1 L525.2,181.8 L547.6,181.9 L569.9,182.0 L592.3,182.1 L614.6,182.2 L637.0,182.1 L659.3,181.8 L681.7,181.6 L704.0,181.6" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="181.6" r="3" fill="#f85149"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">Memory 5d</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">SNDK</span> <span class="legend-last">1,634</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-6.33%</span></span><span class="legend-note">· 1d <span class="up">+6.93%</span> · 30d <span class="down">-6.36%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">MU</span> <span class="legend-last">963.21</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-2.19%</span></span><span class="legend-note">· 1d <span class="up">+1.41%</span> · 30d <span class="down">-1.25%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">SKHY</span> <span class="legend-last">165.97</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-1.22%</span></span><span class="legend-note">· 1d <span class="up">+0.16%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#f85149"></span><span class="legend-name">DRAM</span> <span class="legend-last">57.17</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-11.72%</span></span><span class="legend-note">· 1d <span class="up">+0.42%</span> · 30d <span class="down">-5.71%</span></span></span></div></div>
+<p><strong>板块动态</strong>：
+- <strong>SKHY 5d <span class="up">+19.7%</span></strong> 是板块最强 beta —— 上市后价格发现 + memory 超级周期共振。
+- <strong>MU 5d <span class="up">+9.7%</span></strong>：从 7/29 的 $739 磨底低点回到 $963（<span class="up">+30%</span>），抛压耗尽后的修复。9/25 财报是 cluster 内最早的可验证数字。
+- <strong>DRAM ETF 5d <span class="up">+12.8%</span></strong>：板块温度计，确认这是板块级而非个股行情。
+- <strong>SNDK</strong>（NAND，见 Deep Dive）是催化源头，但注意：NAND（SNDK/WDC）与 DRAM/HBM（MU/SKHY/Samsung）是<strong>两个不同的供需结构</strong> —— SNDK 的 Investor Day 讲的是「AI 存储 + FCF 转化」的叙事共振，不是 HBM 定价直接利好。</p>
+<div class="verdict watch">memory 板块级超级周期叙事延续中，但已从「便宜磨底」进入「情绪高涨」区。加仓窗口已过，持有观察 9/25 MU 财报验证</div></div><div class="tab-panel" data-tab-for="tabs1-4"><p>今天的第二主线，方向与 memory 相反。AVGO 领跌，但龙头 NVDA 稳如泰山 —— 分化本身是信息。</p>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">140.33</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">223.96</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">307.60</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">391.23</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">474.86</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-06</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-27</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">08-14</text><path d="M56.0,78.1 L78.3,79.6 L100.7,70.8 L123.0,64.6 L145.4,65.2 L167.7,73.1 L190.1,70.6 L212.4,68.0 L234.8,77.8 L257.1,79.6 L279.4,76.0 L301.8,71.8 L324.1,66.7 L346.5,68.9 L368.8,74.1 L391.2,73.5 L413.5,74.6 L435.9,79.9 L458.2,71.2 L480.6,70.5 L502.9,69.0 L525.2,56.1 L547.6,56.1 L569.9,54.9 L592.3,51.4 L614.6,54.0 L637.0,57.2 L659.3,57.2 L681.7,56.3 L704.0,70.6" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="70.6" r="3" fill="#58a6ff"/><path d="M56.0,166.6 L78.3,165.9 L100.7,162.3 L123.0,163.0 L145.4,159.0 L167.7,162.6 L190.1,158.5 L212.4,158.2 L234.8,160.7 L257.1,163.0 L279.4,162.8 L301.8,160.8 L324.1,158.4 L346.5,160.0 L368.8,161.0 L391.2,166.1 L413.5,165.9 L435.9,169.3 L458.2,166.9 L480.6,164.0 L502.9,161.1 L525.2,158.5 L547.6,154.9 L569.9,155.0 L592.3,152.5 L614.6,155.7 L637.0,155.7 L659.3,152.4 L681.7,151.8 L704.0,151.8" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="151.8" r="3" fill="#3fb950"/><path d="M56.0,140.0 L78.3,149.2 L100.7,148.7 L123.0,142.9 L145.4,146.6 L167.7,155.7 L190.1,153.3 L212.4,161.3 L234.8,170.2 L257.1,170.0 L279.4,166.9 L301.8,160.4 L324.1,158.9 L346.5,159.8 L368.8,167.3 L391.2,169.8 L413.5,177.1 L435.9,182.6 L458.2,172.7 L480.6,170.6 L502.9,167.5 L525.2,155.2 L547.6,158.9 L569.9,159.2 L592.3,155.1 L614.6,160.1 L637.0,158.3 L659.3,155.9 L681.7,153.4 L704.0,154.7" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="154.7" r="3" fill="#d29922"/><path d="M56.0,39.4 L78.3,49.0 L100.7,46.8 L123.0,46.8 L145.4,48.2 L167.7,54.4 L190.1,55.0 L212.4,55.5 L234.8,60.3 L257.1,66.0 L279.4,64.0 L301.8,52.9 L324.1,54.6 L346.5,57.4 L368.8,63.5 L391.2,65.6 L413.5,69.0 L435.9,77.7 L458.2,63.5 L480.6,63.0 L502.9,62.1 L525.2,56.6 L547.6,58.2 L569.9,56.1 L592.3,55.2 L614.6,56.0 L637.0,54.2 L659.3,50.7 L681.7,50.0 L704.0,52.2" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="52.2" r="3" fill="#f85149"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">AI chips 5d</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">AVGO</span> <span class="legend-last">389.10</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+4.06%</span></span><span class="legend-note">· 1d <span class="down">-6.88%</span> · 30d <span class="up">+7.94%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">NVDA</span> <span class="legend-last">225.32</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+15.22%</span></span><span class="legend-note">· 1d <span class="up">+0.01%</span> · 30d <span class="up">+15.65%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">MRVL</span> <span class="legend-last">219.49</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-11.93%</span></span><span class="legend-note">· 1d <span class="down">-1.21%</span> · 30d <span class="down">-10.5%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#f85149"></span><span class="legend-name">TSM</span> <span class="legend-last">426.03</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-5.70%</span></span><span class="legend-note">· 1d <span class="down">-1.04%</span> · 30d <span class="down">-1.87%</span></span></span></div></div>
+<p><strong>板块动态</strong>：
+- <strong>AVGO −6.8%</strong>（见 Deep Dive）：导火索是「$370B vendor-financing 问题」—— 空头论点是 AVGO 的 custom ASIC 大单（OpenAI/Google TPU 等）部分靠客户融资/预付撑起，若 AI 资本开支收缩，订单能见度存疑。这是 8/10 <code>$500B 财团=vendor-financing 担忧</code> 主题的个股化延续。
+- <strong>NVDA <span class="up">+0.0%</span> / MRVL −1.2% / TSM −1.0%</strong>：AVGO 的跌<strong>没有传导</strong>到其他 AI 芯片。市场把这读成 AVGO 商业模式/估值（pe_ttm 64.7 vs pe_fwd 19.9）问题，不是 AI 需求证伪。
+- <strong>对质日程</strong>：8/26 NVDA 财报 → 9/3 AVGO 财报。两周内 AI 资本开支叙事会被连续检验。</p>
+<div class="callout warn"><p><strong>要点</strong>：AVGO 今天的 −6.8% 是「叙事风险」不是「基本面证伪」—— 财报还没出，$370B 是媒体测算的融资敞口，不是已发生的订单取消。真正的裁决在 9/3 AVGO 财报的 custom silicon 订单能见度。在此之前这是情绪波动。</p></div>
+<div class="verdict hold">AI 芯片龙头（NVDA）叙事未破，AVGO 是个股融资担忧。8/26 NVDA + 9/3 AVGO 财报是双重验证窗口，之前不做方向判断</div></div><div class="tab-panel" data-tab-for="tabs1-5"><p>平静日。TSLA $341，1d <span class="up">+0.3%</span> / 5d <span class="up">+3.8%</span>，volr 0.9（成交清淡）。7/22 Q2 财报已消化，无新 FSD/NHTSA/交付催化。</p>
+<div class="verdict hold">无异动，无新催化。等下一个交付月报 / FSD 监管信号</div></div><div class="tab-panel" data-tab-for="tabs1-6"><p>SPCX $140，1d −0.9% / 5d <span class="up">+5.2%</span>。5d 前的暴涨（Musk 500B AI 收入喊话 + MS + 挪威主权基金重定价为 AI 基础设施股）后进入高位盘整消化。SSPC（2x inverse）5d −14.4% 反向确认 SPCX 的强势。<strong>无持仓纯跟踪</strong> —— 不弹卖出提醒，照常展示走势。</p>
+<div class="verdict watch">从「太空股」重定价为「AI 基础设施股」的叙事仍在发酵。12/9 lockup 是远端风险。高位盘整，观察量能</div></div><div class="tab-panel" data-tab-for="tabs1-7"><p>SU $66.2，1d <span class="up">+1.2%</span> / 5d <span class="up">+10.2%</span> —— 能源今天的强势主线。驱动是 8/4 Q2 beat + 油价（WTI），<strong>不是地缘</strong>（Hormuz/Iran 无升级）。CVX/CNQ 今日数据源超时未取，但 SU 的 5d <span class="up">+10%</span> 代表板块方向。</p>
+<div class="verdict hold">Q2 beat + 油价支撑，基本面驱动而非地缘投机。持有</div></div><div class="tab-panel" data-tab-for="tabs1-8"><p>GEV 今日数据源超时未取。7/22 Q2 财报（Power margin / Wind losses）已消化，无新 hyperscaler PPA / SMR 催化。AI 数据中心电力长期主线不变。</p>
+<div class="verdict hold">长期 AI 电力需求主线不变，短期无催化。数据待下次刷新补全</div></div><div class="tab-panel" data-tab-for="tabs1-9"><div class="kpi-grid"><div class="kpi"><div class="label">价格</div><div class="value">$389.3</div><div class="note">1d −6.8% / 5d −9.0% / 30d <span class="up"><span class="up">+8.0%</span></span></div></div><div class="kpi"><div class="label">估值</div><div class="value">pe_ttm 64.7 / pe_fwd 19.9</div><div class="note">巨大 TTM-fwd gap = 市场已 price-in 爆发增长</div></div><div class="kpi"><div class="label">市值</div><div class="value">$1.85T</div><div class="note">大跌当日 volr 0.92（低于均值，非恐慌性 capitulation）</div></div><div class="kpi"><div class="label">均线</div><div class="value">MA50 $390 / MA200 $368</div><div class="note">今天正好跌破 MA50，测试短期支撑</div></div></div>
+<p><strong>为什么跌（归因，confidence: medium）</strong></p>
+<p>导火索是媒体头条 <strong>「Broadcom Plunges 5% as Its AI Boom Faces a $370 Billion Financing Question」</strong>。因果链：</p>
+<ol>
+<li><strong>叙事</strong>：AVGO 的 custom ASIC 增长（OpenAI、Google TPU、Meta MTIA 等大客户）部分依赖客户端的巨额资本开支，而这些客户（尤其 OpenAI 系）自身靠外部融资/vendor-financing 撑起算力扩张。媒体测算 AVGO 相关的「融资敞口」达 $370B 量级。</li>
+<li><strong>市场解读</strong>：如果 AI 资本开支周期收缩或融资环境收紧，AVGO 的 custom silicon 订单能见度最先受冲击 —— 它不像 NVDA 卖标准 GPU 有二级市场，custom ASIC 是绑定单一客户的。</li>
+<li><strong>为什么卖</strong>：AVGO pe_ttm 64.7，估值把「订单永续增长」完全 price-in。一旦「融资可持续性」被质疑，高估值就没有安全垫，获利盘（30d 仍 <span class="up">+8%</span>）先跑。</li>
+</ol>
+<p><strong>关键判断：这是叙事风险，不是基本面证伪</strong></p>
+<ul>
+<li><strong>没有传导</strong>：NVDA <span class="up">+0.0%</span> / MRVL −1.2% / TSM −1.0%。如果是「AI 需求崩了」，龙头 NVDA 不可能纹丝不动。市场精准地只砸 AVGO —— 说明这是<strong>针对 AVGO 商业模式（客户集中 + vendor-financing 依赖）的个股担忧</strong>。</li>
+<li><strong>volr 0.92 低于均值</strong>：不是机构恐慌性抛售，更像获利盘 + 算法在高估值上顺势砸盘。</li>
+<li><strong>$370B 是媒体测算的融资敞口，不是已发生的订单取消</strong>。真正的裁决在 <strong>9/3 AVGO 财报</strong>的 custom silicon 订单能见度 + backlog。</li>
+<li><strong>历史对照</strong>：这是 8/10 <code>$500B 财团=vendor-financing 担忧</code>（当时 NVDA −2.2%）主题的延续，但这次专门个股化砸向 AVGO。上一次这个担忧出现后，NVDA 在 8/4-8/5 被 SpaceX 大单 + PLTR 财报反向 de-risk。<strong>vendor-financing 担忧是反复出现的「情绪弹簧」，每次都在等一个正面催化来压回去</strong>。</li>
+</ul>
+<div class="scenarios"><div class="scenario"><div class="name base">反弹修复</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">$420+</div><div class="desc">9/3 财报 backlog/订单能见度证伪担忧，估值修复。或 8/26 NVDA 财报强 → AI capex 叙事整体回暖，AVGO 跟涨</div></div><div class="scenario"><div class="name base">区间震荡</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">$370–410</div><div class="desc">财报前 vendor-financing 担忧无法证伪也无法坐实，在 MA50/MA200 间消化，等 9/3</div></div><div class="scenario"><div class="name base">趋势转弱</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">&lt;$360</div><div class="desc">9/3 财报 custom ASIC 订单能见度下修 or 大客户资本开支指引转弱，高估值戴维斯双杀</div></div></div>
+<div class="callout danger"><p><strong>平衡点（你会问的「还能不能拿」）</strong>：AVGO 的分水岭是 <strong>9/3 财报的 custom silicon backlog</strong>。今天 $389 跌破 MA50($390)，下方 MA200 $368 是第一支撑。<strong>在财报之前，$370B 融资问题既证伪不了也坐实不了 —— 这是纯情绪波动</strong>。若你持有：MA200（$368）失守且放量 = 叙事转向的第一个技术信号；反之 8/26 NVDA 强财报会把 AVGO 一起拉起来。这不是 thesis-break，是估值高位遇到反复出现的融资叙事。</p></div></div><div class="tab-panel" data-tab-for="tabs1-10"><div class="kpi-grid"><div class="kpi"><div class="label">价格</div><div class="value">$1634</div><div class="note">1d <span class="up"><span class="up">+6.9%</span></span> / 5d <span class="up"><span class="up">+34.8%</span></span> / 30d −6.4%</div></div><div class="kpi"><div class="label">关键估值</div><div class="value">pe_fwd 6.2 / pe_ttm 19.5</div><div class="note">⚡ 远期市盈率 6.2 极低 —— 全押 FY27 EPS $44-46 指引兑现</div></div><div class="kpi"><div class="label">位置</div><div class="value">距 52w高 $2354 −31% / 距 7/29低 $1016 <span class="up"><span class="up">+61%</span></span></div><div class="note">两周走完 <span class="up"><span class="up">+61%</span></span>，坡度陡</div></div><div class="kpi"><div class="label">均线</div><div class="value">MA50 $1655 / MA200 $903</div><div class="note">正好卡在 MA50 下方 −1.3%，站上=决策点；vs MA200 <span class="up"><span class="up">+81%</span></span></div></div></div>
+<p><strong>这波动能是什么驱动的（归因，confidence: high）</strong></p>
+<p>不是财报（8/6 已出并 sell-the-news），是 <strong>8/13 SanDisk Investor Day 的卖方模型重定价</strong>：
+- <strong>「Guided to Turning Half Its Revenue Into Free Cash Flow Through 2030」</strong> —— 管理层给出 multi-year FCF 转化模型，这是从「周期股」向「结构性现金牛」重定价的核心。
+- <strong>JPMorgan 目标价 $2,250</strong>（<span class="up">+38%</span>）、<strong>RBC「长期目标高于预期，定价模型可持续」</strong>、<strong>一位分析师喊 $100B 回购</strong>。
+- 这是<strong>分析师上调 + 叙事升级驱动的 re-rating</strong>，不是单日情绪。SNDK 从 NAND 周期股被重新讲成「AI 存储 + 高 FCF 转化」的成长股。</p>
+<p><strong>还能涨多久 —— 三个诚实的约束</strong></p>
+<ol>
+<li><strong>坡度已陡</strong>：两周 <span class="up">+61%</span>（$1016→$1634）。历史刚给过警告 —— 8/6 SNDK 带 <span class="up">+38.9%</span> 涨幅进财报，结果 beat 被读成「measured」直接 −5.4%。<strong>任何 memory 股带 &gt;30% 5d 涨幅时，好数字都要打折</strong>（AMD/SPCX/SNDK 三样本已验证的可复用判据）。这次没有财报来兑现，燃料是纯叙事/分析师上调 —— 更脆，因为没有硬数据来锚定。</li>
+<li><strong>MA50 是第一道墙</strong>：现价 $1634 正卡在 MA50 $1655 下方。<strong>站稳 MA50 = 动能延续、有望填补缺口向 $1900-2000 推进；被 MA50 压回 = 回到 $1350-1450 震荡</strong>。</li>
+<li><strong>估值是双刃剑</strong>：pe_fwd 6.2 看起来极便宜，但这完全建立在 FY27 EPS $44-46 指引兑现上。<strong>如果指引因 NAND 消费段疲软（8/6 消费段 −32%）打折，pe_fwd 会瞬间翻倍</strong>。便宜是「如果预测成真」的便宜。</li>
+</ol>
+<p><strong>平衡点在哪（你问的核心）</strong></p>
+<div class="scenarios"><div class="scenario"><div class="name base">突破续涨</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">$1900–2250</div><div class="desc">站稳 MA50($1655) + 分析师目标价共识上移，填补 7 月缺口。JPM $2,250 是上沿</div></div><div class="scenario"><div class="name base">高位震荡</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">$1450–1655</div><div class="desc">被 MA50 压制，两周 <span class="up">+61%</span> 后自然消化，等 11 月下季财报兑现 FCF 叙事</div></div><div class="scenario"><div class="name base">获利回吐</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">$1200–1400</div><div class="desc">「memory rally 该谨慎了」叙事占上风(已有分析师喊话) + 大盘 risk-off，斜率均值回归</div></div></div>
+<div class="callout warn"><p><strong>平衡点 = MA50 $1655</strong>。这是数学上和心理上的分水岭：
+- <strong>站上 $1655 并放量</strong> → 动能有效，向 $1900+ 缺口进发，JPM $2,250 是天花板参照。
+- <strong>反复被 $1655 压回</strong> → 两周 <span class="up">+61%</span> 的透支开始消化，回 $1450 甚至 $1350（8 月震荡区）。
+<strong>关键：这波是「叙事重定价」不是「新数据」驱动，下一个硬验证要等 ~11 月下季财报（兑现 FCF 转化模型）。在那之前，涨的是估值倍数不是已证明的现金流</strong> —— 所以更像「趋势交易」而非「价值买入」。若你没持仓，<span class="up">+61%</span> 后追高的风险回报比很差；若持有，MA50 失守放量是第一个减仓技术信号。</p></div>
+<div class="callout info"><p><strong>SNDK 尚未建仓完整 thesis</strong>（工作区只有 attributions.md，无 thesis.md/state.yaml/triggers.yaml）。若要长期跟踪并在 ~11 月财报评分「FCF 转化模型」，建议跑 add-stock 建立完整档案。要现在建吗？</p></div></div><div class="tab-panel" data-tab-for="tabs1-11"><div class="callout info"><p><strong>今日一句话</strong>：大盘 ATH 附近横盘（VIX 14.3），但「AI」大伞下第一次出现清晰多空分化 —— 钱从<strong>算力供给方的融资风险（AVGO −6.8%）</strong>流向<strong>存储的产能确定性（SNDK <span class="up">+6.9%</span> / memory 板块续涨）</strong>。</p></div>
+<div class="kpi-grid"><div class="kpi"><div class="label">今日最强</div><div class="value">SNDK <span class="up"><span class="up">+6.9%</span></span></div><div class="note">Investor Day FCF 模型重定价，5d <span class="up"><span class="up">+34.8%</span></span></div></div><div class="kpi"><div class="label">今日最弱</div><div class="value">AVGO −6.8%</div><div class="note">$370B vendor-financing 担忧，AI 芯片唯一大跌</div></div><div class="kpi"><div class="label">最强 beta（5d）</div><div class="value">SKHY <span class="up"><span class="up">+19.7%</span></span></div><div class="note">memory 超级周期领涨</div></div><div class="kpi"><div class="label">分化信号</div><div class="value">NVDA <span class="up"><span class="up">+0.0%</span></span></div><div class="note">AVGO 大跌零传导 = 个股问题非板块崩盘</div></div></div>
+<p><strong>跨板块叙事（今天真正发生的事）</strong></p>
+<p>同一个「AI 交易」内部分裂成两半：
+- <strong>确定性溢价</strong>（memory）：SNDK/SKHY/MU 上涨的逻辑是「产能 + FCF 可预测」。SanDisk Investor Day 把 NAND 龙头从周期股重定价成现金牛，read-through 拉动全板块。
+- <strong>融资风险折价</strong>（custom silicon）：AVGO 下跌的逻辑是「订单靠客户融资撑起，不可持续」。这是反复出现的 vendor-financing 弹簧，每次都在等正面催化压回。</p>
+<p><strong>关键：两者都还没被硬数据裁决</strong>。SNDK 涨的是估值倍数（下次财报 ~11 月），AVGO 跌的是叙事敞口（财报 9/3）。8/26 NVDA 财报是把两条线一起验证的总闸门。</p>
+<table class="compare"><thead><tr><th>Cluster</th><th>Verdict</th><th>一句话</th></tr></thead><tbody><tr><td>DRAM/HBM</td><td>WATCH</td><td>板块级超周期延续，但已进情绪高涨区，加仓窗口已过</td></tr><tr><td>AI capex</td><td>HOLD</td><td>龙头 NVDA 未破，AVGO 是个股融资担忧，等 8/26+9/3 双验证</td></tr><tr><td>SNDK</td><td>趋势交易</td><td>平衡点 MA50 $1655，涨的是倍数非现金流，追高性价比差</td></tr><tr><td>AVGO</td><td>情绪波动</td><td>$370B 是媒体测算非订单取消，$368(MA200) 是技术分水岭</td></tr><tr><td>TSLA / SpaceX / 能源 / 电力</td><td>HOLD</td><td>平静，无新催化，SU 5d <span class="up"><span class="up">+10%</span></span> 是 Q2 beat 非地缘</td></tr></tbody></table>
+<div class="timeline"><div class="tl-item"><span class="when">8/26</span> — <span class="what">NVDA 财报 — AI capex 叙事总闸门，同时裁决 AVGO 空头论点</span></div><div class="tl-item"><span class="when">9/03</span> — <span class="what">AVGO 财报 — vendor-financing 担忧的正面对质</span></div><div class="tl-item"><span class="when">9/23–25</span> — <span class="what">MU 财报 → 🎯「下一个 NVDA」评分卡到期</span></div></div>
+<div class="callout warn"><p><strong>做 / 不做</strong>
+- ✅ 持有 memory（MU/SKHY），观察 9/25 MU 财报验证超周期
+- ✅ AVGO 若持有，盯 MA200 $368 是否放量失守（第一技术信号）
+- ❌ 不追 SNDK 高位（<span class="up">+61%</span> off low，涨的是倍数，硬验证要等 ~11 月）
+- ❌ 不因 AVGO −6.8% 就判 AI 芯片见顶（NVDA 零传导已证伪）
+- ⏳ 8/26 NVDA 财报前不做 AI 板块方向性大动作</p></div></div></div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# Pre-commitment device. Propose → user confirms/edits. Pre-commitment only works if the user actually commits.
+# SNDK is a NAND cyclical with an AI-storage/HBF re-rating call option. The core risk is a cycle roll-over
+# disguised as a "cheap" (low forward-P/E-on-peak-earnings) stock.
+
+thesis_break_price: 1200   # 用户确认：8/7 震荡低位附近，更早预警的安全垫（>7/29 低点 $1016）
+
+kill_conditions:
+  - "Non-GAAP 毛利率连续两季压缩（84.6% 峰值开始回落）= NAND 周期见顶"
+  - "FY27 指引被下修，或『半数营收转 FCF』模型被悄悄放弃/walk back"
+  - "数据中心营收增速大幅减速 + 消费段持续疲软 = AI 存储需求未能抵消周期腿"
+  - "HBF 到 2027 年中仍未拿下任何具名 design win = 重定价 call option 归零"
+
+re_read_triggers:
+  - "Stock down >15% on no obvious news"
+  - "Missed quarter (revenue or EPS)"
+  - "SNDK 单日因 NAND 定价新闻（非大盘 risk-off）跌 >20% = 周期转向信号"
+  - "带 >30% 5d 涨幅进财报（历史判据：好数字会被打折，参见 8/6 sell-the-news -5.4%）"
+  - "跌破 MA50 并放量 = 动能减仓第一技术信号"

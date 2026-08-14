@@ -46,6 +46,7 @@ events:
   - { date: 2026-08-26, kind: earnings, ticker: SNOW, note: "Q2 FY2027 earnings" }
   - { date: 2026-08-27, kind: earnings, ticker: MRVL, note: "Q2 FY2027 earnings — AWS Trainium ramp" }
   - { date: 2026-09-03, kind: earnings, ticker: AVGO, note: "Q3 FY2026 earnings" }
+  - { date: 2026-11-04, kind: earnings, ticker: SNDK, note: "Q1 FY27 earnings (近似日期) — 🎯 SCORE 「NAND 周期股 → 结构性现金牛」claim。Tier 1: 营收 $10.3-10.8B 兑现、EPS $44-46、non-GAAP 毛利率 (84.6% 峰值) 不快速回落、数据中心增速维持、半数营收转 FCF 首个数据点、HBF design win 进展。带 >30% 5d 涨幅进财报=好数字打折 (8/6 sell-the-news 判据)", scorecard: "stocks/SNDK/thesis.md" }
   - { date: 2026-12-09, kind: lockup, ticker: SPCX, note: "Post-IPO 180-day lockup expiry — significant share unlock" }
   # SPCX 8/31 prediction #4 also auto-injected from attributions/index.jsonl
 

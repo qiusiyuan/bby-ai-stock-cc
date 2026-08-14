@@ -1,0 +1,15 @@
+ticker: SNDK
+active: true
+tags: [ai, memory]
+added: 2026-08-14
+last_checked: 2026-08-14
+last_quarterly_review: null
+last_annual_refresh: 2026-08-14
+max_weight_pct: null
+
+# 下次财报评分卡 — 当 scoring_date 到来时，watchlist/report skill 必须自动拉出 scorecard
+earnings_watchlist:
+  scoring_date: 2026-11-04   # Q1 FY27 期，近似日期；以 timeline.yaml 上的 earnings 条目为准
+  scoring_window: 7d
+  thesis_claim: "SNDK 从 NAND 周期股 re-rate 为结构性现金牛 — FY27 指引 ($10.3-10.8B rev / $44-46 EPS) 兑现 + 半数营收转 FCF 模型可信 + 毛利率 (84.6% 峰值) 不快速回落"
+  status: pending            # pending | scored | invalidated

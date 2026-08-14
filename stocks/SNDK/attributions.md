@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-14 · +6.93% day · ▲ major
+**Tags:** `analyst_upgrade`, `pt_change`, `ai_demand`, `memory_pricing`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** SNDK +6.9% today / +34.8% 5d，续涨源自 8/13 SanDisk Investor Day 的卖方模型重定价（非财报——8/6 财报已 sell-the-news −5.4%）。核心催化：管理层给出 multi-year FCF 模型『Guided to Turning Half Its Revenue Into Free Cash Flow Through 2030』，把 NAND 龙头从周期股重定价为结构性现金牛。分析师上调：JPMorgan 目标价 $2,250(+38%)、RBC『长期目标高于预期，定价模型可持续』、一位分析师喊 $100B 回购。这是 analyst upgrade + 叙事升级驱动的 re-rating，read-through 拉动全 memory 板块（8/13: SNDK +15.3%/SKHY +8.3%/MU +6.28%）。今天续涨 +6.9% 证明不是一日情绪。技术位置：现价 $1634 卡在 MA50 $1655 下方 −1.3%，距 52w高 $2354 仍 −31%，距 7/29 低点 $1016 已 +61%（两周），vs MA200 $903 达 +81%。估值 pe_fwd 6.2（vs pe_ttm 19.5）——极低但完全建立在 FY27 EPS $44-46 指引兑现上。
+
+**Sources.**
+- Yahoo: [Sandisk Stock Soars as JPMorgan Targets $2,250 After Bullish Investor Day](https://finance.yahoo.com/quote/SNDK/)
+- Yahoo/Motley Fool: [Sandisk Just Guided to Turning Half Its Revenue Into Free Cash Flow Through 2030](https://finance.yahoo.com/)
+- Yahoo: [Sandisk Long-Term Targets Above Estimates, Pricing Model Sustainable, RBC Says](https://finance.yahoo.com/)
+- Yahoo: [Why one analyst says investors should be cautious on the memory stock rally](https://finance.yahoo.com/)
+- _Data:_ price $1634, pe_fwd 6.2 / pe_ttm 19.5, MA50 $1655 (−1.3%), MA200 $903 (+81%), 距52w高 −31%, off 7/29低$1016 +61%, volr 1.06 ()
+
+**Cross-assets.** SPY -0.22% · VIX 14.32 · TEN YEAR 4.3
+
+**Agent read.** 关键警告：这波是『叙事/分析师重定价』不是『新硬数据』驱动——涨的是估值倍数不是已证明的现金流。历史刚给过教训：8/6 SNDK 带 +38.9% 5d 涨幅进财报，beat 被读成 measured 直接 −5.4%（可复用判据：任何 memory 股带 >30% 5d 涨幅时好数字要打折，AMD/SPCX/SNDK 三样本已验证）。这次没有财报兑现，燃料是纯叙事——更脆。平衡点 = MA50 $1655：站稳放量→$1900+ 填缺口，JPM $2,250 是天花板；反复被压回→$1450 甚至 $1350(8月震荡区)消化两周 +61% 透支。pe_fwd 6.2 是『如果 FY27 指引成真』的便宜——若 NAND 消费段疲软(8/6 消费段 −32%)打折指引，pe_fwd 瞬间翻倍。下一硬验证要等 ~11 月下季财报兑现 FCF 转化模型。若无持仓，+61% off low 追高风报比差；持有则 MA50 失守放量=第一减仓信号。注意 NAND(SNDK/WDC)与 DRAM/HBM(MU/SKHY)是两个不同供需结构，SNDK Investor Day 是叙事共振非 HBM 定价直接利好。SNDK 工作区尚无完整 thesis（仅 attributions.md），建议 add-stock 建档以便 11 月评分。
+ · Snapshot at `dashboard/2026-08-14.md`
+
+---
 ### 2026-08-06 · -5.40% day · ▼ major
 **Tags:** `prediction_passed`, `earnings_post_print`, `guidance_inline`, `memory_pricing`, `ai_demand`
 **Confidence:** high
