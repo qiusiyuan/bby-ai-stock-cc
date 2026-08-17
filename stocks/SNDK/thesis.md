@@ -77,3 +77,30 @@ Quarterly | Datacenter revenue growth rate + gross-margin trend
 ## Stands & Updates
 
 *(append-only — dated entries added via update-thesis; never edit prior entries)*
+
+### 2026-08-17 — 「不再是周期股」说法核查 + moat 定性上调半档 (agent 重估)
+
+**受核查的说法:** 「上周 SNDK 验证了长协的架构，意味着它不再是周期股，这是上周暴涨的原因。」
+
+**核查结论:方向部分成立，机制被记错，程度被高估。**
+
+**成立的部分。** 上周确有公司级结构性事件，但不是长协 —— 是 **8/13 Investor Day 的多年财务模型**:FY28–FY30 目标 80% 毛利率 / 75% 营业利润率 / mid-to-high-teens 营收增长 / 投资后 100% 超额现金返还。Morgan Stanley 转述管理层称 NAND 正进入 "a new era of long-term AI demand growth";Evercore 点出 "multi-year demand visibility, margin expansion";BofA 据此把 MU FY30 EPS 推到 $230+，称 "memory may be entering a structurally stronger phase"。8/16 三家同步上调 PT(JPM 恢复 Overweight $2,250、WFC $1,550、RBC $1,600)。叠加 8/4 与 SK Hynix 共同落地的 HBF 标准 + Bernstein 今日称 HBF 是 "Game Changer for AI"。**周期股不会给三年后的毛利率目标 —— 这是最接近「去周期化」的硬信号。**
+
+**查无实据的部分。** 遍查全量新闻流(8/13–8/17)+ 本 workspace 全部 SNDK 历史，检索 `长协 / long-term agreement / LTA / 合约定价 / committed capacity / take-or-pay` **零命中**(thefly/tipranks 单篇 403/404、三家搜索引擎本次不可用，故为「可及来源内无」而非确证不存在)。**这一环最关键也最缺失:** 若有 X% 产能被多年固定价格锁定的官方披露，去周期化就是可验证的会计事实;而「管理层给了三年目标」只是预测 —— 证据等级差一个量级。
+
+**对既有 thesis 的三处修正。**
+1. **fwd P/E 更正为 8.34 @ $1,789**(thesis 上文 6.2x @ $1,634 的口径已随价格过期)。trailing 24.27、营收 ttm $20.25B +175.3%、YTD +656%、52w $43.20–$2,354.39、PT 共识 $2,094(23 位分析师)。
+2. **撤回「84.6% 毛利率几乎确定是周期峰值」的确定性表述。** 公司指引 FY30 仍维持 80% —— 该判断现在是**有争议的**，不应作既定事实。
+3. **moat 定性上调半档。** 原文「today a cyclical oligopolist with a real but ordinary scale moat; the AI-memory-architecture moat is a call option, not a fact」 —— HBF 标准已从「call option」变成**已发布的标准**(8/4)，但仍不是**已被生态采用**的标准。修正后表述:*"the AI-memory-architecture moat is now a published standard with sell-side endorsement, but not yet a demonstrated ecosystem"*。判断 HBF 从标准变生态的独立判据:**是否出现 SNDK/SK Hynix 之外的第三方采用。**
+
+**保留的空头论点(未被上述证据推翻)。**
+- 每轮内存周期顶部都伴随一次「这次不一样」:2017-18「数据中心结构性需求」、2021「云 capex 永久上台阶」，两次均在 12–18 个月内回归均值。本轮叙事是「AI 推理需求」。
+- **PT 上调最猛的 Wells Fargo 与 RBC 仍维持中性评级** —— 模型可信度足以调价，不足以变买入。真 bullish 只有 JPMorgan。
+- 对冲基金分裂;Situational Awareness 持同一论点在 SNDK+MU 建 $5B+ 仓位后于 7 月爆仓。
+- 对 NAND 厂商而言 75% 营业利润率历史上从未出现，且该数字来自卖方转述(原文摘录截断)，应作高不确定性输入。
+
+**净定性变更:** 从「三者(SNDK/MU/SKHY)里质量最低、最投机」改为「**分布最宽的一只**」。若多年模型成立，8.3x fwd P/E 是三者中最便宜;若不成立，回撤空间也最大。质量排序(按**已验证程度**)SKHY > MU > SNDK 维持不变。
+
+**Scoring date: 2026-11-04**(Q1 FY27 财报)。评分标准:(1) FCF 转化率是否兑现 Investor Day 口径;(2) 毛利率是否守住 80%+;(3) 是否首次出现长协/承诺产能的官方披露。**注意 11/4 只验一个季度，不验 FY30 —— 真正的周期属性测试是 FY27 全年能否穿越一次 NAND 价格回调。**
+
+*(记录于 dashboard/2026-08-17.md Semi Deep Dive §4;结构化索引 attributions/index.jsonl 2026-08-17 SNDK 已同步修正)*

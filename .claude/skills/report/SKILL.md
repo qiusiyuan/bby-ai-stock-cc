@@ -136,6 +136,20 @@ Don't dump module outputs into chat — the dashboard is the report.
 
 ## Hard rules
 
+- **Neutral voice — no second-person, no referential language.** The report is a standalone document read by an audience, not a chat reply. Never write "你的直觉是对的", "用户核心问题", "给用户的判断", "你持有的", "如果你要挑". Write the claim itself and let the evidence carry it.
+
+  | ❌ Don't write | ✅ Write instead |
+  |---|---|
+  | 用户的直觉——板块轮动——方向正确 | 板块轮动的判断成立,三条证据支持 |
+  | 你感觉"无催化"是对的 | 严格意义上无公司级硬催化 |
+  | 用户说"三者基本面不同"—— 完全正确 | 三者基本面确实不同,分项拆解如下 |
+  | 给用户的关键区分 | 关键区分 |
+  | 理解你持有的是三个不同生意 | 三者是三个不同生意,不是一个"内存篮子" |
+  | 若你想在三者里挑 | 按质量排序 |
+  | 请注意(拥挤信号) | 拥挤信号值得警惕 |
+
+  Two reasons: (1) the rendered HTML is published to GitHub Pages and read as analysis, so addressing a reader breaks the register; (2) **the workspace stores no position data** — phrases like "你持有的" assert a holding the workspace cannot know and must never imply. Questions that motivated a section can be restated as the section's subject ("本 tab 回答:无催化下同涨是否为板块轮动"), never attributed to a person.
+
 - **Always show menu**. Don't infer "user wants everything" from the trigger; the menu is the control surface.
 - **Write sections ONE AT A TIME.** Never write more than one H2 section in a single tool call. This is the #1 cause of timeouts. Fetch data → write one section → fetch more data → write next section.
 - **Idempotent re-runs**: same module on same day = replace its H2, don't append.

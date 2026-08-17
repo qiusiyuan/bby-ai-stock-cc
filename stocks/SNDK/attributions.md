@@ -4,6 +4,65 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-17 (rev. 同日重估) · 5d +45.24% 分段归因 · ▲ extreme
+**Tags:** `sector_rotation`, `memory_pricing`, `executive_comment`, `policy_us`, `policy_china`, `ai_demand`, `pt_change`, `thesis_debate`
+**Confidence:** medium
+**Scoring date:** 2026-11-04 (Q1 FY27 财报 — 「去周期化」论点的首个真实验证点)
+
+**触发。** 有说法称「上周 SNDK 验证了长协的架构，意味着它不再是周期股，这是上周暴涨的原因」。本条为核查结果 + 对同日前一版归因的修正。**append-only：前一条 2026-08-17 记录保留原样，不修改。**
+
+**修正一:5d +45% 必须分两段读。** 前一版把整段涨幅归为「板块轮动+情绪拉升，非公司硬催化」——对 8/17 今日成立，对 8/13–8/14 那一段不成立。
+- **第一段(8/13–8/14,公司级实质事件)** — Investor Day 抛出跨 FY28–FY30 多年财务模型:80% 毛利率 / 75% 营业利润率 / mid-to-high-teens 营收增长 / 投资后 100% 超额现金返还。Morgan Stanley 转述管理层称 NAND 正进入 "a new era of long-term AI demand growth"，并称 100% 现金返还是 "a clear positive"。Evercore 点出 "multi-year demand visibility, margin expansion"。8/16 卖方系统性上调:JPMorgan 恢复 Overweight PT $2,250、Wells Fargo $1,400→$1,550、RBC $1,300→$1,600。
+- **第二段(8/17 今日,政策+情绪)** — 商务部长 Howard Lutnick 周末表态(TipRanks 将今日 ~10% 直接归因于此，**这是前一版遗漏的最直接催化**);Trump 政府推 Apple 弃用中国内存芯片(Barron's: "Getting Its Mojo Back Amid China Memory-Chip Move");Musk 喊「内存瓶颈」;Bernstein 称 HBF 是 "Game Changer for AI"(当日一度 +3.5%)。
+
+**修正二:估值口径。** fwd P/E 实为 **8.34 @ $1,789**，前一版记的 ~6x 取自 thesis.md 在 $1,634 时的过期口径。trailing P/E 24.27、营收 ttm $20.25B(+175.3%)、净利 $11.43B、EPS 73.76、市值 $266.63B、YTD +656%、52w $43.20–$2,354.39、PT 共识 $2,094.41(23 位分析师，Buy)。
+
+**修正三:定性。** 从「三者里质量最低 / 最投机 / 经典周期陷阱」改为「**分布最宽的一只**」。8/13 多年模型 + 8/4 已落地的 HBF 标准，把论点从「NAND 商品周期股」换轨为「结构性 AI 内存参与者」。若模型成立，8.3x fwd P/E 是三者中最便宜;若不成立，回撤空间也最大。同时**撤回**「84.6% 毛利率几乎确定是周期峰值」这一断言——公司指引 FY30 仍维持 80%，该判断现在是有争议的而非确定的。
+
+**「长协/LTA」核查结果:查无实据。** 遍查 stockanalysis.com SNDK 全量新闻流(8/13–8/17 约 25 条)+ workspace 内 `stocks/SNDK/` 全部历史归因与 thesis，检索 `长协 / long-term agreement / LTA / 合约定价 / committed capacity / take-or-pay` **零命中**。thefly.com 与 tipranks 单篇原文返回 403/404，Bing/DuckDuckGo/Google 本次均无法返回有效结果页。故「可及来源内无」≠ 确证不存在。**这一环最关键也最缺失:** 若真有 X% 产能被多年固定价格锁定的官方披露，去周期化就是可验证的会计事实;「管理层给了三年毛利率目标」只是预测——两者证据等级差一个量级。目前只有后者。
+
+**反方论点(压力测试,记录以备 11/4 评分)。**
+1. 每轮内存周期顶部都伴随一次「这次不一样」的结构性叙事:2017-18「数据中心结构性需求」、2021「云 capex 永久上台阶」，两次都在 12–18 个月内均值回归。本轮候选叙事是「AI 推理需求」。
+2. 公司自述模型 ≠ 已验证。80%/75% 是**三年后**目标;首个可验证数据点 ~11/4 只验一个季度的 FCF 转化，不验 FY30。
+3. **PT 上调最猛的 Wells Fargo($1,550)与 RBC($1,600)仍维持中性评级**(Equal Weight / Sector Perform)——模型可信度足以调价，不足以变买入。真 bullish 的只有 JPMorgan。
+4. 对冲基金分裂(TipRanks: "Hedge Funds Are Split After Its 656% Rally");Situational Awareness(被称 'AI stock god')在 SNDK+MU 建 $5B+ 仓位后于 7 月爆仓——**同一结构性论点已让一位重仓专业投资者出局过一次。**
+5. 对 NAND 厂商而言 75% 营业利润率是历史上从未出现的水平，应作高不确定性输入(且该数字来自 Evercore 转述，原文摘录被截断)。
+
+**Sources.**
+- TipRanks: Why Did SanDisk (SNDK) Stock Rally 10% Today, 8/17/26? — 归因 Lutnick 周末表态
+- Barron's: Sandisk Stock Is Getting Its Mojo Back Amid China Memory-Chip Move
+- TheFly: Evercore flags multi-year demand visibility, margin expansion in SanDisk outlook
+- TheFly: SanDisk targets mid-to-high teens revenue growth for FY28-FY30 / expects to return 100% of excess cash
+- TheFly: SanDisk 100% cash return 'a clear positive,' says Morgan Stanley
+- TipRanks: SNDK Jumps 3.5% as 5-Star Bernstein Analyst Calls SanDisk's High Bandwidth Flash a "Game Changer for AI"
+- TipRanks: Hedge Funds Are Split on SanDisk (SNDK) Stock After Its 656% Rally
+- Business Insider: Leopold Aschenbrenner's Situational Awareness bet big on SanDisk and Micron before it blew up
+- TheFly: SanDisk model suggests Micron EPS to $230+ by FY30, says BofA — 结构性论点已扩散到全板块
+- _核查边界:_ thefly/tipranks 单篇 403/404;三家搜索引擎不可用;sandisk.com/company/newsroom 返回空内容。LTA 结论限于可及来源。
+
+**Agent read.** 「不再是周期股」给一半分:方向部分成立(8/13 多年模型 + 8/4 HBF 标准是真实结构性事件)，但具体机制被记错了(是 Investor Day 模型，不是 LTA)，且零季度验证。质量排序(按已验证程度)SKHY > MU > SNDK 维持;分布宽度排序反向。11/4 看两件事:FCF 转化率、毛利率是否守住 80%+。真正的周期属性测试是 FY27 全年能否穿越一次 NAND 价格回调。另一个独立判据:HBF 是否出现 SNDK/SK Hynix 之外的第三方采用——标准变生态的分水岭。参见 [[SNDK 2026-08-04]] HBF 标准发布、[[SNDK 2026-08-14]] Investor Day 首日反应、[[MU 2026-08-17]] [[SKHY 2026-08-17]] 同日同故事。 · Snapshot at `dashboard/2026-08-17.md` (Semi Deep Dive §4)
+
+---
+
+### 2026-08-17 · +9.55% day · ▲ extreme
+**Tags:** `sector_rotation`, `memory_pricing`, `executive_comment`, `policy_us`, `ai_demand`
+**Confidence:** medium
+> ⚠️ 同日 rev. 条目已修正本条的三处内容(5d 分段归因、fwd P/E 8.34 非 ~6x、定性从「最投机」改为「分布最宽」)。本条按 append-only 原则保留原文。
+
+**Primary cause.** SNDK +9.6% 今日 / +45% 5d（extreme 级），但这是板块轮动+情绪拉升，非公司硬催化。三条量化证据：(1) 反向共振——同日大盘平台股 MSFT −2.4%/META −3.0%/AMZN −0.8% 在跌、指数几乎不动(S&P −0.17%)，即资金板块间搬家非新钱入场；(2) 全线缩量——SNDK vol 0.71x、MU 0.45x、DRAM 0.49x 均低于均值，说明存量换仓+空头回补+情绪追逐而非机构放量 conviction；(3) 全球内存链齐涨——Samsung 5d +19%/SK Hynix 韩股 5d +16%/DRAM ETF +7.3% 同向，整条链一起动=宏观叙事(AI 内存超级周期)重定价。软催化：Trump 政府推 Apple 弃中国内存芯片(policy，真实，直接利好 MU/内存链)+ Musk 喊'内存瓶颈'(名人喊话，情绪)。SNDK 涨最猛因它 beta 最高、纯 NAND 最投机、空头最多(回补最凶)——恰恰是三者里质量最低的：84.6% 毛利率近周期峰值，fwd P/E 6x 是峰值盈利上的低倍数=经典周期陷阱。三者质量排序 SKHY>MU>SNDK，弹性/风险排序反过来。
+
+**Sources.**
+- Yahoo: [SanDisk Rallies 8%, Western Digital Rises 6%, Micron Gains 5% as Elon Musk Flags a Memory Bottleneck](https://finance.yahoo.com/quote/SNDK/)
+- Yahoo/Barron's: [Investors Remember Why They Love Memory-Chip Stocks](https://finance.yahoo.com/)
+- _Corroboration:_ 反向共振：MSFT −2.4%/META −3.0%/AMZN −0.8% 同日下跌，指数 S&P −0.17% 走平=板块轮动而非普涨。全球链同向：Samsung 5d +19%/SK Hynix 000660 5d +16%。
+- _Data:_ 全线缩量：SNDK vol 0.71x / MU 0.45x / DRAM 0.49x 均低于均值。SNDK fwd P/E ~6x on 84.6% 峰值毛利=周期陷阱信号。 ()
+
+**Cross-assets.** SPY -0.17% · VIX 15.0 · TEN YEAR 4.3
+
+**Agent read.** 板块轮动+情绪拉升，非三家各自新基本面。用户直觉两点都对：是轮动、且三者基本面不同(SKHY=HBM 质量龙头/MU=综合体时序领先/SNDK=纯 NAND 最投机)。短期唯一硬催化 NVDA 8/26 财报，传导强度 SKHY>MU>SNDK(NVDA 是 SKHY 头号 HBM 客户，不直接买 SNDK 的 NAND)。三只带大涨+缩量进财报=高 sell-the-news 风险，SNDK 最脆弱。中长期分化：SKHY 靠 2027 HBM 稀缺(结构最实)，MU 靠 9/25 证明份额升级，SNDK 押 HBF 标准(期权而非股票)。关键警惕：缩量上涨+全市场看多内存超级周期=拥挤信号。参见 [[MU 2026-08-17]] [[SKHY 2026-08-17]] 同日同故事。
+ · Snapshot at `dashboard/2026-08-17.md`
+
+---
 ### 2026-08-14 · +6.93% day · ▲ major
 **Tags:** `analyst_upgrade`, `pt_change`, `ai_demand`, `memory_pricing`, `sector_rotation`
 **Confidence:** high

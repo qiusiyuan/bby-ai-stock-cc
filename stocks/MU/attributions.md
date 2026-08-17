@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-17 · +5.91% day · ▲ major
+**Tags:** `sector_rotation`, `memory_pricing`, `policy_us`, `policy_china`, `ai_demand`
+**Confidence:** medium
+
+**Primary cause.** MU +5.9% 今日 / +19.5% 5d，破 $1000 心理关口。同 SNDK/SKHY 是同一板块轮动的三个载体(见 SNDK 归因三条量化证据)。MU 相对更有政策抓手：媒体标题 'Micron Stock Breaks $1,000 After Key Move by Trump Administration' + 'White House pushes Apple away from Chinese memory chips'——Trump 政府推 Apple 弃长江存储(YMTC)等中国供应商，订单流向 Micron/SanDisk/SK Hynix，这是 policy_us+policy_china 交叉直接利好 MU。另 BofA 'sees Micron EPS topping $230 by FY30, calls peak fears overblown'。MU 是三者里的综合体(DRAM+HBM+NAND)且是 HBM 追赶者非龙头，本次涨幅最温和(+20% vs SNDK +45%)。关键时序价值：MU 9/25 Q4 FY26 财报是内存 cluster 最早给出可验证数字的(SKHY Q3 要等 10/26，SNDK 要等 ~11/4)，将给整个 cluster 定调。缩量(vol 0.45x 最低)=情绪+政策驱动而非机构放量。
+
+**Sources.**
+- Yahoo: [Micron Stock Breaks $1,000 After Key Move by Trump Administration](https://finance.yahoo.com/quote/MU/)
+- Yahoo: [Micron shares rise as White House pushes Apple away from Chinese memory chips](https://finance.yahoo.com/)
+- Yahoo: [BofA sees Micron EPS topping $230 by FY30, calls peak fears overblown](https://finance.yahoo.com/)
+- _Corroboration:_ 板块轮动确认：同日 SNDK +9.6%/SKHY +6.0%/DRAM +7.3% 同向，MSFT/META/AMZN 反向下跌，指数走平。全球链 Samsung/SK Hynix 韩股 5d +16~19%。
+
+**Cross-assets.** SPY -0.17% · VIX 15.0 · TEN YEAR 4.3
+
+**Agent read.** MU 在三者里是'综合体+时序领先指标'。破 $1000 是心理关口+政策利好(Trump 推 Apple 弃中国内存直接点名受益)，非公司新数据。质量排序 SKHY>MU>SNDK：MU 中位——DRAM/HBM/NAND 全做但 HBM 是追赶者。NVDA 8/26 财报传导中等(受益 HBM 总盘扩大而非独家关系)。核心时序优势：9/25 最早出财报，是 'next NVDA' 评分卡的裁决日(GM≥82%/rev≥$43B/EPS≥$27/HBM QoQ≥+20%)，会给 SKHY/SNDK 定调。中长期看 MU 能否从 HBM 追赶者升级为共同龙头=估值重估关键。参见 [[SNDK 2026-08-17]] [[SKHY 2026-08-17]] 同日同故事。
+ · Snapshot at `dashboard/2026-08-17.md`
+
+---
 ### 2026-08-13 · n/a day · ▲ +6.28%
 **Tags:** `memory_pricing`, `guidance_raise`, `sector_rotation`
 **Confidence:** high

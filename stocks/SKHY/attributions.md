@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-17 · +6.02% day · ▲ major
+**Tags:** `sector_rotation`, `memory_pricing`, `ai_demand`, `executive_comment`
+**Confidence:** medium
+
+**Primary cause.** SKHY +6.0% 今日 / +30% 5d。同 SNDK/MU 是同一板块轮动的三个载体(见 SNDK 归因三条量化证据)。SKHY 是三者里暴涨最有基本面支撑的：HBM 全球龙头，NVDA H100/H200/B200 HBM3E 独家供应商，HBM4 领跑。媒体 'SK Hynix Stock Trades at Around 5 Times Next Year Earnings Even After Revenue Grew 257%'——即便营收 +257%，估值仍仅 ~5x 明年 EPS，这是暴涨可以用'结构性 HBM 稀缺'正当化的唯一一只。韩股本体 000660.KS 5d +16% 同步(SKHY ADS 相对韩股持续 +30% 溢价，结构性非折价)。Musk '内存瓶颈'喊话+全链情绪共振。1 ADS = 1/10 普通股(务必用于跨市场比价)。
+
+**Sources.**
+- Yahoo/Motley Fool: [Why SK Hynix Stock Popped Today](https://finance.yahoo.com/quote/SKHY/)
+- Yahoo/Motley Fool: [SK Hynix Stock Trades at Around 5 Times Next Year's Earnings Even After Revenue Grew 257%](https://finance.yahoo.com/)
+- Yahoo/Motley Fool: [Elon Musk Just Uttered 3 Massively Bullish Words for Micron, Sandisk, and SK Hynix](https://finance.yahoo.com/)
+- _Corroboration:_ 板块轮动确认：同日 SNDK +9.6%/MU +5.9%/DRAM +7.3% 同向，大盘平台股反向。韩股本体 000660.KS +3.3%/5d +16% 与 ADS 同步。
+
+**Cross-assets.** SPY -0.17% · VIX 15.0 · TEN YEAR 4.3
+
+**Agent read.** SKHY 是三者里中长期质量最高的一只——HBM 稀缺是真实结构性故事，2027 供给最紧(CEO 公开称'供给史上最差年'=需求超产能)，估值仍便宜(~5x 明年 EPS)。NVDA 8/26 财报传导最强(NVDA 是 SKHY 头号 HBM 客户，采购指引=SKHY 营收前瞻)，这是双刃：涨最有理由也跌最有理由。核心结构风险=Samsung HBM4 追赶速度(唯一可信挑战者)。10/7 lockup 到期研究结论=非主要变量(100% 增发无老股东减持)。质量排序 SKHY>MU>SNDK。参见 [[SNDK 2026-08-17]] [[MU 2026-08-17]] 同日同故事。
+ · Snapshot at `dashboard/2026-08-17.md`
+
+---
 ### 2026-08-13 · n/a day · ▲ +8.3%
 **Tags:** `memory_pricing`, `guidance_raise`, `sector_rotation`
 **Confidence:** high

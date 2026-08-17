@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-08-17</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-08-17 11:57</div>
+<h1 id="daily-report-2026-08-17">Daily Report 2026-08-17</h1>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }#tabs1-8:checked ~ [data-tab-for="tabs1-8"] { display: block; }#tabs1-9:checked ~ [data-tab-for="tabs1-9"] { display: block; }#tabs1-10:checked ~ [data-tab-for="tabs1-10"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><input class="tab-input" type="radio" name="tabs1" id="tabs1-8"><input class="tab-input" type="radio" name="tabs1" id="tabs1-9"><input class="tab-input" type="radio" name="tabs1" id="tabs1-10"><div class="tabs"><label class="tab-label" for="tabs1-0">Pulse &amp; Macro</label><label class="tab-label" for="tabs1-1">Watchlist &amp; Movers</label><label class="tab-label" for="tabs1-2">Timeline 30d</label><label class="tab-label" for="tabs1-3">Semi Deep Dive: SNDK / MU / SKHY</label><label class="tab-label" for="tabs1-4">Focus: TSLA</label><label class="tab-label" for="tabs1-5">Focus: SpaceX</label><label class="tab-label" for="tabs1-6">Focus: DRAM/HBM</label><label class="tab-label" for="tabs1-7">Focus: AI capex</label><label class="tab-label" for="tabs1-8">Focus: 能源(油气)</label><label class="tab-label" for="tabs1-9">Focus: 电力/Grid</label><label class="tab-label" for="tabs1-10">Brief</label></div><div class="tab-panel" data-tab-for="tabs1-0"><div class="verdict {watch}">存储/内存板块无催化连续第 N 日走强,而大盘科技回吐 —— 教科书式板块轮动,不是普涨</div>
+<p>大盘今天几乎不动、内部却在剧烈换位。指数层面平淡(S&amp;P −0.17%,道指 −0.31%,纳指 QQQ <span class="up">+0.22%</span>),VIX 15.0(<span class="up">+5.4%</span> 但仍是低位),表面是一个"什么都没发生"的日子。但<strong>指数不动 = 内部有对冲</strong>:钱从一个地方流到另一个地方,净额抵消。今天流出的是 mega-cap 平台股,流入的是内存/存储。</p>
+<div class="kpi-grid"><div class="kpi"><div class="label">S&amp;P 500</div><div class="value">7772</div><div class="note">−0.17% · 5d <span class="up"><span class="up">+0.25%</span></span> 基本走平</div></div><div class="kpi"><div class="label">纳指 QQQ</div><div class="value">732.65</div><div class="note"><span class="up"><span class="up">+0.22%</span></span> · 靠半导体撑住</div></div><div class="kpi"><div class="label">道指</div><div class="value">53565</div><div class="note">−0.31% · 5d −0.76% 老经济偏弱</div></div><div class="kpi"><div class="label">VIX</div><div class="value">15.0</div><div class="note"><span class="up"><span class="up">+5.4%</span></span> 但绝对低位,无恐慌</div></div><div class="kpi"><div class="label">SMH 半导体</div><div class="value">599</div><div class="note"><span class="up"><span class="up">+1.9%</span></span> · 板块是今天唯一的强势方向</div></div><div class="kpi"><div class="label">10Y</div><div class="value">~4.3%</div><div class="note">利率平稳,非驱动因素</div></div></div>
+<p><strong>今天的轮动地图(一眼看清钱去哪了):</strong></p>
+<table class="compare"><thead><tr><th>方向</th><th>代表</th><th>今日</th><th>5日</th><th>读法</th></tr></thead><tbody><tr><td>流入 → 内存/存储</td><td>SNDK / MU / SKHY</td><td><span class="up"><span class="up">+9.6%</span></span> / <span class="up"><span class="up">+5.9%</span></span> / <span class="up"><span class="up">+6.0%</span></span></td><td><span class="up"><span class="up">+45%</span></span> / <span class="up"><span class="up">+20%</span></span> / <span class="up"><span class="up">+30%</span></span></td><td>板块轮动的接收端</td></tr><tr><td>流入 → 存储外围</td><td>Samsung / SK Hynix 韩股</td><td><span class="up"><span class="up">+2.4%</span></span> / <span class="up"><span class="up">+3.3%</span></span></td><td><span class="up"><span class="up">+19%</span></span> / <span class="up"><span class="up">+16%</span></span></td><td>全球内存链共振,非美股孤立现象</td></tr><tr><td>流出 ← 大盘平台</td><td>MSFT / META / AMZN</td><td>−2.4% / −3.0% / −0.8%</td><td>−4.5% / −3.8% / −6.3%</td><td>资金来源端(前期涨多了)</td></tr><tr><td>中性</td><td>NVDA / SMH</td><td><span class="up"><span class="up">+1.1%</span></span> / <span class="up"><span class="up">+1.9%</span></span></td><td><span class="up"><span class="up">+4.6%</span></span> / <span class="up"><span class="up">+5.2%</span></span></td><td>龙头稳,板块整体不慌</td></tr></tbody></table>
+<p><strong>政策/宏观脉冲(与存储直接相关):</strong></p>
+<ul>
+<li><strong>商务部长 Howard Lutnick 周末表态(今日最直接的可引用催化)</strong> —— TipRanks 将 SNDK 今日 ~10% 的涨幅直接归因于 Lutnick 的周末讲话。配套的政策线是 <strong>Trump 政府推动 Apple 弃用中国内存芯片</strong>(Barron's:"Sandisk Stock Is Getting Its Mojo Back Amid China Memory-Chip Move")。传导逻辑:若 Apple 被推离长江存储(YMTC)等中国供应商,订单流向 Micron/SanDisk/SK Hynix/Samsung。这是 <code>policy_us</code> + <code>policy_china</code> 交叉利好,MU 标题直接写"Micron Stock Breaks $1,000 After Key Move by Trump Administration"。</li>
+<li><strong>Musk 喊"内存瓶颈"(memory bottleneck)</strong> —— 多家媒体证实这三个字点燃了 MU/SNDK/SKHY。<code>executive_comment</code> 类催化,情绪面权重大于基本面。</li>
+<li><strong>Trump Oman 威胁</strong> —— 拖累道指(地缘噪音),对存储无传导。</li>
+<li>无 Fed/FOMC 事件今日;利率平稳,不是今天的变量。</li>
+</ul>
+<div class="callout info"><p><strong>"无催化"需要精确定义。</strong> 今天没有任何一家内存公司发布改变基本面的<strong>公司级</strong>新信息(财报/指引/大单),这一点成立。但有两个<strong>政策与情绪层面的软催化</strong>:(1) 商务部长 Lutnick 周末表态 + Trump 推 Apple 弃中国内存(政策,真实且可引用),(2) Musk 喊内存瓶颈(名人喊话,情绪)。因此准确的说法是:<strong>涨的是叙事和资金流,不是公司新事实</strong>。这正是板块轮动的定义——同一个宏观故事(AI 内存超级周期)被资金重新定价,而非个股各自的新闻。详见 Semi Deep Dive tab。</p></div></div><div class="tab-panel" data-tab-for="tabs1-1"><h3>重点观察 (FOCUS) — 内存三剑客今日主角</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">SNDK</div><div class="value">$1798</div><div class="note"><span class="up"><span class="up">+9.6%</span></span> 今日 · <span class="up"><span class="up">+45%</span></span> 5d 🔥 · vol 0.71x(低于均值)</div></div><div class="kpi"><div class="label">MU</div><div class="value">$1029</div><div class="note"><span class="up"><span class="up">+5.9%</span></span> 今日 · <span class="up"><span class="up">+20%</span></span> 5d · 破 $1000 关口 · vol 0.45x(低)</div></div><div class="kpi"><div class="label">SKHY</div><div class="value">$176</div><div class="note"><span class="up"><span class="up">+6.0%</span></span> 今日 · <span class="up"><span class="up">+30%</span></span> 5d · vol 数据缺 · 逼近发行价上方新高</div></div><div class="kpi"><div class="label">DRAM ETF</div><div class="value">$61.5</div><div class="note"><span class="up"><span class="up">+7.3%</span></span> 今日 · <span class="up"><span class="up">+24%</span></span> 5d · vol 0.49x(低)</div></div></div>
+<div class="callout info"><p><strong>关键异动特征:成交量全线低于均值。</strong> SNDK 0.71x、MU 0.45x、DRAM 0.49x —— 全部<strong>低于</strong>平均成交量,却走出 +6~9% 的单日大涨。这是<strong>轻仓薄量的情绪/轮动式拉升</strong>,不是重仓机构建仓。含义:上得快、缺量能支撑,回撤也会同样快。真正的机构 conviction 会伴随放量。这个信号贯穿三只票——见 Semi Deep Dive 的"共同点 vs 差异"分析。</p></div>
+<p><strong>阈值触发扫描:</strong> 三只票全部触发归因义务(1d ≥3% 且 5d ≥10%)。SNDK 5d <span class="up">+45%</span> 属 <code>extreme</code> 级。已在本 report 的 Semi Deep Dive tab 完成归因并落库。</p>
+<div class="callout info"><p><strong>SNDK 的 5d <span class="up">+45%</span> 需要分段读,不能整体归为情绪盘。</strong> 其中 8/13–8/14 那一段由 <strong>Investor Day 多年财务模型</strong>(FY28–FY30: 80% 毛利率 / 75% 营业利润率 / 100% 超额现金返还)驱动,是公司级实质事件;8/17 今日这一段由<strong>政策 + 情绪</strong>驱动(商务部长 Lutnick 表态、Trump 推 Apple 弃中国内存、Musk 喊内存瓶颈)。上方的"缩量"判断适用于今日的 tape,不构成对 8/13 事件性质的否定。完整重估见 Semi Deep Dive §4。</p></div>
+<h3>常规持仓 (REGULAR) — 简表</h3>
+<table class="compare"><thead><tr><th>Ticker</th><th>今日</th><th>5日</th><th>备注</th></tr></thead><tbody><tr><td>NVDA</td><td><span class="up"><span class="up">+1.1%</span></span></td><td><span class="up"><span class="up">+4.6%</span></span></td><td>龙头稳;8/26 财报是近期最大催化(见 AI capex tab)</td></tr><tr><td>TSM</td><td><span class="up"><span class="up">+2.0%</span></span></td><td><span class="up"><span class="up">+3.9%</span></span></td><td>跟随半导体强势</td></tr><tr><td>MRVL</td><td><span class="up"><span class="up">+6.9%</span></span></td><td><span class="up"><span class="up">+13.8%</span></span></td><td>今日次强;8/27 财报,Trainium 互联叙事</td></tr><tr><td>INTC</td><td><span class="up"><span class="up">+2.0%</span></span></td><td><span class="up"><span class="up">+7.2%</span></span></td><td>turnaround 持续修复</td></tr><tr><td>AMD</td><td>−0.5%</td><td><span class="up"><span class="up">+9.0%</span></span></td><td>5d 强但今日歇脚</td></tr><tr><td>AVGO</td><td><span class="up"><span class="up">+1.2%</span></span></td><td>−5.8%</td><td>8/14 vendor-financing 担忧后仍在修复(见历史归因)</td></tr><tr><td>TSLA</td><td>−0.4%</td><td><span class="up"><span class="up">+3.0%</span></span></td><td>无新事件</td></tr><tr><td>SPCX</td><td><span class="up"><span class="up">+6.0%</span></span></td><td><span class="up"><span class="up">+6.9%</span></span></td><td>反弹;SSPC(2x 反向)−12% 今日</td></tr><tr><td>SU / CVX / CNQ</td><td><span class="up"><span class="up">+0.9%</span></span> / <span class="up"><span class="up">+0.8%</span></span> / <span class="up"><span class="up">+1.6%</span></span></td><td><span class="up"><span class="up">+5.8%</span></span> / <span class="up"><span class="up">+3.5%</span></span> / <span class="up"><span class="up">+3.2%</span></span></td><td>油气温和走强,WTI 稳</td></tr><tr><td>GEV</td><td><span class="up"><span class="up">+2.0%</span></span></td><td><span class="up"><span class="up">+9.5%</span></span></td><td>电力/AI 数据中心叙事持续</td></tr><tr><td>GOOG / AMZN / MSFT / META</td><td>−0.7% / −0.8% / −2.4% / −3.0%</td><td>5d 全负</td><td>大盘平台股是今天资金的**流出端**</td></tr></tbody></table></div><div class="tab-panel" data-tab-for="tabs1-2"><p>未来 30 天(8/17 → 9/16)催化日历 —— <strong>对内存三剑客,NVDA 8/26 是唯一的近期硬催化,其余全在 9 月下旬~11 月</strong>。</p>
+<div class="timeline"><div class="tl-item"><span class="when">8/26 (T+9)</span> — <span class="what">🔥 NVDA Q2 FY27 财报 (AMC) — Blackwell 出货 + DC 增长 + HBM 采购指引。内存链最重要的近期催化(详见下方&quot;NVDA 传导&quot;分析)</span></div><div class="tl-item"><span class="when">8/26 (T+9)</span> — <span class="what">SNOW Q2 FY27 财报</span></div><div class="tl-item"><span class="when">8/27 (T+10)</span> — <span class="what">MRVL Q2 FY27 财报 — AWS Trainium ramp / SerDes 互联</span></div><div class="tl-item"><span class="when">9/3 (T+17)</span> — <span class="what">AVGO Q3 FY26 财报 — custom silicon backlog(8/14 vendor-financing 担忧的裁决日)</span></div><div class="tl-item"><span class="when">9/25 (T+39)</span> — <span class="what">🎯 MU Q4 FY26 财报 — SCORE「next NVDA」评分卡:GM ≥82% / rev ≥$43B / EPS ≥$27 / HBM QoQ ≥<span class="up">+20%</span></span></div><div class="tl-item"><span class="when">~9 月上</span> — <span class="what">📅 无 CPI/NFP/FOMC 落在本窗口前段;9 月 FOMC 在下旬(利率路径是中期变量)</span></div></div>
+<p><strong>时序要点(对三只票各自的意义):</strong></p>
+<ul>
+<li><strong>NVDA 8/26</strong> 是三只票共同的最近催化——但它是<strong>间接</strong>的(NVDA 讲 HBM/存储采购 → read-through),不是三家自己的数字。这是本 report 的核心短期问题,下方展开。</li>
+<li><strong>MU 9/25</strong> 是三家里<strong>最早给出可验证数字</strong>的(SKHY Q3 要等 10/26,SNDK Q1 FY27 要等 ~11/4)。MU 是内存 cluster 的时序领先指标——它的财报会给 SKHY 和 SNDK 定调。</li>
+<li><strong>SKHY 10/7 lockup 到期</strong>:研究结论是<strong>非主要变量</strong>(100% 增发无老股东减持)。观察点:到期前后放量下跌 = 漏掉受限股东;无异动 = 判断成立。</li>
+<li><strong>SNDK ~11/4</strong> 是最晚的,且带 &gt;45% 的 5d 涨幅进财报——按 sell-the-news 判据,好数字都可能被打折。</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs1-3"><blockquote>
+<p>本 tab 回答四个问题:<strong>(1) 无催化下三只同涨是否为板块轮动?(2) 三者技术/基本面是否真的不同?(3) NVDA 8/26 财报对三者的传导分别有多强?(4) 中长期各自怎么看?</strong></p>
+</blockquote>
+<h3>0. 这是不是板块轮动 —— 是,而且有量化证据</h3>
+<div class="verdict {watch}">板块轮动 + 情绪拉升,不是三家各自的新基本面。三条独立证据交叉验证。</div>
+<div class="meters"><div class="meter"><div class="name">轮动证据强度</div><div class="track"><div class="fill high" style="width:90%"></div></div><div class="score">9/10</div><div class="note">三条独立证据交叉验证,判断可信</div></div></div>
+<p><strong>证据一:反向共振。</strong> 内存股涨的同一天,大盘平台股(MSFT −2.4% / META −3.0% / AMZN −0.8%)在跌,且 5d 全负。指数几乎不动(S&amp;P −0.17%)。<strong>指数不动 + 内部对立 = 资金在板块间搬家,不是新钱入场。</strong> 这是轮动最干净的定义。</p>
+<p><strong>证据二:成交量全线低于均值。</strong> SNDK 0.71x、MU 0.45x、DRAM 0.49x。真正由公司新闻(财报/大单)驱动的暴涨会<strong>放量</strong>;这次是<strong>缩量上涨</strong>,说明是存量资金换仓 + 空头回补 + 情绪追逐,而非增量机构 conviction。</p>
+<p><strong>证据三:全球内存链齐涨,无个股孤立信号。</strong> 不只是三只美股——Samsung(<span class="up">+2.4%</span>/5d <span class="up">+19%</span>)、SK Hynix 韩股本体(<span class="up">+3.3%</span>/5d <span class="up">+16%</span>)、DRAM ETF(<span class="up">+7.3%</span>)全部同向。如果是某一家的公司利好,不会拉动整条产业链的所有玩家。<strong>整条链一起动 = 宏观叙事重定价(AI 内存超级周期),不是微观事件。</strong></p>
+<p><strong>软催化(为什么不是纯真空):</strong> 商务部长 Lutnick 周末表态 + Trump 推 Apple 弃中国内存(政策,真实) + Musk 喊"内存瓶颈"(情绪)。三者都不是公司级硬数据,<strong>今天没有一家公司发布改变基本面的新信息</strong>。涨的是叙事和资金流,不是公司新事实。</p>
+<div class="callout info"><p><strong>但轮动结论对 SNDK 有一个重要例外——见 §4。</strong> SNDK 的 5d <span class="up">+45%</span> 里,有相当一部分不是今天的轮动,而是 <strong>8/13 Investor Day 抛出的多年财务模型</strong>在持续被重新定价。这是三只票里唯一带公司级结构性事件的一只,因此不能简单归为"缩量情绪盘"。</p></div>
+<hr>
+<h3>1. 三只票分开看 —— 技术/基本面确实不同</h3>
+<p>三只票被同一个宏观叙事捆在一起交易,但底层是三个不同的生意:</p>
+<table class="compare"><thead><tr><th>维度</th><th>SNDK (SanDisk)</th><th>MU (Micron)</th><th>SKHY (SK Hynix)</th></tr></thead><tbody><tr><td>主营</td><td>NAND 闪存纯玩家</td><td>DRAM+HBM+NAND 综合</td><td>HBM 全球龙头 (DRAM 为主)</td></tr><tr><td>在 AI 内存的位置</td><td>存储层 (HBM/DRAM 之下)</td><td>HBM 追赶者 + DRAM 主力</td><td>HBM 霸主 (NVDA 独家供货)</td></tr><tr><td>产品定价权</td><td>最弱 (NAND 历史最商品化)</td><td>中 (HBM 有,DRAM 周期)</td><td>最强 (HBM3E 独家 + HBM4 领跑)</td></tr><tr><td>毛利率现状</td><td>84.6% (公司指引 FY30 维持 80%)</td><td>高但未及 SKHY HBM 水平</td><td>HBM 拉动,结构性最强</td></tr><tr><td>估值</td><td>fwd P/E 8.3x (@$1,789) · 争议在分母可持续性</td><td>fwd 估值中性</td><td>~5x 明年 EPS (营收 <span class="up"><span class="up">+257%</span></span> 后)</td></tr><tr><td>关键变量</td><td>80%GM/75%OM 多年模型能否兑现 + HBF 采用</td><td>HBM 份额 + DRAM 周期</td><td>HBM4 良率 + Samsung 追赶速度</td></tr><tr><td>本次 5d 涨幅</td><td><span class="up"><span class="up">+45%</span></span> (最猛)</td><td><span class="up"><span class="up">+20%</span></span> (最温和)</td><td><span class="up"><span class="up">+30%</span></span></td></tr><tr><td>体量 (市值)</td><td>~$263B</td><td>~$1.16T</td><td>~$1.25T (含韩股)</td></tr></tbody></table>
+<p><strong>三者的本质差异——一句话各自定性:</strong></p>
+<ul>
+<li><strong>SKHY = 最纯的 AI 内存质量标的。</strong> HBM 霸主,NVDA H100/H200/B200 的 HBM3E 独家供应商,HBM4 领跑。它的涨最有基本面支撑——但也因此对 NVDA 需求最敏感(双刃)。这是三者里<strong>唯一</strong>其暴涨可以用"结构性 HBM 稀缺"来正当化的。</li>
+<li><strong>MU = 综合体 + 时序领先指标。</strong> DRAM/HBM/NAND 全做,HBM 是追赶者不是龙头。它的价值在于<strong>9/25 最早出财报</strong>,给整个 cluster 定调。破 $1000 更多是心理关口 + 政策利好(Trump 推 Apple 弃中国内存直接点名利好 MU)。</li>
+<li><strong>SNDK = 争议最大、叙事变化最快的一环。</strong> 纯 NAND,历史上最商品化、周期最惨烈(2022-23 负毛利)。但 <strong>8/13 Investor Day 之后,"这只是周期股"的默认判断不再能不加论证地成立</strong>——公司抛出了跨 FY28-FY30 的多年模型(80% 毛利率 / 75% 营业利润率 / mid-to-high-teens 营收增长 / 100% 超额现金返还),这是周期股不会做的承诺。fwd P/E 8.3x 的分子不贵,争议全在<strong>分母能不能守住</strong>。完整拆解见 §4。它 5d <span class="up">+45%</span> 涨最猛,既有 beta/空头回补成分,也有 Investor Day 的实质重定价成分——两者混在一起。</li>
+</ul>
+<div class="callout info"><p><strong>关键区分 —— 三者暴涨的"质量/可持续性"排序为 SKHY &gt; MU &gt; SNDK,但 SNDK 的位次是本周争议最大的一项。</strong> SKHY 有真实 HBM 稀缺支撑(已验证的独家供货 + 良率领先);MU 是综合体 + 政策利好 + 时序价值(9/25 最早出数);SNDK 的支撑<strong>从"纯情绪"升级为"未经验证的公司自述模型 + 已落地的 HBF 标准"</strong> —— 比一周前强,但仍是三者中唯一其核心论点依赖尚未发生的财报验证(~11/4)的一只。</p>
+<p>需要单独指出:<strong>涨得最猛的那只不必然是质量最低的那只。</strong> 若 SNDK 的多年模型成立,它今天的估值反而是三者里最便宜的;若不成立,它的回撤空间也最大。这是分布最宽、而非单纯"最差"的一只。</p></div>
+<div class="scenarios"><div class="scenario"><div class="name base">SKHY 质量</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">结构支撑最强(已验证)</div><div class="desc">HBM 独家 + HBM4 领跑,暴涨有已落地的基本面正当性</div></div><div class="scenario"><div class="name base">MU 质量</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">综合体+政策+时序</div><div class="desc">DRAM/HBM 混合,9/25 最早验证,政策直接利好</div></div><div class="scenario"><div class="name base">SNDK 质量</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">分布最宽(非最低)</div><div class="desc">多年模型+HBF 已落地,但核心论点待 ~11/4 首次验证</div></div></div>
+<hr>
+<h3>2. 短期催化:NVDA 8/26 财报对三者分别的传导</h3>
+<p>NVDA 8/26 Q2 FY27 财报(盘后)是三只票未来 30 天<strong>唯一的硬催化</strong>。它不是三家自己的数字,而是通过 NVDA 对 HBM/存储的采购信号 read-through。<strong>传导强度对三者完全不同——这正是"技术基本面不同"的实战体现:</strong></p>
+<div class="meters"><div class="meter"><div class="name">NVDA 财报 → SKHY 传导</div><div class="track"><div class="fill high" style="width:90%"></div></div><div class="score">9/10</div><div class="note">最强:NVDA 是 SKHY 头号客户,HBM 采购指引=SKHY 营收前瞻</div></div><div class="meter"><div class="name">NVDA 财报 → MU 传导</div><div class="track"><div class="fill mid" style="width:60%"></div></div><div class="score">6/10</div><div class="note">中:MU 是 HBM 追赶者,受益于&quot;HBM 总需求&quot;而非独家关系</div></div><div class="meter"><div class="name">NVDA 财报 → SNDK 传导</div><div class="track"><div class="fill low" style="width:30%"></div></div><div class="score">3/10</div><div class="note">最弱:NVDA 买 HBM/DRAM 不直接买 NAND,SNDK 靠&quot;AI 存储层&quot;间接叙事</div></div></div>
+<p><strong>逐一拆解 NVDA 财报的两种情景对三者的影响:</strong></p>
+<table class="compare"><thead><tr><th>情景</th><th>SKHY (传导最强)</th><th>MU (传导中)</th><th>SNDK (传导最弱)</th></tr></thead><tbody><tr><td>NVDA 强指引 (Blackwell 出货超预期 + HBM 采购上调)</td><td>直接利好,营收能见度提升,可能续涨</td><td>受益于 HBM 总盘扩大,顺势涨</td><td>仅情绪外溢,涨幅最小且最不持久</td></tr><tr><td>NVDA 平淡/指引保守</td><td>冲击最大,回撤最深(涨最有理由也跌最有理由)</td><td>中度回撤,但有 DRAM 周期+政策缓冲</td><td>短期回撤最快(NVDA 不是 NAND 客户,情绪一散无基本面锚),但 8/13 多年模型提供部分下方支撑</td></tr><tr><td>NVDA &quot;dark GPU&quot;/消化担忧 (见今日 Gavin Baker 评论)</td><td>HBM 需求担忧直接传导</td><td>间接承压</td><td>情绪转向时最脆弱</td><td></td></tr></tbody></table>
+<div class="callout info"><p><strong>短期最重要的风险提示:</strong> 三只票都带着大涨(5d +20~45%)进 NVDA 财报,且<strong>缩量</strong>。这意味着 8/26 是一个高风险的 sell-the-news 节点——<strong>即使 NVDA 数字好,"利好兑现"也可能触发获利了结</strong>,尤其是 SNDK(涨最多、量最虚)。历史归因显示 8 月 memory 板块已多次"等一个正面催化压回"(见 AVGO 8/14 vendor-financing 案例)。NVDA 8/26 既是最大的上行催化,也是最大的 sell-the-news 风险点。SKHY 基本面支撑最强,回撤情形下是三者里结构最稳的一只。</p></div>
+<p><strong>短期观察框架(非交易建议):</strong>
+- <strong>NVDA 财报电话会里对 HBM/内存采购的措辞是钥匙</strong> —— 对三只票的定价权重 SKHY &gt; MU &gt; SNDK。
+- <strong>缩量上涨本身不可持续</strong> —— 要么后续放量确认(转为真 conviction),要么在 NVDA 财报后见分晓。
+- <strong>质量排序 SKHY &gt; MU &gt; SNDK;分布宽度排序反向。</strong> SNDK 是三者中唯一核心论点尚未被财报验证的一只(首验 ~11/4),上下行空间都最大。</p>
+<hr>
+<h3>3. 中长期:三者分道扬镳的地方</h3>
+<p>短期它们被捆在一起,<strong>中长期会分化</strong>——因为底层生意不同。</p>
+<table class="compare"><thead><tr><th>时间尺度</th><th>SKHY</th><th>MU</th><th>SNDK</th></tr></thead><tbody><tr><td>2026 下半年</td><td>HBM4 良率爬坡是关键;NVDA/hyperscaler 需求能见度到 2027</td><td>9/25 财报验证&quot;next NVDA&quot;叙事;DRAM 周期是否续</td><td>~11/4 首次验证 FCF 转化;峰值毛利能否守住</td></tr><tr><td>2027 (供给最紧年)</td><td>CEO 已公开称 2027&quot;供给史上最差年&quot;=需求超产能,SKHY 最受益</td><td>HBM 份额能否从追赶者变共同龙头是估值再定级关键</td><td>NAND 若跟随周期见顶,SNDK 最先承压</td><td></td></tr><tr><td>结构性风险</td><td>Samsung HBM4 追赶速度 (唯一可信挑战者)</td><td>HBM 份额被 SKHY/Samsung 双向挤压</td><td>NAND 均值回归 (历史上暴烈),峰值毛利=顶部信号</td></tr><tr><td>结构性 upside</td><td>HBM 稀缺溢价持续,估值从 5x 再定级到 10-12x</td><td>HBM 追赶成功 + DRAM 周期长 → 综合体价值重估</td><td>HBF 标准被采用 → 从商品 NAND 变 AI 内存架构参与者</td></tr><tr><td>中长期定性</td><td>质量最高,周期最有支撑</td><td>综合体,时序领先,政策受益</td><td>弹性最大,风险最大,靠 HBF call option</td></tr></tbody></table>
+<p><strong>中长期一句话结论(三者):</strong></p>
+<ul>
+<li><strong>SKHY —— 三者里中长期质量最高。</strong> HBM 稀缺是真实的结构性故事,2027 供给最紧,估值仍便宜(~5x 明年 EPS)。核心风险是 Samsung 追赶 HBM4。这是"内存超级周期"最纯粹的表达。</li>
+<li><strong>MU —— 综合体,靠 9/25 财报证明自己不只是追赶者。</strong> 若 HBM 份额从追赶者升级为共同龙头,估值有重估空间;政策(去中国内存)是持续顺风。中长期是"能否从 #3 变成 #2"的故事。</li>
+<li><strong>SNDK —— 分布最宽,核心变量已从"HBF 期权"变成"多年模型可信度"。</strong> NAND 历史上是三者里最商品化、周期最暴烈的。但 8/13 Investor Day 把论点换了:公司自述 FY28-FY30 维持 80% 毛利率 / 75% 营业利润率、mid-to-high-teens 营收增长、100% 超额现金返还,并已与 SK Hynix 共同落地 HBF 标准(8/4)。fwd P/E 8.3x 便宜与否,完全取决于这套模型是否可信。<strong>若成立,SNDK 从商品股变 AI 内存架构参与者(JPMorgan PT $2,250);若不成立,NAND 均值回归会拿回大部分涨幅。</strong>完整正反拆解见 §4 —— 这是本 report 唯一需要独立一节论证的标的。</li>
+</ul>
+<div class="verdict {watch}">中长期质量排序 SKHY &gt; MU &gt; SNDK(以&quot;已验证程度&quot;排);分布宽度排序反向 SNDK &gt; MU &gt; SKHY。短期同涨,中长期分化。</div>
+<div class="callout info"><p><strong>bear-case 新鲜度检查(工作区规则):</strong> 上文对 SNDK 保留了完整空头论点(均值回归、模型未验证、缩量),对 SKHY 标了 Samsung 追赶风险,§4 对 SNDK 多头论点逐条给了反驳。三只票近期叙事高度一致偏多,一个结构性提醒:<strong>当"内存超级周期"成为共识、且上涨是缩量的,这本身就是拥挤信号。</strong> VIX 虽低(15),板块内部的单边情绪仍值得对冲思维。</p></div>
+<hr>
+<h3>4. SNDK 专项重估:"不再是周期股"这个说法,哪部分成立、哪部分没有证据</h3>
+<p>一个流传的说法是:<strong>上周 SNDK "验证了长协的架构",意味着它不再是周期股,这是上周暴涨的原因。</strong> 本节逐条核查。结论先行:</p>
+<div class="verdict {watch}">方向部分成立,但具体机制被记错了。上周的结构性事件是 8/13 Investor Day 的多年财务模型 + 8/4 的 HBF 标准 —— 不是长期供货协议(LTA)。&quot;周期属性下降&quot;有真实证据支撑,但&quot;不再是周期股&quot;目前仍是公司自述 + 卖方转述,没有一个季度的实际数据验证过。</div>
+<div class="meters"><div class="meter"><div class="name">&quot;上周暴涨有结构性原因&quot;</div><div class="track"><div class="fill high" style="width:80%"></div></div><div class="score">8/10</div><div class="note">成立 — Investor Day 多年模型是实质公司级事件</div></div><div class="meter"><div class="name">&quot;长协/LTA 架构被验证&quot;</div><div class="track"><div class="fill low" style="width:20%"></div></div><div class="score">2/10</div><div class="note">查无实据 — 遍查新闻与工作区历史均无 LTA 披露</div></div><div class="meter"><div class="name">&quot;不再是周期股&quot;</div><div class="track"><div class="fill mid" style="width:50%"></div></div><div class="score">5/10</div><div class="note">一半成立 — 论点已从周期转向结构,但零季度验证</div></div></div>
+<p><strong>核查过程(诚实交代数据边界):</strong> 遍查 stockanalysis.com 的 SNDK 全量新闻流(8/13–8/17,约 25 条)、workspace 内 <code>stocks/SNDK/</code> 全部历史归因与 thesis。检索 <code>长协 / long-term agreement / LTA / 合约定价 / committed capacity / take-or-pay</code> —— <strong>零命中</strong>。thefly.com 与 tipranks 单篇原文返回 403/404,搜索引擎(Bing/DuckDuckGo/Google)本次均无法返回有效结果页。因此"没有找到 LTA 证据"应理解为<strong>在可及来源内没有</strong>,而非确证不存在。若确实看到过 LTA 相关原文,值得贴过来单独核。</p>
+<h4>✅ 已确认成立的结构性证据(这些是真的)</h4>
+<table class="compare"><thead><tr><th>证据</th><th>内容</th><th>来源</th><th>为什么重要</th></tr></thead><tbody><tr><td>8/13 Investor Day 多年模型</td><td>FY28–FY30 目标: 80% 毛利率 / 75% 营业利润率 / mid-to-high-teens 营收增长</td><td>Evercore ISI 转述 (TheFly)</td><td>**周期股不会给三年后的毛利率目标。** 这是最接近&quot;去周期化&quot;的硬信号</td></tr><tr><td>100% 超额现金返还</td><td>投资后的超额现金 100% 返还股东</td><td>TheFly;Morgan Stanley 称 &quot;a clear positive&quot;</td><td>只有对现金流可预测性有信心才敢承诺 100%</td></tr><tr><td>&quot;NAND 进入 AI 长期需求新时代&quot;</td><td>管理层观点,MS 转述: NAND entering &quot;a new era of long-term AI demand growth&quot;</td><td>Morgan Stanley (TheFly)</td><td>这是&quot;不再是周期股&quot;说法最直接的出处 —— 但注意是**管理层自述**</td></tr><tr><td>HBF 标准落地 (8/4)</td><td>与 SK Hynix 共同发布 High Bandwidth Flash 标准</td><td>已记录于 workspace 归因 (8/4, <span class="up"><span class="up">+11.68%</span></span>, confidence high)</td><td>把 SNDK 从&quot;NAND 商品&quot;重分类为&quot;AI 内存架构参与者&quot;</td></tr><tr><td>Bernstein: HBF 是 &quot;Game Changer for AI&quot;</td><td>5 星分析师背书,今日 SNDK 一度 <span class="up"><span class="up">+3.5%</span></span></td><td>TipRanks (8/17)</td><td>卖方开始把 HBF 当独立估值项而非期权</td></tr><tr><td>卖方系统性上调 (8/16)</td><td>JPMorgan 恢复 Overweight PT $2,250;Wells Fargo $1,400→$1,550;RBC $1,300→$1,600</td><td>TheFly</td><td>三家同步上调 = 对模型的集体重定价</td></tr><tr><td>read-through 到 MU</td><td>BofA: 依 SNDK 模型推 MU FY30 EPS 可达 $230+;&quot;memory may be entering a structurally stronger phase&quot;</td><td>TheFly</td><td>结构性论点已扩散到全板块,非 SNDK 孤例</td></tr></tbody></table>
+<h4>❌ 查无实据的部分</h4>
+<ul>
+<li><strong>长期供货协议 / LTA / take-or-pay 结构</strong> —— 没有任何来源披露 SNDK 签署了长期供货协议,更没有"多少比例产能或营收已被长协锁定"的数字。<strong>这是"不再是周期股"论点里最关键、也恰恰最缺失的一环:</strong> 若真有 X% 产能被多年固定价格锁定,去周期化就是可验证的会计事实;而"管理层给了三年毛利率目标"只是一个预测。两者的证据等级差一个量级。</li>
+<li><strong>Investor Day 精确日期</strong>为 8/13(依 workspace 归因记录),对外报道未逐字确认。</li>
+<li>80% GM / 75% OM 数字来自 Evercore 转述,原文摘录被截断。<strong>对 NAND 厂商而言 75% 营业利润率是历史上从未出现过的水平</strong>,应作为高不确定性输入处理。</li>
+</ul>
+<h4>反方论点(压力测试:为什么"不再是周期股"可能是错的)</h4>
+<ol>
+<li><strong>每一轮内存周期的顶部,都伴随一次"这次不一样"的结构性叙事。</strong> 2017-18 是"数据中心结构性需求",2021 是"云 capex 永久上台阶"——两次都在 12-18 个月内回到均值。这次的候选叙事是"AI 推理需求"。叙事本身不是反驳证据,但它的<strong>存在</strong>不构成支持证据。</li>
+<li><strong>公司自述模型 ≠ 已验证。</strong> 80% GM / 75% OM 跨 FY28-FY30 是<strong>三年后</strong>的目标。SNDK 第一次可验证的数据点是 <strong>~11/4 的 Q1 FY27</strong>,而那只验证一个季度的 FCF 转化,不验证 FY30。</li>
+<li><strong>卖方评级本身在打折。</strong> 关键细节:PT 上调最猛的 Wells Fargo($1,550)与 RBC($1,600)<strong>仍维持中性评级</strong>(Equal Weight / Sector Perform)。即 "模型可信度足以上调目标价,但不足以变成买入建议"。真正 bullish 的只有 JPMorgan($2,250)。</li>
+<li><strong>对冲基金分裂。</strong> TipRanks 标题直言 "Hedge Funds Are Split on SanDisk After Its 656% Rally";Situational Awareness(被称 'AI stock god')在 SNDK+MU 建了 50 亿美元以上仓位后于 7 月爆仓 —— <strong>同一个结构性论点,已经让一个重仓的专业投资者出局过一次。</strong></li>
+<li><strong>YTD <span class="up">+656%</span>,52 周区间 $43.20–$2,354.39。</strong> 任何"结构性重估"论点都必须解释:为什么正确的重估幅度恰好是 6.5 倍。价格已经把大量好消息计入。</li>
+</ol>
+<h4>净结论:report 需要怎么改(已改)</h4>
+<div class="callout info"><p><strong>修正后的 SNDK 定性:</strong> 从"<strong>最投机的一环 / 经典周期陷阱</strong>"改为"<strong>分布最宽的一只 —— 论点已从周期股换轨到结构性成长股,但换轨尚未被任何一个季度的实际数据验证</strong>"。</p>
+<p>三点具体修正,已落到本 report 各 tab:
+1. <strong>fwd P/E 由 ~6x 更正为 8.3x</strong>(@$1,789;原 6x 取自 thesis.md 在 $1,634 时的口径,已过期)。
+2. <strong>删除"84.6% 毛利率几乎确定是周期峰值"的断言。</strong> 公司指引 FY30 仍维持 80%——该断言现在是<strong>有争议的</strong>而非确定的,不应作为既定事实陈述。
+3. <strong>上周 45% 涨幅不能全归为"缩量情绪盘"。</strong> 8/13 Investor Day 是公司级实质事件,今日(8/17)则确为政策+情绪驱动。<strong>两段涨幅性质不同,应分开归因。</strong></p>
+<p><strong>不变的部分:</strong> 缩量(0.71x)仍是真实的技术弱点;~11/4 首验前,核心论点仍未证实;质量排序(按已验证程度)SKHY &gt; MU &gt; SNDK 维持。</p></div>
+<div class="timeline"><div class="tl-item"><span class="when">~11/4</span> — <span class="what">🎯 SNDK Q1 FY27 财报 — &quot;去周期化&quot;论点的第一个真实验证点。看 FCF 转化率与毛利率是否守住 80%+</span></div><div class="tl-item"><span class="when">FY27 全年</span> — <span class="what">80% GM 能否穿越一次 NAND 价格回调 —— 这才是周期属性的真正测试</span></div><div class="tl-item"><span class="when">持续</span> — <span class="what">HBF 是否出现第三方采用(非 SNDK/SK Hynix 自家)—— 标准变生态的判据</span></div><div class="tl-item"><span class="when">待补</span> — <span class="what">若有 LTA / 长协 / 承诺产能的官方披露,应即刻记录 —— 这是把&quot;预测&quot;升级为&quot;会计事实&quot;的唯一路径</span></div></div></div><div class="tab-panel" data-tab-for="tabs1-4"><div class="verdict {hold}">无新事件,随大盘微调 −0.4%,5d <span class="up">+3%</span> —— 安静日</div>
+<p>TSLA $340.8,今日 −0.4%,5d <span class="up">+3.0%</span>,量能正常。没有 FSD/NHTSA/交付新闻落在今日。在今天"内存 vs 大盘平台"的轮动里,TSLA 既不是流入端也不是明显流出端,基本按 beta 走。无催化,无异动,无需动作。下一个硬催化是季度交付与财报节奏。</p></div><div class="tab-panel" data-tab-for="tabs1-5"><div class="verdict {watch}">SPCX <span class="up">+6.0%</span> 反弹,SSPC(2x 反向)−12% —— 纯跟踪,不弹买卖提醒</div>
+<p>SPCX $148.4,今日 <span class="up">+6.0%</span>,5d <span class="up">+6.9%</span>,vol 0.75x。2x 反向 SSPC −12%(今日)/ 5d −17%,与 SPCX 反向如预期。今日反弹与大盘无关,更像前期回吐后的技术修复。<strong>工作区无 SPCX 持仓——照常展示走势,不弹 thesis-break。</strong> 关键中期变量仍是 12/9 的 180 天 lockup 到期(share unlock)。今日无 Starlink/Starshield/融资新闻驱动,属情绪性反弹。</p></div><div class="tab-panel" data-tab-for="tabs1-6"><blockquote>
+<p>注:本 cluster 与上方 <strong>Semi Deep Dive</strong> 高度重叠。此处只放联动图和一句话增量,避免重复。</p>
+</blockquote>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">58.35</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">74.48</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">90.60</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">106.72</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">122.85</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-07</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">07-28</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">08-17</text><path d="M56.0,86.8 L78.3,69.3 L100.7,48.5 L123.0,39.4 L145.4,77.8 L167.7,64.4 L190.1,87.3 L212.4,119.8 L234.8,128.5 L257.1,122.8 L279.4,91.2 L301.8,89.6 L324.1,88.1 L346.5,115.6 L368.8,140.9 L391.2,169.7 L413.5,182.6 L435.9,140.6 L458.2,150.9 L480.6,139.3 L502.9,116.9 L525.2,129.3 L547.6,143.9 L569.9,151.4 L592.3,147.3 L614.6,141.9 L637.0,130.3 L659.3,101.0 L681.7,83.2 L704.0,59.0" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="59.0" r="3" fill="#58a6ff"/><path d="M56.0,86.8 L78.3,84.0 L100.7,72.1 L123.0,75.5 L145.4,87.1 L167.7,74.5 L190.1,96.1 L212.4,110.2 L234.8,111.3 L257.1,106.9 L279.4,77.8 L301.8,81.1 L324.1,72.7 L346.5,91.7 L368.8,97.4 L391.2,119.2 L413.5,141.4 L435.9,104.3 L458.2,118.5 L480.6,116.7 L502.9,99.4 L525.2,99.2 L547.6,102.5 L569.9,103.5 L592.3,107.9 L614.6,105.9 L637.0,94.3 L659.3,83.7 L681.7,77.8 L704.0,62.1" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="62.1" r="3" fill="#3fb950"/><path d="M56.0,86.8 L78.3,110.7 L100.7,47.2 L123.0,73.9 L145.4,110.7 L167.7,108.2 L190.1,112.5 L212.4,80.9 L234.8,90.9 L257.1,84.5 L279.4,107.4 L301.8,125.2 L324.1,144.7 L346.5,149.9 L368.8,115.9 L391.2,124.1 L413.5,125.7 L435.9,107.7 L458.2,112.8 L480.6,124.4 L502.9,132.9 L525.2,137.0 L547.6,127.2 L569.9,107.7 L592.3,90.4 L614.6,89.4 L637.0,74.5" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="637.0" cy="74.5" r="3" fill="#d29922"/><path d="M56.0,86.8 L78.3,80.6 L100.7,70.8 L123.0,76.5 L145.4,100.7 L167.7,84.0 L190.1,100.4 L212.4,121.8 L234.8,120.3 L257.1,118.7 L279.4,94.3 L301.8,98.9 L324.1,96.6 L346.5,118.2 L368.8,121.6 L391.2,141.4 L413.5,153.7 L435.9,121.8 L458.2,130.3 L480.6,127.0 L502.9,111.0 L525.2,115.9 L547.6,125.7 L569.9,129.3 L592.3,133.4 L614.6,128.0 L637.0,111.5 L659.3,102.2 L681.7,100.7 L704.0,82.9" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="82.9" r="3" fill="#f85149"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">Memory/存储 5d 联动 (normalized, 30d)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">SNDK</span> <span class="legend-last">110.80</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+10.80%</span></span><span class="legend-note">· 1d <span class="up">+9.6%</span> · 30d <span class="up">+2.8%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">MU</span> <span class="legend-last">109.60</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+9.60%</span></span><span class="legend-note">· 1d <span class="up">+5.9%</span> · 30d <span class="up">+4.4%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">SKHY</span> <span class="legend-last">104.80</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+4.80%</span></span><span class="legend-note">· 1d <span class="up">+6.0%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#f85149"></span><span class="legend-name">DRAM</span> <span class="legend-last">101.50</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+1.50%</span></span><span class="legend-note">· 1d <span class="up">+7.3%</span> · 30d −5.1%</span></span></div></div>
+<p><strong>增量点(不在 Deep Dive 里的):</strong> 看归一化图,四条线 30d 走势几乎完全同形(同跌同涨),相关性极高——这就是"topic cluster"的意义:它们不是四个独立标的,是<strong>一个 HBM/内存周期在四个载体上的表达</strong>。注意 8/12 后的 V 型反转是集体行为,再次印证轮动性质。全球本体(Samsung 005930 5d <span class="up">+19%</span> / SK Hynix 000660 5d <span class="up">+16%</span>)同步,美股不是孤立。</p></div><div class="tab-panel" data-tab-for="tabs1-7"><div class="verdict {watch}">今天 AI capex 板块内部分裂:算力底层(NVDA/TSM/MRVL/INTC)涨,hyperscaler 开支方(MSFT/META/AMZN/GOOG)跌</div>
+<table class="compare"><thead><tr><th>子板块</th><th>代表</th><th>今日</th><th>读法</th></tr></thead><tbody><tr><td>算力底层/芯片</td><td>NVDA <span class="up"><span class="up">+1.1%</span></span> / TSM <span class="up"><span class="up">+2.0%</span></span> / MRVL <span class="up"><span class="up">+6.9%</span></span> / INTC <span class="up"><span class="up">+2.0%</span></span></td><td>涨</td><td>与内存同属&quot;AI 硬件&quot;受益端</td></tr><tr><td>Hyperscaler 开支方</td><td>MSFT −2.4% / META −3.0% / AMZN −0.8% / GOOG −0.7%</td><td>跌</td><td>今日资金流出端,5d 全负</td></tr><tr><td>特殊</td><td>AVGO <span class="up"><span class="up">+1.2%</span></span> (5d −5.8%)</td><td>修复中</td><td>8/14 vendor-financing 担忧后仍在缓慢回血</td></tr></tbody></table>
+<p><strong>板块内叙事:</strong> 今天的轮动不只是"内存 vs 平台",更精确说是"<strong>AI 硬件受益端 vs AI 开支承担端</strong>"。芯片/内存/网络(NVDA/TSM/MRVL/内存三剑客)是收订单的一方,今天涨;掏钱建数据中心的 hyperscaler(MSFT/META/AMZN)是花钱的一方,今天跌。这与近期反复出现的 vendor-financing / "AI capex 能否产出回报"担忧一脉相承(见 8/14 AVGO 归因)。<strong>NVDA 8/26 财报是这个分裂的裁决点</strong>——它同时是硬件端的验证和开支端 ROI 的信号。MRVL 8/27、AVGO 9/3 紧随。</p></div><div class="tab-panel" data-tab-for="tabs1-8"><div class="verdict {hold}">温和走强,WTI 稳,无地缘升级 —— 稳定持有</div>
+<table class="compare"><thead><tr><th>Ticker</th><th>今日</th><th>5日</th><th>备注</th></tr></thead><tbody><tr><td>SU (Suncor)</td><td><span class="up"><span class="up">+0.9%</span></span></td><td><span class="up"><span class="up">+5.8%</span></span></td><td>加拿大综合油气,量能低(0.19x)</td></tr><tr><td>CVX</td><td><span class="up"><span class="up">+0.8%</span></span></td><td><span class="up"><span class="up">+3.5%</span></span></td><td>大型综合</td></tr><tr><td>CNQ</td><td><span class="up"><span class="up">+1.6%</span></span></td><td><span class="up"><span class="up">+3.2%</span></span></td><td>加拿大天然气/重油</td></tr><tr><td>HXE.TO</td><td><span class="up"><span class="up">+1.2%</span></span></td><td><span class="up"><span class="up">+6.1%</span></span></td><td>加拿大能源 ETF,量能正常(1.02x)</td></tr></tbody></table>
+<p>油气板块 5d 温和走强(+3~6%),与今天的科技轮动无关,是独立的能源自身节奏。今日无 Iran/Israel/Hormuz 地缘升级(Trump 有 Oman 威胁但未传导到油价),WTI 平稳。SU 8/4 已出财报。属于"稳定的另一条腿"——在科技板块内部剧烈换位时,能源提供了组合的低相关性对冲。无异动,无需动作。</p></div><div class="tab-panel" data-tab-for="tabs1-9"><div class="verdict {hold}">GEV <span class="up">+2.0%</span> / 5d <span class="up">+9.5%</span> —— AI 数据中心电力叙事持续,稳</div>
+<p>GEV(GE Vernova)$1085,今日 <span class="up">+2.0%</span>,5d <span class="up">+9.5%</span>,量能低(0.25x)。作为唯一 US-listed 同时覆盖燃气轮机+电网+服务的纯标的,GEV 持续受益于"AI 数据中心=电力需求"叙事——这与今天内存股的上涨是<strong>同一个宏观故事的不同表达</strong>(AI 基础设施全链条)。5d <span class="up">+9.5%</span> 是稳健的趋势延续,非异动。下一个催化是 hyperscaler PPA 签约与 Power segment margin。无需动作。</p></div><div class="tab-panel" data-tab-for="tabs1-10"><div class="verdict {watch}">一句话:今天是一个&quot;指数不动、内部剧烈换位&quot;的板块轮动日——钱从大盘平台股流进内存/存储,叙事驱动、缩量、无公司硬催化。</div>
+<div class="kpi-grid"><div class="kpi"><div class="label">今日主角</div><div class="value">内存三剑客</div><div class="note">SNDK <span class="up"><span class="up">+9.6%</span></span> / MU <span class="up"><span class="up">+5.9%</span></span> / SKHY <span class="up"><span class="up">+6.0%</span></span></div></div><div class="kpi"><div class="label">资金来源</div><div class="value">大盘平台股</div><div class="note">MSFT −2.4% / META −3.0%,5d 全负</div></div><div class="kpi"><div class="label">性质</div><div class="value">轮动+情绪</div><div class="note">缩量(vol 0.45~0.71x),非机构放量 conviction</div></div><div class="kpi"><div class="label">最近催化</div><div class="value">NVDA 8/26 财报</div><div class="note">传导强度 SKHY&gt;MU&gt;SNDK,也是最大 sell-the-news 风险</div></div></div>
+<p><strong>把所有 tab 串起来的判断链:</strong></p>
+<ol>
+<li>
+<p><strong>板块轮动判断成立:</strong> 三条硬证据——反向共振(内存涨/平台跌/指数平)、全线缩量、全球内存链齐涨。今日没有一家公司发布改变基本面的新信息,涨的是叙事和资金流。今日的可引用催化是政策层面的(商务部长 Lutnick 表态 + Trump 推 Apple 弃中国内存),不是公司层面的。</p>
+</li>
+<li>
+<p><strong>三者基本面确实不同:</strong> SKHY=HBM 质量龙头(已验证),MU=综合体+时序领先,SNDK=论点刚从周期股换轨为结构性成长股、但未经验证。<strong>按"已验证程度"排质量 SKHY &gt; MU &gt; SNDK;按分布宽度排反向。</strong> 需要修正一个直觉:涨最猛的 SNDK 不等于质量最低——它是<strong>分布最宽</strong>的一只,因为 8/13 Investor Day 的多年模型(80% GM / 75% OM 至 FY30)若成立,当前 8.3x fwd P/E 反而最便宜。详见 Deep Dive §4。</p>
+</li>
+<li>
+<p><strong>短期(NVDA 8/26):</strong> 唯一硬催化,但对三者传导天差地别——SKHY 最敏感(NVDA 头号 HBM 客户),SNDK 最间接(NVDA 不直接买 NAND)。三只都带大涨+缩量进财报=高 sell-the-news 风险。</p>
+</li>
+<li>
+<p><strong>中长期:</strong> 短期捆绑、中长期分化。SKHY 靠 2027 HBM 稀缺(结构最实、已验证);MU 靠 9/25 证明份额升级;SNDK 的核心变量已从"HBF 期权"变为"8/13 多年模型的可信度",首个验证点 ~11/4。</p>
+</li>
+<li>
+<p><strong>SNDK 需要单独看待(本 report 新增 Deep Dive §4):</strong> "不再是周期股"的说法方向部分成立——8/13 Investor Day 的三年财务模型 + 8/4 HBF 标准落地是真实的结构性事件;但流传的"长协/LTA 架构被验证"在可及来源内查无实据。关键的反方证据:PT 上调最多的 Wells Fargo 与 RBC <strong>仍维持中性评级</strong>,对冲基金对 SNDK 分裂,且 Situational Awareness 曾持同一论点重仓后于 7 月爆仓。</p>
+</li>
+</ol>
+<div class="scenarios"><div class="scenario"><div class="name base">情景 (未来 30d)</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">走向</div><div class="desc">逻辑</div></div><div class="scenario"><div class="name base">NVDA 8/26 强指引</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">内存链续涨但分化</div><div class="desc">SKHY/MU 有基本面接棒,SNDK 涨幅打折</div></div><div class="scenario"><div class="name base">NVDA 平淡 → sell-the-news</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">三只回吐,SNDK 最深</div><div class="desc">缩量涨的兑现式获利了结</div></div><div class="scenario"><div class="name base">外部冲击 (vendor-financing/宏观)</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">全链回撤</div><div class="desc">AI capex ROI 担忧重燃(见 8/14 AVGO)</div></div></div>
+<div class="callout info"><p><strong>值得盯的:</strong> NVDA 8/26 电话会对 HBM/内存采购的措辞(定价三只票的钥匙,权重 SKHY &gt; MU &gt; SNDK);把三者当三个不同生意而非一个"内存篮子";SNDK ~11/4 财报是"去周期化"论点的第一个真实验证点。</p>
+<p><strong>值得警惕的:</strong> 把 SNDK <span class="up">+45%</span> 整体当基本面确认过头 —— 其中 8/13 Investor Day 那段是实质事件,8/17 这段是政策+情绪;缩量大涨(vol 0.45~0.71x)进 8/26 财报的 sell-the-news 风险;"内存超级周期"已成共识本身就是拥挤信号;以及 SNDK 多年模型目前仍是<strong>公司自述 + 卖方转述</strong>,零季度验证。</p></div></div></div>
+</body>
+</html>
