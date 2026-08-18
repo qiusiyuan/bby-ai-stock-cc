@@ -1,11 +1,11 @@
 ---
 name: publish
-description: "Render markdown to HTML, rebuild the site index, commit, and push. The single command for making any workspace artifact live on GitHub Pages. Triggers: '发布', 'publish', 'push', 'deploy', '上线'. Handles two content types (daily report vs deep dive) with different file paths and index routing."
+description: "Render markdown to HTML, rebuild the site index, and commit. Does NOT push — reminds the user to `git push` manually. The single command for staging any workspace artifact for GitHub Pages. Triggers: '发布', 'publish', 'push', 'deploy', '上线'. Handles two content types (daily report vs deep dive) with different file paths and index routing."
 ---
 
 # /publish
 
-The final step that makes any workspace artifact visible on the published site. Handles rendering, index rebuild, git commit, and push in one command.
+The final step that stages any workspace artifact for the published site. Handles rendering, index rebuild, and git commit — then **reminds the user to `git push` manually** (push is deliberately left to the user, not automated).
 
 ## When invoked
 
@@ -82,19 +82,23 @@ This regenerates `site/index.html` with:
 - **Daily reports tab**: scans `dashboard-{date}-md.html` files; newest 5 as cards, rest in archive
 - **Deep dives tab**: scans `stocks-{ticker}-research-{date}-{slug}-md.html` AND `research-{date}-{slug}-md.html`; listed with date, ticker (or TOPIC), and title
 
-### 5. Git commit + push
+### 5. Git commit (NO push)
 
 ```bash
 git add {source_file} {rendered_html} site/index.html
 git commit -m "publish {date} {type}: {short description}"
-git push
 ```
 
-### 6. Confirm to user
+**Do NOT run `git push`.** Push is left to the user (this environment gates push behind manual approval, and the user prefers to trigger it themselves). Stop after the commit.
+
+### 6. Confirm to user + remind to push
 
 ```
-已发布。{commit_hash} pushed. Index 已更新 — {type} tab 可见。
+已 commit（未 push）。Index 已重建 — {type} tab 就绪。
+上线请手动执行： ! git push
 ```
+
+Always surface the `git push` reminder — the artifact is committed locally but NOT live until the user pushes.
 
 ## File naming conventions
 
@@ -116,7 +120,7 @@ git push
 ## Hard rules
 
 - **Always rebuild index after rendering.** A rendered file without index update = invisible to readers.
-- **Always push.** Publish means live. If the user just wants to render locally without pushing, they'll say "render" not "publish".
+- **Never push automatically.** /publish stops at commit and reminds the user to run `git push` themselves. "Committed" ≠ "live" — never tell the user it's published/live before they've pushed.
 - **One commit per publish.** Don't bundle unrelated changes.
 - **Index is the source of truth** for what's publicly visible. If it's not in index, it's not published.
 - **Don't duplicate**: if re-publishing same-day report, the render overwrites in place (idempotent). Index rebuild picks up whatever's on disk.
