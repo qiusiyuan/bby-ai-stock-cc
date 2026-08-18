@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Optimus 供应链地图 2026-08-17</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-08-17 20:22</div>
+<h1 id="optimus">Optimus 供应链 — 人形机器人产业链投资地图</h1>
+<blockquote>
+<p><strong>Research note</strong> · 2026-08-17 · scope: 跨公司主题 / 长期 sizing 框架
+涵盖: Optimus 技术与 BOM 拆解 · 中国供应链 · 美股可交易零部件股 · Harmonic Drive 专章 · 机器人 ETF (含 CROB 中国机器人 ETF) · 私有/待上市公司与 IPO 路径
+下次 review: (1) Optimus Gen 3/V3 正式发布 (2) Fremont 量产确认启动 (3) 任一供应商拿到 Tesla 确认订单 (4) HUMN/KOID 持仓大改 — 以先到者为准；否则 2026-11-17 (3 个月)</p>
+</blockquote>
+<div class="callout info"><p>本note 服务一个具体的投资意图：赌 Optimus 引领的人形机器人/AGI 大爆发，但<strong>只能用美股账户交易</strong>（不能买 A 股）。因此核心不是"谁是好公司"，而是三层筛子叠加后<strong>还剩下什么能买</strong>：① 技术上是不是 Optimus 必需子系统 ② 与 Tesla 是否真有订单（或未来是否可能依赖）③ 美股账户到底买不买得到。下面每一家都按这三层打标签。</p></div>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }#tabs1-8:checked ~ [data-tab-for="tabs1-8"] { display: block; }#tabs1-9:checked ~ [data-tab-for="tabs1-9"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><input class="tab-input" type="radio" name="tabs1" id="tabs1-8"><input class="tab-input" type="radio" name="tabs1" id="tabs1-9"><div class="tabs"><label class="tab-label" for="tabs1-0">核心判断：这个主题最大的特征是&quot;错配&quot;</label><label class="tab-label" for="tabs1-1">Part 0 — 先理清 Optimus 的技术与产业链（一切的地基）</label><label class="tab-label" for="tabs1-2">Part 1 — 中国供应链：内容最真，但你几乎买不到</label><label class="tab-label" for="tabs1-3">Part 2 — 美股可交易零部件股：能买，但多数是&quot;期权非押注&quot;</label><label class="tab-label" for="tabs1-4">Part 3 — Harmonic Drive Systems (TSE 6324) 专章</label><label class="tab-label" for="tabs1-5">Part 4 — 机器人 ETF：只有两只是真人形供应链</label><label class="tab-label" for="tabs1-6">Part 4b — CROB (Defiance China Robotics ETF)：概念补洞，产品太生</label><label class="tab-label" for="tabs1-7">Part 5 — 私有 / 待上市公司与 IPO 路径</label><label class="tab-label" for="tabs1-8">关键判断 — 这个 thesis 到底怎么用美股表达</label><label class="tab-label" for="tabs1-9">重读触发条件</label></div><div class="tab-panel" data-tab-for="tabs1-0"><p>一句话结论：<strong>内容最纯的买不到，买得到的内容最稀。</strong> 这是整个主题的结构性矛盾，也是这份 note 最值钱的地方。</p>
+<ul>
+<li>Optimus 成本最集中、技术壁垒最高的零件是<strong>精密减速器（谐波 + 摆线）和行星滚柱丝杠</strong> —— 这些的龙头是 <strong>Harmonic Drive（日本，美股极难买）、绿的谐波/来福谐波（中国 A 股/港股）、拓普/三花（中国）</strong>。</li>
+<li>美股账户能顺畅买到的大盘股（NVDA、TXN、APH、TEL、RRX），<strong>人形机器人收入今天基本是"零头"（rounding error）</strong>，靠的是 AI 数据中心/模拟芯片/汽车周期的别的叙事。</li>
+<li><strong>没有任何一个流动性好的美股，有 Tesla 确认的 Optimus 订单。一个都没有。</strong> Tesla 不披露 Optimus 供应商；所有"Optimus 概念股"的关系都是媒体报道/分析师推断/公司暗示，从未经 Tesla 确认。这个宇宙里唯一被确认的人形订单，流向的是<strong>宇树 (Unitree) 和 UBTech</strong>，不是 Tesla。</li>
+</ul>
+<div class="callout warn"><p><strong>投资含义：</strong> 对美股投资者，这个主题几乎全是"叠加在别的 thesis 之上的期权"（AI 数据中心 / 模拟芯片周期 / 稀土国防），而非纯人形押注。真正"能买 + 有真内容 + 是纯人形敞口"的，最后只剩下极少数：两只新发人形 ETF（<strong>HUMN / KOID</strong>）、港股 <strong>UBTech (9880.HK)</strong>、以及少数"真内容但只是小切片"的美股（STM、Nidec ADR、TXN）。<strong>新增一个补洞工具：CROB（Defiance China Robotics ETF）——美股上市、经掉期/陆股通替你持有你本来买不到的中国 A 股供应链；但一天大、AUM~$50万、0.89% 费率、加权逼你买在贵的一端（见 Part 4b）。</strong></p></div>
+<h3>四象限打分框架（贯穿全文）</h3>
+<p>每家公司按四维评：</p>
+<table class="compare"><thead><tr><th>维度</th><th>含义</th><th>最好 → 最差</th></tr></thead><tbody><tr><td>① Optimus 技术适配</td><td>产品是不是 humanoid 必需子系统</td><td>必需核心件 → 可有可无 → 无关</td></tr><tr><td>② Tesla 关系</td><td>是否真有订单</td><td>确认订单 → 在验证/送样 → 传闻 → 无但技术上未来可能依赖 → 纯故事</td></tr><tr><td>③ 可交易性</td><td>美股账户能否买</td><td>美股直接 → 美国 ADR → 港股(需港股权限) → 仅 A 股(买不了) → 私有未上市</td></tr><tr><td>④ 基本面质量</td><td>靠故事还是好生意</td><td>好生意+humanoid是期权 → 周期底部+溢价 → 亏损+纯叙事</td></tr></tbody></table>
+<p>关键的是 <strong>②×③ 交叉</strong>：真有 Optimus 内容的中国核心供应商（三花、绿的谐波、拓普）恰恰多在 A 股你买不了；美股能买的（ALGM/NOVT/STM 这类）多半<strong>没有确认订单</strong>，靠的是"任何 BLDC 电机都需要位置+电流传感、任何伺服关节都需要编码器/减速器"这种<strong>技术必然性</strong>。这层错配是本主题的主线。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-1"><h3>生产现实核查（重要：先给叙事去泡沫）</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">Gen 3 / V3</div><div class="value">截至 2026-08 未正式发布</div><div class="note">多次跳票 (Electrek 2026-07-02)</div></div><div class="kpi"><div class="label">2025 build 目标</div><div class="value">严重未达</div><div class="note">Musk 曾定 ~1万台/千台干活；实际有用产出≈0</div></div><div class="kpi"><div class="label">Q4&#x27;25 电话会</div><div class="value">Musk 承认&quot;仍在 R&amp;D 阶段&quot;</div><div class="note">无 Optimus 在工厂干实际活 (2026-01-28)</div></div><div class="kpi"><div class="label">Fremont 量产</div><div class="value">计划 2026-07/08 启动</div><div class="note">截至 8/17 &quot;未确认实际开始&quot;</div></div><div class="kpi"><div class="label">2026 真实产量</div><div class="value">独立估计 ~2-3 万台</div><div class="note">多为内部数据采集机；&quot;5-10万台&quot;为未证实传闻</div></div><div class="kpi"><div class="label">价格目标</div><div class="value">~$30,000 (Musk, 2024-10)</div><div class="note">1M/yr 规模下成本 ~$20-25k</div></div></div>
+<div class="callout danger"><p><strong>叙事纪律：</strong> Tesla 在 Q2'26 股东信里<strong>删除了 2026 量产措辞</strong>；创始 Optimus 负责人 Milan Kovac 2025-06 离职，2026-01 加入 Hyundai 的 Boston Dynamics；Dojo 训练超算 2025-08 解散、转向 NVIDIA+AMD。这不否定长期 thesis，但"明年放量"是被反复证伪的一类说法。押 Optimus = 押一个<strong>多次跳票、仍在攻坚"手"和量产</strong>的项目，仓位与耐心要按 3-5 年计。</p></div>
+<h3>BOM 成本拆解（Morgan Stanley "Humanoid 100" Gen-2 teardown，目前最好的公开估计）</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">传感器 (力/扭矩/IMU/编码器/视觉/触觉)</div><div class="value">37.0%</div><div class="note">单项最大 —— 决定了&quot;传感器&quot;是关键类目</div></div><div class="kpi"><div class="label">电机 Motors</div><div class="value">20.3%</div><div class="note">无框力矩电机</div></div><div class="kpi"><div class="label">丝杠 Screws (行星滚柱/丝杠)</div><div class="value">20.2%</div><div class="note">行星滚柱丝杠是成本瓶颈</div></div><div class="kpi"><div class="label">减速器 Reducers (谐波)</div><div class="value">12.6%</div><div class="note">谐波减速器 (HDS/绿的/来福地盘)</div></div><div class="kpi"><div class="label">编码器 Encoders</div><div class="value">3.9%</div><div class="note">关节位置反馈</div></div><div class="kpi"><div class="label">计算 Compute (SoC+芯片)</div><div class="value">3.8%</div><div class="note">Tesla 自研 AI5 推理芯片</div></div><div class="kpi"><div class="label">轴承 / 电池</div><div class="value">0.8% / 0.5%</div><div class="note">商品化</div></div></div>
+<p>关键框架：如果把 电机+丝杠+减速器+编码器+轴承 打包成"关节驱动模组"，<strong>约占成本 60-70%</strong>；但按离散零件切，<strong>传感器是单项最大（~37%）</strong>。Goldman（2024-02）：单台成本一年内降约 40%。</p>
+<h3>Tesla 自制 vs 外购（Q2'26 电话会确认的哲学）</h3>
+<table class="compare"><thead><tr><th>自研设计 (差异化 IP)</th><th>外购 (买精密机械件/商品件)</th></tr></thead><tbody><tr><td>执行器/关节设计、电机设计、控制电子、AI5 芯片、电池包集成、传感器&quot;设计&quot;</td><td>谐波/RV 减速器、行星滚柱丝杠、稀土磁材、轴承、力/触觉传感器&quot;制造&quot;、摄像头/CMOS、IMU/MEMS、芯片代工(TSMC/Samsung)</td></tr></tbody></table>
+<p>Musk 原话：机器人"没有供应链，每个零件都是新的"（~1 万个独特零件），是"Tesla 有史以来最难规模化的产品"。<strong>要点：Tesla 自研执行器和电机，但外购减速器/丝杠/磁材/传感器的制造</strong> —— 这正是供应链投资机会所在的层。</p>
+<h3>关键瓶颈 → 定价权在哪</h3>
+<div class="meters"><div class="meter"><div class="name">行星滚柱丝杠</div><div class="track"><div class="fill high" style="width:90%"></div></div><div class="score">9/10</div><div class="note">~成本瓶颈(有说~30%机器成本)；C3精度、~34根/台良率最难；合格厂稀缺→定价权</div></div><div class="meter"><div class="name">灵巧手(22-DOF)</div><div class="track"><div class="fill high" style="width:90%"></div></div><div class="score">9/10</div><div class="note">~20% BOM；Musk 称&quot;占整体挑战~60%&quot;；最难、最值钱的子系统</div></div><div class="meter"><div class="name">谐波减速器</div><div class="track"><div class="fill high" style="width:70%"></div></div><div class="score">7/10</div><div class="note">验证供应商寡头(HDS 日本 + 绿的谐波中国)；集中定价权但被国产价格战侵蚀</div></div><div class="meter"><div class="name">稀土 NdFeB 磁材</div><div class="track"><div class="fill mid" style="width:60%"></div></div><div class="score">6/10</div><div class="note">~3.5kg/台，几乎全中国；2025-04 出口管制直接波及 Optimus；地缘期权非技术护城河</div></div><div class="meter"><div class="name">力/6轴/触觉传感器</div><div class="track"><div class="fill high" style="width:70%"></div></div><div class="score">7/10</div><div class="note">BOM 单项最大类；高规格合格供应商少，仍在验证</div></div></div>
+<div class="callout info"><p><strong>"失去中国供应链"的代价（Morgan Stanley via 36Kr）：</strong> 没有中国供应链，Gen-2 单台成本从 ~$46k 飙到 ~$131k，对不上 Tesla ~$20k 目标。这是为什么 ~70% BOM 价值在中国、即便有政治风险也难迁走的结构性原因 —— 也解释了为什么"美股纯 Optimus 供应链"几乎不存在。</p></div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-2"><p>先给两个必须记住的事实：</p>
+<ol>
+<li><strong>无一家中国公司有 Tesla 确认的 Optimus 订单。</strong> 所有标签都是媒体报道/分析师推断/公司暗示。真正被确认的人形订单流向宇树和 UBTech。"T 链"是未证实的 thesis，不是已订事实。</li>
+<li><strong>不用 A 股账户能买的，只有两家 —— 均为港股双重上市（本次已核实在交易）：</strong> 三花智控 <strong>02050.HK</strong>、兆威机电 <strong>02692.HK</strong>。其余全是 A 股（沪/深/北/科创）美股账户买不了；拓普（HK IPO 已递表未交易）、双林（递表待审）。</li>
+</ol>
+<h3>按"真实 Optimus 内容证据强度"排序</h3>
+<table class="compare"><thead><tr><th>公司</th><th>代码 / 可交易性</th><th>Optimus 零件</th><th>Tesla 关系</th><th>基本面 (FY25)</th><th>判断</th></tr></thead><tbody><tr><td>拓普集团 Tuopu</td><td>601689.SS · A股(HK已递表未交易)</td><td>线性+旋转执行器总成/动力关节</td><td>Tesla 汽车 Tier-1 确凿；Optimus 执行器报道自2023但未确认，公司称分析师预测&quot;不代表承诺&quot;</td><td>营收¥296亿(<span class="up"><span class="up">+11%</span></span>)，净利¥27.8亿(<span class="down"><span class="down">-7.4%</span></span>首降)，~P/E31</td><td>执行器可信度最强，但离岸买不到、Optimus 内容未证实</td></tr><tr><td>三花智控 Sanhua</td><td>02050.HK ✅ / 002050.SZ</td><td>机电执行器总成/机器人关节</td><td>广泛报道为执行器供应商；2025-10 传~$6.85亿订单被公司否认；GS 2025-11 下调</td><td>营收¥310亿(<span class="up"><span class="up">+11%</span></span>)，净利¥40.6亿(<span class="up"><span class="up">+31%</span></span>)，~P/E40</td><td>最可买的可信名字，但头条订单被否、~40x已price in</td></tr><tr><td>双环传动 Shuanghuan</td><td>002472.SZ · 仅A股</td><td>齿轮/RV+行星减速器(环动科技)</td><td>Tesla 汽车齿轮确认；人形确认订单是宇树(20万关节/年量产)；Optimus 仅&quot;认证&quot;传闻</td><td>营收¥91亿(<span class="up"><span class="up">+3.8%</span></span>)，净利¥12.6亿(<span class="up"><span class="up">+23%</span></span>)，~P/E26</td><td>全组估值最不投机；但本质是宇树/国产链，非 Tesla</td></tr><tr><td>绿的谐波 Leaderdrive</td><td>688017.SS · 仅A股(科创)</td><td>谐波减速器(~14个/台)</td><td>纯概念 —— 披露客户是 UBTech/智元/Figure研发，非Tesla</td><td>营收¥5.7亿(<span class="up"><span class="up">+47%</span></span>)，净利¥1.24亿(<span class="up"><span class="up">+121%</span></span>)，~P/E485</td><td>世界#2谐波，但485x纯概念估值</td></tr><tr><td>兆威机电 Zhaowei</td><td>02692.HK ✅ / 003021.SZ</td><td>微传动/灵巧手齿轮箱(ZWHAND)</td><td>投机 —— 基于专利与&quot;候选名单&quot;推断，无送样/定点确认</td><td>营收¥17.2亿(<span class="up"><span class="up">+12.5%</span></span>)，净利¥2.54亿(<span class="up"><span class="up">+13%</span></span>)，~P/E97</td><td>第二个可买名字，盈利质量Tier-3最好；Tesla内容未证实、~97x偏贵</td></tr></tbody></table>
+<p><strong>丝杠集群（最投机、证据最弱）——全部 A 股买不了：</strong> 行星滚柱丝杠是壁垒最高的件，Tesla 部分自制且合格厂极少，"19家候选/5家精选"是猜测名单非合同。</p>
+<table class="compare"><thead><tr><th>公司</th><th>代码(仅A股)</th><th>Tesla 状态</th><th>FY25 营收/净利</th><th>P/E</th></tr></thead><tbody><tr><td>北特科技 Beite</td><td>603009.SS</td><td>投机 —— 自称&quot;进 Tier-1 候选&quot;，零订单</td><td>¥23.2亿/¥1.2亿</td><td>~134</td></tr><tr><td>五洲新春 Wuzhou</td><td>603667.SS</td><td>投机 —— 实际丝杠客户是字节，非Tesla</td><td>¥33.4亿/¥0.9亿</td><td>~245</td></tr><tr><td>贝斯特 Best</td><td>300580.SZ</td><td>无 —— 仅自研样品</td><td>¥14.7亿/¥2.78亿</td><td>~40</td></tr><tr><td>双林股份 Shuanglin</td><td>300100.SZ (HK递表)</td><td>无 —— 送样宇树&amp;拓普，非Tesla</td><td>¥54.8亿/¥5.03亿</td><td>~32</td></tr><tr><td>恒立液压 Hengli</td><td>601100.SS ⚠️</td><td>投机/公司暗示，无Tesla确认</td><td>¥109亿/¥27.3亿</td><td>~53</td></tr></tbody></table>
+<div class="callout danger"><p><strong>恒立液压治理红旗：</strong> 核查其港股上市传闻 —— 不存在（仅 A 股）。反而查到实控人王立平 2026-03 被留置（21财经 2026-03-20），家族持股缩水 &gt;¥29亿。独立于机器人叙事的重大隐患。另：Optimus 真正被中国媒体点名的滚柱丝杠供应商是<strong>杭州新剑 (Xinjian)</strong>，恒立不是那个名字。</p></div>
+<h3>中国部分小结</h3>
+<ul>
+<li><strong>能买（美股账户经港股权限）：</strong> 只有 <strong>三花 02050.HK</strong>（更可信的执行器名字，但订单被否、40x）和 <strong>兆威 02692.HK</strong>（更盈利的灵巧手，但 Tesla 纯投机、97x）。</li>
+<li><strong>最可信 Optimus 内容整体在拓普+三花（执行器）</strong>，但拓普离岸还买不到。</li>
+<li><strong>确认的人形订单都流向宇树/UBTech，不是 Tesla。</strong> 双环（~26x，最扎实）和绿的谐波本质是国产链戴 Tesla 概念帽。</li>
+<li><strong>丝杠集群是泡沫顶</strong> —— 130-245x PE、零确认 Tesla 业务，多家真实客户明确不是 Tesla（字节、宇树）。</li>
+</ul>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-3"><p>你点名的 <strong>ALGM 和 NOVT</strong> 先单独深挖，再给更广的排序。</p>
+<h3>ALGM — Allegro MicroSystems (Nasdaq) · 磁传感 + 电流传感 + 栅极驱动</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">价格/市值 (8/17)</div><div class="value">$44.25 / $82.5亿</div><div class="note">52周 $22.4-$71.8 (beta 1.94 高波动)</div></div><div class="kpi"><div class="label">TTM 营收/增速</div><div class="value">$9.46亿 / <span class="up"><span class="up">+24.2%</span></span></div><div class="note">刚走出模拟/汽车周期底部 (FY25 <span class="down"><span class="down">-30.9%</span></span>)</div></div><div class="kpi"><div class="label">毛利/营业利润率</div><div class="value">47.4% / 7.0%</div><div class="note">净利刚转正 ($14.2M)；FCF $8790万</div></div><div class="kpi"><div class="label">估值</div><div class="value">远期 P/E ~39x / P/S ~8.7x</div><div class="note">深度周期复苏 + 期权再定价，已price in不少</div></div><div class="kpi"><div class="label">Optimus 订单</div><div class="value">无确认</div><div class="note">但技术上强适配</div></div></div>
+<p><strong>技术适配 = 强。</strong> Allegro 的机器人应用页把产品直接映射到人形关节：关节位置传感（inductive/TMR）、电机换相角度传感、<strong>48V 栅极驱动</strong>、相电流传感（扭矩控制）。它明确把"人形/协作/AMR"归到"48V 服务机器人"并出白皮书 —— <strong>主动在向 humanoid 营销那三件套：角度传感器+电流传感器+48V 栅极驱动</strong>。每个 BLDC 执行器物理上都需要这三样，Optimus ~28 结构执行器(Gen2)→~50(Gen3 传闻) + 11→22 DOF 手，粗算需 40-80 个磁位置/电流通道 + 数十个栅驱级。</p>
+<p><strong>诚实的 caveat：</strong> Tesla 深度垂直整合，AI Day 2022 展示了自研的 6 种执行器和<strong>自研集成旋转位置传感器</strong>。即便 Optimus 需要这个功能，Tesla 可能自填或指定伙伴。Allegro 更稳的 thesis 是<strong>广义人形浪潮</strong>（Figure/Agility/BD + 大量中国 OEM），它们不像 Tesla 那样垂直整合、会买商用汽车级传感器。</p>
+<h3>NOVT — Novanta (Nasdaq) · 精密运动(Celera Motion) + 光子 + 医疗</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">价格/市值 (8/17)</div><div class="value">$168.75 / $63.8亿</div><div class="note">52周 $98-$176 (近高位)</div></div><div class="kpi"><div class="label">TTM 营收/增速</div><div class="value">$10.3亿 / <span class="up"><span class="up">+7.6%</span></span></div><div class="note">重新加速；两段: 自动化使能51% / 医疗49%</div></div><div class="kpi"><div class="label">毛利/营业利润率</div><div class="value">44.6% / 11.6%</div><div class="note">稳定真盈利(净利$61.8M)，优于ALGM；净现金~$4.33亿</div></div><div class="kpi"><div class="label">估值</div><div class="value">远期 P/E ~42x / P/S ~6.2x</div><div class="note">质量复利溢价，非人形催化</div></div><div class="kpi"><div class="label">Optimus 订单</div><div class="value">无确认</div><div class="note">且技术适配对量产人形偏弱</div></div></div>
+<p><strong>这里要往回顶一下（诚实反驳）：</strong> 人形关节确需位置反馈+电机，但一台 $30k 量产机器人<strong>吃不下</strong>几十美元一个的高端光学/感应绝对编码器 ×~40 关节。量产人形用的是 ~$1-2 的磁角度传感 IC（Allegro/Melexis/AMS 地盘），不是 Celera 级编码器。Novanta 的精密运动 DNA 是<strong>手术机器人、半导体设备、计量、实验室自动化</strong> —— 高单价、低产量，与量产人形的经济学正好相反。它把"人形机器人"列为应用是真意图，但<strong>对成本受限的量产人形，适配偏弱；它真正的机器人赢面在手术机器人</strong>（合法的高价值增长，但与 Optimus 产量无关）。</p>
+<h3>更广的美股/ADR 可交易零部件 —— 按"真实机器人内容"排序（节选）</h3>
+<table class="compare"><thead><tr><th>名字</th><th>代码</th><th>内容强度</th><th>性质</th><th>Tesla-Optimus</th><th>一句话</th></tr></thead><tbody><tr><td>NVIDIA</td><td>NVDA</td><td>旗舰(计算)</td><td>Jetson Thor + Isaac/GR00T 是行业计算+仿真层</td><td>间接(训练GPU)；机上是宇树非Tesla</td><td>你买的是AI数据中心垄断，人形是白送期权(机器人~1.3%营收)</td></tr><tr><td>STMicroelectronics</td><td>STM</td><td>真·专用</td><td>Oversonic持股、16件人形方案、含Jetson视觉模组</td><td>无(仅历史e-mobility)</td><td>真专用内容+深流动性的最佳组合；但P&amp;L周期底部(P/E~109,远期27)</td></tr><tr><td>Texas Instruments</td><td>TXN</td><td>真·确认内容</td><td>发布人形关节/手参考设计(Sitara/C2000/GaN)</td><td>未点名Optimus，宽供应商可能</td><td>最佳&quot;模拟卖铲子&quot;期权，大基数复苏</td></tr><tr><td>Nidec (ADR)</td><td>NJDCY</td><td>真·专用</td><td>同时做电机+减速器(FLEXWAVE谐波/KINEX摆线)+集成执行器模组</td><td>无确认</td><td>唯一可交易的减速器/执行器代理(ADR薄,~数百股/日)</td></tr><tr><td>Ambarella</td><td>AMBA</td><td>真·感知硅</td><td>CV系边缘AI视觉SoC</td><td>无(Tesla用自研硅)</td><td>最高beta纯感知,但亏损(OM-19%),远期P/E~95</td></tr><tr><td>TE Connectivity</td><td>TEL</td><td>真·重叠</td><td>连接器/每关节线束/执行器传感</td><td>投机(合理未证实)</td><td>本组最便宜的优质名字(~21x),城墙资产负债表</td></tr><tr><td>Amphenol</td><td>APH</td><td>真·重叠</td><td>互连+传感/关节</td><td>投机</td><td>一流复利,但43x由AI数据中心驱动非机器人</td></tr><tr><td>Regal Rexnord</td><td>RRX</td><td>相关IP,收入微</td><td>拥Kollmorgen无框力矩电机+Thomson丝杠</td><td>无</td><td>去杠杆/工业复苏故事,人形忽略不计</td></tr><tr><td>Infineon (ADR)</td><td>IFNNY</td><td>真产品+力推</td><td>关节GaN、VinRobotics MoU、NVIDIA合作</td><td>汽车历史;Optimus无</td><td>有真内容的故事;ADR偏薄,底部盈利P/E~68</td></tr><tr><td>Jabil</td><td>JBL</td><td>真(非Tesla)</td><td>确认为 Apptronik Apollo 制造伙伴</td><td>无</td><td>早期call option,$336亿EMS基数下微小</td></tr><tr><td>MP Materials</td><td>MP</td><td>通用输入</td><td>NdFeB磁材(机器人/EV电机),无人形合同</td><td>无</td><td>稀土/国防故事,磁材对机器人通用</td></tr><tr><td>onsemi / MPWR / POWI / VICR / ST / CLS / MKSI</td><td>ON/MPWR/POWI/VICR/ST/CLS/MKSI</td><td>故事→无</td><td>电源/SiC/驱动/EMS/半导体设备</td><td>全无</td><td>人形标签多为AI数据中心/半导体/汽车周期的错误归因,勿当人形押注</td></tr></tbody></table>
+<div class="callout warn"><p><strong>诚实分类（美股这一层）：</strong> 真·专用内容 = STM、Nidec(ADR)、TXN、Ambarella、NVDA(计算)、Jabil(Apollo)。真产品但小切片 = Infineon、QCOM、TEL、APH、RRX。纯故事/期权 = MP、onsemi、MPWR、POWI、Vicor、Sensata、Celestica、MKS。
+最纯的减速器龙头 <strong>Harmonic Drive、Nabtesco</strong> 美股几乎买不到（见 Part 3），且它们的 Optimus 内容还面临中国国产化风险。</p></div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-4"><p>你要求单独研究 HDS。结论前置：<strong>对的护城河，对你而言是错的股票（"right franchise, wrong stock"）。</strong> 四个理由破了 thesis：可交易性差、Tesla 略过了它、humanoid 溢价已 price in、还在打中国价格战。</p>
+<div class="kpi-grid"><div class="kpi"><div class="label">主上市</div><div class="value">东京 6324.T (Prime)</div><div class="note">价 ¥6,440，市值 ¥6,163亿 ≈ $38.7亿</div></div><div class="kpi"><div class="label">52周区间</div><div class="value">¥2,316 – ¥9,150</div><div class="note">沿 humanoid 主题近4倍后回吐~30% —— 动量/主题股</div></div><div class="kpi"><div class="label">美股线(唯一)</div><div class="value">HSYDF (OTC Pink,非ADR)</div><div class="note">~$41.31；1:1 对应东京普通股</div></div><div class="kpi"><div class="label">HSYDF 流动性</div><div class="value">~4,500股/日均(中位~2,000)</div><div class="note">~$10-27.5万/日；薄，价差宽、易跳空</div></div><div class="kpi"><div class="label">估值</div><div class="value">滚动 P/E ~211x / 远期 ~89x</div><div class="note">P/B 7.6, EV/EBITDA 53；周期底部盈利+溢价叠加</div></div></div>
+<div class="callout danger"><p><strong>关键纠正：</strong> 之前提到的美股代码 <strong>HSYSF / HSYAF 不存在</strong>（Yahoo 无数据）。唯一 OTC 线是 <strong>HSYDF</strong>（非申办 ADR，是普通外国股 F-share）。
+<strong>可交易性裁定：</strong> 小仓试探 → HSYDF（IBKR/Fidelity 可，价差宽、定价延迟）；<strong>任何有量的仓位 → 用 IBKR 直连东京买 6324（日元）</strong>，但 100 股整手（最小 ~¥64.4万 ≈ <strong>$4,040</strong>）+ 日元换汇 + T+2。对美股散户摩擦高。</p></div>
+<p><strong>业务：</strong> 三大产品族（谐波齿轮 HarmonicDrive® / 机电 / 精密行星减速器）；HDS <strong>不披露产品线收入拆分</strong>（免费数据缺口）。按地区（FY 截至 2025-03，净销售 ¥556亿）：日本 39% / 欧洲 30% / 北美 21% / 中国 10%。同时骑半导体设备 + 工业机器人两个资本开支周期，CFO 自称业绩"相对波动"，低谷时长野工厂利用率仅 ~50%。<strong>卖进人形关节的是旋转执行器里的谐波减速器</strong>（一台可用 ~30 个），HDS 是全球唯一供应用于机器手/指尖的超小 RSF-3/RSF-5 单元的厂商。</p>
+<p><strong>Optimus 关系 = 推断，非事实。</strong> HDS 从不点名人形客户（NDA），Tesla/Optimus 未出现在其任何文件。它在 MS "Humanoid 100" 和 HUMN ETF（~3.24%）里作为通用减速器厂被收录 —— <strong>收录 ≠ Optimus BOM 席位</strong>。唯一间接线索：分析师称三花（确认的 Tesla 执行器伙伴）目前的谐波减速器来自 HDS，且国产替代正在出现。</p>
+<p><strong>被 Tesla 略过给了绿的谐波？</strong> 绿的谐波是更可信的 Tesla 关联名字，但也是媒体推断（其年报确认"批量交付"给未具名"国际顶级机器人客户"，<strong>刻意不点名 Tesla</strong>）。<strong>来福谐波（Laifual）2026-06-30 在港股主板上市（03952.HK，非 A 股）</strong>，是中国机器人谐波 #2（按 2025 出货），但亏损、靠降价抢量、上市后跌破发行价。</p>
+<div class="callout warn"><p><strong>行业趋势对 HDS 不利：</strong> Figure/1X/Unitree/原版 Atlas(液压) 等披露的 OEM 都用<strong>自研/定制执行器或非谐波架构</strong> —— "定制执行器"的趋势结构性削弱了"HDS 吃下人形放量"的 thesis。中国减速器（绿的/来福）定价比日本低 <strong>~33-50%</strong>；HDS 中国渗透率仅 ~12%。它的应对是<strong>退守高端 + 成本工程</strong>（15年来首次日本涨价）。定位：<strong>"高端幸存者"</strong>（航天/最小最难减速器/西方高端 OEM），而<strong>量产人形的量正被中国玩家以价格夺走</strong>。</p></div>
+<p><strong>给押 Optimus 的美股投资者的裁定：</strong> HDS 是高质量、周期复苏中的高端减速器垄断者，有真实航天/精密护城河和合法（但未确认、NDA 遮蔽）的人形顺风 —— 最适合<strong>有东京市场权限、能扛半导体/机器人周期</strong>的人当"日本工业周期+高端机器人"复利股持有。它是<strong>押 Optimus 量产人形的一个差劲、高摩擦、贵估值的方式</strong>。若仍想持有，用 HSYDF 小仓，当高端机器人质量持仓，而非 Optimus 纯押注。</p>
+<div class="verdict {watch}">HDS：对的护城河、错的股票（对美股散户）—— 高摩擦 + 被 Tesla 略过 + 211x + 中国价格战。想要人形减速器 beta，用 ETF(HUMN 已含 HDS ~3.2%)间接持有更划算</div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-5"><p><strong>老牌名字都不是人形押注：</strong> BOTZ/ARKQ 本质是 NVDA/TSLA 单票 + 工业自动化；ROBT/THNQ 是 AI 软件；IRBO <strong>已改名 ARTY</strong>（iShares Future AI &amp; Tech）变成 AI/半导体基金；KROP 是农业。</p>
+<p><strong>两只 2025-06 新发的真人形 ETF（这才是答案）：</strong></p>
+<table class="compare"><thead><tr><th>代码</th><th>基金/发行商</th><th>费率</th><th>AUM</th><th>TSLA/NVDA权重</th><th>人形供应链纯度</th></tr></thead><tbody><tr><td>HUMN</td><td>Roundhill Humanoid Robotics</td><td>0.75%</td><td>$1.01亿</td><td>TSLA 4.2%/NVDA非前十</td><td>最高 —— 专用人形</td></tr><tr><td>KOID</td><td>KraneShares Global Humanoid &amp; Physical AI</td><td>0.69%</td><td>$3.27亿</td><td>TSLA~2%/NVDA 2.2%</td><td>高 —— 专用、等权</td></tr><tr><td>BOTZ</td><td>Global X Robotics &amp; AI</td><td>0.68%</td><td>$36亿</td><td>NVDA 9.4%(单票)</td><td>中 —— 工业机器人</td></tr><tr><td>ARKQ</td><td>ARK Autonomous &amp; Robotics</td><td>0.75%</td><td>$20.5亿</td><td>TSLA 9.3%</td><td>中,但经TSLA+航天国防</td></tr><tr><td>ROBT/THNQ/ARTY/KROP</td><td>First Trust/ROBO/iShares/Global X</td><td>—</td><td>—</td><td>—</td><td>低→零 (AI软件/半导体/农业) —— 本主题跳过</td></tr></tbody></table>
+<ul>
+<li><strong>HUMN</strong> 前十：<strong>UBTech 5.1% / Harmonic Drive 4.2% / Tesla 4.2% / Robotis 4.1% / Swancor 3.8% / 绿的谐波 3.7% / Hyundai 3.7% / Rainbow Robotics 3.6% / Hexagon 3.4% / Teradyne 3.3%</strong> —— 人形 OEM + 执行器/谐波供应链，正是 Optimus BOM 本身。TSLA 仅 ~4%，是供应链基金非 Tesla 代理。</li>
+<li><strong>KOID</strong> 等权 58 只，前列 ~2%：Allient/Hexagon/Teradyne/Rainbow/Jabil/Hiwin/Novanta/Magna/Horizon/NVIDIA；#11-25 加 Nidec/Moog/THK/UBTech/MP Materials/Symbotic/Lynas/TE/APH/ADI。等权压单票风险，AUM 是 HUMN 的 3 倍。</li>
+</ul>
+<div class="verdict {add}">ETF 是本主题对美股投资者性价比最高的表达：HUMN(最纯) 或 KOID(等权更分散)，可两者混合 —— HUMN 押人形 OEM+执行器，KOID 补更广使能层(硅/传感/稀土)。它一键装下了你买不到的 A 股/港股/日股核心供应链</div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-6"><p><strong>身份纠正：</strong> CROB 不是全球人形篮子，而是 <strong>Defiance China Robotics ETF —— 中国机器人纯标的，2026-08-17 才成立、~1 天大</strong>。这只对本 thesis 的美股投资者特别相关：它是<strong>目前唯一让美股账户买到"中国人形供应链"的工具</strong>（经 BNP 掉期 + 陆股通合成持有你买不到的 A 股），正好补上 Part 1 那个"内容最真的在 A 股你买不到"的洞；且<strong>不含 Tesla/NVDA</strong>，不是大盘 AI 换皮。</p>
+<div class="kpi-grid"><div class="kpi"><div class="label">成立 / 结构</div><div class="value">2026-08-17 (~1天) / 被动跟踪 Solactive China Humanoid Robotics Index</div><div class="note">目前经单份 BNP 掉期合成建仓</div></div><div class="kpi"><div class="label">费率 / AUM</div><div class="value">0.89% (三只最贵) / ~$50万种子(基本为零)</div><div class="note">KOID 0.69% / HUMN 0.75% 对照</div></div><div class="kpi"><div class="label">成分</div><div class="value">目标20只，全部中国(A股陆股通+港股/VIE)</div><div class="note">ARTIS 相关性打分 + 7%单票上限；季度再平衡</div></div><div class="kpi"><div class="label">差异化</div><div class="value">唯一美股上市的中国机器人纯标的</div><div class="note">无 Tesla/NVDA 单票拥挤 = 真差异化</div></div></div>
+<p><strong>成分（推断，因一天大仅披露掉期）+ 近1年表现 —— 是否 price in：</strong> 从指数分桶 + HUMN/KOID 已披露中国持仓推断：</p>
+<table class="compare"><thead><tr><th>成分(推断)</th><th>代码</th><th>角色</th><th>近1年</th><th>P/E</th><th>判断</th></tr></thead><tbody><tr><td>绿的谐波</td><td>688017</td><td>谐波减速器</td><td><span class="up"><span class="up">+149%</span></span></td><td>485x</td><td>全球最贵减速器股，泡沫顶</td></tr><tr><td>埃斯顿</td><td>002747</td><td>工业机器人</td><td><span class="up"><span class="up">+50%</span></span></td><td>252x</td><td>极度透支</td></tr><tr><td>三花</td><td>002050</td><td>执行器(Optimus)</td><td><span class="up"><span class="up">+36%</span></span></td><td>40x</td><td>贵但盈利</td></tr><tr><td>双环传动</td><td>002472</td><td>齿轮/减速器</td><td><span class="up"><span class="up">+4.5%</span></span></td><td>26x</td><td>相对最合理</td></tr><tr><td>汇川</td><td>300124</td><td>伺服/运动控制</td><td><span class="down"><span class="down">-9%</span></span></td><td>36x</td><td>最便宜的优质名字</td></tr><tr><td>UBTech</td><td>9880.HK</td><td>人形OEM</td><td><span class="down"><span class="down">-1.7%</span></span></td><td>亏损</td><td>距高点-43%</td></tr><tr><td>兆威</td><td>003021</td><td>微传动/灵巧手</td><td><span class="down"><span class="down">-32%</span></span></td><td>102x</td><td>已大跌仍贵</td></tr><tr><td>Horizon</td><td>9660.HK</td><td>感知AI芯片</td><td><span class="down"><span class="down">-35%</span></span></td><td>亏损</td><td>已大跌</td></tr></tbody></table>
+<p><strong>"两速篮子"，非一刀切：</strong> 减速器/执行器/工业段 price in 到离谱（绿的谐波 485x、埃斯顿 252x，比日本 HDS 更极端）；但头部人形/AI 名字（UBTech/Horizon/兆威/汇川）过去一年反而回调了 10-35%。<strong>麻烦在于 ARTIS 相关性加权会结构性超配最热最贵的那批（绿的、埃斯顿）</strong>，等于系统性买在曲线贵的一端。</p>
+<div class="verdict {watch}">CROB：对的主题、此刻错的载体 —— 一天大 / AUM~$50万 / 0.89%最贵 / 单一掉期对手方 / 清盘风险 / 加权逼你买贵端。放观察名单，等 AUM 上量(&gt;$5000万)或中国机器人回调再考虑</div>
+<p><strong>买入必要性裁定：</strong>
+- <strong>别现在买：</strong> 加权推向 485x 端；招股书自列"新基金/非分散/掉期对手方/掉期容量"风险；迷你 AUM = 价差宽 + 清盘风险；叠加陆股通/VIE/资本管制/中美退市地缘。
+- <strong>值得买的情形：</strong> AUM 涨过 ~$5000万且价差收窄(3-6个月后再看) · 一轮中国机器人大回调重置绿的/埃斯顿估值 · 你就是要纯中国 beta 且当小卫星仓。
+- <strong>更现实的替代：</strong> 想现在就要流动性+分散+盈利压舱 → <strong>KOID 更优</strong>（0.69%、$3.37亿 AUM、~50 只，且已含 UBTech/Horizon/汇川）。CROB 是把 KOID 里盈利的美日工业压舱石抽掉、只留 40-485x 的中国名字 = beta 更高、更贵、更不分散。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-7"><p><strong>西方玩家（多数买不到）：</strong></p>
+<table class="compare"><thead><tr><th>公司</th><th>最新估值/轮次</th><th>主要背书</th><th>与Tesla</th><th>IPO 信号</th></tr></thead><tbody><tr><td>Figure AI</td><td>~$39B (Series C &gt;$10亿, 2025-09, 公司确认)</td><td>Parkway领投;NVIDIA/Brookfield/Intel/Qualcomm</td><td>竞争</td><td>无;主动封杀二级交易(2026-07公告);2027+</td></tr><tr><td>Apptronik</td><td>Series A 累计&gt;$935M (2026-02)</td><td>B Capital/Google/Mercedes/John Deere/QIA</td><td>竞争</td><td>无信号;2027-28</td></tr><tr><td>Agility Robotics</td><td>SPAC ~$25亿(Klein 载体),ticker AGLT</td><td>Amazon(旧);客户Schaeffler/GXO/Toyota</td><td>竞争</td><td>**最近!H2 2026完成 —— 唯一散户很快能直接买的**</td></tr><tr><td>1X Technologies</td><td>2025 传募~$10亿</td><td>OpenAI Startup Fund/EQT/Samsung NEXT</td><td>竞争(家用)</td><td>无;NEO $20k/或$499月,2026首交付</td></tr><tr><td>Boston Dynamics</td><td>Hyundai 2026-07 100%控股(收SoftBank~$3.26亿)</td><td>Hyundai;AI合作 Toyota TRI + Google DeepMind</td><td>竞争(Atlas标杆)</td><td>高管放话 NASDAQ ~2027-28,未递表 → 今天用 Hyundai(HYMTF)代理</td></tr><tr><td>Physical Intelligence</td><td>~$24亿→$56亿→传~$110亿</td><td>CapitalG/Bezos/NVIDIA/Sequoia</td><td>中立(机器人&quot;大脑&quot;层)</td><td>无;2028+</td></tr><tr><td>Skild AI</td><td>~$140亿 (2026-01)</td><td>Lightspeed/SoftBank/NVIDIA/Bezos</td><td>横向AI层</td><td>无;早期</td></tr><tr><td>Sanctuary AI</td><td>未披露(累计&gt;$1.4亿)</td><td>Magna/Accenture/BDC/NVIDIA</td><td>竞争(早期,或有资金压力)</td><td>无;间接经Magna(对Magna不重要)</td></tr></tbody></table>
+<p><strong>中国玩家：</strong></p>
+<table class="compare"><thead><tr><th>公司</th><th>状态</th><th>与Tesla</th><th>美股账户能买?</th></tr></thead><tbody><tr><td>宇树 Unitree</td><td>已定价,2026-08-19 上科创板(688836);~$90亿估值,P/E~219</td><td>竞争(低成本标杆)</td><td>❌ 科创A股,散户买不到</td></tr><tr><td>UBTech 优必选</td><td>已上市 9880.HK (2023-12);~HK$78,市值~$50亿;深亏</td><td>竞争(非Optimus供应商)</td><td>✅ 港股权限可买(IBKR最干净,无美股ADR)</td></tr><tr><td>智元 Agibot</td><td>借壳上纬新材(688585)但机器人业务未注入;另筹港股IPO</td><td>竞争</td><td>❌ 壳是A股;未来港股IPO将是首个可及路径</td></tr><tr><td>傅利叶 Fourier</td><td>私有;背书含IDG/沙特Aramco</td><td>—</td><td>❌ 私有</td></tr></tbody></table>
+<p><strong>其他美股上市但"不是人形"：</strong> Richtech (RR,服务机器人)、Serve (SERV,人行道配送) —— 别当人形买。</p>
+<p><strong>散户二级市场获取现实：</strong> 除 Agility(即将 AGLT)外，西方私有名字基本买不进。Figure 明确封杀二级交易；DXYZ / ARKVX 是零散可及载体但<strong>无确认人形持仓</strong>（集中在 SpaceX/OpenAI/Anthropic）；EquityZen/Forge 仅合格投资者。</p>
+<div class="timeline"><div class="tl-item"><span class="when">2026-08-19</span> — <span class="what">宇树科创板上市(688836) —— 美股散户买不到,但是全行业估值锚(~219x PE)</span></div><div class="tl-item"><span class="when">2026 H2</span> — <span class="what">Agility 经 SPAC(AGLT)上市 —— 西方最快、散户唯一能直接买的纯人形</span></div><div class="tl-item"><span class="when">2026-2027</span> — <span class="what">Fremont Optimus 量产是否真启动(叙事关键验证点)</span></div><div class="tl-item"><span class="when">未发布</span> — <span class="what">Optimus Gen 3/V3 正式发布(手的可靠性是gating问题)</span></div><div class="tl-item"><span class="when">~2027-28</span> — <span class="what">Boston Dynamics NASDAQ IPO(高管放话,未递表);今天用 Hyundai 代理</span></div><div class="tl-item"><span class="when">2027+</span> — <span class="what">Figure / Apptronik 可能 IPO(目前均封闭)</span></div></div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-8"><p>把三层筛子叠完，给押 Optimus/人形爆发的美股投资者的<strong>分层打法</strong>：</p>
+<div class="scenarios"><div class="scenario"><div class="name base">核心</div><div class="bar-wrap"><div class="bar base" style="width:50%">50%</div></div><div class="target">ETF(HUMN+KOID)</div><div class="desc">一键装下你买不到的A股/港股/日股核心供应链(执行器/谐波/OEM),TSLA权重低=真供应链非Tesla代理。本主题性价比最高的表达</div></div><div class="scenario"><div class="name base">卫星</div><div class="bar-wrap"><div class="bar base" style="width:30%">30%</div></div><div class="target">STM/Nidec-ADR/TXN + TSLA本尊</div><div class="desc">&quot;真内容+可交易&quot;最佳交集:STM(专用人形内容),Nidec ADR(唯一可交易减速器/执行器代理),TXN(模拟卖铲子);Optimus程序本身最纯的还是TSLA</div></div><div class="scenario"><div class="name base">战术/期权</div><div class="bar-wrap"><div class="bar base" style="width:20%">20%</div></div><div class="target">ALGM + 港股 UBTech/三花02050 + Agility AGLT</div><div class="desc">ALGM(48V关节三件套技术必然,但无确认订单+已price in);UBTech(唯一今天能买的纯人形OEM,但深亏是竞争者非供应商);Agility上市后</div></div></div>
+<p><strong>几条硬结论，不软化：</strong></p>
+<ol>
+<li><strong>想要中国供应链 beta，现在有三条路，都有代价。</strong> ① HUMN/KOID 间接持有（分散、稀释成小权重）；② 港股 UBTech/三花 02050（摩擦 + 单票风险）；③ <strong>CROB</strong>（唯一美股上市的中国机器人纯标的，但一天大/迷你 AUM/最贵/加权买贵端——放观察名单，别急）。不存在"又纯又便宜又能买"的中国 Optimus 供应链标的。</li>
+<li><strong>别把 BOTZ/ARKQ 当供应链基金</strong> —— 它们是 NVDA/TSLA 单票 + 工业自动化。真人形供应链只有 HUMN/KOID。</li>
+<li><strong>别把 Vicor/Celestica/MKS/Sensata 当人形押注</strong> —— 人形标签是对 AI 数据中心/半导体设备/汽车周期故事的错误归因。</li>
+<li><strong>HDS 是"对的护城河、错的股票"</strong> —— 想要人形减速器 beta，HUMN 已含它 ~3.2%，比自己扛 OTC 摩擦 + 211x 划算。</li>
+<li><strong>最诚实的一句：</strong> 今天押 Optimus 引领 AGI，最纯、流动性最好、可交易的表达仍然是 <strong>TSLA 本尊 + 两只人形 ETF</strong>。零部件层对美股投资者，绝大多数是"别的 thesis 的期权"，而非能独立成立的人形押注。真正的纯供应链利润，结构性地落在你买不到的地方（中国 A 股 + 私有公司）。这不是分析没做透，而是这个主题此刻对美股账户的<strong>客观边界</strong>。</li>
+</ol></div><div class="tab-panel" data-tab-for="tabs1-9"><ul>
+<li><strong>事件：</strong> Optimus Gen 3/V3 发布 · Fremont 量产确认启动 · <strong>任一供应商拿到 Tesla 确认订单</strong>（会立刻改写整张②列）· Agility AGLT 上市完成 · Boston Dynamics 递交 IPO · 智元港股 IPO</li>
+<li><strong>持仓/结构：</strong> HUMN 或 KOID 前十持仓大改（说明指数方对"谁是真供应链"的判断变了）· 中国谐波/丝杠国产化率再上台阶（进一步挤压 HDS）</li>
+<li><strong>日期：</strong> 否则 2026-11-17（3 个月）复核一次估值与叙事泡沫程度</li>
+<li><strong>稀土/地缘：</strong> 中国对 NdFeB 磁材出口管制升级（直接波及 Optimus 产能与磁材厂定价权）</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>数据诚实声明：</strong> 全文价格/财务截至 2026-08-17；来源为 stockanalysis.com、公司 IR、命名的中/英财经媒体（引用见各研究线）。<strong>没有任何流动性好的标的有 Tesla 确认的 Optimus 订单</strong> —— 所有 Tesla 关系均标注为"无/间接/传闻/投机"。"每台含量 $X"类数字多为 Morgan Stanley 估计，非公司指引。搜索引擎本轮部分被 CAPTCHA/付费墙限制，数字经多源交叉核对。Optimus Gen 3 "50 执行器"等来自低可信博客，已标注。</p>
+</blockquote></div></div>
+</body>
+</html>
