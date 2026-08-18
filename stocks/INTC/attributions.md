@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-18 · -6.95% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** INTC −7.0%（5d −1.4 / 30d −12.8，本组少数无前期涨幅缓冲的名字）。同 AI 芯片链的久期+AI开支质疑抛售 (见 MRVL 归因)。个股叠加：13F 披露 SoftBank (67% US 组合押 INTC) 与 NVDA ($30B 押注) 的集中持仓，市场在利空日对拥挤交易获利回吐。距 thesis-break $75 缓冲 +28.4%。turnaround/foundry 叙事无新进展。
+
+**Sources.**
+- secondary: [Intel and AMD Fall 4% as 13F Filings Reveal Concentrated Chip Bets](https://finance.yahoo.com/)
+- secondary: [Nvidia, AMD, Broadcom, Meta Slide as Bond Yields Surge](https://finance.yahoo.com/)
+
+**Cross-assets.** SPY -0.52% · VIX 15.66 · TEN YEAR 4.71 · WTI 84.14
+
+**Agent read.** 
+
+
+---
 ### 2026-08-04 · +11.02% day · ▲ major
 **Tags:** `sector_rotation`, `flow_event`, `unattributed`, `ai_demand`
 **Confidence:** low

@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-18 · -8.24% day · ▼ major
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** MRVL −8.2%，AI 芯片供应端领跌。直接叙事：升息 (10Y 停 52w 高) 盖过 UBS 看多 AI 的研报——媒体标题「Rising Treasury Yields Swamp a Bullish UBS AI Note」。作为最高 beta/最高久期的二线 AI 供应端，在「AI 开支质疑」(neocloud 超支恐慌 + META 费用 +55% 被点名) 的一天首当其冲。叠加结构性供给利空：8 月内部人已套现 $632M（股价 +160% 后）。**距 thesis-break $200 仅 +7.5% 缓冲——进入 10% 警戒区**，8/27 Q2 FY27 财报 (AWS Trainium ramp) 定生死。
+
+**Sources.**
+- secondary: [Marvell Technology Drops 6% as Rising Treasury Yields Swamp a Bullish UBS AI Note](https://finance.yahoo.com/)
+- secondary: [Marvell Insiders Sell $632 Million as Stock Soars 160%](https://finance.yahoo.com/)
+- _Corroboration:_ 同日 AI 芯片链齐跌：INTC −7.0/TSM −4.1/AVGO −2.8/NVDA −2.1；但 hyperscaler 开支方 MSFT/AMZN 逆势稳——沿「卖算力 vs 花钱」分化。
+
+**Cross-assets.** SPY -0.52% · VIX 15.66 · TEN YEAR 4.71 · WTI 84.14
+
+**Agent read.** 
+
+
+---
 ### 2026-08-10 · -2.49% day · ▲ medium
 **Tags:** `sector_rotation`
 **Confidence:** medium

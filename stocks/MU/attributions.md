@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-18 · -7.11% day · ▼ major
+**Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** MU −7.1%（5d 仍 +8.2%，30d 走平 +0.2%）。同内存复合体 (见 DRAM 归因)：WSJ 内存报道 + 10Y 停 52w 高的久期外流 + 前期涨幅回吐。MU 无公司级利空，回吐而非破位——距 thesis-break $650 仍有 +44.6% 缓冲。thesis 写于 $1,134，现 $940 已从高点回调 ~17%，落入 base 区下沿。下一个决定点 ~9/25 Q4 FY26 财报 (earnings_watchlist pending，评「MU 是下一个 NVDA」)，HBM 需求/定价指引是关键。
+
+**Sources.**
+- secondary: [Why Micron Stock and Its Memory Peers Are Falling](https://finance.yahoo.com/)
+- _Corroboration:_ Samsung −2.2% 分化 + MU 缩量 0.53x + 5d 仍正——回吐性质，非需求崩塌。
+
+**Cross-assets.** SPY -0.52% · VIX 15.66 · TEN YEAR 4.71 · WTI 84.14
+
+**Agent read.** 
+
+
+---
 ### 2026-08-17 · +5.91% day · ▲ major
 **Tags:** `sector_rotation`, `memory_pricing`, `policy_us`, `policy_china`, `ai_demand`
 **Confidence:** medium

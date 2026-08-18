@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-18 · -8.92% day · ▼ major
+**Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** SNDK −8.9%，内存复合体领跌。是昨日 (8/17) +9.6%/+45%5d 抛物线顶后的最陡反转——涨最猛、跌最惨的情绪面标的。5d 仍 +28%。同一驱动组合 (WSJ 报道 + 久期外流 + 获利回吐)。昨日 extreme 归因明确警告「+57% in 30d at 52w high 是教科书级不该加仓时点」，今日验证。距 thesis-break $1,200 缓冲 +35.6%。earnings_watchlist ~11/4 (评「re-rate 为结构性现金牛」)。
+
+**Sources.**
+- secondary: [Why Did Sandisk Stock Drop Today?](https://finance.yahoo.com/)
+- secondary: [Cramer’s Career-Long Trading Rule Just Got Shattered by SanDisk’s Parabolic Run](https://finance.yahoo.com/)
+
+**Cross-assets.** SPY -0.52% · VIX 15.66 · TEN YEAR 4.71 · WTI 84.14
+
+**Agent read.** 
+
+
+---
 ### 2026-08-17 (rev. 同日重估) · 5d +45.24% 分段归因 · ▲ extreme
 **Tags:** `sector_rotation`, `memory_pricing`, `executive_comment`, `policy_us`, `policy_china`, `ai_demand`, `pt_change`, `thesis_debate`
 **Confidence:** medium

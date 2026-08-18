@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-18 · -7.97% day · ▼ major
+**Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** 内存复合体 US 名字单日重挫 (DRAM ETF −8.0 / MU −7.1 / SNDK −8.9 / SKHY −8.2)。三重驱动：(1) 一份 WSJ 内存定价报道令 SanDisk/Micron/WDC 集体下挫（报道全文需 WSJ 订阅，未能独立核实，但多家二手来源确认其为催化）；(2) 10Y 停 52w 高 (4.71%) 的久期资金外流；(3) 前 5 日抛物线上涨后的技术性获利回吐——DRAM/MU/SNDK 5d 仍分别 +9.2/+8.2/+28%。**关键分化证据：Samsung 005930.KS 今日仅 −2.2%（5d +16.7%），远小于 US 名字的 −7~−9%。若为全球内存需求/定价的基本面利空，韩国链应同步重挫；它没有——说明是 US-specific 催化 + 久期挤出 + 获利回吐，而非周期拐点。** 昨日 (8/17) SNDK +9.6%/+45%5d 的 extreme 归因已警告 memory cycle 进入 stage-2/3、追高即风险，今日反转是该警告的兑现。
+
+**Sources.**
+- secondary (WSJ 原文未核实): [WSJ Report Sends Memory Stocks Down. SanDisk Down 9%, Micron Down 7%, Western Digital Down 5%](https://finance.yahoo.com/)
+- secondary: [Micron Falls 5%, SanDisk Sinks 6%, Western Digital Drops 7% as Higher Rates Test the Memory Boom](https://finance.yahoo.com/)
+- _Corroboration:_ 分化证据：Samsung 005930.KS −2.2% vs US 名字 −7~−9%；SPY −0.52 大盘平稳，跌幅集中在半导体；全线缩量 (MU 0.53x / DRAM 0.68x)——板块间搬家非新钱恐慌抛售。
+
+**Cross-assets.** SPY -0.52% · VIX 15.66 · TEN YEAR 4.71 · WTI 84.14
+
+**Agent read.** 
+
+
+---
 ### 2026-08-13 · n/a day · ▲ +5.33%
 **Tags:** `memory_pricing`, `guidance_raise`, `sector_rotation`
 **Confidence:** high

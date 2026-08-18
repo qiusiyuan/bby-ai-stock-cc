@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-18 · -5.77% day · ▼ material
+**Tags:** `sector_rotation`, `macro_rates`
+**Confidence:** low
+
+**Primary cause.** GEV −5.8%，情绪面而非基本面回调。公司自身新闻全是利好：$176B backlog（在增长）、核电 AI 协议、近期 +8.9%。今日下跌是被「AI 开支质疑 + AI Election Backlash」的 AI 基建板块情绪拖累 + 前期涨幅获利回吐。作为 AI 数据中心电力纯标的，被归入 AI 基建受害者一并抛售。距 thesis-break $700 缓冲 +45.3%，基本面无损。独立风险：Wind 段有头条称下滑 40%，目前被 Gas+Grid+核电强势掩盖，需跟踪。信心 low：无 GEV 公司级利空催化，纯板块情绪归因。
+
+**Sources.**
+- secondary: [AI Election Backlash Is Shaping Wall Street’s Stock Market Views](https://finance.yahoo.com/)
+- secondary: [GE Vernova (GEV) Is Up 8.9% After Backlog Surges To $176 Billion And Nuclear AI Deal](https://finance.yahoo.com/)
+- _Corroboration:_ GEV 自身消息利好，跌因板块情绪；同日 AI 基建/开支方普遍承压 (META −3.1, neocloud −5~7%)。
+
+**Cross-assets.** SPY -0.52% · VIX 15.66 · TEN YEAR 4.71 · WTI 84.14
+
+**Agent read.** 
+
+
+---
 ### 2026-06-30 · +6.56% day · ▲ major · 创历史新高，突破 base target
 **Tags:** `ai_demand`, `thesis_validation`, `new_high`
 **Confidence:** high
