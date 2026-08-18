@@ -85,6 +85,18 @@ Example menu:
 
 ### 4. Run chosen modules — SEQUENTIALLY, one section at a time
 
+#### 4.0 Before running each module: READ its SKILL.md (MANDATORY — non-negotiable)
+
+**For every module you are about to run, first `Read` its `.claude/skills/{module}/SKILL.md` in full, then honor its "mandatory / 必须包含" checklist literally.** Do NOT reconstruct a module from memory — that is exactly how required blocks silently disappear (e.g. Pulse's Commodities/Gold and Crypto/BTC blocks getting dropped).
+
+Concretely:
+1. `Read` the sub-skill file (`pulse/SKILL.md`, `watchlist/SKILL.md`, `timeline/SKILL.md`, `cluster/SKILL.md`, `brief/SKILL.md`, …).
+2. Locate its output checklist (Pulse has an 8-block "缺一不可" list; others have `Output`/`Hard rules` sections).
+3. Run the module's own fetch commands verbatim, then write the section with **every** checklist block present. A block with no news still renders ("Gold $X flat", "BTC $X — quiet") — never omit the block, only drop the sub-note.
+4. **If you delegate a module to a subagent**, paste that module's checklist into the subagent prompt line-by-line. Subagents do not read skill files on their own.
+
+Self-check before writing Pulse specifically: does the section contain Indices + Commodities(WTI/Gold/Silver) + Crypto(BTC/ETH) + FX(DXY/USDCAD/USDCNY) + Headlines + Policy cross-ref? If any is missing, the module was NOT run correctly — go back and read `pulse/SKILL.md`.
+
 **CRITICAL: Write each H2 section to the dashboard file ONE AT A TIME.** Do NOT attempt to write the entire report in a single Edit/Write call — this causes context-window timeouts on large reports. The correct pattern:
 
 1. Create the file with `# Daily Report {date}` header
@@ -150,6 +162,7 @@ Don't dump module outputs into chat — the dashboard is the report.
 
   Two reasons: (1) the rendered HTML is published to GitHub Pages and read as analysis, so addressing a reader breaks the register; (2) **the workspace stores no position data** — phrases like "你持有的" assert a holding the workspace cannot know and must never imply. Questions that motivated a section can be restated as the section's subject ("本 tab 回答:无催化下同涨是否为板块轮动"), never attributed to a person.
 
+- **Read each module's SKILL.md before running it.** Never reconstruct a module from memory. Every module's mandatory-block checklist is honored literally — Pulse always ships Commodities(Gold/Silver/WTI) + Crypto(BTC/ETH) + FX, even on quiet days. Dropped blocks = module not run correctly.
 - **Always show menu**. Don't infer "user wants everything" from the trigger; the menu is the control surface.
 - **Write sections ONE AT A TIME.** Never write more than one H2 section in a single tool call. This is the #1 cause of timeouts. Fetch data → write one section → fetch more data → write next section.
 - **Idempotent re-runs**: same module on same day = replace its H2, don't append.
