@@ -99,3 +99,7 @@ groups:
   space:
     description: Space exposure (SPCX direct, SSPC is the 2x short ETF on SPCX)
     members: [SPCX, SSPC]
+
+  humanoid:
+    description: 人形机器人/Optimus 供应链 ETF —— HUMN(全球最纯人形) / KOID(全球等权人形+物理AI) / CROB(中国机器人纯标的)。板块 thesis 见 research/sectors/2026-08-17-optimus-supply-chain.md。当前均 active:false，不进每日 watchlist，待重新评估。
+    members: [HUMN, KOID, CROB]
