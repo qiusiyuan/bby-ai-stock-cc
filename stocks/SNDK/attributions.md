@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-19 · -3.50% day · ▼ material
+**Tags:** `sector_rotation`
+**Confidence:** low
+
+**Primary cause.** SNDK −3.5% 但 5d +16.71%——带 >30% 近期强势进入的获利回吐，属涨多回调/sell-the-news 前兆而非破位。无公司级利空新闻，成交量 0.97× 接近均量。11/4 Q1 FY27 财报评分（NAND→现金牛 re-rate）为关键节点；带高涨幅进财报=好数字打折的 8/6 判据仍适用。
+
+**Sources.**
+- _Corroboration:_ 无个股利空 headline；5d +16.7% 的强势背景下单日 −3.5% 属正常回吐。均量，非恐慌抛售。
+
+**Cross-assets.** SPY +0.21% · VIX 14.89 · TEN YEAR 4.65 · WTI 84.32
+
+**Agent read.** 
+
+
+---
 ### 2026-08-18 · -8.92% day · ▼ major
 **Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
 **Confidence:** medium

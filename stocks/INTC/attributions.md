@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-19 · -4.02% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** INTC −4.0%（5d −8.1%，30d −15.8%，本组最弱），半导体久期挤出延续（承接 8/18 −6.95% 的 macro_rates 抛售）。长端利率(30Y 触 2007 高)上冲叠加 AI 芯片板块整体承压（AVGO −4.6%/AMD −3.7% 同向）。无 INTC 公司级新催化，turnaround/foundry 叙事无进展。距 thesis-break $75 缓冲 +23.7%，未破位但趋势承压。
+
+**Sources.**
+- _Corroboration:_ 同 AI 芯片链承压：AVGO −4.6%/AMD −3.7%；久期挤出为 8/18 归因的延续。无个股硬催化。
+
+**Cross-assets.** SPY +0.21% · VIX 14.89 · TEN YEAR 4.65 · WTI 84.32
+
+**Agent read.** 
+
+
+---
 ### 2026-08-18 · -6.95% day · ▼ material
 **Tags:** `macro_rates`, `sector_rotation`
 **Confidence:** medium

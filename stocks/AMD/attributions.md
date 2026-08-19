@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-19 · -3.71% day · ▼ material
+**Tags:** `sector_rotation`, `competitor_news`
+**Confidence:** medium
+
+**Primary cause.** AMD −3.7%（vol 0.68× 低量），与 AVGO(−4.6%) 同向，属 Google-Marvell 定制芯片事件引发的 AI 芯片板块情绪扩散 + 长端利率久期挤压。无 AMD 公司级新闻，非事件直接相关方（AMD 不在 Google TPU 之争中），纯 beta 承压。
+
+**Sources.**
+- _Corroboration:_ AVGO −4.6% 事件驱动，AMD 情绪跟随；NVDA 仅 −1% 说明需求端未受损。低量下跌=情绪非基本面。
+
+**Cross-assets.** SPY +0.21% · VIX 14.89 · TEN YEAR 4.65 · WTI 84.32
+
+**Agent read.** 
+
+
+---
 ### 2026-08-05 · -6.36% day · ▼ major
 **Tags:** `earnings_post_print`, `guidance_inline`, `competitor_news`, `sector_rotation`
 **Confidence:** high

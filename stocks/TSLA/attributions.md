@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-19 · +4.23% day · ▲ material
+**Tags:** `executive_comment`, `product`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** TSLA +4.2%（vol 0.96×，未放量），risk-on 日逆势领涨。双驱动：(1) 公司层主导——Cybercab/Robotaxi 叙事重新聚焦（头条「Cybercab Launch Puts Robotaxi Plans in Focus」），Robotaxi 是 321× 估值溢价的唯一支柱，聚焦=自动驾驶期权 delta 上升=买入；命中 re_read_trigger「Cybercab/Robotaxi timeline announcement」。(2) 板块 beta——Model Y L 入美销量预期 + risk-on 环境（VIX −6%、ETH +17.5%、弱美元）。交叉验证 RIVN 同日 +4%，Ford/GM 未跟=涨的是'成长/自动驾驶'叙事非传统车企。距 thesis-break $250 缓冲 +40.4%。估值悬顶（321× P/E）+反面声音'humanoid valuations 过高'。
+
+**Sources.**
+- secondary: [Tesla Stock Jumps as Cybercab Launch Puts Robotaxi Plans in Focus](https://finance.yahoo.com/)
+- secondary: [Tesla's Model Y L Is Coming to America. Will It Reignite Sales Growth?](https://finance.yahoo.com/)
+- _Corroboration:_ RIVN 同日 +4%（EV 板块 beta 确认）；Ford/GM 未涨；VIX −6% + ETH +17.5% risk-on 环境确认。
+
+**Cross-assets.** SPY +0.21% · VIX 14.89 · TEN YEAR 4.65 · WTI 84.32
+
+**Agent read.** 
+
+
+---
 ### 2026-07-02 · -8.03% day · ▼ major
 **Tags:** `earnings_pre_print`, `macro_data`, `flow_event`
 **Confidence:** high

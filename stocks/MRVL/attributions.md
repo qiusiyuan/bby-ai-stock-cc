@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-19 · +9.85% day · ▲ major
+**Tags:** `partnership_news`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** MRVL +9.85%（vol 1.86× 放量），Google 以约 $12B warrant/股权把 Marvell 纳入其定制 AI 芯片(TPU)设计供应 bench。头条一致：「Marvell Stock Rises 10% on Google Warrant Deal」「Inside Google's $12B Stake in Marvell—Why It's Bad News for Broadcom」。市场解读：MRVL 获巨型高确定性新客户订单流，直接做多定制芯片 TAM。**这是对昨日(8/18) MRVL −8.24% 宏观(升息)抛售的 V 型反转——个股硬催化压过 macro_rates 逆风**，说明份额型 partnership 新闻的权重高于利率 beta。8/27 Q2 FY27 财报双重加载：刚 +10% 带催化进财报，管理层强动机讲胜利故事。距 thesis-break $200 缓冲 +18.6%。
+
+**Sources.**
+- secondary: [Marvell Stock Rises 10% on Google Warrant Deal](https://finance.yahoo.com/)
+- secondary: [Inside Google's $12 Billion Stake in Marvell—and Why It's Bad News for Broadcom](https://finance.yahoo.com/)
+- _Corroboration:_ 镜像交易：AVGO 同日 −4.6%（vol 1.78×）确认零和份额转移；GOOG +0.12% 平静=市场读为供应链多元化非 capex 失控；TSM 走平=代工层中立。
+
+**Cross-assets.** SPY +0.21% · VIX 14.89 · TEN YEAR 4.65 · WTI 84.32
+
+**Agent read.** 
+
+
+---
 ### 2026-08-18 · -8.24% day · ▼ major
 **Tags:** `macro_rates`, `sector_rotation`
 **Confidence:** medium

@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-19 · -4.61% day · ▼ material
+**Tags:** `competitor_news`, `partnership_news`
+**Confidence:** high
+
+**Primary cause.** AVGO −4.6%（5d −12.88%，vol 1.78× 放量），Google 引入 Marvell 作为定制 AI 芯片第二供应商，直接冲击 Broadcom 此前的 Google TPU 独家/主导设计伙伴地位。头条「Broadcom Falls 2% as Google Adds Marvell to Its AI Chip Bench」「Broadcom Gets Fresh Google Warning」。行为层：定制 ASIC 是 AVGO 估值核心支柱，独家地位被稀释=份额+定价权受损，市场几天内(5d −12.9%)重定价护城河。TD Cowen 仍看 +27% 上行（「Down More Than 20%—TD Cowen Still Sees 27% Upside」）=卖方认为超跌但短期动能在空方。9/3 Q3 FY26 财报验证冲击是否被夸大。
+
+**Sources.**
+- secondary: [Broadcom Falls 2% as Google Adds Marvell to Its AI Chip Bench](https://finance.yahoo.com/)
+- secondary: [Broadcom (AVGO) Is Down More Than 20%—Why TD Cowen Still Sees 27% Upside](https://finance.yahoo.com/)
+- _Corroboration:_ MRVL 镜像 +9.85% 确认零和份额转移；AMD −3.7% 情绪扩散；GOOG/NVDA 平静=需求端未受损，纯供应商份额问题。
+
+**Cross-assets.** SPY +0.21% · VIX 14.89 · TEN YEAR 4.65 · WTI 84.32
+
+**Agent read.** 
+
+
+---
 ### 2026-08-14 · -6.82% day · ▼ major
 **Tags:** `ai_demand`, `sector_rotation`, `analyst_downgrade`
 **Confidence:** medium
