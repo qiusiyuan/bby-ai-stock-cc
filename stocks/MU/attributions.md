@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-20 · +1.79% day · ▲ minor
+**Tags:** `thesis_debate`, `macro_rates`, `product`
+**Confidence:** medium
+
+**Primary cause.** Thesis debate: is MU a 'real-asset' winner or an AI high-beta duration name? Agent's clean 'memory=real=wins' framing challenged by user; refined to 'MU straddles physical-demand (short duration) and AI high-beta (long-duration optionality)'. Today physical side won ($10B AI memory lab), but duration/AI-repricing risk is latent, not absent (30d -3.8%; Druckenmiller exited).
+
+**Sources.**
+- Yahoo: Micron Jumps 2.2% After Unveiling $10 Billion AI Memory Lab
+- Yahoo: Billionaire Stanley Druckenmiller Sells Micron
+- _Corroboration:_ MU 52w range $114->$954 ~8x = high-beta AI behavior vs SU ~1.9x real-asset. Fed July minutes named AI-repricing risk; MU's HBM story sits on that axis.
+
+**Cross-assets.** SECTOR ETF +3.06% · SPY -0.62% · VIX 15.85 · 10Y 4.7 · WTI 86.53
+
+**Agent read.** User correctly flagged MU as a hybrid, not a pure real asset. Refined framework: primary axis is duration/asset-nature, but MU straddles it (physical HBM demand + AI high-beta optionality). Border/currency (BoC/BoK, CAD/KRW) is a secondary modifier; US 10Y is the global discount rate so Hynix/Samsung are NOT exempt (they rose on memory-cycle idiosyncratic strength, not nationality). Score at 9/23 MU print: did strong HBM physical numbers insulate MU, or did AI-repricing/valuation beta dominate?
+ · [Snapshot](snapshots/2026-08-20.md)
+
+---
 ### 2026-08-18 · -7.11% day · ▼ major
 **Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
 **Confidence:** medium

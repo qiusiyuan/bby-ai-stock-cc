@@ -1,6 +1,6 @@
 ticker: CROB
 asset_type: etf
-active: false  # 板块建立，暂不进每日 watchlist；产品太新，待评估
+active: true  # 2026-08-20 用户要求纳入每日 watchlist（humanoid 板块升级为每日关注）；注意 AUM 极小、流动性差
 tags: [humanoid]
 added: 2026-08-17
 last_checked: 2026-08-17

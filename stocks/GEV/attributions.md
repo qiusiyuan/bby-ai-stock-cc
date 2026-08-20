@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-20 · -4.21% day · ▼ major
+**Tags:** `sector_rotation`, `macro_rates`
+**Confidence:** medium
+
+**Primary cause.** Sector-wide behind-the-meter/power selloff (FTAI -7%, CAT -4%, Fluence/Bloom/Redwire/Ameresco all down) driven by duration squeeze on high-valuation AI-power names + defense-ETF (ITA -3.1%) drag; no company-specific bad news, $176B backlog intact
+
+**Sources.**
+- Yahoo: Behind-the-Meter Energy Stocks Fall Tuesday: FTAI Aviation Down 7%, GE Vernova Down 6%, Caterpillar Down 4%
+- Yahoo: Fluence Energy, Bloom Energy, Redwire, Ameresco, and GE Vernova Shares Plummet
+- _Corroboration:_ GEV $176B backlog intact; gas turbine boom offsets wind -40%; vol 0.52 = no panic. Still above MA200 $865.
+
+**Cross-assets.** SECTOR ETF -3.12% · SPY -0.62% · VIX 15.85 · 10Y 4.7 · WTI 86.53
+
+**Agent read.** Valuation drawdown, not thesis deterioration. Board-wide power/behind-the-meter beta on a duration-squeeze day; FTAI/CAT/Fluence confirm it is sector, not GEV-specific. Fundamentals (backlog, gas-turbine cycle) intact. MA200 $865 is the line that matters; break with PPA/backlog bad news = real risk. Distance to thesis-break $700 still +35%. Continuation of the 8/18 macro_rates + sector_rotation squeeze that also hit SNDK/MRVL/INTC.
+ · [Snapshot](snapshots/2026-08-20.md)
+
+---
 ### 2026-08-18 · -5.77% day · ▼ material
 **Tags:** `sector_rotation`, `macro_rates`
 **Confidence:** low

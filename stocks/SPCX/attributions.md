@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-20 · -5.69% day · ▼ major
+**Tags:** `lockup_expiry`, `secondary_offering`, `macro_rates`
+**Confidence:** high
+
+**Primary cause.** Second lockup tranche unlock — 319M shares came to market, stock dipped below IPO price; Starship delays and macro duration squeeze amplified
+
+**Sources.**
+- Yahoo: SpaceX stock slips as 319 million new shares come to market
+- Yahoo: SpaceX Drops 6%, Dips Below Its IPO Price as 319M Shares Unlock; Rocket Lab Falls 4%
+- Yahoo: Starship Delays Drive SpaceX Stock Lower
+- _Corroboration:_ Rocket Lab -4% same day (space sentiment); SSPC +11.4% is 2x inverse mirror
+
+**Cross-assets.** SPY -0.62% · VIX 15.85 · 10Y 4.7 · WTI 86.53
+
+**Agent read.** Correction of intraday initial read: today's drop is a company/supply catalyst (319M-share second lockup tranche unlock, below IPO price) + Starship delays, NOT pure duration. Duration was only the background amplifier. Overshoot beyond peer duration names (TSLA -2.6%) explained by the supply shock. Watch whether the 319M shares get absorbed (stabilize near IPO price) or trigger further breakdown toward 52w low $104.83. No position — tracking only.
+ · [Snapshot](snapshots/2026-08-20.md)
+
+---
 ### 2026-08-12 · +9.87% day · ▲ major
 **Tags:** `executive_comment`, `analyst_upgrade`, `flow_event`, `ai_demand`
 **Confidence:** high

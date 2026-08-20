@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>债务化 regime 判断</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-08-20 12:06</div>
+<h1 id="debasement-trade-regime">债务化交易 (Debasement Trade) — regime 判断与评分框架</h1>
+<blockquote>
+<p><strong>Research note</strong> · 2026-08-20 · scope: 宏观 regime / 跨持仓框架 · 类型: 前瞻判断 + 预先承诺评分卡
+<strong>第一个检验点</strong>: 2026-09-11 CPI(八月) → 2026-09-17 FOMC。以先到者为序,两者都要打分。
+<strong>下次 review</strong>: 2026-09-17 FOMC 后(或任一 regime killer 提前触发)</p>
+</blockquote>
+<div class="callout info"><p>本 note 服务一个具体问题:用户问"债务化交易会是主基调吗?持续多久?政府会干预吗?会长期化吗?"
+这里把 agent 当日给出的 base case 写成<strong>可打分的前瞻判断</strong>——设定明确的 regime killer 触发器 + 评分日期,
+到 9/11 CPI / 9/17 FOMC 回来验证今天这个判断对不对。不打分的前瞻判断永远无法被证伪。</p></div>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><div class="tabs"><label class="tab-label" for="tabs1-0">核心判断 (base case, 2026-08-20)</label><label class="tab-label" for="tabs1-1">为什么判断&quot;是主基调&quot;——结构性驱动全在位</label><label class="tab-label" for="tabs1-2">历史可比:这种 regime 跑多久、怎么死</label><label class="tab-label" for="tabs1-3">政府会干预吗——悖论(关键洞察)</label><label class="tab-label" for="tabs1-4">会&quot;长期/永远&quot;化吗——不会</label><label class="tab-label" for="tabs1-5">对组合的落地映射</label><label class="tab-label" for="tabs1-6">📊 预先承诺评分卡 (在 score date 回来填)</label><label class="tab-label" for="tabs1-7">Stands &amp; Updates (append-only)</label></div><div class="tab-panel" data-tab-for="tabs1-0"><p><strong>债务化交易是当前最可能的中期主基调(以季度计),但它是"结构性顺风 + 战术性剧震",不是可闭眼持有的直线。唯一的 regime killer 是 Fed 在通胀面前动真格加息。</strong></p>
+<p>一句话本质:债务化交易 = 押注<strong>"财政主导(fiscal dominance)压过货币纪律"</strong>——政府债务($40T)大到央行不敢/不能真正收紧捍卫币值,只能靠通胀稀释。钱因此从纸面索取权(现金/美债)流向稀缺实物(金/银/BTC/大宗)。</p></div><div class="tab-panel" data-tab-for="tabs1-1"><ol>
+<li><strong>美债逼近 $40T</strong>,赤字结构性,政治上无财政紧缩意愿。</li>
+<li><strong>财政部已下场救债</strong>(8/19-20 长债回购上限翻倍到 $4B),这本身是准货币化,坐实 fiscal dominance。</li>
+<li><strong>实际收益率下行环境</strong>:名义收益率被压 + 通胀黏着 = 金的最佳土壤。周三财政部压 30Y 9bp、金却跳涨 2.8% = 教科书级信号。</li>
+<li><strong>Fed 陷入张力</strong>:想加息保信誉 vs 需低利率给债务融资(7月纪要"条件性加息"是很弱的姿态)。</li>
+</ol></div><div class="tab-panel" data-tab-for="tabs1-2"><table class="compare"><thead><tr><th>案例</th><th>时长</th><th>走势</th><th>怎么结束的 (regime killer)</th></tr></thead><tbody><tr><td>1970s 滞胀 (1971-80)</td><td>~9年</td><td>金 $35→$850</td><td>Volcker 利率拉到 20%,主动制造衰退才摁死</td></tr><tr><td>2008后 QE (2009-11)</td><td>~2-3年</td><td>金 $700→$1920</td><td>担心的通胀没来→实际收益率回升→金阴跌到 $1050(2011-15)</td></tr><tr><td>2020-22 COVID</td><td>~2年</td><td>金→$2075→crypto→真通胀</td><td>Fed 2022 暴力加息,金/BTC 见顶盘整</td></tr><tr><td>当前 (2024-26?)</td><td>进行中</td><td>金冲 $5,586(52wH)</td><td>??? — 本 note 要跟踪的</td></tr></tbody></table>
+<p><strong>规律</strong>:结构性债务化能跑 <strong>2-10 年</strong>,但每轮都有明确杀手——要么央行真加息(1970s/2022),要么担心的通胀根本没兑现(2011)。<strong>当前这轮债务数学比历史任何一次都糟(结构理由最强),但正因涨幅巨大,回撤风险也最大。</strong></p></div><div class="tab-panel" data-tab-for="tabs1-3"><p>会,但要分清方向相反的两种:</p>
+<ul>
+<li><strong>财政部式干预(压名义收益率)= 火上浇油。</strong> 买回长债压收益率 = 准货币化 = 告诉市场"不会让收益率涨上去捍卫币值" = 坐实 fiscal dominance → 实际收益率下行 → <strong>利多黄金</strong>。财政部越救债,债务化越强。</li>
+<li><strong>央行式干预(真加息)= 唯一的杀手。</strong> Volcker 式不惜衰退捍卫币值的加息才能摁死。Fed 的"条件性加息"是往这方向的弱姿态,但<strong>有条件</strong>且被要求配合债务融资。</li>
+</ul>
+<p><strong>真正看点 = Fed vs 财政部的张力</strong>:Fed 让步(不真加息)→ 债务化加速;Fed 硬刚(真加息)→ 债务化急速 unwind + 衰退风险。</p></div><div class="tab-panel" data-tab-for="tabs1-4"><p>债务化本质是"财政主导 vs 货币纪律"的赌注,终以两种方式之一结束:
+- <strong>(a) 纪律被强加</strong>:Volcker 式痛苦重置(衰退换币值);或
+- <strong>(b) 债务被成功通胀掉</strong>:货币重置到高得多的价格水平,交易"已兑现",硬资产在新平台停下。</p>
+<p>两者都意味着交易终结,只是路径不同。可跑多年,但不永恒。</p></div><div class="tab-panel" data-tab-for="tabs1-5"><table class="compare"><thead><tr><th>类别</th><th>定位</th><th>代表持仓</th><th>regime 内表现</th></tr></thead><tbody><tr><td>实物/短久期/商品</td><td>结构受益</td><td>SU / CVX / CNQ / HXE.TO</td><td>顺风,但已在 52w 高,别追</td></tr><tr><td>物理需求半导体</td><td>部分受益(有 beta)</td><td>MU / 内存链</td><td>骑墙体,实物面赢但 AI-beta 面是潜伏风险</td></tr><tr><td>长久期纸面索取权</td><td>结构受损</td><td>SPCX / humanoid(HUMN/KOID/CROB)</td><td>逆风,无当期盈利最痛</td></tr><tr><td>高估值/AI capex</td><td>受损 + 政策 overhang</td><td>NVDA/AVGO/MRVL/AMD</td><td>Fed 点名 AI 重定价风险,双重压力</td></tr><tr><td>高质量现金流</td><td>相对抗跌</td><td>MSFT</td><td>久期敏感度低于无盈利成长</td></tr></tbody></table>
+<p>国界修正项:Fed 利率是全球贴现率(美债 10Y = 全球无风险基准),非美名字(Hynix/Samsung/SU)<strong>不豁免</strong>,但叠加本国央行(BoC/BoK)+ 汇率(USD/CAD 逼近 52w 低 → 加拿大能源换 USD 顺风)。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-6"><p><strong>判断</strong>: 债务化是中期主基调(base case),唯一 killer 是 Fed 真加息。</p>
+<h3>检验点 1 — 2026-09-11 CPI(八月)</h3>
+<ul>
+<li><strong>看什么</strong>: 核心 CPI/PCE 是否明确降温。Fed"条件性加息"触发器 = 核心 PCE 明确破 2.5% + 股市高位。</li>
+<li><strong>判债务化延续(base case 对)</strong>: 通胀黏着或走高 → Fed 无法真加息 → 实际收益率维持低位 → 金/能源续强,久期续弱。</li>
+<li><strong>判 regime 转向(base case 错)</strong>: 通胀明显降温 → 市场信 Fed 能不加息也控通胀 → 实际收益率回升 → 债务化 unwind(参考 2011)。</li>
+<li><strong>打分</strong>: ☐ 待填 (通胀读数 ___ / 金银反应 ___ / 实际收益率方向 ___)</li>
+</ul>
+<h3>检验点 2 — 2026-09-17 FOMC</h3>
+<ul>
+<li><strong>看什么</strong>: 点阵图 + 措辞。Fed 是让步(配合融资、不加息)还是硬刚(真往加息走)?</li>
+<li><strong>判债务化加速</strong>: Fed 鸽派/继续按兵 + 默许财政部压收益率 → fiscal dominance 确认 → 硬资产加速。</li>
+<li><strong>判 regime killer 启动</strong>: Fed 意外鹰派/真加息信号 → 债务化急速 unwind + 衰退风险上升 → 减硬资产 beta。</li>
+<li><strong>打分</strong>: ☐ 待填 (决议 ___ / 点阵图 ___ / 股债汇金反应 ___)</li>
+</ul>
+<h3>战术反转触发器(任意日,非定期)</h3>
+<ol>
+<li>热 CPI/PCE → Fed 真加息 → 实际收益率飙升 = 减硬资产 beta 首要信号</li>
+<li>增长恐慌/衰退 → 现金/美元短暂为王,金与风险资产同跌</li>
+<li>仓位过度拥挤(如 BTC 空头挤压)→ 战术性回吐 15-30%</li>
+</ol></div><div class="tab-panel" data-tab-for="tabs1-7"><h3>2026-08-20  Initial regime call</h3>
+<p>Base case:债务化中期主基调,结构性顺风 + 战术性剧震,killer = Fed 真加息。金 52w 高 $5,586、财政部长债回购翻倍救市、Fed 7月纪要"条件性加息"+ 点名 AI 重定价。第一个检验点 9/11 CPI → 9/17 FOMC。当日持仓表现完全吻合 base case(能源/内存赢、SPCX/humanoid/AI capex 输)。附:BTC 当日 <span class="up">+5%</span> 是空头挤压(技术性),非纯 debasement 买盘 — 拥挤信号,列为反转触发器 3 的实例。</p></div></div>
+</body>
+</html>

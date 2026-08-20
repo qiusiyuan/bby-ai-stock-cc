@@ -60,8 +60,8 @@ events:
   - { date: 2026-08-01, kind: macro, ticker: macro, note: "NFP July" }
   - { date: 2026-08-12, kind: macro, ticker: macro, note: "CPI July" }
   - { date: 2026-09-05, kind: macro, ticker: macro, note: "NFP August" }
-  - { date: 2026-09-11, kind: macro, ticker: macro, note: "CPI August" }
-  - { date: 2026-09-17, kind: macro, ticker: macro, note: "FOMC decision" }
+  - { date: 2026-09-11, kind: macro, ticker: macro, note: "CPI August — 🎯 债务化 regime 检验点 1: 通胀黏着=base case 延续 / 明显降温=regime 转向。评分卡 research/sectors/2026-08-20-debasement-regime.md" }
+  - { date: 2026-09-17, kind: macro, ticker: macro, note: "FOMC decision — 🎯 债务化 regime 检验点 2: Fed 让步=债务化加速 / 意外鹰派真加息=regime killer 启动。评分卡 research/sectors/2026-08-20-debasement-regime.md" }
 
   # ── Policy / geopolitical 已知窗口 ────────────────────────────
   - { date: 2026-Q3, kind: policy, ticker: macro, note: "EU TCMV decision on FSD (range — Sweden opposes, multi-state vote)" }

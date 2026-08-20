@@ -68,6 +68,13 @@ focus_clusters:
     description: AI 数据中心电力 + SMR/核电 + 电网硬件 — 燃气轮机 / 变压器 / 高压电网 / 核电汽轮机。GEV 是唯一 US-listed 同时覆盖 turbine + grid + service 的纯标的；Siemens Energy / Mitsubishi 是直接对手但 US 投资难度更高
     watch_items: [hyperscaler PPA 签约（MSFT/GOOG/AMZN 直签 gas 容量), GEV Power segment margin, transformer/grid backlog 增长, SMR DOE deadline 进展, Wind 段 break-even 进度, Iran 重建合同, IRA / 基础设施法案落地]
 
+  - name: humanoid
+    kind: topic
+    members: [HUMN, KOID, CROB]
+    external_refs: ["UBTech (9880.HK)", "Unitree (私有/待上市)", "Harmonic Drive (6324.T)", "绿的谐波 (688017)", "Tesla Optimus (via TSLA)"]
+    description: 人形机器人/Optimus 供应链 — 赌 Optimus 引领人形/AGI 爆发，但只能用美股账户表达。HUMN(最纯 OEM+执行器) / KOID(更广使能层) / CROB(中国机器人纯标的)。核心错配：内容最纯的（中国减速器供应链）买不到，买得到的内容最稀。板块 thesis 见 research/sectors/2026-08-17-optimus-supply-chain.md。纯长久期主题，无当期盈利，对利率/风险偏好极敏感。
+    watch_items: [Optimus Gen3/V3 发布, Fremont 量产确认, 任一供应商拿到 Tesla 确认订单, HUMN/KOID 持仓大改, UBTech/Unitree 订单与 IPO 进展, 谐波减速器估值(100-485x PE)是否回落, ETF AUM 上量]
+
   - name: 货币
     kind: topic
     members: ["DX-Y.NYB", "USDCAD=X", "USDCNY=X", "^TNX", TLT, UUP]
