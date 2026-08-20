@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-20 · -0.53% day · ● minor
+**Tags:** `thesis_debate`, `prediction_recorded`, `macro_rates`
+**Confidence:** medium
+
+**Primary cause.** Forward prediction (not a price-move attribution): in a hawkish-sentiment regime, even a good AI earnings print produces muted/negative price reaction (de-rating + sell-the-news). NVDA 8/26 is the first and cleanest probe.
+
+**Sources.**
+- _Corroboration:_ Historical basis: 2022 (Nasdaq -33%, all multiple compression, EPS grew); 2018 Q4 (EPS +25% but market -20%, NVDA -50%); Nifty Fifty 1973-74 (earnings grew, P/E 40-50x->10x, stocks -50-80%); NVDA 2023-24 beat-but-fell 'priced for perfection'. NVDA into 8/26: -9% off 52wH, 5d -3.9% = moderately positioned, cleanest test.
+
+**Cross-assets.** SPY -0.62% · VIX 15.85 · 10Y 4.7 · WTI 86.53
+
+**Agent read.** User thesis: hawkish-sentiment regime suppresses even good AI earnings reactions (de-rating -20~50% regime-level; sell-the-news -5~15% event-level). Agent agrees on direction, adds: magnitude depends on pre-print crowding (MRVL most stretched 5d+10%, AVGO beaten-down -12.8% so lower sell-news risk, MU stretched 8x-from-lows). Watch the PRICE REACTION to the beat, not the beat. NVDA 8/26 first probe. Linked note: research/sectors/2026-08-20-debasement-regime.md.
+ · [Snapshot](snapshots/2026-08-20.md)
+
+---
 ### 2026-08-05 · +4.27% day · ▲ major
 **Tags:** `partnership_news`, `competitor_news`, `ai_demand`, `sector_rotation`
 **Confidence:** high
