@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-21 · -5.33% day · ▼ material
+**Tags:** `secondary_offering`, `competitor_news`, `earnings_pre_print`
+**Confidence:** high
+
+**Primary cause.** 8/19 Google $12B定制芯片订单的利好反转,三条相互强化: (1)订单附带认股权(warrant)稀释,摊薄每股价值,净效应由正转负,市场卖出部分8/19涨幅; (2)竞争叙事分裂,一派认为Alphabet宣布后AVGO仍是更好买入,质疑MRVL份额持续性; (3)8/27财报前去风险,年内已+196%,高预期+不确定性下部分资金落袋。但5d仍+7%,核心利好未被完全否定,只被稀释和不确定性打折。
+
+**Sources.**
+- : 
+- {"type": "reverse_check", "note": "AVGO\u540c\u65e5+0.7%\u672a\u8ddf\u8dcc \u2192 MRVL\u4e2a\u80a1(\u7a00\u91ca)\u4e8b\u4ef6\u975eASIC\u677f\u5757\u666e\u8dcc"}
+- _Corroboration:_ 关联8/19已记录归因(partnership_news+competitor_news),今天是同一事件链第二幕:利好→稀释重定价
+
+**Cross-assets.** SPY +0.38% · VIX 15.29 · 10Y 4.74 · WTI 87.27
+
+**Agent read.** 利好反转+财报前去风险,三催化相互强化成-5.3%,但5d+7%说明Google大单核心逻辑未破。距break $200缓冲+19%。8/27财报前波动加大,关注PRICE REACTION不是数字本身。
+
+
+---
 ### 2026-08-19 · +9.85% day · ▲ major
 **Tags:** `partnership_news`, `competitor_news`
 **Confidence:** high

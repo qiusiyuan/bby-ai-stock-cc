@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-21 · +5.07% day · ▲ material
+**Tags:** `production_milestone`, `regulatory_positive`, `safety_recall`
+**Confidence:** high
+
+**Primary cause.** 两条独立同向的产品/扩张催化叠加: (1) EV Semi ($300K电动重卡)登陆欧洲,打开商用车全球TAM; (2)拉斯维加斯Robotaxi运营牌照落地,喂养FSD/Robotaxi商业化optionality。债务化(长久期承压)大盘里逆势+5%,市场为具体产品里程碑单独定价。放量仅1.1x,属超跌反弹+催化的技术修复,非趋势反转。
+
+**Sources.**
+- : 
+- {"type": "reverse_check", "note": "\u540c\u65e5\u65e0EV\u677f\u5757\u666e\u6da8\u4fe1\u53f7 \u2192 \u4e2a\u80a1alpha\u975esector beta"}
+
+**Cross-assets.** SPY +0.38% · VIX 15.29 · 10Y 4.74 · WTI 87.27
+
+**Agent read.** 产品催化真实但30d仍-11%,中国史上最大召回是活跃逆风。反弹非反转(放量不足)。距break $250缓冲+45%。反转确认需中国月度交付企稳+Robotaxi实际运营收入。
+
+
+---
 ### 2026-08-19 · +4.23% day · ▲ material
 **Tags:** `executive_comment`, `product`, `sector_rotation`
 **Confidence:** medium
