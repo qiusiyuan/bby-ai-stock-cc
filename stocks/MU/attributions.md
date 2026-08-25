@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-25 · +1.36% day · ● prediction
+**Tags:** `prediction_recorded`, `macro_rates`, `memory_pricing`, `ai_demand`
+**Confidence:** medium
+
+**Primary cause.** Deep-dive 1-2 月预测: 四因素 (美债长端失控/关税/NVDA 8/26 财报/加息活变量) 叠加, 主导 MU 的是利率/久期通道而非自身基本面 (基本面锁定到 9/25)。Base case (50%): $850-1,050 高波动横盘 — NVDA beat 反应克制 + 利率黏高位压久期 + 9/25 强印被 peak-earnings 恐惧封顶。Bull 25% $1,100-1,300 (CPI 降温→久期解压); Bear 25% $650-820 (CPI 烫/意外加息→10Y 破5%, 或 9/25 margin 见顶)。用户担忧的加息是四因素里对 MU 杀伤最大者, 但下方有 $650 thesis-break +42% 缓冲 + 卖方一致看多托底。
+
+**Sources.**
+- Blockonomi/Barron's: [DRAM memory prices expected to soar 50% this quarter](https://www.barrons.com/)
+- Seeking Alpha: [Micron: The Competition Has A Better Price (earnings from price not volume)](https://seekingalpha.com/)
+- Barron's: [Micron stock rebounds but it will miss out on a 50% rise in memory prices](https://www.barrons.com/)
+- _Corroboration:_ 10Y 4.64% (52w 高附近), 30Y→5%, Bessent 国债回购翻倍仍压不住长端; 7/29 FOMC 9-3 三票主张加息, Sept 加息概率 ~35%; 金 $4,705/银 $68/BTC $79k 债务化交易
+
+**Cross-assets.** SECTOR ETF +2.98% · SPY +0.22% · VIX 15.56 · 10Y 4.64 · WTI 82.19
+
+**Agent read.** MU 是披着 AI 动量外衣的周期股: 近端瓶颈已从需求端 (被 Azure/AWS 回答完) 换成利率端。四因素 (美债/关税/加息) 最终汇入同一条利率/久期通道, 故 9/11 CPI + 9/17 FOMC 对 1-2 月走势比 8/26 NVDA 更结构性。基本面地板高 (上行周期 +50%/季、86% GM、$650 缓冲 +42%), 天花板被鹰派利率焊死。类比 8/18 -7.1% (低量回调后修复)。
+ · Snapshot at `dashboard/2026-08-25.md`
+
+---
 ### 2026-08-20 · +1.79% day · ▲ minor
 **Tags:** `thesis_debate`, `macro_rates`, `product`
 **Confidence:** medium
