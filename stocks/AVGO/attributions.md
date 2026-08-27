@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-27 · +3.63% day · ▲ material
+**Tags:** `sector_rotation`, `earnings_pre_print`
+**Confidence:** medium
+
+**Primary cause.** 无公司级新催化, vol 0.58× 低量。涨幅=NVDA 财报板块溢出(70% 增长指引确认 AI 算力需求, AVGO 作 custom silicon TPU/Trainium/MTIA 龙头受益)+ 自身 9/3 Q3 财报抢跑。典型「同板块龙头 beat 后, 资金抢跑下一个财报」。
+
+**Sources.**
+- _Corroboration:_ 卖铲子链同向: NVDA +9.2%, TSM +2.3%, INTC +2.9% — AVGO 是链上一环非独立事件
+- {"type": "calendar", "note": "AVGO Q3 FY26 \u8d22\u62a5 2026-09-03"}
+
+**Cross-assets.** SPY +0.68% · VIX 14.64 · TEN YEAR 4.658
+
+**Agent read.** beta+抢跑非 alpha。今晚 MRVL 财报若不及预期会浇灭对 9/3 AVGO 的乐观; 且预期已被 NVDA beat 推高, 9/3 有 sell-the-news 风险。
+
+
+---
 ### 2026-08-19 · -4.61% day · ▼ material
 **Tags:** `competitor_news`, `partnership_news`
 **Confidence:** high

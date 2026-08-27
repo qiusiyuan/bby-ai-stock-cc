@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-27 · -2.75% day · ▼ minor
+**Tags:** `memory_pricing`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** NVDA +9% 全 AI 链狂欢日里 MU 唯一逆势下跌, vol 0.51× 极低量。根源: NVDA 财报「memory margin warning」被读作 HBM 定价权担忧。但为何只砸 MU 不砸韩系(Samsung +3.5% 5d +7.5% / SK Hynix +1.4%)? 三层叠加: (1) MU 拥挤度/估值最高, 利空时优先撤出; (2) Samsung 有 HBM4 认证独立利好+估值洼地, SK Hynix 作 HBM 龙头受益 NVDA 70% 指引, 资金从贵的 MU 轮向便宜韩系; (3) 「memory margin」在美股最直接对应 pure-play MU。
+
+**Sources.**
+- Yahoo: NVIDIA Surges as 70% Growth Forecast Overrides a Memory Margin Warning
+- _Corroboration:_ Samsung +3.5%(5d +7.5%)/ SK Hynix +1.4% 逆 MU 上涨 / DRAM ETF -1.0%(被韩系对冲跌幅小于 MU) → 否定需求崩, 确认估值轮动
+
+**Cross-assets.** SPY +0.68% · VIX 14.64 · TEN YEAR 4.658 · SAMSUNG +3.50% · SKHYNIX +1.42%
+
+**Agent read.** 对照 2026-06-23(全板块同跌的低量恐慌, 次日 Q3 blowout 证伪): 今日更弱 — 不是全板块同跌而是 MU 单跌韩系涨, 是估值轮动非系统恐慌。capitulation 信号(vol≥1.5× 或卖方下调)今天都没有。决定性数据点仍是 9/25 MU Q4 财报。距 thesis-break $650 缓冲 +40%。
+
+
+---
 ### 2026-08-25 · +1.36% day · ● prediction
 **Tags:** `prediction_recorded`, `macro_rates`, `memory_pricing`, `ai_demand`
 **Confidence:** medium

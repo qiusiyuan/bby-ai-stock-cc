@@ -87,3 +87,16 @@ Strong: $38B cash, minimal long-term debt, robust free cash flow (~$60B+ annuali
 - 可证伪指标:MU 30d > NVDA 30d → agent(semi 弹性 > NVDA)对;NVDA 领先 → 用户/NVDA 仍是急先锋。
 - **实际:NVDA 30d +0.37% vs MU 30d -6.14% → NVDA 领先 6.5pp。**
 - **裁决:agent 判断 FAILED。** 这个 30d 窗口里 NVDA 是更好的持仓,MU 的"弹性"没兑现(MU 受利率/久期通道压制,基本面锁到 9/25)。用户"难判断"的不确定性 + NVDA 作为"AI 信仰指数"的稳态权重占了上风。教训:在鹰派 regime 里,高弹性(MU)= 高久期 = 更受利率压制,弹性优势只有在 risk-on 才兑现。
+
+---
+
+**2026-08-27 — debasement-regime prediction 次日确认打分(承接 8/26 分裂裁决)**
+
+昨日(8/26)regular 收 $209.95(-1.16%)→ 盘后 +4.56%($219.53)。今日(8/27)regular **收 $228.93,+9.19%**,vol 1.67× 放量,把盘后涨幅完全接住并扩大,逼近 52w 高 $236。
+
+对 8/26「分裂裁决」的重新裁决:
+- **事件层 = FAILED 坐实。** 两日累计 ~+9%,beat 换来 rally 并扩大 —— 预测的「beat 也 fail-to-rally」彻底证伪。
+- **结构层「反应受抑」= REFUTED(推翻)。** 昨日 +4.56% 被读作「受抑」;今日 +9% 追买说明反应并未受抑,是正常-偏强的 beat 反应,de-rating 压制论站不住。
+- **结构层「倍数压缩」= 仍成立,但只是静态估值事实。** fwd PE 15.8(70% 增长给 15.8x 确是 de-rated),但这是估值水平,不是当初预测的价格反应。
+
+**净裁决:** 预测的可证伪部分(价格反应)全部 MISS;8/26 的「分裂(偏 validated)」下修为「事件预测 MISS,结构 de-rating 仅作估值背景成立」。**教训:** debasement/高利率 regime「好财报换不来好反应」这条,在基本面强到能自造 catalyst 的名字(NVDA)上不成立 —— 增长确定性压过折现率逆风。regime 压制对无当期盈利的长久期标的(SPCX/humanoid)更真实。真正 regime 生死判据在 9/11 CPI + 9/17 FOMC,而非单个财报。

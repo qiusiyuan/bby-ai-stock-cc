@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-27 · +9.19% day · ▲ major
+**Tags:** `earnings_post_print`, `guidance_raise`, `prediction_failed`, `m_and_a`
+**Confidence:** high
+
+**Primary cause.** 财报次日确认: 8/26 regular -1.16% 收 $209.95 → 盘后 +4.56% → 今日(8/27) regular +9.19% 收 $228.93, 完全接住盘后涨幅并扩大, vol 1.67× 放量逼近 52w 高 $236。驱动: Q2 营收 $96.2B 创纪录(~同比翻倍), 下季指引 $108B, ~70% 增长指引压过财报里的 memory margin warning。叠加 NVDA $5B 入股 Intel(INTC +2.9%)+ 传收购 Hugging Face。同时对 debasement-regime prediction(8/20 记录)做次日确认打分: 事件层 FAILED 坐实(beat 换来 rally 并扩大), 结构层「反应受抑」被 +9% 推翻, 仅「倍数压缩」作为静态估值事实成立(fwd PE 15.8)。净: 预测可证伪部分全 MISS。
+
+**Sources.**
+- Yahoo/aggregated: NVIDIA Surges as 70% Growth Forecast Overrides a Memory Margin Warning
+- Yahoo: Intel Jumps 3.6% as Nvidia's $5 Billion Entry Price Looks Tiny
+- _Corroboration:_ 卖铲子链同向: TSM +2.3%, AVGO +3.6%, INTC +2.9%; 但 hyperscaler 未跟(GOOG -0.2/AMZN -1.6/META -0.8), MU -2.8% 逆势 → 需求确认利好供给侧, 非全 AI 普涨
+
+**Cross-assets.** SPY +0.68% · VIX 14.64 · TEN YEAR 4.658 · FWD PE 15.8
+
+**Agent read.** debasement-regime「好财报换不来好反应」在 NVDA 这种基本面强到能自造 catalyst 的名字上不成立 — 增长确定性压过折现率逆风。regime 压制对无当期盈利的长久期标的(SPCX/humanoid)更真实。真正 regime 生死判据在 9/11 CPI + 9/17 FOMC。
+
+
+---
 ### 2026-08-26 · -1.16% day · ▲ major
 **Tags:** `earnings_print`, `prediction_failed`, `guidance_raise`, `macro_rates`
 **Confidence:** high
