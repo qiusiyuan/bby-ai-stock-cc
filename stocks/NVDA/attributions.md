@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-26 · -1.16% day · ▲ major
+**Tags:** `earnings_print`, `prediction_failed`, `guidance_raise`, `macro_rates`
+**Confidence:** high
+
+**Primary cause.** Q2 FY2027 印后盘后 +4.56% ($219.53, 盘中峰值 $226 = +7.8%),regular 先跌 -1.16% 再拉。实际数字: 营收 $96.2B 创纪录 (~同比翻倍,逼近 $100B),下季 guidance $108B (强),Amazon 芯片订单翻三倍。SCORE 8/20 debasement-regime prediction (score_date 今天): 预测「beat 但 fail-to-rally」= 事件层证伪 (beat+rally 兑现)。但结构层反而验证: 头条『利润翻倍,估值创 2019 年来新低』= 倍数压缩机制真实存在; 且『S&P 微跌尽管 NVDA favorable + Core PCE 稳定』= 好消息没抬起大盘。分裂裁决: 需要历史级 blowout 才换来 +4.5% 克制反应,正常 regime 该 +10-15%。
+
+**Sources.**
+- Yahoo/aggregated: Nvidia Posts Record $96.2B Revenue, Shares Jump on $108B Outlook
+- Yahoo: Nvidia's Valuation Just Hit Lows Not Seen Since 2019, Even as Its Profits Doubled
+- Yahoo: Amazon just tripled its order of Nvidia chips over surging demand
+- Yahoo: S&P 500 Edges Lower Despite Favorable NVIDIA Results and Stable Core PCE
+- _Corroboration:_ 盘后 tape (fetch_intraday): regular_close $209.95 -1.16%, post_close $219.53 +4.56%, session_high $226.25. Margin outlook reset 是财报前列的观察点,兑现。
+
+**Cross-assets.** SECTOR ETF +1.44% · SPY +0.07% · VIX 15.44 · 10Y 4.67 · WTI 82.13
+
+**Agent read.** Prediction 分裂裁决。事件层 (sell-the-news): FAILED — NVDA 大 beat + 盘后 +4.56% (峰值 +7.8%),好财报换来好反应,用户『beat 也不涨』未兑现。结构层 (de-rating regime): VALIDATED — 『利润翻倍估值创 2019 低』倍数压缩真实; 『S&P 不跟涨』好消息不普惠。综合: 需要营收翻倍+$108B 指引+AMZN 订单×3 的历史级 blowout 才换 +4.5% 克制反应 (正常 regime 该 +10-15%),且从 6 年估值低位起弹。用户方向 (regime de-rate) 对,量级 (beat 也不涨) 被这份财报绝对强度盖过。次日 (8/27) 开盘确认 post-market 是否 hold — 若盘后 +4.5% 到次日缩水/翻绿转跌,则事件层判断部分翻回成立。留意 margin outlook reset 电话会细节。
+ · [Snapshot](snapshots/2026-08-26.md)
+
+---
 ### 2026-08-20 · -0.53% day · ● minor
 **Tags:** `thesis_debate`, `prediction_recorded`, `macro_rates`
 **Confidence:** medium

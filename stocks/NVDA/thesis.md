@@ -72,3 +72,18 @@ Strong: $38B cash, minimal long-term debt, robust free cash flow (~$60B+ annuali
 **具体可证伪指标（截至2026-08-26）:**
 - 若 MU 30d涨幅 > NVDA 30d涨幅 → agent判断正确（semi弹性>NVDA）
 - 若 NVDA 涨幅领先 → 用户"难判断"的不确定性被市场解决，NVDA仍是急先锋
+
+### 2026-08-26  Q2 FY2027 财报裁决 — 两个到期判断打分
+
+**实际数字:** 营收 $96.2B 创纪录(~同比翻倍,逼近 $100B),下季 guidance $108B,Amazon 芯片订单翻三倍。盘后 +4.56%($219.53,峰值 $226/+7.8%),regular 先跌 -1.16%。margin outlook reset。
+
+**① debasement-regime prediction 打分(8/20 记录,score_date 今天):**
+- 预测:「鹰派 regime 里 beat 也 fail-to-rally」。
+- **事件层 = FAILED** — 大 beat + 盘后 +4.5%,好财报换来好反应。
+- **结构层 = VALIDATED** — 头条『利润翻倍,估值创 2019 年来新低』(倍数压缩真实);『S&P 微跌尽管 NVDA favorable + Core PCE 稳定』(好消息不普惠)。
+- **综合裁决:分裂。** 需要历史级 blowout(营收翻倍+$108B 指引+AMZN×3)才换来 +4.5% 克制反应,且从 6 年估值低位起弹——正常 regime 该 +10-15%。用户方向(regime 在 de-rate)对,量级(beat 也不涨)被财报绝对强度盖过。次日开盘确认 post-market 是否 hold。
+
+**② 7/30「急先锋/体积问题」debate 打分(评分日今天):**
+- 可证伪指标:MU 30d > NVDA 30d → agent(semi 弹性 > NVDA)对;NVDA 领先 → 用户/NVDA 仍是急先锋。
+- **实际:NVDA 30d +0.37% vs MU 30d -6.14% → NVDA 领先 6.5pp。**
+- **裁决:agent 判断 FAILED。** 这个 30d 窗口里 NVDA 是更好的持仓,MU 的"弹性"没兑现(MU 受利率/久期通道压制,基本面锁到 9/25)。用户"难判断"的不确定性 + NVDA 作为"AI 信仰指数"的稳态权重占了上风。教训:在鹰派 regime 里,高弹性(MU)= 高久期 = 更受利率压制,弹性优势只有在 risk-on 才兑现。
