@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPCX 隐性吸筹之谜 2026-08-27</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-08-27 13:12</div>
+<h1 id="spcx-2026-08-27">SPCX — 债务化压力下的隐性吸筹之谜 (2026-08-27)</h1>
+<blockquote>
+<p><strong>触发</strong>: 用户观察 —— SPCX 今天价格几乎没动 (<span class="up">+0.9%</span>),但感觉买盘很大、有大额资金入场,与「债务化压力下高久期标的该走弱」的预期相悖。要求深挖动静与影射,尽量印证。</p>
+<p><strong>一句话结论</strong>: 用户的<strong>微观结构直觉部分成立</strong>(收盘前确有大额吸筹痕迹),但<strong>「大买盘/放量」的总量证据不支持</strong>(全天成交仅 0.53× 均量)。真正值得注意的不是量,而是<strong>背后的叙事换轨</strong> —— NVDA 财报电话会把 SpaceXAI 认证为 Vera 芯片前三大客户 (~$5B/季),SPCX 正从「长久期故事股」被重定价为「AI 算力 hyperscaler + 硬资产垄断」,这两个重定价都把债务化从<strong>逆风翻成顺风</strong>。但 $28-67B 的年度自由现金流缺口是债务化 regime 下真实的融资脆弱性,不能忽视。</p>
+</blockquote>
+<hr>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><div class="tabs"><label class="tab-label" for="tabs1-0">Part 1 — 先验证前提:今天到底有没有「大买盘」?</label><label class="tab-label" for="tabs1-1">Part 2 — 为什么会被吸筹?叙事换轨(核心)</label><label class="tab-label" for="tabs1-2">Part 3 — 相关性的「变号」:最硬的间接印证</label><label class="tab-label" for="tabs1-3">Part 4 — 反面:债务化真正咬 SPCX 的地方(不能只讲多头)</label><label class="tab-label" for="tabs1-4">Part 5 — 净判断 &amp; 打分承诺</label></div><div class="tab-panel" data-tab-for="tabs1-0"><h3>总量:否。今天是<strong>低量日</strong>。</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">成交量</div><div class="value">54.0M</div><div class="note">vs 30d 均量 101.6M</div></div><div class="kpi"><div class="label">量比</div><div class="value">0.53×</div><div class="note">明显低于均量 — 不是放量日</div></div><div class="kpi"><div class="label">价格</div><div class="value">$140.87 / <span class="up"><span class="up">+0.89%</span></span></div><div class="note">regular <span class="up"><span class="up">+0.46%</span></span>, 全天窄幅</div></div><div class="kpi"><div class="label">52w 区间</div><div class="value">$104.83 – $225.64</div><div class="note">现价处中下部, 站上 MA50 (138.6)</div></div></div>
+<p><strong>按总量口径,今天不是大买盘日,而是安静日。</strong> 「大额资金入场」在聚合数据上不成立 —— 必须去分时找痕迹。</p>
+<h3>分时:是。<strong>收盘前出现大额吸筹斜坡 (MOC accumulation)。</strong></h3>
+<p>今天的分时结构很有故事性:
+- <strong>早盘走弱</strong>: 开 140.24 → 10:05 探全天低点 <strong>138.60</strong>(正好压在 MA50 138.57)。这正是「债务化该压制它」的表现 —— 早盘它确实弱。
+- <strong>尾盘买入斜坡</strong>: 15:50 单根 5 分钟 K 打出 <strong>171 万股</strong>,15:55 打出 <strong>200 万股</strong>,价格 140.02 → 140.94(<strong>最后 15 分钟约 <span class="up">+1%</span></strong>)。这是典型的 <strong>market-on-close / 收盘竞价吸筹</strong>形态。</p>
+<table class="compare"><thead><tr><th>时段</th><th>5m 成交量</th><th>价格行为</th><th>读法</th></tr></thead><tbody><tr><td>10:05 早盘低点</td><td>85万</td><td>探 138.60 (=MA50)</td><td>债务化式早盘走弱</td></tr><tr><td>盘中</td><td>60-70万/根</td><td>窄幅震荡修复</td><td>常规</td></tr><tr><td>15:50</td><td>171万</td><td>140.02→140.94</td><td>尾盘买入斜坡启动</td></tr><tr><td>15:55</td><td>200万</td><td>拉到 140.94</td><td>MOC 吸筹高潮</td></tr></tbody></table>
+<p><strong>判读</strong>: 低全天量 + 尾盘集中拉升,是<strong>大买家被动吸筹</strong>的指纹 —— 用 VWAP/收盘竞价执行以最小化冲击成本,不在日内主动扫单(所以总量不放大)。<strong>用户的直觉在微观结构层面成立</strong>;但严格说这是「收盘竞价失衡」信号,不是「放量」信号。措辞要精确:<strong>不是大买盘,是隐性吸筹。</strong></p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-1"><h3>影射①(最强):NVDA 财报电话会把 SpaceX 拉进「AI 算力赢家圈」</h3>
+<p>今天/昨天 NVDA 财报的新闻里,<strong>三条头条</strong>都在讲 NVDA-SpaceX 关系深化。WebFetch 实证细节 (Yahoo/Barron's, 2026-08-27):</p>
+<ul>
+<li><strong>SpaceXAI 是 NVDA 下一代 Vera CPU 的最早客户之一</strong>;NVDA CFO Colette Kress 在电话会上<strong>把「SpaceXAI」与 Oracle、AWS 并列点名</strong>为 Vera 的 lead partners。</li>
+<li>分析师 Gene Munster 估算 <strong>SPCX 约占 NVDA 本季营收 5%(上季约 3%)</strong> → 套用 $96.2B 季度营收 = <strong>约 $50 亿</strong>与 SpaceX 相关。</li>
+<li>SpaceX 现被视为<strong>「hyperscaler」级别、与 Meta/Amazon 同列</strong>,「明年 8GW 上线」。</li>
+<li><strong>太空数据中心</strong>: Vera Rubin NVL72 机架级系统计划 <strong>2027 Q4</strong> 搭 SpaceX 首代 <strong>Starmind 卫星</strong>入轨,2028 放量;AI1 卫星载 120kW(峰值 150kW)算力。</li>
+<li>双向关系: SpaceX 既是 NVDA 的地面大客户,又是把 NVDA 芯片送入轨道的运载方。<strong>非股权投资、非 JV —— 是客户/供应商 + 发射伙伴。</strong></li>
+</ul>
+<blockquote>
+<p><strong>这就是关键联动</strong>: 今天点火整个 AI 硬件链的「需求被 NVDA 确认」逻辑(NVDA <span class="up">+9%</span> / AVGO <span class="up">+3.6%</span> / TSM <span class="up">+2.3%</span>),同一天把 SPCX 也拉进了下游受益名单。在 AI-capex 交易狂欢日,SPCX 不再是久期受害者,而是 AI 算力 hyperscaler 的一员 —— <strong>在 NVDA 点名日尾盘吸筹 SPCX,是一个连贯、有意的仓位布局。</strong></p>
+</blockquote>
+<h3>影射②(债务化 HEDGE 翻转):$100B 路易斯安那 Starbase + 轨道数据中心</h3>
+<p>今天(8/27)另一条头条: <strong>SpaceX 宣布 $100B 投资建最大航天港 Starbase Louisiana</strong>(Simply Wall St 评论,非一手报道,<strong>信心中等</strong>):
+- 三支柱: 发射能力 + 连接 + <strong>算力</strong>(含 <strong>NVDA 芯片驱动的轨道 AI 数据中心</strong>)。
+- 2027 起运营,目标「每天多次发射」cadence,数千就业。</p>
+<blockquote>
+<p><strong>这直接回答用户的债务化悖论。</strong> 债务化 regime 里,资金<strong>轮入实物资产 / 垄断基础设施 / 有定价权的现金流</strong>,轮出纯金融的长久期承诺。SpaceX 同时拥有<strong>实物资产底座</strong>(卫星/发射/航天港,75% 的在轨可机动卫星)<strong>和现金引擎</strong>(Starlink 2025 运营利润 $4.4B)。市场可能开始把 SPCX 当<strong>债务化对冲</strong>(实物垄断)而非<strong>债务化受害者</strong>(不盈利久期故事)来定价 —— 这正是它没有走出用户预期弱势的原因。</p>
+</blockquote>
+<h3>影射③(操作性催化):Starship 接棒 Falcon 9</h3>
+<ul>
+<li>8/25 佛州最后一班 Falcon 9 Starlink 发射,「一个时代的结束」;佛州 Starlink 转由 Starship 承担,目标<strong>本十年末年发射 1 万次</strong>。</li>
+<li>但<strong>塔架回收(tower catch)被 Musk 推迟数月</strong> —— cadence 目标激进,近期商业就绪日期未给。</li>
+<li>读法: 对 bull-case 关键变量(Starship 货运 cadence)是<strong>去风险信号</strong>,但仍是「进展中」不是「兑现」。</li>
+</ul>
+<h3>影射④(小,非驱动):代币化</h3>
+<ul>
+<li>Dialectic (Ryan Zurrer) 把 SPCX 代币化 + DeFi 收益,可在 Coinbase 交易,称当前回调是「代际机会」。</li>
+<li><strong>但代币化市场很小</strong>(Robinhood CEO: 普通股票流水 &gt;&gt; 整个代币化市场)。<strong>不是今天吸筹的来源</strong>,记一笔即可。</li>
+</ul>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-2"><p>历史归因(在册)对照:</p>
+<table class="compare"><thead><tr><th>日期</th><th>SPCX</th><th>当日 AI-capex</th><th>关系</th></tr></thead><tbody><tr><td>2026-06-22</td><td>−10.78%</td><td>mega-cap 抛售 (GOOG−6/AMZN−4.8)</td><td>SPCX 随 AI 久期一起跌 = 久期受害者</td></tr><tr><td>2026-08-27</td><td><span class="up"><span class="up">+0.9%</span></span> (5d +5.1 / 30d +7.4)</td><td>NVDA <span class="up"><span class="up">+9%</span></span> 领涨</td><td>SPCX 随 AI 链一起涨 = 算力受益者</td></tr></tbody></table>
+<blockquote>
+<p>6/22 时 SPCX 是「AI 久期篮子」的一部分,capex 恐慌时一起被砸(还叠加自身 notes offering + $6.3B Reflection AI compute 单)。今天镜像反转 —— <strong>AI-capex 狂欢时它跟涨,相关性从负向修复为正向。</strong> 这是「从久期受害者→算力受益者」重定价最硬的间接证据,不依赖任何单一头条。</p>
+</blockquote>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-3"><p>按 pressure-test 规则,必须把反证也摆足:</p>
+<ol>
+<li><strong>现金焚烧是债务化 regime 的真实软肋。</strong> Fool 数据: FY2025 净亏 ~$50 亿,<strong>自由现金流 FY2025 约 −$14B,FY2026 预计 −$28B,2027 −$67B</strong>。一家年烧 $28-67B 的公司需要<strong>持续融资</strong> —— 高利率债务化 regime 下,$67B 年缺口的融资成本上升,这正是 6/22 那笔 notes offering 的背景。<strong>这是「买盘该谨慎」的一面</strong>: 再融资/增发一旦落地就是稀释与抛压。</li>
+<li><strong>NVDA 电话会当天并没有拉动股价。</strong> Barron's 明说 SpaceX 的提及「不足以给股价提振」。所以吸筹(若属实)是<strong>前瞻布局</strong>,不是对催化的即时抢筹反应 —— 别把它读成「机构已确认踩踏进场」。</li>
+<li><strong>12/9 lockup 供给悬顶未变。</strong> 重定价叙事不消除解禁抛压;$140 现价距 IPO 高位 $225 已 −38%,基础是弱的。</li>
+<li><strong>估值仍极端。</strong> $1.9T 市值 / 64.5× P/S / 无正 EPS。重定价叙事若被 lockup 供给或一次稀释性融资打断,估值毫无安全垫。</li>
+<li><strong>累积监管暴露。</strong> xAI→X 的官司流入 SPCX 风险面(NY 反仇恨言论法,$15k/违规/天),单体影响小但累积。</li>
+<li><strong>新供给竞争同一池资金。</strong> Anthropic 9 月可能 IPO(「估值比 SpaceX 更激进」),AI 一级/新股供给放量会分流边际资金。</li>
+</ol>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-4"><p><strong>对用户观察的裁决:</strong>
+- 「买盘很大 / 大额资金入场」—— <strong>总量口径证伪</strong>(0.53× 低量);<strong>微观结构口径部分成立</strong>(尾盘 MOC 吸筹斜坡)。精确措辞: <strong>隐性吸筹,非放量。</strong>
+- 「债务化下该走弱却没有」—— <strong>有真实原因</strong>: AI 算力重定价(NVDA 点名)+ 硬资产重定价($100B 实物基建)双重把债务化翻成顺风。用户「感觉有事」的直觉<strong>方向成立</strong>。
+- <strong>但</strong>: 债务化真正的咬点在<strong>融资端</strong>(−$67B FCF),不在估值端;这个风险被今天的 AI 叙事暂时盖住,不代表消失。</p>
+<p><strong>可证伪的对赌 (thesis_debate,挂 scoring date):</strong>
+- <strong>用户隐含预测</strong>: 债务化压力最终压制 SPCX,吸筹是噪声。
+- <strong>Agent 反方</strong>: SPCX 已从「久期受害者」重定价为「AI 算力 + 实物垄断」,债务化对它是顺风;它会 hold/走强,<strong>直到 12/9 lockup 供给或一次稀释性大额融资</strong>把重定价叙事撞回现金焚烧现实。
+- <strong>Scoring date 1 — 2026-09-25</strong>(现有 prediction 评分窗 + 若有 Q3 财报/融资披露): 看吸筹是否延续 + 有无融资事件。
+- <strong>Scoring date 2 — 2026-12-09 (lockup)</strong>: 决定性 —— AI 算力重定价能否扛过解禁供给冲击。若能 hold(不跌破 $120),Agent 反方成立;若破位回 $110 下方,用户债务化压制成立。</p>
+<p><strong>Sources</strong>: NVDA 财报关系 (Yahoo/Barron's 2026-08-27, WebFetch 实证 Vera/SpaceXAI/Munster 5%/$5B/Starmind Q4'27), $100B Louisiana (Simply Wall St 评论,信心中等), Starship 接棒 (Yahoo, 8/25 末班 Falcon 9), 估值/FCF (Motley Fool 2026-08-27: $1.9T/64.5× P/S/FCF −$28B→−$67B/FY26 rev $39B), 代币化 (Yahoo video, Dialectic/Coinbase, 量小), 监管 (Yahoo, NY 法/xAI-X 结构), 分时 (fetch_intraday 5m 实测 MOC 斜坡)。<strong>数据限制</strong>: SPCX 期权链 null(拿不到期权流),13F/实时机构流非免费 —— 无法进一步确认吸筹方身份。<strong>印证到此为止。</strong></p></div></div>
+</body>
+</html>
