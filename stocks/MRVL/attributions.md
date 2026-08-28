@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-28 · -10.32% day · ▼ major
+**Tags:** `earnings_print`, `guidance_raise`, `macro_rates`, `sector_rotation`, `prediction_passed`
+**Confidence:** high
+
+**Primary cause.** Q2 FY27 财报 beat+raise (data center 强劲, 指引上调到~50%增长, AWS Trainium ramp 兑现) 仍暴跌 -10.3% —— 教科书 sell-the-news, 三链叠加: (1)估值链: 年内曾+196%好消息已 priced in, 达预期≠超预期; (2)regime链: Warsh 同日 Jackson Hole 抬升利率预期, 10Y 逼近52w高, 鹰派下高倍数不再享受降息加成, 好财报换不来 rally 反触发倍数压缩; (3)稀释链: 8/19 Google $12B 订单 warrant 稀释担忧前置压制, 财报未彻底盖过。跌幅超普通财报(-10% vs ±5%)因宏观(高预期+高久期双杀)+光网络板块级估值重定叠加。现价$217从 base($330-350)贴近 bear($180)=基本面交出base但倍数压到bear定价。
+
+**Sources.**
+- : 
+- {"type": "reverse_check", "note": "AVGO \u540c\u65e5\u4ec5 -1.2% \u672a\u5927\u8dcc \u2192 \u975e\u7eaf ASIC \u677f\u5757\u5d29, \u662f MRVL \u4e2a\u80a1\u9ad8\u9884\u671f+\u5149\u7f51\u7edc\u677f\u5757\u4f30\u503c\u91cd\u5b9a"}
+- {"type": "prediction_score", "note": "\u8bc4\u5206 8/21 \u8bb0\u5f55\u7684 prediction (score_date 8/27): \u4e8c\u5143\u88c1\u51b3\u7b2c\u4e8c\u5206\u652f(sell-the-news, \u9e70\u6d3e regime \u597d\u8d22\u62a5\u2260\u597d\u53cd\u5e94)\u5750\u5b9e \u2192 PASSED\u3002\u7ee7 NVDA 8/26 \u4e4b\u540e\u540c\u4e00 regime \u5224\u65ad\u7b2c\u4e8c\u6b21\u72ec\u7acb\u786e\u8ba4\u3002"}
+
+**Cross-assets.** SPY -0.19% · VIX 14.46 · 10Y 4.71 · AVGO -1.22% · NVDA -3.31% · DXY +0.47%
+
+**Agent read.** high 质量归因。3天内第二只 AI 芯片好财报被卖(继 NVDA)。距 break $200 缓冲仅+8.7%(warn区)。9/3 AVGO 是芯片端 de-rating 三连的决定性第三探针。
+
+
+---
 ### 2026-08-21 · -5.33% day · ▼ material
 **Tags:** `secondary_offering`, `competitor_news`, `earnings_pre_print`
 **Confidence:** high

@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-28 · +3.33% day · ▲ material
+**Tags:** `sector_rotation`, `ai_demand`
+**Confidence:** medium
+
+**Primary cause.** 逆势领涨大型科技, 今日'卖铲子(MRVL/NVDA -3~10%)↔买铲子(hyperscaler +1~3%)'干净轮动的最纯标的: (1)轮动主因: 鹰派+AI资本回报被质疑('AI Bubble Could Be Ready to Pop')下, 资金从高估值靠叙事的芯片端轮向有现金流地板+AI已在AWS变现的买铲子端; AMZN fwd P/E 25.5x 远低于芯片端; (2)AI叙事辅因: 'Amazon AI Investments Creating a Whole New Business Model' 给 AWS AI 变现单独定价 + 近1GW瑞典风电强化自建AI基础设施闭环故事。
+
+**Sources.**
+- : 
+- _Corroboration:_ MSFT+2.05%/GOOG+1.79%/META+0.94% 同涨 + 芯片端同跌 → confirm 板块轮动非 AMZN 个股独立事件
+
+**Cross-assets.** SPY -0.19% · VIX 14.46 · 10Y 4.71 · MRVL -10.32% · MSFT +2.05%
+
+**Agent read.** medium: sector rotation 主驱动+AI叙事辅助非硬催化。验证点 10/29 Q3: AWS 营业利润率(~39%)是折旧压EPS空头论点第一检查点。轮动来的相对强势, 鹰派缓解可能反向。
+
+
+---
 ### 2026-07-31 · +14.99% day · ▲ extreme
 **Tags:** `earnings_print`, `guidance_raise`, `ai_demand`, `executive_comment`
 **Confidence:** high

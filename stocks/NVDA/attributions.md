@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-28 · -3.31% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`, `competitor_news`
+**Confidence:** medium
+
+**Primary cause.** 低量(vol 0.75x)被动下跌, 无公司新利空, 两个外生因子: (1)久期回吐主因: Warsh 鹰派→10Y 逼近52w高→最高久期 AI 龙头随折现率上升被压; 同日 gold/silver/BTC 齐跌确认是'高久期/非美元资产被利率洗'的宏观通道; (2)MRVL read-across: MRVL beat+raise 仍暴跌-10% 把'好财报被卖'情绪传导到芯片端, 'End of the Lag 7?' 叙事质疑龙头估值溢价。财报已于8/26过、大beat确认, 5d仍+2.7%, 故今日非主动抛售是板块久期洗盘被动跟跌。
+
+**Sources.**
+- : 
+- {"type": "reverse_check", "note": "vol 0.75x \u4f4e\u91cf + \u65e0\u4e2a\u80a1 headline \u2192 \u786e\u8ba4\u88ab\u52a8\u8ddf\u8dcc\u975e\u4e2a\u80a1\u4e8b\u4ef6"}
+
+**Cross-assets.** SPY -0.19% · VIX 14.46 · 10Y 4.71 · DXY +0.47% · MRVL -10.32% · AVGO -1.22%
+
+**Agent read.** medium: 宏观久期+板块 read-across 驱动非公司特定。距 break $150 缓冲+47%无近端风险。9/3 AVGO + 9/11 CPI 决定久期压力去向。
+
+
+---
 ### 2026-08-27 · +9.19% day · ▲ major
 **Tags:** `earnings_post_print`, `guidance_raise`, `prediction_failed`, `m_and_a`
 **Confidence:** high

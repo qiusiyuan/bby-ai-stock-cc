@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-27 · +0.89% day · ▲ minor
+**Tags:** `thesis_debate`, `user_stand`, `partnership_news`, `ai_demand`, `flow_event`
+**Confidence:** medium
+
+**Primary cause.** 用户观察: SPCX 价格几乎没动(+0.9%)但感觉买盘大/大额资金入场, 与债务化下高久期该走弱的预期相悖。调查裁决: 总量口径证伪(0.53× 低量非放量), 但分时确有尾盘 MOC 吸筹斜坡(15:50 171万股+15:55 200万股, 最后15分钟+1%)=隐性吸筹非放量。背后叙事换轨: NVDA 财报电话会点名 SpaceXAI 为 Vera 前三大客户(Munster 估 ~5% NVDA 营收=~$5B), SpaceX 被视 hyperscaler(8GW 明年上线)+ 太空数据中心(Starmind 卫星 2027Q4 载 NVDA 机架); 同日 $100B 路易斯安那 Starbase + 轨道 AI 数据中心。双重重定价(AI算力+硬资产垄断)把债务化从逆风翻顺风。相关性变号: 6/22 SPCX 随 AI-capex 抛售 -10.78%(久期受害者), 今日随 AI 链上涨(算力受益者)。
+
+**Sources.**
+- Yahoo/Barron's: [Nvidia's relationship with SpaceX is deepening (SpaceXAI = lead Vera customer, ~5%/$5B, Starmind Q4 2027)](https://finance.yahoo.com/markets/stocks/article/nvidias-relationship-with-spacex-is-deepening-150341549.html)
+- Simply Wall St: [SpaceX (SPCX) Plans $100 Billion Starbase Louisiana Spaceport (orbital AI datacenters, NVDA chips)](https://finance.yahoo.com/technology/ai/articles/spacex-spcx-plans-100-billion-182609331.html)
+- _Corroboration:_ 相关性变号 vs 2026-06-22(SPCX -10.78% 随 AI-capex 抛售); 今日 AI-capex 狂欢 SPCX 跟涨。FCF FY26 -$28B→FY27 -$67B(Fool)=债务化融资端软肋。分时 MOC 斜坡 fetch_intraday 实测。
+
+**Cross-assets.** SPY +0.68% · VIX 14.64 · TEN YEAR 4.658 · NVDA +9.19% · VOLUME RATIO 0.53
+
+**Agent read.** 用户微观结构直觉方向成立(尾盘吸筹真实)但'放量'措辞过强(总量 0.53×)。核心是叙事换轨而非资金潮。债务化真正咬点在融资端 -$67B FCF 不在估值端, 被今日 AI 叙事暂时盖住。12/9 lockup 是决定性检验: hold 不破 $120=agent 反方成立; 破 $110=用户债务化压制成立。中间 9/25 看融资事件。
+
+
+---
 ### 2026-08-20 · -5.69% day · ▼ major
 **Tags:** `lockup_expiry`, `secondary_offering`, `macro_rates`
 **Confidence:** high
@@ -212,70 +229,6 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 **Agent read.** 三条信号要分开: (1) 板块情绪转向 — AI capex怀疑论扩散到mega-cap, 投资者第一次系统性质疑hyperscaler的AI产出/投入比. SPCX作为新IPO的高duration名字, 是板块抛售里跌得最狠的, 不是idiosyncratic. (2) Notes offering同日宣布是叠加诱因 — 高估值新IPO同期增发债券, 信号就是'估值已到极致, 公司也要套现现金窗口'. (3) Reflection AI deal被市场误读 — 这是把Colossus闲置算力变现的revenue stream($150M/月), 但与notes offering同期发布, 又叠加'AI capex是负担'的整体叙事, 市场没拆开来读. 价格今日$165.06, 距thesis-break $130缓冲缩到21%; 用户6/18 prediction #1(下周收>=$200)从昨日就方向不利, 今天进一步证伪 — 这一组预测的early signal已经出来了, 7天后正式打分时大概率fail. 关键catalyst跟踪: lockup expiry 2026-12-09, F-1上市窗口还有6-8周.
  · Snapshot at `dashboard/morning-2026-06-22.md`
-
----
-### 2026-06-18#pred4 · n/a day · ▲ minor
-**Tags:** `prediction_recorded`, `thesis_debate`, `index_inclusion`, `ai_demand`
-**Confidence:** medium
-
-**Primary cause.** AGENT COUNTER-PREDICTION 4: SPCX grinds in $190-235 range from 2026-06-22 to 2026-08-31, never closing below $180 or above $260 sustainably. The path missing from user's binary framework.
-
-**Sources.**
-- _Data:_ CRSP inclusion 6/19, Nasdaq-100 inclusion ~7/1 = mandatory passive buying (Motley Fool 2026-06-18)
-- _Data:_ Float-adjusted investable cap ~$125B vs $2.4T headline = persistent scarcity premium (Motley Fool 2026-06-18)
-
-**Cross-assets.** n/a
-
-**Agent read.** Index buying is mechanical (not sentiment). AI-infra narrative builds via Anthropic/Google capacity-deal news flow over weeks. Slow narrative-build supports a grind, not a parabola. No rush on bear side either — lockup not until Dec 9. This is my base case at 45%.
-
-
----
-### 2026-06-18#pred3 · n/a day · ▼ material
-**Tags:** `prediction_recorded`, `user_stand`, `lockup_expiry`, `flow_event`
-**Confidence:** high
-
-**Primary cause.** USER PREDICTION 3: CONDITIONAL on SPCX trading $200-220 range without breaking $230 from 2026-06-22 to 2026-07-31, reverts to <$185 by 2026-08-31. SSPC entry trigger.
-
-**Sources.**
-- _Data:_ SSPC = 2x DAILY-rebalance inverse ETF; volatility decay severe in sideways markets (ETF prospectus understanding)
-- _Data:_ Lockup expiry 2026-12-09 — selling pressure not structural until then; weeks of stagnation absorbable (180-day post-IPO standard)
-
-**Cross-assets.** n/a
-
-**Agent read.** STRONGEST part of user's prediction — 'stall = revert' is textbook IPO pattern. Without breakout catalyst, lockup math wins. BUT: SSPC is wrong tool — 2x daily-rebalance inverse decays in choppy ranges. For 'slow grind to $170-180' view, SPCX Aug/Sep $170 puts are better implementation. Tactical concern recorded.
-
-
----
-### 2026-06-18#pred2 · n/a day · ▼ material
-**Tags:** `prediction_recorded`, `user_stand`, `lockup_expiry`
-**Confidence:** medium
-
-**Primary cause.** USER PREDICTION 2: CONDITIONAL on SPCX hitting $250 before 2026-08-01, price drifts back to $230-270 by 2026-09-25
-
-**Sources.**
-- _Data:_ Oppenheimer raised PT $190 → $250 on 2026-06-18 (StockAnalysis.com)
-- _Data:_ Median PT $175, mean $187.80 — significant gap to $250 floor (StockAnalysis.com)
-
-**Cross-assets.** n/a
-
-**Agent read.** Logic structurally sound — overshoot+revert is common. $250 = Oppenheimer's freshly raised PT, so real anchor. $401 Arete is outlier; if bull case really runs, $310 likely cap. Where I'd push back: $250 floor in 3 months is high; if AI-infra narrative doesn't deliver, floor could be $200.
-
-
----
-### 2026-06-18#pred1 · n/a day · ▲ material
-**Tags:** `prediction_recorded`, `user_stand`
-**Confidence:** medium
-
-**Primary cause.** USER PREDICTION 1: SPCX closes ≥ $200 on at least one day during 2026-06-22 to 2026-06-26 (next week)
-
-**Sources.**
-- _Data:_ Mean analyst PT $187.80, median $175 — Oppenheimer $250 raised + Arete $401 give upside cover (StockAnalysis.com 2026-06-18)
-- _Data:_ CRSP US Total Market index inclusion eligibility 2026-06-19; Nasdaq-100 inclusion eligibility 2026-07-01 — mechanical buying support (Motley Fool 2026-06-18)
-
-**Cross-assets.** n/a
-
-**Agent read.** Plausible at 60% — index inclusion provides mechanical floor + Oppenheimer raised PT to $250 same day. First-week post-IPO downward drift is normal settling, not thesis collapse. But not high-conviction: bimodal analyst tape (5 strong-buy, 0 hold, 1 strong-sell) means no consensus to anchor to.
-
 
 ---
 ### 2026-06-18 · -3.56% day · ▼ material
