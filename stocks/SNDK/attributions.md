@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-31 · +5.02% day · ▲ material
+**Tags:** `memory_pricing`, `executive_comment`, `sector_rotation`, `commodity_move`
+**Confidence:** medium
+
+**Primary cause.** 内存短缺的官方时间表被延长了两到三年, SNDK 是复合体内弹性最高的标的因此领涨。两条同日消息: (1) SK Hynix CEO 在 $40 亿印第安纳 HBM 工厂动工时公开警告内存短缺将持续到 2030 年; (2) 报道称 Samsung 已锁定其 HBM 产能到 2031 年的 70%。对照工作区 7/31 的记录 — 当时短缺被 Samsung 官方延长到 2028 — 时间表在一个月内从 2028 推到 2030-2031。这是供给侧信息, 同时抬高未来多年的价格假设与确定性, 因此能在折现率上升时仍推高现值。全 cluster 同向: MU +2.53%, SKHY +2.34%, DRAM +1.78%, 而 SNDK +5.02% 幅度最大 (NAND/HBF 弹性最高 + fPE 5.9 最低)。
+
+**Sources.**
+- Yahoo Finance: SK Hynix CEO Warns Memory Shortage Will Persist Through 2030 as Chipmaker Builds $4 Billion Indiana Fab
+- Yahoo Finance: The Memory Shortage Isn't Close to Ending — Samsung Just Locked Up 70% of HBM Capacity Through 2031
+- Yahoo Finance: SK Hynix (NasdaqGS:SKHY) Breaks Ground On $4 Billion Indiana HBM Facility
+- _Corroboration:_ 全 cluster 同向确认为板块驱动而非个股 alpha: MU +2.53%, SKHY +2.34%, DRAM ETF +1.78%。但成交量全部低于均量 (SNDK 0.69x, MU 0.51x, SKHY 0.35x, DRAM 0.28x) — 涨幅是消息驱动的重定价, 没有配置资金确认。ETF 量能最低 (0.28x) 是配置资金缺席的直接证据。反例: Samsung 自己约 -2.3% (5d -7.6%, 30d -7.0%) 独跌, 尽管锁定 70% HBM 产能的好消息主角就是它 — 四绿一黑判据指向 Samsung 公司层面问题而非 HBM 周期。
+- _Corroboration:_ 本日发生在 10Y 升至 4.76% (逼近 52 周高位) 的同时。这不违反 7/31 记录的 SMH『半导体约束是折现率』预测 (今日机械判定 PASSED) — 该预测的原始 agent_read 已写明例外条件: 『除非出现新维度的信息 (例如供给侧而非需求侧的数据点)』。短缺延长三年正是该例外。
+
+**Cross-assets.** SPY -0.35% · VIX 15.01 · TEN YEAR 4.76 · WTI 85.94 · SECTOR ETF +1.78%
+
+**Agent read.** 这条归因的主要价值是建立 11/4 评分卡的基线。SNDK 的 earnings_watchlist 声明是『从 NAND 周期股 re-rate 为结构性现金牛』, 而今天的上涨来自周期性供需消息 (短缺延长), 不是结构性现金流证据 — 两者需要严格区分, 否则 11/4 打分时会把周期上行误算作结构验证。第二个要点: 涨幅真实但资金确认缺失 (全 cluster 量能 0.28-0.69x, ETF 最低)。一个『短缺延长三年』量级的消息若被真正相信, 应看到配置资金进场尤其是 ETF; 没有看到。月末清淡 + 长周末前的流动性环境解释了一部分, 但仍应把今天视为消息驱动重定价而非仓位建立。第三: 今天成立的机制是供给侧新信息这个明确的例外条件被触发, 不是折现率通道失效 — 把例外读成规律会在下一个无消息的加息日重新受伤。验证今天涨幅真实性的最有用指标不是价格而是 DRAM ETF 成交量能否回到 1x 以上; 最有信息量的解锁点是 9/25 MU 财报 (cluster 内唯一能把『短缺到 2030』换成可验证数字的标的, 看 HBM QoQ 是否 ≥+20% 及 FY27 指引语气)。风险线索: CXMT (长鑫存储) 中国扩产是短缺叙事的主要反证来源。距 thesis-break $1,200 缓冲 +30.0%。
+ · Snapshot at `dashboard/2026-08-31.md`
+
+---
 ### 2026-08-19 · -3.50% day · ▼ material
 **Tags:** `sector_rotation`
 **Confidence:** low

@@ -4,6 +4,27 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-31 · +5.55% day · ▲ material
+**Tags:** `production_milestone`, `regulatory_positive`, `tech_breakthrough`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** Cybercab 进入德州 robotaxi 实际车队名单 + 本周将举行 Cybercab/Robotaxi 发布会。推理链两步: 行政登记比发布会承诺更硬 → 市场提前买入发布会。盘中形态确认为持续买盘而非消息脉冲 (开盘 $347.15, 第一小时冲至 $363.89, 全天缓升收 $367.92, regular +5.98%, 盘后 -0.14%)。全场唯一放量 (1.3x, 其余标的普遍 0.4-0.7x)。重要的是这次涨幅打在论点核心上: thesis.md 反向 DCF 显示不含自动驾驶变现时仅汽车业务值 $150-200, 约 $250/股是自动驾驶期权费 — 而 Cybercab 正是该期权的标的物。次要因素: Model 3 入门款降价 8.5% (与 Cybercab 同向, 都指向需求与量, 但降价对毛利率是负面且盘中非公告脉冲, 不足以单独支撑 +5.5%)。放大因素两条: 月末清淡流动性 (全场 0.4-0.7x) 放大位移; Musk 主题联动 (SPCX 同日 +1.53%, IBD 标题 'Elon Musk-Led SpaceX, Tesla Rally')。另注约 1.7pp 只是收复上周五 8/28 的下跌 ($354.81 → 约 $348.7)。
+
+**Sources.**
+- Stocktwits via Yahoo: TSLA Stock Jumps as Cybercabs Hit Texas Robotaxi Roster Ahead Of Launch Event
+- Motley Fool via Yahoo: Stock Market Today, Aug. 31: Tesla Stock Surges on Cybercab Event Anticipation
+- Investor's Business Daily via Yahoo: Tesla Tops S&P 500. Was It Cybercab Buzz, Or Elon Musk's New FSD Tease?
+- Investor's Business Daily via Yahoo: Dow Jones Futures: Trump's Iran Warning Sparks Stock Market Losses; Elon Musk-Led SpaceX, Tesla Rally
+- Barron's via Yahoo: Tesla Just Cut the Model 3 Entry Price by 8.5%
+- _Corroboration:_ 逆向检验否证竞争性解释。媒体流传的替代归因是 Yahoo 'Tesla Jumps 4% as Oil Climbs to $86: Is the Gas-Price Trade Back?' (油价 +3.06% → 汽油贵 → 电车划算)。横截面直接否证: 四家纯电同业无一上涨 — LCID -2.71%, NIO -2.97%, BYDDY -3.24% (全球电动车销量第一, 跌幅最大), RIVN +0.01%; 传统车厂 F +0.43%, GM +0.03% 基本没动。同一宏观催化下同业不跟随 = 该催化不是驱动因素, 驱动是个股特有的 (与工作区『四绿一黑』判据同逻辑, 方向相反)。工作区历史上从未记录过油价→TSLA 的正向传导 (已有的 macro_oil + geopolitical_war 条目全部指向 SU/CVX/CNQ/HXE.TO)。
+- _Data:_ 盘中数据由 fetch_intraday.py 5m bars 取得; 同业 1D% 由 5m intraday bar 重建真实日收盘 (上游 yfinance 日线缺失 2026-08-28 bar) ()
+
+**Cross-assets.** SPY -0.35% · VIX 15.01 · TEN YEAR 4.76 · WTI 85.94
+
+**Agent read.** 关键结论有两条。第一, 归因必须靠横截面而非时间巧合: 油价故事与 TSLA 上涨同日发生且逻辑自洽, 但四家纯电同业无一上涨直接否证它。这条的实践代价很具体 — 采信油价归因会让人去盯 WTI 和美伊谈判, 完全错过真正该盯的发布会内容; 两种归因指向完全不同的仪表盘。第二, 与之前的直觉相反, 这次上涨打在了论点的核心而非周期噪音上: TSLA 的 170x fPE 里约 $250/股是自动驾驶期权费, 而 Cybercab 进入德州车队名单正是该期权的标的物。但买的仍是预期 — 行政登记不等于商业运营, 没有接单量与安全记录。风险: 8 月已有三次『好消息换不来上涨』(NVDA 8/26 首日 -1.16%, MRVL 8/27, MRVL 8/28 beat+raise 却 -10%), 发布会面临同构的 sell-the-news 风险。证伪条件: 发布会若只有演示与时间表承诺而无可验证运营数据 (车辆数/覆盖区域/付费里程/许可范围), 则今天涨幅大概率回吐。反向证伪本归因的条件: 若未来某日 WTI 大跌而 TSLA 同步大跌且 LCID/NIO/BYDDY 同向, 说明汽油交易通道确实存在。另需跟踪 Model 3 降价 8.5% 的代价 — 10 月 Q3 交付量之后若出现『销量达标但汽车毛利率继续下滑』, 对 170x fPE 是实质打击。距 thesis-break $250 缓冲 +47.2%, 今天不消耗 runway; 30 日仍 -3.26%, 7/22 财报后的 $319 坑未填平。
+ · Snapshot at `dashboard/2026-08-31.md`
+
+---
 ### 2026-08-21 · +5.07% day · ▲ material
 **Tags:** `production_milestone`, `regulatory_positive`, `safety_recall`
 **Confidence:** high

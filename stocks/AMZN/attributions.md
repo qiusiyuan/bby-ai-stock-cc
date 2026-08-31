@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-31 · -2.18% day · ▼ minor
+**Tags:** `regulatory_negative`, `policy_us`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** FTC 联合 22 个州起诉 Amazon, 指控其通过隐秘广告附加费 (secret ad surcharge / deceptive advertising) 取得约 $200 亿。报道称这是 AMZN 一个多月来最差单日。攻击对象是 AMZN 近年利润率最高的增长引擎之一 — 广告业务。这条与同日 GOOG 的下跌 (OpenAI 广告业务年化收入达 $10 亿) 构成一条更大的主线: 数字广告利润池同时被监管与新竞争者两端攻击, 而这个利润池是 GOOG/META/AMZN 三家的共同支柱 (META 同日 -1.12%, 30d -11.4% 与之一致)。
+
+**Sources.**
+- Yahoo Finance: US trade regulator and 22 states accuse Amazon of taking $20bn with secret surcharges
+- Yahoo Finance: FTC and 22 states sue Amazon over alleged secret ad surcharge scheme
+- Yahoo Finance: AMZN Stock On Track For Worst Day In Over A Month as FTC Reportedly Prepares Ad-Price Lawsuit
+- Yahoo Finance: Amazon Drops Over 2% as a 4.75% Yield Reprices Its AI Buildout
+- _Corroboration:_ 同日 GOOG -1.99% 的催化是独立的但打向同一利润池: 'Alphabet Slides 2.7% as OpenAI's Ad Run Rate Hits $1 Billion'。两条催化没有共同原因却指向同一个地方 (数字广告), 这是把今天的 hyperscaler 下跌与久期/capex 叙事区分开的关键。对照: 同日卖铲子一端收平或收涨 (NVDA +1.32%, AVGO +0.49%, INTC +0.07%), 若是久期轮动则方向应相反。MSFT -1.28% 无个股催化, 更像回吐 30d +28.9% 的一部分。
+
+**Cross-assets.** SPY -0.35% · VIX 15.01 · TEN YEAR 4.76 · WTI 85.94
+
+**Agent read.** 核心判断: 今天 hyperscaler 的下跌不是 AI capex 叙事转向也不是久期轮动, 而是两个独立的公司级事件都打在广告利润池上。这个区分有具体的实践后果 — 若误读为利率/久期问题, 推论会是『等 CPI 或 FOMC 缓解就修复』, 但 FTC 诉讼与 OpenAI 广告份额都不受 Fed 影响, 该盯的仪表盘完全不同。第二个要点: 广告是 AMZN 利润率最高的增长引擎之一, 监管攻击的是定价实践本身而非规模, 因此即使胜诉也可能被迫改变披露与计价方式, 影响是结构性的而非一次性罚款。下一个检查点是 10/29 Q3 财报 — 原本的关键指标是 AWS 营业利润率 (~39%) 与 $2,200 亿 capex 开始交答案, 现在加了一个新维度: 广告业务的收入与利润率是否已受诉讼影响, 以及管理层如何量化法律风险敞口。需要留意 30d 仍 +5.5%, 今天的跌幅没有改变中期位置; 距 thesis-break $185 缓冲仍大 (当前 $260.57, +40.8%)。
+ · Snapshot at `dashboard/2026-08-31.md`
+
+---
 ### 2026-08-28 · +3.33% day · ▲ material
 **Tags:** `sector_rotation`, `ai_demand`
 **Confidence:** medium

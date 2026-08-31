@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-08-31 · -2.25% day · ▼ minor
+**Tags:** `earnings_post_print`, `flow_event`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** 8/27 beat+raise 财报后连续第三个交易日下跌, 5d -11.89%。今天的新信息是: 在半导体板块普涨的背景下 MRVL 独跌 — 同日 SNDK +5.02%, MU +2.53%, SKHY +2.34%, NVDA +1.32%, AMD +1.14%, AVGO +0.49%。这意味着卖压已从板块效应转为个股层面的持续压力。消息面今天全部偏正面且与股价方向脱节: 'Could Marvell Be the Next $100 Billion AI Stock?', 'Marvell and Google: Misplaced Fear Should Drive Your Purchase Decision', 分析师看 +34.31% 上行空间。催化剂与价格背离通常指向仓位驱动而非观点驱动的卖出 — 即财报后的持仓再平衡/减仓仍在进行, 而不是有新的坏消息。距 triggers.yaml 的 thesis_break_price $200 只剩 +5.9% 缓冲 (8/28 时为 +8.7%, 三个交易日收窄 2.8pp)。
+
+**Sources.**
+- _Data:_ MRVL $211.73, 1d -2.25%, 5d -11.89% (由 5m intraday bar 重建真实日收盘; 上游 yfinance 日线缺失 2026-08-28 bar)。距 thesis_break_price $200 缓冲 +5.87%。成交量比 0.82x — 低于均量, 卖压持续但不放量。 ()
+- _Corroboration:_ 逆向检验坐实为个股问题: 同日半导体全线上涨 (SNDK +5.02, MU +2.53, SKHY +2.34, NVDA +1.32, AMD +1.14, AVGO +0.49), 仅 MRVL 与 TSM (-0.41%) 为负, 而 MRVL 跌幅是 TSM 的 5 倍。若为板块或利率原因, MRVL 不应独跌。『四绿一黑』判据成立。
+- Yahoo Finance: Could Marvell Be the Next $100 Billion AI Stock?
+- Yahoo Finance: Marvell and Google: Misplaced Fear Should Drive Your Purchase Decision
+- Yahoo Finance: Wall Street Analysts Believe Marvell (MRVL) Could Rally 34.31%: Here's is How to Trade
+
+**Cross-assets.** SPY -0.35% · VIX 15.01 · TEN YEAR 4.76 · WTI 85.94 · SECTOR ETF +1.78%
+
+**Agent read.** 这是当前持仓里最接近预先承诺触发点的名字, 且方向持续不利。三个交易日内缓冲从 +8.7% 收窄到 +5.9%, 若延续同样速度将在下周内触及 $200。关键观察: 卖压与消息面完全脱节 (今日消息全正面, 分析师看 +34% 上行), 这通常意味着卖方是财报后的仓位再平衡而非观点转变 — 这类卖压的特征是会自行耗尽, 但耗尽前不可预测持续多久, 且成交量 0.82x 低于均量说明还没到抛售高潮。MRVL 现在是 8 月『好财报换不来上涨』序列里最极端的样本 (beat+raise 却 5d -11.9%), 因此它对 9/2-9/3 AVGO 财报有直接的预示价值: 若连 AVGO 这个期望透支最少的名字也被卖, 则问题在 regime 层面。行动纪律: $200 是 triggers.yaml 里已写入的预先承诺线 — 触及时应按预先约定重新审视论点, 而不是等更低价格再决定。这正是预先承诺机制存在的目的。
+ · Snapshot at `dashboard/2026-08-31.md`
+
+---
 ### 2026-08-28 · -10.32% day · ▼ major
 **Tags:** `earnings_print`, `guidance_raise`, `macro_rates`, `sector_rotation`, `prediction_passed`
 **Confidence:** high
