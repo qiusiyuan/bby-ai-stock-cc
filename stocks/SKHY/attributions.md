@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-08 · +5.68% day · ▲ material
+**Tags:** `commodity_move`, `sector_rotation`, `policy_us`, `competitor_news`
+**Confidence:** medium
+
+**Primary cause.** 内存复合体板块级上涨的领头。两条驱动: (1) 内存合约价上行 — Barron's 以『Micron 能从新一轮内存芯片价格数据中受益』为题报道; 合约价是内存股最直接的收入变量, 传导即时且线性。**数据缺口: TrendForce / DRAMeXchange 的具体合约价读数未取到全文, 因此只知方向不知幅度, 置信度给 medium 而非 high。** (2) 『AI 把内存从手机端抽走』— 数据中心 HBM + 服务器 DRAM 需求挤出消费级供给 (24/7 Wall St: SK Hynix Jumps 7% as AI Diverts Memory From Phones; Micron Holds Steady, Apple Slips)。另有结构性消息: 韩国政府向 SK Hynix 投入约 $200 亿 (国家级产能补贴)。板块爆发日是 9/4 (SNDK +11.9% / SKHY +8.1% / MU +6.1% / DRAM +6.6% 同日), 今天是延续。
+
+**Sources.**
+- 24/7 Wall St via Yahoo: SK Hynix Jumps 7% as AI Diverts Memory From Phones; Micron Holds Steady, Apple Slips
+- Barron's: Why Micron Stock Can Benefit from Fresh Memory-Chip Price Data
+- Yahoo Finance: South Korea Just Bet $20 Billion on SK hynix Stock
+- Yahoo Finance: Samsung, SK Hynix Lead Kospi Higher as Wall Street Faces Tough Opening After Labor Day
+- _Corroboration:_ 对手方确认 (证据强度的关键): 内存涨价对 MU/SKHY/SNDK 是收入项, 对 AAPL 是物料成本项。AAPL 今日 -1.38%, 本周 -0.43%, 30 日 -6.26%。两侧同时按预期方向移动, 比单侧上涨的证据强度高一个量级 — 单侧上涨可以是流动性, 双侧对称移动只能是价格机制。
+- _Corroboration:_ 板块完全脱离利率定价: 同期 10Y 触及 52 周新高 4.80%、市场隐含 Fed 加息概率约 60%, 而 SNDK 本周 +14.7 / SKHY +13.7 / DRAM +8.4 / MU +5.8。这是全场唯一不由折现率定价的口袋 — 供给侧压过了宏观。
+
+**Cross-assets.** SPY -0.48% · VIX 15.3 · TEN YEAR 4.8 · AAPL -1.38% · MU -0.27% · SNDK +3.20% · SAMSUNG -0.19%
+
+**Agent read.** 板块内部出现了值得跟踪的三层分化。(1) SKHY 领涨且 fwd PE 5.5x 为全部持仓最低 — 在同一叙事里, 更便宜的表达方式胜出。(2) **MU 今天独自下跌 -0.27%, 5 日 +5.8% 明显落后 SKHY +13.7% / SNDK +14.7%。** 最可信解释是涨幅透支 (MU YTD +255% / 1y +672%, 基数远高), 其次是 9/25-9/30 财报前的观望 — MU 是板块内最早出数字的标的, 该时序在上涨期是优势, 在高位则是风险前置。这与 2026-08-27 的结构互为镜像 (当时 NVDA memory margin warning 独砸 MU -2.8% 而 Samsung +3.5% / SK Hynix +1.4% 反涨, 结论是『估值轮动非需求崩』) — 两次都指向 MU 与亚洲同侪的资金流不同步, MU 承担更多估值风险。(3) Samsung 最弱 (5d +3.3% / 30d +6.1%, 今日微跌), 与『HBM 认证进度落后』的长期判断一致 — 合约价上行主要奖励已认证并出货的产能, 不奖励待认证产能。韩国政府 $200 亿对 MU 是净负面: 一个由主权资金支持的对手, 下一轮产能周期的行为不受资本回报率约束。操作含义: MU 带 +255% YTD 进 9/30 财报, 即使 Tier 1 门槛全过 (GM ≥82% / 营收 ≥$43B / EPS ≥$27 / HBM 环比 ≥+20%) 也可能出现 8/28 MRVL 式 sell-the-news — 打分时须把『论点是否成立』与『价格如何反应』分开记录。
+
+
+---
 ### 2026-08-17 · +6.02% day · ▲ major
 **Tags:** `sector_rotation`, `memory_pricing`, `ai_demand`, `executive_comment`
 **Confidence:** medium

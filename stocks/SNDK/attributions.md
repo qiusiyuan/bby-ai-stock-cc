@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-08 · +3.20% day · ▲ material
+**Tags:** `commodity_move`, `index_inclusion`, `sector_rotation`, `pt_change`
+**Confidence:** medium
+
+**Primary cause.** 内存复合体板块上涨的一员, 30 日 +40.5% 为板块最强。两条驱动 + 一条机械因素: (1) 内存合约价上行 (与 SKHY/MU 同源; Barron's 报道新一轮内存芯片价格数据); (2) Goldman 指出 Micron 与 SanDisk 的技术突破信号, 多家给出激进目标价上调; (3) **纳入 S&P 100 带来的被动买盘** — 消息日 SNDK 曾单日 +12%。板块爆发日是 9/4 (SNDK 单日 +11.9%, 1,555 → 1,740)。**数据缺口: 具体合约价读数 (TrendForce/DRAMeXchange) 未取到全文, 置信度 medium。**
+
+**Sources.**
+- GuruFocus: Goldman Spots Breakout Signal for Micron, SanDisk Stocks
+- Yahoo Finance: Micron, SanDisk get new aggressive price targets from top analyst
+- Yahoo Finance: Sandisk Soars Nearly 12% Before Joining the S&P 100
+- Motley Fool: SanDisk Stock Has Soared More Than 500% in 2026. Can the Rally Possibly Continue?
+- _Corroboration:_ 板块同步: SKHY +5.68 / DRAM +3.32 / MU -0.27。SNDK 是 NAND 而非 DRAM/HBM, 但两者在『AI 挤出消费级存储供给』这条链上同源。对手方 AAPL -1.38% (成本承受方) 提供交叉验证。
+
+**Cross-assets.** SPY -0.48% · VIX 15.3 · TEN YEAR 4.8 · SKHY +5.68% · MU -0.27% · AAPL -1.38%
+
+**Agent read.** 需要把三部分涨幅分开: 合约价 (基本面)、目标价上调 (卖方情绪)、S&P 100 纳入 (机械被动买盘)。第三部分不可持续且已完成, 因此 30 日 +40.5% 的可持续部分小于表面数字。**最关键的一条是评分卡风险: SNDK 的 11/4 评分日 claim 是「NAND 周期股 → 结构性现金牛」, 而 thesis 已明确记录判据『带 >30% 5d 涨幅进财报 = 好数字打折』(8/6 sell-the-news 判据)。当前 30 日 +40.5%、YTD 超过 +500%, 这个风险已经成立。** fwd PE 6.8x 看似便宜, 但和 MU 一样是用周期顶部盈利算的 — 内存/NAND 股在周期顶部的低 PE 是常态而非折价。11/4-11/6 财报的 Tier 1 门槛 (营收 $10.3-10.8B / EPS $44-46 / non-GAAP 毛利率不从 84.6% 峰值快速回落 / 数据中心增速维持 / 半数营收转 FCF 首个数据点 / HBF design win) 是真正的裁决。SNDK 不在 focus 名单但已挂载评分卡, 已建议加入 focus。
+
+
+---
 ### 2026-08-31 · +5.02% day · ▲ material
 **Tags:** `memory_pricing`, `executive_comment`, `sector_rotation`, `commodity_move`
 **Confidence:** medium

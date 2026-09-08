@@ -4,6 +4,28 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-08 · +9.67% day · ▲ major
+**Tags:** `analyst_upgrade`, `partnership_news`, `tech_breakthrough`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 四条催化剂同日叠加。(1) DigiTimes (Monica Chen) 报道 Intel 准备在 10/5 将 PC CPU 价格上调最多 10% — 年内第二次涨价; The Verge 亦有相近报道。(2) Northland 的 Gus Richard 把评级从 Market Perform 上调至 Outperform, 目标 $120, 理由是 turnaround 有实质进展 + 供应短缺。(3) Intel Foundry 与 ASML 官方发布 (Business Wire, Monterey CA) 合作加速 High-NA EUV 量产就绪; 同期 High-NA 累计产出破百万片晶圆, TSMC 与 Samsung 也承诺采购 — 但 Intel 是最早大规模部署的一家。(4) 美国政府 CHIPS 转股权持股账面浮盈约 $360-390 亿 (结果非原因, 但强化 sovereign put)。另有 Yahoo 标题称分析师认为 Musk 的 Terafab 可给 Intel Foundry 带来规模 — 该条在 stockanalysis 的完整分析师动作列表中查无记录, 无任何一方确认, 归因权重给最低。
+
+**Sources.**
+- MT Newswires via Yahoo: Market Chatter: Intel May Raise PC CPU Prices Another 10% in October; Shares Rise in Afternoon Trading
+- TheFly / DigiTimes: Intel shares up 5% following report company plans to raise CPU prices (DigiTimes: up to 10% on October 5)
+- Business Wire (official): Intel Foundry and ASML Collaborate to Accelerate Industry Readiness for High NA EUV
+- stockanalysis.com analyst actions: Northland upgrades Intel to Outperform from Market Perform, price target $120
+- Yahoo Finance: Intel Stock Jumps 9% on Chip Price Hike Report, US Stake Gains $36 Billion
+- _Corroboration:_ 板块 vs 个股拆解: SOXX +2.0%, beta 2.23 → 板块贡献约 +4.5%, 剩余约 +5% 为个股 alpha。AMD 同日 +6.25% / TSM +2.69% 确认板块联动, 盘中形态两者几乎相同 (逐级推升非跳空)。
+- _Corroboration:_ 逆向检验: NVDA 今日 -2.06%, 是唯一下跌的芯片股。若今天是『AI 芯片全面 risk-on』, NVDA 不该跌。说明资金买的是『x86 + 制程 + 能转嫁成本』这个定义, 而 NVDA 不在其中 (故事已于 8/26 财报出清)。
+- _Corroboration:_ 仓位结构放大: 48 位分析师共识评级为 Hold, 平均目标 $115.78 (仅 +10%)。共识 Hold 的低配仓位在利好时的回补幅度大于减仓压力 — 这与 8/26 NVDA / 8/28 MRVL / 9/2 AVGO 三次『beat 却跌』(拥挤多头在报表日出清) 是同一机制的相反方向。
+
+**Cross-assets.** SPY -0.48% · VIX 15.3 · TEN YEAR 4.8 · SOXX +2.00% · AMD +6.25% · NVDA -2.06% · TSM +2.69%
+
+**Agent read.** 最重要的一条判断是对涨价性质的修正: MarketWatch 把涨价归因于『上升的供应链成本 (rising supply-chain costs)』, 而不是需求强劲。结合同日 DRAM/HBM 板块的内存合约价上行 (SNDK 周 +14.7 / SKHY +13.7 / MU +5.8), 最可能的成本源头就是内存 — 也就是说这是**成本转嫁型涨价而非 Porter 意义的定价权**。区别在于毛利率会不会扩张, 而 INTC thesis 明确写了判定 Bull 的核心指标是毛利率从约 40% 恢复到 50%+, fwd PE 51-58x 需要的正是这个扩张。10/22 Q3 财报的毛利率是唯一真正的裁决数据。第二条: 现价 $105.06 已接近卖方共识目标 $115.78 (+10%) 和 Northland 目标 $120 (+14%), 后续上涨需要目标价上调而非评级上调。第三条: Terafab 传闻是 INTC 第二次出现『未确认大客户传闻推动股价』的模式 (第一次是 6/18-6/30 的 Apple 回归传闻, 至今未官宣) — 同一模式重复应降低而非提高权重。第四条: trailing 净利润仍为 -$112.9 亿 (EPS -$2.30), 51-58x 建立在『明年大幅盈利』的预测上而该预测尚无实现记录; 但 FY25 亏损同比收窄 98.6% 是实质进展。风险层: beta 2.23 意味着 SOXX 跌 5% 对应 INTC 约 -11%, 而 7/1 的历史 (前日 +7.5% 次日 -8.1%) 是这个机制的实证; 今天四条催化同日出清, 到 10/22 财报之间 44 天无已知新增催化, 而 9/11 CPI + 9/17 FOMC 会双向放大。距 thesis-break $75 缓冲 +40.1%, 无操作压力。
+
+
+---
 ### 2026-08-19 · -4.02% day · ▼ material
 **Tags:** `macro_rates`, `sector_rotation`
 **Confidence:** medium

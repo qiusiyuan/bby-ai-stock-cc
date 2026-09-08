@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-08 · +3.32% day · ▲ material
+**Tags:** `commodity_move`, `sector_rotation`, `flow_event`
+**Confidence:** medium
+
+**Primary cause.** 内存 ETF, 跟随成分股而非独立驱动。同源驱动: 内存合约价上行 + 『AI 把内存从手机端抽走』(详见同日 SKHY / SNDK 归因)。板块爆发日 9/4 (DRAM 单日 +6.6%)。**幅度居中值得记一笔: DRAM 5 日 +8.4% 明显小于 SNDK +14.6% / SKHY +13.7%, 大于 MU +5.8% — 说明篮子里含有非纯内存成分, 稀释了主题 beta。** 数据缺口: 具体合约价读数未取到, 置信度 medium。
+
+**Sources.**
+- _Corroboration:_ 成分股同日: SKHY +5.68% / SNDK +3.20% / MU -0.27% / Samsung -0.19%。ETF +3.32% 落在成分股中位数附近, 无独立 alpha。
+- _Corroboration:_ 对手方 AAPL -1.38% (内存涨价的成本承受方) 为整个板块归因提供交叉验证。
+- _Corroboration:_ 板块完全脱离宏观: 同日 10Y 触及 52 周新高 4.80%、SPY -0.48%、Dow -1.14%。
+
+**Cross-assets.** SPY -0.48% · VIX 15.3 · TEN YEAR 4.8 · SKHY +5.68% · MU -0.27% · SNDK +3.20%
+
+**Agent read.** 作为 ETF, DRAM 的价值在于它给出板块的『无个股噪声』读数。本周它说明的是: 板块整体 +8.4%, 而个股离散度极大 (SNDK +14.6% 到 MU +5.8%, Samsung +3.3%)。**离散度大 = 板块内部有真实的质量/时序分化, 不是一次无差别的流动性涨潮** — 这与纯 beta 行情不同, 也意味着选股在这个板块里当前是有回报的。用 ETF 表达这个主题会同时买到最强 (SNDK/SKHY) 和最弱 (Samsung) 的一环, 稀释后的收益低于板块领头。下一裁决点是 9/25-9/30 MU 财报, 那会给出合约价上行到底转化了多少盈利的第一个可验证数字。
+
+
+---
 ### 2026-08-18 · -7.97% day · ▼ major
 **Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
 **Confidence:** medium

@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-08 · +2.35% day · ▲ minor
+**Tags:** `partnership_news`, `competitor_news`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** 记录理由是**具名催化剂**而非幅度 (1d +2.35% / 5d +8.1% 均未过标准阈值)。催化剂: **Google 与 Marvell 达成 custom ASIC 安排**, 从 AVGO 手里分走 TPU 相关的独占叙事。Barron's 在解释 AVGO 9/2 财报后下跌时明确把『Google 与 Marvell 的安排盖过了 Broadcom 稳健的业绩』列为跌因之一。这解释了本周 MRVL +8.1% 与 AVGO -0.4% 的分化 — 两者从『同涨同跌的 custom ASIC 双雄』开始分道。同期 Morgan Stanley 维持 Overweight 并在 AVGO/MRVL 之间偏好 Broadcom。
+
+**Sources.**
+- Yahoo Finance: Broadcom vs. Marvell: Which Custom AI Chip Stock Is the Better Buy?
+- Barron's: Why Broadcom Stock Couldn't Match Up to Nvidia (cites Google's arrangement with Marvell overshadowing Broadcom's results)
+- 24/7 Wall St via Yahoo: Qualcomm Rises 5% on Multi-Generation Amazon AI Silicon Deal
+- _Corroboration:_ hyperscaler 去单一化的横向格局: Google → 引入 MRVL (原 AVGO 独家叙事); Amazon → 引入 QCOM (原 MRVL SerDes/互联 + AVGO); Meta MTIA → 仍 AVGO。方向单一, 且经济上必然 — 自研芯片的目的就是摆脱供应商定价权, 因此在合作设计端保留单一供应商是自相矛盾的。
+
+**Cross-assets.** SPY -0.48% · VIX 15.3 · TEN YEAR 4.8 · AVGO +3.04% · GOOG -0.15% · SOXX +2.00%
+
+**Agent read.** **这是本周最需要打问号的一格。** 三条理由。(1) **消息驱动的涨幅回吐速度快于基本面驱动。** 本周 +8.1% 完全建立在『拿到 Google』这一条消息上, 而消息不改变当期财务 (12/1 才是下一份财报)。(2) **MRVL 距 thesis-break $200 缓冲仅 +14.4%, 是全部持仓中最薄的一个。** 如果 9/11 CPI / 9/17 FOMC 走鹰派并引发一次 8-10% 的普跌, MRVL 是最先接近 thesis-break 线的标的; 而它 fwd PE 34.0x 也不提供估值缓冲。(3) **中期同构风险: 今天它在 Google 侧受益, 但在 Amazon 侧同样被 QCOM 稀释。** 去单一化是结构性趋势而非一次性事件, 今天的受益者是明天的被去化者 — AVGO 只是因为份额最高而先被打。历史对照: MRVL 8/28 财报 beat+raise 却跌 -10%, 一周后已收复并 +8.1% (印证『beat 先出清拥挤仓位再涨』的反应函数), 但这也说明它的仓位在 8 月底是拥挤的, 现在又涨回去了。观察点: 12/1 财报里 Google 安排的财务体现, 以及 Trainium 份额被 QCOM 稀释的量化影响。
+
+
+---
 ### 2026-08-31 · -2.25% day · ▼ minor
 **Tags:** `earnings_post_print`, `flow_event`, `sector_rotation`
 **Confidence:** medium

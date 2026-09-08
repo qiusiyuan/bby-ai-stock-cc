@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-08 · +6.25% day · ▲ material
+**Tags:** `sector_rotation`, `executive_comment`, `competitor_news`
+**Confidence:** medium
+
+**Primary cause.** 与 INTC (+9.67%) 同日大涨, 但故事不同。AMD 侧的可见驱动是『AI 繁荣推动 MI450 / Helios / 服务器 CPU 增长』这条三线增长叙事 (Yahoo: Advanced Micro Devices Sees AI Boom Fueling MI450, Helios and Server CPU Growth), 属于叙事而非新公告。板块层面 SOXX +2.0%; 但 AMD 涨幅是 SOXX 的 3.1 倍, 因此大部分是个股/主题 alpha。**最重要的结构性观察不在 AMD 自身, 而在它与 INTC 同日大涨这个事实。**
+
+**Sources.**
+- Yahoo Finance: Advanced Micro Devices Sees AI Boom Fueling MI450, Helios and Server CPU Growth
+- IBD: TSMC, IBD Stock Of The Day, Rises Above Early Buy Point As Chip Stocks Rally
+- _Corroboration:_ AMD 与 INTC 是 x86 市场的直接竞争对手, 同日分别 +6.25% / +9.67%。若市场在做『Intel 涨价 = 抢回份额』这笔交易, AMD 应该下跌。两者同涨说明资金买的是『x86 + 加速器阵营整体』而不是在两家之间选边 — 即市场在给 x86 平台的整体定价权改善定价, 而不是给份额转移定价。
+- _Corroboration:_ 逆向检验: NVDA 同日 -2.06%, 是唯一下跌的芯片股。AMD 是 NVDA 在加速器上的直接对手, 因此 AMD +6.25% / NVDA -2.06% 这一对可能包含份额叙事; 但 INTC/TSM 同涨说明主导因素是『非 NVDA 的 AI 芯片』这个更广的轮动而非 AMD 特有的份额故事。
+
+**Cross-assets.** SPY -0.48% · VIX 15.3 · TEN YEAR 4.8 · SOXX +2.00% · INTC +9.67% · NVDA -2.06% · TSM +2.69%
+
+**Agent read.** 置信度 medium 因为驱动是叙事文章而非新公告 — MI450/Helios 的指引不是今天新出的信息。真正有价值的一条是**同涨的含义**: INTC 宣布涨价而 AMD 同日大涨, 排除了『Intel 涨价 = 从 AMD 手里抢份额』这个读法。更一致的解释是本报告『本周回顾』tab 建立的定价权框架 — 整个 x86 平台的成本 (内存等) 在上升, 两家都能转嫁, 因此都受益。这也意味着如果 10/22 INTC 财报显示涨价没转化为毛利率扩张, 对 AMD 的读法也应该同步下调。估值对照: AMD fwd PE 32.7x vs INTC 51.4x vs NVDA 14.5x — AMD 在中间, 30 日仅 +2.52% (三者最弱), 说明今天的涨幅更像是补涨而非趋势延续。AMD 不在 focus 名单但本周 +7.8% 且是 AI capex cluster 里唯一非 focus 的大权重标的, 已建议加入 focus。11/3 财报是下一个硬信息点。
+
+
+---
 ### 2026-08-19 · -3.71% day · ▼ material
 **Tags:** `sector_rotation`, `competitor_news`
 **Confidence:** medium

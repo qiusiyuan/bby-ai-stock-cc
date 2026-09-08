@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-08 · +3.25% day · ▲ material
+**Tags:** `regulatory_positive`, `production_milestone`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** 两条催化, 一硬一软。**硬的: 斯洛文尼亚开放 FSD, 成为欧洲第六个开放 FSD 的国家** — 这是可计数、单向累积的监管进展, 且是绕过 EU TCMV 多国投票僵局 (瑞典明确反对) 的替代路径; 第六国意味着逐国突破不再是孤例。**软的: Robotaxi 布局新增车型** (延续 8/31 记录的 Cybercab 进入德州 robotaxi 名单)。同期 Uber 下跌, 华尔街在评估 Cybercab 铺开对网约车经济学的威胁 — 叙事从『TSLA 自己的期权价值』升级为『对手方的成本』, 通常意味着市场开始把 robotaxi 当真事。
+
+**Sources.**
+- 24/7 Wall St via Yahoo: Tesla Jumps as Slovenia Opens Europe's Sixth FSD Door
+- Barron's: Tesla Stock Rises. Musk's Robotaxi Bet Gets a New Vehicle
+- Yahoo Finance: Uber Stock Falls As Wall Street Sizes Up Tesla's Cybercab Rollout
+- Yahoo Finance: Can Tesla Overcome Mixed August Registration Trends Across Europe?
+- Yahoo Finance: XPeng Beats Tesla With This Humanoid Robot Milestone
+- _Corroboration:_ vol 1.07x 是全部持仓中少数达到均量的标的之一 (全场普遍 <1.0x 的节后薄量环境), 说明买盘有一定实质性。但本周净变化 -0.64%, 周内区间 $354.08-$376.37 (振幅 6.3%) — 消息多而方向未定。
+
+**Cross-assets.** SPY -0.48% · VIX 15.3 · TEN YEAR 4.8
+
+**Agent read.** 正面项与负面项都要记。正面: FSD 逐国开放是可计数的累积进展, 每增一国既扩大可寻址市场也削弱『欧洲永远不会批』的空头论点; Uber 下跌是市场把 Cybercab 当真的第一个交叉验证。负面: 欧洲 8 月上牌趋势『混合』, XPeng 在人形机器人某里程碑上抢先 Tesla。**8 月上牌混合这条尤其重要 —— 监管开门的价值最终要通过销量兑现, 如果开门而销量不涨, 开门本身的价值要打折。** 风险层: fwd PE 169.4x 是全部持仓最高, 而 10Y 今天触及 52 周新高 4.80% (8/25 4.64 → 16bps)。169x 倍数里绝大部分是远期现金流现值, 折现率上移的压缩是机械的。今天能在利率创 52 周高的同一天涨 3.25%, 说明催化剂暂时压过折现率 — 但这两股力量的强弱会在 9/11 CPI 和 9/17 FOMC 重新洗牌, 因此未来两周 TSLA 的价格变动主要反映宏观而非公司, 信息量低。解锁行动的数据点是 10 月初 Q3 全球交付量: 它检验『FSD 六国开放 = 可寻址市场扩张』这条链条是否有财务证据。距 thesis-break $250 缓冲 +46.2%, 无操作压力。
+
+
+---
 ### 2026-08-31 · +5.55% day · ▲ material
 **Tags:** `production_milestone`, `regulatory_positive`, `tech_breakthrough`, `sector_rotation`
 **Confidence:** high

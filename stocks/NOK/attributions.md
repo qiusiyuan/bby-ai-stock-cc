@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-08 · +7.18% day · ▲ major
+**Tags:** `unattributed`, `sector_rotation`
+**Confidence:** low
+
+**Primary cause.** **没有找到与 +7.18% 幅度相称的硬催化, 归因置信度 low。** 可见的公司相关信息只有三条, 都不足以解释: (1) 一篇分析文『Beyond the China Retreat: Whether Nokia's Surge Was Built on Substance』— 这是对已发生涨幅的事后讨论, 不是催化; (2) 公司公告『launches industry-first initiative to help operators accelerate network innovation in the AI era』— 举措型公告, 无财务量级; (3) 例行的『Changes in Nokia Corporation's own shares』公告。同时『European Equities Traded in the US as American Depositary Receipts Fall in Tuesday Trading』说明欧洲 ADR 整体下跌, 因此这不是欧洲 beta。**NOK 是今天全部持仓中唯一 vol_ratio ≥ 1.3 的标的 (1.30x), 在全场量能普遍 <1.0x 的节后薄量环境里尤为突出 — 放量 + 无硬催化的组合通常指向被动流、事件预期或未公开信息, 需要次日确认。**
+
+**Sources.**
+- Yahoo Finance: Beyond the China Retreat: Whether Nokia's Surge Was Built on Substance
+- Nokia (company release): Nokia launches industry-first initiative to help operators accelerate network innovation in the AI era
+- MT Newswires via Yahoo: European Equities Traded in the US as American Depositary Receipts Fall in Tuesday Trading
+- _Corroboration:_ 反证: 欧洲 ADR 整体下跌 → 不是欧洲/汇率 beta。SOXX +2.0% 但 NOK 不是半导体, 电信设备与今日的『x86 + 制程 + 定价权』主题无关联 → 不是板块 beta。因此 +7.18% 几乎全部是个股 alpha, 而 alpha 的来源未识别。
+
+**Cross-assets.** SPY -0.48% · VIX 15.3 · TEN YEAR 4.8 · SOXX +2.00%
+
+**Agent read.** **明确标记为未解释的异动, 不编造归因。** 三条需要跟踪的点: (1) 次日量能与价格 — 若 9/9 继续放量上涨, 说明存在尚未公开的实质消息 (合同/并购/评级); 若回吐则更可能是一次性被动流。(2) NOK 距 thesis-break $9 缓冲仅 +19.4%, 是全部持仓中第二薄 (仅次于 MRVL +14.4%) — 一个缺乏基本面支撑的 +7% 上涨, 在 9/11 CPI / 9/17 FOMC 若走鹰派时的回吐风险高于板块平均。(3) 『中国市场撤退后的重估』这条叙事值得单独查证 — 若 Nokia 确实在系统性退出中国市场并把资源转向 AI 网络, 那是结构性变化而非交易性反弹, 但本报告未取到支撑该叙事的一手材料。fwd PE 21.6x, 10/22 财报是下一个硬信息点。
+
+
+---
 ### 2026-08-12 · +9.95% day · ▲ major
 **Tags:** `unattributed`, `sector_rotation`
 **Confidence:** low

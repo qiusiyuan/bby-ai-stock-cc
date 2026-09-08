@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-08 · +3.78% day · ▲ material
+**Tags:** `analyst_upgrade`, `pt_change`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 驱动全部来自卖方与第三方估值背书, **零运营事实**: (1) Goldman Sachs 给出 Buy (覆盖启动型催化, 对流动性仍在建立期的新股影响放大); (2) UBS 通过 EchoStar 持有的 SpaceX 股权反推 EchoStar 被低估 — 这对 SPCX 是间接正反馈, 因为第三方用 SPCX 市价论证另一只股票便宜, 等于默认接受了 SPCX 当前估值; (3) 多家目标价散布 $220-$280 (对应 +43% 到 +82%), 同时有投资者公开称估值『beyond silly』。另有『SpaceX 进入燃气轮机业务』的叙事继续扩散 (同时出现在 GEV 新闻流)。
+
+**Sources.**
+- Yahoo Finance: The Market Barely Knows These 2 IPO Stocks — Goldman Sachs Says 'Buy'
+- Yahoo Finance / UBS Securities: EchoStar shares rise as UBS says SpaceX stake makes stock undervalued
+- Yahoo Finance: SpaceX trades 11% above its $135 IPO price as analysts target $280 — but one investor warns valuation is 'beyond silly'
+- Yahoo Finance: GE's $12 Billion Bet on the Unsexy Industry SpaceX Is Trying to Disrupt
+- _Corroboration:_ SSPC (2x 反向) -7.61% 机械镜像确认。SSPC 30 日 -58.9% vs SPCX +35.3% — 理论 2x 反向应约 -71%, 实际 -58.9%, 差异来自每日重置的路径依赖; 但方向上的结构性教训明确: 单边趋势里持有杠杆反向 ETF 的损失不可逆。
+- _Corroboration:_ 利率背离: 30 日 +35.3% 发生在 10Y 从 4.64% 升到 4.80% 的同一个月, 而 SPCX fwd PE 96.9x 是全部持仓第二高。vol 0.66x = 薄量上涨。
+
+**Cross-assets.** SPY -0.48% · VIX 15.3 · TEN YEAR 4.8 · SSPC -7.61%
+
+**Agent read.** **核心判断是关于风险来源的错位。** 96.9x 的资产在折现率上行 16bps 的月份里涨 35%, 只有两种解释: (a) 增长快到抵消折现率变化; (b) 定价它的资金不在做折现现金流。从驱动全部是『分析师覆盖 + 目标价 + 第三方估值反推』而无任何营收/ARPU/发射频次数字看, (b) 的可能性大得多。**这不是看空 — 叙事驱动的定价可以持续很久 — 但它意味着风险的来源是叙事中断而非利率上行, 因此监控对象应该是「覆盖是否继续扩大、目标价是否继续上调」而不是 10Y。** 这也修正了一个可能的误读: 把逆势上涨读作『基本面强到无视宏观』是错的, 它更可能说明这个标的当前不由折现现金流定价, 那是更脆弱而非更强的状态。三个观察点: (1) 第一个真实运营数字 (Starlink 用户/ARPU、季度发射次数、Starshield 合同金额) — 目前定价里完全没有, 首次公布无论好坏都是重定价事件; (2) 12/9 的 180 天 lockup (92 天后) — 现价高于 IPO 价 $135 达 13.7% (8/31 时仅 +6.4%, 一周内溢价扩大一倍), 早期股东有账面获利动机; (3) SpaceX 燃气轮机叙事 — 对 SPCX 是可寻址市场故事加一层, 但从叙事到营收距离极远, 目前仅是叙事项 (对 GEV 的含义见电力/Grid tab: 燃气轮机护城河在服役记录与全球服务网络, 不在制造能力)。SPCX 无 thesis_break_price (null), 工作区为纯跟踪无持仓。
+
+
+---
 ### 2026-08-27 · +0.89% day · ▲ minor
 **Tags:** `thesis_debate`, `user_stand`, `partnership_news`, `ai_demand`, `flow_event`
 **Confidence:** medium

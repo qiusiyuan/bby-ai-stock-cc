@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-08 · +3.16% day · ▲ material
+**Tags:** `sector_rotation`, `macro_oil`, `executive_comment`
+**Confidence:** medium
+
+**Primary cause.** **没有公司级硬催化; 驱动是板块情绪 + 宏观间接项。** (1) 板块级: 核电情绪转正 — NuScale +13%, Oklo +7% (标题为『核电抛售终于见底了吗』), Bloom Energy 被纳入 S&P 500 后 +8%。这些都不是 GEV 的业务对标, 但同属『AI 数据中心缺电 → 发电与电网资产重估』主题, 而 GEV 是该主题唯一同时覆盖燃气轮机 + 电网 + 服务的美股纯标的。(2) 宏观间接: WTI 5 日 +8.3% — 能源资本开支与油价正相关, 燃气轮机订单是其一部分, 但传导以季度/年计, 不解释单日。(3) 人事: 从 Rivian 挖来 CFO。**注意 30 日仍 -2.49%: 这是从 8/17 高点 $1,079 回撤 -9.9% 后的反弹, 不是新高突破。且 vol 0.47x 为全部持仓最薄之一。**
+
+**Sources.**
+- 24/7 Wall St via Yahoo: NuScale Power Spikes 13%, Oklo Climbs 7%: Is the Nuclear Selloff Finally Exhausted?
+- 24/7 Wall St via Yahoo: Bloom Energy Surges 8% as S&P 500 Swaps It In for Trade Desk
+- Yahoo Finance: Rivian (RIVN) Loses its CFO to GE Vernova (GEV) Right in the Middle of its Biggest Bet Yet
+- Yahoo Finance: GE's $12 Billion Bet on the Unsexy Industry SpaceX Is Trying to Disrupt
+- _Corroboration:_ 反向叙事仍在扩散: 『SpaceX 进入燃气轮机业务 / SpaceX 是否会来抢 GEV 生意』这条 8/31 已记录, 本周继续出现且同时挂在 SPCX 与 GEV 的新闻流。
+
+**Cross-assets.** SPY -0.48% · VIX 15.3 · TEN YEAR 4.8 · WTI 92.87
+
+**Agent read.** 置信度 medium: 涨幅由板块情绪解释, 但情绪的三个来源 (NuScale/Oklo/Bloom) 都不是 GEV 的业务对标, 且 Bloom 的上涨部分来自指数纳入的机械买盘 — 因此传导链条比表面看起来弱。**关于 SpaceX 燃气轮机威胁, 需要一次明确的重量评估: 真实但时间尺度极长。** 支持担忧的理由: SpaceX 在高温合金、涡轮机械、量产制造上能力真实, 技术栈与燃气轮机重叠, 且已在发射服务上证明过一次打破传统制造业成本曲线的能力。反对现在就担忧的理由更强: (a) 燃气轮机的护城河不在制造而在服役记录与全球服务网络 — 电力公司采购 500MW 级机组的决策周期 3-7 年, 核心考量是 30 年寿命内的可靠性数据; (b) GEV 利润大头在 Service 段 (已装机机组的长期服务合同), 新进入者几乎无法侵蚀; (c) SpaceX 尚无任何燃气轮机产品、客户或订单公告。**结论: 现阶段影响情绪不影响基本面; 第一个需要重新评估的时点是 SpaceX 拿到第一个电力公司订单。** 估值: fwd PE 38.4x 在 10Y 4.80% 环境里不便宜, 且今天 +3.16% 在 0.47x 薄量上完成, 可持续性低于放量反弹。相对优势有一条本周新增: BoJ 加息预期使日股对手 (Mitsubishi Heavy 7011.T / Hitachi Energy 6501.T) 的汇率风险上升, 强化了 GEV 作为唯一美股纯标的的可投资性。10/28 财报的 backlog 增速与 Power 段利润率是 38.4x 的裁决点。距 thesis-break $700 缓冲 +38.8%。
+
+
+---
 ### 2026-08-20 · -4.21% day · ▼ major
 **Tags:** `sector_rotation`, `macro_rates`
 **Confidence:** medium

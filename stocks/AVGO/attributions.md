@@ -4,6 +4,27 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-08 · +3.04% day · ▲ material
+**Tags:** `earnings_post_print`, `competitor_news`, `pt_change`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 今天 +3.04% 是对 9/2 财报后跌幅的收复, 真正的事件是 9/2 的财报反应。**9/2 Q3 FY2026: AI 半导体营收 $167 亿, 同比 +221%, 环比 +54%; 整体营收同比 +86%, 营业利润同比 +92%; 管理层指引 AI 营收到 2028 年每年翻倍并上调 FY27 AI 展望。股价 9/2 收 $367.24 → 9/3 收 $357.16, 报表后跌约 5%。** 跌因三条, 都不在 AI 增速这条线上: (1) 近端指引 — JPMorgan 的说法最准确, 当季营收指引『符合分析师预期但很可能低于投资者预期』(卖方模型达标, 买方仓位不达标); (2) 数据中心融资担忧 (Barron's), 与 10Y 触及 52 周新高 4.80% 是同一件事; (3) **Google 与 Marvell 达成 custom ASIC 安排, 侵蚀 AVGO 独占叙事** — Barron's 明确列为跌因。同期 Qualcomm 拿下 Amazon 多代 AI 芯片合作。分析师严重分裂: DA Davidson 目标价 $400→$350 (Neutral), Citi $500→$515 (Buy) — 同一份财报目标价相差 47%。
+
+**Sources.**
+- Invezz: Broadcom's AI revenue surged 221%, so why did the stock tumble 5%?
+- MarketWatch: Broadcom stock fall as investors weigh guidance. Here's what Wall Street analysts are saying.
+- Barron's: Why Broadcom Stock Couldn't Match Up to Nvidia
+- TheFly: Broadcom price target lowered to $350 from $400 at DA Davidson / raised to $515 from $500 at Citi
+- 24/7 Wall St via Yahoo: Qualcomm Rises 5% on Multi-Generation Amazon AI Silicon Deal; Broadcom Ticks Up, Amazon Holds Flat
+- _Corroboration:_ sell-the-news 三连成立: 8/26 NVDA (大 beat, $96.2B 营收创纪录, regular -1.16%) → 8/28 MRVL (beat+raise, -10.0%) → 9/2 AVGO (AI +221%, -5%)。但三次都在 1-5 个交易日内收复报表日跌幅 (NVDA 次日 +9.19%, MRVL 一周后 +8.1%, AVGO 4 个交易日收复至周 -0.4%)。
+- _Corroboration:_ custom ASIC 去单一化的横向确认: Google → MRVL (本周 +8.1%), Amazon → QCOM (+5%), 而 AVGO 本周 -0.4% 且是唯一未创新高的大型 AI 芯片股 (30 日 -3.8%)。方向单一且经济上必然 — 自研芯片的目的就是摆脱供应商定价权。
+
+**Cross-assets.** SPY -0.48% · VIX 15.3 · TEN YEAR 4.8 · MRVL +2.35% · NVDA -2.06% · SOXX +2.00%
+
+**Agent read.** 两条独立的结论, 第二条比第一条重要。**第一条 (反应函数): 「AI 财报已经不管用了」是错的读法。** 三次 beat-却跌都在 1-5 个交易日内被收复, 正确表述是反应函数从『beat 就涨』变成『beat 先出清拥挤仓位再涨』。对操作的含义: 报表日暴跌不再构成论点破裂的证据, 判断论点是否破裂要看 5-10 个交易日后的位置。反证风险: AVGO 收复不等于突破 — 30 日仍 -3.8%, 是唯一未创新高的大型 AI 芯片股。**第二条 (结构): custom ASIC 客户去单一化是本周真正的新变量, 且它影响的不是某个季度而是 FY27-FY28 的份额假设。** 这解释了为什么一份 AI 营收 +221% 的财报换来 -5% — 市场不是不信这个季度, 是在下调未来的份额。AVGO 份额最高因此被去化的绝对量最大; MRVL 短期拿到 Google 是正面, 但它在 Amazon 那边同样被 QCOM 稀释, 中期面临同构风险, 且 MRVL 距 thesis-break $200 缓冲仅 +14.4% 为全场最薄, 而本周 +8.1% 是消息驱动 (回吐速度快于基本面驱动)。META 的 MTIA 是 AVGO 剩余的稳固客户。下一个可验证节点: AVGO 下一份财报里 custom ASIC 营收的客户集中度披露 — 目前只有方向没有幅度。
+
+
+---
 ### 2026-08-27 · +3.63% day · ▲ material
 **Tags:** `sector_rotation`, `earnings_pre_print`
 **Confidence:** medium
