@@ -32,6 +32,8 @@ ROOT = Path(__file__).resolve().parent.parent
 TIMELINE_YAML = ROOT / "timeline.yaml"
 ATTR_INDEX = ROOT / "attributions" / "index.jsonl"
 STOCKS_DIR = ROOT / "stocks"
+EARNINGS_CACHE = Path(__file__).resolve().parent / ".cache" / "earnings"
+EARNINGS_TTL_SECONDS = 24 * 3600
 
 
 def _today_iso(as_of: str | None) -> date:
@@ -129,11 +131,89 @@ def load_prediction_scoredates() -> list[dict[str, Any]]:
     return out
 
 
-def load_active_earnings() -> list[dict[str, Any]]:
-    """Pull each active stock's next_earnings from a cached fetch result if recent,
-    else skip (don't fetch on demand — too slow). Will be backstopped by yaml-curated
-    entries which already include earnings dates."""
-    return []
+def _active_tickers() -> list[str]:
+    """Every stocks/{T}/state.yaml with active: true."""
+    out = []
+    for sd in sorted(STOCKS_DIR.glob("*/state.yaml")):
+        try:
+            meta = yaml.safe_load(sd.read_text()) or {}
+        except Exception:
+            continue
+        if meta.get("active") is True:
+            out.append(sd.parent.name)
+    return out
+
+
+def _earnings_cache_get(ticker: str) -> str | None | bool:
+    """Return cached next_earnings (str or None) if fresh, else False for a miss."""
+    f = EARNINGS_CACHE / f"{ticker.replace('/', '_')}.json"
+    if not f.exists():
+        return False
+    try:
+        blob = json.loads(f.read_text())
+        fetched = datetime.fromisoformat(blob["fetched_at"])
+    except Exception:
+        return False
+    if (datetime.now() - fetched).total_seconds() > EARNINGS_TTL_SECONDS:
+        return False
+    return blob.get("next_earnings")
+
+
+def _earnings_cache_put(ticker: str, next_earnings: str | None) -> None:
+    EARNINGS_CACHE.mkdir(parents=True, exist_ok=True)
+    f = EARNINGS_CACHE / f"{ticker.replace('/', '_')}.json"
+    f.write_text(json.dumps({
+        "ticker": ticker,
+        "fetched_at": datetime.now().isoformat(),
+        "next_earnings": next_earnings,
+    }))
+
+
+def load_active_earnings(no_fetch: bool = False) -> list[dict[str, Any]]:
+    """Live next-earnings dates for every active stock, from yfinance with a 24h
+    on-disk cache. yfinance is authoritative for the *date*; timeline.yaml stays
+    authoritative for the *note* (scorecards, Tier-1 thresholds) — merge_and_sort
+    combines them. Pass no_fetch=True to use only what's already cached."""
+    out: list[dict[str, Any]] = []
+    to_fetch: list[str] = []
+
+    for t in _active_tickers():
+        cached = _earnings_cache_get(t)
+        if cached is False:
+            to_fetch.append(t)
+            continue
+        if cached:
+            out.append({"date": cached, "kind": "earnings", "ticker": t,
+                        "note": "Earnings (yfinance calendar)", "source": "yfinance"})
+
+    if to_fetch and not no_fetch:
+        try:
+            import yfinance as yf
+        except ImportError:
+            return out
+        for t in to_fetch:
+            ne: str | None = None
+            try:
+                cal = yf.Ticker(t).calendar or {}
+                dates = cal.get("Earnings Date") if isinstance(cal, dict) else None
+                if dates:
+                    first = dates[0]
+                    ne = first.isoformat() if hasattr(first, "isoformat") else str(first)
+            except Exception:
+                ne = None
+            _earnings_cache_put(t, ne)
+            if ne:
+                out.append({"date": ne, "kind": "earnings", "ticker": t,
+                            "note": "Earnings (yfinance calendar)", "source": "yfinance"})
+
+    # Drop unparseable dates
+    clean = []
+    for ev in out:
+        d = _parse_date_loose(ev["date"])
+        if d:
+            ev["date"] = d.isoformat()
+            clean.append(ev)
+    return clean
 
 
 def merge_and_sort(today: date, all_events: list[dict]) -> list[dict]:
@@ -150,6 +230,37 @@ def merge_and_sort(today: date, all_events: list[dict]) -> list[dict]:
             continue
         seen.add(key)
         pass1.append(ev)
+
+    # Pass 1b: earnings reconciliation. yfinance owns the DATE, yaml owns the NOTE
+    # (scorecards / Tier-1 thresholds). Within ±10 days for the same ticker, emit one
+    # entry: yfinance date + yaml note, flagging the shift when the two disagree.
+    yf_earnings = [e for e in pass1 if e["kind"] == "earnings" and e.get("source") == "yfinance"]
+    consumed_yf: set[int] = set()
+    reconciled = []
+    for ev in pass1:
+        if ev["kind"] != "earnings" or ev.get("source") == "yfinance":
+            reconciled.append(ev)
+            continue
+        ev_date = date.fromisoformat(ev["date"])
+        match = next((
+            o for o in yf_earnings
+            if o["ticker"] == ev["ticker"]
+            and abs((date.fromisoformat(o["date"]) - ev_date).days) <= 10
+        ), None)
+        if not match:
+            reconciled.append(ev)
+            continue
+        consumed_yf.add(id(match))
+        merged = dict(ev)
+        if match["date"] != ev["date"]:
+            merged["note"] = (
+                f"[日期已按 yfinance 校正: {ev['date']} → {match['date']}] {ev['note']}"
+            )
+            merged["date"] = match["date"]
+            merged["date_corrected_from"] = ev["date"]
+        merged["source"] = "yaml+yfinance"
+        reconciled.append(merged)
+    pass1 = [e for e in reconciled if id(e) not in consumed_yf]
 
     # Pass 2: near-date dedup for prediction kind (score_dates may drift between yaml + index)
     pass2 = []
@@ -229,13 +340,14 @@ def main() -> int:
     p.add_argument("--block", action="store_true", help="render.py-compatible ```timeline``` block")
     p.add_argument("--ticker", help="filter to one ticker (or 'macro')")
     p.add_argument("--all", action="store_true", help="include past events too")
+    p.add_argument("--no-fetch", action="store_true", help="use only cached earnings dates (no network)")
     args = p.parse_args()
 
     today = _today_iso(args.as_of)
     events = (
         load_yaml_events()
         + load_prediction_scoredates()
-        + load_active_earnings()
+        + load_active_earnings(no_fetch=args.no_fetch)
     )
     events = merge_and_sort(today, events)
 

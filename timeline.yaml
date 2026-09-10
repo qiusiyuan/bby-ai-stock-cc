@@ -38,7 +38,7 @@ events:
   - { date: 2026-07-31, kind: earnings, ticker: CVX, note: "Q2 2026 earnings" }
   - { date: 2026-08-04, kind: earnings, ticker: AMD, note: "Q2 2026 earnings — MI300/MI350 ramp。**AMD 是 AMZN 利好唯一没吃到的大型 AI 芯片股 (7/31 时 5d -6.09%) —— semi 反弹能否扩散的测试**" }
   - { date: 2026-10-07, kind: lockup, ticker: SKHY, note: "SK Hynix ADS 90天 lockup 到期 — **SEC 424B4 确认：90天自招股书日 2026-07-09 起**。⚠️ **研究结论：这不是主要变量。** 100% 增发无老股东减持（股本 711,075,500→728,865,500，增量=发行量 17,790,000），且 SK square 受韩国《垄断规制与公平交易法》**永久 20% 持股下限**约束（比 90天合约更强的长期限制）。不存在解禁抛售的经典结构。数据缺口：424B4 Underwriting(p.176) 与 Shares Eligible for Future Sale(p.151) 未取全文，受限方名单未确认。**观察点：到期前后放量下跌 = 我漏掉了受限股东；无异动 = 判断成立。** 完整研究 stocks/SKHY/research/2026-07-31-ads-premium-structure.md", scorecard: "stocks/SKHY/research/2026-07-31-ads-premium-structure.md" }
-  - { date: 2026-10-26, kind: earnings, ticker: "000660.KS", note: "SK Hynix Q3 2026 earnings (SKHY ADS 同期 10/27) — **比 MU (9/23) 晚一个月。MU 是 memory cluster 里最早给出可验证数字的标的，这是 MU 相对 SKHY/Samsung 的独立时序优势**" }
+  - { date: 2026-10-26, kind: earnings, ticker: "000660.KS", note: "SK Hynix Q3 2026 earnings (SKHY ADS 同期 10/27) — **比 MU (9/30, yfinance 校正后) 晚近一个月。MU 是 memory cluster 里最早给出可验证数字的标的，这是 MU 相对 SKHY/Samsung 的独立时序优势**" }
   - { date: 2026-10-29, kind: earnings, ticker: AMZN, note: "Q3 2026 earnings — **7/31 上调的 $2,200亿 capex 开始交答案。关键跟踪指标：AWS 营业利润率（当前 ~39%）。若利润率下降 + 收入增速同时减速 = 卖出信号。这是下一代空头论点（折旧压 EPS）的第一个检查点**" }
   - { date: 2026-08-04, kind: earnings, ticker: SU, note: "Q2 2026 earnings — production, WCS spread" }
   - { date: 2026-08-06, kind: earnings, ticker: CNQ, note: "Q2 2026 earnings" }
@@ -59,9 +59,24 @@ events:
   - { date: 2026-07-31, kind: macro, ticker: macro, note: "PCE inflation June" }
   - { date: 2026-08-01, kind: macro, ticker: macro, note: "NFP July" }
   - { date: 2026-08-12, kind: macro, ticker: macro, note: "CPI July" }
-  - { date: 2026-09-05, kind: macro, ticker: macro, note: "NFP August" }
+  - { date: 2026-09-04, kind: macro, ticker: macro, note: "NFP August (原记 09-05 有误 — 该日为周六; NFP 固定周五发布)" }
   - { date: 2026-09-11, kind: macro, ticker: macro, note: "CPI August — 🎯 债务化 regime 检验点 1: 通胀黏着=base case 延续 / 明显降温=regime 转向。评分卡 research/sectors/2026-08-20-debasement-regime.md" }
   - { date: 2026-09-17, kind: macro, ticker: macro, note: "FOMC decision — 🎯 债务化 regime 检验点 2: Fed 让步=债务化加速 / 意外鹰派真加息=regime killer 启动。评分卡 research/sectors/2026-08-20-debasement-regime.md" }
+  # ── 2026-09-10 补录: 此前 macro 日历止于 9/17, 以下为之后的窗口 ──────
+  # 惯例: CPI/PPI = 次月第二周(周二至周四), NFP = 首个周五, PCE = 月末最后一个工作日附近, FOMC = 约每 6 周
+  - { date: 2026-09-10, kind: macro, ticker: macro, note: "PPI August (已发布) — headline +5.4% YoY (预期 5.3, 前值 4.8), 核心 +4.6% (前值 4.3), 三个月最强年化。当日 2Y +13.3bp / 10Y +11.7bp 至 4.96%, 房贷破 7%。触发 debasement 评分卡战术反转触发器 #1 (热通胀→Fed 真加息→实际收益率飙升→减硬资产 beta): 金 -1.28 / 银 -5.57 / BTC -1.27 与久期同跌" }
+  - { date: 2026-09-25, kind: macro, ticker: macro, note: "PCE inflation August (~估计日期, 周五; BEA 惯例月末最后一个工作日附近) — 核心 PCE 是 Fed 的正式目标口径。7月 FOMC 纪要的『条件性加息』触发器写的是核心 PCE 明确破 2.5% + 股市高位, 因此这是比 CPI 更直接的加息判据" }
+  - { date: 2026-10-02, kind: macro, ticker: macro, note: "NFP September (十月首个周五) — 就业若走弱 + 通胀走高 = stagflation 定价, 对久期资产最差的组合" }
+  - { date: 2026-10-14, kind: macro, ticker: macro, note: "CPI September (~估计日期, 周三) — Oxford Economics 已指出九月调查窗口内柴油 +60美分/汽油 +20美分, 今日油价冲击会进入这份读数" }
+  - { date: 2026-10-15, kind: macro, ticker: macro, note: "PPI September (~估计日期) — 同上, 油价传导的第一个生产端读数" }
+  - { date: 2026-10-28, kind: macro, ticker: macro, note: "FOMC decision (~估计日期, 9/17 之后约 6 周; 2026 官方日程未核实) — 若 9/17 已转鹰, 这是加息路径的确认或否认点" }
+
+  # ── 2026-09-10 补录: policy / 个股 catalyst ────────────────────
+  - { date: 2026-09-30, kind: policy, ticker: SPCX, note: "**FCC 表决为卫星宽带解锁 >1,000 MHz 频谱** (日期由 FCC 公告确认) — 紧接四月放宽低轨卫星网络限制的规则修改。频谱直接决定 Starlink 单星容量上限, 因而决定 ARPU 天花板。是 SpaceX cluster 未来 30 天最硬的催化剂: 有确定日期 + 确定裁决者" }
+  - { date: 2026-10-05, kind: catalyst, ticker: INTC, note: "**PC CPU 价格上调最多 10% 的传闻生效日 (DigiTimes 报道, 公司未确认)** — 9/8 INTC +9.67% 的主要基础就是这条未确认报道。落地 = 该涨幅的基础从传闻变成事实, 部分抵消 Piper (Neutral, PT ~$110) 与 Mizuho (PT $92) 的估值质疑; 不落地 = 9/8 涨幅应回吐" }
+  - { date: 2026-10-22, kind: earnings, ticker: INTC, note: "Q3 2026 earnings (yfinance) — 指引 $15.8-16.8B。检验 Piper 的多空拆分: 落区间上端 + DC/AI 延续 +59% 级增速 = 支持 high-teens CAGR 看多部分; 落下端 = 『45% 市值押 foundry 夺 15 个百分点 CPU 份额』的假设更难支撑" }
+  - { date: 2026-10-21, kind: earnings, ticker: TSLA, note: "Q3 2026 earnings (yfinance) — 关键: 中国降价是否换来销量 (若销量平或降则毛利率白丢), FSD/Robotaxi 部署进度 (168x fwd PE 的唯一支柱)" }
+  - { date: 2026-11-03, kind: earnings, ticker: SPCX, note: "Q3 2026 earnings (yfinance) — FY27 自由现金流 -$67B 的融资需求是 8/27 预测反方的核心; 可靠性整改若拖慢发射节奏, 轨道 AI 数据中心收入时间表后移而现金焚烧不会同步后移" }
 
   # ── Policy / geopolitical 已知窗口 ────────────────────────────
   - { date: 2026-Q3, kind: policy, ticker: macro, note: "EU TCMV decision on FSD (range — Sweden opposes, multi-state vote)" }
