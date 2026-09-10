@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-10 · -3.43% day · ▼ material
+**Tags:** `macro_inflation`, `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** 无个股催化剂, 纯板块 beta。八月 PPI +5.4% 与 WTI +8.16% 推高 2Y 13.3bp / 10Y 11.7bp, SOXX -3%; MRVL 作为 fwd PE 33.8 的二线 AI 供应端在『卖铲子』一侧被杀。当日『买铲子 ↔ 卖铲子』轮动第四次干净出现: 买铲子 GOOG +0.61 / MSFT +0.16 / AMZN -0.20 / META -1.42 加权几乎持平, 卖铲子 INTC -5.57 / MRVL -3.43 / AMD -3.36 / NVDA -2.37 / TSM -1.68 / AVGO -0.97, 两侧平均差约 3 个百分点。机制: 买铲子的现金流已在损益表里 (fwd PE 19-24, 有当期盈利地板), 卖铲子的估值溢价压在『AI capex 持续多年』的远端假设上, 折现率上升时前者掉基点、后者掉倍数。
+
+**Sources.**
+- Yahoo/MT Newswires: [Update: US Equity Indexes Fall as Hot Producer Prices, Soaring Crude Oil Boost Treasury Yields](https://finance.yahoo.com/economy/articles/us-equity-indexes-fall-hot-195114785.html)
+- _Corroboration:_ 轮动确认: 买铲子四家平均约 -0.2%, 卖铲子六家平均约 -2.9%。同日需求侧零负面信号 (TSMC 八月营收 +53% 创纪录、OpenAI 首颗定制 AI 芯片选 AVGO、黄仁勋把网络安全点为 AI 下一条增长线、澳洲计划 AI 算力 +125%)。
+- _Corroboration:_ 对照 2026-08-28: Warsh 鹰派推高 10Y 时 MRVL -10.32% (beat+raise 仍暴跌) / NVDA -3.31% 而 AMZN +3.33% — 同一轮动机制的更极端版本。
+
+**Cross-assets.** SPY -0.58% · VIX 17.84 · TEN YEAR 4.944 · WTI 103.83
+
+**Agent read.** ⚠️ 全部持仓里 thesis-break 缓冲最薄: $226.96 距 $200 仅 +13.5%, 是唯一进入 15% 观察带的持仓, 且它同时是本 cluster 波动最大的名字 (8/28 -10.32%, 8/18 -8.24%, 8/4 +13.8%)。若跌破 $210 进入 5% 预警带, 应按 triggers.yaml 重读而非凭感觉持有。今日 5d 仍 +9.92%, 30d +38.9%, 尚无破位迹象。
+ · [Snapshot](snapshots/2026-09-10.md)
+
+---
 ### 2026-09-08 · +2.35% day · ▲ minor
 **Tags:** `partnership_news`, `competitor_news`, `sector_rotation`
 **Confidence:** medium

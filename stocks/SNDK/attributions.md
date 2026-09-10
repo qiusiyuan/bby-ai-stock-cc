@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-10 · -4.06% day · ▼ material
+**Tags:** `macro_inflation`, `macro_rates`, `sector_rotation`, `memory_pricing`
+**Confidence:** high
+
+**Primary cause.** 八月 PPI +5.4% YoY (预期 5.3%, 前值 4.8%; 核心 4.6% vs 前值 4.3%, 三个月最强) 叠加 WTI +8.16% 破 $103, 把 2Y 推高 13.3bp 至 4.56%、10Y 推高 11.7bp 至 4.96% —— 短端涨幅大于长端 = 市场定价 Fed 加息而非增长放缓。内存股 fwd PE 5-6 看似极便宜, 但这些倍数隐含的是周期高点盈利可维持多年, 折现率上升直接压缩『多年』的现值, 因此低 PE 不是保护。当日公司级新闻全部为正 (JPMorgan 给内存 Overweight、顶级分析师称内存涨价『数年不缓解』、Samsung-OpenAI 合作扩展到下一代芯片、MU 距 DRAM 第二仅差 1.6 个百分点、ASML 扩大 High-NA 合作), 唯一负面是 Intel 支持的初创进入内存市场 (对三年内格局无实质含义)。利好满仓仍跌 5% = 归因只剩折现率通道。 SNDK 侧最反直觉: 30 日 +66.61% 是全场涨幅第一, 却是复合体里跌幅最小的 (-4.06%), 成交量 0.62x 最低。若今天是纯获利了结, 涨最多的应该跌最多 —— 8/18 正是这样 (SNDK -8.9% 领跌复合体)。今天不是, 说明主导机制是压估值倍数 (与前期涨幅无关) 而不是抛获利盘。
+
+**Sources.**
+- 247wallst: Memory Stocks Slide as Rates and Oil Swamp JPMorgan's Overweight Call: SK Hynix Sinks 5%, Western Digital Drops 3%, Micron Slips
+- Yahoo: Top Chip Analyst: Memory Prices Won't Ease 'For Years' and Even Apple Can't Dodge It
+- Yahoo/MT Newswires: [Update: US Equity Indexes Fall as Hot Producer Prices, Soaring Crude Oil Boost Treasury Yields](https://finance.yahoo.com/economy/articles/us-equity-indexes-fall-hot-195114785.html)
+- _Corroboration:_ 决定性反证: SK Hynix 韩国本土 000660.KS 仅 -0.16%、Samsung 005930.KS -0.19%, 而 SKHY ADS -5.20% — 同一公司同一天差 5.04 个百分点, 排除公司层面与 HBM 周期层面解释, 归因锁定美股时段折现率定价。
+- _Corroboration:_ 历史对照 2026-08-31: 同类供给侧利好 (SK Hynix CEO 警告短缺到 2030 + Samsung 锁定 70% HBM 产能到 2031) 在 10Y 4.76% 时令复合体全线上涨 (SNDK +5.02/MU +2.53/SKHY +2.34/DRAM +1.78)。今日 10Y 4.944%, 同类利好换来 -4~5% — 18bp 之内供给侧利好的定价能力翻符号。7/31 SMH 预测的『供给侧例外条款』失效。
+- _Corroboration:_ 成交量全部低于均量 (MU 0.82x / SKHY 0.95x / DRAM 0.71x / SNDK 0.62x) = 无机构 capitulation; 涨幅最大的 SNDK (30d +66.6%) 反而跌最少, 与『纯获利了结』形态矛盾 (对照 8/18 SNDK -8.9% 领跌)。
+
+**Cross-assets.** SPY -0.58% · VIX 17.84 · TEN YEAR 4.944 · WTI 103.83
+
+**Agent read.** 『涨最多却跌最少』是本次归因排除获利了结解释的关键交叉检验。SNDK 的 NAND/HBF 叙事 (8/13 Investor Day 的多年 FCF 模型 + 半数营收转 FCF) 在折现率冲击下表现出比 HBM 叙事更强的抗跌性。11/4 Q1 FY27 财报是『NAND 周期股 → 结构性现金牛』评分卡的打分日; 带 >30% 涨幅进财报 = 好数字打折 的 8/6 判据仍适用, 而 30d +66.6% 已远超该阈值。
+ · [Snapshot](snapshots/2026-09-10.md)
+
+---
 ### 2026-09-08 · +3.20% day · ▲ material
 **Tags:** `commodity_move`, `index_inclusion`, `sector_rotation`, `pt_change`
 **Confidence:** medium

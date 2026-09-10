@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-10 · -5.20% day · ▼ material
+**Tags:** `macro_inflation`, `macro_rates`, `sector_rotation`, `memory_pricing`
+**Confidence:** high
+
+**Primary cause.** 八月 PPI +5.4% YoY (预期 5.3%, 前值 4.8%; 核心 4.6% vs 前值 4.3%, 三个月最强) 叠加 WTI +8.16% 破 $103, 把 2Y 推高 13.3bp 至 4.56%、10Y 推高 11.7bp 至 4.96% —— 短端涨幅大于长端 = 市场定价 Fed 加息而非增长放缓。内存股 fwd PE 5-6 看似极便宜, 但这些倍数隐含的是周期高点盈利可维持多年, 折现率上升直接压缩『多年』的现值, 因此低 PE 不是保护。当日公司级新闻全部为正 (JPMorgan 给内存 Overweight、顶级分析师称内存涨价『数年不缓解』、Samsung-OpenAI 合作扩展到下一代芯片、MU 距 DRAM 第二仅差 1.6 个百分点、ASML 扩大 High-NA 合作), 唯一负面是 Intel 支持的初创进入内存市场 (对三年内格局无实质含义)。利好满仓仍跌 5% = 归因只剩折现率通道。 SKHY 侧是本次归因的关键证据源: 同一家公司当天在首尔 (000660.KS) 跌 0.16%、在纳斯达克跌 5.20%, 5.04 个百分点的裂口就是折现率归因的天然实验。跌幅最大但 5d +14.14% / 30d +48.51% 仍是全场最强, 昨日 (9/9) 还因 OpenAI 需求 +5%。韩国侧背景: KOSPI 挣扎守 7,000, 韩国央行提示创纪录波动 — 本土『没动』是横盘而非强势。
+
+**Sources.**
+- 247wallst: Memory Stocks Slide as Rates and Oil Swamp JPMorgan's Overweight Call: SK Hynix Sinks 5%, Western Digital Drops 3%, Micron Slips
+- Yahoo: Top Chip Analyst: Memory Prices Won't Ease 'For Years' and Even Apple Can't Dodge It
+- Yahoo/MT Newswires: [Update: US Equity Indexes Fall as Hot Producer Prices, Soaring Crude Oil Boost Treasury Yields](https://finance.yahoo.com/economy/articles/us-equity-indexes-fall-hot-195114785.html)
+- _Corroboration:_ 决定性反证: SK Hynix 韩国本土 000660.KS 仅 -0.16%、Samsung 005930.KS -0.19%, 而 SKHY ADS -5.20% — 同一公司同一天差 5.04 个百分点, 排除公司层面与 HBM 周期层面解释, 归因锁定美股时段折现率定价。
+- _Corroboration:_ 历史对照 2026-08-31: 同类供给侧利好 (SK Hynix CEO 警告短缺到 2030 + Samsung 锁定 70% HBM 产能到 2031) 在 10Y 4.76% 时令复合体全线上涨 (SNDK +5.02/MU +2.53/SKHY +2.34/DRAM +1.78)。今日 10Y 4.944%, 同类利好换来 -4~5% — 18bp 之内供给侧利好的定价能力翻符号。7/31 SMH 预测的『供给侧例外条款』失效。
+- _Corroboration:_ 成交量全部低于均量 (MU 0.82x / SKHY 0.95x / DRAM 0.71x / SNDK 0.62x) = 无机构 capitulation; 涨幅最大的 SNDK (30d +66.6%) 反而跌最少, 与『纯获利了结』形态矛盾 (对照 8/18 SNDK -8.9% 领跌)。
+
+**Cross-assets.** SPY -0.58% · VIX 17.84 · TEN YEAR 4.944 · WTI 103.83
+
+**Agent read.** ADS 溢价被压缩而非公司利空。工作区 8/4 记录过同机制镜像案例 (SKHY ADS +7.79% 而本土 -8.21%, 差 16 个百分点), 归因为时区错位; 今天是同一机制反向。距 thesis-break $115 缓冲 +63.7%。10/7 lockup 已有研究判定『不是主要变量』(100% 增发无老股东减持 + SK square 受韩国法永久 20% 持股下限), 到期前后放量下跌 = 判断有漏。
+ · [Snapshot](snapshots/2026-09-10.md)
+
+---
 ### 2026-09-08 · +5.68% day · ▲ material
 **Tags:** `commodity_move`, `sector_rotation`, `policy_us`, `competitor_news`
 **Confidence:** medium

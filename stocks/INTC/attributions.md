@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-10 · -5.57% day · ▼ material
+**Tags:** `analyst_downgrade`, `pt_change`, `macro_rates`, `macro_inflation`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 跌幅第一, 也是当日唯一有具名个股催化剂的追踪标的。两条卖方动作同日: (1) Piper Sandler 的 David O'Connor **首次覆盖**即给 Neutral, 目标价约 $110 (隐含一年内 <10% 上行)。报告的多空拆分很具体 —— 看多: 行业从训练/推理转向 agentic AI 拉动 CPU 服务器需求, CPU 供给紧张 + 需求强劲推高产品价格, 支撑到 2030 年 high-teens 营收 CAGR; 看空 (也是给 Neutral 的理由): 股价一年涨超四倍, 且他估算 **当前市值约 45% 建立在 foundry 夺取全球 CPU 15 个百分点份额这个未兑现假设上**, 若不及预期会抹去过去一年大部分涨幅。(2) Mizuho 把目标价下调至 $92 — 低于现价, 理由是估值担忧, 尽管承认服务器需求更强、执行在改善。两家独立机构同日给出『基本面在改善但价格已透支』的同一结论, 说服力远大于单份报告。放大器: 本周上涨的基础是 DigiTimes 关于 10/5 可能上调 PC CPU 价格最多 10% 的**未经确认报道** (9/8 记录, 当日 +9.67%), 缺乏硬事实对冲。背景: 折现率冲击日 SOXX -3%, INTC fwd PE 49.1 为追踪半导体最高。反向证据: ASML 同日宣布扩大与 Samsung/Intel 的 High-NA EUV 合作, 制程路线图在推进 —— 方向差把归因锁定在估值而非基本面。
+
+**Sources.**
+- The Motley Fool: [Why Intel Stock Slumped Today (Piper Sandler David O'Connor initiates Neutral, PT ~$110; 45% of market cap on foundry winning 15 pts of global CPU share; high-teens revenue CAGR to 2030E)](https://www.fool.com/investing/2026/09/10/why-intel-stock-slumped-today/)
+- 247wallst: [Intel Sinks 6% as Profit Taking Hits a Parabolic Run; NVIDIA and AMD Retreat 3% (YTD +188%, no company-specific news, price-hike report unconfirmed, consensus Hold / avg PT $115.88, Q3 guide $15.8-16.8B)](https://247wallst.com/investing/2026/09/10/intel-sinks-6-as-profit-taking-hits-a-parabolic-run-nvidia-and-amd-retreat-3/)
+- Barchart: [Why 1 Veteran Analyst Just Trimmed His Intel Stock Price Target (Mizuho cuts PT to $92 on valuation despite stronger server demand)](https://www.barchart.com/story/news/4539051/why-1-veteran-analyst-just-trimmed-his-intel-stock-price-target)
+- Yahoo: [ASML Expands High-NA Ties With Samsung and Intel as AI Demand Builds](https://finance.yahoo.com/technology/articles/asml-expands-high-na-ties-143900733.html)
+- _Corroboration:_ 幅度分解: SOXX -3% (板块 beta, 与 NVDA -2.37% / AMD -3.36% 同档) + 约 2.6 个百分点个股 alpha (两份估值报告)。反例检验: 若纯 beta 应跌约 3%, 实跌 5.57%, 差额有具名个股解释, 归因自洽。
+- _Corroboration:_ INTC 在工作区历史上反复是板块 risk-off 日跌最狠的名字 (7/1 -8.10%, 7/2 -5.61%, 8/18 -6.95%, 8/19 -4.02%), 且那四次大多无公司级利空。今天的差异是叠加了具名个股催化剂, 所以跌幅从『与板块同档』变成『板块的 1.9 倍』。
+
+**Cross-assets.** SPY -0.58% · VIX 17.84 · TEN YEAR 4.944 · WTI 103.83
+
+**Agent read.** 估值质疑而非基本面转差 —— ASML High-NA 合作扩大与两份估值报告方向相反, 这决定了反转条件是『时间/盈利追上估值』而非『基本面修复』。最硬的检验点是 10/5 CPU 涨价是否落地: 落地 = 9/8 那波 +9.67% 的基础从未确认报道变成事实; 不落地 = 该涨幅应全部回吐。唯一能直接击中 O'Connor 空头核心的事件是具名 foundry 大客户确认 (尤其 Apple 回归) —— 那会把『15 个百分点份额没有保障』变成合约。技术观察点 $100: 今日盘中低点 $99.34 已短暂失守, 收 $100.32。距 thesis-break $75 缓冲 +33.8%。另: Druckenmiller 已卖出 MU/AVGO/INTC (已披露历史持仓, 非当日催化, 但与估值质疑同向)。
+ · [Snapshot](snapshots/2026-09-10.md)
+
+---
 ### 2026-09-08 · +9.67% day · ▲ major
 **Tags:** `analyst_upgrade`, `partnership_news`, `tech_breakthrough`, `sector_rotation`
 **Confidence:** high

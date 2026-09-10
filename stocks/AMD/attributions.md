@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-10 · -3.36% day · ▼ material
+**Tags:** `macro_inflation`, `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** 无个股催化剂, 纯板块 beta。八月 PPI +5.4% 超预期 + WTI +8.16% 破 $103 推高收益率 (2Y +13.3bp / 10Y +11.7bp 至 4.96%), SOXX -3%, 半导体跌幅约为大盘科技 (QQQ -1.06%) 的 3 倍。AMD 位于『卖铲子』一侧, fwd PE 32.2, 缩量下跌 (0.73x)。5d 仍 +10.18% — 今天是回吐而非破坏。
+
+**Sources.**
+- 247wallst: [Intel Sinks 6% as Profit Taking Hits a Parabolic Run; NVIDIA and AMD Retreat 3%](https://247wallst.com/investing/2026/09/10/intel-sinks-6-as-profit-taking-hits-a-parabolic-run-nvidia-and-amd-retreat-3/)
+- _Corroboration:_ 同日 AMD Q2 基本面参照 (来自同一篇): 营收 $11.54B, 数据中心 +107% YoY — 需求侧无恶化。跌幅来自折现率而非需求。
+
+**Cross-assets.** SPY -0.58% · VIX 17.84 · TEN YEAR 4.944 · WTI 103.83
+
+**Agent read.** 距 thesis-break $380 缓冲 +32.5%。AMD 与 NVDA 今日无任何个股新闻, 是判断『今天是板块级折现率事件』的干净对照组 —— 它们的跌幅 (-3.36% / -2.37%) 定义了纯 beta 的基线, INTC 超出这个基线的 2.6 个百分点才是个股 alpha。
+ · [Snapshot](snapshots/2026-09-10.md)
+
+---
 ### 2026-09-08 · +6.25% day · ▲ material
 **Tags:** `sector_rotation`, `executive_comment`, `competitor_news`
 **Confidence:** medium
