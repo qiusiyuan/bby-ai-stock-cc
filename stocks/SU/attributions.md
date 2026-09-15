@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-15 · +4.29% day · ▲ material
+**Tags:** `macro_oil`, `commodity_move`, `geopolitical_war`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** WTI +4.5% 至 $105.95 (Brent 破 $109), 驱动是三条独立供给中断叠加: (1) **沙特东西输油管线 (East-West Pipeline) 遭胡塞袭击后可能停运数周** —— 这条日输约 500 万桶的管线是绕开霍尔木兹海峡的唯一大动脉, 它停运意味着「霍尔木兹被封时还有后路」这个安全垫消失, 供给链冗余度归零; (2) 霍尔木兹海峡未复通, 美伊冲突区域化; (3) 利比亚断供。分析师 Schork 警告美国 SPR 可能在 11 月触及操作极限。**关键交叉验证: 国防股 ITA 今天 -0.83%, 30 天 -12.64%, 同时跌破 MA50/MA200 —— 国防股跌而油涨, 说明市场定价的是物理桶数短缺而非战争恐慌溢价。** 这个区分重要: 物理短缺有粘性 (管线修复需数周到数月, 可用库存/出口量验证), 恐慌溢价停火即消散。因此本次涨幅的基本面质量高于典型地缘事件驱动。SU 涨 4.29% 高于纯上游 CNQ 的 1.97% 与综合 CVX 的 2.26%, 排序基本按炼化暴露度而非原油暴露度 —— 柴油史上首破 $6/加仑, 有炼化环节的公司多吃一层裂解价差, 所以今天是柴油而非原油主导的一天。额外顺风: USD/CAD 从 MA50 (1.40) 走到 1.3914 (30d -0.94%), 加元走强对本币计价的加拿大能源资产是加分, 且油价与汇率在此同向而非对冲。风险面: 现价 $71.665 距 52 周高 $72.06 仅 0.5%, 而 8/20 的债务化框架已明确写过「实物/短久期/商品: 结构受益, 顺风, 但已在 52w 高, 别追」—— 这正是那句话所指的位置。thesis.md base-case target 为 $65, 现价已超出。距 thesis-break $42 缓冲 +70.6%。对照 2026-09-10 的 CNQ 归因: 那天 WTI +8.16% 破 $103 而上游/综合油气全部收跌, 因为供给冲击来源是胡塞占领也门 Mocha 港 (影响运输而非产量); 今天来源是输送能力中断 (管线停运), 油气股全线大涨。两次对比印证「运输中断 ≠ 产量中断」, 市场对后者定价明显更实在。
+
+**Sources.**
+- Benzinga: Oil Soars As Saudi Pipeline Faces Weeks-Long Outage — Schork Says US Reserves Could Hit Operational Limits By November
+- Yahoo: Oil prices surge past $108 as Saudi pipeline shutdown continues
+- Investors Business Daily: Sunoco Stock Breaks Out; Oil Prices Rise With No Clear End To Hormuz Closure
+- Barrons: Diesel Just Passed $6 a Gallon for the First Time Ever
+
+**Cross-assets.** SPY -0.47% · VIX 17.46 · TEN YEAR 5.0 · WTI 105.95 · DXY 99.64 · GOLD 4342.5 · BTC 75913
+
+**Agent read.** 物理短缺而非恐慌溢价 (国防股同跌为证), 涨幅有基本面基础; 但四个能源名字全部在 52 周高点附近, 8/20 框架的「别追」适用。明天 FOMC 对这个 cluster 影响有限 —— 沙特管线与货币政策无关。
+
+
+---
 ### 2026-08-31 · +2.19% day · ▲ minor
 **Tags:** `macro_oil`, `geopolitical_war`, `commodity_move`, `sector_rotation`
 **Confidence:** high

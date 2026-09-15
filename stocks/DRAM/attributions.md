@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-15 · -0.18% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`, `memory_pricing`, `flow_event`
+**Confidence:** medium
+
+**Primary cause.** 内存 ETF 今天几乎没动 (-0.18%), 但 **5 日 -10.47% 触发阈值, 且这个数字比它任何一个主要成分股都差 (MU 5d -7.79% / SKHY 5d -6.48%)。ETF 跌得比成分股更多, 通常意味着 ETF 层面的赎回压力 —— 有资金在整体撤出「内存」这个主题, 而不只是在调整个股权重。** 这与 9/10 归因里给 DRAM 打上 flow_event 标签一致, 是同一现象的延续。跌破 MA50 ($55.81), 距 52 周高 $81.34 已 -32.7%。归因机制: 无板块级公司利空, 纯折现率通道。10Y 今天破 5.00% (2007 年 7 月以来最高, 30d +6.7%), 明天 FOMC 定价加息。同日亚洲时段 SK Hynix 韩股 -6.73% / Samsung -4.24%, 美国时段 MU -0.18% / SKHY -1.20% —— 韩美之间 5.5pp 缺口尚未收敛, 意味着这个 ETF 明天也有补跌压力。**三次同模式对照 (机制完全一致): 8/18 DRAM -7.97% (10Y 停 52w 高 4.71% + WSJ 内存定价报道); 9/10 DRAM -4.9% (八月 PPI +5.4% + WTI 破 $103 → 10Y 4.96%); 今天 5d -10.47% (10Y 破 5.00% + WTI $106)。** 9/10 那次的归因写得最透: 当日公司级新闻全部为正 (JPMorgan 给内存 Overweight、顶级分析师称内存涨价「数年不缓解」、Samsung-OpenAI 合作扩展、ASML 扩大 High-NA 合作), 利好满仓仍跌 5% = 归因只剩折现率通道。今天是同一结论的第三次确认。
+
+**Sources.**
+- {"type": "cross_stock", "title": "MU 5d -7.79% / SKHY 5d -6.48% / SNDK 5d -12.74% / Samsung 5d -7.96% \u2014 \u4e94\u4e2a\u6807\u7684\u4e00\u5468\u5168\u90e8\u63a5\u8fd1\u6216\u8d85\u8fc7\u4e24\u4f4d\u6570\u4e0b\u8dcc", "publisher": "workspace", "url": ""}
+- CNBC: 10-year Treasury yield hits highest level since 2007
+
+**Cross-assets.** SPY -0.47% · VIX 17.46 · TEN YEAR 5.0 · WTI 105.95 · DXY 99.64 · GOLD 4342.5 · BTC 75913
+
+**Agent read.** ETF 跌幅超过成分股 = 主题级赎回 (flow_event), 不只是个股调整。这是本 workspace 第三次记录同一折现率机制打击内存复合体。
+
+
+---
 ### 2026-09-10 · -4.90% day · ▼ material
 **Tags:** `macro_inflation`, `macro_rates`, `sector_rotation`, `memory_pricing`, `flow_event`
 **Confidence:** high

@@ -61,7 +61,7 @@ events:
   - { date: 2026-08-12, kind: macro, ticker: macro, note: "CPI July" }
   - { date: 2026-09-04, kind: macro, ticker: macro, note: "NFP August (原记 09-05 有误 — 该日为周六; NFP 固定周五发布)" }
   - { date: 2026-09-11, kind: macro, ticker: macro, note: "CPI August — 🎯 债务化 regime 检验点 1: 通胀黏着=base case 延续 / 明显降温=regime 转向。评分卡 research/sectors/2026-08-20-debasement-regime.md" }
-  - { date: 2026-09-17, kind: macro, ticker: macro, note: "FOMC decision — 🎯 债务化 regime 检验点 2: Fed 让步=债务化加速 / 意外鹰派真加息=regime killer 启动。评分卡 research/sectors/2026-08-20-debasement-regime.md" }
+  - { date: 2026-09-16, kind: macro, ticker: macro, note: "FOMC decision (2pm ET) — [日期已校正 2026-09-17 → 2026-09-16: 9/15 多家媒体一致报道决议在周三, FOMC 惯例为周二-周三两日会议+周三下午公布] 🎯 债务化 regime 检验点 2: Fed 让步=债务化加速 / 意外鹰派真加息=regime killer 启动。**2026-09-15 市场已定价加息** (2Y 4.65% 高于 Fed funds 上限约 90bp, 10Y 破 5.00% 创 2007 以来新高)。评分卡 research/sectors/2026-08-20-debasement-regime.md" }
   # ── 2026-09-10 补录: 此前 macro 日历止于 9/17, 以下为之后的窗口 ──────
   # 惯例: CPI/PPI = 次月第二周(周二至周四), NFP = 首个周五, PCE = 月末最后一个工作日附近, FOMC = 约每 6 周
   - { date: 2026-09-10, kind: macro, ticker: macro, note: "PPI August (已发布) — headline +5.4% YoY (预期 5.3, 前值 4.8), 核心 +4.6% (前值 4.3), 三个月最强年化。当日 2Y +13.3bp / 10Y +11.7bp 至 4.96%, 房贷破 7%。触发 debasement 评分卡战术反转触发器 #1 (热通胀→Fed 真加息→实际收益率飙升→减硬资产 beta): 金 -1.28 / 银 -5.57 / BTC -1.27 与久期同跌" }

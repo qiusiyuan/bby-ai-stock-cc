@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-15 · -6.73% day · ▼ large
+**Tags:** `macro_rates`, `sector_rotation`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** SK Hynix 韩国母股单日 -6.73%, 是全组合当日最大跌幅, 跌破 MA50 (₩1,746,591)。同日 Samsung (005930.KS) -4.24% / 5d -7.96%, 说明这是韩国内存板块的整体去杠杆而非个股事件。**无 HBM 或内存的公司级利空** —— 归因只剩折现率通道: 10Y 美债今天破 5.00%, 创 2007 年 7 月以来新高 (30d +6.7%), 而明天 FOMC 市场定价的是加息 (2Y 4.65% 高于 Fed funds 上限约 90bp)。**核心机制 (与 8/18 和 9/10 两次完全相同): fwd PE 3.6x 看似极便宜, 但这个倍数隐含的是「周期高点盈利能维持多年」, 而折现率上升压缩的恰恰是靠后年份的现值 —— 也就是低 PE 的全部依据。所以低 PE 在折现率上行期不提供下行保护, 反而是分子 (周期持续性被质疑) 与分母 (折现率) 双重受害。** 三次同模式对照: 8/18 (10Y 停 52w 高 4.71% + WSJ 内存定价报道) → DRAM -7.97 / MU -7.11 / SNDK -8.92 / SKHY -8.2; 9/10 (八月 PPI +5.4% + WTI 破 $103 → 10Y 4.96%) → MU -4.9 / SKHY -5.2 / DRAM -4.9 / SNDK -4.06; 今天 (10Y 破 5.00% + WTI $106) → 韩国 -6.7/-4.2。**最值得记的异常: 美国 ADS (SKHY) 今天只跌 1.20%, 与母股有 5.5 个百分点缺口。** 这是时区造成的 —— 韩国 9/15 收盘反映当地整个交易日 (含对隔夜美债的反应), 而 SKHY 的美股时段仍在进行、尚未完整消化。历史上此类缺口次日收敛, 因此 SKHY 明天有补跌压力, 且明天正好是 FOMC 决议日, 两个负向因素撞在一起。
+
+**Sources.**
+- CNBC: 10-year Treasury yield hits highest level since 2007
+- Dow Jones: Dollar Rises in Anticipation of Fed Rate Increase
+- {"type": "cross_stock", "title": "Samsung 005930.KS -4.24% / 5d -7.96% \u540c\u6b65; DRAM ETF 5d -10.47%; SNDK 5d -12.74%", "publisher": "workspace", "url": ""}
+
+**Cross-assets.** SPY -0.47% · VIX 17.46 · TEN YEAR 5.0 · WTI 105.95 · DXY 99.64 · GOLD 4342.5 · BTC 75913
+
+**Agent read.** 纯折现率去杠杆, 无公司级利空, 第三次同模式重复。韩美 5.5pp 缺口是明天的主要变量。真正能改变判断的是 9/30 MU 财报的 Tier 1 门槛。
+
+
+---
 ### 2026-08-04 · -8.21% day · ▼ major
 **Tags:** `sector_rotation`, `memory_pricing`, `competitor_news`, `unattributed`
 **Confidence:** medium

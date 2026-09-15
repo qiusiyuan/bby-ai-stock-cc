@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-15 · +3.27% day · ▲ material
+**Tags:** `macro_oil`, `commodity_move`, `geopolitical_war`, `flow_event`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 加拿大能源 ETF 放量突破 52 周高点: 现价 $66.26 = 52 周高 $66.26, 成交量 2.73 倍于 30 日均量。**这是今天能源四名里技术形态最干净的一个** —— 触及新高且有成交量确认, 而 SU/CVX/CNQ 都是缩量上涨 (0.51x / 0.62x / 0.54x)。ETF 层面 2.73x 的放量意味着有资金在整体买入「加拿大能源」这个主题, 而不只是调整个股权重 (flow_event)。驱动与 SU 同源: WTI +4.5% 至 $105.95 / Brent 破 $109, 三条供给中断 (沙特东西输油管线遭胡塞袭击停运数周 —— 绕霍尔木兹的唯一大动脉、霍尔木兹未复通、利比亚断供)。国防股 ITA 同日 -0.83% / 30d -12.64% 说明这是物理短缺定价而非战争溢价。加拿大标的额外吃一层汇率顺风: USD/CAD 1.3914 (30d -0.94%), 加元走强的传导链是 WTI $106 → 加拿大原油出口收入 (USD 计价) 上升 → 出口商结汇需求 ↑ → 加元需求 ↑, 因此油价与加元同向而非对冲。风险面: 已经触及 52 周高点本身, 8/20 债务化框架对这类资产的定位是「顺风, 但已在 52w 高, 别追」。
+
+**Sources.**
+- Benzinga: Oil Soars As Saudi Pipeline Faces Weeks-Long Outage
+- 247wallst: Offshore Oil Stocks Rally While the Broad Market Slips: Transocean Climbs 6%, Valaris Rises 6%, W&T Offshore Gains 6%
+
+**Cross-assets.** SPY -0.47% · VIX 17.46 · TEN YEAR 5.0 · WTI 105.95 · DXY 99.64 · GOLD 4342.5 · BTC 75913
+
+**Agent read.** 放量破 52w 高是能源里最干净的技术形态, 但也正因如此是最不该追的位置。2.73x 的量在 ETF 上意味着主题级资金流入。
+
+
+---
 ### 2026-09-10 · +0.96% day · ▲ minor
 **Tags:** `commodity_move`, `geopolitical_war`, `macro_oil`, `flow_event`
 **Confidence:** low

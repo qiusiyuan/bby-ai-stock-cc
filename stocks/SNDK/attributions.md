@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-15 · -2.28% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** **5 日 -12.74% 是全组合最差周线**, 触发 5d≥10% 阈值。今天单日 -2.28%, 媒体把它与 WDC (-4%) / Seagate (-5%) 归为一类「存储链承压」, 同时指出 Micron 相对持平。无 SNDK 公司级利空 —— 归因是折现率通道 + NAND 板块 beta。10Y 今天破 5.00% (2007 年 7 月以来最高), 明天 FOMC 市场定价加息。fwd PE 5.7x 与 MU (5.9x) / SKHY (5.1x) 同属「假性便宜」类别: 倍数隐含周期高点盈利维持多年, 折现率上升压缩的正是「多年」的现值, 因此低 PE 不构成安全边际。**位置上最值得警惕: 股价 $1,516.65 刚好贴在 MA50 ($1,509.45) 上, 而 thesis-break $1,200 的缓冲仅 +26.4%, 是所有重点股里最窄之一 (仅 AVGO +13.3% 与 GEV +25.8% 更窄或相当)。** 用户在设 $1,200 这个位置时明确说过是「更早预警的安全垫」(高于 7/29 低点 $1,016), 而 MA50 破了之后到 $1,200 之间没有明显技术支撑。历史对照: 8/17 SNDK +9.55% / 5d +45% 时的归因明确警告「+57% in 30d at 52w high 是教科书级不该加仓时点」, 次日 (8/18) 即 -8.92% 验证; 9/10 又 -4.06%。现价距 52 周高 $2,354.39 已 -35.6%, 那次警告的完整代价现在可见。下个催化是 2026-11-06 财报 (评分卡 status: pending, 判据是 FY27 指引 $10.3-10.8B rev / $44-46 EPS 是否兑现 + 84.6% 峰值毛利率是否快速回落)。
+
+**Sources.**
+- 247wallst: Western Digital Falls 4% Despite Its AI Storage Pitch; Seagate Drops 5%, Micron Holds Steady
+- CNBC: 10-year Treasury yield hits highest level since 2007
+
+**Cross-assets.** SPY -0.47% · VIX 17.46 · TEN YEAR 5.0 · WTI 105.95 · DXY 99.64 · GOLD 4342.5 · BTC 75913
+
+**Agent read.** 缓冲 +26.4% 全组合最窄之一, 且刚好贴 MA50 —— 这条线是要盯的位置。8/17 的「不该加仓」警告的完整代价 (-35.6% from 52w high) 现在可见。
+
+
+---
 ### 2026-09-10 · -4.06% day · ▼ material
 **Tags:** `macro_inflation`, `macro_rates`, `sector_rotation`, `memory_pricing`
 **Confidence:** high

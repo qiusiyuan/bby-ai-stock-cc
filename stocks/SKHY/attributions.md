@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-15 · -1.20% day · ▼ moderate
+**Tags:** `macro_rates`, `sector_rotation`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** 美国 ADS 今天只跌 1.20%, 而韩国母股 (000660.KS) 跌 6.73% —— **5.5 个百分点的缺口是今天关于 SKHY 唯一真正需要记的事。** 两者共享完全相同的基本面 (同一家公司), 所以缺口不可能是基本面差异, 而是时区: 韩国 9/15 收盘时反映的是当地整个交易日的情绪 (包括对隔夜美债 10Y 破 5% 的反应), 而 SKHY 的美股时段还在进行中。历史上此类缺口在次日美股时段收敛, **因此 SKHY 明天有补跌压力, 而明天正好是 FOMC 决议日 (市场定价加息) —— 两个负向因素叠在同一天。** 归因机制与母股一致: 无 HBM 公司级利空, 纯折现率通道。10Y 今天破 5.00% (2007 年 7 月以来最高, 30d +6.7%), fwd PE 5.1x 的假性便宜 (倍数隐含周期高点盈利维持多年, 而折现率上升压缩的正是「多年」) 不提供保护。这是 8/18 (SKHY -8.2%) 和 9/10 (SKHY -5.2%) 之后同一机制的第三次。距 thesis-break $115 缓冲 +50.9%。10/07 的 ADS 90 天 lockup 到期已有研究结论 (stocks/SKHY/research/2026-07-31-ads-premium-structure.md): 非主要变量 —— 100% 增发无老股东减持 (股本 711,075,500→728,865,500, 增量恰等于发行量 17,790,000), 且 SK square 受韩国《垄断规制与公平交易法》永久 20% 持股下限约束 (比 90 天合约更强的长期限制)。观察点是到期前后是否放量下跌: 放量 = 研究漏了受限股东; 无异动 = 判断成立。
+
+**Sources.**
+- {"type": "cross_stock", "title": "000660.KS (\u97e9\u56fd\u6bcd\u80a1) -6.73%, \u8dcc\u7834 MA50; Samsung 005930.KS -4.24%", "publisher": "workspace", "url": ""}
+- CNBC: 10-year Treasury yield hits highest level since 2007
+
+**Cross-assets.** SPY -0.47% · VIX 17.46 · TEN YEAR 5.0 · WTI 105.95 · DXY 99.64 · GOLD 4342.5 · BTC 75913
+
+**Agent read.** 今天的小跌幅是假的平静 —— 母股的 -6.73% 还没被美股时段消化。明天 FOMC + 缺口收敛是双重压力。
+
+
+---
 ### 2026-09-10 · -5.20% day · ▼ material
 **Tags:** `macro_inflation`, `macro_rates`, `sector_rotation`, `memory_pricing`
 **Confidence:** high

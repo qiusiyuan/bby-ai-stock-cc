@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-15 · +5.59% day · ▲ material
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **无独立信息量 —— SSPC 是 SPCX 的 2 倍反向 ETF, 今天 +5.59% 精确对应 SPCX 的 -2.92%。** 记录它是因为触发 1d≥3% 与 5d≥10% 双阈值, 但它的作用仅是 SPCX 方向的确认读数。SPCX 今天下跌的归因是纯折现率税: 10Y 破 5.00% (2007 年 7 月以来最高), 而 SPCX 是组合内对折现率敏感度最高的资产 (零当期盈利 + 全部价值在远期现金流, fwd PE 82.5x)。**值得单独记的是 30 日数字: SPCX 30d +25.57%, SSPC 30d -51.73%。理论上 2 倍反向的 30 日应为约 -51.14%, 实际 -51.73% —— 差额约 0.6 个百分点就是杠杆 ETF 每日重置的波动率磨损 (volatility decay)。这是「杠杆反向 ETF 不适合长期持有」的一个干净实证, 也是本 workspace 记录这个标的的主要价值。** 现价 $9.925, 52 周区间 $6.00–$24.66; MA50 $14.01 (远低于), MA200 n/a (上市不足 200 日)。
+
+**Sources.**
+- {"type": "cross_stock", "title": "SPCX -2.92% (5d -6.29%, 30d +25.57%) \u2014 SSPC \u4e3a\u5176 2x \u53cd\u5411", "publisher": "workspace", "url": ""}
+- CNBC: 10-year Treasury yield hits highest level since 2007
+
+**Cross-assets.** SPY -0.47% · VIX 17.46 · TEN YEAR 5.0 · WTI 105.95 · DXY 99.64 · GOLD 4342.5 · BTC 75913
+
+**Agent read.** 零独立信息; 唯一价值是 30d -51.7% vs 理论 -51.1% 的差额量化了杠杆磨损。作为 SPCX 的镜子使用, 不作独立信号。
+
+
+---
 ### 2026-08-04 · -20.01% day · ▼ extreme
 **Tags:** `flow_event`, `earnings_pre_print`, `sector_rotation`
 **Confidence:** high
