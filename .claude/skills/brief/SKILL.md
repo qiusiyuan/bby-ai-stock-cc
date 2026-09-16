@@ -21,7 +21,7 @@ Module 5. **The synthesis tab — visual-first, not essay-first.** Earlier itera
 Open `dashboard/{date}.md`. Extract from each existing H2 section:
 - **Pulse & Macro** → today's tape headline, top 2 macro signals
 - **Watchlist & Movers** → top 3 movers (gainers + losers)
-- **Timeline 30d** → events in next 7 days
+- **Timeline 90d** → events in next 7 days, PLUS any single date where 3+ events collide (those are usually the real decision points)
 - **Focus: {cluster}** for each cluster → that cluster's verdict pill
 
 ### 2. Pull supporting data
@@ -65,7 +65,7 @@ Most at risk | {ticker} | {distance to thesis-break or trigger fired}
 ```timeline
 {date} 🔥 | {event} — {why it's decisive}
 ```
-(Max 4 entries. Pulled from Timeline 30d red tier.)
+(Max 4 entries. Pulled from Timeline 90d — the 🔥 tier plus any multi-event collision day even if it is 30+ days out.)
 
 ### 概率分布 (整体 / 你最大暴露的股票)
 ```scenarios

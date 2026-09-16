@@ -25,7 +25,7 @@ The orchestrator always asks via AskUserQuestion, preselecting defaults (1-4) an
 |---|---|---|---|---|
 | 1 | [[pulse]] | "Pulse & Macro" | ✓ | Big-picture: indices, VIX, rates, FX, oil, policy news |
 | 2 | [[watchlist]] | "Watchlist & Movers" | ✓ | Per-stock grid + threshold-crossing flags |
-| 3 | [[timeline]] | "Timeline 30d" | ✓ | Catalyst calendar: earnings, FOMC, lock-ups, predictions |
+| 3 | [[timeline]] | "Timeline 90d" | ✓ | Catalyst calendar: earnings, FOMC, lock-ups, predictions. **90 days, not 30** — a 30d window run mid-quarter hides the entire next earnings season. |
 | 4 | [[cluster]] × N | "Focus: {cluster name}" each | ✓ | One H2 per `focus_cluster` defined in `groups.yaml`. Order: clusters appear in the order listed in yaml. |
 | 5 | [[brief]] | "Brief" | ✓ | AI synthesis — reads 1-4 outputs and writes the cross-cluster narrative + verdicts |
 | 6 | [[deep-dive]] | "Deep Dive: {TICKER}" | (auto-suggested) | Per-stock full analysis on user request. |
@@ -74,7 +74,7 @@ Example menu:
 跑哪些模块？  (multi-select)
   [✓] 1. Pulse & Macro     (大盘 + 宏观 + 政策新闻)
   [✓] 2. Watchlist & Movers (持仓快照 + 异动)
-  [✓] 3. Timeline 30d      (财报 / 政策窗口 / catalyst)
+  [✓] 3. Timeline 90d      (财报 / 政策窗口 / catalyst)
   [✓] 4. Brief 综合        (把以上串起来 + AI 概率判断)
 
 可选 deep-dive: (multi-select)
@@ -102,7 +102,7 @@ Self-check before writing Pulse specifically: does the section contain Indices +
 1. Create the file with `# Daily Report {date}` header
 2. Write `## Pulse & Macro` section → Edit/append to file
 3. Write `## Watchlist & Movers` section → Edit/append to file
-4. Write `## Timeline 30d` section → Edit/append to file
+4. Write `## Timeline 90d` section → Edit/append to file
 5. Write each `## Focus: {cluster}` section → one Edit/append per cluster
 6. Write `## Brief` section LAST → Edit/append to file
 7. Write any Deep Dive sections → Edit/append to file
@@ -120,7 +120,7 @@ Each module skill writes its own H2 to `dashboard/{date}.md`. Idempotent: re-run
 **Resulting tab order** in the dashboard (with default modules + clusters):
 1. Pulse & Macro
 2. Watchlist & Movers
-3. Timeline 30d
+3. Timeline 90d
 4. Focus: TSLA
 5. Focus: SpaceX
 6. Focus: DRAM/HBM
