@@ -4,6 +4,34 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-16 · -0.10% day · ▼ extreme
+**Tags:** `executive_comment`, `competitor_news`, `macro_rates`, `ai_demand`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 记录对象是 30 日 -18.94% (今天 -0.10% 本身无信息, vol 0.65x)。用户询问入场, 做全面 deep dive。四条独立因果链在六周内连续出现, 中间没有正面催化压回: (1) **客户去单一化 — 结构性且不可逆**: 8/19 Google 引入 Marvell 作定制 AI 芯片第二供应商 (AVGO -4.61%, vol 1.78x; MRVL 镜像 +9.85%), 9/2 前后 Qualcomm 拿下 Amazon 多代 AI 芯片。定制 ASIC 的存在理由就是客户想摆脱供应商定价权, 所以去单一化是客户自身核心利益, 无反转机制。(2) **客户融资成本 — 8 月的假设今天变成已发生**: 8/14 的 $3,700 亿 vendor-financing 质疑当时被判为叙事风险; 今天 Fed 加息 25bp 至 3.75-4.00% 且 10Y 收 5.006% (52w 高, 加息后未降), 有专门报道指出这直接抬高数据中心建设的借贷成本。ASIC 绑单一客户无二级市场, 客户融资困难 = 直接订单风险 (GPU 有二级市场则只是节奏问题)。(3) **今天的催化 — 客户自己说要放慢**: Anthropic CEO 发长文呼吁放慢前沿模型扩张, OpenAI CEO 附议; 而 **Anthropic 是 AVGO 已具名的六个 XPU 客户之一**。Hock Tan 当天回应目标未变, 但 24/7 措辞准确: 'the CEO publicly disputed any change to AI targets, but traders sold anyway' — 供应商的否认无说服力, 因为供应商不掌握客户预算。(4) **需求端定价权转移**: OpenAI CFO 公开解释手握 $1,220 亿现金如何改变与芯片供应商的权力关系; CFO Amie Thuener 已承认预期'即使产品结构摊薄毛利率也能维持营业利润率' — 这是对毛利率被摊薄的坦白。**关键推论: beta 救援机制失效。** 8/14 那次判断'8/26 NVDA 强财报会把 AVGO 拉起'成立了 (9/8 +3.04% 收复 9/2 财报跌幅), 但 9 月失效 — 因为板块没跌: 30 日 NVDA +1.22% / MRVL +4.73% / TSM -0.01% / AMD -1.08%, 整个 AI capex cluster 只有 AVGO 一个名字崩掉。这既否证'AI 需求崩盘'的读法, 也证明这是个股问题, 需要 AVGO 自己的催化解决 — 而那要等 12/9。
+
+**Sources.**
+- Yahoo/GuruFocus: [Broadcom (AVGO) Shares Fell As Slower AI Development Raised Demand Concerns](https://finance.yahoo.com/technology/ai/articles/broadcom-avgo-shares-fell-slower-151111944.html)
+- Yahoo/GuruFocus: [Broadcom CEO pushes back on AI slowdown fears](https://finance.yahoo.com/technology/ai/articles/broadcom-ceo-pushes-back-ai-115219758.html)
+- 24/7 Wall St: [Wall Street Sees 56% Upside in Broadcom After Summer Selloff](https://247wallst.com/investing/2026/09/16/wall-street-sees-56-upside-in-broadcom-after-summer-selloff/)
+- 24/7 Wall St: [This AI Stock Could Be Worth Far More Than Investors Think](https://247wallst.com/investing/2026/09/16/this-ai-stock-could-be-worth-far-more-than-investors-think/)
+- Motley Fool: [Hock Tan Just Guided Broadcom's AI Revenue to Reach $230 Billion by 2028. Should You Believe Him?](https://www.fool.com/investing/2026/09/16/hock-tan-just-guided-broadcoms-ai-revenue-to-reach/)
+- Bloomberg via Yahoo: Zuckerberg, Huang Break With Industry Leaders on AI Warnings
+- Barron's: Higher Interest Rates Add to Data Center Builders' Borrowing Costs
+- _Data:_ Q3 FY26 实际: 总营收 $295.91 亿 (+85.5% YoY), AI 半导体 $167.0 亿 (+221% YoY, +54% QoQ, 占总营收 56.4% 计算值), non-GAAP EPS $3.32, 营业利润 +92%。Q4 AI 指引 $217 亿 (+236%)。$3,500 亿两年出货管道 / 六个 XPU 客户 (已具名 Google/OpenAI/Meta/Anthropic)。管理层: FY27 AI $1,150 亿 · FY28 AI $2,300 亿 · FY28 EPS 'on target to exceed $30'。 ()
+- _Data:_ 估值: $338.94 = 11.3x 管理层 FY28 EPS 目标 $30 / 17.5x FY27 一致 EPS $19.38。同业 (24/7 口径): AVGO 19x vs NVDA 24x vs AMD 33x vs MRVL 56x — 做同一门生意的 MRVL 是 AVGO 约 3 倍倍数。一致目标价 $531.85 (50 位分析师) 但分散度极大: 9/2 财报后 DA Davidson $400→$350 (Neutral) 对 Citi $500→$515 (Buy), 相差 47%。 ()
+- _Data:_ 技术: 跌破 MA50 $381.44 (-11.1%) 与 MA200 $368.78 (-8.1%); 距 52w 高 $495 -31.5%, 距 52w 低 $289.96 +16.9%; 距 thesis_break $300 缓冲 +13.0% (全持仓第二薄, 仅次于 NOK +12.6%)。**-20.8% 区间回撤是缩量完成的** (今天 vol 0.65x, 30 日均量 2,295 万股) = 无 capitulation; put/call 0.54 仍偏 call = 无人买保护。 ()
+- _Corroboration:_ 同生意不同命证明是个股份额问题非行业问题: MRVL 今天 +3.27% / 30 日 +4.73% 对 AVGO 30 日 -18.94%。板块横向: NVDA 30d +1.22%, TSM -0.01%, AMD -1.08% — 若 AI 需求崩盘, 龙头 NVDA 不可能为正。
+- _Corroboration:_ 逆向检验 — 市场在给'不自我限速的一方'溢价: NVDA +1.00% 与 META +0.67% 的 CEO 正是公开反对 AI 刹车的人, 头条直接写出因果 'Why Nvidia Stock Is Rising as Meta's Zuckerberg Weighs In on AI Safety'。
+- _Data:_ 管理层预测记录可校验且偏保守: 2024 年底 Hock Tan 预测 2027 年 AI 营收 $600-900 亿, 当时被视为 long-shot; 公司现在给 FY27 的数字是 $1,150 亿 — 上次的激进预测事后被证明是严重低估。这是相信当前指引最强的单一论据。 ()
+- {"type": "gap", "note": "\u6570\u636e\u7f3a\u53e3: (1) VMware ARR \u4e0e\u6d41\u5931\u7387\u672c\u8d22\u62a5\u5468\u671f\u5b8c\u5168\u672a\u516c\u5f00, \u800c 6/18 thesis \u628a'VMware ARR \u8f6c\u8d1f'\u5217\u4e3a kill condition \u2014 \u8be5\u6307\u6807\u76ee\u524d\u65e0\u6cd5\u76d1\u63a7; (2) XPU \u5ba2\u6237\u96c6\u4e2d\u5ea6\u4ece\u672a\u62ab\u9732, \u53ea\u77e5\u516d\u4e2a\u5ba2\u6237\u4e0e $3,500 \u4ebf\u603b\u989d, \u96c6\u4e2d\u5ea6\u98ce\u9669\u91cf\u7ea7\u65e0\u6cd5\u8ba1\u7b97; (3) \u8c03\u6574\u540e\u6bdb\u5229\u7387\u5177\u4f53\u767e\u5206\u6bd4\u672a\u83b7\u53d6, \u4ec5\u6709 CFO \u65b9\u5411\u6027\u8868\u8ff0\u3002(4) TheStreet \u5173\u4e8e Hock Tan \u56de\u5e94\u539f\u6587 HTTP 403; Anthropic CEO \u957f\u6587\u539f\u6587\u672a\u53d6\u5230, \u6240\u6709\u63cf\u8ff0\u6765\u81ea\u4e8c\u624b\u62a5\u9053\u3002"}
+
+**Cross-assets.** SPY -0.53% · VIX 18.04 · 10Y 5.006 · WTI 101.76
+
+**Agent read.** 用户询问是否入场, 判断: **生意好, 估值不贵, 时点不好。** 支持入场的部分是实质性的 — 11.3x 管理层 FY28 EPS 目标 (对做同一门生意的 MRVL 33.9x 折价约一半)、管理层预测记录经校验偏保守 (2024 年底的 long-shot 预测事后是低估)、-20.8% 回撤缩量完成无机构恐慌出货、板块横向数据已否证'AI 需求崩盘'。反对现在入场的四项叠加: (1) 四条下跌原因一条未解, 最重要的一条 (客户去单一化) 不可逆且无公开数据可验证幅度 — AVGO 从未披露 XPU 客户集中度; (2) **下一个公司级催化在 12/9, 还有 12 周** — 这期间 AVGO 是纯宏观 beta 工具而宏观今天刚变坏 (Fed 开启加息周期, 10Y 5.006% 且加息后不降); (3) 缩量下跌的另一面是没有洗盘 — 放量下跌标志出清, 缩量下跌通常还有下一段, 且 put/call 0.54 说明共识仍看好而资金在慢慢撤, 典型演化是继续阴跌而非 V 型反转; (4) 技术位置在信息量最低的中间区 — MA200 $368.78 变阻力在头顶 8.1%, 而 thesis-break $300 与 52w 低 $289.96 (两者几乎重合) 在下方 13-14%。**Bull/base/bear 从 6/18 的 30/50/20 重估为 25/45/30** ($600-730 / $430-480 / $250-300)。上调 bear 的三条依据全部是 6/18 后新出现: 客户去单一化从风险变成已发生两次 · Anthropic 从客户变成公开呼吁放慢的客户 (6/18 时它甚至不在具名客户名单上) · 利率环境反转。**两个把'时间赌注'变成'价格赌注'的节点: (a) 10/28 Meta/Google/MSFT 三家同日 capex 指引 — 这是在 AVGO 自己 12/9 报表前免费拿到的需求侧答案; (b) $290-300 区域 — thesis_break 与 52w 低在此重合, 决策变成有规则定义的二元判断。** 最难反驳的空头论点不是指引落空, 而是'市场按周期股给倍数': 即使完美交付 $2,300 亿 AI 营收, 倍数也可能停在 12-15x (内存股就是这个逻辑, MU fwd PE 5.9 / SKHY 5.1 / SNDK 5.8)。这条无法被任何单季财报证伪, 判据在倍数随时间的行为 — 若 FY27 $1,150 亿达标而倍数不扩张, 就是市场用行动确认了周期股定性。护城河净判断: **交付能力的护城河仍在, 定价权的护城河在漏** — 订单能见度强 ($3,500 亿两年管道), 但每美元订单的利润率被客户挤压, 且 CFO 已预告毛利率被摊薄。
+ · Snapshot at `dashboard/2026-09-16.md`
+
+---
 ### 2026-09-08 · +3.04% day · ▲ material
 **Tags:** `earnings_post_print`, `competitor_news`, `pt_change`, `sector_rotation`
 **Confidence:** high
