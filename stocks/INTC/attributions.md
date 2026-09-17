@@ -4,6 +4,29 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-17 · +9.34% day · ▲ major
+**Tags:** `executive_comment`, `partnership_news`, `sector_rotation`, `macro_rates`
+**Confidence:** high
+
+**Primary cause.** 两条来自 Intel 自身的消息叠加风险偏好修复。(1) **SK Hynix 与 Intel 就俄亥俄园区代工存储芯片重启谈判** — 这是 Intel Foundry 第一个 Apple 之外的具名重量级潜在客户，thesis 里明确写着「18A 客户资格认证进展（gating factor）；任何 Apple 之外的具名客户胜利都验证 thesis」。历史重量在于角色反转：Intel 2021 年把 NAND 业务卖给 SK Hynix，现在 SK Hynix 可能反过来用 Intel 的美国晶圆厂。对 SK Hynix 的真实价值不是产能增量而是**在美国关税/出口管制墙内获得 HBM 产能**（这也解释了 SKHY ADS +5.24% vs 韩本 +3.25% 的 1.6 倍差）。(2) **CEO 称存储价格已上涨超过 500%** — 对 INTC 自身是成本利空（Intel 采购存储做服务器/PC 平台，而毛利率从 40% 恢复到 50%+ 是 thesis 关键指标），但市场只交易了「所以代工存储的经济性成立」，完全忽略了采购成本这一面。(3) 宏观公因子：加息后 10Y 从 5.00% 回落到 4.951%，VIX -12.03% 到 15.58，高 beta 半导体第三个交易日反弹（AMD +6.13%、MRVL +5.37%）。**盘中形态确认是消息驱动**：5 分钟数据显示盘前和上午前段在 $102-106 缓慢爬升，上午出现约 $3 跳空（$106.14 → $109.045），随后 $109-111 高位横盘到收盘 — 典型的「消息落地→快速重定价→新水位横盘」，不是全天资金持续买入。1.12x 量比也支持：若是机构建仓量比会在 1.5x 以上。**关键风险：这是谈判不是签约。** 一篇分析标题直接点破 'Intel Stock Jumps 4% on SK Hynix Rumor, But Here's Why the Real Win Is Years Away' — 晶圆厂改造成存储产线是多年工程（存储与逻辑芯片的制程/设备/洁净室要求都不同）。今天涨的是期权价值不是现金流。另有一篇 'Intel (INTC) Could Be 80% Undervalued After SK Hynix Fab Talks' — 基于一次谈判传闻推出 80% 低估，记下来是为了识别顶部信号：当卖方开始用传闻做 DCF，情绪已领先事实。
+
+**Sources.**
+- MT Newswires/Yahoo: [Intel Jumps 8%, SK Hynix Climbs 5% as Ohio Memory Talks Reignite; Micron Rises 6%](https://finance.yahoo.com/)
+- Yahoo: [SK Hynix and Intel explore US memory chip partnership](https://finance.yahoo.com/)
+- Yahoo: [Intel Stock Jumps 4% on SK Hynix Rumor, But Here's Why the Real Win Is Years Away](https://finance.yahoo.com/)
+- Yahoo: [Micron Jumps 5% as Intel CEO Says Memory Prices Have Surged Over 500%](https://finance.yahoo.com/)
+- Yahoo: [Intel Considers Rejoining the Memory-Making Biz](https://finance.yahoo.com/)
+- _Corroboration:_ SKHY ADS +5.24% / SK Hynix 韩本 (000660.KS) +3.25% / MU +5.37% / SNDK +5.90% / DRAM ETF +4.57% 同日 — 跨标的确认。AMD +6.13% / MRVL +5.37% 同日说明有板块 beta 成分
+- _Data:_ 盘中 5m: 盘前 $102.87 → 上午跳空 $106.14→$109.045 → 收盘区间 $109-111。全天区间 $101.05-$111.37 (振幅 10.2%) ()
+- _Data:_ 估值更新: fwd PE 53.58x (thesis 撰写时 87x @ $134)。股价 -17.5% 而倍数 -38.4% → 隐含远期 EPS 预期上调约 34% ($1.54 → $2.06)。thesis 的「零安全边际」结论需改为「安全边际薄但不再为零」 ()
+- _Data:_ MA50 $97.21 / MA200 $76.82，站上两条均线 +13.7% / +43.8%。距 52w 高 $142.35 -22.4%，距 52w 低 $28.73 +285% ()
+
+**Cross-assets.** SPY +1.11% · QQQ +1.63% · VIX 15.58 · TEN YEAR 4.951 · DXY 100.24 · WTI 101.85
+
+**Agent read.** **形态与 9/8 那次高度相似，这是今天最重要的风险提示。** 9/8 也是 +9.67%、也是未经公司确认的传闻（DigiTimes 的 PC CPU 涨价最多 10% 报道）、之后 9/10 -5.6% + 9/14 -5.6% 把涨幅还掉大半，到 9/16 仅回到 $101。**现在有两个待验证的传闻叠加**，检验点各自明确: (a) **10/05** 是 CPU 涨价传闻的生效日（timeline 已挂）；(b) **10/22 Q3 财报**是俄亥俄谈判的官方口径 — Intel 必须回应。两个日期的权重都因此升高：若 10/05 涨价落地 + 10/22 确认谈判在推进，则 $110 的基础扎实；若任一落空，9/8 和 9/17 两次约 9% 的涨幅都缺乏支撑，回撤空间是 $101（9/16 收盘）甚至 $97（MA50）。**6/30 那次的 agent read 至今有效**：「市场仍将 INTC 当 beta 交易不是 turnaround。Turnaround stories 在 sector panic 时 first to sell — 没有 moat buffer。」今天 1.12x 的温和量比说明这个性质没变。**一个被市场忽略的矛盾值得单独记**：Intel CEO 说存储涨价 500% 对 Intel 自己的毛利率是逆风（它是存储买方），而毛利率恢复到 50%+ 正是 thesis 的关键指标之一。今天市场只交易了「代工存储的机会」，没交易「采购存储的成本」— 10/22 财报的毛利率数字会把两面都摊开。**估值侧有实质改善**：当前 $110.49 在 Base 区间 ($120-140) 下沿 8.6% 处，介于 Base(40%) 和 Bear(35%) 之间，定价大致合理偏保守；而 thesis 撰写时 $134 在 Base 区间中上部且被判为「零安全边际」。距 thesis-break $75 仍有 +47.3% 缓冲，短期无结构性风险。
+ · Snapshot at `dashboard/2026-09-17.md`
+
+---
 ### 2026-09-10 · -5.57% day · ▼ material
 **Tags:** `analyst_downgrade`, `pt_change`, `macro_rates`, `macro_inflation`, `sector_rotation`
 **Confidence:** high

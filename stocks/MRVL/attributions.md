@@ -4,6 +4,27 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-17 · +5.37% day · ▲ material
+**Tags:** `partnership_news`, `ai_demand`, `sector_rotation`, `macro_rates`
+**Confidence:** high
+
+**Primary cause.** **三条独立的公司级催化，全部指向互连层** — MRVL 是今天 AI capex cluster 里催化最密的名字。(1) **AI 光互连拿下更多美国产能**（'Marvell Jumps 5.2% as AI Optics Win More U.S. Capacity'）；(2) **GlobalFoundries SiGe 合作扩大**，用于下一代 AI 数据中心光互连（'GlobalFoundries and Marvell expand SiGe deal for AI data centers'）；(3) **Microsoft 安全平台合作**（'MRVL Stock Climbs After AI Optical Capacity Deal, New Microsoft Security Platform Launch'）。**三条催化的共同方向是最重要的信息**：MRVL 在 AI 数据中心的**互连层**位置在加固，而不只是搭 AWS Trainium 的车（Trainium SerDes 是既有 thesis）。叠加板块 beta：半导体反弹第三个交易日，加息后 10Y 5.00%→4.951%、VIX -12.03% 到 15.58，AMD +6.13% / INTC +9.34% 同日。**跨标的确认**：NOK 今天 +3.65%（量比 1.34x，全 watchlist 第二高量比）也是因为 Microsoft 光网络合作（'From Flip Phones to AI, Nokia's Microsoft Deal Boosts Its Optical Networking Prowess'）— **同一主题的两个独立标的表达，这种跨标的确认比单一新闻可靠得多**。
+
+**Sources.**
+- Yahoo: [Marvell Jumps 5.2% as AI Optics Win More U.S. Capacity](https://finance.yahoo.com/)
+- Yahoo: [GlobalFoundries and Marvell expand SiGe deal for AI data centers](https://finance.yahoo.com/)
+- Yahoo: [MRVL Stock Climbs After AI Optical Capacity Deal, New Microsoft Security Platform Launch](https://finance.yahoo.com/)
+- Yahoo: [GlobalFoundries and Marvell expand collaboration for next-generation optical connectivity](https://finance.yahoo.com/)
+- _Corroboration:_ **互连主题的跨标的确认**：NOK +3.65%（量比 1.34x）因 Microsoft 光网络合作。两个不同公司、同一天、同一主题（AI 数据中心互连）— 主题确认强于单一新闻
+- _Corroboration:_ 板块 beta 成分：AMD +6.13% (1.09x) / INTC +9.34% (1.12x) / NVDA +2.55% (0.50x) / AVGO +2.51% / TSM +2.90%。MRVL 5d +6.32% 是六名异动里最强，说明已有独立动能
+- _Data:_ 量比 0.66x。距 thesis-break $200 缓冲 **+21.0% — 今日异动六名里最窄**。下一个硬催化 12/01 Q3 财报，三个月后 ()
+
+**Cross-assets.** SPY +1.11% · QQQ +1.63% · VIX 15.58 · TEN YEAR 4.951 · DXY 100.24 · WTI 101.85
+
+**Agent read.** **MRVL 是今天涨幅里质量最高的一个** — 六个 ≥5% 的名字里，只有它和 INTC 有真实的公司级催化，而 MRVL 的三条催化方向一致（互连层），INTC 的两条是未确认传闻。5d +6.32% 也是六名最强，说明动能不是今天才有。**一个方向性判断值得记下来：AI 数据中心的瓶颈正在从「有多少算力」转向「算力之间怎么连」。** 证据有三层：(a) MRVL 今天三条催化全在光互连/SerDes；(b) NOK 同日因 Microsoft 光网络合作 +3.65%（1.34x 量比）；(c) 对照组是龙头的迟钝 — **NVDA 30d 仅 +0.26%、量比 0.50x（cluster 最低），AVGO 30d -16.69%**。**卖算力的在停滞，卖互连的在加速，卖代工的在修复（TSM/INTC）。这个排序如果持续，意味着 AI 基础设施的投资重心在向互连和产能迁移 — 而这正是产业成熟的典型路径（早期抢算力，中期抢互连和产能）。** 历史对照：8/19 Google 引入 Marvell 作定制 AI 芯片第二供应商时，AVGO -4.61% (vol 1.78x) 而 **MRVL 镜像 +9.85%** — MRVL 的上行多次以 AVGO 的下行为对价。今天 AVGO 也涨了 +2.51%，两者同涨说明这次是板块 beta 而非份额转移，但 30d 口径（MRVL +14.35% vs AVGO -16.69%）显示份额叙事的方向未变。**风险提示：距 thesis-break $200 只有 +21.0% 缓冲，是今日六个异动名字里最窄的，而下一个硬催化远在 12/01（三个月后）。** 中间无法验证，靠叙事支撑。
+ · Snapshot at `dashboard/2026-09-17.md`
+
+---
 ### 2026-09-10 · -3.43% day · ▼ material
 **Tags:** `macro_inflation`, `macro_rates`, `sector_rotation`
 **Confidence:** medium

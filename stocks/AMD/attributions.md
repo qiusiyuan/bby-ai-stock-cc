@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-17 · +6.19% day · ▲ material
+**Tags:** `sector_rotation`, `macro_rates`, `ai_demand`
+**Confidence:** medium
+
+**Primary cause.** **无单一公司级催化 — 这是板块 beta 领涨。** 半导体反弹进入第三个交易日（'AMD Jumps 7% as Semiconductor Rebound Reaches a Third Session; Broadcom Rises 3%, NVIDIA Edges Higher'、'AMD Leads Chip Stocks Higher Amid Sector Rebound'）。AMD 是大市值半导体里 beta 最高的名字之一，在 VIX 单日崩 12.03% 到 15.58、10Y 从 5.00% 回落到 4.951% 的日子天然领涨。**唯一的公司消息是生态层面而非营收层面**：ROCm 支持扩展到 RISC-V 数据中心服务器（'Advanced Micro Devices (AMD) Expands ROCm Support To RISC V Datacenter Servers'）— 软件生态扩张，不影响近期营收。另有 Nebius 宣布上调 NVDA GPU 和 AMD CPU 的租用价格（'Nebius announces higher rates for Nvidia GPUs and AMD CPUs'）— 这是需求侧的间接正面信号（租金上涨 = 供不应求）。Cramer 当日喊 'Buy It'（情绪，非基本面）。
+
+**Sources.**
+- Yahoo: [AMD Jumps 7% as Semiconductor Rebound Reaches a Third Session; Broadcom Rises 3%, NVIDIA Edges Higher](https://finance.yahoo.com/)
+- Yahoo: [AMD Leads Chip Stocks Higher Amid Sector Rebound](https://finance.yahoo.com/)
+- Yahoo: [Nebius announces higher rates for Nvidia GPUs and AMD CPUs](https://finance.yahoo.com/)
+- Yahoo: [Advanced Micro Devices (AMD) Expands ROCm Support To RISC V Datacenter Servers](https://finance.yahoo.com/)
+- _Corroboration:_ 板块同涨：INTC +9.34% (1.12x) / MRVL +5.37% / TSM +2.90% / NVDA +2.55% / AVGO +2.51%。**AMD 和 INTC 是今天唯二量比 >1.0x 的半导体名字（1.09x / 1.12x）— 只有这两个有真实资金**
+- _Data:_ 量比 1.09x。距 thesis-break $380 缓冲 +43.1%。下一催化 11/03 Q3 财报 ()
+
+**Cross-assets.** SPY +1.11% · QQQ +1.63% · VIX 15.58 · TEN YEAR 4.951 · DXY 100.24 · WTI 101.85
+
+**Agent read.** **confidence 定 medium 是因为归因诚实：这次涨幅无法归因到 AMD 自身的任何新信息。** 1.09x 量比 + 无公司级新闻 = **仓位调整，不是叙事变化**。这不是负面判断，只是要求不要把它读成基本面改善。**一个值得注意的对照**：今天全部半导体名字里只有 AMD (1.09x) 和 INTC (1.12x) 的量比超过 1.0x，其余（NVDA 0.50x / AVGO 0.53x / MRVL 0.66x / TSM 0.65x）全部缩量。**AMD 有真实资金但无叙事，INTC 有叙事（传闻）也有资金** — 两者是不同性质的买盘。**Cramer 当日的两条评论构成一个有意思的组合**：一边说 AMD 'Buy It'，一边写 'Jim Cramer Turns on the Two Kings of AI: If You Want to Destroy Trust, You Couldn't Find a Better Way' — 名嘴同日既唱多具体标的又质疑 AI 双龙头，这是情绪面混乱的表征，不构成信息。**关键跟踪项是 11/03 Q3 财报** — 今天的 +6.19% 是 beta，财报是唯一能把 beta 变成 alpha 的地方。**INTC 与 AMD 的份额之争是本次两者同涨背后被掩盖的矛盾**：INTC thesis 的 disconfirming event 里明确写着「AMD 继续拿 Xeon 服务器 CPU 份额」，两家同日大涨说明市场在交易共同的板块因子，还没交易份额归属 — 这会在 10/22 (INTC) 和 11/03 (AMD) 两份财报之间被拉开。距 thesis-break $380 缓冲 +43.1%，无风险。
+ · Snapshot at `dashboard/2026-09-17.md`
+
+---
 ### 2026-09-10 · -3.36% day · ▼ material
 **Tags:** `macro_inflation`, `macro_rates`, `sector_rotation`
 **Confidence:** medium

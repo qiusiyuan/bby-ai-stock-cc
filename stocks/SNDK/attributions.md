@@ -4,6 +4,28 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-17 · +5.90% day · ▲ material
+**Tags:** `memory_pricing`, `executive_comment`, `sector_rotation`, `macro_rates`
+**Confidence:** medium
+
+**Primary cause.** **无独立公司级催化 — 纯跟随存储链的价格叙事。** 驱动是 Intel CEO 称存储价格涨超 500%（买方口径确认，详见同日 MU/INTC 条目）+ 'The Memory Shortage Is Not Over: More Upside for Micron and Sandisk?' 的行业观点 + 加息后 risk-on（10Y 5.00%→4.951%，VIX -12.03%）。**一个必须标注的归因精度问题：SNDK 的 HBM 敞口为零。** SNDK 是纯 NAND flash（从 Western Digital 分拆），Intel CEO 说的 500% 涨价更可能指 DRAM/HBM 而非 NAND。**所以 SNDK 今天的涨幅里有一部分是「存储」这个标签的误伤（正向的）** — 市场把它和 MU/SKHY 放进同一个价格因子交易，但它的产品线不同。这是 confidence 定为 medium 而非 high 的原因。**但有一条正面的分化证据**：同期 Western Digital -4%、Seagate -5%（'Western Digital Falls 4% Despite Its AI Storage Pitch; Seagate Drops 5%, Micron Holds Steady'）。市场把 SNDK 归入 AI 存储受益方，把 WDC/STX 归入传统 HDD。**这个区分对 SNDK 的「NAND 周期股 → 结构性现金牛」re-rate 命题是支持性证据** — 说明市场不是无差别买存储，而是在做产品定位的区分。**5d -4.97% 是存储三家最弱**，今天反弹幅度最大（+5.90%）— 典型的「跌最多、弹最猛」，这也弱化了「基本面重估」的读法。
+
+**Sources.**
+- Yahoo: [The Memory Shortage Is Not Over: More Upside for Micron and Sandisk?](https://finance.yahoo.com/)
+- Yahoo: [Micron Jumps 5% as Intel CEO Says Memory Prices Have Surged Over 500%](https://finance.yahoo.com/)
+- Yahoo/Motley Fool: [Sandisk Is Up More Than 1,700% in a Year and Still 33% Off Its Peak. History Says This is What Happens Next.](https://finance.yahoo.com/)
+- Yahoo: [Sandisk $1,500 Stock Price Ignites Fresh Split Frenzy](https://finance.yahoo.com/)
+- Yahoo: [Sandisk (SNDK) Refinances Credit Line As Valuation Debate Sharpens](https://finance.yahoo.com/)
+- _Corroboration:_ **关键分化证据**：Western Digital -4% / Seagate -5%（传统 HDD）vs SNDK +5.90%（AI 存储）。市场在存储内部按产品定位分层，不是无差别买入。同日 MU +5.37% / SKHY +5.24% / DRAM +4.57%
+- _Data:_ 量比 0.53x — 存储三家最低。5.90% 涨幅配 0.53x = 无新增机构资金，是空头减压/做市商调仓形态 ()
+- _Data:_ 估值：fwd PE 6.08x / trailing 21.83x。市值 $236B（三家最小）。距 52w 高 $2,354.39 **-31.6%**（三家里离峰值最远），距 52w 低 $93.535 **+1,621%**。MA50 $1,505.44 (+6.9%) / MA200 $1,060.31 ()
+
+**Cross-assets.** SPY +1.11% · QQQ +1.63% · VIX 15.58 · TEN YEAR 4.951 · DXY 100.24 · WTI 101.85
+
+**Agent read.** **归因诚实度：这不是 SNDK 自己的故事。** 它今天涨 5.90% 是因为被打上了「存储」标签，而涨价消息的产品指向更可能是 DRAM/HBM 而非 NAND。所以 confidence 定 medium。**真正有信息量的是 WDC/STX 的反向走势**（-4% / -5%）— 市场在存储内部按「AI 存储 vs 传统 HDD」分层，把 SNDK 放在受益侧。这是对 11/06 那张评分卡（「NAND 周期股 → 结构性现金牛」）的**外部支持证据**：如果市场只把 SNDK 当周期股，它应该和 WDC/STX 同向。**11/06 的 Tier 1 门槛**：营收 $10.3-10.8B、EPS $44-46、non-GAAP 毛利率（84.6% 峰值）不快速回落、半数营收转 FCF 的模型可信度。**两个需要警惕的过热信号：** (1) **拆股狂热** — 'Sandisk $1,500 Stock Price Ignites Fresh Split Frenzy'。拆股讨论是散户情绪指标不是基本面，它出现在一年 +1,700% 之后，是过热的边际信号。(2) **估值辩论在升温** — 'SanDisk Stock Looks Cheap, But Can It Keep Earning This Much?'、'SNDK Rewarded Dip Buyers Before, But Is It Still The Same Company?'、'Sandisk (SNDK) Refinances Credit Line As Valuation Debate Sharpens'。三篇独立文章都在问「这个盈利水平能维持吗」— 这正是 11/06 评分卡要回答的问题。**一个结构性提醒**：距 52w 低 +1,621% 但距 52w 高仍 -31.6% — 这个组合意味着股价经历过一次完整的暴涨和大幅回撤，当前处于中间位置。**在三家里 SNDK 的命题最未经检验**（MU 有 6/24 那份 blowout 做基准，SKHY 有 HBM 领先地位的既成事实，SNDK 的「结构性现金牛」完全是前瞻性主张）。距 thesis-break $1,200 缓冲 +34.1%，无短期风险。
+ · Snapshot at `dashboard/2026-09-17.md`
+
+---
 ### 2026-09-15 · -2.28% day · ▼ material
 **Tags:** `macro_rates`, `sector_rotation`, `memory_pricing`
 **Confidence:** medium

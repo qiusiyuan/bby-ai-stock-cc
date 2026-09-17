@@ -4,6 +4,27 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-17 · +5.37% day · ▲ material
+**Tags:** `executive_comment`, `memory_pricing`, `ai_demand`, `sector_rotation`, `macro_rates`
+**Confidence:** high
+
+**Primary cause.** **主因是买方口径的涨价确认：Intel CEO 公开称存储芯片价格已上涨超过 500%。** 价值不在数字而在说话人的位置 — Intel 是存储的**买方**（CPU/服务器平台要采购 DRAM/NAND），买方公开抱怨涨价，可信度远高于卖方（MU/SK Hynix/Samsung）在业绩会上说「供需紧张」，因为卖方有明显动机而买方没有。这是独立第三方验证。必须打的折扣：500% 没给基准期也没说明是哪类产品，更可能指特定规格/特定合约（HBM 或某些服务器 DIMM）而非整体现货 — 但即使大幅折扣，方向和量级都支持「存储短缺尚未结束」，与独立观点 'The Memory Shortage Is Not Over: More Upside for Micron and Sandisk?' 一致。**第二条独立信息：Micron 在印度追投 $27.5 亿**（AI 存储需求）— 资本开支决定比口头指引可信，但也意味着未来供给增量，对周期后段是双刃剑。**注意这条要在 09/30 用 FY27 capex 指引判定** — 评分卡 Tier 2 明确警告「FY27 capex > $180 亿、不受需求约束的产能扩张 = 经典周期顶信号（MU 屡犯）」。**第三条：SK Hynix-Intel 俄亥俄代工谈判对 MU 实际是竞争性负面**（对手可能拿到美国关税墙内的 HBM 产能），但今天 MU 也涨 5.37%，说明市场当下在交易「存储涨价」的共同因子，还没开始交易「谁抢了谁的份额」— 这个区分会在 09/30 (MU) 和 10/26 (SKHY) 两份财报之间被强制拉开。宏观公因子：加息后 10Y 5.00%→4.951%，VIX -12.03%。
+
+**Sources.**
+- Yahoo: [Micron Jumps 5% as Intel CEO Says Memory Prices Have Surged Over 500%](https://finance.yahoo.com/)
+- Yahoo: [The Memory Shortage Is Not Over: More Upside for Micron and Sandisk?](https://finance.yahoo.com/)
+- Yahoo: [Micron bets $2.75 billion on India as AI memory demand surges](https://finance.yahoo.com/)
+- MT Newswires/Yahoo: [Intel Jumps 8%, SK Hynix Climbs 5% as Ohio Memory Talks Reignite; Micron Rises 6%](https://finance.yahoo.com/)
+- _Corroboration:_ 全链同涨：SKHY ADS +5.24% / SK Hynix 韩本 +3.25% / Samsung (005930.KS) +1.61% / SNDK +5.90% / DRAM ETF +4.57%。**但 Samsung 明显跑输（+1.61% vs SK Hynix +3.25%，同一韩国市场同一交易日）— 这是 7 月「三家齐涨齐跌」以来的新分化**
+- _Data:_ 量比 0.62x — 5.37% 涨幅配 0.62x 量比 = 无新增机构资金。全链量比：MU 0.62x / SKHY 0.68x / SNDK 0.53x / DRAM 0.46x，全部低于 0.7x ()
+- _Data:_ 估值：fwd PE 6.24x / trailing 22.08x。市值 $1.10T。距 52w 高 $1,255 -22.2%，距 52w 低 $154.65 +531%。MA50 $926.75 (+5.3%) / MA200 $636.13 ()
+
+**Cross-assets.** SPY +1.11% · QQQ +1.63% · VIX 15.58 · TEN YEAR 4.951 · DXY 100.24 · WTI 101.85
+
+**Agent read.** **今天的消息是评分卡的顺风证据，但对 09/30 的四个当期数字帮助有限。** 09/30 报的是**已经结束的 Q4 FY26**，Intel 今天说的涨价大概率发生在 Q4 之后或末期，所以涨价更可能反映在 **Tier 1 的第五项（FY27 指引口吻）**而非当期的毛利率/营收/EPS/HBM QoQ 四项上。不要因为今天这条消息提前给评分卡打勾。**7 月那场「供给过剩」恐慌被今天直接反证。** 7/01 OpenAI 效率提升公告重定价 HBM 需求斜率 + BofA 泡沫指标同日（SOX -5%）；7/02 演变为明确的「存储供给过剩恐慌」（SK Hynix -17.5%、Samsung -14.4%）；7/07 Samsung Q2 预告 + SK Hynix $280 亿 ADS 融资推向恐慌顶点，DRAM ETF 进入熊市（距 ATH >20%）。**那次恐慌的核心错误是用「一家公司融资扩产」推断「全行业供给过剩」** — 融资是对未来需求的下注，不是当前供给的证明，产能从融资到出货有 18-24 个月时滞，7 月融的钱 2027 年才影响供给。如果真是供给过剩，价格不会涨 5 倍。**量比诊断工具的对称使用**：6/23 韩国崩盘蔓延、MU 被当作板块代理 ticker 大跌时，vol_ratio 0.65x（低于平均、无机构 capitulation），当时判断「不是真底」— 判断正确，此后 SKHY +21.8% / SNDK +19.1%。**今天 0.62x 用同一工具指向「不是真突破」。工具不能只在下跌时用。** 意味着涨幅支撑薄：若 09/30 不达评分卡门槛，同样薄的流动性会让下跌同样快。**MU 30d +9.2% 是存储三家里最弱（SKHY +21.8% / SNDK +19.1%），这是财报前观望的典型形态。** 另一个结构性提醒：普通 DRAM 占 MU 营收约 60%，所以即使 HBM 是结构性的，MU 的大头仍是周期性的 — 评分卡原话「即使 HBM 承担 bull case 主升，普通 DRAM 也必须稳住」。**MU 比 SKHY (10/26-27) 早近一个月出数字，这是 MU 相对同业的独立时序优势。**
+ · Snapshot at `dashboard/2026-09-17.md`
+
+---
 ### 2026-09-10 · -4.90% day · ▼ material
 **Tags:** `macro_inflation`, `macro_rates`, `sector_rotation`, `memory_pricing`
 **Confidence:** high

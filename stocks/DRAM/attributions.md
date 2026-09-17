@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-17 · +4.57% day · ▲ material
+**Tags:** `memory_pricing`, `executive_comment`, `partnership_news`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 板块 ETF 机械跟随存储链两条催化：**(1) Intel CEO 称存储价格已上涨超过 500%**（买方口径的涨价确认，可信度高于卖方喊涨价）；**(2) SK Hynix 与 Intel 就俄亥俄园区代工存储芯片重启谈判**。成分股全线上涨：MU +5.37% / SKHY +5.24% / SNDK +5.90% / Samsung (005930.KS) +1.61% / SK Hynix 韩本 +3.25%。ETF 加权后 +4.57%，天然跑输个股。宏观公因子：加息后 10Y 5.00%→4.951%，VIX -12.03% 到 15.58。**量比 0.46x 是今天全 watchlist 最低之一** — ETF 是被动跟随，不含独立信号。**另有一条需要存档的结构性风险新闻：'U.S. Export Controls on Chinese Memory Chips Could Make or Break CRAM in 2026'** — 对中国存储芯片的美国出口管制是这个 ETF 的双向风险源：管制收紧 = 非中国供应商（MU/SKHY/Samsung）受益；引发中国反制 = 全链受损。
+
+**Sources.**
+- MT Newswires/Yahoo: [Intel Jumps 8%, SK Hynix Climbs 5% as Ohio Memory Talks Reignite; Micron Rises 6%](https://finance.yahoo.com/)
+- Yahoo: [The Memory Shortage Is Not Over: More Upside for Micron and Sandisk?](https://finance.yahoo.com/)
+- Yahoo: [U.S. Export Controls on Chinese Memory Chips Could Make or Break CRAM in 2026](https://finance.yahoo.com/)
+- _Corroboration:_ 成分股全涨：MU +5.37% (0.62x) / SKHY +5.24% (0.68x) / SNDK +5.90% (0.53x) / SK Hynix 韩本 +3.25% (0.75x) / Samsung +1.61% (0.58x)。**Samsung 明显跑输 — 新出现的链内分化**
+- _Data:_ 量比 0.46x — 全 watchlist 最低。7/07 时 DRAM ETF 曾进入熊市（距 ATH >20%），现已 30d +7.57% 收复 ()
+
+**Cross-assets.** SPY +1.11% · QQQ +1.63% · VIX 15.58 · TEN YEAR 4.951 · DXY 100.24 · WTI 101.85
+
+**Agent read.** **ETF 层面的价值在于确认这是全行业价格因子而非个股故事** — 五个成分（含韩股）全涨，说明今天的驱动是共同的。但 **0.46x 量比（全 watchlist 最低）说明连被动资金都没进场**，这与个股的 0.53-0.68x 一起构成一个统一诊断：**无机构 conviction。** **7 月的完整循环值得回顾**：7/07 这个 ETF 因 Samsung Q2 预告 + SK Hynix $280 亿 ADS 融资引发的「周期顶 + 过度投资」恐慌而进入熊市（距 ATH >20%），今天 30d +7.57% 已收复。**那次恐慌的核心错误是用「一家公司融资扩产」推断「全行业供给过剩」** — 而今天 Intel CEO 的「涨价 500%」是对那个推断的直接反证。**新增的结构性观察：链内开始分层。** Samsung +1.61% 明显跑输 SK Hynix 韩本 +3.25%（同一市场同一天）。如果俄亥俄谈判推进，Samsung 在美国客户前的关税劣势被放大。**这意味着 ETF 的分散化在这个阶段可能是劣势** — 它同时持有受益方（SK Hynix）和相对受损方（Samsung）。**出口管制这条线是 ETF 特有的风险**：作为多国持仓的载体，它同时暴露于「管制收紧利好非中国供应商」和「中国反制打击全链」两个相反方向，个股无法完全复制这个双向敞口。无 thesis_break_price 设定（ETF），无触发风险。
+ · Snapshot at `dashboard/2026-09-17.md`
+
+---
 ### 2026-09-15 · -0.18% day · ▼ material
 **Tags:** `macro_rates`, `sector_rotation`, `memory_pricing`, `flow_event`
 **Confidence:** medium

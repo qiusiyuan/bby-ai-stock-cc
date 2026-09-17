@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-17 · +3.70% day · ▲ material
+**Tags:** `partnership_news`, `ai_demand`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **与 Microsoft 的光网络合作** — 'From Flip Phones to AI, Nokia's Microsoft Deal Boosts Its Optical Networking Prowess'。这是真实的公司级催化，且 **1.34x 量比是今天全 watchlist 第二高**（仅次于 GEV 的 1.13x 之上，实际是最高的有效放量），说明有真实资金进场。**跨标的确认使这条催化的可信度显著提高**：同日 MRVL +5.37%，其三条催化（AI 光互连拿下更多美国产能、GlobalFoundries SiGe 合作扩大、Microsoft 安全平台合作）全部指向互连层。**两个不同公司、同一天、同一主题（AI 数据中心光互连），且都涉及 Microsoft** — 这种独立标的的主题共振比单一新闻可靠得多。NOK 另有一条 Cramer 评论（'Nokia Investors Won't Like This: Jim Cramer Says NOK Stock Is a Buy'），情绪面，非信息。叠加板块 beta：加息后 10Y 5.00%→4.951%、VIX -12.03%。
+
+**Sources.**
+- Yahoo: [From Flip Phones to AI, Nokia's Microsoft Deal Boosts Its Optical Networking Prowess](https://finance.yahoo.com/)
+- Barron's/Yahoo: [Generac, Nebius, CoreWeave, Nokia, Lucid, Paramount, and More Stocks That Explain Today's Market](https://finance.yahoo.com/)
+- _Corroboration:_ **互连主题跨标的确认**：MRVL +5.37% 同日，三条催化全在 AI 光互连/SerDes，其中一条也涉及 Microsoft。两个独立标的同一主题 = 主题级确认
+- _Data:_ 量比 **1.34x — 全 watchlist 最高有效放量**。距 thesis-break $9 缓冲 **+16.8% — 全 watchlist 最窄**。下一催化 10/22 Q3 财报 ()
+
+**Cross-assets.** SPY +1.11% · QQQ +1.63% · VIX 15.58 · TEN YEAR 4.951 · DXY 100.24 · WTI 101.85
+
+**Agent read.** **这是今天质量最高的小额异动**：有具名催化（Microsoft 光网络合作）+ 全表最高量比（1.34x）+ 跨标的主题确认（MRVL 同日同主题）。三个条件同时满足的名字今天只有 NOK 和 MRVL。**但风险侧必须同时记录：NOK 距 thesis-break $9 只有 +16.8% 缓冲，是全 watchlist 最窄。** 方向是对的，但绝对缓冲小且股价基数低（$10 级别的股票，$1.5 的空间不多），任何执行失误的容错度都低于其他持仓。10/22 Q3 财报是下一个检验点。**这条催化的战略含义超出 NOK 本身**：它与 MRVL 一起构成「AI 数据中心瓶颈从算力转向互连」这个判断的两个独立数据点。对照组是龙头的迟钝 — NVDA 30d +0.26%（量比 0.50x）、AVGO 30d -16.7%。**卖算力的在停滞，卖互连的在加速。** 如果这个排序持续，NOK 作为传统电信设备商向 AI 数据中心光网络转型的故事会获得新的定价框架 — 从「衰退中的电信设备商」变成「AI 互连供应商」。这是一个 re-rating 的潜在路径，但需要连续几个季度的营收结构变化来验证，10/22 财报里的光网络分部数据是第一个观察点。
+ · Snapshot at `dashboard/2026-09-17.md`
+
+---
 ### 2026-09-08 · +7.18% day · ▲ major
 **Tags:** `unattributed`, `sector_rotation`
 **Confidence:** low

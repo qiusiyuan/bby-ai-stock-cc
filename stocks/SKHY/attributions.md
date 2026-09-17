@@ -4,6 +4,29 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-17 · +5.24% day · ▲ material
+**Tags:** `partnership_news`, `executive_comment`, `memory_pricing`, `geopolitical_trade`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **SKHY 是今天这条新闻的直接主角：SK Hynix 与 Intel 就在俄亥俄园区代工存储芯片重启谈判。** 真实价值不是产能增量（SK Hynix 在韩国有产能），而是**在美国关税/出口管制墙内获得 HBM 产能** — 这是绕开地缘风险的结构性解，价值远超单纯产能。历史反转赋予额外重量：Intel 2021 年把 NAND 业务卖给 SK Hynix，现在角色互换（'Intel Considers Rejoining the Memory-Making Biz'）。**第二催化：Intel CEO 称存储价格涨超 500%**（买方口径确认，详见同日 MU 条目）。**最重要的量化观察：ADS 涨 5.24% vs 韩本 000660.KS 涨 3.25% = 1.6 倍。** 同一家公司、同一条新闻、同一天，美国上市份额涨得更多 — 说明美国投资者对「SK Hynix 在美国建产能」这条叙事的定价更高（合理，因为这条叙事对美国投资者的关税/地缘顾虑解决得更直接）。**但这也意味着 ADS 溢价在扩大，提高了 10/07 lockup 到期时溢价回归的风险。** 第三个观察：**Samsung 只涨 1.61% vs SK Hynix 韩本 +3.25%（同一韩国市场同一交易日）** — 若 SK Hynix 通过 Intel 拿到美国 HBM 产能，Samsung 在美国客户面前的关税劣势会被放大。Samsung 30d +5.2% 也是全链最弱。这个分化是 7 月「存储链齐涨齐跌」以来的新现象。宏观公因子：加息后 10Y 5.00%→4.951%，VIX -12.03%。
+
+**Sources.**
+- Yahoo/Motley Fool: [SK Hynix Is in Talks With Intel to Make Memory Chips in the U.S. Here's What It Could Mean for Intel Stock.](https://finance.yahoo.com/)
+- Yahoo: [SK Hynix Stock Rises as Intel Ohio Talks Reignite Memory Trade](https://finance.yahoo.com/)
+- MT Newswires/Yahoo: [Intel Jumps 8%, SK Hynix Climbs 5% as Ohio Memory Talks Reignite; Micron Rises 6%](https://finance.yahoo.com/)
+- Yahoo: [Intel Considers Rejoining the Memory-Making Biz](https://finance.yahoo.com/)
+- Yahoo: [The HBM Pricing Cycle That Will Define SKHQ in 2026](https://finance.yahoo.com/)
+- _Corroboration:_ **ADS vs 韩本分歧是核心数据点**：SKHY ADS +5.24% vs 000660.KS +3.25% = 1.6 倍。同日 Samsung 005930.KS 仅 +1.61%（韩国市场内部分化）。MU +5.37% / SNDK +5.90% / DRAM +4.57% / INTC +9.34%
+- _Data:_ 估值：fwd PE 5.43x（存储三家最便宜）/ trailing PE 10.92x（也最低，说明当期盈利质量最好，不像 MU/SNDK 的 22x trailing 那样依赖未来）。市值 $1.31T。距 52w 高 $199.87 仅 -7.9%（三家里最接近高点），距 52w 低 $124.80 +47% ()
+- _Data:_ **MA50 / MA200 均为 n/a — 新上市（招股书日 2026-07-09），没有足够历史做技术判断。这是一个真实的信息缺口** ()
+- _Data:_ 量比 0.68x — 无新增机构资金。全链量比 0.46-0.68x ()
+
+**Cross-assets.** SPY +1.11% · QQQ +1.63% · VIX 15.58 · TEN YEAR 4.951 · DXY 100.24 · WTI 101.85
+
+**Agent read.** **SKHY 目前是存储三家里业务位置最强的：30d +21.8% 最强、距 52w 高仅 -7.9%、fwd PE 5.43x 最便宜、trailing PE 10.92x 说明当期盈利质量最好。风险集中在股权结构而非业务。** 20 天后的 **10/07 ADS 90 天 lockup 到期**是最近的检验点。既有研究结论是「这不是主要变量」：100% 增发无老股东减持（股本 711,075,500→728,865,500，增量恰等于发行量 17,790,000），且 SK square 受韩国《垄断规制与公平交易法》**永久 20% 持股下限**约束（比 90 天合约更强的长期限制），不存在解禁抛售的经典结构。**但研究有明确的数据缺口：424B4 的 Underwriting (p.176) 与 Shares Eligible for Future Sale (p.151) 未取全文，受限方名单未确认。** 今天新增一个风险因子：**ADS 溢价扩大到韩本的 1.6 倍**，溢价越大，供给冲击时的潜在回撤越大。观察点不变：到期前后放量下跌 = 漏掉了受限股东；无异动 = 判断成立。**今天最有前瞻价值的新发现是 Samsung 的相对跑输**（+1.61% vs SK Hynix 韩本 +3.25%）。如果俄亥俄谈判推进，Samsung 在美国客户前的关税劣势被放大，这条链会从「齐涨齐跌」转向「按地缘可及性分层」。**这是一个新的、可跟踪的结构性分化，值得单列观察项。** 关于俄亥俄谈判本身要保持怀疑：这是谈判不是签约，晶圆厂改造成存储产线是多年工程（'the real win is years away'）。**两个官方口径的时点：10/22 INTC 财报和 10/26-27 SKHY 自己的财报 — 两家公司都会被迫回应，任何一方的表述都是信息。** 评分卡 Tier 2 早已预判：「SK Hynix 下次自己财报会大声讲 HBM 胜利」，届时 MU (09/30) 与 SKHY (10/26) 的 HBM 增速直接对比 = HBM 份额归属的答案。**注意 MU 和 SKHY 在 HBM 上是直接竞争关系，今天却同涨 5% — 市场还在交易共同的价格因子，尚未开始交易份额归属。**
+ · Snapshot at `dashboard/2026-09-17.md`
+
+---
 ### 2026-09-15 · -1.20% day · ▼ moderate
 **Tags:** `macro_rates`, `sector_rotation`, `memory_pricing`
 **Confidence:** medium
