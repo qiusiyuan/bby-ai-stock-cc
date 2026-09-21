@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-21 · +3.03% day · ▲ material
+**Tags:** `regulatory_positive`, `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** TSLA +3.03% 到 $375.30。**最重要的单一数据是量比 0.97x — 未放量。** 过去一个月 TSLA 每次由具体产品里程碑驱动的上涨都伴随放量: 8/31 Cybercab 进德州车队名单 1.3x (当天全场唯一放量), 8/21 EV Semi 登欧洲 + 拉斯维加斯 Robotaxi 牌照 1.1x。今天 0.97x 意味着 +3.03% 主要是大盘 beta + 折现率 (10Y 回落到 4.963%, TSLA fwd PE 170.8 是久期光谱最右端), 不是有人在为新信息建仓。对照组: INTC 1.77x / META 2.59x / AMD 2.19x 是真有人买信息。三条催化剂: (1) 欧洲自动驾驶重大许可 — 延续逐国突破路线 (9/8 斯洛文尼亚成为第六个开放 FSD 的国家), 绕过 EU TCMV 多国投票僵局 (瑞典明确反对); 价值在可计数、单向、不可逆, 但这是同类事件第 N 次, 边际信息量递减。(2) Roadster 预订开放 + 10 月发布会临近 — 历史模式 (8/31 Cybercab) 是发布前涨、发布后平; Roadster 对基本面贡献接近零 (低产量高单价形象产品), 作用是维持「Tesla 还在推边界」的叙事, 而叙事是 fwd PE 171 的唯一支撑。(3) 宏观 beta。**两条被市场忽视的负面: Fremont 歧视诉讼进入加州庭审 (新增风险源, 之前未在 triggers.yaml 里); Oppenheimer 判断 Optimus 销售收入不会早于 2029 年。**
+
+**Sources.**
+- (none)
+
+**Cross-assets.** SPY +1.55% · QQQ +2.77% · SMH +4.02% · VIX 14.87 · TEN YEAR 4.963 · WTI -8.31% · INTC +12.14% · AMD +9.95% · META +11.34% · NVDA +2.30%
+
+**Agent read.** 没有放量的 +3.03% 不构成加仓理由。距 thesis-break $250 缓冲 +50.1%, 一点 runway 都没用到。TSLA 有意义的建仓信号历史上都带 ≥1.3x 量。Optimus 2029 的判断对 TSLA 自己影响有限 (TSLA 估值里 Optimus 本来没被单独计价, FSD/Robotaxi 才是支柱), 但对 humanoid cluster 是直接打击 — 且今天 TSLA +3.03% 跑赢三只纯人形 ETF (+1.2~2.0%), 30d +14.22% vs -7~-9%, 实证了「买得到的内容最稀」的错配。下个真实检查点 10/21 Q3 财报: 中国降价是否换来销量 (若销量平或降则毛利率白丢)。
+ · Snapshot at `dashboard/2026-09-21.md`
+
+---
 ### 2026-09-08 · +3.25% day · ▲ material
 **Tags:** `regulatory_positive`, `production_milestone`, `competitor_news`
 **Confidence:** high

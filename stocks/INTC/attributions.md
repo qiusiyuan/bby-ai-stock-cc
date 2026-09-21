@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-21 · +12.14% day · ▲ extreme
+**Tags:** `sector_rotation`, `macro_oil`, `macro_rates`, `competitor_news`, `ai_demand`
+**Confidence:** medium
+
+**Primary cause.** INTC +12.14% 到 $121.78, 1.77x 量 (三大 mover 中最低量比)。三条链: (1) 主因 — Meta Muse AI agent 下载量爆发 → 市场推论 agentic 负载 (工具调用/编排/状态管理) 是 CPU 密集 → 买 INTC/AMD/ARM 不买 NVDA。头条直白「Intel, AMD, and Arm Stock Are Jumping. Thank Meta's Muse AI Agent.」(2) 宏观 beta ~4pp: WTI -8.31% → 10Y 4.963% → 折现率下降, SMH +4.02%。(3) 10/05 DigiTimes CPU 涨价 10% 传闻的第二次定价 (9/8 已因同一条单日 +9.67%, 公司从未确认)。**关键限定: 价格 $121.78 仍比 2026-06-30 的 $141.67 低 14% — 今天只是拉回三个月前的 86%。** 逆向检验四项全部落空: NVDA 仅 +2.30% (fwd PE 14.5, agentic 若是增量需求它也该受益)、TSM +2.41% (所有 CPU 的代工方对'CPU 需求爆发'弃权投票)、AVGO +1.41%、MU +2.77% — 产业链上下游无一跟进。结论: 这不是产业趋势被发现, 是一个交易主题被建立。估值 fwd PE 59.06 = NVDA 的 4.07 倍, 而 foundry 仍亏损、CPU 份额仍流失。thesis 框架 Bull 25%($170-200)/Base 40%($120-140)/Bear 35%($70-90) — 今天贴在 base 下沿, 且 bear 35% 是三大 mover 最高。历史: 四次归因里三次驱动都是「Intel 与某个 AI 大玩家产生关系」(6/30 NVIDIA DGX Rubin、9/17 SK Hynix 俄亥俄代工、今天 Meta Muse read-through), 一次是涨价传闻 — 没有一次是 foundry 良率/客户认证/份额数据的实质改善。
+
+**Sources.**
+- Barron's (via Yahoo): [Intel, AMD, and Arm Stock Are Jumping. Thank Meta's Muse AI Agent.](https://finance.yahoo.com/quote/INTC/news/)
+- Yahoo: [Intel Stock Soars as AI Spending Fears Fade](https://finance.yahoo.com/quote/INTC/news/)
+- Yahoo: [Nvidia's AI CPU Push Threatens Intel and AMD](https://finance.yahoo.com/quote/INTC/news/)
+- IBD: [Dow Jones Futures: Falling Oil Prices, Yields Spark Market Rally; AMD, Intel, Micron, Nvidia, Sandisk Are Key Movers](https://finance.yahoo.com/quote/INTC/news/)
+- _Corroboration:_ 逆向检验: NVDA +2.30% / TSM +2.41% / AVGO +1.41% / MU +2.77% — 产业链四环节全部只给 beta, 无一确认 CPU 需求结构性上升
+
+**Cross-assets.** SPY +1.55% · QQQ +2.77% · SMH +4.02% · AMD +9.95% · NVDA +2.30% · TSM +2.41% · META +11.34% · VIX 14.87 · TEN YEAR 4.963 · WTI 91.97 · WTI -8.31% · FWD PE 59.06
+
+**Agent read.** 涨幅质量是三大 mover 里最差的。量比 1.77x 最低而涨幅 12.14% 最大 → 每一块钱买盘推动的价格最多 → 流动性最薄 → 可逆性最高。核心催化剂是别人家的产品 (Meta Muse), 不是 INTC 自己的披露。最近的硬检验是 10/05 涨价传闻生效日 (14 天后): 不落地则 9/8 的 +9.67% 和今天一部分都应回吐。最严厉的检验是 10/22 Q3 财报指引 ($15.8-16.8B): 落下端则 fwd PE 59 立即失去依据。第三个检验是 11/17 NVDA 财报 — 若 NVDA 给出强数据中心指引, '叙事从 GPU 转向 CPU' 被直接否证。三个月前同一个 turnaround 故事在 $141.67 讲过并且没守住, 这是最该记住的校准。
+ · Snapshot at `dashboard/2026-09-21.md`
+
+---
 ### 2026-09-17 · +9.34% day · ▲ major
 **Tags:** `executive_comment`, `partnership_news`, `sector_rotation`, `macro_rates`
 **Confidence:** high

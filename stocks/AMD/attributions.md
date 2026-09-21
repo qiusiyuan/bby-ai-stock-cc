@@ -4,6 +4,27 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-21 · +9.95% day · ▲ extreme
+**Tags:** `sector_rotation`, `ai_demand`, `macro_rates`, `macro_oil`, `index_inclusion`
+**Confidence:** medium
+
+**Primary cause.** AMD +9.95% 到 $615.52, 2.19x 量, **首破 $1 万亿市值 + 历史新高** — 是三大 mover 里唯一站在 52 周高点之上的 (INTC 和 META 都还在高点之下)。30d +27.34% 是三者最强。四条链: (1) agentic 推理 = CPU 需求 (与 INTC 共享, Meta Muse read-through)。**AMD 在这条链上站位优于 INTC** — 同时是 EPYC (agent 编排负载直接受益) 和 MI 系列 (加速器) 供应商, 若 agentic 是增量而非替代则两头受益。(2) $1T 门槛的自我强化: 触发「只投 $1T+」机构筛选器 + 媒体覆盖跳升 + 指数/ETF 权重重算, 头条把突破与 SOX 指数四只新成分事件绑在一起说 (「AMD Breaks Out」) — 典型动量买盘自我强化结构, 约 2pp 纯心理/机械无基本面。(3) 芯片涨价 10% 报道 (与 INTC 的 10/05 DigiTimes 传闻同一条产业线索, 整个 x86 阵营涨价; 对 AMD 比 INTC 更正面因无亏损 foundry 拖累, 但同样未被公司确认)。(4) 宏观 beta ~4pp (WTI -8.31% → 10Y 4.963% → SMH +4.02%)。**最重要的逆向信号: TSM 仅 +2.41%。** AMD 的 MI 系列全部由 TSMC 代工; 若市场真信 AMD 加速器份额要跳到 bull case 所需的 20%+ hyperscaler GPU 支出, TSM 必须供出这些晶圆和 CoWoS 封装。TSM 只给 beta 级反应 = **产能端对 AMD 的份额假设投了弃权票**。NVDA 仅 +2.30% 且有头条专写「3 Reasons Nvidia Sat Out the AI Rally」= 市场在定价零和抢份额而非市场整体扩大。
+
+**Sources.**
+- Yahoo: [AMD Joins the $1 Trillion Market Cap Club](https://finance.yahoo.com/quote/AMD/news/)
+- Yahoo: [AMD Storms Into $1 Trillion Club as Chip Stocks Charge Higher](https://finance.yahoo.com/quote/AMD/news/)
+- Yahoo: [AMD Hits $1 Trillion Market Cap: 3 Reasons Nvidia Sat Out the AI Rally](https://finance.yahoo.com/quote/AMD/news/)
+- IBD: [Chip Stocks Rise As Four New Names Join SOX Index. AMD Breaks Out.](https://finance.yahoo.com/quote/AMD/news/)
+- Yahoo: [AMD Rises 5% as Report Flags 10% Chip Price Increase](https://finance.yahoo.com/quote/AMD/news/)
+- Barron's (via Yahoo): [Intel, AMD, and Arm Stock Are Jumping. Thank Meta's Muse AI Agent.](https://finance.yahoo.com/quote/AMD/news/)
+- _Corroboration:_ 关键逆向: TSM +2.41% — MI 系列的唯一代工方对份额假设弃权投票。10/15 TSM 财报比 AMD 自己 11/03 早 19 天, AMD 的产能上限答案会由 TSM 先给出
+
+**Cross-assets.** SPY +1.55% · QQQ +2.77% · SMH +4.02% · INTC +12.14% · NVDA +2.30% · TSM +2.41% · AVGO +1.41% · MRVL +5.38% · META +11.34% · VIX 14.87 · TEN YEAR 4.963 · WTI -8.31% · FWD PE 39.53
+
+**Agent read.** **8/4 的记录几乎逐条适用, 但有三个差别。** 8/4 AMD +9.3% (与今天 +9.95% 几乎同幅), 当时归因写: 「AMD 在别人的财报上涨了 9.3%, 在自己财报前几小时。这把门槛抬高了 — 一份仅仅符合预期的财报很可能把这个 move 还回去。」今天同构: 又一次在别人的产品新闻 (Meta Muse) 上涨 ~10%, 走向 11/03 财报。差别: (1) **量比 2.19x vs 8/4 的 0.92x — 买盘真实度高 2.4 倍**, 这是今天优于 8/4 的地方; (2) 位置 $1T + 历史新高 vs 当时刚回到 50 日均线、30d -4.0% — 起点高得多, 容错小得多; (3) 财报还有 43 天 vs 当晚 — 预期有更长时间膨胀或消退。校准: 7/31 时 AMD 还是「唯一没吃到 AMZN 利好的大型 AI 芯片股 (5d -6.09%)」, 52 天后成了 $1T 市值 + 30d +27.34% 的全场焦点 — 这个速度本身值得警惕。thesis 框架 Bull 30%($700+)/Base 45%($550-600)/Bear 25%($300-): **当前 $615.52 已越过 base 上限 2.6%**, 市场为 base 付完钱正在为 bull 付定金。bull 四条件里最难的是「ROCm 缩小 CUDA 差距」— 纯软件生态问题, 历史上从未被任何 NVIDIA 挑战者解决。reverse-DCF 在 $537 时称「不像 NVDA 峰值那样定价完全 bull 情景, 通过前瞻倍数还有安全边际」; $615.52 已涨 14.6%, 那个边际被消耗大部分。thesis 原文还写着「最近 280% YTD 涨幅和一位分析师'涨太远太快'的警告意味着下次财报若失望会有回调风险」。**裁决顺序很重要: 10/15 TSM (产能上限, 早 19 天) → 11/03 AMD 自己 → 11/17 NVDA (零和读法裁决)。**
+ · Snapshot at `dashboard/2026-09-21.md`
+
+---
 ### 2026-09-17 · +6.19% day · ▲ material
 **Tags:** `sector_rotation`, `macro_rates`, `ai_demand`
 **Confidence:** medium

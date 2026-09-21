@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-21 · +3.30% day · ▲ material
+**Tags:** `memory_pricing`, `sector_rotation`, `competitor_news`, `macro_rates`
+**Confidence:** medium
+
+**Primary cause.** DRAM ETF +3.30% 到 $61.58, 5d +12.37%, 30d +21.70%。**关键观察: ETF 跑赢了它最大的两个成分股 (MU +2.77%、SKHY ADS +0.73%)。** 数学上这意味着涨的是尾部成分 — 小的、更边缘的存储标的涨得更多。这是周期后段的典型特征: 资金从质量最高的名字向下扩散到二线。不是立即卖出信号, 但是「这轮涨势质量在下降」的实证。板块内部分化更值得注意: **三星 (005930.KS) +4.98% vs SK Hynix 韩股 (000660.KS) +0.59% — 同一个韩国交易时段, 4.4 个百分点分化。** 可能解释: (a) 三星 HBM 认证追赶预期 (三星一直是 HBM 竞赛落后方, 任何追赶迹象都是低基数修复); (b) 今天的 CXMT 消息对份额领先者威胁更大, SK Hynix 在 HBM 是第一; (c) 三星 fwd PE 3.89 是链内最便宜, 风险偏好回归时最便宜的先动。**今天的实质坏消息被涨势吞掉了: 中国 CXMT 宣布已实现先进 DRAM 量产, 直接点名挑战三星/SK Hynix/Micron。** 但要把声明和能力分开: 「先进 DRAM」不等于 HBM — HBM 需要先进封装 (TSV 堆叠、混合键合) + 良率 + 客户认证周期 (NVIDIA 认证通常 12-18 个月)。CXMT 若只在标准 DDR5 上量产, 冲击的是商品 DRAM 价格而非 HBM 溢价, 这正对应另一条头条「How Much Of Micron Revenue Has A Price Ceiling?」的分界线。
+
+**Sources.**
+- (none)
+
+**Cross-assets.** SPY +1.55% · QQQ +2.77% · SMH +4.02% · VIX 14.87 · TEN YEAR 4.963 · WTI -8.31% · INTC +12.14% · AMD +9.95% · META +11.34% · NVDA +2.30%
+
+**Agent read.** 存储链今天是配角而非主角: SMH +4.02% 的一天里 MU 只 +2.77%、SKHY +0.73%。便宜的资产在风险偏好回归时不是最先被买的, 叙事性最强的才是 — 四个标的 fwd PE 是 3.89/3.98/5.57/6.57 全部单位数, 对照今天的 CPU 明星 INTC 59.06 / AMD 39.53。这是多头最有力的事实, 也是理解今天为什么没领涨的关键。但周期股在利润峰值时看起来永远最便宜, 单位数 fwd PE 正是周期顶部的典型读数。与 9/17 (4 天前) 的组合几乎相同 (memory_pricing + executive_comment + partnership_news + sector_rotation, 当时驱动是 Intel-SK Hynix 俄亥俄代工谈判) 但强度更弱 — 同一条叙事线第二次触发, 边际效应递减。三个解锁点: 9/30 MU 财报的 FY27 指引口吻; DRAM ETF 相对 MU/SKHY 的持续强弱 (ETF 继续跑赢大成分 = 质量继续下降); CXMT 的第三方良率验证 (声明免费, 客户 BOM 是硬证据)。
+ · Snapshot at `dashboard/2026-09-21.md`
+
+---
 ### 2026-09-17 · +4.57% day · ▲ material
 **Tags:** `memory_pricing`, `executive_comment`, `partnership_news`, `sector_rotation`
 **Confidence:** high

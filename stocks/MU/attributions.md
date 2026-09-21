@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-21 · +2.77% day · ▲ material
+**Tags:** `memory_pricing`, `earnings_pre_print`, `competitor_news`, `sector_rotation`, `macro_rates`
+**Confidence:** medium
+
+**Primary cause.** MU +2.77% 到 $1,043.96 (站回 $1,000 上方), 5d +12.98% 触发 5 日阈值。**9 天后 (9/30) 是财报 + 评分日。** 今天的驱动: (1) 板块 beta — SMH +4.02%, 但 MU 只吃到 2.77%, 明显跑输; (2) Intel read-through — 头条「Intel CEO Just Gave Micron Technology Investors Great News」, 连接点是 CPU 平台内存代际与 AI PC 内存容量配比; 今天 INTC +12.14% 的 agentic-CPU 叙事若成立, 每台跑 AI agent 的机器都需要更多内存, 这是一条真实的 read-through, 解释 MU 为什么至少跟涨了而不是 0; (3) 「HBM Sold Out Through 2027. Micron Customers Are Begging.」— 多头论点最强版本, 但标题自己给出了答案: 能出问题的地方正是售罄合约锁在什么价位, 若在周期早期锁的低价则'售罄'同时意味着上行也被锁住; (4) 台湾劳资谈判决议日 (Micron Gains 2.4% as Taiwan Labor Talks Reach Decision Day)。**今天的实质负面: 中国 CXMT 宣布已实现先进 DRAM 量产, 直接点名挑战 Micron。** 但先进 DRAM 不等于 HBM (后者需 TSV 堆叠/混合键合 + 良率 + 12-18 个月客户认证), 冲击的是商品 DRAM 价格而非 HBM 溢价 — 这正是同日另一条头条「How Much Of Micron Revenue Has A Price Ceiling?」的分界线。fwd PE 6.57 — 30 天涨 18.96% 之后仍是全持仓最便宜的一档。
+
+**Sources.**
+- (none)
+
+**Cross-assets.** SPY +1.55% · QQQ +2.77% · SMH +4.02% · SKHY +0.73% · SAMSUNG +4.98% · DRAM ETF +3.30% · SNDK -1.41% · INTC +12.14% · VIX 14.87 · TEN YEAR 4.963 · WTI -8.31% · FWD PE 6.57
+
+**Agent read.** **存储链今天跑输板块是财报前最重要的信号: SMH +4.02% 而 MU 只 +2.77%、SKHY +0.73%。** 这说明市场已经在为 beat 定价, 事件前不再追高 — 门槛只会更高。9/30 评分卡 (stocks/MU/research/2026-06-25-next-earnings-watchlist.md) 的 Tier 1 门槛: GM ≥82% / rev ≥$43B / EPS ≥$27 / FY27 指引口吻 / HBM QoQ ≥+20%。评的是「MU 是下一个 NVDA / AI 长期领头股」。评分窗口 (±7d) 于 9/23 开启。**MU 有一个独立的时序优势: 它是 memory cluster 里最早给出可验证数字的标的 — 比 SK Hynix (10/26) 早近一个月。** 这意味着 MU 的财报会成为整个 cluster 的定价锚, 无论好坏。另有 9/26 一个预测评分日到期, 评的是「主导 MU 的是利率/久期通道而非自身基本面」— 今天的数据正在积累对这个判断的检验材料: MU 只涨 2.77% 而同样受折现率影响的 INTC/AMD 涨 10-12%, 说明利率通道解释不了今天的分化, 叙事关注度才是主导变量。最大风险是「带着涨幅进财报」: 5d +12.98% + 30d +18.96%, 好数字会被打折 (这是 8/6 SNDK sell-the-news 建立的判据)。
+ · Snapshot at `dashboard/2026-09-21.md`
+
+---
 ### 2026-09-17 · +5.37% day · ▲ material
 **Tags:** `executive_comment`, `memory_pricing`, `ai_demand`, `sector_rotation`, `macro_rates`
 **Confidence:** high

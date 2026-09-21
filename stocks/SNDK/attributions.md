@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-21 · -1.41% day · ▲ material
+**Tags:** `memory_pricing`, `sector_rotation`, `earnings_pre_print`
+**Confidence:** low
+
+**Primary cause.** SNDK -1.41% 到 $1,766.64 今日收绿, 但 5d +13.83% 触发 5 日阈值, 30d **+45.74%** 是全持仓最强。今天是**全链唯一在存储上涨日收绿的标的** — 头条「SanDisk Falls 2% Despite Memory Rally; Micron Advances 3%, Western Digital Nudges Higher」明确点出这个反常。归因为获利了结, 不是新的负面信息: 量比 0.85x (缩量), 无公司级坏消息。技术位在上方 — 头条「SanDisk Faces a Make-or-Break Test at $1,832」指出关键阻力在 $1,832, 今天 $1,766.64 距该位 -3.6%。fwd PE 6.67 — 30 天涨 45.74% 之后仍是单位数前瞻市盈率。
+
+**Sources.**
+- (none)
+
+**Cross-assets.** SPY +1.55% · SMH +4.02% · MU +2.77% · SKHY +0.73% · DRAM ETF +3.30% · VIX 14.87 · TEN YEAR 4.963 · WTI -8.31% · FWD PE 6.67
+
+**Agent read.** **这是一条低置信度归因: -1.41% 在 0.85x 缩量下, 没有任何可引用的公司级催化剂, 纯粹是 30d +45.74% 之后的获利了结。** 记录它的原因是 5d +13.83% 跨过了阈值, 以及它的相对表现 (全链唯一收绿) 本身是信息: 在存储链整体上涨、SMH +4.02% 的一天里独自下跌, 说明最强的那只先被兑现。11/06 是财报评分日 (state.yaml 原记 11-04, yfinance 校正为 11-06), 评「SNDK 从 NAND 周期股 re-rate 为结构性现金牛」。Tier 1: 营收 $10.3-10.8B / EPS $44-46 / non-GAAP 毛利率 (84.6% 峰值) 不快速回落 / 数据中心增速维持 / 半数营收转 FCF 首个数据点 / HBF design win。**评分卡里已写明的判据现在正在应验: 「带 >30% 5d 涨幅进财报 = 好数字打折」(8/6 sell-the-news 判据)。当前 30d +45.74%, 距财报 46 天 — 期望值已经被抬到很高的位置。** 今天的小幅回落可能是这个动态的第一次表达。距 thesis-break $1,200 缓冲 +47.2%。
+ · Snapshot at `dashboard/2026-09-21.md`
+
+---
 ### 2026-09-17 · +5.90% day · ▲ material
 **Tags:** `memory_pricing`, `executive_comment`, `sector_rotation`, `macro_rates`
 **Confidence:** medium

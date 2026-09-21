@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-21 · -3.13% day · ▼ material
+**Tags:** `macro_oil`, `commodity_move`, `geopolitical_war`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** WTI -8.31% 到 $91.97 (从 $100.30), 理由是交易员押注伊朗外交谈判有解 ('renewed hopes about a diplomatic resolution')。SU -3.13%, CVX -2.79%, CNQ -2.74%, HXE.TO -2.70% — 四只几乎无分化, 纯宏观驱动无个股 alpha。**最重要的数字是传导系数 0.33-0.38, 而 8/31 记录的历史常态是 0.70 — 只有一半。** 上游现金流对油价 beta 接近 1; 若市场真信 $92 是新长期均衡, 这些股票该跌 6%+。只跌一半 = 股票市场对这次外交乐观投了明确的怀疑票。**这是 2026 年第三次「伊朗外交希望」打崩原油, 前两次基准率 0 比 2**: 6/18 美伊正式签署和平协议 → WTI 5d -13.84% 到 $75.57 (协议撑了 10 周); 8/4 美/卡塔尔就草案取得进展 → -5.63% 到 $75.82, 吐掉 7 月几乎全部战争溢价 (4 周后崩盘); 8/31 美国空袭伊朗 + 伊朗袭 UAE Ruwais 炼油厂, 6 月协议实质失效 → 油价重建溢价至 9/15 的 $105.83。**今天这次连一份文件都没有, 只是 hopes — 事实基础比前两次更薄。** 与前两次最大的不同是物理市场在反向恶化: Hormuz 通行商品船只从 35 艘降到约 12 艘 (萎缩不是恢复), 沙特东西输油管道 (日输约 500 万桶, 绕开 Hormuz 的唯一大动脉) 仍停摆, Houthi 对 Yanbu 打击继续, 沙特已通知欧洲长约买家 10 月不供货, 卡塔尔能源 CEO 警告 Hormuz 阻塞可能延误 $830 亿 LNG 扩产, 精炼品端更紧 — 美国柴油创 $6.50/gal 历史纪录、欧洲挤压从柴油扩散到航空煤油、俄罗斯柴油出口禁令延长至 10 月。6/18 和 8/4 那两次油价下跌时 Hormuz 航运是通畅或正在恢复的 (8/31 归因明确写'霍尔木兹海峡未见航运中断报告')。WTI 30d 仍 +17.64%, MA50 $86.81 上方 — 溢价只吐一半。
+
+**Sources.**
+- oilprice.com (Irina Slav): [Oil Prices Slide as Traders Bet on Iran Diplomacy](https://oilprice.com/Latest-Energy-News/World-News/)
+- Yahoo: [Global stocks rally on lower oil prices, US-China hopes](https://finance.yahoo.com/)
+- _Corroboration:_ 传导系数 0.33-0.38 vs 8/31 记录的常态 0.70 — 股票市场自己投了怀疑票。四只标的跌幅落在 2.70-3.13% 窄区间, 无个股分化
+- _Corroboration:_ 物理指标反向: Hormuz 通行船 35→12 艘; 沙特东西管道仍停摆; 美国柴油 $6.50/gal 历史纪录; 俄罗斯柴油出口禁令延至 10 月
+
+**Cross-assets.** SPY +1.55% · VIX 14.87 · TEN YEAR 4.963 · WTI 91.97 · WTI -8.31% · WTI PCT 5D -9.29% · WTI PCT 30D +17.64% · BRENT -3.73% · CVX -2.79% · CNQ -2.74% · HXE TO -2.70% · HXE TO VOLUME RATIO 2.1 · GOLD -0.99% · USDCAD 1.40278
+
+**Agent read.** 基准率 0 比 2 加上物理市场反向恶化, 使今天的 -8.31% 更可能是可逆的头寸平仓而非重定价; 而股票只跌了三分之一已经把这个怀疑定价进去了 — 两边都不需要行动。距 thesis-break $42 缓冲 +60.1%, 今天一点 runway 都没用到。**跟踪的应该是两个物理数字而不是新闻标题: (1) Hormuz 每周通行船只数 (当前约 12, 此前 35); (2) 沙特东西输油管道状态 (当前停摆)。** 这两个回升 = 今天的定价有基础, 能源该继续跌; 继续恶化 = 溢价会像 8/31 那样重建。**HXE.TO 的 2.10x 量是今天全场唯一异常量比** — 加拿大能源 ETF 只跌 2.70% 却放量一倍, 有机构在做仓位决策 (方向不可判)。加拿大特有变量: 油跌 = 加元弱 (USD/CAD +0.27% 到 1.4028, 逼近 52w 高 1.4248), 生产商成本以加元计、收入以美元计, 弱加元部分抵消油价下跌 — 这解释 HXE.TO 跌幅小于 CVX 尽管加拿大重油贴水通常更脆弱。**一条未被定价的独立利好: CVX 的美国委内瑞拉原油进口达 9 年高位, CVX 被点名最大受益方且在委增加钻机 — 与 WTI 价格无关的低成本桶来源, 今天完全没被定价 (CVX -2.79% 与同业一致)。** 反向风险: 若 OPEC+ 在外交乐观期宣布增产, 会是第二重打击。
+ · Snapshot at `dashboard/2026-09-21.md`
+
+---
 ### 2026-09-15 · +4.29% day · ▲ material
 **Tags:** `macro_oil`, `commodity_move`, `geopolitical_war`, `sector_rotation`
 **Confidence:** high

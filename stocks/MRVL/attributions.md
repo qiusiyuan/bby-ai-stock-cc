@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-21 · +5.38% day · ▲ material
+**Tags:** `tech_breakthrough`, `ai_demand`, `sector_rotation`, `macro_rates`
+**Confidence:** high
+
+**Primary cause.** MRVL +5.38% 到 $257.38, 5d +17.62%, 30d +17.68%。公司级催化剂明确: 发布 1.6T 光互联 / 2nm 光学技术, 针对 AI 互联的「铜墙」(copper wall) 瓶颈 — 头条「Marvell Rises Over 3.3% as 2-Nanometer Optics Target AI Copper Wall」、「Marvell just made a move that changes the AI networking story」。这是**产品驱动而非叙事驱动**, 可持续性优于今天 INTC/AMD 的 agentic CPU 叙事。注意量比仅 0.94x (未放量) — 涨幅由信息质量而非资金规模推动。**本 cluster 最被忽视的事实: AVGO 与 MRVL 30 天分化 33 个百分点 (-15.22% vs +17.68%)**, 两家都做定制 AI 芯片和互联, 走向完全相反。MRVL 的路径是产品发布驱动 (今天 1.6T, 9/17 记录过一次 partnership_news), AVGO 的路径是估值消化 (即使有「Anthropic 可能成为最大定制芯片客户」这类利好头条仍 30d -15.22%)。今天板块 beta 是 SMH +4.02%, MRVL 超出约 1.4pp — 超出部分归于自身产品发布。
+
+**Sources.**
+- (none)
+
+**Cross-assets.** SPY +1.55% · QQQ +2.77% · SMH +4.02% · VIX 14.87 · TEN YEAR 4.963 · WTI -8.31% · INTC +12.14% · AMD +9.95% · META +11.34% · NVDA +2.30%
+
+**Agent read.** 距 thesis-break $200 缓冲仅 +28.7%, 是全持仓最紧的一个 — 尽管今天涨 5.38%, 这个标的的下行容错空间最小, 值得比其他持仓更密切跟踪。fwd PE 38.06 偏高。今天的产品发布要在 12/01 Q3 财报里给订单 — 那是 71 天后, 是全持仓里「催化剂到验证」间隔最长的之一。中间没有其他公司级检查点, 意味着这 71 天里价格完全由板块 beta 和叙事决定。
+ · Snapshot at `dashboard/2026-09-21.md`
+
+---
 ### 2026-09-17 · +5.37% day · ▲ material
 **Tags:** `partnership_news`, `ai_demand`, `sector_rotation`, `macro_rates`
 **Confidence:** high
