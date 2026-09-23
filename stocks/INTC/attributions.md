@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-23 · -2.86% day · ▼ minor
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** INTC -2.86%（1w +19.06%，触发 5d≥10% 门槛），无公司级新闻。跌因是前期涨幅回吐而非基本面恶化——同日三个 1w 涨幅最大的名字同步回吐：SNDK (1w +19.66%) -3.62%、INTC (1w +19.06%) -2.86%、AMD (1w +19.67%) -1.68%。上游是 10Y 破 5.12%（2007 年高位）的折现率冲击。缩量 0.47x。
+
+**Sources.**
+- : [10-year Treasury yield hits highest level since 2007 as market prices in another Fed rate hike](https://finance.yahoo.com/quote/%5ETNX/)
+
+**Cross-assets.** SPY CHANGE -0.74% · VIX 15.34 · TEN YEAR 5.12 · WTI 91.41 · DXY 101.19 · QQQ CHANGE -1.01%
+
+**Agent read.** 距 thesis-break $75 缓冲 +60.4%，3mo -9.1%。forward PE 58.3x 是全持仓偏高的一档，因此对折现率敏感度高于低倍数同侪。12 天后（10-05）是 PC CPU 提价最多 10% 的传闻生效日——DigiTimes 报道、公司未确认，而 9/8 那次 +9.67% 的全部基础就是这条报道。这是一个干净的二元检验：落地则基础从传闻转为事实，部分抵消 Piper (Neutral, PT ~$110) 与 Mizuho (PT $92) 的估值质疑；不落地则 9/8 涨幅应回吐。10-22 Q3 财报指引区间 $15.8-16.8B 是更实质的裁决点。
+ · Snapshot at `dashboard/2026-09-23.md`
+
+---
 ### 2026-09-21 · +12.14% day · ▲ extreme
 **Tags:** `sector_rotation`, `macro_oil`, `macro_rates`, `competitor_news`, `ai_demand`
 **Confidence:** medium

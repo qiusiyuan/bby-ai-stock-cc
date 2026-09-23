@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-23 · -1.68% day · ▼ minor
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** AMD -1.68%（1w +19.67%，watchlist 最大周涨幅，触发 5d≥10% 门槛）。今日跌幅温和，是三个前期涨幅最大名字里最抗跌的一个（对照 SNDK -3.62%、INTC -2.86%）。无公司级新闻；驱动为 10Y 破 5.12% 的折现率冲击。
+
+**Sources.**
+- : [10-year Treasury yield hits highest level since 2007 as market prices in another Fed rate hike](https://finance.yahoo.com/quote/%5ETNX/)
+
+**Cross-assets.** SPY CHANGE -0.74% · VIX 15.34 · TEN YEAR 5.12 · WTI 91.41 · DXY 101.19 · QQQ CHANGE -1.01%
+
+**Agent read.** 3mo +18.0%，距 thesis-break $380 缓冲 +61.4%。带 1w +19.67% 的涨幅进入 11-03 财报，同 SNDK 的『涨幅透支』判据适用——好数字可能被打折。相对强势值得记录：同一回吐日里跌幅最小，说明其涨幅的买盘质量高于 SNDK/INTC。
+ · Snapshot at `dashboard/2026-09-23.md`
+
+---
 ### 2026-09-21 · +9.95% day · ▲ extreme
 **Tags:** `sector_rotation`, `ai_demand`, `macro_rates`, `macro_oil`, `index_inclusion`
 **Confidence:** medium

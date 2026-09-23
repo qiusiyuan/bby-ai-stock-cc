@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-23 · -3.62% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** SNDK -3.62%，无公司级新闻。同 memory/NAND 复合体一起承受 10Y 破 5.12%（2007 年高位）的久期外流。跌幅与前期涨幅正相关而非与基本面相关：1w +19.66% 是整个 watchlist 最大周涨幅之一，今日回吐最多。缩量 0.39x——机构未在此价格换手，仅买盘缺席。同日 INTC（1w +19.06%）-2.86%、AMD（1w +19.67%）-1.68%，三个前期涨幅最大的名字同步回吐，确认为涨多回吐而非需求端恶化。
+
+**Sources.**
+- : [10-year Treasury yield hits highest level since 2007 as market prices in another Fed rate hike](https://finance.yahoo.com/quote/%5ETNX/)
+- : [Stocks, Bonds Slip as Oil Jump Fuels Fed-Hike Bets (Bloomberg)](https://finance.yahoo.com/quote/CL%3DF/)
+
+**Cross-assets.** SPY CHANGE -0.74% · VIX 15.34 · TEN YEAR 5.12 · WTI 91.41 · DXY 101.19 · QQQ CHANGE -1.01%
+
+**Agent read.** 距 thesis-break $1,200 缓冲 +51.6%，3mo -7.4%。11-06 Q1 FY27 财报挂载评分卡（『NAND 周期股 → 结构性现金牛』），评分卡内已预置的判据在此生效——『带 >30% 5d 涨幅进财报 = 好数字打折』(8/6 sell-the-news 判据)。今天的回吐实际上降低了财报前的估值透支风险。建议加入 focus（连续活跃 + 挂载评分卡）。
+ · Snapshot at `dashboard/2026-09-23.md`
+
+---
 ### 2026-09-21 · -1.41% day · ▲ material
 **Tags:** `memory_pricing`, `sector_rotation`, `earnings_pre_print`
 **Confidence:** low

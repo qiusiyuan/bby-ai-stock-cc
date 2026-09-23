@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-23 · +1.82% day · ▲ minor
+**Tags:** `sector_rotation`, `macro_rates`
+**Confidence:** high
+
+**Primary cause.** META +1.82%（1w +11.48%，触发 5d≥10% 门槛），是折现率冲击日里**唯一放量上涨**的持仓（成交 1.06x，全 watchlist 最高）。在 10Y 破 5.12%（2007 年以来最高）、九个 cluster 中七个下跌的一天逆势收涨。媒体框架为 'AI Rotation Splits Big Tech'——同日 GOOG -3.71% / MSFT +0.38%，资金在大盘科技内部自 GOOG 流向 META。驱动是两条：(1) 当期利润率厚，构成估值地板，久期短于纯成长；(2) Muse 提供独立于利率的叙事线。
+
+**Sources.**
+- : [10-year Treasury yield hits highest level since 2007 as market prices in another Fed rate hike](https://finance.yahoo.com/quote/%5ETNX/)
+
+**Cross-assets.** SPY CHANGE -0.74% · VIX 15.34 · TEN YEAR 5.12 · WTI 91.41 · DXY 101.19 · QQQ CHANGE -1.01%
+
+**Agent read.** 距 52w 高 $763.90 仅 -1.8%，3mo +33.5%，距 thesis-break $450 缓冲 +66.7%。**最深的一层观察**：GOOG 与 META 今天的 5.5 个百分点反向差，发生在两个商业模式相似、久期相近、都重投 AI 的公司之间，因此不能用利率差异解释。真正的差异是叙事的时间位置——有报道认为 Alphabet 的 Spark 长期会胜过 Muse，但『长期』在 5% 利率下不值钱。**高利率环境下，市场对『远期更优』的支付意愿下降，对『当期已有』的支付意愿上升。** 反向风险须记录：META 距 52w 高仅 1.8%，承担『高位 + 无安全垫』的对称风险，今天的相对强势不应外推为结构性优势。10-28 财报与 GOOG/MSFT/GEV + FOMC 同日。
+ · Snapshot at `dashboard/2026-09-23.md`
+
+---
 ### 2026-09-21 · +11.34% day · ▲ extreme
 **Tags:** `tech_breakthrough`, `pt_change`, `competitor_news`, `ai_demand`, `macro_rates`
 **Confidence:** high

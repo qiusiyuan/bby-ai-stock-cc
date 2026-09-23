@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-23 · -3.21% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** SKHY -3.21%，DRAM/HBM cluster 内跌幅最大，无公司级新闻。纯折现率驱动：10Y 5.12%（2007 年以来最高）。最有信息量的一点是估值倍数失效——SKHY forward PE 仅 5.6x（复合体最低、低于 MU 的 6.7x），按任何传统标准是深度价值，本应在『利率上行 → 成长转价值』轮动中受益，却随 GOOG (-3.71%)、SPCX (-2.55%) 一起下跌。说明市场当前分类维度不是估值倍数，而是『是否属于 AI 主题篮子』。全复合体缩量：SKHY 0.30x / MU 0.38x / DRAM 0.28x。
+
+**Sources.**
+- : [10-year Treasury yield hits highest level since 2007 as market prices in another Fed rate hike](https://finance.yahoo.com/quote/%5ETNX/)
+- : [Stocks, Bonds Slip as Oil Jump Fuels Fed-Hike Bets (Bloomberg)](https://finance.yahoo.com/quote/CL%3DF/)
+
+**Cross-assets.** SPY CHANGE -0.74% · VIX 15.34 · TEN YEAR 5.12 · WTI 91.41 · DXY 101.19 · QQQ CHANGE -1.01%
+
+**Agent read.** 必须记录的对照：同日 Samsung (005930.KS) 韩股收 +3.25%，与 SKHY -3.21% 形成 6.5 个百分点反向差。这不是基本面分歧而是时区——韩国股市在美国利率重定价之前已收盘。次日验证点：Samsung 若补跌则时区解释成立；若不跌则为真分歧，需重新归因。距 thesis-break $115 缓冲 +64.4%。10-07 ADS lockup 到期已研究判定为非主要变量（100% 增发无老股东减持 + SK square 受韩国法永久 20% 持股下限约束）；观察点为到期前后是否放量下跌。结构性倒挂仍在：HBM 龙头 SKHY (5.6x) 比追赶者 MU (6.7x) 更便宜。
+ · Snapshot at `dashboard/2026-09-23.md`
+
+---
 ### 2026-09-17 · +5.24% day · ▲ material
 **Tags:** `partnership_news`, `executive_comment`, `memory_pricing`, `geopolitical_trade`, `sector_rotation`
 **Confidence:** high

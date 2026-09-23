@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-23 · -2.23% day · ▼ minor
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** MU -2.23%（1w +15.67% 触发 5d≥10% 记录门槛），无任何公司级新闻。纯折现率驱动：10Y 升至 5.12%、2007 年以来最高（+16bps）。**本条最重要的观察是估值倍数的失效**——MU forward PE 仅 6.7x（trailing 23.1x），按任何传统标准是深度价值区间，本应在『利率上行 → 资金从成长转向价值』的轮动中受益，却与 GOOG (-3.71%)、SPCX (-2.55%)、humanoid ETF (-1.5~-2.7%) 一起下跌。说明市场当前的分类维度不是估值倍数，而是『是否属于 AI 主题篮子』；低倍数不构成下行保护，因为卖压来自主题去杠杆而非估值再平衡。缩量 0.38x。
+
+**Sources.**
+- : [10-year Treasury yield hits highest level since 2007 as market prices in another Fed rate hike](https://finance.yahoo.com/quote/%5ETNX/)
+
+**Cross-assets.** SPY CHANGE -0.74% · VIX 15.34 · TEN YEAR 5.12 · WTI 91.41 · DXY 101.19 · QQQ CHANGE -1.01%
+
+**Agent read.** 历史 analog 对照 [[MU 2026-08-18]]：当时 10Y 停在 52w 高 4.71%，MU 在无公司利空下单日 -7.11%，判定为『回吐而非破位』。今天 10Y 已 5.12%（高出 41bps 且创 2007 新高），跌幅却只有 -2.23%，不到当时三分之一。差异来源：8/18 叠加了 WSJ 内存报道的独立利空，今天是纯利率。**由此得到新标尺——纯利率冲击对 memory 复合体的单日代价约 -2% 到 -3%。** 距 thesis-break $650 缓冲 +64.9%。三天后（09-26）是一条 MU 预测的评分日，原文为『四因素叠加，主导 MU 的是利率/久期通道而非自身基本面』——今天为该预测提供强证据：6.7x PE、零公司新闻、仍随久期篮子下跌，且『美债长端失控』与『加息活变量』两个因素同时显性化。七天后（09-30）Q4 FY26 财报是 memory 复合体最早的可验证数字，会给 SKHY (10-27)、SNDK (11-06) 定调。
+ · Snapshot at `dashboard/2026-09-23.md`
+
+---
 ### 2026-09-21 · +2.77% day · ▲ material
 **Tags:** `memory_pricing`, `earnings_pre_print`, `competitor_news`, `sector_rotation`, `macro_rates`
 **Confidence:** medium

@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-23 · +4.89% day · ▲ material
+**Tags:** `macro_rates`, `flow_event`
+**Confidence:** high
+
+**Primary cause.** SSPC +4.89%（SPCX 的 2x 反向 ETF），是 SPCX -2.55% 的机械镜像，无独立信息量。记录仅为索引完整性。
+
+**Sources.**
+- : [10-year Treasury yield hits highest level since 2007](https://finance.yahoo.com/quote/%5ETNX/)
+
+**Cross-assets.** SPY CHANGE -0.74% · VIX 15.34 · TEN YEAR 5.12 · WTI 91.41 · DXY 101.19 · QQQ CHANGE -1.01%
+
+**Agent read.** 3mo -29.1% 而同期 SPCX 仅 -3.4%——这个差距是波动率损耗（volatility decay）的实证：即使标的季度跌幅很小，2x 反向产品仍损失近三成。结论：此类工具不适合作为长期对冲载体，只在明确的短期方向性判断下有意义。
+ · Snapshot at `dashboard/2026-09-23.md`
+
+---
 ### 2026-09-15 · +5.59% day · ▲ material
 **Tags:** `macro_rates`, `sector_rotation`
 **Confidence:** high

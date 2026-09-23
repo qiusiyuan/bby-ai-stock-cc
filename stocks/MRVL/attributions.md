@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-23 · -1.81% day · ▼ minor
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** MRVL -1.81%（1w +12.14%，触发 5d≥10% 门槛），无公司级新闻。折现率冲击传导；forward PE 38.1x 属偏高一档。
+
+**Sources.**
+- : [10-year Treasury yield hits highest level since 2007 as market prices in another Fed rate hike](https://finance.yahoo.com/quote/%5ETNX/)
+
+**Cross-assets.** SPY CHANGE -0.74% · VIX 15.34 · TEN YEAR 5.12 · WTI 91.41 · DXY 101.19 · QQQ CHANGE -1.01%
+
+**Agent read.** 3mo -7.7%——1w 强势未累积为季度收益，说明 Trainium 互联叙事尚未兑现为持续定价。距 thesis-break $200 缓冲 +28.8%。12-01 财报为下一裁决点，但更早的读数来自 10-28 hyperscaler capex 指引（AWS 是其 Trainium SerDes 的需求端）。
+ · Snapshot at `dashboard/2026-09-23.md`
+
+---
 ### 2026-09-21 · +5.38% day · ▲ material
 **Tags:** `tech_breakthrough`, `ai_demand`, `sector_rotation`, `macro_rates`
 **Confidence:** high

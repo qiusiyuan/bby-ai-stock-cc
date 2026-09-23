@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-23 · +3.06% day · ▲ material
+**Tags:** `macro_rates`, `flow_event`
+**Confidence:** high
+
+**Primary cause.** SQQQ +3.06%（Nasdaq-100 的 3x 反向 ETF），是 QQQ -1.01% 的机械镜像（约 3 倍），无独立信息量。记录仅为索引完整性。
+
+**Sources.**
+- : [10-year Treasury yield hits highest level since 2007](https://finance.yahoo.com/quote/%5ETNX/)
+
+**Cross-assets.** SPY CHANGE -0.74% · VIX 15.34 · TEN YEAR 5.12 · WTI 91.41 · DXY 101.19 · QQQ CHANGE -1.01%
+
+**Agent read.** 1w -15.50% / 3mo -14.04%——与 SSPC 同构的杠杆反向产品损耗。今日上涨仅确认了大盘方向，不含任何增量判断。
+ · Snapshot at `dashboard/2026-09-23.md`
+
+---
 ### 2026-08-04 · -10.60% day · ▼ extreme
 **Tags:** `flow_event`, `sector_rotation`, `macro_oil`
 **Confidence:** high

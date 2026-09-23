@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-23 · -2.99% day · ▼ minor
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** DRAM ETF -2.99%（1w +11.55%，触发 5d≥10% 门槛），跟随整个 memory/HBM 复合体。无独立催化剂——作为 ETF 载体，其功能是确认『复合体整体同向』而非提供增量信号。同日 SKHY -3.21% / MU -2.23%，全部缩量（DRAM 0.28x 为最低）。驱动为 10Y 5.12%（2007 年以来最高）的折现率冲击。
+
+**Sources.**
+- : [10-year Treasury yield hits highest level since 2007 as market prices in another Fed rate hike](https://finance.yahoo.com/quote/%5ETNX/)
+
+**Cross-assets.** SPY CHANGE -0.74% · VIX 15.34 · TEN YEAR 5.12 · WTI 91.41 · DXY 101.19 · QQQ CHANGE -1.01%
+
+**Agent read.** trailing PE 13.1x，3mo -10.8%。作为 cluster 内独立信息量最低的成员，建议考虑移出 focus——它与 MU/SKHY 相关性极高，三者同占 focus 席位属冗余（已在当日报告中提出，待用户确认）。
+ · Snapshot at `dashboard/2026-09-23.md`
+
+---
 ### 2026-09-21 · +3.30% day · ▲ material
 **Tags:** `memory_pricing`, `sector_rotation`, `competitor_news`, `macro_rates`
 **Confidence:** medium
