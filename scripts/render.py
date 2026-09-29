@@ -753,7 +753,46 @@ def maybe_autowrap_h2_tabs(md_text: str) -> str:
     return "\n".join(parts)
 
 
+class FenceConventionError(SystemExit):
+    """Raised when the source markdown violates the tagged-open / bare-close convention."""
+
+
+def check_fence_convention(md_text: str) -> None:
+    """Reject language-less fenced blocks before they silently truncate the output.
+
+    This module's nested-block scanners (`_fenced_ranges`, `_extract_tabs_block`)
+    classify a fence by its tag: ```lang opens, bare ``` closes. A language-less
+    opener therefore reads as a *closer*, depth hits zero early, and the auto-tabs
+    wrapper ends at that point — every later H2 is swallowed into one code block
+    with no error. A 13-tab report rendered as 8 tabs this way on 2026-09-29.
+
+    Under the convention a bare fence is only ever a closer, so a bare fence seen
+    while no block is open is unambiguously the bug. Fail loudly: a truncated
+    report is worse than no report, and the fix is to tag the block (```text).
+    """
+    depth = 0
+    for lineno, line in enumerate(md_text.split("\n"), 1):
+        if not line.startswith("```"):
+            continue
+        if line[3:].strip():  # tagged → opener
+            depth += 1
+        elif depth:  # bare with a block open → closer
+            depth -= 1
+        else:
+            raise FenceConventionError(
+                f"render.py: line {lineno}: fenced block opened without a language tag.\n"
+                "  Bare ``` is reserved for CLOSING a block; a bare opener makes the\n"
+                "  auto-tabs scanner end early and silently drop every later H2 section.\n"
+                "  Fix: tag the opening fence, e.g. ```text"
+            )
+    if depth:
+        raise FenceConventionError(
+            f"render.py: {depth} fenced block(s) left unclosed at end of file."
+        )
+
+
 def render_html(md_text: str, title: str) -> str:
+    check_fence_convention(md_text)
     md_text = maybe_autowrap_h2_tabs(md_text)
     md_text, placeholders = expand_custom_blocks(md_text)
     body_html = markdown.markdown(
