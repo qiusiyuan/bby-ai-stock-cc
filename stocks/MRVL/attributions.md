@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-29 · +4.10% day · ▲ material
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** MRVL +4.10% 至 $262.24，无任何公司级催化剂。板块级 relief rally：SOXX +2% vs QQQ +0.29%，买盘集中在芯片而非大盘科技。反弹幅度按前一日跌幅排序（Arm 前日 -9% → 今日 +5%；MRVL 前日 -3.3% → 今日 +4.1%），不按基本面或主题相关性排序。5d 净额 -0.05%，两天互相抹平；成交量仅均量 45%，无放量。
+
+**Sources.**
+- : [Arm Jumps 5% as Chip Selloff Unwinds; Marvell Climbs 4%, Qualcomm Inches Higher](https://247wallst.com/investing/2026/09/29/arm-jumps-5-as-chip-selloff-unwinds-marvell-climbs-4-qualcomm-inches-higher/)
+- : [Lumentum Climbs 7% as Optics Selloff Reverses a Day After Citi's $11B Switching Call; Coherent and Corning Rise 5%](https://247wallst.com/investing/2026/09/29/lumentum-climbs-7-as-optics-selloff-reverses-a-day-after-citis-11b-switching-call-coherent-and-corning-rise-5/)
+- : [Intel Drops 4% on Oil-Driven Rate Fears, NVIDIA Rises 3% on Record $150B Buyback](https://247wallst.com/investing/2026/09/28/intel-drops-4-on-oil-driven-rate-fears-nvidia-rises-3-on-record-150b-buyback-taiwan-semiconductor-slips/)
+
+**Cross-assets.** SPY CHANGE -0.38% · QQQ CHANGE -0.03% · VIX 16.28 · TEN YEAR 5.281 · WTI 90.33 · DXY 101.582
+
+**Agent read.** 必须排除的误读：Citi 周一发布的『光电路交换 2030 年 $110 亿市场』研报不是原因——(1) 研报未点名 MRVL/AVGO/NVDA；(2) 发布当天(09-28)光通信股反而全线下跌；(3) 涨幅排序与主题相关性不匹配（Arm 与光交换无关却涨幅居前）。历史模式：本条是 2026-09-23 的精确镜像（当日 -1.81%，同样 macro_rates+sector_rotation / medium / 无公司级新闻）。更重要的是与 2026-08-18 构成可重复模式——当 10Y 位于 52 周高位时，看多 AI 的卖方研报在发布当日无效（08-18 UBS 看多 AI 研报被利率盖过；09-28 Citi 研报当天光通信股下跌）。机制：提高远期 TAM 的研报增加的是分子的远期部分，而这正是折现率打击的部分。forward PE 38.1x(09-23)→38.7x(今日)。距 thesis-break $200 缓冲 +31.1%。证伪条件：若未来 3 个交易日 MRVL 跑赢 SOXX 超 3pp，说明存在未识别的公司级驱动。下一裁决点是 10-28/10-29 hyperscaler capex 指引（AWS 是其 Trainium SerDes 的需求端），比 12-01 自家财报早两个月；注意 08-28 先例——beat+raise 当天仍 -10.32%，好数字不足以驱动股价。
+ · Snapshot at `dashboard/2026-09-29.md`
+
+---
 ### 2026-09-23 · -1.81% day · ▼ minor
 **Tags:** `macro_rates`, `sector_rotation`
 **Confidence:** medium
