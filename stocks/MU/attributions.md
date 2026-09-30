@@ -4,6 +4,32 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-09-30 · -0.82% day · ▼ minor
+**Tags:** `earnings_print`, `guidance_raise`, `executive_comment`, `memory_pricing`, `macro_rates`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** Q4 FY26 全面超预期 + 上调指引 (营收 $54.229B/+379% YoY, adj EPS $33.42, adj GM 87.0% 环比从 84.9% 扩张, Q1 FY27 指引 $61.5B/EPS $38.15 均超共识, CEO 称 FY27+FY28 供需更紧) — 股价仍收 -0.82%。市场在给 peak earnings 定价: 三个月里 EPS run-rate +33% (按指引 +52%) 而倍数从 12.1x 压缩到 8.0x (按指引 7.0x), 压缩 34-42%。这是分母争议, 财报无法回答。
+
+**Sources.**
+- Micron IR (via StockTitan): [Micron Technology, Inc. Reports Record Fiscal Fourth-Quarter and Full-Year 2026 Results](https://www.stocktitan.net/news/MU/)
+- Yahoo: [Micron Outlines Upbeat Outlook, Reports Strong Results as Memory Prices Rise](https://finance.yahoo.com/markets/stocks/articles/micron-outlines-upbeat-outlook-reports-211449713.html)
+- Barron's via Yahoo: [Micron Reports Another Beat-and-Raise Earnings. The Stock Is Unchanged.](https://finance.yahoo.com/m/a3eaba56-e920-35e6-a5b8-1893c4070ef5/micron-reports-another.html)
+- Bloomberg via Yahoo: [Micron Forecast Tops Estimates on Booming AI Memory Demand](https://finance.yahoo.com/video/micron-forecast-tops-estimates-booming-210045047.html)
+- _Quote:_ "" — 
+- _Quote:_ "" — 
+- _Corroboration:_ 跌幅排序与利好程度负相关: MU -0.82% (有财报大超预期) < SKHY -1.36% < Samsung -1.47% < DRAM ETF -1.52% (无任何消息) — 卖压是板块级估值层面, 非 MU 公司层面
+- _Corroboration:_ 盘后先冲 $1,084.73 (+1.6%) 后 30 分钟内砸至 $1,050.97 (-1.5%), 收在 ~$1,063 — 完整的 round-trip, 解释了当天新闻标题自相矛盾
+- _Corroboration:_ 逆向检验: QQQ +0.25%, NVDA +0.51%, MRVL +0.36% — AI 算力链无恙, 排除 'AI 叙事破裂' 传导
+- _Corroboration:_ 排除拥挤仓位出清解释: MU 进财报 5d 仅 -0.63%, 无涨幅可回吐 — SNDK 8/06 的 '>30% 5日涨幅进财报好数字打折' 判据不适用
+- _Corroboration:_ 分部 (新口径): Core data center $18.00B (YoY 11.4x), Cloud memory $16.28B (3.6x), Mobile/client $13.11B, Auto/embedded $6.82B; 数据中心合计 $34.28B = 营收 63.2%。HBM 不再单列披露
+- _Corroboration:_ FY26 全年: 营收 $133.188B, GAAP 净利 $84.969B, 经营现金流 $89.675B, 调整后 FCF $62.31B, 年末现金+有价证券 $73.48B。唯一资本返还为 $0.15/股季度股息, 无回购提升 — 按 6/25 预设 Tier 2 判据为 Bear 信号
+
+**Cross-assets.** SPY -0.21% · QQQ +0.25% · VIX 16.34 · TEN YEAR 5.293 · SKHYNIX ADR -1.36% · SAMSUNG -1.47% · DRAM ETF -1.52% · NVDA +0.51%
+
+**Agent read.** Earnings scorecard 评分日。Tier 1 4/5 确认命中 (GM 87.0% vs 门槛 82%、营收 $54.23B vs $43B、EPS $33.42 vs $27、FY27 guide 措辞命中并延伸到 FY28), 第 5 项 HBM QoQ 因 MU 改按终端市场披露而永久不可直接测量 (代理证据强烈支持)。6/25 预设的四个陷阱无一命中。按预先承诺评分表, verdict = validated。**但预设 verdict 自带的可检验预测『买方从 cyclical 重定价为 secular, 多重扩张持续』被今天直接否决**: 盈利 run-rate 三个月 +33% (按指引 +52%), 倍数压缩 34-42%。核心洞见: 「下一个 NVDA」的本质是倍数重定价, 而 MU 走的是反方向 — 基本面部分成立, 重定价机制被证伪。这是 6 月框架未预见的新风险, 应升级为独立观察项。形态校准: -0.82% 是 8 月以来 beat-却跌序列中最轻的一次 (MRVL -10.32%, SPCX -10.75%, AMD -6.36%, SNDK -5.40%), 最接近 NVDA 8/26 的 -1.16% (次日 +9.19%)。按 AVGO 9/08 判据, 决定性观察窗口是 10/06-10/14: 收复 $1,100 = 倍数压缩是暂时的; 跌破 MA50 $951.59 = 市场确实在给 peak earnings 定价。最尖锐的未解矛盾: 管理层口头指引 FY27+FY28 更紧, 却在 $73.48B 现金和 $62.31B 年度 FCF 之上不提升回购 — FY27 capex (未披露, 待 10-K) 是唯一解谜钥匙, 若 >$180 亿则撞上经典周期顶判据。下两个独立验证点: 10/26 SK Hynix Q3 (87% GM 是行业现象还是 MU 独有), 10/29 AAPL (内存涨价由谁承担)。
+ · Snapshot at `dashboard/2026-09-30.md`
+
+---
 ### 2026-09-23 · -2.23% day · ▼ minor
 **Tags:** `macro_rates`, `sector_rotation`
 **Confidence:** high

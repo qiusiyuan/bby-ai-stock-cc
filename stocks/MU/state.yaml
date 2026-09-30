@@ -2,7 +2,7 @@ ticker: MU
 active: true
 tags: [ai]
 added: 2026-06-18
-last_checked: 2026-06-18
+last_checked: 2026-09-30
 last_quarterly_review: null
 last_annual_refresh: 2026-06-18
 max_weight_pct: null
@@ -15,4 +15,19 @@ earnings_watchlist:
   scoring_window: 7d        # scoring_date 前后各 7 天内任何 watchlist/report 都要触发提醒
   thesis_claim: "MU 是下一个 NVDA / AI 长期领头股"
   baseline_print: 2026-06-24  # Q3 FY26 blowout — scorecard 用其作为对比基准
-  status: pending           # pending | scored | invalidated
+  status: scored            # pending | scored | invalidated
+  scored_on: 2026-09-30
+  scored_verdict: validated # Tier 1 确认命中 4/5 (第5项 HBM QoQ 因口径变更不可测量, 代理证据支持)
+  # 评分要点 (完整见 dashboard/2026-09-30.md "Earnings scorecard: MU" + thesis.md 2026-09-30 条):
+  #   基本面: adj GM 87.0% (门槛 82%, 且环比扩张) / 营收 $54.229B (门槛 $43B) / adj EPS $33.42 (门槛 $27)
+  #           / FY27 guide 命中并延伸到 FY28。6/25 预设四个陷阱无一命中。
+  #   ⚠️ 但预设 verdict 自带的「多重扩张持续」预测被否决: 盈利 run-rate 3 个月 +33% (按指引 +52%),
+  #      倍数从 12.1x 压缩到 8.0x (按指引 7.0x), 压缩 34-42%。
+  #      → 「AI 长期领头股」基本面成立; 「下一个 NVDA」的重定价机制被证伪。
+  #   Tier 2 Bear 信号: 回购未提升 (FY26 adj FCF $623.1亿 / 现金 $734.8亿, 仅 $0.15/股股息)
+  #                     + 长期合约无新披露。待 10-K: FY27 capex (最关键) / 库存天数 / HBM 份额表述。
+  #   决定性观察窗口: 10/06-10/14 (AVGO 9/08 判据) — 收复 $1,100 vs 跌破 MA50 $951.59。
+  #   独立验证点: 10/26 SK Hynix Q3 / 10/29 AAPL 财报。
+  # HBM 口径变更: MU 自 Q4 FY26 起按终端市场披露 (Cloud Memory / Core Data Center /
+  #   Mobile and Client / Automotive and Embedded), 不再单列 HBM 营收。
+  #   → 未来 scorecard 的 HBM 门槛须改用「数据中心合计」口径 (Q4 FY26 基准: $34.28B = 营收 63.2%)。
