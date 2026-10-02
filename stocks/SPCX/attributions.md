@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-02 · +5.79% day · ▲ moderate
+**Tags:** `macro_rates`, `production_milestone`, `sector_rotation`, `flow_event`
+**Confidence:** high
+
+**Primary cause.** 主因是宏观折现率，发射是配料。非农 +29K 把加息概率从 72.5% 砸到 16%；对一个 FY27 自由现金流 -$670 亿、fwd PE 89.9x、无当期盈利的名字，融资成本的绝对水平就是估值本身。昨天（10/01）长端出现九月首次失败突破、所有久期资产反弹（GEV +3.89% / MU +3.03% / SKHY +5.08%）时 SPCX 却 -1.85% 独自掉队，当时判读为『另有压制因素』指向融资焦虑 —— 今天加息路径被取消，SPCX 立刻领涨。这证明昨天的压制不是『市场不信 SpaceX』，而是『长端只是不再创新高，不足以改变融资算术』。催化面：一周三次成功发射（Falcon 9 rideshare + ISS + Google 卫星），Rocket Lab +7% / AST SpaceMobile 同步 = 板块级而非个股。但历史判据明确：2026-07-31 Space Force 授予 $16 亿 / 18 次 Falcon 9 军用发射 + Musk 警告空头，当天 -2.99%，归因记为『好消息完全无效』。所以发射类催化在 SPCX 的定价函数里权重很低。量比 0.85x 未放量；SSPC（2x 反向）-11.57% 接近完全对称，说明反向 ETF 持有者在平仓（空头回补）而非机构建仓。
+
+**Sources.**
+- Yahoo Finance: [SpaceX stock surges after successful ISS and Google launches](https://finance.yahoo.com/)
+- Benzinga: [SpaceX Climbs 6% on Fresh Falcon 9 Rideshare Launch; Rocket Lab Jumps 7%, AST SpaceMobile Ticks Up](https://www.benzinga.com/)
+- Benzinga: [Fed Hike Odds Collapse to 16% on Prediction Markets After Soft Jobs Report](https://www.benzinga.com/)
+- US Bureau of Labor Statistics: [Employment Situation September 2026: nonfarm payrolls +29,000; July revised to -10,000](https://www.bls.gov/news.release/empsit.nr0.htm)
+
+**Cross-assets.** SPY +0.70% · VIX 15.55 · TEN YEAR 5.264
+
+**Agent read.** 本工作区对 SPCX 是纯跟踪无持仓（thesis_break_price = null），不输出买卖提示。核心结构性风险不变：2026-12-09 post-IPO 180 天 lockup 解禁，还有 68 天，且与 AVGO 财报同日 —— 届时若下跌必须先排除 AI 板块情绪再归因到解禁。参照 2026-08-20 第二批解禁（3.19 亿股）当日 -5.69% 且跌破 IPO 价，12/09 规模更大。现价 $156.65 距 52 周高 $225.64 仍有 -30.6%，是修复不是突破。关键判据：今天的涨幅若要可持续，必须回答『如果 10Y 回到 5.3% 还成立吗』。11/03 Q3 财报的看点是 AI/轨道数据中心收入能否首次单独披露 —— 那决定 89.9x fwd PE 的分母换没换对象。
+ · Snapshot at `dashboard/2026-10-02.md`
+
+---
 ### 2026-09-08 · +3.78% day · ▲ material
 **Tags:** `analyst_upgrade`, `pt_change`, `sector_rotation`
 **Confidence:** high

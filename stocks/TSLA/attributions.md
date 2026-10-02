@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-02 · +4.84% day · ▲ moderate
+**Tags:** `production_milestone`, `macro_rates`, `sector_rotation`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** Q3 交付 486,532 辆超公司共识 + 非农 +29K 把加息概率从 72.5% 砸到 16%，公司级与宏观级催化同向叠加。关键历史对照：2026-07-02 Q2 交付 480,126 辆超德银预期 ~15%，股价却 -8.03%（sell-the-news）。差别全在进入交付日的 5 日动能 —— 7/2 之前连涨三天 +11.8%（好消息已被买完），这次是横盘偏弱 -0.23%（无预设）。由此得出可复用规律：TSLA 的交付数据本身不决定方向，进入交付日的 5 日动能决定方向。不协调信号：量比仅 0.82x 未放量 —— 按本工作区 9/21 建立的判据（里程碑驱动的上涨应伴随放量，8/31 的 1.3x 为正例），一个硬数据催化只配 0.82x 更像空头回补 + 散户 + 久期 beta，不是机构重新建仓。Rivian 同日交付 19,248 辆并重申指引，EV 需求端有行业级确认。Gene Munster 称『EV 寒冬正在解冻』，看 2027 全年 +15%。
+
+**Sources.**
+- Yahoo Finance: [Tesla beats Q3 delivery estimates with 486,000 vehicles delivered](https://finance.yahoo.com/)
+- Benzinga: [Tesla Surges 5% as 486,532 Deliveries Top Company Consensus; Rivian Slides 3%](https://www.benzinga.com/)
+- Benzinga: [Tesla Q3 Deliveries Beat Street Estimate, Gene Munster Says 'EV Winter' Is Thawing — Sees 15% Growth In Full Year 2027](https://www.benzinga.com/)
+- US Bureau of Labor Statistics: [Employment Situation September 2026: nonfarm payrolls +29,000; July revised to -10,000; average hourly earnings +3.0% y/y](https://www.bls.gov/news.release/empsit.nr0.htm)
+
+**Cross-assets.** SPY +0.70% · VIX 15.55 · TEN YEAR 5.264
+
+**Agent read.** 交付解决了『量』，没解决『价』。kill condition『汽车毛利率除积分连续两季低于 15%』正是中国降价换销量的代价所在 —— 10/21 财报才是裁决点。现价 $371.26 在 thesis Base ($450) 与 Bear ($200) 之间偏 Base，距 thesis-break $250 缓冲 +48.5%。反向 DCF：仅汽车业务值 $150-200，其余约 $190/股全是自动驾驶期权价值，而交付数字只作用在前一半。技术面仍在 MA200 ($393.19) 下方 5.6%，中期趋势未修复。0.82x 的量比是今天最该记的一笔 —— 它意味着这次上涨缺机构确认。
+ · Snapshot at `dashboard/2026-10-02.md`
+
+---
 ### 2026-09-21 · +3.03% day · ▲ material
 **Tags:** `regulatory_positive`, `macro_rates`, `sector_rotation`
 **Confidence:** medium

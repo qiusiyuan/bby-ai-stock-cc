@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-02 · +3.35% day · ▲ moderate
+**Tags:** `macro_rates`, `sector_rotation`, `unattributed`
+**Confidence:** low
+
+**Primary cause.** 跌幅最深的反弹，不是转强。驱动是折现率 beta（非农 +29K → 加息概率 72.5% → 16%）+ 一条『Broadcom 为 AI 芯片筹集资金』的模糊新闻。关键读数不是 +3.35%，而是 30 天 **-2.26%，全 AI capex 组唯一负值**（对照 AMD +34.87% / INTC +32.71% / TSM +14.05% / NVDA +9.17%）。这个差距不是一天能解释的。结构性原因：AVGO 的收入来自 custom ASIC（TPU/Trainium/MTIA），订单决定权在 GOOG/AMZN/META 手里，所以它的需求侧答案不在自己 12/09 的财报里，而在 10/28 三家 hyperscaler 同日的 capex 指引里 —— 早六周，而且免费。量比 0.50x 极低量，确认这是被动 beta 不是主动重估。距 52 周高 -28.3% 是全组最差位置。
+
+**Sources.**
+- Bloomberg via Yahoo: [Nike Slides on Job Cuts; Broadcom Gathers AI Chip Funding | Stock Movers](https://finance.yahoo.com/)
+- Zacks via Yahoo: [Why Is Broadcom Inc. (AVGO) Down 3.8% Since Last Earnings Report?](https://finance.yahoo.com/)
+- Benzinga: [Fed Hike Odds Collapse to 16% on Prediction Markets After Soft Jobs Report](https://www.benzinga.com/)
+
+**Cross-assets.** SPY +0.70% · VIX 15.55 · TEN YEAR 5.264
+
+**Agent read.** confidence 标 low 是因为今天没有可验证的公司级催化 —— 『筹集 AI 芯片资金』是模糊表述，无规模无对手方。真正的信息是位置：距 thesis-break $300 缓冲 +18.4%（全持仓第二窄，仅次于 NOK 的 +16.9%），fwd PE 18.3x 在组内偏便宜但 30 天唯一负收益说明便宜有理由。AVGO 与 GEV 的结构完全同构 —— 两者的答案都在 10/28 别人的财报里。在那之前任何单日涨幅都是 beta 而非 alpha。
+ · Snapshot at `dashboard/2026-10-02.md`
+
+---
 ### 2026-09-16 · -0.10% day · ▼ extreme
 **Tags:** `executive_comment`, `competitor_news`, `macro_rates`, `ai_demand`, `sector_rotation`
 **Confidence:** high

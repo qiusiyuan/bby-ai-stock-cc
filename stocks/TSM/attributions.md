@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-02 · +3.04% day · ▲ moderate
+**Tags:** `macro_rates`, `sector_rotation`, `earnings_pre_print`
+**Confidence:** medium
+
+**Primary cause.** 无公司级硬催化，驱动是折现率 + 财报前定位。非农 +29K 把加息概率从 72.5% 砸到 16%，而 AI 算力的需求由 hyperscaler 多年 capex 承诺锁定、与就业数据无因果关系 —— 所以折现率下降对芯片侧是单边利好、无对冲项。结果是芯片侧集体顶到 52 周高点附近：TSM 距 52w 高 -1.2%、NVDA -0.6%、AMD -1.9%，而 hyperscaler 开支侧几乎不动（MSFT +0.34% / META +0.47%）。辅助叙事：TSMC 考虑在德州建数十亿美元晶圆厂园区的报道。13 天后（10/15）是 Q3 财报 —— 本季第一份 AI 算力硬数据，领先 NVDA（11/17）一个月，带着年内最高位进财报。量比 0.53x 低量，说明这是被动的 beta 而非主动建仓。
+
+**Sources.**
+- Yahoo Finance: [TSMC mulls multibillion-dollar chip manufacturing campus in Texas](https://finance.yahoo.com/)
+- Benzinga: [AMD Climbs 3% as Chip Stocks Extend Their Run; Arm Jumps 8%, NVIDIA Rises 2%](https://www.benzinga.com/)
+- Benzinga: [Fed Hike Odds Collapse to 16% on Prediction Markets After Soft Jobs Report](https://www.benzinga.com/)
+
+**Cross-assets.** SPY +0.70% · VIX 15.55 · TEN YEAR 5.264
+
+**Agent read.** TSM 距 thesis-break $280 缓冲 +69.0%，fwd PE 21.6x。时序上 TSM 的 10/15 财报是整个 AI capex 链的供给侧第一读数（代工产能利用率 = 实际出货量），而 10/28 GOOG/META/MSFT 的 capex 指引是需求侧读数。两者都在三周内，而 NVDA 自己要等 11/17、AVGO 要等 12/09 —— 先看别人的财报再决定自己的名字，是本季度最高效的信息顺序。风险点：带着 52 周高点前 1.2% 的位置进财报，按 8/6 建立的 sell-the-news 判据（高位进财报 = 好数字打折），10/15 的上行空间被压缩。
+ · Snapshot at `dashboard/2026-10-02.md`
+
+---
 ### 2026-08-04 · +3.28% day · ▲ moderate
 **Tags:** `sector_rotation`, `ai_demand`
 **Confidence:** medium
