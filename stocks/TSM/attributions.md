@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-05 · +3.01% day · ▲ material
+**Tags:** `partnership_news`, `executive_comment`, `competitor_news`, `earnings_pre_print`
+**Confidence:** high
+
+**Primary cause.** 具名催化剂但消息极薄: 记者 Tim Culpan 的 newsletter 报道 TSMC 正探索与 Musk 的 Terafab (德州) 合作, Musk 在 X 回复九个字 'Just discussions, but something may come of it.' 未披露产能/金额/日期, 双方均未确认。推动 TSM +3.01% 到历史新高 $487.02 (年内 +60%+)。机制三层: (1) 对 TSM 是零风险期权 — 已是整个 AI 复合体代工厂, 在'只是在谈'阶段上行免费下行为零; (2) 提供现成的零和配对交易 — Terafab 2026-04 宣布时 Intel 的 14A 是唯一指定制程, TSMC 入局把独占变共享, 所以买 TSM 配空 INTC 不需要对 Terafab 成败下注, 只需对份额转移下注 (INTC 盘前跌超 4% 收 -2.20%, QCOM -2.21%); (3) 10/15 财报前 10 天的仓位建立, TSM 是本季第一份 AI 算力硬数据领先 NVDA 一个月。关键交叉检验: ASML -0.40% — 若市场相信 Terafab 是真实新增产能, 设备侧应涨 (新厂=更多 EUV 订单)。设备不动意味着市场定价的是'现有产能客户归属从 Intel 转到 TSMC'(零和), 不是'行业产能扩张'。反例确认: SOXX +0.10% / SMH +0.52% 板块基本不动 → 这是 alpha 非 beta, 与 10/02 那次 (+3.04%, 折现率驱动的被动 beta, vol 0.53x) 性质相反。涨幅超出消息分量的部分来自仓位结构而非新资金: vol 0.84x 低于均量, 当日 32 只跟踪标的只有 3 只量比过 1.0x 中位数 0.49x — 卖盘消失下很小买盘即可推动价格。估值约束: thesis base case 目标 $440-480, 当前 $487.02 已在区间之上; 反向 DCF 在 $462 时市场已定价 20-25% 营收 CAGR 持续 4-5 年 = base case 本身。Terafab 不改变 N2/A14 产能或定价, 改变的是 2028 年后客户结构, 对当前估值支撑很间接。归因置信度 high (知道市场在反应什么), 但被反应的事实质量 low (一位记者的未具名信源 + 九个字'只是在谈', 可能根本不发生) — 两者必须分开记。证伪点: 10/15 财报电话会管理层对 Terafab 的回答 (冷处理=支撑消失), 以及 10/22 INTC 财报若确认 14A 地位未变则配对交易两腿都该回吐。
+
+**Sources.**
+- Yahoo Finance: [TSMC stock hits all-time high after Elon Musk confirms early Terafab talks](https://finance.yahoo.com/markets/stocks/article/tsmc-stock-hits-all-time-high-after-elon-musk-confirms-early-terafab-talks-162904771.html)
+- Investing.com: [Intel Drops as Musk Signals TSMC Could Join Terafab, a 'Setback' for Its Foundry Comeback](https://www.investing.com/)
+- Barchart: [Taiwan Semiconductor Gains 2% to Record as Musk Confirms Early Terafab Talks; Broadcom Rises 2%, Qualcomm Pulls Back](https://www.barchart.com/)
+- {"type": "other", "title": "Musk on X: 'Just discussions, but something may come of it.' (reply to Tim Culpan newsletter screenshot)", "publisher": "X", "url": "https://x.com/elonmusk"}
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-02 · +3.04% day · ▲ moderate
 **Tags:** `macro_rates`, `sector_rotation`, `earnings_pre_print`
 **Confidence:** medium

@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-05 · +5.57% day · ▲ material
+**Tags:** `analyst_upgrade`, `flow_event`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** 连涨三天 (5d +15.36%), 但驱动与 10/02 完全不同 —— 这个区别是本条的核心。10/02 的 +5.79% 已归因为『主因宏观折现率, 发射是配料』(非农把加息概率 72.5%→16%)。今天长端走反方向: 10Y 回到 5.311%, 距 52 周高仅 3.8bp, 折现率没有任何改善, SPCX 却继续领涨。驱动换成了三条: (1) Morgan Stanley 给『cheap and getting cheaper』— 唯一新增卖方动作; 对一个 fwd PE 87.2x / FY27 FCF -$670 亿 / 无当期盈利的标的说便宜, 隐含的必是 TAM 或终值框架 (Starlink 用户×ARPU 或轨道算力远期收入), 与当期倍数无关, 这类评级推力真实但短暂。(2) Musk 重回万亿身家 (Forbes 估算 +$306 亿 vs 周五) — 这是结果而非原因, SPCX 先涨身家后算, 当催化剂会搞反因果。(3) SDA 任务周一推迟周二重试 — 历史判据明确: 2026-07-31 Space Force 授 $16 亿/18 次 Falcon 9 军用发射合同 + Musk 警告空头, 当天 SPCX -2.99%, 归因记为『好消息完全无效』; 发射与合同类催化在 SPCX 定价函数里权重很低, 一次推迟同样不该读成利空。最值得记录的是利率脱钩, 两种解释: A (良性) 市场开始用 Starlink 现金流而非融资成本定价, 久期敏感度结构性下降; B (脆弱) 利率机制还在, 只是被卖方背书的短期动能压过, 10Y 若破 5.349% 会补跌。判别方法看量: 今天 vol 1.14x (10/02 是 0.85x), 在上升但远未到 1.5x 的真实建仓门槛 → 倾向解释 B。关键的真实资金信号在 SSPC (2x 反向): -13.17%, vol 1.96x 是当日 32 只标的里唯一显著放量的。放量下跌 = 空头头寸被挤出平仓而非机构建新空仓 (10/02 已观察到同样结构)。连续三天的空头挤出能解释 SPCX 为什么在利率不配合时仍能延续涨幅 —— 这是挤仓动能不是估值重估, 挤仓会结束。不对称性: SPCX 30d +22.52% vs SSPC 30d -39.91%, 理论 2x 反向应为 -45%, 差额来自每日重置的路径依赖。距 lockup (12/09) 65 天, 下次财报 11/03。
+
+**Sources.**
+- Yahoo Finance: [SpaceX Stock Surges as Morgan Stanley Says Stock 'Cheap and Getting Cheaper'](https://finance.yahoo.com/)
+- Forbes via Yahoo: [Elon Musk regains trillionaire status as SpaceX stock surges](https://finance.yahoo.com/)
+- Benzinga: [SpaceX To Reattempt SDA Mission, Rally Continues Amid Busy Launch Schedule](https://www.benzinga.com/)
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-02 · +5.79% day · ▲ moderate
 **Tags:** `macro_rates`, `production_milestone`, `sector_rotation`, `flow_event`
 **Confidence:** high

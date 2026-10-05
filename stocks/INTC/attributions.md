@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-05 · -2.20% day · ▼ minor
+**Tags:** `competitor_news`, `partnership_news`, `executive_comment`
+**Confidence:** high
+
+**Primary cause.** 具名催化剂, 是 9/17 那条归因的干净反面。9/17 (+9.34%) 的归因写过『SK Hynix 与 Intel 就俄亥俄园区代工重启谈判 — 这是 Intel Foundry 第一个 Apple 之外的具名重量级潜在客户, thesis 里明确写着任何 Apple 之外的具名客户胜利都验证 thesis』。今天 Musk 在 X 确认 Terafab 与 TSMC 的早期谈判 ('Just discussions, but something may come of it.'), 而 Terafab 在 2026-04 宣布时 Intel 的 14A 是唯一指定制程 —— TSMC 入局把 Intel 最显眼的外部代工客户背书从独占变成共享。盘前跌超 4%, 收 -2.20%。为什么一条未确认的消息能打这么准: Piper Sandler 9/10 的估算是当前市值约 45% 建立在 foundry 夺取全球 CPU 15 个百分点份额这个未兑现假设上, 独占性被稀释正好打在这个假设的核心; forward P/E 56.6x 是跟踪组第二高 (仅次于 SNOW), 没有缓冲空间。量级要克制: 30d 仍 +29.57% 是算力组最强, 12 个月 +258%。被掩盖的事实: 10/05 本来是 DigiTimes 报道的 Intel PC CPU 涨价最多 10% 的生效日 —— 9/08 INTC +9.67% 的主要基础就是这条未确认报道。两条相反的线索撞在同一天 (涨价落地 = 利多 vs Terafab 独占性稀释 = 利空), 价格本身无法区分哪个在起作用, 只有 10/22 财报的 ASP 口径能分辨。配对交易确认: TSM +3.01% 创历史新高 / QCOM -2.21% 同向受损, 而 SOXX +0.10% / SMH +0.52% 板块不动 → 这是零和的份额转移定价, 不是板块行情。另一侧反例: ASML -0.40% — 设备侧不涨意味着市场定价的不是新增产能而是现有产能的客户归属。证伪点: 10/22 INTC 财报若管理层确认 14A 在 Terafab 的地位未变, 今天的 -2.20% 应回吐。
+
+**Sources.**
+- Investing.com: [Intel Drops as Musk Signals TSMC Could Join Terafab, a 'Setback' for Its Foundry Comeback](https://www.investing.com/)
+- Investing.com: [Intel Shares Fall as TSMC Discusses Potential Terafab Collaboration](https://www.investing.com/)
+- Barron's via Yahoo: [Intel Stock Drops as Elon Musk Deals a Setback to the Chip Maker. Why You Shouldn't Panic.](https://finance.yahoo.com/)
+- {"type": "other", "title": "Musk on X: 'Just discussions, but something may come of it.'", "publisher": "X", "url": "https://x.com/elonmusk"}
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-09-23 · -2.86% day · ▼ minor
 **Tags:** `macro_rates`, `sector_rotation`
 **Confidence:** medium

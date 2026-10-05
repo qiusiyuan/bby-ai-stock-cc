@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-05 · -13.17% day · ▼ extreme
+**Tags:** `flow_event`, `analyst_upgrade`
+**Confidence:** high
+
+**Primary cause.** SPCX 的 2x 反向 ETF, 机械跟随 SPCX +5.57%。但本条的信息价值不在方向而在成交量: vol 1.96x 是当日 32 只跟踪标的里唯一显著放量的 (其余只有 HXE.TO 1.31x / SPCX 1.14x 过 1.0x, 中位数 0.49x)。放量下跌在反向 ETF 上的读法是空头头寸在被挤出平仓, 而不是机构建立新空仓 —— 10/02 已记录同样结构 (SSPC -11.57% 接近完全对称, 判为反向 ETF 持有者平仓)。连续三天的空头挤出是 SPCX 能在利率完全不配合 (10Y 回到距 52 周高 3.8bp) 的情况下延续涨幅的动能来源。推论: 这是挤仓动能不是估值重估, 挤仓会结束; SSPC 量比回落到 1.0x 以下即为空头挤出完成的信号, SPCX 届时失去这个动能来源。路径依赖损耗: SPCX 30d +22.52% 对应理论 2x 反向 -45%, SSPC 实际 -39.91%, 差额来自每日重置 —— 持有反向 ETF 跨越趋势期会系统性损耗。当前 $6.79 距 52 周低点 $6.00 仅 13.2%。
+
+**Sources.**
+- _Data:_  ()
+- Yahoo Finance: [SpaceX Stock Surges as Morgan Stanley Says Stock 'Cheap and Getting Cheaper'](https://finance.yahoo.com/)
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-09-23 · +4.89% day · ▲ material
 **Tags:** `macro_rates`, `flow_event`
 **Confidence:** high
