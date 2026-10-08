@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-08 · -5.89% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`, `partnership_news`
+**Confidence:** high
+
+**Primary cause.** 一天打掉整周: 1d -5.89% 而 5d 仅 -0.06%。**消息面当日为正面**, 两条: OCP Global Summit 2026 展示开放 AI 基础设施方案; 公司预测 AI 数据中心驱动增速加快。量比 0.68x → **「利好不涨」的第二个半量样本** (另一个是 SPCX 当日四条利好收 -3.91%)。MRVL 在 AI capex 分界线上属供给方, 且其 AWS Trainium SerDes 互联敞口使它比 AVGO 更依赖单一客户的 capex 节奏 → **10/29 AMZN 财报对 MRVL 的信息量高于对 AVGO**, 关键是 AWS 营业利润率 (当前 ~39%) 与 $2,200亿 capex 的执行节奏。距 thesis_break $200 缓冲 +34.0%。 || 宏观共因 (已按盘中时序校正, 勿用收盘涨跌读因果): **触发是地缘** — 美国据报考虑扩大对伊朗打击, 叠加一艘油轮遇袭。当日标题: 'Oil surges, stocks sink as US reportedly eyes new Iran strikes' / 'U.S. Stocks Slip, Oil Rises on Fresh Tanker Attack' / 'Dow Tumbles, Oil Surges, and Yields Rise to New 24-Year Highs as Trump Considers Ramping Up Iran Attacks' / 'Nasdaq Slumps On War Worries'。盘中路径: WTI 开 89.86 → 冲 **93.08** → 收 90.97; 10Y 盘前 **5.331** → 收 5.239; 30Y 开 5.695 (24 年高位区) → 收 5.615; QQQ 开 754.29 → 高 756.93 → 收 **745.35** (贴当日低 744.39)。**关键: 两个诱因 (油/长端) 当天都缓解了, 权益却收在当日低点附近 —— 纯 beta 事件应在诱因缓解时修复, 今天没有。** 只看收盘 (10Y -2.5bp / 30Y -4.4bp / TLT +0.77%) 会误读成「利率转松而久期资产崩盘」; 利率今天是上午推手、下午缓解项, 不是反常项。对照 10/01 (长端失败突破日 SKHY +5.08% / GEV +3.89% / MU +3.03% 全线反打): 同样的利率先冲后落路径, 那天权益修复了, 今天没有。**差异在「不修复」, 不在利率方向。** **第二段 (不修复) 的 AI 侧候选解释**: Broadcom 为 OpenAI 芯片安排 >$500亿 融资 (Apollo/Blackstone 参与), SPCX $400亿, Oracle 同期发债, 三家抢同一批买家; 媒体口径从 'war worries' 转为 'growing AI caution'; Michael Burry 称市场处于 'denial'。**但有一条有力反证, 不应略过: 同日 Anthropic 宣布计划在云与算力上支出 $5,180亿 — 量级极大的 AI capex 利多, 整组没涨。** → 可读成「信用担忧压过需求利多」, 也可读成「市场今天对任何 AI 消息都不反应」(情绪/风险偏好)。**诚实结论: 地缘是因, AI 谨慎是让它不修复的那一层, 但今天的数据不足以把信用与纯 beta+情绪分开。判别点在 10/15 TSM 指引与 10/28 capex 指引。** 跌幅分布事实 (排他性因果不成立): 开支方 GOOG -0.43%/AMZN -0.78%/META -0.87%/MSFT -0.95% vs 供给方 NVDA -2.30%/TSM -3.24%/AVGO -3.35%/INTC -5.53%/MRVL -5.89%, 两簇不重叠 — 但战争风险日里单纯 beta 差异足以产生同样分裂。**量能限定 (双向适用)**: 全书 34 只量比中位数仅 0.48x, 仅 3 只过 1.0x → 半量里的 5% 级下跌, 属「没有买盘」而非「出现卖盘」, 方向可信幅度不可信。**同日两个反向硬数据**: Samsung 发创纪录营收/利润初步业绩、TSMC 九月营收超目标 — 供应链两个独立层级同日确认需求, 价格全部反向 → 需求侧无恙。
+
+**Sources.**
+- via yfinance MRVL news: Marvell to Showcase Open AI Infrastructure Solutions at OCP Global Summit 2026
+- via yfinance MRVL news: Marvell Technology Forecasts Accelerating Growth From AI Data Centers
+- via yfinance AVGO news: SpaceX, Broadcom and Oracle All Want Billions in AI Chip Debt at the Same Time
+- via yfinance AVGO news: MARKETS LIVE: US stocks slip on bond and AI debt fears
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-09-29 · +4.10% day · ▲ material
 **Tags:** `macro_rates`, `sector_rotation`
 **Confidence:** medium

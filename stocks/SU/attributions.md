@@ -4,6 +4,27 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-08 · +3.80% day · ▲ material
+**Tags:** `geopolitical_war`, `macro_oil`, `commodity_move`, `m_and_a`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 能源是全市场唯一上涨板块 (SU +3.80% / CVX +2.77% / CNQ +2.74% / HXE.TO +2.11%), **三条独立供给冲击同日叠加**: (1) **伊朗升级 — 美国据报考虑扩大对伊朗打击, 叠加一艘油轮遇袭** (当日标题 'Oil surges, stocks sink as US reportedly eyes new Iran strikes' / 'U.S. Stocks Slip, Oil Rises on Fresh Tanker Attack'); 同日 Trump 另表态不要伊朗协议, 谈判路径关闭。盘中 WTI 开 89.86 → 冲 **93.08** → 收 90.97, 即回吐约一半涨幅; (2) 飓风 Isaias 逼近, CVX 关停四座墨湾设施、Shell 与 Harbour Energy 同步减产; (3) 白宫在讨论柴油出口禁令 (CVX CEO 公开警告白宫不要实施 — CEO 需要公开警告说明讨论是真实的)。定价精确落在海运油: Brent $103.55 (+3.34%, 30d **+17.88%**) vs WTI $90.98 (+3.06%, 30d +10.64%), **Brent-WTI 价差走阔到约 $12.6** — 供给路线风险 (霍尔木兹) 的标准表现, 不是全球需求改善。**跨资产异常今天第二次确认 (10/07 已记录)**: 一个总统明确关闭伊朗谈判的日子里, 黄金 +0.17% (30d -10.86%)、白银 -1.31% (30d -13.05%)、防务 ITA +0.02% (30d -13.75%)、VIX 15.75 (低位)。三个传统地缘避险资产整月跌 11-14%, 只有油在涨 → 市场把伊朗定价为纯物理供给事件, 非系统性风险事件。含义两层: 涨幅建立在实物供需上更耐用; 但若框架改变 (实际航道中断), 定价会从油价单边扩散到所有风险资产, 而 VIX 15.75 完全没为此付费。SU 自身叠加公司级催化剂: 以 **CA$15.5亿** 把 Terra Nova 与 White Rose 东海岸海上权益售予 Ithaca Energy, 退出东海岸海上生产、资源集中油砂, 卖方另有「回购上升背景下可能被低估 49%」口径。配合 USD/CAD 1.4240 (距 52w 高仅 0.37%, 加元年内最弱) — 加油砂商收入计美元/成本计加元, 当前汇率是年内最有利组合。SU 距 52 周高仅 1.8%, 组内最接近新高。组内分化: CNQ 30d **-0.81%** 为唯一负收益, 机制是 WCS-WTI 价差与管线运力把内陆重油与 Brent 海运溢价隔开 → CNQ 对地缘的弹性结构性最低, 是表达霍尔木兹风险的错误工具。HXE.TO 量比 1.20x 是组内唯一放量, 也是全书唯一有真实配置流入的上涨方向。 || 重要交叉: 同一个伊朗升级同时是今天权益下跌的触发 (QQQ 开 754.29 收 745.35 贴当日低) — 能源的上涨与科技的下跌是同一个事件的两面, 不是两个独立故事。这一点在初版记录里被分开写了, 此处校正。
+
+**Sources.**
+- via yfinance QQQ news: Exchange-Traded Funds, Equity Futures Down Pre-Bell Thursday as Oil Prices Rise After Trump Says He Does Not Want Iran Deal
+- via yfinance SU news: Suncor Energy to Sell Terra Nova, White Rose Offshore Stakes to Ithaca Energy for CA$1.55 Billion
+- via yfinance SU news: Suncor's Offshore Asset Sale to Boost Focus on Oil Sands Growth
+- via yfinance CVX news: Chevron Shuts In Four Gulf Facilities as Hurricane Isaias Nears: How Much Is Really at Risk?
+- via yfinance CVX news: Shell, Chevron, Harbour Energy cut Gulf of Mexico oil output
+- via yfinance CVX news: Chevron CEO Mike Wirth Warns White House Against Implementing Unwise Diesel Export Ban
+- via yfinance SU news: Suncor Energy (TSX:SU) Stock May Be 49% Undervalued As Buybacks Rise
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-09-21 · -3.13% day · ▼ material
 **Tags:** `macro_oil`, `commodity_move`, `geopolitical_war`, `sector_rotation`
 **Confidence:** high

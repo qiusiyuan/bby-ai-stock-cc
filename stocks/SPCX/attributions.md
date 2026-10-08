@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-08 · -3.91% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`, `partnership_news`, `policy_us`
+**Confidence:** high
+
+**Primary cause.** **四条利好同日, 收 -3.91%** — thesis.md 已记录过的「最干净的诊断信号」模式第二次出现 (上一次是 Musk 警告空头 + WSJ 报 TSLA 考虑分拆中国业务为 SpaceX 合并铺路 + Munster 背书三条同日仍跌 3%)。今天的四条正面: (1) American Airlines 把 Starlink 部署规模翻倍以上 — 真实合约扩张, 且是从消费宽带向航空企业客户迁移 (ARPU 更高/合约更长); (2) FT 的 John Foley 公开为 $5,000亿 AI 数据中心赌注背书, 关键措辞是「背后有真实营收」; (3) Jim Cramer 称 SpaceX 可能比 Tesla 更早回报投资者, 配投行 >37% 上行目标; (4) Trump 披露新增 SpaceX 与 Microsoft 持仓并同日为两家 CEO 授勋 (对 Starshield 合约与 FCC 审批正向, 同时带治理噪音)。**唯一的负面是结构性的, 也是本条的核心**: SPCX 的 $400亿、AVGO 的 >$500亿 (为 OpenAI 芯片)、Oracle 的发债 挤在同一信用窗口抢同一批买家。这把 10/07 记录的「论点从现金流+期权改写为杠杆 AI capex 标的」再推进一层 — **诊断从「利好不涨, 原因不明」升级为「原因已知: 信用窗口拥挤」**。三家里 SPCX 信用历史最短、现金焚烧最确定 (FY27 自由现金流 -$67B 是 8/27 预测反方核心)。**最大的结构性缺口: thesis_break_price 仍为 null** — 一个已变成杠杆 AI capex 标的、且融资与两家巨头抢同一批买家的名字, 没有预设破论价位, 这是本书最大的未设防口。可考虑锚点: MA50 $143.24 (现价下方 11%) 或 8/20 跌破的 IPO 价。SSPC (2x 反向) +7.40% 机械对应, 但其 30d **-31.86%** 更值得读: 做空 SPCX 在 9 月至 10 月初持续亏损, 今天只是空头在深水区的一次喘息; 且杠杆反向 ETF 的波动衰减会额外侵蚀净值, 不能用 SSPC 跌幅直接反推 SPCX 强度。日历: 11/03 财报 (融资条款是今天这条压制机制能否解除的判定点) → 12/09 lockup 180 天完整解禁 (与 AVGO 财报同日; 对照 8/20 上一批解禁当日 -5.69% 并跌破 IPO 价)。
+
+**Sources.**
+- via yfinance AVGO news: SpaceX, Broadcom and Oracle All Want Billions in AI Chip Debt at the Same Time
+- via yfinance SPCX news: SpaceX's Starlink Gets Major Boost As American Airlines More Than Doubles Rollout
+- via yfinance SPCX news: SpaceX's $500 Billion AI Data Center Gamble Has Real Revenue Behind It, Says FT's John Foley
+- via yfinance SPCX news: Trump disclosed millions in new trades in SpaceX and Microsoft. Today, he's giving medals to their CEOs.
+- via yfinance TSLA news: Elon Musk's SpaceX Could Pay Off for Investors Before Tesla Ever Did, Says Jim Cramer — Top Investment Bank Sees Over 37% Upside
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-07 · -2.51% day · ▼ moderate
 **Tags:** `macro_rates`, `secondary_offering`, `regulatory_positive`, `ai_demand`, `sector_rotation`
 **Confidence:** high

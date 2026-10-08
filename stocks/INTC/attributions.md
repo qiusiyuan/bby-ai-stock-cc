@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-08 · -5.53% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`, `competitor_news`
+**Confidence:** medium
+
+**Primary cause.** 5 日吐掉过半 (-10.95%) 但 30d 仍 **+21.10%**, 属全书最强之一 → 今天是估值回吐而非论点损伤。无公司级坏消息; 当日唯一负面是产品级而非 foundry 级: 微软最强笔记本选 NVDA 而非 Intel。另有中性消息: Musk 重申对 Terafab AI 芯片复合体的控制权, Intel 仍参与 (市场正把 Terafab 作为独立敞口定价)。**技术判据已很近: MA50 $102.80, 现价 $106.86 仅上方 3.9%** — 这是本季第一个可观察的客观触发。距 thesis_break $75 缓冲 +42.5%。真正的判定点是 **10/29 财报** (已按 yfinance 校正自 10/22), 指引 $15.8-16.8B: 落区间上端 + DC/AI 延续 +59% 级增速 = 支持 high-teens CAGR 看多部分; 落下端 = 「45% 市值押 foundry 夺 15 个百分点 CPU 份额」的假设更难支撑。置信度 medium: 宏观共因清晰, 但 -5.53% 的幅度超出同侧均值, 个股层面缺解释。 || 宏观共因 (已按盘中时序校正, 勿用收盘涨跌读因果): **触发是地缘** — 美国据报考虑扩大对伊朗打击, 叠加一艘油轮遇袭。当日标题: 'Oil surges, stocks sink as US reportedly eyes new Iran strikes' / 'U.S. Stocks Slip, Oil Rises on Fresh Tanker Attack' / 'Dow Tumbles, Oil Surges, and Yields Rise to New 24-Year Highs as Trump Considers Ramping Up Iran Attacks' / 'Nasdaq Slumps On War Worries'。盘中路径: WTI 开 89.86 → 冲 **93.08** → 收 90.97; 10Y 盘前 **5.331** → 收 5.239; 30Y 开 5.695 (24 年高位区) → 收 5.615; QQQ 开 754.29 → 高 756.93 → 收 **745.35** (贴当日低 744.39)。**关键: 两个诱因 (油/长端) 当天都缓解了, 权益却收在当日低点附近 —— 纯 beta 事件应在诱因缓解时修复, 今天没有。** 只看收盘 (10Y -2.5bp / 30Y -4.4bp / TLT +0.77%) 会误读成「利率转松而久期资产崩盘」; 利率今天是上午推手、下午缓解项, 不是反常项。对照 10/01 (长端失败突破日 SKHY +5.08% / GEV +3.89% / MU +3.03% 全线反打): 同样的利率先冲后落路径, 那天权益修复了, 今天没有。**差异在「不修复」, 不在利率方向。** **第二段 (不修复) 的 AI 侧候选解释**: Broadcom 为 OpenAI 芯片安排 >$500亿 融资 (Apollo/Blackstone 参与), SPCX $400亿, Oracle 同期发债, 三家抢同一批买家; 媒体口径从 'war worries' 转为 'growing AI caution'; Michael Burry 称市场处于 'denial'。**但有一条有力反证, 不应略过: 同日 Anthropic 宣布计划在云与算力上支出 $5,180亿 — 量级极大的 AI capex 利多, 整组没涨。** → 可读成「信用担忧压过需求利多」, 也可读成「市场今天对任何 AI 消息都不反应」(情绪/风险偏好)。**诚实结论: 地缘是因, AI 谨慎是让它不修复的那一层, 但今天的数据不足以把信用与纯 beta+情绪分开。判别点在 10/15 TSM 指引与 10/28 capex 指引。** 跌幅分布事实 (排他性因果不成立): 开支方 GOOG -0.43%/AMZN -0.78%/META -0.87%/MSFT -0.95% vs 供给方 NVDA -2.30%/TSM -3.24%/AVGO -3.35%/INTC -5.53%/MRVL -5.89%, 两簇不重叠 — 但战争风险日里单纯 beta 差异足以产生同样分裂。**量能限定 (双向适用)**: 全书 34 只量比中位数仅 0.48x, 仅 3 只过 1.0x → 半量里的 5% 级下跌, 属「没有买盘」而非「出现卖盘」, 方向可信幅度不可信。**同日两个反向硬数据**: Samsung 发创纪录营收/利润初步业绩、TSMC 九月营收超目标 — 供应链两个独立层级同日确认需求, 价格全部反向 → 需求侧无恙。
+
+**Sources.**
+- via yfinance INTC news: Intel Slides 3% as Chip Stocks Sell Off With Yields and Oil Higher; NVIDIA and AMD Slip
+- via yfinance INTC news: Microsoft's Most Powerful Laptop Ever Runs on Nvidia, Not Intel
+- via yfinance INTC news: Elon Musk Reaffirms Control Over Terafab AI Chip Complex As Intel Remains Involved
+- via yfinance AVGO news: SpaceX, Broadcom and Oracle All Want Billions in AI Chip Debt at the Same Time
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-05 · -2.20% day · ▼ minor
 **Tags:** `competitor_news`, `partnership_news`, `executive_comment`
 **Confidence:** high

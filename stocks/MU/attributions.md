@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-08 · -4.12% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`, `memory_pricing`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** MU 完整回吐 10/07 的 +4.06%, 从 $1,088 回到 $1,043, 量比 0.56x (昨 1.19x)。**这是对 10/07 归因里已写下的限定的直接验证, 且强度比当时估计的更弱。** 当时写的是「量比仅 1.19x…$1,100 价格门槛在半量市场里被污染」; 今天同一标的在第二个半量交易日里走出完全对称的反向 4%, 说明 $1,100 既未在昨天被确认也未在今天被否认 —— 它测量的是流动性不是论点。**结论: 9/30 scorecard 设的「决定性窗口 10/06-10/14, 收复 $1,100 vs 跌破 MA50」判据应降级**, 改以 10/26 SK Hynix Q3 的倍数表述为主判据。现价距 $1,100 退到 5.5%, 距 MA50 $973 下方 6.7%。美韩裂口在 24 小时内符号反转: 10/07 是 +6.4pp 偏美国 (MU +4.06/SNDK +1.92 vs SKHY -2.36/Samsung -0.65), 今天是约 -3pp 偏韩国 (MU -4.12/SNDK -5.76 vs SK Hynix -2.44/Samsung -2.42) — 昨天的「美国侧拿到公司级催化剂」解释被单日冲销。公司级新增负面一条, 权重中低: 台湾厂工人就奖金方案授权罢工行动 (台中为 MU DRAM 主产地之一)。诚实限定 — 「授权罢工」≠罢工, 且若市场真按供给中断定价, 同业 (SK Hynix/Samsung) 应相对受益, 但韩国侧今天只是跌得更少而非上涨, 不支持该解读。排序为加权项而非驱动; 若升级为实际停工则是 MU 独立于周期的首个运营级风险。 || 宏观共因 (已按盘中时序校正, 勿用收盘涨跌读因果): **触发是地缘** — 美国据报考虑扩大对伊朗打击, 叠加一艘油轮遇袭。当日标题: 'Oil surges, stocks sink as US reportedly eyes new Iran strikes' / 'U.S. Stocks Slip, Oil Rises on Fresh Tanker Attack' / 'Dow Tumbles, Oil Surges, and Yields Rise to New 24-Year Highs as Trump Considers Ramping Up Iran Attacks' / 'Nasdaq Slumps On War Worries'。盘中路径: WTI 开 89.86 → 冲 **93.08** → 收 90.97; 10Y 盘前 **5.331** → 收 5.239; 30Y 开 5.695 (24 年高位区) → 收 5.615; QQQ 开 754.29 → 高 756.93 → 收 **745.35** (贴当日低 744.39)。**关键: 两个诱因 (油/长端) 当天都缓解了, 权益却收在当日低点附近 —— 纯 beta 事件应在诱因缓解时修复, 今天没有。** 只看收盘 (10Y -2.5bp / 30Y -4.4bp / TLT +0.77%) 会误读成「利率转松而久期资产崩盘」; 利率今天是上午推手、下午缓解项, 不是反常项。对照 10/01 (长端失败突破日 SKHY +5.08% / GEV +3.89% / MU +3.03% 全线反打): 同样的利率先冲后落路径, 那天权益修复了, 今天没有。**差异在「不修复」, 不在利率方向。** **第二段 (不修复) 的 AI 侧候选解释**: Broadcom 为 OpenAI 芯片安排 >$500亿 融资 (Apollo/Blackstone 参与), SPCX $400亿, Oracle 同期发债, 三家抢同一批买家; 媒体口径从 'war worries' 转为 'growing AI caution'; Michael Burry 称市场处于 'denial'。**但有一条有力反证, 不应略过: 同日 Anthropic 宣布计划在云与算力上支出 $5,180亿 — 量级极大的 AI capex 利多, 整组没涨。** → 可读成「信用担忧压过需求利多」, 也可读成「市场今天对任何 AI 消息都不反应」(情绪/风险偏好)。**诚实结论: 地缘是因, AI 谨慎是让它不修复的那一层, 但今天的数据不足以把信用与纯 beta+情绪分开。判别点在 10/15 TSM 指引与 10/28 capex 指引。** 跌幅分布事实 (排他性因果不成立): 开支方 GOOG -0.43%/AMZN -0.78%/META -0.87%/MSFT -0.95% vs 供给方 NVDA -2.30%/TSM -3.24%/AVGO -3.35%/INTC -5.53%/MRVL -5.89%, 两簇不重叠 — 但战争风险日里单纯 beta 差异足以产生同样分裂。**量能限定 (双向适用)**: 全书 34 只量比中位数仅 0.48x, 仅 3 只过 1.0x → 半量里的 5% 级下跌, 属「没有买盘」而非「出现卖盘」, 方向可信幅度不可信。**同日两个反向硬数据**: Samsung 发创纪录营收/利润初步业绩、TSMC 九月营收超目标 — 供应链两个独立层级同日确认需求, 价格全部反向 → 需求侧无恙。
+
+**Sources.**
+- via yfinance MU news: Micron Workers Authorize Strike Action Over Bonus Scheme Dispute in Taiwan
+- via yfinance MU news: Micron Stock Drops—and Not Even Samsung's Record Profit Can Give It a Lift
+- via yfinance AMD news: TSMC Gives AI Trade Upbeat Signal—AMD and Other Chip Stocks Fall Anyway
+- via yfinance TSM news: Chip Foundry TSMC Beats September Sales Target
+- via yfinance DRAM news: The Memory Trade Cools After Samsung's Preliminary Results Disappoint
+- via yfinance AVGO news: SpaceX, Broadcom and Oracle All Want Billions in AI Chip Debt at the Same Time
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-07 · +4.06% day · ▲ moderate
 **Tags:** `analyst_upgrade`, `pt_change`, `memory_pricing`, `m_and_a`, `sector_rotation`
 **Confidence:** high
