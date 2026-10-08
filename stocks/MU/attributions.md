@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-07 · +4.06% day · ▲ moderate
+**Tags:** `analyst_upgrade`, `pt_change`, `memory_pricing`, `m_and_a`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 三条具名催化剂同日叠加，但量能是本条的核心限定。(1) 街最高目标价发布 — 卖方动作，零运营事实，性质上等同 9/08 AVGO 判据里被归为『零运营事实』的那类驱动；(2) $6 亿 Netlist 专利许可和解 (NLST 应声 +22.3%) — 一次性现金流出，对 FY26 adj FCF $623.1 亿仅 0.96%，净效应正面因为它清除了长期诉讼悬顶；(3) 内存供给紧张跑赢疲软科技大盘 — 三条里唯一有跨股印证的 (SNDK +1.92% 同向)，也是唯一可持续的。价格到 $1,088，距 9/30 scorecard 设定的决定性窗口 (10/06-10/14) 上沿 $1,100 仅 1.1%，距下沿 MA50 $967 有 14.3%。**关键限定: 量比仅 1.19x。对照 9/30 财报日 — Tier 1 命中 4/5 (adj GM 87.0% 环比扩张 / 营收 $54.229B / adj EPS $33.42 全面超预期)，量比 1.16x，股价收 -0.82%。几乎相同的成交量推出了相反方向，说明价格在低流动性区间被边际买盘推动，两个方向都不需要大量。因此 $1_100 即使被收复，若量比不超过 1.5x，其信号强度远低于原设门槛时的设想 — 价格门槛在半量市场里被污染了。** 组内同日出现 6.4pp 裂口: MU +4.06% / SNDK +1.92% 向上，SKHY -2.36% / Samsung -0.65% 向下。裂口不随机 — 美国侧拿到公司级催化剂，韩国侧进入财报前谨慎期 (SK Hynix Q3 10/26, SKHY ADS 10/27) 并叠加 90 天 lockup 今日到期。宏观背景: Fed 9 月纪要偏鹰 (指向今年再加一次息) vs 市场 19% 概率，10Y 5.277%，但 MU 的公司级催化剂压过了利率因子 — 当日久期筛选中 MU 被归入『有当期现金流地板』一侧 (对照 GEV -3.12% / NOK -3.19% / SPCX -2.51% / META -2.38%)。未解决的问题仍是 9/30 已证伪的那一条: 基本面成立但倍数从 12.1x 压到 8.0x (压缩 34-42%)，『下一个 NVDA』的重定价机制未恢复。独立验证点 10/26 SK Hynix Q3 要盯的不是 HBM 好不好，而是倍数是否继续压缩。
+
+**Sources.**
+- via yfinance MU news: Micron Rallies as AI Tailwinds Drive a Street-High Price Target | Closing Bell
+- via yfinance MU news: Netlist (NLST) Is Up 22.3% After $600 Million Micron Licensing Deal - Has The Bull Case Changed?
+- via yfinance DRAM news: SanDisk and Micron Rise 3% as Tight Memory Supply Outruns a Softer Tech Tape; Western Digital Lags
+- via yfinance MU news: Dow Jones Futures: Stocks Pare Losses As Yields Back Off; Samsung, Micron, Taiwan Semi, Sandisk In Focus
+- via yfinance SKHY news: SK Hynix Falls 4% on Earnings Caution Before a Rebalancing Goldman Says Favors It; SanDisk Slips 2%, Micron Holds Firm
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-09-30 · -0.82% day · ▼ minor
 **Tags:** `earnings_print`, `guidance_raise`, `executive_comment`, `memory_pricing`, `macro_rates`, `sector_rotation`
 **Confidence:** high

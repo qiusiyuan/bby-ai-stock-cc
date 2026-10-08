@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-07 · -3.12% day · ▼ material
+**Tags:** `analyst_downgrade`, `macro_rates`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 估值质疑 + 利率双因子，无任何业务层面坏消息，量比 0.84x 低于平均。GEV 10/06 刚收在 $1,029.21 (30 天新高)，今天 -3.12% 跌破 $1,000 收 $997.09 — 典型『刚创新高即被估值质疑打下』形态。两条质疑同日出现且非常具体: 『70% 涨幅后估值偏高』与『GEV vs Eaton: 47x 还是 29x 更值』—— 把 GEV 的 47x 与 Eaton 的 29x 直接对标。传导机制是久期: 在 10Y 5.277% (Fed 9 月纪要偏鹰 + 本周 $1,190 亿国债供给) 环境下, 47x 对 29x 的差额需要更快增长证明, 而 GEV 的增长以多年 backlog 交付形式实现 —— 时间越远折现率伤害越大。按已记录的久期框架, GEV 属『远 × 高确定性』象限: 订单真实 (backlog 在手) 但现金流落在未来 5-10 年, 分子不变分母变大, 价格必跌。**对照 10/01: 当天 10Y 出现九月首次失败突破、久期资产全线反打时 GEV +3.89% — 今天的 -3.12% 与那天是同一机制的两个方向, 确认 GEV 当前的主导变量是折现率而非业务。** 当日久期筛选中 GEV 与 NOK -3.19% / SPCX -2.51% / META -2.38% 同侧 (远期叙事无当期对价), 对立面是 MU +4.06% / AMZN +1.42% (有当期现金流地板)。一条反向证据待核实: 『GEV 订单簿只有 20% 来自数据中心, 这是看多理由而非风险』—— 若口径准确, GEV 收入基础比『AI 数据中心电力』叙事更宽, 该用工业设备倍数而非 AI 概念倍数定价, 估值质疑力度会减弱; 需在 10/28 财报核实。技术面最该记的事实: **MA50 $966.26, 缓冲仅剩 3.19%** — 30 天来第一次压到 3% 以内, 比 thesis-break $700 (缓冲 +42.4%) 更有近期意义。10/28 是双重暴露日: 自身财报 (Power 段毛利率/backlog 增速/20% 口径) + 最大潜在客户 GOOG/META/MSFT 的 capex 指引 (需求侧) + FOMC 决议 (折现率, 直接作用于 47x)。三因子方向可相反 — 好财报+好 capex+鹰派 Fed 可能净为负, 当天价格无法单独归因, 须拆开读 (FOMC 盘中 2pm ET, 财报与 capex 盘后)。
+
+**Sources.**
+- via yfinance GEV news: GE Vernova (GEV) Stock Appears Overvalued Following Its 70% Run
+- via yfinance GEV news: GE Vernova vs. Eaton: Which AI Power Stock Can Earn Its 47x or 29x Price?
+- via yfinance GEV news: Only 20% of GE Vernova's Order Book Is Data Centers. Here's Why That's the Bull Case, Not the Risk.
+- via yfinance INTC news: Stock Market Today, Oct. 7: Markets Edge Lower as Treasury Yields Surge
+- via yfinance ^TNX news: Higher rates are pummeling consumer discretionary stocks — here's the damage: Chart of the Day
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-09-08 · +3.16% day · ▲ material
 **Tags:** `sector_rotation`, `macro_oil`, `executive_comment`
 **Confidence:** medium

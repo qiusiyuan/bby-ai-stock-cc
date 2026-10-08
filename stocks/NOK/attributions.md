@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-07 · -3.19% day · ▼ material
+**Tags:** `executive_comment`, `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** CEO 的 AI 叙事被公开质疑 + 利率环境下远期故事被挤压，但无硬催化，置信度标 medium。具名因素: 『Nokia CEO 的 2x 更快 AI 说法对投资者有附加条件』—— 这是对 CEO Justin Hotard AI 叙事可信度的直接质疑, 而非业务数据恶化。叠加 『INTC, AMD, MU, SNDK, SOXX: 芯片与内存股在 10 月大涨后盘前回落』。量比 0.91x 低于平均, 说明不是放量抛售。传导机制与当日全场一致: Fed 9 月纪要偏鹰 (指向今年再加一次息) + 本周财政部 $1,190 亿国债供给把 10Y 顶在 5.277%, 市场只给『有当期现金流地板』的资产出价。NOK 的论点核心是 AI 数据中心网络与主权卫星通信 (『Nokia 瞄准政府主权卫星通信』) —— 这些都是远期收入、无当期对价, 因此被归入当日久期筛选的受损侧, 与 GEV -3.12% / SPCX -2.51% / META -2.38% 同组。**为什么置信度不给 high: 『CEO 说法被质疑』是一篇评论文章而非事件, 无跨股印证 (同期欧洲 ADR 整体走高), 也无分析师下调或指引变动。-3.19% 中有多少来自这条、多少来自板块 beta 无法拆分。** 需注意的仓位事实: NOK 距 thesis-break $9 缓冲仅 +18.0%, 是全组合第二薄 (仅次于 IBM +16.1%)。10/22 财报 (15 天) 是 CEO AI 说法必须给出证据的日子 —— 届时『2x 更快』的附加条件会被量化。
+
+**Sources.**
+- via yfinance NOK news: Nokia CEO's '2x faster' AI claim comes with a catch for investors
+- via yfinance NOK news: Nokia CEO Justin Hotard on AI data center supply constraints
+- via yfinance NOK news: INTC, AMD, MU, SNDK, SOXX: Chips, Memory Stocks Slip Premarket After Sharp October Rally
+- via yfinance NOK news: Nokia Oyj (HLSE:NOKIA) Targets Sovereign Satellite Communications For Governments
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-09-17 · +3.70% day · ▲ material
 **Tags:** `partnership_news`, `ai_demand`, `sector_rotation`
 **Confidence:** high

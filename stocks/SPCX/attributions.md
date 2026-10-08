@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-07 · -2.51% day · ▼ moderate
+**Tags:** `macro_rates`, `secondary_offering`, `regulatory_positive`, `ai_demand`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 论点发生实质变化，当日 -2.51% 是新论点的负面一侧被定价。今天 SPCX 宣布**寻求 $400 亿融资购买 NVDA AI 芯片**，同日 Starlink 获新 FCC 批准，WSJ 另报『Broadcom、Oracle、SpaceX 同期推进大额债务交易』。这把 SPCX 从『发射 + Starlink 现金流 + 轨道 AI 期权』改写成**举债买算力的杠杆 AI capex 标的**。推理链: 10Y 在 5.277% (Fed 9 月纪要偏鹰, 本周财政部 $1,190 亿供给)，$400 亿债务按粗略 6% 票息计年现金支出约 $24 亿 — 对一个 FY27 自由现金流 -$670 亿、无当期盈利的名字，这是实质加杠杆。市场同日定价两件事: 算力带来多少 AI 收入 (分子, 正) 与 $400 亿债务成本 (分母, 负)，今天选了分母那一面。**5d +11.10% 的三段分解显示没有一段来自运营事实**: 10/02 +5.79% (主因宏观折现率 — 非农把加息概率 72.5%→16%) → 10/05 +5.57% (驱动换成 Morgan Stanley 等卖方背书, 长端反方向走而 SPCX 仍领涨) → 今天 -2.51% (债务融资消息)。**关键历史对照 8/12: Musk 喊出 $500 亿 AI 收入目标并称 SpaceX AI 收入下个月超过整个太空主业时, 股价 +9.87% (major) — 那次是纯叙事、零资本承诺。今天是同一叙事的资本化落地, 叙事变成了债务, 市场反应方向相反。由此得出: 市场买 SPCX 的 AI 故事, 但不买为这个故事举债的代价。** 风险结构已改变而 triggers.yaml::thesis_break_price 至今为 null — 这个空缺在今天之后成为实质问题。lockup 12/09 剩 63 天, 且与 AVGO 财报同日; 8/20 第二批 319M 股解禁时 SPCX -5.69% (major) 跌破 IPO 价。11/03 财报需找 $400 亿的条款细节 (票息/期限/是否可转股) — 这决定它是稀释还是固定成本, 是今天这条新闻唯一还没定价的部分。同日 SSPC (2x 反向) +5.03% 量比 1.82x 为全场最高, 是当日唯一带真实成交量的方向性表达, 偏空侧。
+
+**Sources.**
+- via yfinance SPCX news: SpaceX Seeks $40 Billion To Buy Nvidia AI Chips, Starlink Wins New FCC Approval
+- WSJ via yfinance SPCX news: Broadcom, Oracle, and SpaceX pursue blockbuster debt deals amid AI buildout
+- via yfinance SPCX news: Elon Musk is a Trillionaire Again Thanks to SpaceX Stock
+- via yfinance TLT news: The Treasury Has to Sell $119 Billion of Bonds This Week at the Highest Yields Since 2002
+- via yfinance GC=F news: Fed Minutes Point to Another Rate Hike This Year: Why Did Only Bitcoin React?
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-05 · +5.57% day · ▲ material
 **Tags:** `analyst_upgrade`, `flow_event`, `sector_rotation`
 **Confidence:** medium

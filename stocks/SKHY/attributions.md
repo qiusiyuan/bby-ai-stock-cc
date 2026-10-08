@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-07 · -2.36% day · ▼ minor
+**Tags:** `lockup_expiry`, `earnings_pre_print`, `index_inclusion`, `memory_pricing`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** **这条记录的主要价值是判读一个预先设定的观察点, 不是解释 -2.36%。今天是 SKHY ADS 的 90 天 lockup 到期日** (SEC 424B4 确认: 90 天自招股书日 2026-07-09 起)。`stocks/SKHY/research/2026-07-31-ads-premium-structure.md` 的预设判据原文: **『到期前后放量下跌 = 我漏掉了受限股东; 无异动 = 判断成立』**。今天实际: -2.36%, 量比 1.14x —— 落在两个判据之间, 既不是无异动也不是放量下跌。**判读结论: 不干净的确认。** 原研究结论仍站得住 (100% 增发无老股东减持: 股本 711,075,500→728,865,500, 增量 17,790,000 恰等于发行量; SK square 受韩国《垄断规制与公平交易法》永久 20% 持股下限约束, 比 90 天合约更强的长期限制 —— 不存在解禁抛售的经典结构)。**但 1.14x 不等于『无异动』, 所以不能宣称已验证。** 关键的是存在具名替代解释: 『SK Hynix 因财报前谨慎下跌 4%, 高盛称即将到来的再平衡对其有利』—— 把下跌归到财报前谨慎 (SK Hynix Q3 10/26, SKHY ADS 10/27) 与指数再平衡预期, 而非解禁抛压。两个解释都能产出 -2.36%/1.14x, 无法单独归因, 故置信度 medium。**真正的裁决窗口移到 10/26-10/27 财报** —— 届时成交量会放大, 解禁抛压如果存在会露出来; 原判据的 1.14x 阈值在当前半量市场 (全场 32 只只有 5 只过 1.0x, 中位数 0.79x) 下本身就偏模糊。组内对照是本条的另一半信息: 同日 MU +4.06% / SNDK +1.92% 向上而 SKHY -2.36% / Samsung -0.65% 向下, 6.4pp 裂口 —— 美国侧拿到公司级催化剂 (街最高目标价 + Netlist 和解 + 供给紧张), 韩国侧进入财报前谨慎期。两条韩国侧的利多当日完全未被定价: (1) AMD 的 Lisa Su 访韩与三星/SK 海力士讨论 AI 合作; (2) Solidigm (SK 海力士的 NAND 子公司, 原 Intel NAND 业务) 选定美股 IPO 主承销行 —— 后者是 NAND 供给侧结构性事件, 中期对 SNDK 是竞争信号。
+
+**Sources.**
+- via yfinance SKHY news: SK Hynix Falls 4% on Earnings Caution Before a Rebalancing Goldman Says Favors It; SanDisk Slips 2%, Micron Holds Firm
+- Bloomberg via yfinance SKHY news: Solidigm selects lead banks for blockbuster US IPO, Bloomberg reports
+- via yfinance SKHY news: AMD's Lisa Su Visits South Korea, Reportedly Discusses AI Collaboration With Samsung, SK Hynix
+- {"type": "research", "title": "SKHY ADS premium structure \u2014 90d lockup analysis", "publisher": "stocks/SKHY/research/2026-07-31-ads-premium-structure.md"}
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-09-23 · -3.21% day · ▼ material
 **Tags:** `macro_rates`, `sector_rotation`
 **Confidence:** medium
