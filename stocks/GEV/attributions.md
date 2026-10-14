@@ -4,6 +4,30 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-14 · -6.20% day · ▼ major
+**Tags:** `macro_inflation`, `sector_rotation`, `competitor_news`, `analyst_downgrade`
+**Confidence:** high
+
+**Primary cause.** **今天是 GEV 归因史上第三条传导通道的首次出现, 且这一条在性质上与前两条不同。** 已建立的两条: 9/08 +3.16% (量比 0.47x) 主导通道是**板块情绪** (核电转正: NuScale +13% / Oklo +7%); 10/01 +3.89% 与 10/07 -3.12% (量比 0.84x) 主导通道是**折现率 + 估值质疑** (「70% 涨幅后估值偏高」·「GEV 47x vs Eaton 29x」)。**今天 -6.20% 且量比 1.65x 为全场最大, 成因是具名的新通道: CoreWeave 债券收益率上行外溢到 AI 相关工业股** (Barron's 标题点名 GE Vernova / Vertiv / Eaton)。**为什么这条通道不同**: 10/07 的归因按久期框架把 GEV 归入「远 × 高确定性」象限, 原话是「订单真实 (backlog 在手) 但现金流落在未来 5-10 年, **分子不变**分母变大, 价格必跌」。**今天的信用通道攻击的恰恰是分子: 若 AI 数据中心融资成本上升, 下游燃气轮机与电网订单可能被推后甚至取消 — backlog 的「高确定性」这一半开始被质疑。从「贵」变成「订单可能不算数」。** 且注意 10Y 今天实际**下跌** 2.7bp, 而 GEV 跌 6.2% — 折现率通道与信用通道今天明确背离, 这是通道已切换的直接证据。**量能证据**: 1.65x 是 GEV 近期归因里第一次出现放量 (9/08 为 0.47x「全部持仓最薄之一」、10/07 为 0.84x「低于平均」)。**三次事件里只有今天有真实成交量 — 按 workspace 一贯量能判据, 今天的幅度可信, 前两次不可信。** **⭐ 10/07 留下的待核实项今天正好被测试**: 原文「一条反向证据待核实: 『GEV 订单簿只有 **20%** 来自数据中心, 这是看多理由而非风险』— 若口径准确, GEV 收入基础比『AI 电力纯标的』叙事所暗示的更分散」。**若订单簿只有 20% 暴露于数据中心, 一次客户侧信用恐慌不该产生 -6.20% 且全场最大放量。** 两种读法: (A) 20% 口径不准确或市场认为真实暴露度远高于 20% → GEV「分散收入基础」看多理由被削弱, 10/07 待核实项判为不成立; (B) 20% 口径准确, 今天是过度反应 → -6.20% 创造了与基本面脱节的价格。**无法今天裁决, 但有 14 天后免费到手的裁决点: 10/28 财报里 Power segment 的订单构成与客户集中度披露** (同时回答 watch_items 里的 Power segment margin 与 transformer/grid backlog 两项)。⚠️ 诚实限定: 只取到 Barron's 标题与摘要 (「CoreWeave 的债券收益率正在扰动 AI 基础设施股, 包括 GE Vernova、Vertiv 和 Eaton」), **CoreWeave 债券的具体收益率、价格或信用利差数字未能核实** (正文付费墙)。信用通道的存在有具名报道支持, 压力量级无法量化。**基本面与价格的张力 (这组数字解释为什么能跌 6.2%, 而不是矛盾)**: Q2 有机订单 +88%、总 backlog $1,760亿、单季 FCF 超 2025 全年; fwd PE 37.3x (trailing 约 66x)。**基本面越强、倍数越高, 对「订单能否兑现」的敏感度就越大 — $1,760亿 backlog 的价值等于订单金额乘以客户付款概率, 而今天被重定价的正是后者。高倍数 + 订单依赖客户融资 = 信用通道的完美传导目标。** 这正是 Barron's 把 GEV 与 Vertiv、Eaton 并列的理由。跌破 MA50 $967.25 (低 2.6%), 自 10/06 高点 $1,029.21 六个交易日回撤 -8.5%, 距 thesis_break $700 缓冲 +34.5%。同方向独立声音 (列为情绪背景非论据): Steve Eisman 警告 S&P 500 超 65% 已与 AI 挂钩、「我持有 NVDA 而我担心」(该报道标签含 GEV); AVGO CEO Hock Tan 发出 AI 投资警告 (Musk 回「No Crying in the Casino」); 10/08 已记的 Michael Burry「denial」说法。|| 宏观共因 (三个独立的因, 不可压成一个): **(1) 九月 CPI**: 同比 +3.7% (共识 3.6%)、环比 **+0.6% 为过去一年最高**。CPI = Consumer Price Index, BLS 每月发布的美国最主要通胀指标。环比年化约 7.4%, 远高于 Fed 2% 目标。timeline 在今天之前已记 Oxford Economics 的提示 — 九月调查窗口内柴油 +60 美分/加仑、汽油 +20 美分, 油价冲击会进入这份读数, 所以这个数字是可预告的。它接在 9/17 FOMC 转鹰 + 9 月纪要 (10/07 公布) 指向今年再加一次息 (市场当时只给 19%) 之上, 是纪要后第一个硬数据且站在纪要一边。**(2) ❗长端拒绝配合 — 本条必须作为限定随附**: CPI 超预期而 10Y -2.7bp / 30Y -3.8bp / TLT +0.66%。媒体口径写的是 'rate-hike jitters'、'rising bond yields', 债市当天的实际方向与之相反。所以今天的跌**不能用「当天利率上行」解释** — 实现通道是风险溢价 (VIX +10.48%) 与叙事, 不是折现率。这是本月第四次长端对本应推高它的消息不配合 (10/01 失败突破 / 10/02 非农利多无响应 / 10/08 诱因缓解不修复 / 今天 CPI 超预期不涨)。**(3) 横截面否证「加息打击高倍数股」的单一叙事**: 倍数最高的 TSLA (fwd PE 168x) 跌 2.15%, 低于倍数中等的MRVL (33.7x) -8.73%、SNOW (111x) -6.34%、GEV (37x) -6.20%。跌幅与 **30d 涨幅**的相关性明显优于与倍数的相关性(MRVL 30d +16.61→-8.73 · AMD +24.20→-5.73 · META +27.58→-3.27 vs AVGO 30d -6.17→-3.10 全组最小跌幅)。**今天卖的是一个月里的涨幅, 不是久期。** **⭐ 方法论变化 (改写前三份报告的限定)**: 10/05、10/07、10/08 三份归因都写了同一句「半量里的下跌属『没有买盘』而非『出现卖盘』, 方向可信幅度不可信」。**今天不成立**: 量比中位数 1.02x (10/08 为 0.48x / 10/07 0.79x / 10/05 0.49x), 17/32 过 1.0x (10/08 为 3/34), 放量集中在跌最多的标的 (GEV 1.65x / QQQ 1.53x / TSM 1.45x / KOID 1.39x / MRVL 1.31x / DRAM 1.30x)。**这是这轮下跌序列里第一个全参与度的下跌日 — 幅度本身开始带信息。** 反方限定仍要记: 跌最惨的 MRVL 量比只有 1.31x、MU 只有 1.04x, 「放量」是全场性的而非个别标的清仓。
+
+**Sources.**
+- 247wallst via yfinance (CPI 3.7% YoY vs 3.6% 共识; MoM +0.6% 年内最高): Trump Media and Rumble Decline 5% as September Inflation Runs Above Forecasts; Reddit Slides 2%
+- Yahoo Finance: Nvidia stock sinks as chip sell-off deepens on hot inflation data
+- IBD via yfinance: Stock Market Today: Nasdaq Dives On Rate Hike Jitters, AI Woes; Taiwan Semi Earnings On Deck
+- Yahoo Finance video (Baird 策略师 Ted Mortonson): CoreWeave, Intel, Micron, & other tech stocks are plummeting. Here's why.
+- Barron's via yfinance — 点名 GE Vernova / Vertiv / Eaton; 正文付费墙, 债券收益率数字未核实: CoreWeave's Bond Scare Is Spreading to AI-Linked Industrial Stocks
+- Zacks via yfinance: GE Vernova (GEV) Registers a Bigger Fall Than the Market: Important Facts to Note
+- via yfinance (10/13) — Q2 有机订单 +88%, 单季 FCF 超 2025 全年: GE Vernova (GEV): A $176B Backlog Meets a 66x Price Tag
+- Benzinga via yfinance: Steve Eisman Warns S&P 500 Is One Giant AI Bet: 'I Own NVDA and I Worry'
+- via yfinance AVGO news: Elon Musk Fires Back at Broadcom CEO Hock Tan's AI Investment Warning: 'No Crying in the Casino'
+- {"type": "attribution", "title": "2026-10-07 GEV -3.12% \u2014 \u6298\u73b0\u7387+\u4f30\u503c\u901a\u9053, \u5e76\u7559\u4e0b\u300c\u6570\u636e\u4e2d\u5fc3\u4ec5\u5360 backlog 20%\u300d\u5f85\u6838\u5b9e\u9879", "publisher": "stocks/GEV/attributions.md"}
+
+**Cross-assets.** SPY -1.08% · QQQ -1.97% · IWM -1.93% · DIA -0.11% · VIX 16.87 (+10.48%) · TEN YEAR 5.190% (-2.7bp) · THIRTY YEAR 5.525% (-3.8bp) · TLT +0.66% · WTI +1.16% · BRENT $106.06 (30d +12.05%) · GOLD -1.23% · SILVER -5.81% · DXY 102.530 (+0.34%) · BTC -1.81% · ETH -3.40% · BREADTH 32 只中 26 跌 / 6 涨 (含 2 只反向) · VOLUME MEDIAN 量比中位数 1.02x · 17/32 过 1.0x (10/08 为 0.48x · 3/34)
+
+**Agent read.** 主导变量从分母 (折现率) 换到了分子 (订单确定性), 这个区别决定了该监测什么: 折现率通道看 10Y, 信用通道看客户融资成本, 而两者今天明确背离 (10Y -2.7bp vs GEV -6.2%)。若重复 10/07 的解释 (「估值高 + 利率」) 就会漏掉全部新信息。新增实时免费代理指标: CoreWeave 债券收益率 — 且与 SPCX 共用同一个压力表。
+
+
+---
 ### 2026-10-07 · -3.12% day · ▼ material
 **Tags:** `analyst_downgrade`, `macro_rates`, `sector_rotation`
 **Confidence:** high

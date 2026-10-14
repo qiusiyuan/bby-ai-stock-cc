@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-14 · -5.33% day · ▼ major
+**Tags:** `memory_pricing`, `sector_rotation`, `macro_inflation`, `earnings_pre_print`, `unattributed`
+**Confidence:** low
+
+**Primary cause.** **SNDK 的 -17.08% (5d) 缺乏独立成因, 这是本条的核心 — 置信度只能给 low。** CXMT 是 DRAM 厂, **NAND 不是它的战场**, 而今天可取到的所有报道里没有任何 SNDK 的公司级消息。所以 -5.33%/-17.08% 要么是存储板块情绪的无差别溢出, 要么另有未被报道的成因。⚠️ 不要把它当作 CXMT 影响 NAND 的证据 — 那是在没有传导链的情况下补一个因果。跌破 MA50 $1,591.35 (低 11.8%)。**距 thesis_break $1,200 缓冲 +16.9%, 是全书第二近 (仅次于 NOK 的 +4.44%)。** **时间点结构非常不利: 10/22 进入评分窗口 → 10/29 财报评分日 (scoring_date, status: pending)。claim 是「NAND 周期股 → 结构性现金牛 — FY27 指引 $10.3-10.8B rev / $44-46 EPS 兑现 + 半数营收转 FCF 模型可信 + 毛利率 (84.6% 峰值) 不快速回落」。** **⭐ 8/6 设的判据在这次不适用, 需在 10/22 重设**: 原判据是「带 >30% 5d 涨幅进财报 = 好数字打折 (sell-the-news)」, 而这次是 **5d -17.08% 的坏价格进财报**, 方向完全相反。原判据只覆盖「高预期」一侧, 不覆盖「低预期」一侧, 所以 10/22 评分窗口开启时必须单独立一条针对低预期进场的判据, 否则 10/29 的价格反应将无从判读。历史背景: SNDK 的 attributions 里已记「CXMT (长鑫存储) 中国扩产是短缺叙事的主要反证来源」, 以及 Solidigm (SK Hynix 的 NAND 事业部) 正准备 $100亿 美国 IPO — 后者是 NAND 供给侧结构性事件, 中期对 SNDK 是竞争信号。|| 宏观共因 (三个独立的因, 不可压成一个): **(1) 九月 CPI**: 同比 +3.7% (共识 3.6%)、环比 **+0.6% 为过去一年最高**。CPI = Consumer Price Index, BLS 每月发布的美国最主要通胀指标。环比年化约 7.4%, 远高于 Fed 2% 目标。timeline 在今天之前已记 Oxford Economics 的提示 — 九月调查窗口内柴油 +60 美分/加仑、汽油 +20 美分, 油价冲击会进入这份读数, 所以这个数字是可预告的。它接在 9/17 FOMC 转鹰 + 9 月纪要 (10/07 公布) 指向今年再加一次息 (市场当时只给 19%) 之上, 是纪要后第一个硬数据且站在纪要一边。**(2) ❗长端拒绝配合 — 本条必须作为限定随附**: CPI 超预期而 10Y -2.7bp / 30Y -3.8bp / TLT +0.66%。媒体口径写的是 'rate-hike jitters'、'rising bond yields', 债市当天的实际方向与之相反。所以今天的跌**不能用「当天利率上行」解释** — 实现通道是风险溢价 (VIX +10.48%) 与叙事, 不是折现率。这是本月第四次长端对本应推高它的消息不配合 (10/01 失败突破 / 10/02 非农利多无响应 / 10/08 诱因缓解不修复 / 今天 CPI 超预期不涨)。**(3) 横截面否证「加息打击高倍数股」的单一叙事**: 倍数最高的 TSLA (fwd PE 168x) 跌 2.15%, 低于倍数中等的MRVL (33.7x) -8.73%、SNOW (111x) -6.34%、GEV (37x) -6.20%。跌幅与 **30d 涨幅**的相关性明显优于与倍数的相关性(MRVL 30d +16.61→-8.73 · AMD +24.20→-5.73 · META +27.58→-3.27 vs AVGO 30d -6.17→-3.10 全组最小跌幅)。**今天卖的是一个月里的涨幅, 不是久期。** **⭐ 方法论变化 (改写前三份报告的限定)**: 10/05、10/07、10/08 三份归因都写了同一句「半量里的下跌属『没有买盘』而非『出现卖盘』, 方向可信幅度不可信」。**今天不成立**: 量比中位数 1.02x (10/08 为 0.48x / 10/07 0.79x / 10/05 0.49x), 17/32 过 1.0x (10/08 为 3/34), 放量集中在跌最多的标的 (GEV 1.65x / QQQ 1.53x / TSM 1.45x / KOID 1.39x / MRVL 1.31x / DRAM 1.30x)。**这是这轮下跌序列里第一个全参与度的下跌日 — 幅度本身开始带信息。** 反方限定仍要记: 跌最惨的 MRVL 量比只有 1.31x、MU 只有 1.04x, 「放量」是全场性的而非个别标的清仓。
+
+**Sources.**
+- 247wallst via yfinance (CPI 3.7% YoY vs 3.6% 共识; MoM +0.6% 年内最高): Trump Media and Rumble Decline 5% as September Inflation Runs Above Forecasts; Reddit Slides 2%
+- Yahoo Finance: Nvidia stock sinks as chip sell-off deepens on hot inflation data
+- IBD via yfinance: Stock Market Today: Nasdaq Dives On Rate Hike Jitters, AI Woes; Taiwan Semi Earnings On Deck
+- Yahoo Finance video (Baird 策略师 Ted Mortonson): CoreWeave, Intel, Micron, & other tech stocks are plummeting. Here's why.
+- 247wallst via yfinance (10/13): Micron Falls 5% as China's CXMT Targets Server Memory; SanDisk Drops 4%
+
+**Cross-assets.** SPY -1.08% · QQQ -1.97% · IWM -1.93% · DIA -0.11% · VIX 16.87 (+10.48%) · TEN YEAR 5.190% (-2.7bp) · THIRTY YEAR 5.525% (-3.8bp) · TLT +0.66% · WTI +1.16% · BRENT $106.06 (30d +12.05%) · GOLD -1.23% · SILVER -5.81% · DXY 102.530 (+0.34%) · BTC -1.81% · ETH -3.40% · BREADTH 32 只中 26 跌 / 6 涨 (含 2 只反向) · VOLUME MEDIAN 量比中位数 1.02x · 17/32 过 1.0x (10/08 为 0.48x · 3/34)
+
+**Agent read.** 最有价值的产出不是归因 (本条置信度 low), 而是发现 8/6 判据的覆盖缺口: 它只定义了「高预期进财报」的判读规则, 没定义「低预期进财报」。10/22 窗口开启时必须补上, 否则 10/29 评分会在没有预先承诺标准的情况下进行 — 那正是评分卡机制要消除的东西。
+
+
+---
 ### 2026-10-08 · -5.76% day · ▼ material
 **Tags:** `macro_rates`, `sector_rotation`, `memory_pricing`
 **Confidence:** medium

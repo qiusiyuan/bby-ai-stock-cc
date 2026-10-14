@@ -4,6 +4,28 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-14 · -8.73% day · ▼ major
+**Tags:** `macro_inflation`, `sector_rotation`, `guidance_inline`, `unattributed`
+**Confidence:** medium
+
+**Primary cause.** **全书今日最大单日跌幅, 而 30d 仍 +16.61% — 跌的是涨幅不是论点。** 具体跌的是 **10/06 那天「管理层设定 FY2031 营收目标 $700-900亿、当日 +6%」所堆起来的预期**。当日报道 (Trefis「Can Marvell Stock Drop From Here?」) 的措辞正是关键: 过去十二个月 MRVL 回报 216% 远超 S&P 的约 18%, 而那个 FY2031 目标「**仍然是一个预测而不是一个结果**, 今天的买家承担 Marvell 达不到的风险」。**一个纯预测 (非结果) 支撑的涨幅, 在风险偏好收缩日里最先被收回 — 这是今天横截面的核心规律的最极端案例** (跌幅与 30d 涨幅相关: MRVL +16.61→-8.73 · AMD +24.20→-5.73 · META +27.58→-3.27 vs AVGO 30d -6.17→-3.10 全组最小)。**当日有产品级正面消息且完全未被定价: MRVL 宣布成立安全事业组并发布六通道 AI 内存产品** — 后者直接切入今天被打击的存储主题, 股价仍是全书最大跌幅。量比 1.31x 高于全场中位数 1.02x, 属真实成交。险守 MA50 $240.04 (高 2.2%), 距 thesis_break $200 缓冲 +22.6%, fwd PE 33.7x。**时序结构最不利: 下个财报 12/01, 48 天的信息真空。** 决定性旁证可提前到 10/29 AMZN 的 AWS 营业利润率 (Trainium 互联的下游), 提前 33 天。置信度 medium 的理由: 「回吐 10/06 预期」是一个结构性解释而非具名催化剂 — 今天没有任何针对 MRVL 的负面消息, 所以这是用横截面规律反推个股成因, 比具名事件弱一档。|| 宏观共因 (三个独立的因, 不可压成一个): **(1) 九月 CPI**: 同比 +3.7% (共识 3.6%)、环比 **+0.6% 为过去一年最高**。CPI = Consumer Price Index, BLS 每月发布的美国最主要通胀指标。环比年化约 7.4%, 远高于 Fed 2% 目标。timeline 在今天之前已记 Oxford Economics 的提示 — 九月调查窗口内柴油 +60 美分/加仑、汽油 +20 美分, 油价冲击会进入这份读数, 所以这个数字是可预告的。它接在 9/17 FOMC 转鹰 + 9 月纪要 (10/07 公布) 指向今年再加一次息 (市场当时只给 19%) 之上, 是纪要后第一个硬数据且站在纪要一边。**(2) ❗长端拒绝配合 — 本条必须作为限定随附**: CPI 超预期而 10Y -2.7bp / 30Y -3.8bp / TLT +0.66%。媒体口径写的是 'rate-hike jitters'、'rising bond yields', 债市当天的实际方向与之相反。所以今天的跌**不能用「当天利率上行」解释** — 实现通道是风险溢价 (VIX +10.48%) 与叙事, 不是折现率。这是本月第四次长端对本应推高它的消息不配合 (10/01 失败突破 / 10/02 非农利多无响应 / 10/08 诱因缓解不修复 / 今天 CPI 超预期不涨)。**(3) 横截面否证「加息打击高倍数股」的单一叙事**: 倍数最高的 TSLA (fwd PE 168x) 跌 2.15%, 低于倍数中等的MRVL (33.7x) -8.73%、SNOW (111x) -6.34%、GEV (37x) -6.20%。跌幅与 **30d 涨幅**的相关性明显优于与倍数的相关性(MRVL 30d +16.61→-8.73 · AMD +24.20→-5.73 · META +27.58→-3.27 vs AVGO 30d -6.17→-3.10 全组最小跌幅)。**今天卖的是一个月里的涨幅, 不是久期。** **⭐ 方法论变化 (改写前三份报告的限定)**: 10/05、10/07、10/08 三份归因都写了同一句「半量里的下跌属『没有买盘』而非『出现卖盘』, 方向可信幅度不可信」。**今天不成立**: 量比中位数 1.02x (10/08 为 0.48x / 10/07 0.79x / 10/05 0.49x), 17/32 过 1.0x (10/08 为 3/34), 放量集中在跌最多的标的 (GEV 1.65x / QQQ 1.53x / TSM 1.45x / KOID 1.39x / MRVL 1.31x / DRAM 1.30x)。**这是这轮下跌序列里第一个全参与度的下跌日 — 幅度本身开始带信息。** 反方限定仍要记: 跌最惨的 MRVL 量比只有 1.31x、MU 只有 1.04x, 「放量」是全场性的而非个别标的清仓。
+
+**Sources.**
+- 247wallst via yfinance (CPI 3.7% YoY vs 3.6% 共识; MoM +0.6% 年内最高): Trump Media and Rumble Decline 5% as September Inflation Runs Above Forecasts; Reddit Slides 2%
+- Yahoo Finance: Nvidia stock sinks as chip sell-off deepens on hot inflation data
+- IBD via yfinance: Stock Market Today: Nasdaq Dives On Rate Hike Jitters, AI Woes; Taiwan Semi Earnings On Deck
+- Yahoo Finance video (Baird 策略师 Ted Mortonson): CoreWeave, Intel, Micron, & other tech stocks are plummeting. Here's why.
+- Zacks via yfinance: Why Marvell Technology (MRVL) Dipped More Than Broader Market Today
+- Trefis — 12M 回报 216%; 10/06 设 FY2031 营收目标 $700-900亿当日 +6%, 「仍是预测而非结果」: Can Marvell Stock Drop From Here?
+- via yfinance: Marvell Technology (MRVL) Forms Security Group And Unveils Six Channel AI Memory
+- via yfinance: Astera Labs (ALAB) vs. CRDO and MRVL: Can Surging AI Demand Outpace Valuation Risks?
+
+**Cross-assets.** SPY -1.08% · QQQ -1.97% · IWM -1.93% · DIA -0.11% · VIX 16.87 (+10.48%) · TEN YEAR 5.190% (-2.7bp) · THIRTY YEAR 5.525% (-3.8bp) · TLT +0.66% · WTI +1.16% · BRENT $106.06 (30d +12.05%) · GOLD -1.23% · SILVER -5.81% · DXY 102.530 (+0.34%) · BTC -1.81% · ETH -3.40% · BREADTH 32 只中 26 跌 / 6 涨 (含 2 只反向) · VOLUME MEDIAN 量比中位数 1.02x · 17/32 过 1.0x (10/08 为 0.48x · 3/34)
+
+**Agent read.** MRVL 是今天「跌幅 = 回吐 30d 涨幅」规律的最干净案例, 因为它完全没有负面消息、有正面产品消息、且涨幅来源是一个可明确指认的单日事件 (10/06 的 FY2031 目标)。把它作为该规律的锚点案例保留; 若后续出现「有负面消息但 30d 涨幅低的标的跌更多」, 该规律需修正。
+
+
+---
 ### 2026-10-08 · -5.89% day · ▼ material
 **Tags:** `macro_rates`, `sector_rotation`, `partnership_news`
 **Confidence:** high

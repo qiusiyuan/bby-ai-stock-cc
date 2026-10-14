@@ -4,6 +4,29 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-14 · -3.40% day · ▼ material
+**Tags:** `macro_inflation`, `earnings_pre_print`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** **财报前一日放量下跌: 量比 1.45x 是 AI 供给方里最高、全场第三高, 而财报就在明天 (10/15 盘前)。** 跌破 MA50 $433.66 但仅低 0.8% — 险守状态。距 thesis_break $280 缓冲 +53.6%, fwd PE 19.3x。**明天的 TSM 财报是全 AI 供给链未来 7 天内唯一的硬数据, 而且不只决定 TSM 自己**: 今天有六个标的险守 MA50 在 1% 以内 (QQQ +0.38% / SPY +0.29% / GOOG +0.47% / SNOW +0.64% / TSM -0.8% / NVDA -0.8%), 明天的方向直接决定这几条技术线守不守住。关注项 (报道口径): Terafab 与德州产能谈判、先进封装 (CoWoS) 口吻、市场对财报后波动幅度的定价。**对存储组的间接作用**: TSM 不是存储公司, 但它的先进封装口吻是 HBM 需求最近的第三方代理读数 — 在 10/26 SK Hynix 之前, 这是唯一可得的供给链口径。**历史对照必须记, 因为它削弱「财报前跌 = 预期下调」的简单读法**: 10/08 的归因记录了 TSM「九月营收超目标当日仍跌 3.24%」, 与 Samsung 创纪录业绩当日 -2.42% 构成「基本面确认而价格反向」的一对。**即 TSM 在过去一周已经出现过一次「好数据不涨」, 所以今天的跌不能被读成对明天数字的预判 — 近期的证据是这只标的对好数据不反应。** 置信度 medium: 1.45x 的放量真实, 但放量方向无法区分「财报前减仓」与「板块无差别抛售」。|| 宏观共因 (三个独立的因, 不可压成一个): **(1) 九月 CPI**: 同比 +3.7% (共识 3.6%)、环比 **+0.6% 为过去一年最高**。CPI = Consumer Price Index, BLS 每月发布的美国最主要通胀指标。环比年化约 7.4%, 远高于 Fed 2% 目标。timeline 在今天之前已记 Oxford Economics 的提示 — 九月调查窗口内柴油 +60 美分/加仑、汽油 +20 美分, 油价冲击会进入这份读数, 所以这个数字是可预告的。它接在 9/17 FOMC 转鹰 + 9 月纪要 (10/07 公布) 指向今年再加一次息 (市场当时只给 19%) 之上, 是纪要后第一个硬数据且站在纪要一边。**(2) ❗长端拒绝配合 — 本条必须作为限定随附**: CPI 超预期而 10Y -2.7bp / 30Y -3.8bp / TLT +0.66%。媒体口径写的是 'rate-hike jitters'、'rising bond yields', 债市当天的实际方向与之相反。所以今天的跌**不能用「当天利率上行」解释** — 实现通道是风险溢价 (VIX +10.48%) 与叙事, 不是折现率。这是本月第四次长端对本应推高它的消息不配合 (10/01 失败突破 / 10/02 非农利多无响应 / 10/08 诱因缓解不修复 / 今天 CPI 超预期不涨)。**(3) 横截面否证「加息打击高倍数股」的单一叙事**: 倍数最高的 TSLA (fwd PE 168x) 跌 2.15%, 低于倍数中等的MRVL (33.7x) -8.73%、SNOW (111x) -6.34%、GEV (37x) -6.20%。跌幅与 **30d 涨幅**的相关性明显优于与倍数的相关性(MRVL 30d +16.61→-8.73 · AMD +24.20→-5.73 · META +27.58→-3.27 vs AVGO 30d -6.17→-3.10 全组最小跌幅)。**今天卖的是一个月里的涨幅, 不是久期。** **⭐ 方法论变化 (改写前三份报告的限定)**: 10/05、10/07、10/08 三份归因都写了同一句「半量里的下跌属『没有买盘』而非『出现卖盘』, 方向可信幅度不可信」。**今天不成立**: 量比中位数 1.02x (10/08 为 0.48x / 10/07 0.79x / 10/05 0.49x), 17/32 过 1.0x (10/08 为 3/34), 放量集中在跌最多的标的 (GEV 1.65x / QQQ 1.53x / TSM 1.45x / KOID 1.39x / MRVL 1.31x / DRAM 1.30x)。**这是这轮下跌序列里第一个全参与度的下跌日 — 幅度本身开始带信息。** 反方限定仍要记: 跌最惨的 MRVL 量比只有 1.31x、MU 只有 1.04x, 「放量」是全场性的而非个别标的清仓。
+
+**Sources.**
+- 247wallst via yfinance (CPI 3.7% YoY vs 3.6% 共识; MoM +0.6% 年内最高): Trump Media and Rumble Decline 5% as September Inflation Runs Above Forecasts; Reddit Slides 2%
+- Yahoo Finance: Nvidia stock sinks as chip sell-off deepens on hot inflation data
+- IBD via yfinance: Stock Market Today: Nasdaq Dives On Rate Hike Jitters, AI Woes; Taiwan Semi Earnings On Deck
+- Yahoo Finance video (Baird 策略师 Ted Mortonson): CoreWeave, Intel, Micron, & other tech stocks are plummeting. Here's why.
+- IBD via yfinance: Stock Market Today: Nasdaq Dives On Rate Hike Jitters, AI Woes; Taiwan Semi Earnings On Deck
+- via yfinance: TSM Earnings Tomorrow: Can Strong AI Demand Boost Q3 Results?
+- via yfinance: TSMC Earnings Will Surge but Terafab and Texas Talks Are in Focus
+- via yfinance: Here's How Much Traders Expect TSMC Stock to Move After Earnings
+- {"type": "attribution", "title": "2026-10-08 TSM -3.24% \u2014 \u4e5d\u6708\u8425\u6536\u8d85\u76ee\u6807\u5f53\u65e5\u4ecd\u8dcc, \u300c\u57fa\u672c\u9762\u786e\u8ba4\u4e0e\u4ef7\u683c\u53cd\u5411\u300d", "publisher": "stocks/TSM/attributions.md"}
+
+**Cross-assets.** SPY -1.08% · QQQ -1.97% · IWM -1.93% · DIA -0.11% · VIX 16.87 (+10.48%) · TEN YEAR 5.190% (-2.7bp) · THIRTY YEAR 5.525% (-3.8bp) · TLT +0.66% · WTI +1.16% · BRENT $106.06 (30d +12.05%) · GOLD -1.23% · SILVER -5.81% · DXY 102.530 (+0.34%) · BTC -1.81% · ETH -3.40% · BREADTH 32 只中 26 跌 / 6 涨 (含 2 只反向) · VOLUME MEDIAN 量比中位数 1.02x · 17/32 过 1.0x (10/08 为 0.48x · 3/34)
+
+**Agent read.** 明天的 TSM 财报是本周唯一的高杠杆免费信息点 — 它同时回答 AI 供给侧需求、HBM 的第三方代理读数、以及六条险守的 MA50。但读法要预先设定: 近期证据 (10/08) 显示 TSM 对好数据不反应, 所以明天若「数字好而股价跌」不应被读成数字不好, 而应读成第二次确认「该标的当前由风险偏好而非基本面定价」。
+
+
+---
 ### 2026-10-08 · -3.24% day · ▼ material
 **Tags:** `macro_rates`, `sector_rotation`, `guidance_inline`
 **Confidence:** high

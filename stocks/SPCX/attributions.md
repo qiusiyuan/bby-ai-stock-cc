@@ -4,6 +4,29 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-14 · -2.80% day · ▼ minor
+**Tags:** `macro_inflation`, `sector_rotation`, `secondary_offering`, `regulatory_positive`, `pt_change`
+**Confidence:** high
+
+**Primary cause.** **10/07-10/08 写下的论点改写在今天被第三方媒体直接证实, 这是本条的核心价值。** Barron's 今日标题: 「**SpaceX Stock Is Down. It's Due to CoreWeave's Troubles.**」 时序: 10/07 SPCX 宣布寻求 $400亿 融资购买 NVDA AI 芯片 (当日 -2.51%), 归因把论点从「发射 + Starlink 现金流 + 轨道 AI 期权」改写为「举债买算力的杠杆 AI capex 标的」, 推理是「$400亿 债务按粗略 6% 票息计年现金支出约 $24亿, 对一个 FY27 自由现金流 **-$670亿**、无当期盈利的名字, 这是实质加杠杆」→ 10/08 四条利好同日却收 -3.91%, 诊断升级为具名机制「**SPCX 的 $400亿、AVGO 的 >$500亿、Oracle 的发债挤在同一信用窗口抢同一批买家**」, 并指出「三家里 SPCX 信用历史最短、现金焚烧最确定」→ **今天 CoreWeave (最纯的 AI 算力举债标的) 的债券收益率上行, 外溢到 SPCX 与 GEV 两个完全不同行业的标的。这正是 10/08 预设机制的运行方式: 不是 SPCX 自己出了事, 而是整个「为 AI 算力举债」的信用池被重定价, 池里任何一家的融资成本上升都会传到其余各家。CoreWeave 是这个池子的压力表。** **利好不被定价已连续第三次, 不再是异常而是当前的常态机制**: 10/07 四条利好 (含 FCC 批准) 收 -2.51%; 10/08 四条利好 (American Airlines 把 Starlink 部署翻倍以上 / FT 为 $5,000亿 AI 数据中心赌注背书 / Cramer 看多 / Trump 披露持仓) 收 -3.91%; 今天两条利好收 -2.80% — **(1) Raymond James 重申 $800 目标价, 依据是 SpaceX 向 FAA 提交的申请 (提议上调 Boca Chica 年度 Starship 发射次数) — 这是可计数的运营产能扩张不是叙事; (2) SpaceX 已拿到推进手机业务所需的频谱 (Benzinga: 73% 受访者会考虑换网), 该消息当日把移动运营商股票打了下去。** **机制: 分子 (合约/产能/频谱) 在前进, 分母 (融资成本) 在恶化, 分母赢。** 解除这个压制的判定点 10/08 已给出: **11/03 财报里 $400亿 的条款细节 (票息/期限/是否可转股)**。量能限定: 0.72x 是全场放量日 (中位数 1.02x) 里明显的低参与度 — 在 26/32 全线下跌的一天以低于中位数三成的量跌 2.80%, 跌幅温和且无人离场。30d 仍 +6.98%。SSPC (2x 反向) +5.38% 是机械对应, 但 SSPC **30d -21.26%** 才是信息: 做空 SPCX 在一个月尺度仍大幅亏损, 且杠杆反向 ETF 有波动衰减, 不能用其涨幅反推 SPCX 弱度。**🚨 最大的结构性缺口 (连续第三份报告记录): thesis_break_price 仍为 null — 全书唯一。** 论点已实质改写、今天外部证实信用敏感、距 52w 高 $225.64 已 -32.6%、lockup 12/09 剩 56 天 (与 AVGO 财报同日; 对照 8/20 上批 319M 股解禁当日 -5.69% 并跌破 IPO 价), 而全程无风控线对照。10/08 提议的两个锚点: MA50 (现 $146.72, 现价下方 3.6%) 或 IPO 价。|| 宏观共因 (三个独立的因, 不可压成一个): **(1) 九月 CPI**: 同比 +3.7% (共识 3.6%)、环比 **+0.6% 为过去一年最高**。CPI = Consumer Price Index, BLS 每月发布的美国最主要通胀指标。环比年化约 7.4%, 远高于 Fed 2% 目标。timeline 在今天之前已记 Oxford Economics 的提示 — 九月调查窗口内柴油 +60 美分/加仑、汽油 +20 美分, 油价冲击会进入这份读数, 所以这个数字是可预告的。它接在 9/17 FOMC 转鹰 + 9 月纪要 (10/07 公布) 指向今年再加一次息 (市场当时只给 19%) 之上, 是纪要后第一个硬数据且站在纪要一边。**(2) ❗长端拒绝配合 — 本条必须作为限定随附**: CPI 超预期而 10Y -2.7bp / 30Y -3.8bp / TLT +0.66%。媒体口径写的是 'rate-hike jitters'、'rising bond yields', 债市当天的实际方向与之相反。所以今天的跌**不能用「当天利率上行」解释** — 实现通道是风险溢价 (VIX +10.48%) 与叙事, 不是折现率。这是本月第四次长端对本应推高它的消息不配合 (10/01 失败突破 / 10/02 非农利多无响应 / 10/08 诱因缓解不修复 / 今天 CPI 超预期不涨)。**(3) 横截面否证「加息打击高倍数股」的单一叙事**: 倍数最高的 TSLA (fwd PE 168x) 跌 2.15%, 低于倍数中等的MRVL (33.7x) -8.73%、SNOW (111x) -6.34%、GEV (37x) -6.20%。跌幅与 **30d 涨幅**的相关性明显优于与倍数的相关性(MRVL 30d +16.61→-8.73 · AMD +24.20→-5.73 · META +27.58→-3.27 vs AVGO 30d -6.17→-3.10 全组最小跌幅)。**今天卖的是一个月里的涨幅, 不是久期。** **⭐ 方法论变化 (改写前三份报告的限定)**: 10/05、10/07、10/08 三份归因都写了同一句「半量里的下跌属『没有买盘』而非『出现卖盘』, 方向可信幅度不可信」。**今天不成立**: 量比中位数 1.02x (10/08 为 0.48x / 10/07 0.79x / 10/05 0.49x), 17/32 过 1.0x (10/08 为 3/34), 放量集中在跌最多的标的 (GEV 1.65x / QQQ 1.53x / TSM 1.45x / KOID 1.39x / MRVL 1.31x / DRAM 1.30x)。**这是这轮下跌序列里第一个全参与度的下跌日 — 幅度本身开始带信息。** 反方限定仍要记: 跌最惨的 MRVL 量比只有 1.31x、MU 只有 1.04x, 「放量」是全场性的而非个别标的清仓。
+
+**Sources.**
+- 247wallst via yfinance (CPI 3.7% YoY vs 3.6% 共识; MoM +0.6% 年内最高): Trump Media and Rumble Decline 5% as September Inflation Runs Above Forecasts; Reddit Slides 2%
+- Yahoo Finance: Nvidia stock sinks as chip sell-off deepens on hot inflation data
+- IBD via yfinance: Stock Market Today: Nasdaq Dives On Rate Hike Jitters, AI Woes; Taiwan Semi Earnings On Deck
+- Yahoo Finance video (Baird 策略师 Ted Mortonson): CoreWeave, Intel, Micron, & other tech stocks are plummeting. Here's why.
+- Barron's via yfinance: SpaceX Stock Is Down. It's Due to CoreWeave's Troubles.
+- via yfinance — 依据 FAA 申请上调 Boca Chica 年度发射次数: SpaceX's Ambitious Starship Expansion Plans See Raymond James Reiterate $800 Price Target
+- Benzinga — SpaceX 已取得所需频谱, 消息令移动运营商股票下跌: EXCLUSIVE: SpaceX's Mobile Push to Pay Off, 73% of Benzinga Viewers Would Consider Switching
+- Barron's via yfinance: CoreWeave's Bond Scare Is Spreading to AI-Linked Industrial Stocks
+- {"type": "attribution", "title": "2026-10-08 SPCX -3.91% \u2014 \u56db\u6761\u5229\u597d\u540c\u65e5\u4ecd\u8dcc, \u8bca\u65ad\u4e3a\u300c\u4fe1\u7528\u7a97\u53e3\u62e5\u6324\u300d\u5e76\u63d0\u8bae thesis_break \u951a\u70b9", "publisher": "stocks/SPCX/attributions.md"}
+
+**Cross-assets.** SPY -1.08% · QQQ -1.97% · IWM -1.93% · DIA -0.11% · VIX 16.87 (+10.48%) · TEN YEAR 5.190% (-2.7bp) · THIRTY YEAR 5.525% (-3.8bp) · TLT +0.66% · WTI +1.16% · BRENT $106.06 (30d +12.05%) · GOLD -1.23% · SILVER -5.81% · DXY 102.530 (+0.34%) · BTC -1.81% · ETH -3.40% · BREADTH 32 只中 26 跌 / 6 涨 (含 2 只反向) · VOLUME MEDIAN 量比中位数 1.02x · 17/32 过 1.0x (10/08 为 0.48x · 3/34)
+
+**Agent read.** 这是一次预设机制被外部独立证实的案例, 应作为方法论正面样本保留: 10/07 识别论点改写 → 10/08 给机制命名 (信用窗口拥挤) → 10/14 第三方媒体用同一机制解释同一标的。机制已具名且有明确失效日期 (11/03 条款披露), 所以「继续等利好终于被认」是在赌机制失效。流程性结论: 必须补一条 thesis_break_price — 不是因为今天危险 (守 MA50 +3.7%, 30d +6.98%), 而是因为一个已变成信用敏感、56 天后有 lockup 的标的若无预设破论价位, 后续任何下跌都只能临场判断, 而临场判断正是预先承诺机制要消除的东西。
+
+
+---
 ### 2026-10-08 · -3.91% day · ▼ material
 **Tags:** `macro_rates`, `sector_rotation`, `partnership_news`, `policy_us`
 **Confidence:** high
