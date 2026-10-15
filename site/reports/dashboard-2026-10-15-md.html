@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-10-15</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-10-15 10:35</div>
+<h1 id="daily-report-2026-10-15">Daily Report 2026-10-15</h1>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }#tabs1-8:checked ~ [data-tab-for="tabs1-8"] { display: block; }#tabs1-9:checked ~ [data-tab-for="tabs1-9"] { display: block; }#tabs1-10:checked ~ [data-tab-for="tabs1-10"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><input class="tab-input" type="radio" name="tabs1" id="tabs1-8"><input class="tab-input" type="radio" name="tabs1" id="tabs1-9"><input class="tab-input" type="radio" name="tabs1" id="tabs1-10"><div class="tabs"><label class="tab-label" for="tabs1-0">Pulse &amp; Macro</label><label class="tab-label" for="tabs1-1">Watchlist &amp; Movers</label><label class="tab-label" for="tabs1-2">Timeline 90d</label><label class="tab-label" for="tabs1-3">Focus: TSLA</label><label class="tab-label" for="tabs1-4">Focus: SpaceX</label><label class="tab-label" for="tabs1-5">Focus: DRAM/HBM</label><label class="tab-label" for="tabs1-6">Focus: AI capex</label><label class="tab-label" for="tabs1-7">Focus: 能源(油气)</label><label class="tab-label" for="tabs1-8">Focus: 电力/Grid</label><label class="tab-label" for="tabs1-9">Focus: humanoid</label><label class="tab-label" for="tabs1-10">Brief</label></div><div class="tab-panel" data-tab-for="tabs1-0"><div class="callout danger"><p>两天两个超预期通胀读数 (10/14 CPI 同比 3.7%, 今天 PPI 环比 <strong><span class="up">+1.3%</span></strong> / 同比 <strong><span class="up">+6.3%</span></strong> — 2022 年 12 月以来最大), 而长端利率今天下行 <strong>10bp</strong>, 前端一动不动。这不是降息定价, 是资金从 AI 信用里逃进国债。TSM 第六个连续纪录季度 + 营收同比 <span class="up">+41%</span> 当日跌 2.55%; GE Vernova 拿下最高 $172 亿订单当日跌 3.02%; SK Hynix 韩国本线 <strong><span class="down">-11.06%</span></strong>、三星 <strong><span class="down">-9.48%</span></strong> 完成本轮第一次真正的本土投降。</p></div>
+<h3>重大宏观事件: 九月 PPI (Producer Price Index, 生产者物价指数)</h3>
+<p><strong>1. 是什么.</strong> PPI 衡量的是<strong>生产者卖出产品时收到的价格</strong>, 由美国劳工统计局 (BLS) 每月发布。和 CPI (消费者买入价格) 的区别在于它站在供给链更上游 —— 通常被看作 CPI 的领先指标: 生产端成本涨了, 一到两个季度后多半会传导到消费端。今天发布的是<strong>九月</strong>数据。</p>
+<p><strong>2. 数字本身 (BLS 原文核对).</strong></p>
+<div class="kpi-grid"><div class="kpi"><div class="label">Final demand 环比</div><div class="value"><span class="up"><span class="up">+1.3%</span></span></div><div class="note">8月 <span class="up"><span class="up">+0.5%</span></span> / 7月 <span class="up"><span class="up">+0.2%</span></span> — 2022年3月 (<span class="up"><span class="up">+1.7%</span></span>) 以来最大单月涨幅</div></div><div class="kpi"><div class="label">Final demand 同比</div><div class="value"><span class="up"><span class="up">+6.3%</span></span></div><div class="note">2022年12月 (<span class="up"><span class="up">+6.4%</span></span>) 以来最大年度涨幅</div></div><div class="kpi"><div class="label">核心 (除食品/能源/贸易服务) 环比</div><div class="value"><span class="up"><span class="up">+0.5%</span></span></div><div class="note">核心也在加速, 不是单一品类扰动</div></div><div class="kpi"><div class="label">核心 同比</div><div class="value"><span class="up"><span class="up">+5.0%</span></span></div><div class="note">剔除能源后仍然是 5% 量级</div></div><div class="kpi"><div class="label">商品 环比</div><div class="value"><span class="up"><span class="up">+2.6%</span></span></div><div class="note">其中能源 <span class="up"><span class="up">+10.8%</span></span>, 汽油 <span class="up"><span class="up">+20.3%</span></span></div></div><div class="kpi"><div class="label">服务 环比</div><div class="value"><span class="up"><span class="up">+0.8%</span></span></div><div class="note">服务端同步升温</div></div></div>
+<p><strong>3. 为什么重要 — 以及这里有一条必须讲清的回路.</strong> 商品端 <span class="up">+2.6%</span> 里, 能源贡献了 <span class="up">+10.8%</span>、汽油 <span class="up">+20.3%</span>。而汽油和原油在九月涨的原因, 正是这份报告能源 tab 里记录的伊朗地缘溢价 (WTI 从八月底的 ~$87 推到今天 $96.58, Brent $106.27)。<strong>也就是说: 能源持仓今天全绿的那个驱动, 和今天让加息概率上行的那个驱动, 是同一件事。</strong> 这不是两个独立的 tab, 是一个传导链的两端 —— 地缘推油价 → 油价进生产端物价 → PPI 超预期 → 加息路径重新定价 → 压制长久期权益。能源头寸在这条链上是天然的对冲, 但它对冲的是自己造成的那部分压力。</p>
+<p>核心 <span class="up">+0.5%</span> / 同比 <span class="up">+5.0%</span> 说明这<strong>不只是</strong>能源。剔掉能源和食品之后仍有 5% 量级, 意味着价格压力有广度。配合 10/14 的 CPI 同比 3.7% 超共识, 这是连续两天的上游+下游双向确认。</p>
+<p><strong>4. 市场的推理路径 — 今天走的是哪一面.</strong> 教科书路径是: 热通胀 → 加息概率上行 → 折现率上行 → 长久期资产被压。今天<strong>前半段成立, 后半段完全没发生</strong>:</p>
+<table class="compare"><thead><tr><th>期限</th><th>今日收益率</th><th>日变动</th><th>读数</th></tr></thead><tbody><tr><td>3个月 (^IRX)</td><td>4.088%</td><td>+0.3bp</td><td>前端一动不动 — 如果是「Fed 要加息」的定价, 这里应该是最大的</td></tr><tr><td>5年 (^FVX)</td><td>4.903%</td><td>-8.9bp</td><td>belly 下行</td></tr><tr><td>10年 (^TNX)</td><td>5.089%</td><td>-10.1bp</td><td>距 52w 高 5.364% 已回落 27.5bp</td></tr><tr><td>30年 (^TYX)</td><td>5.424%</td><td>-10.1bp</td><td>与 10Y 平行下行</td></tr><tr><td>TLT (20年+ 国债 ETF)</td><td>$80.09</td><td><span class="up"><span class="up">+1.52%</span></span></td><td>5d <span class="up"><span class="up">+2.85%</span></span> — 连续买入</td></tr></tbody></table>
+<p><strong>前端平、5年到30年平行下行 10bp, 在一个 PPI 同比创四年新高的日子里。</strong> 这个形状不可能是 Fed 政策定价 —— 政策定价一定先动前端。它只能是<strong>对久期本身的避险需求</strong>: 资金在卖股票买国债。当天的新闻口径直接说出了这件事 ("Tech slumps as AI financing worries grow, <strong>investors flock to bonds</strong>")。</p>
+<p><strong>这一点改写了本周前四份报告的限定条件。</strong> 10/05、10/07、10/08、10/14 四份报告都反复记录「长端拒绝配合利空/利多」, 并由此推断「跌的实现通道是风险溢价而不是折现率」。那四天的证据是<strong>长端不动</strong> (零信息的否证)。今天长端终于动了 —— 而且动的方向是<strong>下行</strong>, 即折现率给了权益一个<strong>顺风</strong>, 权益却继续跌。这是同一个结论从「没有反证」升级为「有正面证据」: 折现率通道今天是负贡献 (利好), 跌幅必须由风险溢价全额解释。</p>
+<p><strong>5. 对每个持仓的具体影响.</strong></p>
+<table class="compare"><thead><tr><th>持仓</th><th>今日</th><th>影响方向</th><th>传导逻辑</th></tr></thead><tbody><tr><td>SU / CNQ / HXE.TO</td><td>+1.00 / +0.94 / +0.80</td><td>⬆️ 利好</td><td>能源是 PPI 里涨最多的那一项; 持仓直接拿到涨价本身</td></tr><tr><td>CVX</td><td>-1.09</td><td>➖ 背离</td><td>油涨而 CVX 跌 — 10/30 财报前的个股因素, 非板块因素</td></tr><tr><td>MSFT / GOOG / AAPL</td><td>+1.08 / +0.33 / +0.34</td><td>⬆️ 轻微利好</td><td>长端 -10bp 是久期顺风; 且不在 AI 信用链的被质疑端</td></tr><tr><td>TSM / INTC / AMD / MRVL</td><td>-2.55 / -4.14 / -3.92 / -3.45</td><td>⬇️ 利空</td><td>供给方 — 直接被「AI 融资可持续性」质疑击中</td></tr><tr><td>000660.KS / 005930.KS</td><td>-11.06 / -9.48</td><td>⬇️ 重度利空</td><td>存储本线; CXMT + 手机需求破坏双重打击 (见 DRAM tab)</td></tr><tr><td>GEV</td><td>-3.02</td><td>⬇️ 利空 (错配)</td><td>当日拿下 $172亿 订单仍跌 — 纯 AI capex 信用传染</td></tr><tr><td>SPCX</td><td>-3.59</td><td>⬇️ 利空</td><td>久期 + 乌克兰 Starlink 争议 + Rocket Lab 溢出</td></tr><tr><td>金 / 银</td><td>+1.47 / +2.72</td><td>⬆️ 利好</td><td>两天来第一次, 通胀数据终于让贵金属涨 — 但见下方 30d 对照</td></tr></tbody></table>
+<h3>Indices</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">SPY</div><div class="value">$770.31 / <span class="up"><span class="up">+0.09%</span></span></div><div class="note">距 52w 高 $781.62 仅 1.45%; 站上 MA50 $767.44</div></div><div class="kpi"><div class="label">QQQ</div><div class="value">$724.51 / <span class="down"><span class="down">-0.61%</span></span></div><div class="note">**跌破 MA50 $726.34** — 本轮第一次; 距 52w 高 $762.86 已 <span class="down"><span class="down">-5.03%</span></span></div></div><div class="kpi"><div class="label">Dow (DIA)</div><div class="value">$520.06 / <span class="up"><span class="up">+0.86%</span></span></div><div class="note">全场最强的大盘指数 — 防御轮动的落点</div></div><div class="kpi"><div class="label">IWM (小盘)</div><div class="value">$273.38 / <span class="up"><span class="up">+0.74%</span></span></div><div class="note">长端 -10bp 的最大受益者; 但 30d 仍 <span class="down"><span class="down">-6.77%</span></span></div></div><div class="kpi"><div class="label">VIX</div><div class="value">16.88 / <span class="up"><span class="up">+0.06%</span></span></div><div class="note">几乎零反应 — 又一个「不是系统性恐慌」的读数</div></div><div class="kpi"><div class="label">10Y</div><div class="value">5.089% / -10.1bp</div><div class="note">见上方四步解读</div></div><div class="kpi"><div class="label">DXY</div><div class="value">102.101 / <span class="down"><span class="down">-0.44%</span></span></div><div class="note">距 52w 高 102.95 仅 0.83%</div></div></div>
+<p><strong>今天最该注意的指数事实: QQQ <span class="down">-0.61%</span> vs Dow <span class="up">+0.86%</span> vs IWM <span class="up">+0.74%</span>。</strong> 这是本轮下跌序列里第一个<strong>纳指独跌、其余指数上涨</strong>的日子。前面四个下跌日 (10/07、10/08、10/13、10/14) 都是全指数同向。今天的裂口是 1.47pp (QQQ vs Dow)。配合 30d 口径 QQQ <span class="up">+2.26%</span> vs IWM <span class="down">-6.77%</span> (裂口 9.0pp, 比 10/14 的 12.4pp 收窄 3.4pp) —— <strong>九月以来一直在扩张的 QQQ-IWM 裂口今天第一次反向收窄, 而且是用纳指下跌、小盘上涨的方式收窄的, 不是小盘追涨。</strong> 这是轮动而不是普跌的硬证据。</p>
+<p>对照的落点新闻也一致: Moderna <span class="up">+6%</span> (资金流入医疗)、Walmart <span class="up">+3%</span> (德银上调)、Opendoor/Zillow <span class="up">+7%</span> (长端回落直接利好住房)。资金没有离场, 它换了房间。</p>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">91.07</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">95.07</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">99.07</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">103.07</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">107.06</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">09-03</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">09-25</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">10-15</text><path d="M56.0,101.3 L78.3,99.4 L100.7,100.3 L123.0,103.3 L145.4,114.3 L167.7,105.3 L190.1,113.6 L212.4,120.3 L234.8,120.0 L257.1,102.4 L279.4,95.8 L301.8,65.8 L324.1,57.1 L346.5,66.1 L368.8,66.3 L391.2,61.4 L413.5,72.9 L435.9,70.9 L458.2,68.2 L480.6,65.0 L502.9,54.0 L525.2,44.5 L547.6,39.4 L569.9,42.2 L592.3,56.9 L614.6,51.6 L637.0,59.2 L659.3,62.7 L681.7,83.9 L704.0,90.9" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="90.9" r="3" fill="#58a6ff"/><path d="M56.0,101.3 L78.3,105.3 L100.7,111.0 L123.0,115.8 L145.4,121.9 L167.7,113.2 L190.1,117.8 L212.4,122.5 L234.8,127.0 L257.1,115.5 L279.4,114.2 L301.8,98.3 L324.1,98.4 L346.5,105.9 L368.8,106.8 L391.2,101.2 L413.5,108.9 L435.9,110.8 L458.2,112.9 L480.6,111.1 L502.9,103.5 L525.2,96.5 L547.6,90.8 L569.9,93.3 L592.3,97.7 L614.6,91.5 L637.0,92.1 L659.3,92.2 L681.7,103.5 L704.0,102.9" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="102.9" r="3" fill="#3fb950"/><path d="M56.0,101.3 L78.3,98.4 L100.7,103.1 L123.0,117.3 L145.4,127.6 L167.7,123.5 L190.1,126.9 L212.4,134.0 L234.8,138.3 L257.1,133.0 L279.4,137.7 L301.8,132.5 L324.1,126.7 L346.5,145.4 L368.8,146.3 L391.2,145.2 L413.5,152.1 L435.9,155.6 L458.2,159.6 L480.6,155.6 L502.9,146.8 L525.2,140.2 L547.6,147.4 L569.9,160.2 L592.3,160.7 L614.6,155.9 L637.0,159.5 L659.3,163.8 L681.7,182.6 L704.0,175.8" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="175.8" r="3" fill="#d29922"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">QQQ vs SPY vs IWM 30d (归一化 — 今天第一次方向分离)</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">QQQ</span> <span class="legend-last">101.01</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+1.01%</span></span><span class="legend-note">· 1d <span class="down">-0.61%</span> · 30d <span class="up">+2.26%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">SPY</span> <span class="legend-last">99.84</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-0.16%</span></span><span class="legend-note">· 1d <span class="up">+0.09%</span> · 30d <span class="up">+0.92%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">IWM</span> <span class="legend-last">92.82</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-7.18%</span></span><span class="legend-note">· 1d <span class="up">+0.74%</span> · 30d <span class="down">-6.77%</span></span></span></div></div>
+<h3>成交量参与度: 10/14 的「全参与度日」没有延续</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">量比中位数</div><div class="value">0.755x</div><div class="note">10/14 为 1.02x, 10/08 为 0.48x — 回到半量区间</div></div><div class="kpi"><div class="label">量比 ≥1.0x 的标的</div><div class="value">11 / 38</div><div class="note">10/14 为 17/32 — 参与度收缩</div></div><div class="kpi"><div class="label">量比 ≥1.5x 的标的</div><div class="value">4</div><div class="note">005930.KS 2.06 / 000660.KS 1.96 / DRAM 1.55 / TSM 1.52</div></div></div>
+<p><strong>放量的位置极度集中: 韩国两条本线 + DRAM ETF + TSM (财报日)。</strong> 美国大型科技几乎没有成交 (MSFT 0.54x / AMZN 0.54x / TSLA 0.47x / GOOG 0.39x / META 0.36x)。这意味着今天不是一次广泛的降风险, 而是<strong>对一个特定位置 (存储 + 半导体供给侧) 的定向抛售</strong>。10/14 报告写的「本轮下跌序列第一个全参与度日」在一天后没有延续 —— 那是一个点而不是一个趋势。</p>
+<h3>Commodities</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">WTI</div><div class="value">$96.58 / <span class="up"><span class="up">+1.57%</span></span></div><div class="note">5d <span class="up"><span class="up">+5.56%</span></span> · 30d <span class="up"><span class="up">+6.12%</span></span> · MA50 $90.47 — 伊朗溢价继续抬升</div></div><div class="kpi"><div class="label">Brent</div><div class="value">$106.27 / <span class="up"><span class="up">+0.20%</span></span></div><div class="note">30d <span class="up"><span class="up">+11.13%</span></span> — 站稳 $106</div></div><div class="kpi"><div class="label">Gold</div><div class="value">$4,168.20 / <span class="up"><span class="up">+1.47%</span></span></div><div class="note">但 30d **<span class="down"><span class="down">-5.58%</span></span>**, 且在 MA50 $4,376.75 和 MA200 $4,541.71 **双线之下**</div></div><div class="kpi"><div class="label">Silver</div><div class="value">$57.06 / <span class="up"><span class="up">+2.72%</span></span></div><div class="note">30d **<span class="down"><span class="down">-11.84%</span></span>**, 距 52w 高 $121.30 已腰斩 (<span class="down"><span class="down">-52.9%</span></span>)</div></div></div>
+<p><strong>金银今天涨了, 但这不推翻 10/07 和 10/14 记录的「实际利率压倒地缘避险买盘」机制。</strong> 判别方式是看窗口: 今天金 <span class="up">+1.47%</span> 发生在长端 -10bp 的同一天 —— 实际利率下行是贵金属的直接利好, 所以今天的涨是机制内的, 不是机制的例外。真正的检验是 30 天口径: 在一个月里有伊朗升级 + 两个超预期通胀读数 + 10Y 创 24 年新高的情况下, 金 <span class="down">-5.58%</span>、银 <span class="down">-11.84%</span>, 而油 <span class="up">+6.12%</span>、Brent <span class="up">+11.13%</span>。<strong>四类「地缘资产」里仍然只有实物油在涨。</strong> 今天是该机制下的一次正常反弹, 不是反转 —— 反转需要看到 30d 转正。</p>
+<h3>🪙 Crypto</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">BTC</div><div class="value">$82,171 / <span class="up"><span class="up">+0.75%</span></span></div><div class="note">30d <span class="up"><span class="up">+8.67%</span></span>; 刚好站在 MA50 $81,227 之上, 距 52w 高 $116,273 <span class="down"><span class="down">-29.3%</span></span></div></div><div class="kpi"><div class="label">ETH</div><div class="value">$2,436 / <span class="up"><span class="up">+0.76%</span></span></div><div class="note">30d <span class="up"><span class="up">+1.56%</span></span>; **在 MA50 $2,554 之下** — 比 BTC 弱</div></div></div>
+<p>今天有一条值得记录的加密新闻: <strong>近 $10 亿加密杠杆仓位被清算</strong>, 口径归因于「热通胀数据重新点燃 Fed 加息押注」。注意这和债市给出的答案矛盾 —— 加密的杠杆玩家按「加息」交易, 而国债市场按「避险」交易, 同一份 PPI 两个市场读出两个相反的东西。BTC 最终只 <span class="up">+0.75%</span> 收在 MA50 上方, 说明清算是双向洗盘而非单向崩塌。</p>
+<p>BTC 30d <span class="up">+8.67%</span> 对照 SPY 30d <span class="up">+0.92%</span>: <strong>加密强于股票</strong>。按「BTC 领先 SPY 2-4 周」的框架, 这不是一个风险层级恶化的信号 —— 也就是说今天的科技跌不太可能是广义风险偏好崩塌的前奏, 更支持「板块内部重定价」的解释。</p>
+<h3>货币 / FX</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">DXY</div><div class="value">102.101 / <span class="down"><span class="down">-0.44%</span></span></div><div class="note">52w 高 102.95 (距 0.83%) · MA50 100.31 — 仍在高位区</div></div><div class="kpi"><div class="label">USD/CAD</div><div class="value">1.41975 / <span class="down"><span class="down">-0.14%</span></span></div><div class="note">52w 高 1.42989 (距 **0.71%**) / 低 1.3484 · MA50 1.40 — 换 CAD 的**最好**位置附近</div></div><div class="kpi"><div class="label">USD/RMB</div><div class="value">6.6804 / <span class="down"><span class="down">-0.17%</span></span></div><div class="note">52w 高 7.1909 / 低 **6.6802** (距 **0.003%**) · MA50 6.72 — 换 RMB 的**最差**位置</div></div></div>
+<p><strong>USD/CNY 今天实际上就坐在 52 周最低点上 (6.6804 vs 低点 6.6802, 差 0.02 分)</strong> —— 人民币对美元处于一年最强。换汇判断因此是明确分裂的, 和前几份报告同向但程度更极端:</p>
+<ul>
+<li><strong>USD → CAD: 位置好.</strong> 距 52w 高仅 0.71%, 加元处于一年最弱附近。若有换 CAD 的需求, 当前是过去一年里最有利的 1% 区间内。</li>
+<li><strong>USD → RMB: 位置最差.</strong> 处于 52w 低点, 这是过去一年换人民币最贵的一天。无紧急需求则等。</li>
+<li>DXY <span class="down">-0.44%</span> 且长端 -10bp, 是美元走弱的起点形状。若长端下行延续, 两个方向的位置都会变差 (换 CAD 的窗口会关), 这对有 CAD 需求的一侧是时间压力。</li>
+</ul>
+<h3>Morning headlines</h3>
+<ul>
+<li>[20:38] <strong>九月 PPI 环比 <span class="up">+1.3%</span> / 同比 <span class="up">+6.3%</span>, 零售销售跳升, 失业申领保持稳健</strong> — BLS / Yahoo. 2022 年 12 月以来最大年度涨幅; 核心 <span class="up">+0.5%</span>/<span class="up">+5.0%</span>。加息押注上行而长端反向下行 10bp (触及: 全书)</li>
+<li>[20:08] <strong>台积电第六个连续纪录利润季度, 营收同比 <span class="up">+41%</span>, HPC 占营收 68% — 股价仍跌 3%</strong> — Yahoo. 需求侧给出了无可争议的答案, 市场卖的不是需求 (触及: TSM NVDA AMD INTC AVGO MRVL)</li>
+<li>[20:34] <strong>Gartner: 多数 neocloud 到本十年结束前将失去独立性</strong> — Gartner / 247wallst. IREN <span class="down">-5%</span> / CoreWeave <span class="down">-5%</span> / Nebius <span class="down">-4%</span>; 这是 10/14 CoreWeave 债券收益率故事的第一个<strong>具名第三方</strong>升级 (触及: GEV SPCX NVDA)</li>
+<li>[20:44] <strong>数据中心股因融资成本受审视而下挫: Cipher Digital <span class="down">-9%</span>, Applied Digital <span class="down">-6%</span></strong> — Yahoo. 同一信用通道的第二组证据 (触及: GEV)</li>
+<li>[20:38] <strong>巴克莱将 Dell 和 HPE 同时下调至 Hold; Dell <span class="down">-8%</span>, HPE <span class="down">-4%</span>, Super Micro <span class="down">-5%</span></strong> — Barclays. 理由不是需求崩塌, 而是「供应链里一股安静的力量一直在虚增服务器营收」—— 即内存涨价计入营收但不带毛利 (触及: MU SNDK DRAM SKHY)</li>
+<li>[20:28] <strong>Counterpoint: 第三季度全球智能手机出货同比 <span class="down">-20%</span>, 2012 年以来最弱的第三季度, 直接归因于 DRAM/NAND 价格飙升</strong> — Counterpoint Research. 这是内存涨价引发需求破坏的第一个硬单位数据 (触及: MU SNDK DRAM SKHY 005930.KS 000660.KS)</li>
+<li>[17:19] <strong>日经隔夜暴跌近 5%, 韩国 KOSPI 跌得更狠, 而美股盘前几乎无反应</strong> — Yahoo. 存储崩盘第四日升级为全亚洲市场事件 (触及: 000660.KS 005930.KS SKHY DRAM)</li>
+<li>[22:56] <strong>GE Vernova 与 Venture Global 签署最高 $172 亿电力协议 — 最多 16 台 720MW 燃气电力岛 + 变压器, 可支撑 10GW</strong> — Yahoo. 当日 GEV 仍跌 3.02%; 报道明确提示「头条数字大于确定承诺额」(触及: GEV)</li>
+<li>[21:11 / 22:35] <strong>乌克兰官员称 Starlink 军用连接被突然降速, 干扰无人机与防空; Musk 回应称该产品是 Starshield 且由美国政府控制</strong> — Yahoo Finance. SPCX 的客户/主权风险 (触及: SPCX SSPC)</li>
+<li>[20:06] <strong>Rocket Lab 暴跌 11% — Neutron 首飞推迟到 2027; SpaceX 与 AST SpaceMobile 同步回落</strong> — Yahoo (触及: SPCX)</li>
+<li>[22:53] <strong>贝莱德 CEO Larry Fink: 若美国数据中心建设停摆将把经济推入衰退</strong> — Yahoo. 同时提到国债从 2000 年的 $8 万亿升至 $40 万亿 (触及: 全 AI capex)</li>
+<li>[14:27] <strong>Michael Burry: 「痛苦交易」可以持续很久, Mag 7 的弱势可能加深「红色十月」</strong> — Yahoo. 点名 2000 年科技泡沫类比与标普失败突破 (触及: 全书)</li>
+<li>[23:55] <strong>Moderna <span class="up">+6%</span>, 资金从科技交易轮出流入医疗</strong> — Yahoo. 轮动的接收端 (触及: 无持仓, 但是今天轮动叙事的证据)</li>
+</ul>
+<h3>政策 / 地缘快扫</h3>
+<div class="callout warn"><p><strong>九月 PPI <span class="up">+6.3%</span> 同比 (四年最大) + 零售销售跳升 + 失业申领稳健</strong> — 触及: 全书。三项数据同向说明经济不弱而价格在涨, 这是加息路径最不利的组合。但 10/28 FOMC 前再无同级数据, 判别点落在 FOMC 本身。</p></div>
+<div class="callout warn"><p><strong>乌克兰指控 Starlink 军用连接被降速</strong> — 触及: SPCX / SSPC。Musk 的回应是「该产品是 Starshield, 由美国政府控制」—— 这个回应把责任推给政府, 但同时也暴露了 SPCX 的主权客户集中度。Starshield 合同在 12/15 前后有续约窗口。</p></div>
+<ul>
+<li><strong>Fed</strong>: 无官方发言; 市场从 PPI 自行推高加息押注, 但长端反向。10/28 FOMC 是唯一裁决点。</li>
+<li><strong>美伊</strong>: 无新事件, 但油价继续抬升 (WTI $96.58, 30d <span class="up">+6.12%</span>)。溢价未消退, 已通过 PPI 能源项 <span class="up">+10.8%</span> 进入通胀数据。</li>
+<li><strong>中国</strong>: KWEB <span class="up">+0.01%</span> 持平, 30d <span class="down">-4.62%</span>。无新出口管制/关税事件。CXMT 相关消息第四日仍无任何官方技术细节披露 (见 DRAM tab)。</li>
+<li><strong>韩国</strong>: KOSPI 领跌全亚洲, SK Hynix <span class="down">-11.06%</span> / 三星 <span class="down">-9.48%</span>, 两者量比均超 1.9x。</li>
+<li><strong>EU</strong>: 无新监管事件。</li>
+<li><strong>军工 / 五角大楼</strong>: ITA <span class="up">+0.45%</span> 但 30d <span class="down">-8.05%</span>; Starshield 争议是本周唯一国防相关增量。</li>
+</ul>
+<h3>Macro → 持仓交叉引用</h3>
+<table class="compare"><thead><tr><th>Signal</th><th>1D move</th><th>Touches</th></tr></thead><tbody><tr><td>PPI <span class="up"><span class="up">+1.3%</span></span>/<span class="up"><span class="up">+6.3%</span></span> (能源 <span class="up"><span class="up">+10.8%</span></span>)</td><td>长端 -10bp, 前端平</td><td>全书 — 折现率今天是顺风, 跌必须由风险溢价解释</td></tr><tr><td>AI 融资可持续性 (Gartner + Saxo + Barclays)</td><td>TSM -2.55 / INTC -4.14 / GEV -3.02</td><td>TSM INTC AMD MRVL AVGO NVDA GEV SPCX</td></tr><tr><td>内存涨价引发需求破坏 (手机出货 <span class="down"><span class="down">-20%</span></span>)</td><td>韩国本线 -11.06 / -9.48</td><td>MU SNDK DRAM SKHY 005930.KS 000660.KS</td></tr><tr><td>伊朗地缘溢价 (WTI <span class="up"><span class="up">+1.57%</span></span>)</td><td>SU +1.00 / CNQ +0.94 / HXE.TO +0.80</td><td>SU CVX CNQ HXE.TO — 且是 PPI 能源项的来源</td></tr><tr><td>长端 -10bp 的轮动受益</td><td>DIA +0.86 / IWM +0.74</td><td>无直接持仓; 是「轮动非普跌」的证据</td></tr><tr><td>Starlink 主权风险 + Rocket Lab 延期</td><td>SPCX -3.59 / SSPC +7.42</td><td>SPCX SSPC</td></tr></tbody></table></div><div class="tab-panel" data-tab-for="tabs1-1"><div class="callout danger"><p>🚨 <strong>NOK $9.35 — 距 thesis_break $9.00 仅 <span class="up">+3.9%</span> 缓冲, 全书最近的风控线。</strong> 10/22 财报 (7 天后) 决定这条线被不被触发。NOK 今日仅 <span class="down">-0.53%</span>、量比 0.75x, 没有新增压力, 但 5d <span class="down">-7.79%</span> / 30d <span class="down">-4.98%</span> 的斜率意味着不需要坏消息也会漂到线上。</p></div>
+<div class="callout warn"><p>⏰ <strong>SNDK 两条线同时逼近.</strong> 价格 $1,345.77 距 thesis_break $1,200 仅 <strong><span class="up">+12.1%</span></strong> 缓冲 (今日 <span class="down">-4.10%</span>, 5d <strong><span class="down">-16.38%</span></strong>), 而 10/29 就是 earnings_watchlist 的评分日 (<code>status: pending</code>, 评分窗口 10/22 打开, 7 天后)。要打分的 claim 是「NAND 周期股 → 结构性现金牛: FY27 $10.3-10.8B 营收 / $44-46 EPS / 84.6% 峰值毛利率不快速回落」。今天的手机出货 <span class="down">-20%</span> 数据是对这个 claim 的<strong>直接逆风</strong>, 应在评分前读进 Tier 1 门槛。</p></div>
+<div class="callout warn"><p>⚠️ <strong>SPCX <code>triggers.yaml::thesis_break_price</code> 仍为 <code>null</code> — 这是连续第五份报告记录同一个缺口。</strong> lockup 12/09 剩 <strong>55 天</strong>; 今日 <span class="down">-3.59%</span>, 价格 $146.70 已跌破 MA50 $147.48, 距 52w 高 $225.64 已 <span class="down">-35.0%</span>。在一个有具名负面催化剂 (乌克兰 Starlink 争议) 的日子里, 全书唯一没有预设风控线的标的也是今天跌幅第四大的标的。</p></div>
+<h3>🔥 重点 (6 focus + 3 auto-promoted movers)</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">000660.KS (SK Hynix 本线) [mover]</div><div class="value">₩1,262,000 / **<span class="down"><span class="down">-11.06%</span></span>**</div><div class="note">🔥 量比 1.96x · 5d <span class="down"><span class="down">-26.76%</span></span> · 30d <span class="down"><span class="down">-23.65%</span></span> — 本轮第一次真正的本土投降</div></div><div class="kpi"><div class="label">005930.KS (三星电子) [mover]</div><div class="value">₩210,000 / **<span class="down"><span class="down">-9.48%</span></span>**</div><div class="note">🔥 量比 2.06x (全场最高) · 5d <span class="down"><span class="down">-21.79%</span></span> · 30d <span class="down"><span class="down">-18.29%</span></span></div></div><div class="kpi"><div class="label">SKHY (SK Hynix ADS)</div><div class="value">$143.54 / <span class="down"><span class="down">-2.72%</span></span></div><div class="note">🔥 量比 1.21x · 5d <span class="down"><span class="down">-15.81%</span></span> — 只跌了本线的四分之一, 溢价爆到 <span class="up"><span class="up">+52.6%</span></span> (见 DRAM tab)</div></div><div class="kpi"><div class="label">DRAM (ETF)</div><div class="value">$48.54 / <span class="down"><span class="down">-3.18%</span></span></div><div class="note">🔥 量比 1.55x · 5d <span class="down"><span class="down">-14.73%</span></span> · 30d <span class="down"><span class="down">-13.64%</span></span> · PE 9.84</div></div><div class="kpi"><div class="label">MU</div><div class="value">$911.73 / **<span class="down"><span class="down">-0.26%</span></span>**</div><div class="note">✅ 量比 1.00x · 5d <span class="down"><span class="down">-11.97%</span></span> · 30d <span class="down"><span class="down">-4.67%</span></span> — 全场最大的相对强度异常</div></div><div class="kpi"><div class="label">SNDK</div><div class="value">$1,345.77 / <span class="down"><span class="down">-4.10%</span></span></div><div class="note">⚠ 5d <span class="down"><span class="down">-16.38%</span></span> · 距 thesis_break <span class="up"><span class="up">+12.1%</span></span> · 10/29 评分日</div></div><div class="kpi"><div class="label">INTC</div><div class="value">$94.06 / **<span class="down"><span class="down">-4.14%</span></span>**</div><div class="note">⚠ 量比 0.84x (半量) · 5d <span class="down"><span class="down">-12.16%</span></span> · 但 30d 仍 **<span class="up"><span class="up">+4.45%</span></span>** · 距 thesis_break $75 <span class="up"><span class="up">+25.4%</span></span></div></div><div class="kpi"><div class="label">TSLA</div><div class="value">$360.42 / <span class="down"><span class="down">-1.84%</span></span></div><div class="note">✅ 量比 **0.47x** · 5d <span class="down"><span class="down">-3.89%</span></span> · 30d <span class="up"><span class="up">+0.96%</span></span> · PE 340x · 10/21 财报 (6天)</div></div><div class="kpi"><div class="label">SPCX</div><div class="value">$146.70 / <span class="down"><span class="down">-3.59%</span></span></div><div class="note">⚠ 量比 0.76x · 跌破 MA50 $147.48 · thesis_break 未设</div></div><div class="kpi"><div class="label">TSM [mover]</div><div class="value">$419.04 / <span class="down"><span class="down">-2.55%</span></span></div><div class="note">🔥 量比 1.52x · 财报日 — 纪录季度 + 营收 <span class="up"><span class="up">+41%</span></span> 仍跌</div></div></div>
+<p><strong>MU 是今天全书最该解释的一行 —— 但要先把时间窗口分清, 否则会得出错误结论.</strong> 今天 MU 只跌 <strong>0.26%</strong> (量比 1.00x), 而 SK Hynix 本线 <span class="down">-11.06%</span>、三星 <span class="down">-9.48%</span>、SNDK <span class="down">-4.10%</span>、DRAM ETF <span class="down">-3.18%</span>。30 天口径的差距同样极端: MU <span class="down">-4.67%</span> vs SK Hynix <span class="down">-23.65%</span> / 三星 <span class="down">-18.29%</span> / SNDK <span class="down">-13.55%</span> / DRAM ETF <span class="down">-13.64%</span>。</p>
+<p><strong>但 5 天口径不支持「MU 脱钩」这个说法: MU 5d <span class="down">-11.97%</span> vs DRAM <span class="down">-14.73%</span> / SKHY <span class="down">-15.81%</span> / SNDK <span class="down">-16.38%</span> —— MU 完整参与了本周的下跌, 只差 2.8-4.4pp。</strong> 所以真实的事实是: MU 在本周跌得和同组一样多, 只是<strong>今天</strong>没跌。把它读成「MU 质量更高所以抗跌」会在 5d 数据上立刻被推翻。完整的候选解释与证伪方式写在 DRAM/HBM tab。</p>
+<p><strong>INTC 的分裂同样值得记下.</strong> 今日 <span class="down">-4.14%</span> 是全书 (剔除韩国本线) 最大单日跌幅, 但 30d 仍是 <strong><span class="up">+4.45%</span></strong> —— 在一个存储/半导体全组 30d 两位数负收益的月份里, INTC 是半导体里唯一 30d 正收益的名字。今天跌的是「AI 融资」叙事下的 beta, 不是 foundry 论点本身。10/29 财报 (指引 $15.8-16.8B) 才是论点的裁决点。</p>
+<h3>常规持仓 (28 只, 按今日跌幅排序)</h3>
+<table>
+<thead>
+<tr>
+<th>Ticker</th>
+<th>Price</th>
+<th>1D%</th>
+<th>5D%</th>
+<th>30D%</th>
+<th>Vol</th>
+<th>PE</th>
+<th>Signal</th>
+<th>Next catalyst</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AMD</td>
+<td>$548.45</td>
+<td>-3.92</td>
+<td>-11.64</td>
+<td><strong>+20.00</strong></td>
+<td>0.83</td>
+<td>148.2</td>
+<td>⚠</td>
+<td>11/03 财报</td>
+</tr>
+<tr>
+<td>MRVL</td>
+<td>$236.81</td>
+<td>-3.45</td>
+<td>-13.76</td>
+<td>+14.71</td>
+<td>0.78</td>
+<td>75.2</td>
+<td>⚠</td>
+<td>12/01 财报</td>
+</tr>
+<tr>
+<td>HUMN</td>
+<td>$25.90</td>
+<td>-3.19</td>
+<td>-7.75</td>
+<td>-11.62</td>
+<td>0.95</td>
+<td>26.2</td>
+<td>⚠</td>
+<td>—</td>
+</tr>
+<tr>
+<td>GEV</td>
+<td>$913.34</td>
+<td>-3.02</td>
+<td>-8.61</td>
+<td>-0.93</td>
+<td>1.23</td>
+<td>27.9</td>
+<td>⚠</td>
+<td>10/28 财报</td>
+</tr>
+<tr>
+<td>CROB</td>
+<td>$18.22</td>
+<td>-2.49</td>
+<td>-8.83</td>
+<td>-17.85</td>
+<td>0.21</td>
+<td>n/a</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>KOID</td>
+<td>$32.62</td>
+<td>-2.20</td>
+<td>-6.68</td>
+<td>-7.99</td>
+<td>1.48</td>
+<td>32.3</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>SMH</td>
+<td>$552.78</td>
+<td>-2.12</td>
+<td>-8.97</td>
+<td>+0.42</td>
+<td>1.36</td>
+<td>29.5</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>AVGO</td>
+<td>$339.13</td>
+<td>-2.06</td>
+<td>-5.83</td>
+<td>-7.49</td>
+<td>0.56</td>
+<td>44.7</td>
+<td>✅</td>
+<td>12/09 财报</td>
+</tr>
+<tr>
+<td>NVDA</td>
+<td>$217.38</td>
+<td>-1.77</td>
+<td>-5.68</td>
+<td>-3.02</td>
+<td>0.72</td>
+<td>28.4</td>
+<td>✅</td>
+<td>11/17 财报</td>
+</tr>
+<tr>
+<td>SNOW</td>
+<td>$330.56</td>
+<td>-1.35</td>
+<td>-3.74</td>
+<td>+8.08</td>
+<td>0.75</td>
+<td>n/a</td>
+<td>✅</td>
+<td>12/02 财报</td>
+</tr>
+<tr>
+<td>CVX</td>
+<td>$219.63</td>
+<td>-1.09</td>
+<td><strong>+3.82</strong></td>
+<td>+3.71</td>
+<td>0.34</td>
+<td>21.1</td>
+<td>✅</td>
+<td>10/30 财报</td>
+</tr>
+<tr>
+<td>PLTR</td>
+<td>$199.57</td>
+<td>-0.70</td>
+<td>+0.40</td>
+<td>+17.77</td>
+<td>0.64</td>
+<td>172.0</td>
+<td>✅</td>
+<td>11/02 财报</td>
+</tr>
+<tr>
+<td>QQQ</td>
+<td>$724.46</td>
+<td>-0.62</td>
+<td>-3.09</td>
+<td>+2.25</td>
+<td>0.92</td>
+<td>27.7</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>NOK</td>
+<td>$9.35</td>
+<td>-0.53</td>
+<td>-7.79</td>
+<td>-4.98</td>
+<td>0.75</td>
+<td>66.8</td>
+<td>🚨</td>
+<td><strong>10/22 财报</strong></td>
+</tr>
+<tr>
+<td>AMZN</td>
+<td>$253.43</td>
+<td>-0.26</td>
+<td>-0.25</td>
+<td>-0.61</td>
+<td>0.54</td>
+<td>20.8</td>
+<td>✅</td>
+<td>10/29 财报</td>
+</tr>
+<tr>
+<td>META</td>
+<td>$736.26</td>
+<td>-0.17</td>
+<td>+2.13</td>
+<td><strong>+24.29</strong></td>
+<td>0.36</td>
+<td>28.7</td>
+<td>✅</td>
+<td>10/21 财报</td>
+</tr>
+<tr>
+<td>^GSPC</td>
+<td>7,728.37</td>
+<td>+0.12</td>
+<td>-0.48</td>
+<td>+0.81</td>
+<td>0.32</td>
+<td>n/a</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>GOOG</td>
+<td>$344.80</td>
+<td>+0.33</td>
+<td>-0.02</td>
+<td>+3.37</td>
+<td>0.39</td>
+<td>17.6</td>
+<td>✅</td>
+<td>10/28 财报</td>
+</tr>
+<tr>
+<td>AAPL</td>
+<td>$344.12</td>
+<td>+0.34</td>
+<td>+1.09</td>
+<td>+5.90</td>
+<td>0.50</td>
+<td>39.3</td>
+<td>✅</td>
+<td>11/02 财报</td>
+</tr>
+<tr>
+<td>BTC-USD</td>
+<td>$82,171</td>
+<td>+0.75</td>
+<td>-0.89</td>
+<td>+8.67</td>
+<td>1.39</td>
+<td>n/a</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>HXE.TO</td>
+<td>C$67.99</td>
+<td>+0.80</td>
+<td><strong>+7.36</strong></td>
+<td>+8.59</td>
+<td>0.61</td>
+<td>15.5</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>^DJI</td>
+<td>52,061.61</td>
+<td>+0.85</td>
+<td>+1.62</td>
+<td>-1.89</td>
+<td>0.62</td>
+<td>n/a</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>CNQ</td>
+<td>$52.30</td>
+<td>+0.94</td>
+<td><strong>+6.64</strong></td>
+<td>+1.86</td>
+<td>0.33</td>
+<td>12.9</td>
+<td>✅</td>
+<td>11/05 财报</td>
+</tr>
+<tr>
+<td>SU</td>
+<td>$76.65</td>
+<td>+1.00</td>
+<td><strong>+8.09</strong></td>
+<td>+12.80</td>
+<td>0.33</td>
+<td>14.0</td>
+<td>✅</td>
+<td>11/03 财报</td>
+</tr>
+<tr>
+<td>MSFT</td>
+<td>$539.44</td>
+<td><strong>+1.08</strong></td>
+<td>+3.22</td>
+<td>+8.58</td>
+<td>0.54</td>
+<td>30.4</td>
+<td>✅</td>
+<td>10/28 财报</td>
+</tr>
+<tr>
+<td>SQQQ</td>
+<td>$36.67</td>
+<td>+1.86</td>
+<td>+9.89</td>
+<td>-6.34</td>
+<td>0.89</td>
+<td>n/a</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>IBM</td>
+<td>$232.81</td>
+<td><strong>+2.16</strong></td>
+<td>+2.74</td>
+<td>+0.48</td>
+<td>0.42</td>
+<td>21.0</td>
+<td>✅</td>
+<td>10/21 财报</td>
+</tr>
+<tr>
+<td>SSPC</td>
+<td>$8.83</td>
+<td><strong>+7.42</strong></td>
+<td>+18.52</td>
+<td>-17.09</td>
+<td>0.92</td>
+<td>n/a</td>
+<td>🔥</td>
+<td>— (2x inverse SPCX)</td>
+</tr>
+</tbody>
+</table>
+<h3>横截面否证: 「高倍数股被利率打击」今天第三次不成立</h3>
+<p>和 10/14 一样, 今天的跌幅和估值倍数<strong>没有关系</strong>, 而且今天的证据更强 —— 因为今天折现率是<strong>顺风</strong>:</p>
+<table class="compare"><thead><tr><th>标的</th><th>PE</th><th>今日</th><th>30d</th><th>读数</th></tr></thead><tbody><tr><td>AMD</td><td>148.2x</td><td><span class="down"><span class="down">-3.92%</span></span></td><td>**<span class="up"><span class="up">+20.00%</span></span>**</td><td>高倍数, 大跌, 但 30d 是全书第二强</td></tr><tr><td>TSLA</td><td>340.0x</td><td><span class="down"><span class="down">-1.84%</span></span></td><td><span class="up"><span class="up">+0.96%</span></span></td><td>全书最高倍数, 跌幅不到 AMD 的一半, 量比 0.47x</td></tr><tr><td>PLTR</td><td>172.0x</td><td><span class="down"><span class="down">-0.70%</span></span></td><td><span class="up"><span class="up">+17.77%</span></span></td><td>第二高倍数, 几乎不跌</td></tr><tr><td>MRVL</td><td>75.2x</td><td><span class="down"><span class="down">-3.45%</span></span></td><td><span class="up"><span class="up">+14.71%</span></span></td><td>中等倍数, 大跌</td></tr><tr><td>DRAM</td><td>9.8x</td><td><span class="down"><span class="down">-3.18%</span></span></td><td><span class="down"><span class="down">-13.64%</span></span></td><td>**全书最低倍数之一, 跌幅与 MRVL/AMD 同级**</td></tr><tr><td>SKHY</td><td>9.7x</td><td><span class="down"><span class="down">-2.72%</span></span></td><td><span class="down"><span class="down">-13.00%</span></span></td><td>最低倍数, 照样跌</td></tr><tr><td>MU</td><td>12.8x</td><td><span class="down"><span class="down">-0.26%</span></span></td><td><span class="down"><span class="down">-4.67%</span></span></td><td>低倍数, 几乎不跌</td></tr></tbody></table>
+<p>PE 从 9.7x 到 340x 跨 35 倍, 跌幅区间只有 <span class="down">-0.26%</span> 到 <span class="down">-3.92%</span>, 且方向与倍数无关。<strong>真正把今天的跌幅排序出来的是「是否在 AI 供给/融资链上」</strong>: AMD / MRVL / INTC / TSM / AVGO / NVDA / GEV 全跌, 而 MSFT / GOOG / AAPL / META / AMZN (开支方) 全在 ±1.1% 内且四个为正。这是 10/08 记录的「开支方 vs 供给方零重叠」结构被 10/14 的 META <span class="down">-3.27%</span> 打穿之后, 今天<strong>完整恢复</strong>。</p>
+<h3>阈值穿越 → deep-dive 候选</h3>
+<table>
+<thead>
+<tr>
+<th>Ticker</th>
+<th>触发条件</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>000660.KS</td>
+<td>1d ≥3% + 5d ≥10% + vol ≥1.5x</td>
+<td><span class="down">-11.06%</span> / <span class="down">-26.76%</span> / 1.96x — 三条全中</td>
+</tr>
+<tr>
+<td>005930.KS</td>
+<td>1d ≥3% + 5d ≥10% + vol ≥1.5x</td>
+<td><span class="down">-9.48%</span> / <span class="down">-21.79%</span> / 2.06x — 三条全中</td>
+</tr>
+<tr>
+<td>SNDK</td>
+<td>1d ≥3% + 5d ≥10%</td>
+<td><span class="down">-4.10%</span> / <span class="down">-16.38%</span></td>
+</tr>
+<tr>
+<td>INTC</td>
+<td>1d ≥3% + 5d ≥10%</td>
+<td><span class="down">-4.14%</span> / <span class="down">-12.16%</span></td>
+</tr>
+<tr>
+<td>AMD</td>
+<td>1d ≥3% + 5d ≥10%</td>
+<td><span class="down">-3.92%</span> / <span class="down">-11.64%</span></td>
+</tr>
+<tr>
+<td>MRVL</td>
+<td>1d ≥3% + 5d ≥10%</td>
+<td><span class="down">-3.45%</span> / <span class="down">-13.76%</span></td>
+</tr>
+<tr>
+<td>DRAM</td>
+<td>1d ≥3% + 5d ≥10% + vol ≥1.5x</td>
+<td><span class="down">-3.18%</span> / <span class="down">-14.73%</span> / 1.55x</td>
+</tr>
+<tr>
+<td>SKHY</td>
+<td>5d ≥10%</td>
+<td><span class="down">-2.72%</span> / <span class="down">-15.81%</span></td>
+</tr>
+<tr>
+<td>SPCX</td>
+<td>1d ≥3%</td>
+<td><span class="down">-3.59%</span></td>
+</tr>
+<tr>
+<td>GEV</td>
+<td>1d ≥3%</td>
+<td><span class="down">-3.02%</span></td>
+</tr>
+<tr>
+<td>TSM</td>
+<td>vol ≥1.5x (财报日)</td>
+<td><span class="down">-2.55%</span> / 1.52x</td>
+</tr>
+<tr>
+<td>SSPC</td>
+<td>1d ≥3% + 5d ≥10%</td>
+<td><span class="up">+7.42%</span> / <span class="up">+18.52%</span></td>
+</tr>
+</tbody>
+</table>
+<h3>风控线距离 (全部)</h3>
+<div class="meters"><div class="meter"><div class="name">NOK → $9.00</div><div class="track"><div class="fill low" style="width:0%"></div></div><div class="score">0/10</div><div class="note">🚨 缓冲 <span class="up">+3.9%</span> — 全书最近, 10/22 财报定胜负</div></div><div class="meter"><div class="name">SNDK → $1,200</div><div class="track"><div class="fill low" style="width:10%"></div></div><div class="score">1/10</div><div class="note">⚠ 缓冲 <span class="up">+12.1%</span>, 5d <span class="down">-16.38%</span> 的斜率在压它</div></div><div class="meter"><div class="name">SKHY → $115</div><div class="track"><div class="fill low" style="width:20%"></div></div><div class="score">2/10</div><div class="note">缓冲 <span class="up">+24.8%</span></div></div><div class="meter"><div class="name">INTC → $75</div><div class="track"><div class="fill low" style="width:20%"></div></div><div class="score">2/10</div><div class="note">缓冲 <span class="up">+25.4%</span></div></div><div class="meter"><div class="name">GEV → $700</div><div class="track"><div class="fill low" style="width:30%"></div></div><div class="score">3/10</div><div class="note">缓冲 <span class="up">+30.5%</span></div></div><div class="meter"><div class="name">MU → $650</div><div class="track"><div class="fill mid" style="width:40%"></div></div><div class="score">4/10</div><div class="note">缓冲 <span class="up">+40.3%</span></div></div><div class="meter"><div class="name">TSLA → $250</div><div class="track"><div class="fill mid" style="width:40%"></div></div><div class="score">4/10</div><div class="note">缓冲 <span class="up">+44.2%</span></div></div><div class="meter"><div class="name">TSM → $280</div><div class="track"><div class="fill mid" style="width:50%"></div></div><div class="score">5/10</div><div class="note">缓冲 <span class="up">+49.7%</span></div></div><div class="meter"><div class="name">SPCX → 未设</div><div class="track"><div class="fill low" style="width:0%"></div></div><div class="score">0/10</div><div class="note">⚠️ thesis_break_price = null, 连续第五份报告记录</div></div></div>
+<h3>Focus 名单维护建议</h3>
+<ul>
+<li><strong>建议加入 focus: GEV.</strong> 连续三个交易日 (10/13、10/14、10/15) 进入阈值穿越名单, 且 10/14 量比 1.65x 为当日全场最大、今日 1.23x 仍在放量; 10/28 财报在 14 天内。</li>
+<li><strong>建议加入 focus: SNDK.</strong> 风控线缓冲 12.1% 为全书第二近, 且 10/29 是 <code>status: pending</code> 的评分日。</li>
+<li><strong>建议移出 focus: TSLA.</strong> 量比 0.47x 为今日全场最低, 5d <span class="down">-3.89%</span> / 30d <span class="up">+0.96%</span> 无异动 —— 但 10/21 财报在 6 天内, 建议<strong>财报后</strong>再评估, 现在不动。</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs1-2"><div class="callout info"><p>未来 90 天 27 个事件, 其中 <strong>6 个在 7 天内</strong>。最密的一天是 <strong>10/28 — GOOG + MSFT 财报 (capex 指引) + GEV 财报 + FOMC 四重叠加</strong>; 紧接着 10/29 三重 (AMZN + INTC + SNDK 评分日)。<strong>今天起算的 14 天里, 本周所有悬而未决的判别问题全部免费得到答案</strong>: 10/21 TSLA+META+IBM / 10/22 NOK (风控线) / 10/26 SK Hynix 本线 (CXMT + HBM 倍数) / 10/27 SKHY ADS (溢价裁决) / 10/28 四重 / 10/29 三重。</p></div>
+<h3>🔥 7 天内 (6 个)</h3>
+<ul>
+<li><strong>2026-10-15 ✅ 已完成</strong> <code>earnings</code> <strong>TSM</strong> — Q3: 营收同比 <strong><span class="up">+41%</span></strong>, HPC 占 68%, 第六个连续纪录利润季度。<strong>10/08 报告设下的「AI capex 判别点」今天给出答案: 需求侧无可争议地强, 股价仍跌 2.55%。</strong> 这个结果的信息量在于它排除了「需求走弱」这一解释分支 —— 剩下的只能是融资/信用/估值通道。</li>
+<li><strong>2026-10-15 ✅ 已完成</strong> <code>macro</code> — <strong>九月 PPI</strong> 环比 <span class="up">+1.3%</span> / 同比 <span class="up">+6.3%</span> (四年最大)。timeline.yaml 里这条曾被标为「~估计日期」, 实际落在预估日, 且「油价传导的第一个生产端读数」这个预设描述被证实 (能源项 <span class="up">+10.8%</span> / 汽油 <span class="up">+20.3%</span>)。</li>
+<li><strong>2026-10-21 🔥 (6天)</strong> <code>earnings</code> <strong>TSLA</strong> — Q3 2026。关键: 中国降价是否换来销量 (销量平或降则毛利率白丢); FSD/Robotaxi 部署进度 — 340x trailing PE 的唯一支柱。今日量比 0.47x 为全场最低, 市场进入财报前没有押注。</li>
+<li><strong>2026-10-21 🔥 (6天)</strong> <code>earnings</code> <strong>META</strong> — 日期已按 yfinance 校正 (10/28 → 10/21)。META 30d <strong><span class="up">+24.29%</span></strong> 为全书最强, 进财报带着最高的预期负担。</li>
+<li><strong>2026-10-21 🔥 (6天)</strong> <code>earnings</code> <strong>IBM</strong> — 今日 <span class="up">+2.16%</span> 为全书最强单日涨幅, 量比仅 0.42x。</li>
+<li><strong>2026-10-22 🔥 (7天)</strong> <code>earnings</code> <strong>NOK</strong> — 🚨 <strong>风控线裁决日</strong>。价格距 thesis_break $9.00 仅 <span class="up">+3.9%</span>。这是 90 天内唯一一个「财报直接决定一条风控线是否被触发」的事件。</li>
+</ul>
+<h3>⚠ 8–14 天 (6 个)</h3>
+<ul>
+<li><strong>2026-10-26 ⚠ (11天)</strong> <code>earnings</code> <strong>000660.KS (SK Hynix 本线)</strong> — <strong>本周所有存储叙事的主裁决点</strong>。要回答两件在 9/21 就定义好、至今 25 天未被回答的事: (1) CXMT 的服务器 DRAM 是只量产标准 DDR5 (冲击商品 DRAM 价格) 还是做到 HBM (冲击 HBM 溢价); (2) HBM 份额第一的公司不可能在电话会上不被问到 CXMT。也是 MU 9/30 scorecard 降级后的新主判据 (HBM 倍数表述)。</li>
+<li><strong>2026-10-27 ⚠ (12天)</strong> <code>earnings</code> <strong>SKHY (ADS)</strong> — <strong>ADS 溢价 (<span class="up">+52.6%</span>) 的最终裁决窗口</strong>。财报日成交量放大, 任何解禁抛压会露出来。</li>
+<li><strong>2026-10-28 ⚠ (13天)</strong> <code>earnings</code> <strong>GEV</strong> — 今天刚拿下最高 $172 亿 Venture Global 订单却跌 3.02%; 财报要回答「头条数字 vs 确定承诺额」的差额究竟多大, 以及 Power 段毛利率。</li>
+<li><strong>2026-10-28 ⚠ (13天)</strong> <code>earnings</code> <strong>GOOG</strong> + <strong>MSFT</strong> — <strong>capex 指引</strong>。这是 10/08 设下的第二个判别点 (TSM 是第一个)。TSM 已证明需求强; 现在要看开支方是否同样确认。</li>
+<li><strong>2026-10-28 ⚠ (13天)</strong> <code>macro</code> — <strong>FOMC 决议</strong> (~估计日期; 2026 官方日程未核实)。连续两天超预期通胀数据之后的第一次会议 —— 但长端今天已经用 -10bp 投了反对票。<strong>这是今年剩余时间里最重要的单一事件: 四重叠加日。</strong></li>
+<li><strong>2026-10-29 ⚠ (14天)</strong> <code>earnings</code> <strong>AMZN</strong> + <strong>INTC</strong> + 🎯 <strong>SNDK (评分日)</strong> — AMZN: $2,200 亿 capex 开始交答案, 盯 AWS 营业利润率 (~39%); INTC: 指引 $15.8-16.8B, foundry 论点的裁决; SNDK: 🎯 评分「NAND 周期股 → 结构性现金牛」claim, 今天的手机出货 <span class="down">-20%</span> 是对它的直接逆风。</li>
+</ul>
+<h3>▢ 15–30 天 (6 个)</h3>
+<ul>
+<li>2026-10-30 <code>earnings</code> <strong>CVX</strong> — 今日 <span class="down">-1.09%</span> 与板块背离 (SU/CNQ/HXE.TO 全绿), 财报是个股因素的检验点</li>
+<li>2026-11-02 <code>earnings</code> <strong>AAPL</strong> — MU 9/30 scorecard 列的独立验证点之一 (内存成本进 BOM)</li>
+<li>2026-11-03 <code>earnings</code> <strong>AMD</strong> — 今日 <span class="down">-3.92%</span> 但 30d <span class="up">+20.00%</span>, 全书最大的「日内弱/月度强」分裂</li>
+<li>2026-11-03 <code>earnings</code> <strong>SPCX</strong> — FY27 自由现金流 -$67B 的融资需求是 8/27 预测反方核心; 今天的乌克兰争议 + Rocket Lab 延期给了新的输入</li>
+<li>2026-11-03 <code>earnings</code> <strong>SU</strong> — 贴 52w 高 (距 0.04%) 进财报</li>
+<li>2026-11-05 <code>earnings</code> <strong>CNQ</strong> — 贴 52w 高 (距 0.51%) 进财报</li>
+</ul>
+<h3>▢ 30+ 天 (7 个)</h3>
+<ul>
+<li>2026-11-17 <code>earnings</code> <strong>NVDA</strong></li>
+<li>2026-12-01 <code>earnings</code> <strong>MRVL</strong> · 2026-12-02 <code>earnings</code> <strong>SNOW</strong></li>
+<li>2026-12-09 <code>earnings</code> <strong>AVGO</strong> — AVGO 30d <span class="down">-7.49%</span>, 组内最差; 但 10/28 客户 capex 指引会提前六周给出需求侧答案</li>
+<li><strong>2026-12-09 <code>lockup</code> SPCX — Post-IPO 180 天解禁 (剩 55 天)</strong>。参照: 8/20 上一批解禁当日 <span class="down">-5.69%</span> 跌破 IPO 价。⚠️ 该标的 thesis_break_price 至今为 null。</li>
+<li>2026-12-15 <code>policy</code> — FCC 6GHz 频谱 / Starshield 合同续约窗口 (估计)。<strong>今天的乌克兰 Starlink 争议把这个窗口的重要性显著提高</strong> —— 若美国政府对 Starshield 的控制权成为政治议题, 续约条款会被重新谈。</li>
+<li>2026-12-23 <code>earnings</code> <strong>MU</strong> — 全书最远的财报。这意味着 MU 在接下来 69 天里没有自己的数字, 所有关于它的定价都要靠 SK Hynix (10/26) / 三星 (10/27) / SNDK (10/29) / AAPL (11/02) 的代理信息。<strong>MU 今天的相对强度 (<span class="down">-0.26%</span> vs 本线 <span class="down">-11%</span>) 因此特别难验证 —— 没有自己的数字来确认或否认。</strong></li>
+</ul>
+<h3>日历校正记录</h3>
+<ul>
+<li><code>timeline.yaml</code> 的 PPI 条目标注为「~估计日期」, 实际落在 10/15, 预估正确。</li>
+<li>SNDK 财报已按 yfinance 从 11/04 校正到 10/29 (记录于 state.yaml), 因此评分窗口已于 10/22 打开 —— 比原记日期提前 6 天。</li>
+<li>INTC 已按 yfinance 从 10/22 校正到 10/29。</li>
+<li>META 已按 yfinance 从 10/28 校正到 10/21 —— 使 10/28 从五重降为四重, 10/21 升为三重。</li>
+</ul></div><div class="tab-panel" data-tab-for="tabs1-3"><div class="callout warn"><p>财报前 6 天, 市场完全不押注: 量比 <strong>0.47x 为今日全书最低</strong>, 价格 <span class="down">-1.84%</span> 停在 MA50 $358.72 上方 1.7 美元处。但今晚有新一代 Roadster 在德州发布 (含飞行演示), 同时巴克莱分析师在公开回答客户关于 Tesla-SpaceX 合并的提问 —— 两个非财报事件挤在财报周, 任何一个都可能在 10/21 之前重置叙事。</p></div>
+<h3>今日数据</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">TSLA</div><div class="value">$360.42 / <span class="down"><span class="down">-1.84%</span></span></div><div class="note">5d <span class="down"><span class="down">-3.89%</span></span> · 30d <span class="up"><span class="up">+0.96%</span></span> · 量比 0.47x (全书最低) · PE 340.0x</div></div><div class="kpi"><div class="label">距 MA50 $358.72</div><div class="value"><span class="up"><span class="up">+0.47%</span></span></div><div class="note">几乎坐在 MA50 上 — 技术上的决策点</div></div><div class="kpi"><div class="label">距 52w 高 $498.83</div><div class="value"><span class="down"><span class="down">-27.7%</span></span></div><div class="note">距 thesis_break $250.00 缓冲 **<span class="up"><span class="up">+44.2%</span></span>**</div></div></div>
+<h3>Position vs thesis</h3>
+<ul>
+<li><strong>距 thesis_break: $250.00, 缓冲 <span class="up">+44.2%</span></strong> — 全书第二宽的风控缓冲, 无任何风控压力。</li>
+<li><strong>最近的 kill condition</strong>: 无触发。340x trailing PE 的估值风险不是风控线能捕捉的类型 —— 它是「倍数压缩」风险而非「价格崩塌」风险, thesis_break 对这一类暴露本质上不敏感。</li>
+<li><strong>今日的 re-read trigger: 无.</strong> <span class="down">-1.84%</span> 低于 3% 阈值, 量比 0.47x 远低于 1.5x, 不构成归因事件。</li>
+</ul>
+<h3>今日的故事</h3>
+<p><strong>今天 TSLA 的信息在成交量里, 不在价格里.</strong> 量比 0.47x 意味着实际成交不到 30 日均量的一半 —— 在距财报 6 天、且当晚有一个被推迟多年的产品发布会的情况下。对比全书: TSLA 是今天 38 个标的里量比最低的。这种「重大事件前夕的极低成交」通常有两种读法, 今天两种都站得住:</p>
+<ol>
+<li><strong>信息真空下的观望.</strong> 10/21 要同时回答两件事 (中国降价是否换来销量 / FSD-Robotaxi 部署进度), 在那之前任何方向的仓位都是赌。</li>
+<li><strong>已经出清.</strong> 30d <span class="up">+0.96%</span>、5d <span class="down">-3.89%</span>, 既没涨也没跌, 说明没有新资金进来也没有存量资金急着走。</li>
+</ol>
+<p><strong>横截面上 TSLA 今天是一个重要的否证点.</strong> 340x trailing PE 是全书最高倍数, 而今天是一个「高倍数被利率打击」的叙事日 (PPI 超预期, 加息押注上行)。如果那个叙事成立, TSLA 应该是最大跌幅。实际结果: TSLA <span class="down">-1.84%</span>, 而 PE 9.7x 的 SKHY 跌 <span class="down">-2.72%</span>、PE 9.8x 的 DRAM 跌 <span class="down">-3.18%</span>、PE 148x 的 AMD 跌 <span class="down">-3.92%</span>。<strong>跌幅与倍数无关是今天的横截面事实, 这是本周第三次记录同一个否证</strong> (10/14 也记了一次, 当时是 TSLA 168x fwd 只跌 2.15% vs MRVL 33.7x 跌 8.73%)。</p>
+<p><strong>今晚的 Roadster 发布是一个非对称事件.</strong> 被推迟多年的产品 + 飞行演示 (reported) 这个组合, 对一个靠「未来光学」支撑 340x 倍数的标的, 向上的叙事弹性大于向下 —— 但它也是一个在 10/21 财报数字之前消耗注意力的事件。要分清: Roadster 影响叙事, 财报影响数字。两者在 6 天内先后到达, 顺序上叙事先行。</p>
+<p><strong>Tesla-SpaceX 合并传闻今天升级了一个层级</strong>: 不再只是社交媒体层面, 而是巴克莱分析师 Dan Levy 在公开回答客户提问, 口径是「可能数周内」。这同时是 SpaceX tab 的材料 (见下)。对 TSLA 的意义: 若合并发生, TSLA 的估值框架会从「汽车+FSD」变成「汽车+FSD+航天」, 340x 的分母定义被改写。这不是一个可以用现有 thesis 评估的情形 —— 若传闻具体化, 需要重写 thesis 而不是调整目标价。</p>
+<h3>下次关键 catalyst</h3>
+<div class="timeline"><div class="tl-item"><span class="when">2026-10-15 (今晚) 🔥</span> — <span class="what">新一代 Roadster 德州发布 + 飞行演示 — 叙事事件, 不是数字事件</span></div><div class="tl-item"><span class="when">2026-10-21 🔥 (6天)</span> — <span class="what">Q3 2026 财报 — 中国销量 vs 降价代价 / FSD-Robotaxi 进度; 340x PE 的唯一支柱</span></div><div class="tl-item"><span class="when">2026-12 ▢</span> — <span class="what">Tesla-SpaceX 合并传闻的具体化或消散 (巴克莱口径「数周内」, 无官方确认)</span></div></div>
+<h3>Verdict</h3>
+<div class="verdict watch">财报前 6 天 + 量比全书最低 = 市场自己选择不定价; 没有理由在信息到达前抢跑。</div>
+<div class="callout info"><p><strong>Don't</strong>: 不要把今晚 Roadster 发布会的任何反应当成财报预演 —— 产品发布影响叙事, 10/21 的销量和毛利率数字才影响估值的分母, 两者在这个标的上历史相关性很弱。
+<strong>If acting</strong>: 解锁条件是 10/21 的两个数字同时出来 —— (1) 中国 Q3 销量是否同比正增长 (若平或降, 则降价换销量失败, 毛利率白丢); (2) FSD/Robotaxi 的城市数与里程是否给出可验证的爬坡曲线。只有一个成立不够。</p></div></div><div class="tab-panel" data-tab-for="tabs1-4"><div class="callout danger"><p>今天 SPCX 有三条独立的负面输入和两条正面输入同日到达, 收 <span class="down">-3.59%</span> 并<strong>跌破 MA50 $147.48</strong>: 乌克兰指控 Starlink 军用连接被降速 / Rocket Lab Neutron 推迟到 2027 拖累整个航天板块 / AI capex 信用通道; 对冲面是 United Airlines Starlink 装机达 635 架 + 巴克莱「Tesla-SpaceX 合并可能数周内」。⚠️ <strong>而这个标的的 <code>thesis_break_price</code> 至今为 <code>null</code> —— 连续第五份报告记录同一个缺口, lockup 12/09 剩 55 天。</strong></p></div>
+<h3>今日数据</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">SPCX</div><div class="value">$146.70 / <span class="down"><span class="down">-3.59%</span></span></div><div class="note">5d <span class="down"><span class="down">-8.64%</span></span> · 30d <span class="up"><span class="up">+4.26%</span></span> · 量比 0.76x (半量) · PE n/a</div></div><div class="kpi"><div class="label">距 MA50 $147.48</div><div class="value">**<span class="down"><span class="down">-0.53%</span></span>**</div><div class="note">今天跌破 MA50 — 本轮第一次</div></div><div class="kpi"><div class="label">距 52w 高 $225.64</div><div class="value">**<span class="down"><span class="down">-35.0%</span></span>**</div><div class="note">距 52w 低 n/a · thesis_break **未设**</div></div><div class="kpi"><div class="label">SSPC (2x 反向)</div><div class="value">$8.83 / **<span class="up"><span class="up">+7.42%</span></span>**</div><div class="note">5d <span class="up"><span class="up">+18.52%</span></span> · 30d <span class="down"><span class="down">-17.09%</span></span> · 量比 0.92x — 反向 ETF 的 5d 涨幅是本周最干净的方向确认</div></div><div class="kpi"><div class="label">lockup 到期</div><div class="value">2026-12-09</div><div class="note">剩 **55 天**; 参照 8/20 上批解禁当日 <span class="down"><span class="down">-5.69%</span></span> 跌破 IPO 价</div></div></div>
+<h3>今日的故事</h3>
+<p><strong>今天是 SPCX 第一次出现「主权客户风险」这个类别的具名负面新闻, 这和过去的所有负面输入都不同质.</strong> 乌克兰官员称 Starlink 军用连接被突然降速, 干扰了无人机作业与防空; Musk 的回应是「该产品是 Starshield, 由美国政府控制」。</p>
+<p>这个回应值得拆开看, 因为它在推卸责任的同时暴露了论点结构:
+- <strong>向上的读法</strong>: 若确实由美国政府控制, 则 SpaceX 不承担单方面断供的声誉风险, 争议是美-乌政治问题。
+- <strong>向下的读法</strong>: 它确认了 Starshield 收入高度依赖单一主权客户, 且该客户可以单方面决定服务向谁开/关。一个收入线的开关握在客户手里, 而该客户的决策逻辑是政治而非商业 —— 这类收入的质量低于同等规模的商业收入。
+- <strong>时间上的放大器</strong>: <code>timeline.yaml</code> 里 12/15 前后是 Starshield 合同续约窗口。<strong>今天这条新闻把那个窗口从一个日程项变成了一个有政治含量的谈判。</strong> 若 Starshield 的控制权成为美国国内政治议题, 续约条款会被重新谈, 而不是机械续签。</p>
+<p><strong>第二条输入是板块性的</strong>: Rocket Lab 因生产环节发现制造缺陷, 把 Neutron 首飞从 2026 推到 2027, 当日 <span class="down">-11%</span>; SPCX 和 AST SpaceMobile 同步回落。这是纯 beta 传染 —— Rocket Lab 的延期对 SpaceX 竞争上是<strong>利好</strong>(主要竞争对手的中型运载火箭晚一年), 市场仍把它当作「航天板块执行风险」定价。这类错误定价在归因上应标记为 sector_rotation 而非公司基本面。</p>
+<p><strong>第三条是 AI capex 信用通道的延续.</strong> 10/07 报告已把 SPCX 的论点改写为「从现金流+期权变成杠杆 AI capex 标的」(寻求 $400 亿融资买 NVDA 芯片)。今天 Gartner 的 neocloud 报告 + 数据中心融资成本审视 (Cipher <span class="down">-9%</span> / Applied Digital <span class="down">-6%</span>) 正是打在这个新论点上。11/03 财报要回答的 FY27 自由现金流 -$67B 的融资需求, 在一个信用通道被质疑的环境里成本更高。</p>
+<p><strong>对冲面有两条, 都是真实的但量级不同</strong>: United Airlines 的 Starlink 装机达 635 架、覆盖近半机队、2027 年底完成全机队 —— 这是商业收入侧的实质进展, 且是继 American Airlines 之后的第二家大型航司, 质量高于主权收入。巴克莱的合并传闻则是纯期权, 不可定价。</p>
+<h3>Inter-member dynamics</h3>
+<table class="compare"><thead><tr><th>Member</th><th>1D%</th><th>5D%</th><th>Driver</th><th>Read</th></tr></thead><tbody><tr><td>SPCX</td><td><span class="down"><span class="down">-3.59%</span></span></td><td><span class="down"><span class="down">-8.64%</span></span></td><td>主权风险 + 板块传染 + AI 信用</td><td>三条独立负面同日; 跌破 MA50</td></tr><tr><td>SSPC (2x 反向)</td><td><span class="up"><span class="up">+7.42%</span></span></td><td><span class="up"><span class="up">+18.52%</span></span></td><td>SPCX 的 2x 反向</td><td>5d <span class="up"><span class="up">+18.52%</span></span> ≈ SPCX 5d <span class="down"><span class="down">-8.64%</span></span> 的 2.14x — 跟踪正常, 无结构异常</td></tr></tbody></table>
+<p>反向 ETF 的 5 日跟踪误差 (理论 2× <span class="down">-8.64%</span> = <span class="down">-17.28%</span> → 反向 <span class="up">+17.28%</span>, 实际 <span class="up">+18.52%</span>) 偏差 +1.24pp, 在日度复利的正常范围内。<strong>SSPC 30d <span class="down">-17.09%</span> 同时 SPCX 30d <span class="up">+4.26%</span></strong>: 这是杠杆反向产品在震荡市里的典型衰减 (volatility drag), 不是跟踪失效 —— 记在这里是为了说明 SSPC 不适合作为长期对冲工具。</p>
+<h3>下次关键 catalyst</h3>
+<div class="timeline"><div class="tl-item"><span class="when">2026-11-03 ▢ (19天)</span> — <span class="what">Q3 2026 财报 — FY27 自由现金流 -$67B 的融资需求如何交代; 8/27 预测反方的核心</span></div><div class="tl-item"><span class="when">2026-12-09 ▢ (55天)</span> — <span class="what">Post-IPO 180 天 lockup 到期 — 参照 8/20 上批当日 <span class="down">-5.69%</span> 跌破 IPO 价</span></div><div class="tl-item"><span class="when">2026-12-15 ▢ (61天)</span> — <span class="what">FCC 6GHz 频谱 / Starshield 合同续约窗口 — **今天的乌克兰争议显著提高了这个窗口的重要性**</span></div></div>
+<h3>Verdict</h3>
+<div class="verdict watch">三条独立负面 + 跌破 MA50 + lockup 55 天 + 无风控线 = 风控结构本身是最大的未解决问题, 优先补线而不是判断方向。</div>
+<div class="callout info"><p><strong>Don't</strong>: 不要把 Rocket Lab 的 Neutron 延期读成航天板块的坏消息 —— 对 SpaceX 它是竞争利好。今天因此而来的那部分跌幅是错误定价, 不应计入对 SPCX 的基本面判断。
+<strong>If acting</strong>: 第一优先不是买卖方向, 而是<strong>给 <code>stocks/SPCX/triggers.yaml</code> 设一个 thesis_break_price</strong>。这是连续第五份报告的同一条记录; 在一个 55 天后有确定解禁事件、今天刚跌破 MA50、且有具名主权客户风险的标的上, 没有预设线意味着真正跌的时候只能临场决定。可参考的锚点: 8/20 上批解禁跌破的 IPO 价, 以及 MA50 $147.48 这条今天刚失守的线。</p></div></div><div class="tab-panel" data-tab-for="tabs1-5"><div class="callout danger"><p>第四个交易日, 韩国本线终于投降: SK Hynix <strong><span class="down">-11.06%</span></strong> (量比 1.96x) / 三星 <strong><span class="down">-9.48%</span></strong> (量比 2.06x, 全场最高), KOSPI 领跌全亚洲。但今天真正的新信息不是跌幅, 是<strong>叙事从单侧变成双侧</strong>: 此前四天全部围绕 CXMT 供给威胁, 今天 Counterpoint 给出第一个需求破坏的硬单位数据 —— <strong>Q3 全球智能手机出货同比 <span class="down">-20%</span>, 2012 年以来最弱的第三季度, 直接归因于 DRAM/NAND 价格飙升</strong>。同时 SKHY ADS 溢价爆到 <strong><span class="up">+52.6%</span></strong>, 首次冲出 30 日区间上沿 8.4pp。</p></div>
+<h3>今日数据</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">000660.KS (SK Hynix 本线)</div><div class="value">₩1,262,000 / **<span class="down"><span class="down">-11.06%</span></span>**</div><div class="note">5d <span class="down"><span class="down">-26.76%</span></span> · 30d <span class="down"><span class="down">-23.65%</span></span> · 量比 1.96x</div></div><div class="kpi"><div class="label">005930.KS (三星电子)</div><div class="value">₩210,000 / **<span class="down"><span class="down">-9.48%</span></span>**</div><div class="note">5d <span class="down"><span class="down">-21.79%</span></span> · 30d <span class="down"><span class="down">-18.29%</span></span> · 量比 **2.06x** (全书最高)</div></div><div class="kpi"><div class="label">SKHY (ADS)</div><div class="value">$143.54 / <span class="down"><span class="down">-2.72%</span></span></div><div class="note">5d <span class="down"><span class="down">-15.81%</span></span> · 30d <span class="down"><span class="down">-13.00%</span></span> · 量比 1.21x · PE 9.74 · 距 thesis_break $115 <span class="up"><span class="up">+24.8%</span></span></div></div><div class="kpi"><div class="label">DRAM (ETF)</div><div class="value">$48.54 / <span class="down"><span class="down">-3.18%</span></span></div><div class="note">5d <span class="down"><span class="down">-14.73%</span></span> · 30d <span class="down"><span class="down">-13.64%</span></span> · 量比 **1.55x** · PE 9.84 · 距 52w 高 $81.34 <span class="down"><span class="down">-40.3%</span></span></div></div><div class="kpi"><div class="label">MU</div><div class="value">$911.73 / **<span class="down"><span class="down">-0.26%</span></span>**</div><div class="note">5d <span class="down"><span class="down">-11.97%</span></span> · 30d <span class="down"><span class="down">-4.67%</span></span> · 量比 1.00x · PE 12.79 · 距 thesis_break $650 <span class="up"><span class="up">+40.3%</span></span></div></div><div class="kpi"><div class="label">SNDK</div><div class="value">$1,345.77 / <span class="down"><span class="down">-4.10%</span></span></div><div class="note">5d <span class="down"><span class="down">-16.38%</span></span> · 30d <span class="down"><span class="down">-13.55%</span></span> · 量比 1.01x · PE 19.27 · 距 thesis_break $1,200 **<span class="up"><span class="up">+12.1%</span></span>**</div></div></div>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">71.72</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">85.05</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">98.38</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">111.70</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">125.03</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">09-03</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">09-25</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">10-15</text><path d="M56.0,105.9 L78.3,102.4 L100.7,117.3 L123.0,120.5 L145.4,111.0 L167.7,85.7 L190.1,83.8 L212.4,72.1 L234.8,72.6 L257.1,80.3 L279.4,101.7 L301.8,103.0 L324.1,90.1 L346.5,92.7 L368.8,71.9 L391.2,69.9 L413.5,75.1 L435.9,71.0 L458.2,88.5 L480.6,89.0 L502.9,87.0 L525.2,76.4 L547.6,74.9 L569.9,87.5 L592.3,96.8 L614.6,104.6 L637.0,118.8 L659.3,148.9 L681.7,153.4 L704.0,182.6" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="182.6" r="3" fill="#58a6ff"/><path d="M56.0,105.9 L78.3,104.7 L100.7,117.3 L123.0,117.9 L145.4,111.3 L167.7,94.0 L190.1,94.6 L212.4,94.6 L234.8,95.2 L257.1,106.5 L279.4,119.1 L301.8,119.7 L324.1,113.7 L346.5,114.9 L368.8,104.7 L391.2,89.2 L413.5,86.2 L435.9,75.4 L458.2,94.0 L480.6,91.0 L502.9,95.8 L525.2,86.8 L547.6,86.8 L569.9,91.6 L592.3,95.8 L614.6,103.6 L637.0,117.3 L659.3,139.5 L681.7,139.5 L704.0,165.8" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="165.8" r="3" fill="#3fb950"/><path d="M56.0,105.9 L78.3,80.6 L100.7,64.3 L123.0,39.5 L145.4,59.1 L167.7,55.7 L190.1,83.2 L212.4,84.7 L234.8,84.7 L257.1,69.2 L279.4,60.6 L301.8,58.0 L324.1,45.7 L346.5,57.2 L368.8,62.8 L391.2,52.9 L413.5,71.2 L435.9,62.2 L458.2,67.0 L480.6,49.2 L502.9,46.1 L525.2,46.3 L547.6,70.0 L569.9,78.2 L592.3,93.0 L614.6,95.8 L637.0,108.7 L659.3,118.5 L681.7,136.6 L704.0,144.4" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="144.4" r="3" fill="#d29922"/><path d="M56.0,105.9 L78.3,85.4 L100.7,77.5 L123.0,74.9 L145.4,91.7 L167.7,88.6 L190.1,112.6 L212.4,111.4 L234.8,109.6 L257.1,96.0 L279.4,85.8 L301.8,74.9 L324.1,63.5 L346.5,73.1 L368.8,79.6 L391.2,73.0 L413.5,85.3 L435.9,76.5 L458.2,81.6 L480.6,72.4 L502.9,73.7 L525.2,74.4 L547.6,86.3 L569.9,83.6 L592.3,100.7 L614.6,99.3 L637.0,113.0 L659.3,123.5 L681.7,138.5 L704.0,147.4" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="147.4" r="3" fill="#f85149"/><path d="M56.0,105.9 L78.3,87.0 L100.7,92.3 L123.0,83.3 L145.4,99.7 L167.7,100.4 L190.1,117.0 L212.4,115.9 L234.8,116.2 L257.1,99.7 L279.4,87.2 L301.8,78.1 L324.1,61.1 L346.5,69.0 L368.8,66.2 L391.2,65.6 L413.5,74.8 L435.9,71.2 L458.2,71.2 L480.6,60.7 L502.9,68.0 L525.2,71.6 L547.6,77.5 L569.9,63.7 L592.3,80.7 L614.6,82.9 L637.0,95.9 L659.3,107.6 L681.7,120.2 L704.0,121.1" fill="none" stroke="#a371f7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="121.1" r="3" fill="#a371f7"/><path d="M56.0,105.9 L78.3,68.9 L100.7,69.3 L123.0,64.1 L145.4,78.4 L167.7,90.3 L190.1,106.5 L212.4,110.8 L234.8,113.0 L257.1,94.1 L279.4,58.5 L301.8,63.6 L324.1,39.4 L346.5,53.6 L368.8,66.2 L391.2,61.3 L413.5,74.3 L435.9,70.9 L458.2,68.9 L480.6,59.3 L502.9,72.9 L525.2,76.1 L547.6,84.8 L569.9,78.4 L592.3,95.0 L614.6,100.6 L637.0,119.5 L659.3,120.5 L681.7,136.3 L704.0,148.4" fill="none" stroke="#79c0ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="148.4" r="3" fill="#79c0ff"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">存储组 30d (归一化) — 韩国本线 vs 美国代理</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">000660.KS</span> <span class="legend-last">75.40</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-24.60%</span></span><span class="legend-note">· 1d <span class="down">-11.06%</span> · 30d <span class="down">-23.65%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">005930.KS</span> <span class="legend-last">80.77</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-19.23%</span></span><span class="legend-note">· 1d <span class="down">-9.48%</span> · 30d <span class="down">-18.29%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">SKHY</span> <span class="legend-last">87.64</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-12.36%</span></span><span class="legend-note">· 1d <span class="down">-2.72%</span> · 30d <span class="down">-13.00%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#f85149"></span><span class="legend-name">DRAM</span> <span class="legend-last">86.68</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-13.32%</span></span><span class="legend-note">· 1d <span class="down">-3.18%</span> · 30d <span class="down">-13.64%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#a371f7"></span><span class="legend-name">MU</span> <span class="legend-last">95.13</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-4.87%</span></span><span class="legend-note">· 1d <span class="down">-0.26%</span> · 30d <span class="down">-4.67%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#79c0ff"></span><span class="legend-name">SNDK</span> <span class="legend-last">86.36</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-13.64%</span></span><span class="legend-note">· 1d <span class="down">-4.10%</span> · 30d <span class="down">-13.55%</span></span></span></div></div>
+<h3>今日的故事 (一): 叙事从单侧供给威胁变成双侧</h3>
+<p>过去四个交易日 (10/12-10/15) 的全部跌幅都建立在一个<strong>供给侧</strong>假设上: 中国 CXMT 把更密的 DRAM 设计对准服务器内存 → 未来供给增加 → 价格周期提前见顶。10/14 报告的核心批评是这个假设<strong>至今零技术细节</strong>: 无制程节点、无位密度、无 DDR5/HBM 指认、无时间表、无产能数字、无第三方良率验证。今天是第 4 天 / 自 9/21 首次出现算起是第 25 天 —— <strong>这六项仍然一项未动</strong>。</p>
+<p>今天新增的是一条完全不同性质的证据, 它从<strong>需求侧</strong>攻击同一个论点:</p>
+<blockquote>
+<p><strong>Counterpoint Research: 2026 年第三季度全球智能手机出货量同比 <span class="down">-20%</span>, 是 2012 年以来最弱的第三季度, 直接归因于 DRAM 与 NAND 价格飙升推高了整机成本。</strong></p>
+</blockquote>
+<p>这条数据的重要性在于它改变了论点的类型:
+- <strong>CXMT 是一个预期</strong>: 未来可能有更多供给。无法验证, 可以持续数季不被回答。
+- <strong>手机出货 <span class="down">-20%</span> 是一个已发生的事实</strong>: 涨价已经消灭了需求。单位数据已经在账上。</p>
+<p><strong>内存多头论点的核心是「定价权」。而定价权的边界条件就是需求弹性。</strong> 手机是 DRAM/NAND 的最大单一终端市场之一, <span class="down">-20%</span> 的出货降幅、且是 14 年来最弱的 Q3、且被第三方研究机构直接归因于内存涨价 —— 这是本 workspace 记录以来<strong>第一次</strong>看到内存涨价的代价以单位需求的形式被量化。</p>
+<p>第二条同向证据来自巴克莱: 把 Dell 和 HPE 同时下调至 Hold (Dell <span class="down">-8%</span> / HPE <span class="down">-4%</span> / Super Micro <span class="down">-5%</span>), 理由不是需求崩塌, 而是「供应链里一股安静的力量一直在虚增服务器营收」。翻译成机制: <strong>内存成本上涨被计入 OEM 的营收但不带来毛利</strong> —— 服务器营收的增长里有一部分只是在替内存厂商过账。这同时解释了两件事: (a) 为什么 OEM 的营收增长质量被质疑; (b) 内存涨价在产业链里的分配不是纯增量, 而是从下游转移。</p>
+<p><strong>结论的性质变化</strong>: 在今天之前, 对存储组的合理态度是「跌幅建立在一个无证据的供给预期上, 等 10/26 免费拿答案」。今天之后这个态度需要修正 —— <strong>因为跌幅里现在有一部分建立在一个有证据的需求事实上。</strong> 这不改变 10/26 仍是 CXMT 问题的裁决日, 但它意味着即使 10/26 把 CXMT 完全否掉, 需求弹性这一侧的坏消息不会被同时否掉。</p>
+<h3>今日的故事 (二): SKHY ADS 溢价冲出 30 日区间</h3>
+<table class="compare"><thead><tr><th>口径</th><th>数值</th><th>说明</th></tr></thead><tbody><tr><td>今日溢价</td><td>**<span class="up"><span class="up">+52.61%</span></span>**</td><td>ADS $143.54 vs 本线等价 $94.05 (₩1,262,000 ÷ 10 ÷ USDKRW 1,341.78)</td></tr><tr><td>10/14 溢价</td><td><span class="up"><span class="up">+39.4%</span></span></td><td>**一个交易日扩张 13.2pp**</td></tr><tr><td>10/08 溢价</td><td><span class="up"><span class="up">+34.3%</span></span></td><td>五个交易日累计扩张 18.3pp</td></tr><tr><td>30d 区间 (10/08 记录)</td><td><span class="up"><span class="up">+25.4%</span></span> ~ <span class="up"><span class="up">+44.2%</span></span> · 均值 ~<span class="up"><span class="up">+37.5%</span></span></td><td>今日 **冲出上沿 8.4pp** — 首次离开区间</td></tr><tr><td>7/31 研究复核线</td><td>溢价收敛到 **<span class="up"><span class="up">+10%</span></span> 以下**</td><td>距该线 42.6pp, 方向持续远离</td></tr><tr><td>今日跨市场跌幅差</td><td>本线 <span class="down"><span class="down">-11.06%</span></span> vs ADS <span class="down"><span class="down">-2.72%</span></span> = **8.34pp**</td><td>本轮三次同类缺口里最大的一次</td></tr></tbody></table>
+<p>溢价爆开的机制是算术性的: 本线跌 11.06% 而 ADS 只跌 2.72%, 分母塌了而分子没动。问题是<strong>这 8.34pp 的缺口明天会不会被 ADS 补上</strong>。本 workspace 有两次同样设置的历史记录, 结果<strong>正好相反</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>本线当日</th>
+<th>ADS 当日</th>
+<th>缺口</th>
+<th>次日 ADS</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-09-15</td>
+<td><span class="down">-6.73%</span></td>
+<td><span class="down">-1.20%</span></td>
+<td>5.5pp</td>
+<td><strong><span class="up">+0.02%</span></strong> (9/16)</td>
+<td>❌ 缺口<strong>未收敛</strong> — ADS 没有补跌</td>
+</tr>
+<tr>
+<td>2026-10-13</td>
+<td><span class="down">-10.11%</span></td>
+<td><span class="down">-3.19%</span></td>
+<td>6.9pp</td>
+<td><strong><span class="down">-6.06%</span></strong> (10/14)</td>
+<td>✅ 缺口<strong>由 ADS 补跌收敛</strong></td>
+</tr>
+<tr>
+<td>2026-10-15</td>
+<td><strong><span class="down">-11.06%</span></strong></td>
+<td><span class="down">-2.72%</span></td>
+<td><strong>8.34pp</strong></td>
+<td>? (10/16)</td>
+<td>待定</td>
+</tr>
+</tbody>
+</table>
+<p><strong>n=2, 1 胜 1 负 — 这意味着今天 <span class="up">+52.6%</span> 的溢价在两种解释之间没有先验偏向</strong>:</p>
+<ul>
+<li><strong>结构解释 (7/31 研究)</strong>: 溢价源于 2.44% 的极低流通盘 + 单向存托摩擦 (招股书警示已交回的 ADS 可能无法重新存入), 不是 lockup。若成立, 本线暴跌时美国持有者无法套利, 溢价会<strong>机械性扩张</strong>, 并在压力过后缓慢回落而非当日补跌。9/15 的样本支持这一侧。</li>
+<li><strong>时区滞后解释</strong>: 韩国收盘先于美股收盘约 13 小时, ADS 在次日才完整定价前一日的本线走势。10/13→10/14 的样本支持这一侧。</li>
+</ul>
+<p><strong>今天有一个额外的信息可以部分拆开这两者, 但它本身不完整.</strong> 当天的新闻口径是「日经隔夜暴跌近 5%, KOSPI 跌得更狠, 而<strong>美股盘前几乎无反应</strong>」—— 也就是说美国交易时段是在<strong>完全知道</strong>韩国 <span class="down">-11.06%</span> 的情况下只卖了 ADS 2.72%。这不是信息未到达, 是信息到达后被定价成这样。这偏向结构解释。但 10/13 那次美国时段同样知道韩国的跌幅, 当天也只跌 3.19%, 第二天才补 6.06% —— 所以「当天知道」并不排除「第二天才动」。</p>
+<p><strong>判别点是明天 (10/16) 的 ADS 走势, 成本为零</strong>: ADS 跌幅接近 <span class="down">-8%</span> 级 → 滞后解释胜, 溢价回到区间内, 7/31 研究结论被削弱; ADS 跌幅温和 (&lt;3%) 或持平 → 结构解释胜, 溢价留在 50% 以上, 7/31 研究在一次极端压力下得到第二个确认。<strong>无论哪一边, 10/27 ADS 财报日的放量才是最终裁决 —— 那天任何解禁抛压都藏不住。</strong></p>
+<p>⚠️ 诚实限定 (与 10/14 相同, 不因数字变大而放松): 这个 <span class="up">+52.61%</span> 是未做时区滞后校正的原始值。方向 (扩张) 由跨市场跌幅差 8.34pp 独立支持, 精确数值不可信。</p>
+<h3>今日的故事 (三): MU 的相对强度 — 以及为什么不该高估它</h3>
+<p>MU 今天 <span class="down">-0.26%</span>, 在韩国本线 <span class="down">-11.06%</span> 的同一天。但<strong>必须分窗口看, 否则会得出相反的结论</strong>:</p>
+<table class="compare"><thead><tr><th>窗口</th><th>MU</th><th>DRAM ETF</th><th>SKHY ADS</th><th>SNDK</th><th>000660.KS</th><th>读数</th></tr></thead><tbody><tr><td>1 日</td><td>**<span class="down"><span class="down">-0.26%</span></span>**</td><td><span class="down"><span class="down">-3.18%</span></span></td><td><span class="down"><span class="down">-2.72%</span></span></td><td><span class="down"><span class="down">-4.10%</span></span></td><td><span class="down"><span class="down">-11.06%</span></span></td><td>MU 显著抗跌</td></tr><tr><td>5 日</td><td>**<span class="down"><span class="down">-11.97%</span></span>**</td><td><span class="down"><span class="down">-14.73%</span></span></td><td><span class="down"><span class="down">-15.81%</span></span></td><td><span class="down"><span class="down">-16.38%</span></span></td><td><span class="down"><span class="down">-26.76%</span></span></td><td>**MU 只少跌 2.8-4.4pp — 基本同步**</td></tr><tr><td>30 日</td><td>**<span class="down"><span class="down">-4.67%</span></span>**</td><td><span class="down"><span class="down">-13.64%</span></span></td><td><span class="down"><span class="down">-13.00%</span></span></td><td><span class="down"><span class="down">-13.55%</span></span></td><td><span class="down"><span class="down">-23.65%</span></span></td><td>MU 显著抗跌</td></tr></tbody></table>
+<p><strong>5 日口径否决了「MU 脱钩」的说法.</strong> MU 本周跌 11.97%, 和组内其他标的的 14.7-16.4% 只差几个百分点, 它完整参与了本轮下跌。所以今天的 <span class="down">-0.26%</span> 不是「MU 不受影响」的证据, 只是「MU 今天没跌」。</p>
+<p>30 日口径的差距 (MU <span class="down">-4.67%</span> vs 组内 <span class="down">-13%</span>~<span class="down">-24%</span>) 则有一个具体来源: MU 在 9/30 交出了全面超预期的财报 (adj GM 87.0% / 营收 $542.29 亿 / adj EPS $33.42, 门槛全部命中), 而韩国两家要到 10/26-10/27 才交数字。<strong>MU 的 30 日相对强度是「已经证明过自己」的溢价, 不是「周期对它不适用」。</strong></p>
+<p>今天唯一的 MU 个股级输入是一条 executive_comment: <strong>「Elon Musk 加倍下注他的 Micron 押注」</strong> —— 一条公开评论把注意力引向 MU。这是今天 <span class="down">-0.26%</span> vs 组内 <span class="down">-3%</span> 的一个合理的同日抵消项, 但它是情绪性的、不可持续的, 不应计入基本面。</p>
+<p><strong>最该记下的结构事实: MU 下次财报在 12/23 —— 69 天后, 全书最远.</strong> 这意味着 MU 在接下来两个多月里<strong>没有自己的数字</strong>, 所有定价都要靠 SK Hynix (10/26) / 三星 (10/27) / SNDK (10/29) / AAPL (11/02) 的代理信息。好的一面: 没有近期事件风险。坏的一面: 今天这个相对强度<strong>无法被验证也无法被否证</strong>, 它会一直悬着。9/30 scorecard 已把主判据移到 10/26 SK Hynix 的 HBM 倍数表述, 这个安排在今天看是正确的。</p>
+<h3>Inter-member dynamics</h3>
+<table class="compare"><thead><tr><th>Member</th><th>1D%</th><th>量比</th><th>Driver</th><th>Read</th></tr></thead><tbody><tr><td>000660.KS</td><td><span class="down"><span class="down">-11.06%</span></span></td><td>1.96x</td><td>CXMT 第四日 + 手机需求破坏 + KOSPI 领跌</td><td>本轮第一次真正的本土投降; 放量</td></tr><tr><td>005930.KS</td><td><span class="down"><span class="down">-9.48%</span></span></td><td>**2.06x**</td><td>同上 + 三星同时是手机 OEM, 需求破坏双重暴露</td><td>全书最高量比; 三星既卖内存又卖手机, <span class="down"><span class="down">-20%</span></span> 出货直接打两头</td></tr><tr><td>SKHY</td><td><span class="down"><span class="down">-2.72%</span></span></td><td>1.21x</td><td>本线暴跌的滞后或结构摩擦</td><td>只跌本线的 1/4; 溢价爆到 <span class="up"><span class="up">+52.6%</span></span>, 明天是判别日</td></tr><tr><td>DRAM</td><td><span class="down"><span class="down">-3.18%</span></span></td><td>**1.55x**</td><td>ETF 层面主题赎回</td><td>跌幅 ≈ ADS, 但量比高于 ADS — 主题级资金在走</td></tr><tr><td>MU</td><td><span class="down"><span class="down">-0.26%</span></span></td><td>1.00x</td><td>Musk 公开评论 + 无近期自有催化剂</td><td>1d 抗跌但 5d <span class="down"><span class="down">-11.97%</span></span> 同步; 不是脱钩</td></tr><tr><td>SNDK</td><td><span class="down"><span class="down">-4.10%</span></span></td><td>1.01x</td><td>NAND 直接暴露手机需求 <span class="down"><span class="down">-20%</span></span></td><td>组内今日最大跌幅 (剔韩国); 风控缓冲只剩 <span class="up"><span class="up">+12.1%</span></span></td></tr></tbody></table>
+<p><strong>今天组内最该注意的次序变化: SNDK 取代 MU 成为美国侧最弱的一环。</strong> SNDK 今日 <span class="down">-4.10%</span> / 5d <span class="down">-16.38%</span>, 风控线缓冲只剩 <span class="up">+12.1%</span> (MU 是 <span class="up">+40.3%</span>), 且 10/29 就是 <code>status: pending</code> 的评分日。SNDK 的 claim 是「NAND 周期股 → 结构性现金牛: FY27 $10.3-10.8B 营收 / $44-46 EPS / 84.6% 峰值毛利率不快速回落」—— <strong>今天的手机出货 <span class="down">-20%</span> 数据是对这个 claim 中「毛利率不快速回落」一项的直接逆风</strong>, 因为 NAND 在手机里的内容量大于在服务器里的权重。评分前必须把这条读进 Tier 1 门槛。</p>
+<h3>下次关键 catalyst</h3>
+<div class="timeline"><div class="tl-item"><span class="when">2026-10-16 🔥 (明天)</span> — <span class="what">SKHY ADS 走势 — 零成本判别「<span class="up">+52.6%</span> 溢价是结构还是滞后」; 跌 ~8% = 滞后, 跌 &lt;3% = 结构</span></div><div class="tl-item"><span class="when">2026-10-26 ⚠ (11天)</span> — <span class="what">**000660.KS SK Hynix Q3 本线财报 — 全组主裁决点**: CXMT 是只做标准 DDR5 还是做到 HBM (9/21 定义的问题, 第 25 天仍未答); HBM 份额第一的公司不可能不被问到</span></div><div class="tl-item"><span class="when">2026-10-27 ⚠ (12天)</span> — <span class="what">SKHY ADS 财报 — 溢价结构最终裁决, 放量会让解禁抛压露出来</span></div><div class="tl-item"><span class="when">2026-10-29 ⚠ (14天)</span> — <span class="what">🎯 SNDK 评分日 — 「周期股→现金牛」claim 打分, 手机 <span class="down">-20%</span> 是直接逆风</span></div><div class="tl-item"><span class="when">2026-11-02 ▢ (18天)</span> — <span class="what">AAPL 财报 — 内存成本进 BOM 的下游确认; 也是手机 <span class="down">-20%</span> 的交叉验证</span></div><div class="tl-item"><span class="when">2026-12-23 ▢ (69天)</span> — <span class="what">MU 财报 — 全书最远; MU 在此之前没有自己的数字</span></div></div>
+<h3>Verdict</h3>
+<div class="verdict watch">跌幅性质今天发生了质变 (单侧供给预期 → 双侧, 需求破坏已有硬数据), 但两个零成本判别点在 1 天和 11 天内到手, 没有理由抢在它们之前动。</div>
+<div class="callout info"><p><strong>Don't</strong>: 不要把今天 MU 的 <span class="down">-0.26%</span> 读成「MU 比韩国同行质量更高因此抗跌」—— 5 日口径 (MU <span class="down">-11.97%</span> vs 组内 <span class="down">-14.7%</span>~<span class="down">-16.4%</span>) 立刻推翻这个说法。今天的差异更可能来自 Musk 的一条公开评论 + MU 在 69 天内没有自有催化剂, 两者都不是质量证据。
+<strong>If acting</strong>: 两个判别点按顺序到手, 成本都是零 —— (1) <strong>明天 10/16 的 SKHY ADS 走势</strong>解锁「<span class="up">+52.6%</span> 溢价是结构还是滞后」; (2) <strong>10/26 SK Hynix 本线财报</strong>解锁 9/21 就定义好、至今 25 天未答的 CXMT 问题 (标准 DDR5 = 冲击商品 DRAM 价格 vs HBM = 冲击 HBM 溢价)。硬证据的形态在 10/14 已经写明并在今天仍然有效: 第三方良率验证, 或有客户声明免费拿到 CXMT 的 BOM。在这两件到手之前, 任何方向的动作都是在赌一个很快会被公开回答的问题。</p></div></div><div class="tab-panel" data-tab-for="tabs1-6"><div class="callout danger"><p><strong>10/08 报告设下的判别点今天给出了答案, 而答案是明确的: 需求没问题, 跌的不是需求.</strong> TSM 交出营收同比 <strong><span class="up">+41%</span></strong>、HPC 占营收 <strong>68%</strong>、第六个连续纪录利润季度 —— 当日仍跌 2.55%。同时「开支方 vs 供给方零重叠」的结构在被 10/14 的 META <span class="down">-3.27%</span> 打穿一天后<strong>完整恢复</strong>: 开支方五家全在 ±1.1% 内且四家为正, 供给方七家全跌。今天的具名驱动是<strong>融资/信用</strong>, 由三个相互独立的来源同日确认。</p></div>
+<h3>今日数据</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">— 开支方 (hyperscaler) —</div><div class="value"></div><div class="note"></div></div><div class="kpi"><div class="label">MSFT</div><div class="value">$539.44 / **<span class="up"><span class="up">+1.08%</span></span>**</div><div class="note">5d <span class="up"><span class="up">+3.22%</span></span> · 30d <span class="up"><span class="up">+8.58%</span></span> · 量比 0.54x — 全组最强</div></div><div class="kpi"><div class="label">AAPL (参照)</div><div class="value">$344.12 / <span class="up"><span class="up">+0.34%</span></span></div><div class="note">30d <span class="up"><span class="up">+5.90%</span></span> · 距 52w 高仅 1.16%</div></div><div class="kpi"><div class="label">GOOG</div><div class="value">$344.80 / <span class="up"><span class="up">+0.33%</span></span></div><div class="note">5d <span class="down"><span class="down">-0.02%</span></span> · 30d <span class="up"><span class="up">+3.37%</span></span> · 量比 0.39x · PE 17.6x (全组最低)</div></div><div class="kpi"><div class="label">META</div><div class="value">$736.26 / <span class="down"><span class="down">-0.17%</span></span></div><div class="note">5d <span class="up"><span class="up">+2.13%</span></span> · 30d **<span class="up"><span class="up">+24.29%</span></span>** (全书最强) · 量比 0.36x · 10/21 财报</div></div><div class="kpi"><div class="label">AMZN</div><div class="value">$253.43 / <span class="down"><span class="down">-0.26%</span></span></div><div class="note">5d <span class="down"><span class="down">-0.25%</span></span> · 30d <span class="down"><span class="down">-0.61%</span></span> · 量比 0.54x</div></div><div class="kpi"><div class="label">— 供给方 (算力/芯片) —</div><div class="value"></div><div class="note"></div></div><div class="kpi"><div class="label">NVDA</div><div class="value">$217.38 / <span class="down"><span class="down">-1.77%</span></span></div><div class="note">5d <span class="down"><span class="down">-5.68%</span></span> · 30d <span class="down"><span class="down">-3.02%</span></span> · 量比 0.72x</div></div><div class="kpi"><div class="label">AVGO</div><div class="value">$339.13 / <span class="down"><span class="down">-2.06%</span></span></div><div class="note">5d <span class="down"><span class="down">-5.83%</span></span> · 30d **<span class="down"><span class="down">-7.49%</span></span>** (组内最差) · 量比 0.56x</div></div><div class="kpi"><div class="label">SMH (半导体 ETF)</div><div class="value">$552.78 / <span class="down"><span class="down">-2.12%</span></span></div><div class="note">5d <span class="down"><span class="down">-8.97%</span></span> · 30d <span class="up"><span class="up">+0.42%</span></span> · 量比 1.36x</div></div><div class="kpi"><div class="label">TSM</div><div class="value">$419.04 / <span class="down"><span class="down">-2.55%</span></span></div><div class="note">5d <span class="down"><span class="down">-8.51%</span></span> · 30d <span class="up"><span class="up">+1.12%</span></span> · 量比 **1.52x** · 财报日</div></div><div class="kpi"><div class="label">MRVL</div><div class="value">$236.81 / <span class="down"><span class="down">-3.45%</span></span></div><div class="note">5d <span class="down"><span class="down">-13.76%</span></span> · 30d <span class="up"><span class="up">+14.71%</span></span> · 量比 0.78x</div></div><div class="kpi"><div class="label">AMD</div><div class="value">$548.45 / <span class="down"><span class="down">-3.92%</span></span></div><div class="note">5d <span class="down"><span class="down">-11.64%</span></span> · 30d **<span class="up"><span class="up">+20.00%</span></span>** · 量比 0.83x</div></div><div class="kpi"><div class="label">INTC</div><div class="value">$94.06 / **<span class="down"><span class="down">-4.14%</span></span>**</div><div class="note">5d <span class="down"><span class="down">-12.16%</span></span> · 30d **<span class="up"><span class="up">+4.45%</span></span>** (半导体里唯一 30d 正) · 量比 0.84x</div></div></div>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">89.65</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">99.79</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">109.94</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">120.09</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">130.23</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">09-03</text><text x="391.2" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">09-25</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">10-15</text><path d="M56.0,151.7 L78.3,147.6 L100.7,149.8 L123.0,122.8 L145.4,129.1 L167.7,126.6 L190.1,114.9 L212.4,111.8 L234.8,109.7 L257.1,103.7 L279.4,114.8 L301.8,63.8 L324.1,66.9 L346.5,61.9 L368.8,39.4 L391.2,56.8 L413.5,81.0 L435.9,65.5 L458.2,74.6 L480.6,74.1 L502.9,72.6 L525.2,63.4 L547.6,65.4 L569.9,77.2 L592.3,77.5 L614.6,78.9 L637.0,62.7 L659.3,49.6 L681.7,66.3 L704.0,66.2" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="66.2" r="3" fill="#58a6ff"/><path d="M56.0,151.7 L78.3,160.0 L100.7,164.6 L123.0,166.5 L145.4,165.8 L167.7,163.3 L190.1,155.4 L212.4,162.1 L234.8,167.5 L257.1,161.6 L279.4,164.8 L301.8,158.5 L324.1,161.4 L346.5,159.3 L368.8,161.4 L391.2,146.8 L413.5,152.4 L435.9,152.6 L458.2,149.4 L480.6,149.5 L502.9,145.7 L525.2,139.6 L547.6,136.3 L569.9,135.9 L592.3,141.6 L614.6,131.7 L637.0,126.8 L659.3,124.9 L681.7,132.8 L704.0,128.3" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="128.3" r="3" fill="#3fb950"/><path d="M56.0,151.7 L78.3,155.9 L100.7,155.9 L123.0,164.3 L145.4,161.9 L167.7,155.8 L190.1,143.4 L212.4,148.6 L234.8,151.1 L257.1,145.8 L279.4,145.0 L301.8,137.2 L324.1,141.3 L346.5,156.3 L368.8,151.5 L391.2,149.0 L413.5,151.3 L435.9,153.5 L458.2,149.4 L480.6,156.4 L502.9,149.9 L525.2,145.7 L547.6,144.7 L569.9,141.4 L592.3,144.4 L614.6,140.8 L637.0,139.5 L659.3,138.8 L681.7,145.9 L704.0,144.5" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="144.5" r="3" fill="#d29922"/><path d="M56.0,151.7 L78.3,140.0 L100.7,130.1 L123.0,133.7 L145.4,140.8 L167.7,135.7 L190.1,150.7 L212.4,154.9 L234.8,149.9 L257.1,137.5 L279.4,133.2 L301.8,122.9 L324.1,116.1 L346.5,121.5 L368.8,117.0 L391.2,117.5 L413.5,115.3 L435.9,111.3 L458.2,112.0 L480.6,109.1 L502.9,95.7 L525.2,82.9 L547.6,86.3 L569.9,96.3 L592.3,110.3 L614.6,114.9 L637.0,123.7 L659.3,122.9 L681.7,137.8 L704.0,148.9" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="148.9" r="3" fill="#f85149"/><path d="M56.0,151.7 L78.3,148.2 L100.7,156.5 L123.0,160.2 L145.4,169.3 L167.7,169.4 L190.1,182.6 L212.4,180.4 L234.8,177.3 L257.1,167.5 L279.4,162.3 L301.8,153.1 L324.1,150.4 L346.5,156.5 L368.8,158.1 L391.2,157.3 L413.5,150.5 L435.9,153.4 L458.2,151.3 L480.6,146.9 L502.9,141.3 L525.2,132.5 L547.6,131.9 L569.9,135.0 L592.3,147.6 L614.6,149.7 L637.0,155.0 L659.3,151.1 L681.7,164.0 L704.0,170.7" fill="none" stroke="#a371f7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="170.7" r="3" fill="#a371f7"/><path d="M56.0,151.7 L78.3,150.8 L100.7,138.6 L123.0,143.4 L145.4,147.5 L167.7,146.1 L190.1,165.9 L212.4,172.1 L234.8,171.9 L257.1,163.0 L279.4,151.1 L301.8,144.6 L324.1,142.4 L346.5,153.4 L368.8,158.7 L391.2,155.9 L413.5,159.6 L435.9,153.3 L458.2,157.8 L480.6,166.4 L502.9,153.2 L525.2,144.8 L547.6,129.5 L569.9,128.7 L592.3,147.5 L614.6,145.9 L637.0,153.7 L659.3,150.7 L681.7,163.4 L704.0,171.3" fill="none" stroke="#79c0ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="171.3" r="3" fill="#79c0ff"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">供给方 vs 开支方 30d (归一化) — 今天裂口完整恢复</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">META</span> <span class="legend-last">120.89</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+20.89%</span></span><span class="legend-note">· 1d <span class="down">-0.17%</span> · 30d <span class="up">+24.29%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">MSFT</span> <span class="legend-last">105.71</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+5.71%</span></span><span class="legend-note">· 1d <span class="up">+1.08%</span> · 30d <span class="up">+8.58%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">GOOG</span> <span class="legend-last">101.76</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+1.76%</span></span><span class="legend-note">· 1d <span class="up">+0.33%</span> · 30d <span class="up">+3.37%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#f85149"></span><span class="legend-name">TSM</span> <span class="legend-last">100.67</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+0.67%</span></span><span class="legend-note">· 1d <span class="down">-2.55%</span> · 30d <span class="up">+1.12%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#a371f7"></span><span class="legend-name">NVDA</span> <span class="legend-last">95.33</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-4.67%</span></span><span class="legend-note">· 1d <span class="down">-1.77%</span> · 30d <span class="down">-3.02%</span></span></span><span class="legend-item"><span class="legend-swatch" style="background:#79c0ff"></span><span class="legend-name">AVGO</span> <span class="legend-last">95.19</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-4.81%</span></span><span class="legend-note">· 1d <span class="down">-2.06%</span> · 30d <span class="down">-7.49%</span></span></span></div></div>
+<h3>今日的故事 (一): TSM 的答案 —— 排除了一整个解释分支</h3>
+<p>10/08 报告在记录当天的跌幅时写明: 「情绪解释无法排除, <strong>判别点在 10/15 TSM 与 10/28 capex 指引</strong>」。今天第一个判别点兑现, 结果是干净的:</p>
+<table class="compare"><thead><tr><th>TSM Q3 2026 实际</th><th>读数</th></tr></thead><tbody><tr><td>营收同比 **<span class="up"><span class="up">+41%</span></span>**</td><td>需求侧没有任何减速迹象</td></tr><tr><td>HPC 占营收 **68%**</td><td>AI/高性能计算的结构占比继续提升, 不是靠成熟制程撑的</td></tr><tr><td>第六个连续纪录利润季度</td><td>连续性本身排除了「单季错配」的解释</td></tr><tr><td>股价 **<span class="down"><span class="down">-2.55%</span></span>**, 量比 **1.52x**</td><td>放量下跌 — 不是无人关注, 是被看到后被卖</td></tr></tbody></table>
+<p><strong>这个组合的推论是排除式的, 也是今天最有价值的一条</strong>: 一个毛利/营收/结构三项全好的上游代工龙头, 在放量 (1.52x) 的情况下下跌 2.55% —— 「AI 需求在走弱」这个解释分支被实证排除了。剩下的候选只有三类: (a) 融资/信用可持续性; (b) 估值倍数压缩; (c) 纯情绪/仓位。</p>
+<p>今天 (a) 得到了三个<strong>相互独立</strong>的具名来源确认, 这是和 10/08 那天 (当时只有 Burry 的口头警告) 的关键区别:</p>
+<ol>
+<li><strong>Gartner 研究报告</strong>: 预测多数 neocloud (新型 AI 云服务商) 到本十年结束前将失去独立性。当日 IREN <span class="down">-5%</span> / CoreWeave <span class="down">-5%</span> / Nebius <span class="down">-4%</span>。</li>
+<li><strong>Saxo Bank (Charu Chanana)</strong>: 明确表态「尚无充分证据显示存在系统性 AI 信用危机」, 但同时指出「融资挤压可能打到供应链」。注意这是一个<strong>反驳者</strong>的表态 —— 连反驳方都承认传导路径存在, 只是否认已经发生。</li>
+<li><strong>巴克莱</strong>: 同时下调 Dell 与 HPE 至 Hold, 理由明确不是需求崩塌, 而是营收质量 (内存成本过账虚增营收)。</li>
+</ol>
+<p>再加两条分析框架层面的输入: <strong>BlackRock CEO Larry Fink</strong> 称「若美国数据中心建设停摆将把经济推入衰退」(并提到国债从 2000 年的 $8 万亿到今天 $40 万亿), <strong>Michael Burry</strong> 称痛苦交易可以持续、Mag 7 弱势可能加深「红色十月」, 点名 2000 年科技泡沫类比。</p>
+<p><strong>Fink 那句话的双向性值得单独记</strong>: 它表面是警告「不要停」, 但反过来读, 它承认了「美国经济增长现在实质依赖 AI 资本开支」—— 这正是空头论点的前提。一个支持方的辩护词可以直接被改写成空头论点, 说明这个结构性依赖是双方共识, 分歧只在它可不可持续。</p>
+<h3>今日的故事 (二): 开支方/供给方裂口完整恢复, 且今天的证据比 10/08 更强</h3>
+<table class="compare"><thead><tr><th>分组</th><th>成员与今日涨跌</th><th>读数</th></tr></thead><tbody><tr><td>开支方 (5)</td><td>MSFT +1.08 / GOOG +0.33 / META -0.17 / AMZN -0.26 / (AAPL +0.34)</td><td>**四家为正, 全部在 ±1.1% 内**</td></tr><tr><td>供给方 (7)</td><td>NVDA -1.77 / AVGO -2.06 / TSM -2.55 / MRVL -3.45 / AMD -3.92 / INTC -4.14 / (SMH -2.12)</td><td>**七家全跌, 区间 <span class="down"><span class="down">-1.77%</span></span> ~ <span class="down"><span class="down">-4.14%</span></span>**</td></tr><tr><td>零重叠?</td><td>✅ 是 — 最好的供给方 (<span class="down"><span class="down">-1.77%</span></span>) 仍差于最差的开支方 (<span class="down"><span class="down">-0.26%</span></span>)</td><td>1.51pp 的无交叠间隔</td></tr></tbody></table>
+<p>10/08 报告首次记录这个结构, 但当时自己给了一个限定: 「战争风险日单纯 beta 差异足以产生同样分裂, 排他性因果不成立」。10/14 这个结构被 META <span class="down">-3.27%</span> 打穿。<strong>今天恢复了, 而且今天的证据强于 10/08 的三个理由</strong>:</p>
+<ol>
+<li><strong>今天没有战争风险事件.</strong> 10/08 的分裂混杂了伊朗地缘 beta。今天的驱动是具名的融资/信用叙事, 不存在「地缘 beta 差异」这个替代解释。</li>
+<li><strong>今天折现率是顺风.</strong> 长端 -10bp。若分裂只是 beta 差异, 顺风日应该让高 beta 一侧涨得更多, 而不是让它跌。</li>
+<li><strong>今天量比在开支方极低.</strong> MSFT 0.54x / AMZN 0.54x / GOOG 0.39x / META 0.36x —— 开支方几乎没有成交。这说明开支方不是「被买上去」, 而是<strong>没人去碰</strong>。而供给方里 TSM 1.52x / SMH 1.36x 是放量。<strong>放量在一侧、无量在另一侧, 比两侧同时有量的分裂更难用 beta 解释。</strong></li>
+</ol>
+<p><strong>但必须保留一个限定</strong>: 10/21 META 和 10/28 GOOG+MSFT 的 capex 指引还没出。如果开支方在指引里下调 capex, 那么今天的「开支方安然无恙」会被追溯推翻 —— 因为市场今天给开支方的定价是建立在「capex 继续」的假设上, 而 capex 继续恰恰是供给方被质疑的融资需求的来源。<strong>换句话说: 今天的分裂在逻辑上是不稳定的。开支方和供给方不可能长期走相反方向 —— 一方的支出就是另一方的收入。</strong> 这个分裂要么在 10/21-10/28 的指引里收敛 (开支方跟跌或供给方修复), 要么它只是一个短期仓位现象。</p>
+<h3>今日的故事 (三): MSFT 的内部矛盾 —— 全组最强但有一条反向信号</h3>
+<p>MSFT <span class="up">+1.08%</span> 为开支方最强, 30d <span class="up">+8.58%</span>。但今天有两条相互矛盾的 MSFT 新闻:</p>
+<ul>
+<li><strong>利多</strong>: UBS 称 Azure 与 M365 的增长预期在财报前上行; 摩根士丹利 CIO 调查给出「重新定义如何看 MSFT」的新角度。</li>
+<li><strong>利空</strong>: 报道称 <strong>Azure 增长 40% 的同时, 管理层要求各团队负责人削减 20% 成本</strong>。另一篇对照: 「Anthropic 增长 50%, 微软没有」。</li>
+</ul>
+<p><strong>「营收增 40% 同时要砍 20% 成本」这个组合是本周最该追问的一条.</strong> 在一个需求爆炸的业务里要求大幅削减成本, 通常指向三种情形: (a) 单位经济性不如营收增速看起来那么好 (折旧/电力/GPU 摊销吃掉毛利); (b) 为 capex 腾挪预算; (c) 常规纪律, 无特殊含义。<strong>这三者在 10/28 财报的 Azure 毛利率与 capex 指引里可以部分区分 —— 这是今天新增的一个具体观察项</strong>, 比笼统的「看 capex 指引」更可测量。</p>
+<h3>Inter-member dynamics</h3>
+<table class="compare"><thead><tr><th>Member</th><th>1D%</th><th>30D%</th><th>Driver</th><th>Read</th></tr></thead><tbody><tr><td>MSFT</td><td><span class="up"><span class="up">+1.08%</span></span></td><td><span class="up"><span class="up">+8.58%</span></span></td><td>UBS 上调预期 + 开支方避险</td><td>全组最强, 但 Azure 要求砍 20% 成本是反向信号</td></tr><tr><td>GOOG</td><td><span class="up"><span class="up">+0.33%</span></span></td><td><span class="up"><span class="up">+3.37%</span></span></td><td>PE 17.6x 全组最低 = 估值保护</td><td>10/28 capex 指引是判别点</td></tr><tr><td>META</td><td><span class="down"><span class="down">-0.17%</span></span></td><td>**<span class="up"><span class="up">+24.29%</span></span>**</td><td>30d 全书最强, 10/21 财报带最高预期负担</td><td>10/14 曾 <span class="down"><span class="down">-3.27%</span></span> 打穿结构, 今天回归</td></tr><tr><td>AMZN</td><td><span class="down"><span class="down">-0.26%</span></span></td><td><span class="down"><span class="down">-0.61%</span></span></td><td>30d 几乎零变动; 10/29 AWS 利润率是第一个折旧检查点</td><td>全组最平, 市场无观点</td></tr><tr><td>NVDA</td><td><span class="down"><span class="down">-1.77%</span></span></td><td><span class="down"><span class="down">-3.02%</span></span></td><td>AI 融资质疑的中心标的</td><td>跌幅是供给方里最小的 — 质量溢价仍在</td></tr><tr><td>AVGO</td><td><span class="down"><span class="down">-2.06%</span></span></td><td>**<span class="down"><span class="down">-7.49%</span></span>**</td><td>组内 30d 最差; 财报 12/09 最远</td><td>10/28 客户 capex 指引提前六周给出需求答案</td></tr><tr><td>TSM</td><td><span class="down"><span class="down">-2.55%</span></span></td><td><span class="up"><span class="up">+1.12%</span></span></td><td>财报超预期但放量下跌 1.52x</td><td>**排除了「需求走弱」解释分支** — 今天最有信息量的一行</td></tr><tr><td>MRVL</td><td><span class="down"><span class="down">-3.45%</span></span></td><td><span class="up"><span class="up">+14.71%</span></span></td><td>Trainium 互联; 财报 12/01</td><td>日内弱/月度强的典型</td></tr><tr><td>AMD</td><td><span class="down"><span class="down">-3.92%</span></span></td><td>**<span class="up"><span class="up">+20.00%</span></span>**</td><td>30d 第二强, 今日跌幅第二大</td><td>148x PE 但跌幅与倍数无关 (见横截面否证)</td></tr><tr><td>INTC</td><td>**<span class="down"><span class="down">-4.14%</span></span>**</td><td>**<span class="up"><span class="up">+4.45%</span></span>**</td><td>半导体里唯一 30d 正收益</td><td>今天跌的是 AI beta, 不是 foundry 论点; 10/29 裁决</td></tr></tbody></table>
+<h3>下次关键 catalyst</h3>
+<div class="timeline"><div class="tl-item"><span class="when">2026-10-21 🔥 (6天)</span> — <span class="what">META 财报 — 30d <span class="up">+24.29%</span> 带最高预期负担进财报; capex 指引的第一个开支方样本</span></div><div class="tl-item"><span class="when">2026-10-28 ⚠ (13天)</span> — <span class="what">**GOOG + MSFT capex 指引 + GEV 财报 + FOMC 四重叠加** — 10/08 设下的第二个判别点</span></div><div class="tl-item"><span class="when">2026-10-29 ⚠ (14天)</span> — <span class="what">AMZN ($2,200亿 capex, 盯 AWS 营业利润率 ~39%) + INTC (指引 $15.8-16.8B, foundry 裁决)</span></div><div class="tl-item"><span class="when">2026-11-17 ▢ (33天)</span> — <span class="what">NVDA 财报 — 供给方的最终确认</span></div><div class="tl-item"><span class="when">2026-12-09 ▢ (55天)</span> — <span class="what">AVGO 财报 — 但 10/28 客户 capex 指引已提前六周给出需求侧答案</span></div></div>
+<h3>Verdict</h3>
+<div class="verdict hold">需求侧今天被 TSM 实证证明完好 (营收 <span class="up">+41%</span> / HPC 68% / 第六个纪录季度), 跌的是融资与估值通道; 开支方/供给方的分裂在逻辑上不可长期维持, 10/21-10/28 的 capex 指引会强制它收敛 —— 在那之前已持有的仓位无动作要求。</div>
+<div class="callout info"><p><strong>Don't</strong>: 不要把今天的开支方全绿读成「开支方安全」。开支方今天的定价建立在「capex 继续」的假设上, 而 capex 继续正是供给方被质疑的融资需求的来源 —— <strong>一方的支出就是另一方的收入, 两侧不可能长期反向</strong>。若 10/21-10/28 的指引里出现 capex 下调, 今天开支方的强势会被追溯推翻。
+<strong>If acting</strong>: 新增一个比「看 capex 指引」更可测量的观察项 —— <strong>10/28 MSFT 的 Azure 毛利率</strong>。今天的报道是「Azure 增长 40% 同时管理层要求砍 20% 成本」; 若毛利率在 40% 增速下仍然下行, 指向单位经济性 (折旧/电力/GPU 摊销) 吃掉毛利, 那是比任何 capex 数字都更根本的信号。</p></div></div><div class="tab-panel" data-tab-for="tabs1-7"><div class="callout warn"><p>三只贴 52 周高点、全书唯一的多头方向 (SU +1.00 / CNQ +0.94 / HXE.TO +0.80), 但今天有一条必须讲清的回路: <strong>能源持仓今天的涨幅, 和今天让加息押注上行的 PPI 超预期, 是同一件事</strong> —— 九月 PPI 商品端 <span class="up">+2.6%</span> 里能源贡献 <span class="up">+10.8%</span>、汽油 <span class="up">+20.3%</span>。同时 Chevron CEO Mike Wirth 公开称缓冲伊朗战争冲击的油品库存「已被抽干」, 这是一条把地缘溢价从「情绪」升级为「物理约束」的具名表态。CVX 自己今天 <span class="down">-1.09%</span>, 与板块背离。</p></div>
+<h3>今日数据</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">SU (Suncor)</div><div class="value">$76.65 / <span class="up"><span class="up">+1.00%</span></span></div><div class="note">5d <span class="up"><span class="up">+8.09%</span></span> · 30d <span class="up"><span class="up">+12.80%</span></span> · 距 52w 高 $76.68 **<span class="down"><span class="down">-0.04%</span></span>** — 实际上就在高点上</div></div><div class="kpi"><div class="label">CNQ (Canadian Natural)</div><div class="value">$52.30 / <span class="up"><span class="up">+0.94%</span></span></div><div class="note">5d <span class="up"><span class="up">+6.64%</span></span> · 30d <span class="up"><span class="up">+1.86%</span></span> · 距 52w 高 $52.57 **<span class="down"><span class="down">-0.51%</span></span>**</div></div><div class="kpi"><div class="label">HXE.TO (加拿大能源 ETF)</div><div class="value">C$67.99 / <span class="up"><span class="up">+0.80%</span></span></div><div class="note">5d <span class="up"><span class="up">+7.36%</span></span> · 30d <span class="up"><span class="up">+8.59%</span></span> · 距 52w 高 68.21 **<span class="down"><span class="down">-0.32%</span></span>**</div></div><div class="kpi"><div class="label">CVX (Chevron)</div><div class="value">$219.63 / **<span class="down"><span class="down">-1.09%</span></span>**</div><div class="note">5d <span class="up"><span class="up">+3.82%</span></span> · 30d <span class="up"><span class="up">+3.71%</span></span> · 距 52w 高 $223.46 <span class="down"><span class="down">-1.71%</span></span> — **唯一下跌**</div></div><div class="kpi"><div class="label">WTI</div><div class="value">$96.58 / <span class="up"><span class="up">+1.57%</span></span></div><div class="note">5d <span class="up"><span class="up">+5.56%</span></span> · 30d <span class="up"><span class="up">+6.12%</span></span> · MA50 $90.47 · MA200 $83.97</div></div><div class="kpi"><div class="label">Brent</div><div class="value">$106.27 / <span class="up"><span class="up">+0.20%</span></span></div><div class="note">5d <span class="up"><span class="up">+1.91%</span></span> · 30d **<span class="up"><span class="up">+11.13%</span></span>** · 站稳 $106</div></div></div>
+<h3>今日的故事 (一): PPI 回路 —— 能源涨幅就是今天通胀超预期的来源</h3>
+<p>这是今天全书最需要明确的一条传导链, 因为它把两个看起来独立的 tab 连成一条线:</p>
+<table class="compare"><thead><tr><th>环节</th><th>数据</th><th>读数</th></tr></thead><tbody><tr><td>地缘溢价推油价</td><td>WTI 八月底 ~$87 → 今天 $96.58 (<span class="up"><span class="up">+11%</span></span>)</td><td>10/08 伊朗事件的溢价未消退, 持续抬升</td></tr><tr><td>油价进生产端物价</td><td>九月 PPI 商品 <span class="up"><span class="up">+2.6%</span></span>, 其中**能源 <span class="up"><span class="up">+10.8%</span></span> / 汽油 <span class="up"><span class="up">+20.3%</span></span>**</td><td>能源是 PPI 单月最大贡献项</td></tr><tr><td>PPI 超预期</td><td>环比 <span class="up"><span class="up">+1.3%</span></span> (2022年3月以来最大) / 同比 <span class="up"><span class="up">+6.3%</span></span> (2022年12月以来最大)</td><td>加息押注上行</td></tr><tr><td>加息押注压长久期权益</td><td>QQQ <span class="down"><span class="down">-0.61%</span></span> 跌破 MA50; 供给方七家全跌</td><td>能源的涨价成本由科技持仓承担</td></tr></tbody></table>
+<p><strong>也就是说: 能源头寸在这条链上既是收益方也是成本的源头。</strong> 它对冲的是它自己造成的那部分压力。这不是一个批评 —— 恰恰相反, 这是对冲有效性的最强形式 (负相关来自同一个因果机制, 而不是统计巧合)。但要清楚这个对冲的边界: <strong>一旦伊朗局势缓解, 油价回落, 能源头寸失去涨幅, 而科技头寸拿回的只是 PPI 能源项的那一部分</strong> —— 不对称, 因为科技今天跌的主因 (AI 融资质疑) 和油价无关。</p>
+<p>另一个重要限定: 核心 PPI (除食品/能源/贸易服务) 环比 <span class="up">+0.5%</span> / 同比 <span class="up">+5.0%</span>。<strong>剔掉能源后仍有 5% 量级, 说明价格压力有广度, 不能把这次通胀超预期完全归给油。</strong> 能源是最大单项, 不是唯一项。</p>
+<h3>今日的故事 (二): Wirth 的「缓冲已被抽干」——从情绪溢价到物理约束</h3>
+<p>Chevron CEO Mike Wirth 今天公开表示: 缓冲伊朗战争冲击的油品缓冲<strong>已被抽干</strong> —— 商业库存、紧急储备 (战略石油储备)、以及曾被制裁的那部分桶量, 三者全部已被动用, 使全球能源体系的暴露度更高; 并称<strong>柴油的缓解可能要到 2027 年</strong>, 时点是「中期选举前几周」。</p>
+<p><strong>这条表态的性质不同于过去两周所有的能源新闻, 原因在于它是供给侧的存量陈述, 而不是事件陈述</strong>:
+- 事件陈述 (如「油轮遇袭」、「美国考虑扩大打击」) 可以在一条新闻里反转, 溢价随之消失。
+- 存量陈述 (「缓冲已耗尽」) 不会因为地缘缓解而立刻恢复 —— 库存重建需要时间和桶量。</p>
+<p>这改变了 10/14 报告里那条限定的强度。10/14 写的是「要清楚涨幅的来源是地缘溢价而非需求, 这类溢价可以在一条新闻里全部消失」。<strong>今天 Wirth 的表态给出了一个理由认为溢价的一部分不会在一条新闻里消失 —— 因为它现在对应一个真实耗尽的库存缓冲。</strong> 但要诚实标注信心级别: 这是<strong>一家公司 CEO 的口头表态</strong>, 不是 EIA/IEA 的库存数据。它是 medium confidence, 不是 high。解锁条件是下一次 EIA 周度库存与 IEA 月报是否确认同一方向。</p>
+<p>对照面也在今天的新闻里: 「全国平均汽油价格下跌 40 美分, 但业内专家警告『不要太舒服』」—— 零售端在降而生产端在涨, 这个背离本身就是库存在被消耗的一个侧面证据。</p>
+<h3>今日的故事 (三): CVX 的背离需要个股解释</h3>
+<p>CVX 今天 <strong><span class="down">-1.09%</span></strong>, 是四只能源持仓里唯一下跌的, 而 WTI <span class="up">+1.57%</span>。同时今天有一篇报道标题是「Chevron 创新高: 还有上行空间吗」—— 说明 CVX 近期刚触及 52 周高点区域 (现价距 52w 高 $223.46 仅 1.71%)。</p>
+<p>两个候选解释, 今天无法区分:
+1. <strong>高位获利了结</strong>: 四只全贴 52w 高, CVX 是其中市值最大、机构持仓最重的一只, 高位调仓最先落在它身上。
+2. <strong>10/30 财报前的仓位调整</strong>: CVX 是四只里财报最早的 (10/30), 且今天有两篇相对估值文章 (vs ExxonMobil: XOM 净利率 8.9% vs CVX 6.7%; 以及现金流价值分析)。</p>
+<p><strong>判别点是 10/30 财报</strong>, 成本为零。在那之前把 <span class="down">-1.09%</span> 记作个股因素而不是板块转向 —— 因为同一天另外三只全涨, 板块解释不成立。</p>
+<h3>今日的故事 (四): 30 天「地缘资产」对照 —— 机制第三次确认</h3>
+<table class="compare"><thead><tr><th>地缘资产类别</th><th>30d</th><th>读数</th></tr></thead><tbody><tr><td>实物油 (WTI / Brent)</td><td>**<span class="up"><span class="up">+6.12%</span></span> / <span class="up"><span class="up">+11.13%</span></span>**</td><td>唯一上涨的一类</td></tr><tr><td>黄金</td><td>**<span class="down"><span class="down">-5.58%</span></span>**</td><td>在 MA50 $4,376 与 MA200 $4,541 双线之下</td></tr><tr><td>白银</td><td>**<span class="down"><span class="down">-11.84%</span></span>**</td><td>距 52w 高 $121.30 已 <span class="down"><span class="down">-52.9%</span></span></td></tr><tr><td>防务 (ITA)</td><td>**<span class="down"><span class="down">-8.05%</span></span>**</td><td>距 52w 高 <span class="down"><span class="down">-20.1%</span></span></td></tr></tbody></table>
+<p><strong>在一个月里有伊朗升级 + 两个超预期通胀读数 (10/14 CPI 3.7% / 10/15 PPI 6.3%) + 10Y 创 24 年新高的情况下, 四类地缘资产里只有实物油在涨。</strong> 这是 10/07 首次记录、10/14 第二次确认的「实际利率压倒地缘避险买盘」机制的<strong>第三次确认</strong>, 且这次的强度最高 —— 因为连通胀数据本身 (贵金属最直接的利好) 都在支持金银的同一个月里, 金 <span class="down">-5.58%</span> / 银 <span class="down">-11.84%</span>。</p>
+<p>今天金 <span class="up">+1.47%</span> / 银 <span class="up">+2.72%</span> 不推翻这个机制: 今天长端 -10bp, 实际利率下行是贵金属的直接利好, 所以今天的涨是机制<strong>内</strong>的。反转需要看到 30d 口径转正。</p>
+<p><strong>结论</strong>: 市场把伊朗事件定价为<strong>纯供给侧的油价事件</strong>, 不是系统性风险事件。这是对能源头寸最有利的定价结构 (油涨但无风险溢价外溢到其他持仓), 同时也意味着一旦地缘缓解, 油价回落没有避险买盘托底 —— 但 Wirth 今天的「缓冲已抽干」给这个回落路径加了一道物理阻力。</p>
+<h3>Inter-member dynamics</h3>
+<table class="compare"><thead><tr><th>Member</th><th>1D%</th><th>5D%</th><th>距 52w 高</th><th>Driver</th><th>Read</th></tr></thead><tbody><tr><td>SU</td><td><span class="up"><span class="up">+1.00%</span></span></td><td><span class="up"><span class="up">+8.09%</span></span></td><td>**<span class="down"><span class="down">-0.04%</span></span>**</td><td>WTI + Pathways CCS 承诺 + Ithaca Energy (北海) M&amp;A 讨论</td><td>实际上就在 52w 高点上; 5d 组内最强</td></tr><tr><td>CNQ</td><td><span class="up"><span class="up">+0.94%</span></span></td><td><span class="up"><span class="up">+6.64%</span></span></td><td><span class="down"><span class="down">-0.51%</span></span></td><td>WTI + 加拿大重油价差</td><td>30d 仅 <span class="up"><span class="up">+1.86%</span></span>, 组内最弱的月度表现</td></tr><tr><td>HXE.TO</td><td><span class="up"><span class="up">+0.80%</span></span></td><td><span class="up"><span class="up">+7.36%</span></span></td><td><span class="down"><span class="down">-0.32%</span></span></td><td>加拿大能源 ETF — 跟踪 SU/CNQ</td><td>30d <span class="up"><span class="up">+8.59%</span></span></td></tr><tr><td>CVX</td><td>**<span class="down"><span class="down">-1.09%</span></span>**</td><td><span class="up"><span class="up">+3.82%</span></span></td><td><span class="down"><span class="down">-1.71%</span></span></td><td>高位获利了结 或 10/30 财报前调仓</td><td>**唯一下跌; 个股因素, 非板块转向**</td></tr></tbody></table>
+<p><strong>四只全部在距 52 周高点 1.71% 以内, 且风控缓冲全在极宽区间</strong> —— 这是全书今天唯一一个没有任何风控压力的 cluster。但三只贴高点意味着<strong>向上的赔率已经不对称</strong>: 油价的地缘溢价是已定价的, 而缓解风险是未定价的。</p>
+<h3>下次关键 catalyst</h3>
+<div class="timeline"><div class="tl-item"><span class="when">2026-10-30 ▢ (15天)</span> — <span class="what">CVX 财报 — 今天 <span class="down">-1.09%</span> 背离的判别点; 也是四只里最早的数字</span></div><div class="tl-item"><span class="when">2026-11-03 ▢ (19天)</span> — <span class="what">SU 财报 — 贴 52w 高 (距 0.04%) 进财报, 预期负担最重</span></div><div class="tl-item"><span class="when">2026-11-05 ▢ (21天)</span> — <span class="what">CNQ 财报 — 30d 仅 <span class="up">+1.86%</span> 是组内最弱, 要解释为什么没跟上油价</span></div><div class="tl-item"><span class="when">持续</span> — <span class="what">EIA 周度库存 / IEA 月报 — **Wirth「缓冲已抽干」表态的解锁条件**; 他的说法目前是 medium confidence</span></div><div class="tl-item"><span class="when">持续</span> — <span class="what">美伊局势 / 霍尔木兹海峡 / OPEC+ 配额 — 溢价的来源, 也是回落的触发器</span></div></div>
+<h3>Verdict</h3>
+<div class="verdict hold">全书唯一的多头方向, 风控缓冲最宽, 且今天拿到一条把溢价从情绪升级为物理约束的 CEO 表态; 但三只贴 52w 高意味着向上赔率已不对称, 无加仓理由。</div>
+<div class="callout info"><p><strong>Don't</strong>: 不要因为 Wirth 说「缓冲已抽干」就把地缘溢价当成结构性的。那是一家公司 CEO 的口头表态 (medium confidence), 不是 EIA/IEA 的库存数据。在被官方库存数据确认之前, 它只是一个提高了溢价粘性先验的输入, 不是一个新的估值基础。
+<strong>If acting</strong>: 若要减仓, 判别点是 EIA 周度库存连续两周确认重建 (即 Wirth 的说法被否) + 美伊谈判出现具体节点, 两者同时出现才是溢价消失的信号。若要判断个股优劣, 10/30 CVX / 11/03 SU / 11/05 CNQ 三份财报在 21 天内全部到手 —— CNQ 要回答的是为什么 30d 只有 <span class="up">+1.86%</span> 而 SU 有 <span class="up">+12.80%</span>。</p></div></div><div class="tab-panel" data-tab-for="tabs1-8"><div class="callout danger"><p><strong>今天 GEV 是全书最清晰的一例「公司消息极好、股价仍跌」</strong>: 与 Venture Global 签署最高 <strong>$172 亿</strong> 电力协议 (最多 16 台 720MW 燃气电力岛 + 变压器, 可支撑最多 10GW 未来容量), 当日仍跌 <strong>3.02%</strong> (量比 1.23x, 连续第三个放量日)。这意味着今天 GEV 的跌幅<strong>不含任何公司基本面成分</strong>, 100% 是 AI capex 信用通道的传染 —— 和 TSM 的「超预期仍跌」是同一个机制在不同环节的两个样本。</p></div>
+<h3>今日数据</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">GEV</div><div class="value">$913.34 / **<span class="down"><span class="down">-3.02%</span></span>**</div><div class="note">5d <span class="down"><span class="down">-8.61%</span></span> · 30d <span class="down"><span class="down">-0.93%</span></span> · 量比 1.23x · PE 27.91</div></div><div class="kpi"><div class="label">距 MA50 $965.16</div><div class="value">**<span class="down"><span class="down">-5.37%</span></span>**</div><div class="note">已在 MA50 下方 · 距 52w 高 $1,195.94 <span class="down"><span class="down">-23.6%</span></span></div></div><div class="kpi"><div class="label">距 thesis_break $700</div><div class="value">**<span class="up"><span class="up">+30.5%</span></span>**</div><div class="note">缓冲充裕, 无风控压力</div></div><div class="kpi"><div class="label">12 个月回报 (至 10/13)</div><div class="value">**<span class="up"><span class="up">+66.5%</span></span>**</div><div class="note">vs S&amp;P 500 <span class="up"><span class="up">+20.5%</span></span> — 仍是显著 alpha</div></div><div class="kpi"><div class="label">今日订单</div><div class="value">最高 **$172 亿**</div><div class="note">16 × 720MW 燃气电力岛 + 变压器; ⚠️ 头条数字 &gt; 确定承诺额</div></div></div>
+<h3>今日的故事: 一个零基本面成分的跌幅</h3>
+<p>把今天 GEV 的输入分开列, 结论是唯一的:</p>
+<table class="compare"><thead><tr><th>输入</th><th>方向</th><th>内容</th></tr></thead><tbody><tr><td>Venture Global 协议</td><td>⬆️ 强利好</td><td>最高 $172 亿, 16 台 720MW 燃气电力岛 + 变压器, 支撑最多 10GW 离网工业电力网络 (含 LNG 站点与潜在 AI 数据中心)</td></tr><tr><td>2026 指引</td><td>⬆️ 利好</td><td>年内**两次**上调营收与自由现金流指引; Power 与 Electrification 订单持续增长</td></tr><tr><td>Gartner neocloud 报告</td><td>⬇️ 利空 (非公司级)</td><td>多数 neocloud 将失去独立性 → 数据中心终端客户的信用质量被质疑</td></tr><tr><td>数据中心融资成本审视</td><td>⬇️ 利空 (非公司级)</td><td>Cipher Digital <span class="down"><span class="down">-9%</span></span> / Applied Digital <span class="down"><span class="down">-6%</span></span></td></tr><tr><td>10/14 CoreWeave 债券通道</td><td>⬇️ 利空 (延续)</td><td>10/14 GEV 跌 6.20% 且量比 1.65x 为当日全场最大, Barron&#x27;s 具名</td></tr><tr><td>⚠️ 承诺额限定</td><td>➖</td><td>报道明确提示「头条数字大于确定承诺额」—— $172 亿是上限不是订单簿</td></tr></tbody></table>
+<p><strong>五个输入里两个强利好是公司级的, 三个利空全部是客户信用级的 —— 而股价跟了利空。</strong> 这是对 GEV 论点结构的一次干净暴露: GEV 的订单质量取决于<strong>下单方的融资能力</strong>, 而不只是取决于 GEV 自己的执行能力。16 台 720MW 燃气轮机的订单若对方融不到钱, 它就只是一份框架协议。</p>
+<p><strong>这正是「头条数字 &gt; 确定承诺额」这条限定的价值.</strong> 报道自己点出了这件事, 而市场今天的定价方式和这条限定一致: 不给上限数字定价, 只给信用环境定价。所以今天的 <span class="down">-3.02%</span> 不是市场犯错, 而是市场在对一个<strong>条件性订单</strong>打信用折扣。</p>
+<p><strong>连续三个放量日是今天最该记的二阶信息</strong>: 10/13、10/14 (量比 1.65x, 当日全场最大)、10/15 (1.23x)。GEV 不是在无量漂移, 而是有资金在连续三天离场。配合 30d <span class="down">-0.93%</span> (几乎平) 与 12 个月 <span class="up">+66.5%</span>: <strong>这是一个累积了大量浮盈的标的在一个具名叙事变化下开始被减仓</strong>, 而不是一个无人问津的标的在跟跌。</p>
+<h3>下次关键 catalyst</h3>
+<div class="timeline"><div class="tl-item"><span class="when">2026-10-28 ⚠ (13天)</span> — <span class="what">**GEV Q3 财报** (四重叠加日: + GOOG + MSFT capex 指引 + FOMC) — 要回答两件事: (1) Venture Global 这类协议里确定承诺额究竟多少; (2) Power 段毛利率</span></div><div class="tl-item"><span class="when">2026-10-28 ⚠ (13天)</span> — <span class="what">同日 GOOG + MSFT capex 指引 — **GEV 的需求侧答案和自己的财报同一天到手**, 这是罕见的高信息密度</span></div><div class="tl-item"><span class="when">2026-10-29 ⚠ (14天)</span> — <span class="what">AMZN 财报 ($2,200亿 capex) — 第三个开支方样本</span></div><div class="tl-item"><span class="when">持续</span> — <span class="what">hyperscaler 直签燃气容量 PPA / 变压器与电网订单积压 / SMR DOE 进展 / Wind 段盈亏平衡</span></div></div>
+<h3>Verdict</h3>
+<div class="verdict hold">今天的跌幅零基本面成分, 但连续三个放量离场日 + 订单质量取决于客户融资能力这个结构性暴露, 使 10/28 成为必须读的一份财报; 缓冲 <span class="up">+30.5%</span> 无风控压力, 在财报前无动作要求。</div>
+<div class="callout info"><p><strong>Don't</strong>: 不要把 $172 亿当成订单簿数字。报道自己提示了「头条数字大于确定承诺额」—— 在 10/28 财报给出确定承诺额之前, 这个数字对估值的贡献应按条件性订单折算, 而不是按合同额。
+<strong>If acting</strong>: 10/28 是全年最高信息密度的一天 —— GEV 自己的 Power 段毛利率 + 确定承诺额披露, 和它最大终端客户群 (GOOG + MSFT) 的 capex 指引, 加上 FOMC, 同一天到手。建议把 GEV 加入 focus 名单 (连续三日进入阈值穿越名单, 10/13-10/15 连续放量), 并在 10/28 之前不做方向判断。</p></div></div><div class="tab-panel" data-tab-for="tabs1-9"><div class="callout warn"><p>三只全跌且全部跑输大盘 (HUMN <span class="down">-3.19%</span> / CROB <span class="down">-2.49%</span> / KOID <span class="down">-2.20%</span>), 零公司级新闻 —— 这是纯久期资产在一个「加息押注上行 + 风险偏好收缩」的日子里的教科书反应。<strong>但今天有一个与久期框架矛盾的事实必须记下: 长端利率今天是下行 10bp 的, 折现率给了顺风, 三只仍然全跌。</strong> 这说明打击它们的不是折现率, 和打击科技的是同一个东西: 风险偏好。</p></div>
+<h3>今日数据</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">HUMN (最纯人形 OEM+执行器)</div><div class="value">$25.90 / <span class="down"><span class="down">-3.19%</span></span></div><div class="note">5d <span class="down"><span class="down">-7.75%</span></span> · 30d <span class="down"><span class="down">-11.62%</span></span> · 量比 0.95x · PE 26.2 · 距 52w 高 $39.17 <span class="down"><span class="down">-33.9%</span></span></div></div><div class="kpi"><div class="label">KOID (全球等权人形+物理AI)</div><div class="value">$32.62 / <span class="down"><span class="down">-2.20%</span></span></div><div class="note">5d <span class="down"><span class="down">-6.68%</span></span> · 30d <span class="down"><span class="down">-7.99%</span></span> · 量比 **1.48x** · PE 32.3 · 距 52w 高 $43.32 <span class="down"><span class="down">-24.7%</span></span></div></div><div class="kpi"><div class="label">CROB (中国机器人纯标的)</div><div class="value">$18.22 / <span class="down"><span class="down">-2.49%</span></span></div><div class="note">5d <span class="down"><span class="down">-8.83%</span></span> · 30d **<span class="down"><span class="down">-17.85%</span></span>** · 量比 **0.21x** (全书最低) · 距 52w 高 $33.01 <span class="down"><span class="down">-44.8%</span></span></div></div></div>
+<h3>今日的故事</h3>
+<p><strong>零公司级新闻日。</strong> 三只今天唯一相关的输入是一篇 ETF 板块综述 (「用这些 ETF 把握物理 AI 浪潮」, 10/14 发布), 不是催化剂。Optimus 侧无发布、无 Fremont 量产确认、无任一供应商拿到 Tesla 确认订单。所以今天三只的跌幅 100% 是 beta。</p>
+<p><strong>但「是 beta」这个结论本身今天产生了一个有价值的矛盾.</strong> 这个 cluster 在 workspace 里被定义为「纯长久期主题, 无当期盈利, 对利率/风险偏好极敏感」。按久期框架, 今天长端 -10bp 应该是<strong>顺风</strong>。实际结果是三只全跌 2.2-3.2%, 跑输 SPY (<span class="up">+0.09%</span>) 2.3-3.3pp。</p>
+<p>对照记忆里的久期/利率敏感度框架: 该框架的双轴是「久期光谱」× 「远近 × 确定性」。今天的结果说明在<strong>风险偏好收缩</strong>的日子里, 第二个轴 (确定性) 压倒第一个轴 (久期)。HUMN/KOID/CROB 的现金流不仅远, 而且<strong>不确定</strong> —— 折现率下行对「远但确定」的现金流是实质利好 (今天 MSFT <span class="up">+1.08%</span> / 住房股 Opendoor+Zillow <span class="up">+7%</span> 就是这一类), 但对「远且不确定」的现金流几乎无帮助, 因为它们的估值主要由风险溢价而不是无风险利率决定。</p>
+<p><strong>这是今天跨 cluster 最一致的一条线</strong>: 同一个机制 (风险溢价上行、折现率下行) 同时解释了 (a) 供给方芯片全跌而开支方全平、(b) humanoid 三只在利率顺风下仍跌、(c) 长端 -10bp 却伴随权益下跌。三个独立观察指向同一个因子。</p>
+<p><strong>量比给出一个内部分化</strong>: KOID 1.48x 放量 vs CROB <strong>0.21x</strong> (全书最低)。CROB 30d <span class="down">-17.85%</span> 为三只最差, 却几乎没有成交 —— 这是「无人交易的持续下跌」, 典型的流动性枯竭形态, 比放量下跌更难退出。HUMN 0.95x 居中。</p>
+<p><strong>错配论点今天没有变化.</strong> <code>research/sectors/2026-08-17-optimus-supply-chain.md</code> 记录的核心错配 —— 内容最纯的 (中国减速器供应链, 谐波减速器等) 买不到, 买得到的内容最稀 —— 在今天依然成立, 且 CROB 的流动性枯竭 (0.21x) 使「用美股 ETF 表达中国机器人主题」这条路径的质量进一步下降。</p>
+<h3>Inter-member dynamics</h3>
+<table class="compare"><thead><tr><th>Member</th><th>1D%</th><th>30D%</th><th>量比</th><th>Read</th></tr></thead><tbody><tr><td>HUMN</td><td><span class="down"><span class="down">-3.19%</span></span></td><td><span class="down"><span class="down">-11.62%</span></span></td><td>0.95x</td><td>组内今日最弱; 最纯 OEM+执行器暴露, 因此 beta 最高</td></tr><tr><td>KOID</td><td><span class="down"><span class="down">-2.20%</span></span></td><td><span class="down"><span class="down">-7.99%</span></span></td><td>**1.48x**</td><td>组内今日最抗跌且唯一放量 — 更广的「物理 AI」使能层分散了纯人形风险</td></tr><tr><td>CROB</td><td><span class="down"><span class="down">-2.49%</span></span></td><td>**<span class="down"><span class="down">-17.85%</span></span>**</td><td>**0.21x**</td><td>30d 最差 + 全书最低成交 = 流动性枯竭, 退出成本高于另两只</td></tr></tbody></table>
+<h3>下次关键 catalyst</h3>
+<div class="timeline"><div class="tl-item"><span class="when">无确定日期</span> — <span class="what">Optimus Gen3/V3 发布 — 本 cluster 唯一的真正催化剂, 无公开时间表</span></div><div class="tl-item"><span class="when">2026-10-21 🔥 (6天)</span> — <span class="what">TSLA Q3 财报 — Optimus 进展的唯一官方口径渠道 (非主议题, 但电话会可能被问到)</span></div><div class="tl-item"><span class="when">无确定日期</span> — <span class="what">任一供应商拿到 Tesla 确认订单 / Fremont 量产确认 / UBTech-Unitree 订单与 IPO 进展</span></div></div>
+<h3>Verdict</h3>
+<div class="verdict watch">零公司级新闻 + 100% beta 下跌 + 唯一真正催化剂 (Optimus 发布) 无时间表 = 无任何可操作信息; CROB 的流动性枯竭是唯一需要记入风险的新事实。</div>
+<div class="callout info"><p><strong>Don't</strong>: 不要把今天的跌幅归因为「加息打击长久期」—— 今天长端是<strong>下行 10bp</strong>, 折现率是顺风。真正的机制是风险溢价, 这个区分在下次长端上行时会给出完全不同的预期 (那时才是折现率打击)。
+<strong>If acting</strong>: 若要在三只里调整结构, 唯一的新信息是 CROB 的量比 0.21x + 30d <span class="down">-17.85%</span> —— 跌最多且几乎无成交, 意味着真正要减的时候冲击成本最高。KOID (1.48x 放量、今日最抗跌、覆盖面更广) 是三只里流动性与分散度都最好的一只。解锁方向判断的条件只有一个: Optimus 的量产或供应商确认订单, 两者都没有时间表。</p></div></div><div class="tab-panel" data-tab-for="tabs1-10"><div class="callout danger"><p><strong>两天两个超预期通胀读数, 长端却下行 10bp 且前端一动不动 —— 折现率今天是顺风, 权益照样跌, 所以跌幅必须由风险溢价全额解释。</strong> TSM 用营收 <span class="up">+41%</span> / 第六个纪录季度排除了「需求走弱」这一分支; GEV 用 $172 亿订单日跌 3.02% 证明跌幅与公司基本面无关; 韩国存储本线 <span class="down">-11%</span>/<span class="down">-9.5%</span> 完成第一次本土投降。今天是本周第一个<strong>轮动而非普跌</strong>的日子: QQQ <span class="down">-0.61%</span> vs Dow <span class="up">+0.86%</span> vs IWM <span class="up">+0.74%</span>。</p></div>
+<h3>今日 tape</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">SPY</div><div class="value">$770.31 / <span class="up"><span class="up">+0.09%</span></span></div><div class="note">距 52w 高 1.45%; 但 QQQ 跌破 MA50 — 指数层面第一次方向分离</div></div><div class="kpi"><div class="label">VIX</div><div class="value">16.88 / <span class="up"><span class="up">+0.06%</span></span></div><div class="note">低位几乎零反应 — 第五次确认「不是系统性恐慌」</div></div><div class="kpi"><div class="label">10Y</div><div class="value">5.089% / **-10.1bp**</div><div class="note">前端 (3M) 仅 +0.3bp → 不是 Fed 定价, 是避险买久期</div></div><div class="kpi"><div class="label">Top mover</div><div class="value">**000660.KS <span class="down"><span class="down">-11.06%</span></span>**</div><div class="note">量比 1.96x; 本轮第一次韩国本土投降 (三星 <span class="down"><span class="down">-9.48%</span></span> / 量比 2.06x 全场最高)</div></div><div class="kpi"><div class="label">最清晰的错配</div><div class="value">**GEV <span class="down"><span class="down">-3.02%</span></span>**</div><div class="note">当日签 $172 亿订单 + 年内两次上调指引, 跌幅零基本面成分</div></div><div class="kpi"><div class="label">Most at risk</div><div class="value">**NOK**</div><div class="note">距 thesis_break $9.00 仅 **<span class="up"><span class="up">+3.9%</span></span>**, 10/22 财报定胜负</div></div></div>
+<h3>今天的三条新信息 (不是三条新闻)</h3>
+<table class="compare"><thead><tr><th>新信息</th><th>证据</th><th>为什么重要</th></tr></thead><tbody><tr><td>存储叙事从单侧变双侧</td><td>Counterpoint: Q3 全球手机出货 **<span class="down"><span class="down">-20%</span></span>** YoY, 2012 年以来最弱 Q3, 归因 DRAM/NAND 涨价</td><td>此前四天全是 CXMT **供给预期** (25天零技术细节); 今天第一次有**已发生的需求破坏硬数据**</td></tr><tr><td>折现率通道被正面排除</td><td>PPI <span class="up"><span class="up">+6.3%</span></span> 同比 (四年最大) 当日: 3M +0.3bp / 5Y -8.9bp / 10Y -10.1bp / 30Y -10.1bp</td><td>前四天是「长端不动」(零信息否证); 今天长端**反向下行**却仍跌 = 从「无反证」升级为「有正面证据」</td></tr><tr><td>AI 融资质疑获三个独立具名来源</td><td>Gartner (neocloud 将失去独立性) + Saxo (融资挤压打到供应链) + 巴克莱 (下调 Dell/HPE, 理由是内存成本虚增营收)</td><td>10/08 时只有 Burry 口头警告; 今天是研究机构 + 投行 + 券商三方独立</td></tr></tbody></table>
+<h3>各 cluster 状态</h3>
+<table class="compare"><thead><tr><th>Cluster</th><th>今日故事</th><th>Verdict</th><th>Next catalyst</th></tr></thead><tbody><tr><td>TSLA</td><td>量比 0.47x 全书最低, 市场不押注</td><td>watch</td><td>10/21 (6天) Q3 财报</td></tr><tr><td>SpaceX</td><td>主权风险首次具名 + 跌破 MA50 + 无风控线</td><td>watch</td><td>10/16 起 lockup 剩 55 天</td></tr><tr><td>DRAM/HBM</td><td>韩国本土投降 + ADS 溢价爆到 <span class="up"><span class="up">+52.6%</span></span></td><td>watch</td><td>**10/16 (明天) ADS 判别** → 10/26 SK Hynix</td></tr><tr><td>AI capex</td><td>TSM 超预期仍跌 → 排除需求解释</td><td>hold</td><td>10/28 (13天) GOOG+MSFT capex</td></tr><tr><td>能源(油气)</td><td>三只贴 52w 高; 涨幅就是 PPI 的来源</td><td>hold</td><td>10/30 (15天) CVX 财报</td></tr><tr><td>电力/Grid</td><td>$172亿订单日跌 3.02%, 连续三日放量离场</td><td>hold</td><td>10/28 (13天) GEV 财报 + 客户 capex 同日</td></tr><tr><td>humanoid</td><td>零新闻 100% beta; CROB 量比 0.21x 流动性枯竭</td><td>watch</td><td>Optimus 发布 (无时间表)</td><td></td></tr></tbody></table>
+<h3>下个 7 天的决定性 catalyst</h3>
+<div class="timeline"><div class="tl-item"><span class="when">2026-10-16 🔥 (明天)</span> — <span class="what">**SKHY ADS 走势** — 零成本判别 <span class="up">+52.6%</span> 溢价是结构摩擦还是时区滞后。历史 n=2 正好 1 胜 1 负 (9/15 缺口未收敛 / 10/13 次日 ADS 补跌 6.06%), 无先验偏向</span></div><div class="tl-item"><span class="when">2026-10-21 🔥 (6天)</span> — <span class="what">**TSLA + META + IBM 三重** — META 带 30d <span class="up">+24.29%</span> (全书最强) 进财报, 是第一个开支方 capex 样本; TSLA 340x PE 的唯一支柱要交数字</span></div><div class="tl-item"><span class="when">2026-10-22 🔥 (7天)</span> — <span class="what">**NOK 财报** — 90 天内唯一一个「财报直接决定一条风控线是否被触发」的事件, 缓冲仅 <span class="up">+3.9%</span></span></div><div class="tl-item"><span class="when">2026-10-28 ⚠ (13天)</span> — <span class="what">**四重叠加: GOOG + MSFT capex 指引 + GEV 财报 + FOMC** — 今天「开支方 vs 供给方零重叠」这个逻辑上不可持续的分裂, 在这一天被强制收敛</span></div></div>
+<h3>概率分布 (SKHY — 今天全书最大的结构性异常)</h3>
+<div class="scenarios"><div class="scenario"><div class="name bull">Bull</div><div class="bar-wrap"><div class="bar bull" style="width:0%">0%</div></div><div class="target">$250–280</div><div class="desc">HBM4 爬坡无瑕 + 三星追不上 + 稀缺性溢价推倍数到 10-12x</div></div><div class="scenario"><div class="name base">Base</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">$180–220</div><div class="desc">超级周期延续至 2027 + HBM 份额 &gt;50% + 倍数稳在 7-9x fwd</div></div><div class="scenario"><div class="name bear">Bear</div><div class="bar-wrap"><div class="bar bear" style="width:0%">0%</div></div><div class="target">$100–130</div><div class="desc">三星 HBM4 认证提速 / hyperscaler capex 削减 / 周期 2026 末见顶</div></div></div>
+<div class="callout danger"><p>⚠️ <strong>这组已记录的 bull/base/bear 今天已失效, 必须在 10/27 前重写</strong>: 现价 $143.54 <strong>低于 Base 下沿 $180 达 20.3%</strong> (10/14 时为 18%, 一天扩大 2.3pp), 已落在 Base 与 Bear 之间的无人区。更关键的是 <strong>bear case 的三条触发器里没有一条是 CXMT</strong>, 也没有一条是「内存涨价引发终端需求破坏」—— 而这两者正是本周实际在定价的东西。一组不含当前主要风险的情景表无法用来做判断。</p></div>
+<h3>Don't / If acting</h3>
+<div class="callout warn"><p><strong>Don't</strong>: 不要把今天的跌幅归因为「加息打击高倍数/长久期资产」。两个横截面事实同时否决它 —— (1) PE 从 9.7x (SKHY) 到 340x (TSLA) 跨 35 倍, 跌幅区间只有 <span class="down">-0.26%</span> 到 <span class="down">-4.14%</span> 且与倍数无关; (2) 长端今天<strong>下行</strong> 10bp, 折现率是顺风。真正把跌幅排序出来的是「是否在 AI 供给/融资链上」。
+<strong>If acting</strong>: 未来 7 天里三个判别点全部免费到手且成本为零 —— <strong>10/16 (明天) SKHY ADS</strong> 解锁溢价性质; <strong>10/21 META</strong> 给出第一个开支方 capex 样本; <strong>10/22 NOK 财报</strong>决定全书最近的一条风控线。真正需要主动做的只有一件: 给 <code>stocks/SPCX/triggers.yaml</code> 补上 <code>thesis_break_price</code> —— 这是连续第五份报告的同一条记录, 而该标的今天刚跌破 MA50、出现首次具名主权客户风险、且 55 天后有确定解禁。</p></div>
+<h3>一句话总结</h3>
+<blockquote>
+<p><em>当折现率给了顺风、需求被财报证明完好、而价格依然在跌的时候, 剩下唯一能解释的东西就是市场对「谁来付这笔钱」的信心 —— 而那个问题会在 10/28 四重叠加日被三家付钱方同时回答。</em></p>
+</blockquote></div></div>
+</body>
+</html>

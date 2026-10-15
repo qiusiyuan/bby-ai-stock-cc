@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-15 · -4.14% day · ▼ material
+**Tags:** `sector_rotation`, `ai_demand`, `competitor_news`, `earnings_pre_print`
+**Confidence:** medium
+
+**Primary cause.** **-4.14% 是今天全书 (剔除韩国本线) 最大单日跌幅, 但 30d 仍是 +4.45% —— 在一个存储/半导体全组 30d 两位数负收益的月份里, INTC 是半导体里唯一 30d 正收益的名字。这个分裂是今天 INTC 的全部信息。**||今天的跌幅有两个成分, 只有第二个是公司级的: **(1) AI 融资质疑的板块 beta (主要成分)** —— 供给方七家全跌, INTC 是其中跌幅最大的一个, 但量比只有 **0.84x** (半量)。**半量下的最大跌幅意味着这是「没有买盘」而不是「出现卖盘」** —— 没有人在接, 不是有人在清。这个区分重要, 因为它意味着跌幅的幅度不可信, 方向才可信。**今天 AI 融资质疑第一次拿到三个相互独立的具名来源 (10/08 时只有 Burry 的口头警告)**: (1) **Gartner 研究报告** — 预测多数 neocloud (新型 AI 云服务商) 到本十年结束前将失去独立性; 当日 IREN -5% / CoreWeave -5% / Nebius -4%。(2) **Saxo Bank (Charu Chanana)** — 明确表态「尚无充分证据显示存在系统性 AI 信用危机」, 但同时承认「融资挤压可能打到供应链」。注意这是**反驳方**的表态: 连反驳者都承认传导路径存在, 只否认它已经发生。(3) **巴克莱** — 同时下调 Dell 与 HPE 至 Hold (Dell -8% / HPE -4% / Super Micro -5%), 理由明确不是需求崩塌, 而是「供应链里一股安静的力量一直在虚增服务器营收」, 即**内存成本上涨计入 OEM 营收但不带毛利**。另有两条框架层输入: BlackRock CEO Larry Fink 称「若美国数据中心建设停摆将把经济推入衰退」(并提到国债从 2000 年 $8万亿 到今天 $40万亿); Michael Burry 称痛苦交易可以持续、Mag 7 弱势可能加深「红色十月」, 点名 2000 年科技泡沫类比。**Fink 那句话的双向性值得单记**: 表面是警告不要停, 反过来读却承认了「美国经济增长现在实质依赖 AI 资本开支」—— 这正是空头论点的前提。支持方的辩护词可以直接改写成空头论点, 说明这个结构性依赖是双方共识, 分歧只在可不可持续。||**数据中心融资成本审视的第二组证据**: Cipher Digital -9% / Applied Digital -6%, 而广义数据中心基金几乎没动 —— 分化本身指出了哪些公司最暴露于「以未来租金抵押借款」的定价方式。||**(2) 一条具名的公司级负面输入**: TSMC CEO 魏哲家今天在 Q3 电话会上暗示, **若 Intel 的先进封装产能爬坡不足, TSMC 可以为客户兜底**, 并称 TSMC 的先进组装与封装技术「非常非常有竞争力」。这是竞争对手的 CEO 在自己的财报电话会上公开质疑 Intel 的执行能力, 并主动提出替代方案 —— **直接打在 foundry 论点 (Intel 能否承接外部客户) 的执行可信度上, 而不是打在需求上。** 另有一篇「Intel vs. Qualcomm」对比指出 Intel 的 foundry 转型带来重亏与负自由现金流, 而高通以一半的估值倍数产生强劲现金。||**但这两条都不是论点的裁决, 裁决在 10/29 (14天后)。** 已记录的判据 (Piper 的多空拆分) 是: 指引 $15.8-16.8B 落在**区间上端** + 数据中心/AI 延续 +59% 级增速 = 支持 high-teens CAGR 的看多部分; 落**下端** = 「45% 市值押 foundry 夺 15 个百分点 CPU 份额」的假设更难支撑。今天魏哲家的表态提高了落下端的概率权重, 但没有改变判据本身。||价格位置: $94.06, 跌破 MA50 $103.35 (-9.0%); 距 52w 高 $142.35 -33.9%; 距 `thesis_break_price` $75 缓冲 **+25.4%** (该线定义为「foundry 论点显著受损, 低于此线则转型案被打破」)。||**宏观共因 (今天的共因只有一个, 但它的形状是反直觉的).** 九月 PPI (Producer Price Index, 生产者物价指数 — BLS 每月发布, 衡量生产者卖出价格, 通常领先 CPI 一到两个季度) 环比 **+1.3%** (8月 +0.5% / 7月 +0.2%, 2022年3月 +1.7% 以来最大单月), 同比 **+6.3%** (2022年12月 +6.4% 以来最大年度涨幅); 核心 (除食品/能源/贸易服务) 环比 +0.5% / 同比 +5.0%; 商品 +2.6% 其中**能源 +10.8% / 汽油 +20.3%**。接在 10/14 CPI 同比 3.7% (共识 3.6%) 之后, 是连续两天的下游+上游双向确认。零售销售同时跳升、失业申领保持稳健 —— 三项数据同向意味着经济不弱而价格在涨, 这是加息路径最不利的组合。||**❗但长端的反应方向和教科书相反, 本条必须作为限定随附**: 3M (^IRX) 4.088% **仅 +0.3bp**, 5Y 4.903% **-8.9bp**, 10Y 5.089% **-10.1bp**, 30Y 5.424% **-10.1bp**, TLT +1.52% (5d +2.85%)。**前端一动不动而 5年到30年平行下行 10bp —— 这个形状不可能是 Fed 政策定价 (政策定价必先动前端), 只能是对久期本身的避险需求。** 当天新闻口径直接说出了这件事 ('Tech slumps as AI financing worries grow, investors flock to bonds')。||**⭐ 方法论升级 (改写 10/05、10/07、10/08、10/14 四份报告的同一条限定)**: 那四天记录的都是「长端**不动**」—— 即对利空/利多都无响应, 属于零信息的否证, 只能说明「没有反证」。**今天长端第一次动了, 而且方向是下行**, 也就是折现率给了权益一个**顺风**, 权益却继续跌。结论因此从「无反证」升级为「有正面证据」: 折现率通道今天是负贡献 (利好), 跌幅必须由风险溢价**全额**解释。||**横截面否证「加息打击高倍数/长久期股」—— 本周第三次**: PE 从 SKHY 9.74x / DRAM 9.84x / MU 12.79x 一直到 AMD 148.2x / PLTR 172.0x / TSLA 340.0x, 跨 35 倍; 跌幅区间只有 -0.26% ~ -4.14% 且与倍数**无关** (TSLA 340x 跌 1.84% 却轻于 DRAM 9.8x 的 3.18%)。真正把跌幅排序出来的是「是否在 AI 供给/融资链上」。||**参与度限定 (与 10/14 相反)**: 38 只标的量比中位数 **0.755x**, 仅 11 只过 1.0x, 4 只过 1.5x。10/14 为中位数 1.02x / 17-of-32, 当时记为「本轮下跌序列第一个全参与度日」—— **一天后没有延续, 那是一个点不是趋势**。且今天放量的位置极度集中在韩国两条本线 (2.06x / 1.96x) + DRAM ETF (1.55x) + TSM (1.52x 财报日), 美国大型科技几乎无成交 (MSFT 0.54x / AMZN 0.54x / TSLA 0.47x / GOOG 0.39x / META 0.36x)。**这是对一个特定位置的定向抛售, 不是广泛降风险。**||**指数层面第一次方向分离**: QQQ -0.61% (跌破 MA50 $726.34) vs Dow +0.86% vs IWM +0.74%, 裂口 1.47pp。前四个下跌日 (10/07、10/08、10/13、10/14) 都是全指数同向。30d 口径 QQQ +2.26% vs IWM -6.77% 裂口从 10/14 的 12.4pp 收窄到 9.0pp, **且是用纳指跌、小盘涨的方式收窄 —— 轮动而非普跌的硬证据**。落点新闻一致: Moderna +6% (资金流入医疗) / Walmart +3% (德银上调) / Opendoor-Zillow +7% (长端回落直接利好住房)。VIX 16.88 (+0.06%) 几乎零反应, 第五次确认「不是系统性恐慌」。
+
+**Sources.**
+- Yahoo: TSMC CEO Hints Company Could Back Up Customers If Intel's Advanced Packaging Ramp-Up Falls Short — 'very, very competitive'
+- Yahoo: Taiwan Semiconductor Falls 3% Despite Record Quarterly Profit; Intel Drops 4%, AMD Slides 3%
+- Motley Fool via Yahoo: Intel vs. Qualcomm: Which Tech Stock Is a Better Buy in 2026? — Intel's foundry turnaround has resulted in heavy losses and negative free cash flow
+- Investing.com: Premarket movers: Global semiconductor stocks fell sharply, extending selloff after fresh U.S. inflation data
+
+**Cross-assets.** SPY +0.09% · VIX 16.88 · TEN YEAR 5.089 · WTI 96.58 · DXY 102.101 · GOLD 4168.2 · BTC 82171
+
+**Agent read.** 半量 (0.84x) 下的全书最大跌幅 = 没有买盘而非出现卖盘, 幅度不可信方向可信。唯一具名的公司级输入是 TSMC CEO 公开暗示可为 Intel 的封装产能兜底 — 打的是执行可信度而非需求。30d 仍 +4.45% 为半导体唯一正收益, 说明今天跌的是 AI beta 不是 foundry 论点。10/29 指引 $15.8-16.8B 落上端还是下端才是裁决。
+
+
+---
 ### 2026-10-14 · -4.56% day · ▼ material
 **Tags:** `macro_inflation`, `executive_comment`, `policy_china`, `sector_rotation`, `unattributed`
 **Confidence:** high
