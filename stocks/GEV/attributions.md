@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -11.11% day · ▼ extreme
+**Tags:** `sector_rotation`, `competitor_news`, `earnings_pre_print`, `flow_event`
+**Confidence:** high
+
+**Primary cause.** **GEV 在它最大需求来源加大支出的那一天跌 11.11%，量比 1.75x (全场第二)，而财报还在六天后 (10/28)。** META 把 2026 capex 下沿从 $1,300亿**上调**到 $1,350亿 —— 而 GEV 预设的 kill condition 是「hyperscalers (MSFT/GOOG/AMZN/META) 公开削减数据中心建设 >20%」。**今天发生的事和那条触发器方向完全相反，价格却给出了本轮最大单日跌幅。**||具名归因毫无歧义: Barron's 标题 "GE Vernova Stock Is Down 10%. **Blame Meta.**"，副标题给出机制 "AI demand is off the charts, but **financing** all the growth will be tough."||**这是本 workspace 记录过的最干净的「零基本面成分」下跌，而且是第二次。** 10/15 记录过结构相同的一次: GEV 当日签下 Venture Global 最高 **$172亿**合同 (16 台 × 720MW 燃气电力岛 + 变压器，支撑 10GW)、年内两次上调指引、12 个月 +66.5%，**仍跌 3.02%**，当时的结论是「跌幅零基本面成分；市场不给上限定价，只给信用环境定价」。**今天是同一机制，幅度放大 3.7 倍。**||逐条核对今天 GEV 自身的消息: Barchart 财报前瞻称「将报告强劲 Q3 增长，受稳健需求与有利定价驱动」(正面); Zacks 称「GEV 盈利预期增长」(正面); 另一篇称「Q3 回调反映获利了结，AI capex 需求持续」(中性偏正)。**公司自身负面消息: 零。跌幅: -11.11% 带 1.75x 量。**||**这个区分决定了 10/28 财报有没有用，必须说准:** 若跌的是**需求** → 10/28 的订单、backlog、指引可以直接反驳。若跌的是**买方的融资能力** → 10/28 财报**无法反驳** —— GEV 可以报出完美 backlog，但市场担心的是「签了约的客户 (META / 数据中心开发商) 两年后还付不付得出钱」，这不在 GEV 的财报里。**所以 10/28 最大的陷阱是: 一份好财报可能换来继续下跌。10/15 已经出现过这个形状一次，今天第二次，10/28 是第三次机会。**||**同组外部确认传导是板块性的: Vertiv 一周 -14% / Bloom Energy -15% / GEV -11%** ("GE Vernova Sinks 11%, Vertiv 14%, Bloom Energy 15% in a Week as AI Power Stocks Slide")。三只都是 AI 电力/散热/发电设备，三只都没有公司负面消息。**板块同向且无个股消息 = 共同的折现变量在动；而今天那个变量已被排除为利率 (2Y -17.3bp / 10Y -18.1bp 是顺风)，所以只能是客户信用。**||**风控: 距 thesis_break $700 的缓冲从 10/15 的 +32.3% 压缩到今天的 +17.6% —— 一周压缩 14.7pp，是全书本周最快的。** vs MA50 ($954.13) 偏离 -13.7%; 距 52w 高 $1,195.94 为 -31.18%。||**触发器体系的缺口 (今天跨 NOK/GEV/META/SPCX 四个标的的同一个问题)。** kill condition 1「hyperscalers 公开削减建设 >20%」: 今天方向相反，且事件把它推得更远。kill condition 2「2026 年 Wind 段亏损超 2025 年、盈亏平衡推迟到 2028+」: 10/28 检验，今天无信息。**两条都不覆盖今天实际发生的事。建议补一条可观测的新 kill condition: 「任一已签约的大型数据中心客户公开推迟或重新谈判交付节奏 / 融资安排」。**||**对 10/28 的预先判别结构 (四件事同日: GEV 财报 + GOOG capex + MSFT capex + FOMC，当天价格是净效应，事后难归因，所以要预先定):** (a) GEV 财报好 + GOOG/MSFT capex 上调且明确由内生现金流覆盖 + GEV 涨 → 融资担忧被定价错了，10/15 与 10/22 两次零基本面下跌是机会; (b) GEV 财报好 + capex 上调 + GEV **仍跌** → 第三次确认「好消息不被定价」，此时 thesis_break $700 应当作真实路径而非理论值; (c) GEV 财报好 + GOOG/MSFT 暗示外部融资 → 融资担忧被证实，与 GEV 自身财报无关。
+
+**Sources.**
+- Barron's/Yahoo: [GE Vernova Stock Is Down 10%. Blame Meta. — "AI demand is off the charts, but financing all the growth will be tough"](https://finance.yahoo.com/m/e4c2f7ec-18d9-36a7-aeb7-f9dba40251f8/ge-vernova-stock-is-down-10%25..html)
+- TIKR: [GE Vernova Sinks 11%, Vertiv 14%, Bloom Energy 15% in a Week as AI Power Stocks Slide](https://www.tikr.com/blog/ge-vernova-sinks-11-vertiv-14-bloom-energy-15-in-a-week-as-ai-power-stocks-slide)
+- Barchart: [GEV Stock Earnings Preview: 将报告强劲 Q3 增长, 受稳健需求与有利定价驱动 (财报在 10/28, 今天未发)](https://www.barchart.com/story/news/8314748/gev-stock-earnings-preview-what-to-expect-from-ge-vernovas-q3-2026-report)
+- {"type": "cross_stock", "title": "Vertiv -14% / Bloom -15% (\u4e00\u5468) \u540c\u5411\u4e14\u5747\u65e0\u516c\u53f8\u8d1f\u9762\u6d88\u606f \u2014 \u677f\u5757\u6027\u6298\u73b0\u53d8\u91cf", "publisher": "workspace"}
+- {"type": "computed", "title": "thesis_break $700 \u7f13\u51b2\u4e00\u5468\u5185\u7531 +32.3% \u538b\u7f29\u5230 +17.6% (\u538b\u7f29 14.7pp, \u5168\u4e66\u672c\u5468\u6700\u5feb)", "publisher": "workspace"}
+- {"type": "contradiction", "title": "kill condition\u300chyperscalers \u524a\u51cf\u5efa\u8bbe >20%\u300d\u4e0e\u4eca\u5929\u4e8b\u5b9e (META \u4e0a\u8c03 capex \u4e0b\u6cbf) \u65b9\u5411\u76f8\u53cd", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** 今天的跌幅完全来自外部传导，且传导的那条线是融资不是需求 — 这决定了 10/28 财报无法修复它。10/15 已验证过一次 ($172亿 合同当日跌 3.02%)，今天是第二次且幅度放大 3.7 倍。解锁条件不在 GEV 自己的财报里，而在同日 GOOG + MSFT 的 capex 指引是否提及外部融资安排。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-15 · -3.02% day · ▼ material
 **Tags:** `partnership_news`, `sector_rotation`, `ai_demand`, `flow_event`
 **Confidence:** high

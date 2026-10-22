@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -0.71% day · ▼ minor
+**Tags:** `flow_event`, `sector_rotation`
+**Confidence:** low
+
+**Primary cause.** **🔴 量比 0.11x —— 全书记录以来最低的单一读数，而且是连续第二份报告腰斩。** 10/15 记录的是「CROB 量比 0.21x 全书最低 + 30d -17.85% 最差 = 流动性枯竭」; 今天降到 **0.11x**，又腰斩一次。||**在这种成交量下，CROB 今天的 -0.71% 完全没有信息量: 它不代表中国机器人标的抗跌，只代表今天几乎没有人交易它。** 本条归因的 confidence 定为 **low**，不是因为找不到原因，而是因为价格本身不可解读 —— 这是诚实的分类，不应为了叙事完整而升级。||**对一个 ETF 而言，0.11x 的持续低量是一个独立于标的内容的风险**: 买卖价差扩大、折溢价偏离净值、极端情况下的清盘可能。这与中国机器人行业的基本面无关，是产品层面的风险。||5d **+6.89%** 为本组最强、30d -11.20% 为本组最差 —— 这两个数字在 0.11x 量比下同样不可解读。||位置: 距 52w 高 $33.01 为 -41.13%; 距 52w 低 $18.11 为 +7.3%。
+
+**Sources.**
+- {"type": "computed", "title": "\u91cf\u6bd4 0.11x \u4e3a\u5168\u4e66\u6700\u4f4e; 10/15 \u4e3a 0.21x \u2014 \u8fde\u7eed\u4e24\u4efd\u62a5\u544a\u8170\u65a9", "publisher": "workspace"}
+- {"type": "computed", "title": "0.11x \u91cf\u6bd4\u4e0b 1d/5d/30d \u4e09\u4e2a\u53e3\u5f84\u5747\u4e0d\u53ef\u89e3\u8bfb; confidence \u5b9a\u4e3a low \u662f\u5206\u7c7b\u800c\u975e\u5931\u8d25", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** CROB 的价格已经失去信息含量。应记录的不是今天跌了多少, 而是流动性枯竭本身已经成为一个独立的产品层面风险 (价差、折溢价、清盘可能), 与中国机器人基本面无关。不要用 CROB 的日内走势做任何判断。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-14 · -4.18% day · ▼ material
 **Tags:** `macro_inflation`, `sector_rotation`, `flow_event`
 **Confidence:** low

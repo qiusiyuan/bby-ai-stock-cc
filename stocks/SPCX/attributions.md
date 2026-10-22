@@ -4,6 +4,27 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -8.94% day · ▼ major
+**Tags:** `sector_rotation`, `m_and_a`, `analyst_upgrade`, `flow_event`
+**Confidence:** high
+
+**Primary cause.** **今天 SPCX 最该记下的不是 -8.94%，是它在一个新闻流几乎全是利好的日子里跌了 8.94% 并带 1.46x 量。** 当天看多素材: BofA 上调目标价 (提前预测时点); SpaceX 与 NVDA、Apollo 等合作 Grok 伙伴计划; **$80亿频谱交易**; Altimeter 的 Gerstner 称 SpaceX 计划 **$4,000亿**算力建设; 早期投资人 Diamandis 称 Musk 版图 2028-29 年收入可达 **$1万亿**。**一条都没起作用。**||这是 10/08 判据 (「诱因消失了权益还是不修复」) 在个股层面的重复 —— 10/08 当时记录的是「Anthropic 宣布 $5,180亿 云与算力支出，整组没涨」; 今天是同一机制: **好消息已经不被定价，只有融资环境被定价。**||**SPCX 是今天被惩罚的那件事的最纯表达。** META 只是「单季 FCF 转负」就被罚 7.91%；SPCX 的 FY27 自由现金流是 **-$670亿**、**结构性为负整年**，加上 $4,000亿 算力建设计划 —— 相对其收入基数的融资负担远大于 META。10/07 报告把 SPCX 的论点从「现金流 + 期权」改写成「杠杆 AI capex 标的」，今天是那个改写第一次拿到最强的对照证据。||**10/21 的 +7.79% 和今天的 -8.94% 是同一条新闻的两半，这个来回有信息量。** 10/21 SPCX 从 $147.79 跳到 $159.31 (驱动是 Tesla-SpaceX 合并传闻)，今天跌回 $145.06 —— **比传闻出现前还低**。配合 Reuters (内部人士担心 Musk 的公开表态推迟流程数周) 与 CLSA (「合并传闻掩盖了 Tesla 自身的问题」)，更合理的读法是: **合并条款被重新理解为对 TSLA 股东更有利**。这与 TSLA 今天在净利同比 -43% 的情况下只跌 2.61% 在同一方向上。**两只的相对表现应作为一笔交易的两侧一起读，不是两个独立判断 —— 这意味着 TSLA 今天的抗跌不应被读成「市场认可 Tesla 基本面」。**||**市值口径: 自 10/06 以来 SPCX -$2,860亿**，对照 NVDA -$6,230亿 / GOOG -$2,430亿 / META -$2,070亿。**以百分比计 SPCX 是大市值组里最差的。**||**🚨 thesis_break_price 仍为 null — 连续第六份报告记录，而 12/09 lockup 只剩 48 天。** 文件写明理由是「用户无持仓，纯跟踪模式 — 不触发卖出提醒」(memory 亦记有)，所以这**不是遗漏**。但结论要说准: **纯跟踪模式不需要卖出线，然而当前论点已从「现金流 + 期权」变成「杠杆 AI capex」，所以跟踪时该看的指标也变了 —— 应该跟融资事件 (发债、增发、估值轮次) 和 lockup，不是 Starlink ARPU。** 两条 kill condition (Starship 灾难性失败延误 >18 月 / Starlink ARPU 连续两季 <$50) 都是运营型，与今天定价的融资型风险完全不重叠 —— 与 NOK/GEV/META 同构。||**主权客户风险的侵蚀路径新增一条。** 10/15 第一次记录 Starlink 军用连接被降速的具名争议 (乌克兰指控 / Musk 回应「是 Starshield，由美国政府控制」)，当时判断是「该回应把 12/15 续约窗口从日程项变成政治谈判」。**今天 ICEYE 与 NOK 和乌克兰国防部签署主权卫通意向书 —— 这是乌克兰建设自己替代能力的第一个具体动作。** LoI 非合同、无金额，不是今天的价格因素，但是一条应当记入的长期侵蚀路径。||**关于 SSPC (2x inverse) 的技术观察: 今天 +17.92% 对 SPCX -8.94%，隐含倍数 2.00x，日内跟踪精确。但 30d 口径 SPCX -2.11% 而 SSPC -7.93% —— 标的只跌 2.11%，-2x 产品本应约 +4.2%，实际 -7.93%，波动损耗约 12pp / 30 天。** 过去 30 天 SPCX 走的是「先涨 13% 再跌回来」的来回路径，杠杆反向产品在这种路径上必然亏损。**SSPC 只适合方向明确的短窗口，不适合作为持续对冲。**
+
+**Sources.**
+- MT Newswires/Yahoo: SpaceX and AST SpaceMobile Sink 6%, Rocket Lab Falls 5% as Tech Selloff Hits High-Flying Space Stocks
+- Yahoo: Altimeter's Gerstner: Scale wins superintelligence race as SpaceX plans $400B compute buildout
+- Yahoo: SpaceX wins higher price target as Bank of America brings forward forecasts
+- Stocktwits/Reuters: CLSA Says SpaceX Merger Buzz Overshadows Tesla's Concerns, But Musk's Public Endorsement Could Reportedly Complicate Deal Talks (Reuters: 可能推迟数周)
+- Yahoo: ICEYE and Nokia partner with the Ministry of Defence of Ukraine to develop sovereign satcom capability
+- {"type": "computed", "title": "\u81ea 10/06 \u5e02\u503c -$2,860\u4ebf (vs NVDA -$6,230\u4ebf / GOOG -$2,430\u4ebf / META -$2,070\u4ebf), \u6309\u767e\u5206\u6bd4\u4e3a\u5927\u5e02\u503c\u7ec4\u6700\u5dee", "publisher": "workspace"}
+- {"type": "computed", "title": "SSPC 30d \u6ce2\u52a8\u635f\u8017\u7ea6 12pp: SPCX 30d -2.11% \u800c SSPC -7.93% (-2x \u672c\u5e94\u7ea6 +4.2%)", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** 好消息不被定价是今天 SPCX 最硬的一条信息 — 四条独立利好同日出现，价格仍跌 8.94% 带 1.46x 量。解锁条件是 11/03 首份财报: 它会第一次用官方口径回答今天唯一被定价的问题 (FY27 融资缺口有多大、怎么填)。在那之前 $4,000亿 算力计划与 -$670亿 FCF 都是第三方口径。thesis_break 为 null 在纯跟踪模式下合理，但跟踪指标应从 Starlink ARPU 改为融资事件与 lockup。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-15 · -3.59% day · ▼ material
 **Tags:** `geopolitical_war`, `policy_us`, `sector_rotation`, `competitor_news`
 **Confidence:** high

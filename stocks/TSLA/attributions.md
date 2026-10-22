@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -2.61% day · ▼ minor
+**Tags:** `earnings_print`, `guidance_cut`, `production_milestone`, `m_and_a`
+**Confidence:** high
+
+**Primary cause.** **净利同比 -43% 只换来 -2.61% 的跌幅 —— 这是今天全书最大的不对称，必须解释而不能当噪音放过。** Q3 2026 净利 **$7.87亿**，去年同期 $13.7亿。Musk 同时**下调销量目标**。Truist: 营业利润率不佳的根源是**加速的 AI 支出**，短期内会继续压 EPS。||**同一个行为在两个标的上得到完全不同的定价: 为 AI 加速支出、牺牲当期利润 —— META 换来 -7.91%，TSLA 换来 -2.61%。** 差别不在幅度，在**出钱的方式是否可见**: META 用转负的 FCF + 新设无投票权股来融资 (把融资缺口可见化了)，TSLA 今天没有宣布增发、没有把 FCF 做成负数、没有新设股票类别。**市场今天惩罚的是融资缺口的可见化，不是支出本身 —— TSLA 还没把这件事做可见。**||**而且 TSLA 在 5 日和 30 日口径上仍然是正的 (5d +3.84% / 30d +3.52%)，在整个 AI 链崩盘的一周里。它还是 34 只标的里仅 8 只在 MA50 上方的一只 (+3.6%)，且是其中唯一的高倍数成长股。**||三条可验证的原因:||**(1) Optimus 从叙事变成了产线。** 财报同时确认 Optimus **已进入生产**，Cybercab 计划**年底前交付客户**。这正是 humanoid cluster watch_items 里「Optimus Gen3/V3 发布」「Fremont 量产确认」的实质内容。**结果: HUMN -3.33% / KOID -4.23% / CROB -0.71%，没有一只上涨 —— 市场把 Optimus 量产的价值完全给了 TSLA，零外溢到供应链 ETF。** 这给 memory 里记的 Optimus 错配 thesis 提供了第一个价格证据，而方向比原假设更不利: 不是「买得到的内容稀」，而是「**买得到的那些标的根本没有参与 Optimus 的定价**」。若该关系持续，表达 Optimus 观点的最有效可及载体就是 TSLA 本身，三只 ETF 提供的是人形行业 beta 而非 Optimus alpha。||**(2) 合并期权正在吸收基本面。** Reuters: 参与讨论的内部人士担心 Musk 的公开表态会把合并流程推迟数周; CLSA: 「合并传闻掩盖了 Tesla 自身的问题」。**「掩盖」正是今天的价格行为 —— 一个 43% 的利润崩塌被一个尚未成形的交易压住了。这对持有判断是警告而非安慰: 合并一旦破局或推迟定型，被掩盖的东西会一次性回来。**||**(3) 反向限定 — TSLA 的相对强度有一部分是 SPCX 的相对弱势的镜像。** SPCX 今天 -8.94%。若两者是同一笔交易的两侧，则 TSLA 的 outperformance 与 SPCX 的 underperformance 可能是**同一个定价** (市场认为条款对 TSLA 股东更有利)，**不是两个独立判断**。因此不应把 TSLA 今天的抗跌读成「市场认可 Tesla 基本面」。||**倍数无关性的核心样本: TSLA trailing PE 348.5x / forward 176.9x 为全书最高，今天跌幅倒数第四，而今天利率是跌的 (2Y -17.3bp)。** 远期 PE 从 SK Hynix 本线 2.6x 到 TSLA 176.9x 跨 68 倍，跌幅排序与倍数完全无关 —— 这是「加息打击高倍数股」假说第四次被否证，也是最干净的一次 (连「加息」这个前提都不存在)。||**触发器状态与一个应补的缺口。** 距 thesis_break $250 缓冲 **+50.5%**。该价位的预设含义是「市场放弃自主驾驶溢价、把 Tesla 当纯 EV 制造商定价」—— **今天的事实恰恰相反: 市场在利润腰斩时仍给 177x 远期，自主/机器人溢价不但没被放弃，还是唯一在支撑价格的东西。** kill condition「FSD/Robotaxi 商业化推迟到 2028 后且无可信替代里程碑」: 方向相反 (Cybercab 年底交付、Optimus 已量产)，未触发。kill condition「EU 正式否决 FSD 批准」: 无新消息。**🔴 现有 triggers.yaml 完全没有并购情景，而合并条款是今天价格里最大的单一变量 — 这是应补的口子。**
+
+**Sources.**
+- Decrypt: [Tesla's Profit Drops 43% as Musk Starts Building Robots and Plans to Sell Driverless Cabs — 净利 $787M vs $1.37B; Optimus 已量产; Cybercab 年底交付](https://decrypt.co/381624/teslas-profit-drops-musk-robots-driverless-cabs)
+- MT Newswires/Yahoo: Tesla Falls 4% as Profit Shrinks and Musk Trims Sales Target
+- {"type": "analyst", "title": "Truist: Tesla Q3 \u8425\u4e1a\u5229\u6da6\u7387\u4e0d\u4f73\u6e90\u4e8e\u52a0\u901f\u7684 AI \u652f\u51fa, \u8fd1\u671f\u5c06\u7ee7\u7eed\u538b EPS", "publisher": "Truist Securities"}
+- Stocktwits/Reuters: CLSA: 合并传闻掩盖了 Tesla 自身的问题; Reuters: Musk 公开表态可能推迟合并数周
+- {"type": "cross_stock", "title": "\u540c\u4e00\u884c\u4e3a (\u4e3a AI \u52a0\u901f\u652f\u51fa) META -7.91% vs TSLA -2.61%; \u5dee\u522b\u5728\u878d\u8d44\u7f3a\u53e3\u662f\u5426\u53ef\u89c1", "publisher": "workspace"}
+- {"type": "cross_stock", "title": "Optimus \u91cf\u4ea7\u786e\u8ba4\u5f53\u65e5 HUMN -3.33% / KOID -4.23% / CROB -0.71% \u5168\u8dcc \u2014 \u5b9a\u4ef7\u96f6\u5916\u6ea2", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** 抗跌是真的，但抗跌的理由不是基本面。43% 的利润崩塌被合并期权和 Optimus 量产确认压住了，而合并这一侧的真实财务画像要等 11/03 SPCX 财报才第一次出现。同时今天为 memory 里的 Optimus 载体问题提供了第一个价格证据: 可及的最纯载体是 TSLA，ETF 零参与。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-02 · +4.84% day · ▲ moderate
 **Tags:** `production_milestone`, `macro_rates`, `sector_rotation`, `competitor_news`
 **Confidence:** high

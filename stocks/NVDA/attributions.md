@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -4.29% day · ▼ material
+**Tags:** `sector_rotation`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** AI 供给方整组下跌，无 NVDA 自身负面新闻。||**今天的公因子是融资，不是利率也不是需求。** META 上调 2026 capex 下沿至 $1,350-1,450亿 + 季度 FCF 转负 + 新设无投票权股融资 → -7.91%, 蒸发 $1,250亿市值, 年内涨幅全抹; 四家大科技 (META/AMZN/GOOGL/MSFT) CDS 创数月新高 — **融资担忧第一次从边缘 (neocloud/CoreWeave) 搬到投资级核心**。同时 2Y -17.3bp / 10Y -18.1bp 平行下行、TLT +2.03%、债市撤回加息押注 → **折现率给了近 20bp 顺风而权益仍跌, 跌幅必须由风险溢价全额解释**。||**「开支方 vs 供给方零重叠」结构今天终结, 且死于 10/15 预测的日期。** 10/15 原话: 「一方的支出即另一方的收入, 该分裂逻辑上不可长期维持, 10/21 META 与 10/28 GOOG+MSFT capex 指引会强制收敛」。今天两个分布完全交错: 开支方 MSFT -2.02 / GOOG -3.36 / AMZN -4.82 / META -7.91 (区间 -2.02~-7.91); 供给方 AVGO -4.06 / NVDA -4.29 / TSM -4.65 / INTC -7.59 / AMD -7.94 / MRVL -9.72 (区间 -4.06~-9.72)。AMZN 落在 TSM 与 INTC 之间, META 落在 INTC 与 AMD 之间。**接替它的新判别轴是「内生融资 vs 需要外部资本」。**||**市值口径最值得记: 自 10/06 以来 NVDA 市值 -$6,230亿 —— 绝对额为全市场最大** (对照 GOOG -$2,430亿 / SPCX -$2,860亿 / META -$2,070亿)，同期 AAPL **+$1,630亿** / LLY +$1,500亿 / WMT +$1,000亿。**轮动的来源与落点都已具名，这不是「大盘下跌」而是定向再分配。**||当天 Huang 的两条表态被引用: 「你永远可以用更多内存」(支持内存需求) 以及 Wells Fargo 的说法「是 Huang 的评论惊到了市场」(与 Trump 归因伊朗形成对照口径 — "SOXL Sinks To 6-Month Low As Nasdaq Slides Amid Oil Surge: Trump Blames Iran, But Wells Fargo Says Huang's Comments Spooked Markets")。**后者是一条未被证实的归因，记入但不采信为主因 —— 因为同日 Lam 的供应约束与 META 的 capex 都是有文件的具名事件。**||位置: vs MA50 $222.68 偏离 -4.6%; 距 52w 高 $243.37 为 -12.70% (**全组最浅**); 远期 PE **13.3x** —— 在 AI 供给方里是最低的之一。**下次财报 11/17 (26 天后)，是 7 天内密集期之后的第一个新信息。但 10/28-10/29 的 hyperscaler capex 指引会提前三周给出它的需求侧输入。**||参与度限定: 全场量比中位数 0.79x, 仅 10/35 过 1.0x、2/35 过 1.5x (NOK 1.83 / GEV 1.75)。**方向可信, 幅度不可信** — 但该限定对 META (1.41x)/GEV (1.75x)/NOK (1.83x) 三只不再适用。
+
+**Sources.**
+- Yahoo Finance: Meta and chip stocks decline as AI trade comes under pressure: AlphaCheck
+- Benzinga/Yahoo: SOXL Sinks To 6-Month Low As Nasdaq Slides Amid Oil Surge: Trump Blames Iran, But Wells Fargo Says Huang's Comments Spooked Markets
+- {"type": "computed", "title": "\u81ea 10/06 \u5e02\u503c -$6,230\u4ebf \u4e3a\u5168\u5e02\u573a\u6700\u5927; \u540c\u671f AAPL +$1,630\u4ebf / LLY +$1,500\u4ebf / WMT +$1,000\u4ebf", "publisher": "Yahoo Finance"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** NVDA 今天是整组 beta, 无个股信息, 且距 52 周高点 -12.70% 为供给方最浅。真正的信息在市值再分配口径: 绝对额最大的流出 (-$6,230亿) 与具名的流入落点 (AAPL/LLY/WMT) 同时存在, 说明这是定向轮动不是普跌。11/17 财报前, 它的需求侧输入会在 10/28-10/29 的 capex 指引里提前三周免费到手。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-14 · -3.16% day · ▼ material
 **Tags:** `macro_inflation`, `sector_rotation`, `executive_comment`
 **Confidence:** medium

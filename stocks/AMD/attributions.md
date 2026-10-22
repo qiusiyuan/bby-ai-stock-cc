@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -7.94% day · ▼ major
+**Tags:** `competitor_news`, `sector_rotation`, `guidance_cut`
+**Confidence:** high
+
+**Primary cause.** **AMD 无公司新闻，且 30d 仍是 +1.04% —— 组内唯一 30d 为正却领跌的标的。** 具名驱动是 **Lam Research -9% 点名「供应链约束」限制指引** (AMAT -6% / ASML -4%)，当天口径 "Chip Stocks Fall as Supply Warning Deepens AI Selloff: Marvell and AMD Sink 8%, Intel Drops 7%"。||**今天的公因子是融资，不是利率也不是需求。** META 上调 2026 capex 下沿至 $1,350-1,450亿 + 季度 FCF 转负 + 新设无投票权股融资 → -7.91%, 蒸发 $1,250亿市值, 年内涨幅全抹; 四家大科技 (META/AMZN/GOOGL/MSFT) CDS 创数月新高 — **融资担忧第一次从边缘 (neocloud/CoreWeave) 搬到投资级核心**。同时 2Y -17.3bp / 10Y -18.1bp 平行下行、TLT +2.03%、债市撤回加息押注 → **折现率给了近 20bp 顺风而权益仍跌, 跌幅必须由风险溢价全额解释**。||**「开支方 vs 供给方零重叠」结构今天终结, 且死于 10/15 预测的日期。** 10/15 原话: 「一方的支出即另一方的收入, 该分裂逻辑上不可长期维持, 10/21 META 与 10/28 GOOG+MSFT capex 指引会强制收敛」。今天两个分布完全交错: 开支方 MSFT -2.02 / GOOG -3.36 / AMZN -4.82 / META -7.91 (区间 -2.02~-7.91); 供给方 AVGO -4.06 / NVDA -4.29 / TSM -4.65 / INTC -7.59 / AMD -7.94 / MRVL -9.72 (区间 -4.06~-9.72)。AMZN 落在 TSM 与 INTC 之间, META 落在 INTC 与 AMD 之间。**接替它的新判别轴是「内生融资 vs 需要外部资本」。**||**AMD 是「倍数无关性」与「卖涨幅规律失效」两条横截面结论的关键样本。** trailing PE 129.8x / 远期 32.3x —— 倍数高，但今天跌幅 (-7.94%) 与 SNDK 远期 4.7x 的 -9.31%、SKHY 3.9x 的 -7.15% 处于同一档，而 TSLA 远期 176.9x 只跌 2.61%。**远期 PE 跨 68 倍 (2.6x~176.9x) 而跌幅与倍数完全无关，且今天利率是跌的 —— 「加息打击高倍数股」第四次被否证且是最干净的一次。**||同时 AMD 是「30d 已跌最多的跌最多」这条新规律的四个例外之一 (另三: MRVL / META / SPCX)，**而四个例外全部是当天有具名新闻的标的** —— 有新闻的按新闻跌，没新闻的按已有亏损继续跌。||位置: vs MA50 $541.62 偏离 -6.0%; 距 52w 高 $658.52 为 -22.73%; **下次财报 11/03 (12 天后)** —— 届时 Lam 的供应约束对 AMD 自身指引的影响会第一次被官方口径回答。||参与度限定: 全场量比中位数 0.79x, 仅 10/35 过 1.0x、2/35 过 1.5x (NOK 1.83 / GEV 1.75)。**方向可信, 幅度不可信** — 但该限定对 META (1.41x)/GEV (1.75x)/NOK (1.83x) 三只不再适用。
+
+**Sources.**
+- MT Newswires/Yahoo: Chip Stocks Fall as Supply Warning Deepens AI Selloff: Marvell and AMD Sink 8%, Intel Drops 7%
+- MT Newswires/Yahoo: Lam Research Sinks 9% as Supply Constraints Cap Outlook
+- {"type": "computed", "title": "\u8fdc\u671f PE \u8de8\u5ea6 2.6x (SK Hynix \u672c\u7ebf) ~ 176.9x (TSLA) \u800c\u8dcc\u5e45\u4e0e\u500d\u6570\u65e0\u5173; \u4eca\u5929\u5229\u7387\u4e0b\u884c 18bp", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** AMD 是今天横截面结论的关键样本: 30d 唯一为正却领跌, 说明新增卖压不看已有涨跌而看当天新闻。11/03 财报会第一次用官方口径回答 Lam 的供应约束对它的影响。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-15 · -3.92% day · ▼ material
 **Tags:** `sector_rotation`, `ai_demand`
 **Confidence:** medium

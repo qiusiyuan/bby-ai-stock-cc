@@ -4,6 +4,28 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -14.81% day · ▼ extreme
+**Tags:** `earnings_print`, `guidance_cut`, `executive_comment`, `prediction_passed`
+**Confidence:** high
+
+**Primary cause.** **thesis_break_price $9.00 已击穿至 $7.88 (低于该线 12.4%)。10/08、10/14、10/15 三份报告连续把这条线标为「全书最近」并写明「10/22 财报定胜负」—— 预设的判别日已到，答案已出。**||财报本身全面超预期: 营收 €51.54亿 (+10% 同比)、可比营业利润 +35% 同比、净利润 €1.52亿、**AI & Cloud 营收 +123%** (IP Networks + Optical Networks 驱动)、全年 outlook 维持不变。||**-14.81% 全部由三件事解释，且三件事都在指引和口径里，不在数字里:** (1) **自由现金流指引被下调** —— 这是唯一的负面项; (2) CEO Justin Hotard 在财报电话会上说传统电信市场将「保持平坦」，并计划因「成本通胀」**涨价**; (3) 最关键的一句 —— 他把供应挤压定性为「**结构性成本上升，不只是短缺**」。||**为什么市场反应是对的而非过度反应，三条可核对的理由:**||**(a)「结构性」改变了问题的类型。**「短缺」是会自己结束的状态 (产能上来价格回去)；「结构性成本上升」说的是成本曲线永久上移。CEO 配套的应对是涨价，而他同时说市场零增长 —— **在零增长市场里涨价是把量的风险换成价的收益，这是一个赌注而非解决方案**，市场今天给这个赌注打了折。||**(b) Ericsson 没跟跌，这把解释范围锁死了。** 当天口径是 "Nokia Tumbles 10% Despite Data Center-Driven Profit Beat; **Ericsson Slips**"。若是行业需求问题，Ericsson 应同步大跌。它只是小幅下跌 → **市场定价的是 NOK 自己的成本结构与过账能力，不是电信设备行业需求，也不是大盘 beta**。||**(c) 现金流指引下调 + outlook 维持 是最差的组合。** 营收/利润指引不动而现金流指引下调，意味着同样的营收要用更多营运资本支撑 —— 典型形状是为锁定紧缺元器件而上升的库存与预付成本。对一个靠现金流和股息支撑估值的 turnaround 标的，这直接打在估值锚上。||**🔴 触发器状态: 价格线破，失效条件未破 —— 今天跨四个标的 (NOK/GEV/META/SPCX) 的同一个结构性问题，NOK 是最清楚的样本。** kill condition 1「2027 H2 前营业利润率未达 10%」: **未触发且方向相反** (今天营业利润 +35%)。kill condition 2「主要 5G 客户公开选择 Ericsson」: **未触发**，且 Ericsson 今天几乎没动。两条都是「turnaround 执行失败」型；今天实际发生的是「**turnaround 在执行，但投入成本结构性上移吃掉了现金流**」。两件事可以同时为真，而现有触发器只能看见前者。||**🔴 bull/base/bear 整张表失效，方式与 SKHY 相同。** thesis 的 Bear (25%) 目标是 **$8-9**，现价 $7.88 **低于 bear 区间下沿**。而 bear 的四条理由 (5G capex 在北美/印度进一步恶化 / 光网收获有限 / Ericsson 持续更会执行 / 利润率回复卡在 9% 以下) **一条都没发生** —— 实际是光网 +123%、营业利润 +35%、Ericsson 没跟跌。**三个情景今天同时指向上方，价格在最下方的下面；唯一解释是三个情景共同遗漏的变量 —— 投入成本结构性上移与随之而来的 FCF 下调。整张表不可用，需重写。**||**对 DRAM 组的外部价值 (本条是今天 NOK 最重要的溢出信息)。** 这是本 workspace 第一次拿到**下游客户自己的账**来量化内存涨价的代价，构成证据链第三层: (1) 10/15 终端需求 — Counterpoint: Q3 全球手机出货同比 -20%，2012 年来最弱 Q3，直接归因 DRAM/NAND 涨价 (第三方研究); (2) 10/15 下游毛利 — 巴克莱下调 Dell/HPE，理由是内存成本过账虚增服务器营收不带毛利 (卖方推理); (3) **10/22 下游现金流指引 — NOK 自己下调 FCF 指引 + CEO 定性为结构性 (客户官方指引，最硬)**; (4) 同日设备侧 — Lam Research 点名「供应链约束」限制指引 (-9%)，AMAT -6% / ASML -4%。||**所以 NOK 对内存多头是双向信息: 它证明定价权是真的 (成本确实在上移)，同时证明定价权有代价 (下游在被挤压并开始把涨价转移给终端)。**||正面但量级不足: ICEYE + Nokia 与乌克兰国防部签署主权卫通能力意向书 (LoI 非合同、无金额，但对 SPCX 的 Starlink 主权客户收入是长期侵蚀路径); AI-RAN 伙伴关系推进 (NVIDIA/Supermicro/Elisa/Arelion) + Cadence AuraStack 部署 —— 这些已体现在今天超预期的数字里，而数字没救住股价。||**下一个自有催化剂在约三个月后 (Q4 财报)。** 期间 NOK 没有自己的话语权，价格会被内存卖方的财报 (10/26 SK Hynix 本线 / 10/27 ADS + Samsung / 10/29 SNDK) 间接推动。若要推翻击穿，需要的是**现金流侧**的新证据 (FCF 指引恢复，或 CEO 撤回/修正「结构性」定性)，不是增长侧的。
+
+**Sources.**
+- TIKR: [Nokia Sinks 9% on Q3 Beat as It Holds Outlook, Cuts Cash Flow View: “Growth Is Accelerating”](https://www.tikr.com/blog/nokia-sinks-9-on-q3-beat-as-it-holds-outlook-cuts-cash-flow-view-growth-is-accelerating)
+- Stocktwits: [Nokia CEO Says Supply Squeeze Is ‘A Structural Cost Increase, Not Just A Shortage’: NOK Stock Drops To 6-Month Low Despite Q3 Beat](https://stocktwits.com/news-articles/markets/equity/nok-stock-nokia-ceo-says-supply-squeeze-is-a-structural-cost-increase-not-just-a-shortage/cZxwXVCRBD5)
+- 247wallst: [Nokia Tumbles 10% Despite Data Center-Driven Profit Beat; Ericsson Slips](https://247wallst.com/investing/2026/10/22/nokia-tumbles-10-despite-data-center-driven-profit-beat-ericsson-slips/)
+- Yahoo/Simply Wall St: [Nokia Oyj reported Q3 2026 sales of €5,154 million and net income of €152 million](https://finance.yahoo.com/technology/articles/ai-ran-partnerships-might-change-121407990.html)
+- Zacks/Yahoo: [Nokia's Q3 Earnings Beat Estimates on AI & Cloud Strength — revenues +10%, AI & Cloud +123%](https://finance.yahoo.com/technology/ai/articles/nokias-q3-earnings-beat-estimates-133400001.html)
+- {"type": "cross_stock", "title": "Ericsson \u53ea\u5c0f\u5e45\u4e0b\u8dcc \u2014 \u6392\u9664\u884c\u4e1a\u9700\u6c42\u4e0e\u5927\u76d8 beta \u89e3\u91ca", "publisher": "workspace"}
+- {"type": "computed", "title": "thesis_break $9.00 \u51fb\u7a7f\u81f3 $7.88 (-12.4%); 10/19 \u6536 $9.08 / 10/20 \u6536 $9.02 \u4e24\u5929\u64e6\u7ebf\u672a\u7834", "publisher": "workspace"}
+- {"type": "research", "title": "stocks/NOK/thesis.md Bear (25%) \u76ee\u6807 $8-9 \u2014 \u73b0\u4ef7\u4f4e\u4e8e\u4e0b\u6cbf\uff0c\u4e14 bear \u56db\u6761\u7406\u7531\u5168\u672a\u53d1\u751f", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** 预先承诺的 thesis_break 已击穿 12.4%，预设的判别日 (10/22 财报) 已到并给出答案，且下一个自有催化剂在约三个月后。设置这条线的全部意义就是在「数字超预期、远期 16.4x、AI&Cloud +123%」这些好理由仍然成立的时候，由价格线替你做决定。同时这条归因的最大外部价值是它给 DRAM 组提供了成本侧证据链的第三层 — 客户自己的现金流指引，比 10/15 的第三方研究和卖方推理更硬。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-14 · -4.67% day · ▼ material
 **Tags:** `m_and_a`, `macro_inflation`, `sector_rotation`, `competitor_news`, `earnings_pre_print`
 **Confidence:** high

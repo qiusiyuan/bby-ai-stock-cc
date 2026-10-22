@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -5.94% day · ▼ material
+**Tags:** `memory_pricing`, `competitor_news`, `sector_rotation`, `analyst_upgrade`
+**Confidence:** high
+
+**Primary cause.** 组内 beta，无公司负面新闻。**今天本组最重要的新信息不在价格里，在 NOK 的财报里 —— 成本侧证据链拿到第三个、也是最硬的一层。** NOK Q3 数字全面超预期 (营收 €51.54亿 +10% / 可比营业利润 +35% / AI & Cloud +123%)，却**下调自由现金流指引**，CEO Justin Hotard 明确说供应挤压是「**结构性成本上升，不只是短缺**」，并计划因「成本通胀」**涨价**。||证据链四层: (1) 10/15 终端需求 — Counterpoint: Q3 全球手机出货同比 **-20%**，2012 年来最弱 Q3，直接归因 DRAM/NAND 涨价 (第三方研究); (2) 10/15 下游毛利 — 巴克莱下调 Dell/HPE，理由是内存成本过账虚增服务器营收不带毛利 (卖方推理); (3) **10/22 下游现金流指引 — NOK 自己下调 FCF 指引 + CEO 定性为结构性 (客户官方指引，最硬的一层)**; (4) 10/22 设备侧 — **Lam Research 点名「供应链约束」限制指引，-9%**; AMAT -6% / ASML -4% ("Chip Stocks Fall as Supply Warning Deepens AI Selloff")。||**Lam 这一条让成本故事变成自我强化的: 设备交不出来 → 产能扩不上去 → 内存价格维持高位更久 → 下游需求破坏与毛利侵蚀继续。对内存股这是双刃 —— 价格维持高位对收入是利好，对出货量和客户健康是利空。今天市场在「价格 vs 数量」里明确选了数量 (全组跌 6-9%)，这是本轮序列第一次这个选择变清晰。**||之前几天的跌幅可归因于 CXMT 供给预期 (= 未来价格下跌)，今天的跌幅归因于需求破坏 (= 现在数量下降) —— 两者方向一致但机制相反。**因此 10/15 的判断得到加强而非减弱: 即使 10/26 把 CXMT 完全否掉，数量侧的坏消息不会被同时否掉。**||**CXMT: 第 31 天 (自 9/21 首现)，六项技术细节仍然一项未动** —— ❌制程节点 ❌位密度 ❌DDR5/HBM 指认 ❌量产时间表 ❌产能数字 ❌第三方良率验证。而价格自 9/22 峰值已打掉 SKHY -31.9% / DRAM -28.1% / SNDK -33.8% / MU -21.7%。**一个零技术细节的供给预期和一个已在账上的需求事实，现在共同支撑同一段跌幅。10/26 SK Hynix 本线财报是这个预期的免费裁决日 —— HBM 份额第一不可能不被问到 CXMT。**||**宏观共因已被排除为跌因**: 2Y -17.3bp / 10Y -18.1bp 平行下行、TLT +2.03%、债市撤回加息押注 —— 折现率给了顺风，所以跌幅必须由风险溢价全额解释。横截面同时第四次否证「加息打击高倍数股」: 远期 PE 从 SK Hynix 本线 2.6x / Samsung 3.0x / SKHY 3.9x / MU 4.2x / SNDK 4.7x 到 SNOW 103.3x / TSLA 176.9x 跨 68 倍，而跌幅与倍数完全无关 (TSLA 176.9x 跌 2.61% 轻于 SNDK 4.7x 的 9.31%)。||**参与度限定: 全场量比中位数 0.79x，仅 10/35 过 1.0x、2/35 过 1.5x (NOK 1.83 / GEV 1.75，两只都有具名新闻)。本组只有 DRAM ETF 过 1.0x (1.13x)。方向可信，幅度不可信。**||⚠ **数据限制**: 000660.KS / 005930.KS 的 price 字段 (₩1,223,000 / ₩214,500) 与 history_30d 最新一条 (10/21: ₩1,294,000 / ₩223,500) 不一致，返回的 change_pct_1d (0.00% / +1.42%) 与两者都无法对账 —— **10/22 韩国收盘未进入数据源，本组所有本线数据以 10/21 收盘为准**。按 10/21 对 10/20: SK Hynix 本线 **+5.81%**、Samsung **+5.67%** —— 韩国在美股崩盘前一天是反弹的。||**MU 的相对强度要加两条今天才成立的内容。** MU 30d -12.06% 对 SKHY -29.37% / SNDK -26.16% / DRAM -21.90% / Samsung -14.20%，优势是真的且扩大了。来源仍是 9/30 已验证的财报 (adj GM 87.0% / 营收 $542.29亿 / 下季指引 $615亿)，**不是「周期不适用」**。||**新增支撑点一 — 估值不再是解释:** 远期 PE MU 4.2x 对 SKHY 3.9x、Samsung 3.0x、SK Hynix 本线 2.6x，**MU 的估值溢价只有 8%-62%，而 30d 跌幅优势是 17pp。换句话说 MU 的抗跌已经不是靠「更贵所以更安全」，而是靠「同样便宜但有已验证的数字」。**||**新增支撑点二 — 技术路线差异化 (未验证):** Wedbush 指出 MU 绕过 4F² DRAM 架构改走 3D 技术有可能维持竞争优势。可记入但无第三方验证。||**看多侧的具名素材: Needham 维持买入、目标价 $1,650 (+81% 上行)，10/22 重申；Nvidia 的 Huang 当天说「你永远可以用更多内存」("You can always use more memory")。MU 距 6/25 收盘高点 -25%，而 Q4 FY26 是记录级业绩。**||**🔴 12/23 这个日期必须反复强调: MU 下次财报 62 天后，是全书最远。** 这段相对强度在 62 天内既无法验证也无法否证，**而组内其他四个成员在 7 天内全部出数字 (10/26 本线 / 10/27 ADS + Samsung / 10/29 SNDK)。所以本组未来一周的全部新信息都来自 MU 之外的成员，MU 的价格会被它们的数字推动而没有自己的话语权。**||触发器: 距 thesis_break $650 缓冲 +32.2%; vs MA50 $984.10 偏离 -12.7%。两条 kill condition (6/24 财报 HBM 营收 <$20亿 或毛利率环比下降 / PC 与移动 DRAM 价格指数连续两季跌 >20%) **都未触发，且第二条方向相反 —— 当前的威胁是 DRAM 价格在涨，不是在跌。** 与 NOK/GEV/META/SPCX 同构: 预设失效条件与实际杀伤机制不重叠。
+
+**Sources.**
+- Motley Fool: [Why Micron Stock Is Falling Hard Today — The AI trade continues to come under pressure](https://www.fool.com/investing/2026/10/22/why-micron-stock-is-falling-hard-today/)
+- Yahoo Finance: Chip stocks fall as equipment maker Lam Research cites 'supply chain constraints'
+- {"type": "analyst", "title": "Needham \u91cd\u7533\u4e70\u5165\u3001\u76ee\u6807\u4ef7 $1,650 (+81%); MU \u8ddd 6/25 \u6536\u76d8\u9ad8\u70b9 -25%", "publisher": "Needham/TIKR"}
+- {"type": "analyst", "title": "Wedbush: MU \u7ed5\u8fc7 4F\u00b2 DRAM \u67b6\u6784\u6539\u8d70 3D \u53ef\u80fd\u7ef4\u6301\u7ade\u4e89\u4f18\u52bf", "publisher": "Wedbush/Proactive"}
+- {"type": "executive_comment", "title": "Nvidia Huang: 'You can always use more memory'", "publisher": "Barron's/Yahoo"}
+- {"type": "computed", "title": "\u8fdc\u671f PE MU 4.2x vs SKHY 3.9x / Samsung 3.0x / \u672c\u7ebf 2.6x \u2014 \u4f30\u503c\u6ea2\u4ef7\u4ec5 8-62% \u800c 30d \u8dcc\u5e45\u4f18\u52bf 17pp", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** MU 的相对强度来自 9/30 已验证的财报而非周期豁免，且今天发现它不是靠估值溢价支撑 (远期 4.2x 与组内 2.6-4.7x 几乎同档)。关键限制是 12/23 财报为全书最远 (62 天)，而组内其余四只在 7 天内出数字 — 未来一周 MU 的价格由别人的数字决定。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-15 · -0.26% day · ▼ material
 **Tags:** `memory_pricing`, `executive_comment`, `sector_rotation`
 **Confidence:** medium

@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -3.33% day · ▼ material
+**Tags:** `sector_rotation`, `production_milestone`
+**Confidence:** high
+
+**Primary cause.** **今天是 humanoid 组的一次干净自然实验，结果对 Optimus thesis 的载体假设不利。** TSLA 财报同时确认 **Optimus 已进入生产**、**Cybercab 年底交付客户** —— 这正是 cluster watch_items 里「Optimus Gen3/V3 发布」「Fremont 量产确认」的实质内容，是本组等待的那种硬消息。||**结果: HUMN -3.33% / KOID -4.23% / CROB -0.71%，没有一只上涨；TSLA 只跌 2.61% 且 5d +3.84% / 30d +3.52%。市场把 Optimus 量产的价值完全给了 TSLA，零外溢到供应链 ETF。**||**这给 memory 里记的 Optimus 错配 thesis 提供了第一个价格证据，而方向比原假设更不利:** 原记录是「内容最纯的 (中国减速器供应链 / UBTech / Unitree) 买不到，买得到的内容最稀」。今天显示的不是「内容稀」，而是「**买得到的那些标的根本没有参与 Optimus 的定价**」。若该关系持续，三只 ETF 提供的是**人形机器人行业的 beta**，不是 **Optimus 的 alpha** —— 这是两件不同的事，之前混在一起了。表达 Optimus 观点的最有效可及载体可能就是 TSLA 本身 (代价是同时带 EV 业务周期性与合并条款的不确定性)。**需要下一次 Optimus 硬消息时重复这个对照才能定论，单日不足。**||**久期框架 (reference/duration_rate_framework) 第二次被修正，而且这次更强。** 框架按「远近 × 确定性」双轴，humanoid 三只属于「最远 × 最不确定」象限 —— 按久期逻辑，今天 2Y -17.3bp / 10Y -18.1bp 的下行应该给它们全市场最大的顺风。实际三只全跌。对照: 近 × 确定的 MSFT -2.02% 且 30d +6.04% 为唯一仍在 MA50 上方的 AI 标的; 近 × 确定 × 非 AI 的 AAPL **+0.60%**。||**10/15 已记录过一次「风险偏好收缩时『确定性』轴压倒『久期』轴」。今天版本更强: 10/15 的利率下行只有 10bp 且前端未动, 今天是 18bp 且前端带着走 —— 顺风加倍, 结果不变。结论可从「压倒」升级为: 在风险偏好收缩的环境里, 久期轴不只是被压倒, 它的符号可以反过来。这条应作为限定写回 reference。**||🚨 **位置风险: HUMN $26.41 距 52 周低点 $25.47 仅 +3.7%，是本组唯一接近技术破位的标的**; vs MA50 $29.49 偏离 -10.4%; 距 52w 高 $39.17 为 -32.58%。量比 0.91x。
+
+**Sources.**
+- Decrypt: Tesla's Profit Drops 43% as Musk Starts Building Robots — Optimus 已进入生产, Cybercab 年底交付客户
+- Investopedia: Elon Musk Hints at Exciting New Capabilities for Tesla's Optimus Robots
+- {"type": "cross_stock", "title": "Optimus \u91cf\u4ea7\u786e\u8ba4\u5f53\u65e5: TSLA -2.61% (5d +3.84%) vs HUMN -3.33% / KOID -4.23% / CROB -0.71% \u2014 \u5b9a\u4ef7\u96f6\u5916\u6ea2", "publisher": "workspace"}
+- {"type": "computed", "title": "\u4e45\u671f\u987a\u98ce 18bp (\u524d\u7aef\u5e26\u52a8) \u4e0b\u6700\u957f\u4e45\u671f\u8d44\u4ea7\u4ecd\u8dcc; \u5bf9\u7167 MSFT 30d +6.04% / AAPL +0.60%", "publisher": "workspace"}
+- {"type": "research", "title": "research/sectors/2026-08-17-optimus-supply-chain.md \u2014 \u8f7d\u4f53\u9519\u914d\u5047\u8bbe\u9700\u6309\u4eca\u5929\u7ed3\u679c\u4fee\u6b63", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** 今天是一次干净的自然实验: Optimus 拿到最硬的两条确认, 三只 ETF 零参与。若下一次硬消息重复这个结果, 应把三只正式重新归类为行业 beta 工具, 并把 Optimus 观点的载体改为 TSLA。同时久期框架需要加一条限定 — 风险偏好收缩时久期轴的符号可以反过来。HUMN 距 52 周低点仅 +3.7%, 是本组最近破位的一只。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-15 · -3.19% day · ▼ material
 **Tags:** `sector_rotation`, `macro_rates`
 **Confidence:** medium

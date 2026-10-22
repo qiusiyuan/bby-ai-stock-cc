@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -9.72% day · ▼ major
+**Tags:** `competitor_news`, `sector_rotation`, `guidance_cut`
+**Confidence:** high
+
+**Primary cause.** **MRVL 没有任何公司新闻，30d 口径仅 -2.61% —— 它今天是第一次被卖，这使它成为今天「新增卖压落在哪里」的最干净样本。**||具名驱动: **Lam Research 下跌 9%，点名「供应链约束」限制其指引**; AMAT -6% / ASML -4%; 当天口径 "Chip Stocks Fall as Supply Warning Deepens AI Selloff: Marvell and AMD Sink 8%, Intel Drops 7%" 与 "Optics Stocks Tumble as Tech Selloff Deepens Ahead of Earnings: Coherent -12%, Applied Optoelectronics -10%, Lumentum -9%"。**MRVL 同时吃两条: 作为 AI 定制硅/互联 (Trainium SerDes) 吃芯片供应约束，作为光互联吃光模块组的抛售。**||**今天有两个独立机制同时为负，不能混成一个:** (a) **融资故事** (META capex 下沿上调 + FCF 转负 + 四家大科技 CDS 创数月新高) 说的是「买方出不出得起钱」; (b) **Lam 的供应约束**说的是「卖方交不交得出货」。**两者对供给方的含义相反** —— 融资紧张 = 订单可能减少 (利空); 供给约束 = 产能受限、价格维持 (对有产能的人利多, 对需要扩产的人利空)。**今天市场把两件事都定价成利空，说明对设备约束的读法是「它会限制整条链的增长上限」而不是「它会支撑价格」。**||**「卖一个月里的涨幅」规律今天在 MRVL 身上以例外的形式成立。** 10/15 记录的有效规律是「跌幅与 30d 涨幅正相关」(当时 MRVL 30d +14.71% → 跌 3.45%)。今天最大的跌幅集中在 30d 已经跌最多的标的 (NOK -25.80 / SNDK -26.16 / SKHY -29.37 / DRAM -21.90 / INTC -14.37) —— **性质从 profit-taking 变成 capitulation**。MRVL (-9.72 / 30d -2.61)、AMD (-7.94 / 30d +1.04)、META (-7.91 / 30d -0.24)、SPCX (-8.94 / 30d -2.11) 是四个例外，**而四个例外全部是当天有具名新闻的标的 —— 这正好说明规律的分界: 有新闻的按新闻跌, 没新闻的按已有亏损继续跌。**||位置: vs MA50 $242.73 偏离 **-9.0%**; 距 52w 高 $329.88 为 -33.01%; 远期 PE 30.2x; 下次财报 **12/01 (40 天后)**。||**宏观共因已被排除为跌因**: 2Y -17.3bp / 10Y -18.1bp 平行下行、TLT +2.03%、债市撤回加息押注 — 折现率给了近 20bp 顺风而权益仍跌, 跌幅必须由风险溢价全额解释。**参与度限定: 全场量比中位数 0.79x, 仅 10/35 过 1.0x、2/35 过 1.5x (NOK 1.83 / GEV 1.75, 两只都有具名新闻)。方向可信, 幅度不可信。**
+
+**Sources.**
+- MT Newswires/Yahoo: Chip Stocks Fall as Supply Warning Deepens AI Selloff: Marvell and AMD Sink 8%, Intel Drops 7%
+- MT Newswires/Yahoo: Lam Research Sinks 9% as Supply Constraints Cap Outlook; Applied Materials Drops 6%, ASML Holding Falls 4%
+- MT Newswires/Yahoo: Optics Stocks Tumble as Tech Selloff Deepens Ahead of Earnings: Coherent Tumbles 12%, Applied Optoelectronics Drops 10%, Lumentum Falls 9%
+- {"type": "computed", "title": "30d \u4ec5 -2.61% \u800c 1d -9.72% \u2014 \u56db\u4e2a\u300c\u6709\u65b0\u95fb\u624d\u8dcc\u300d\u7684\u4f8b\u5916\u4e4b\u4e00 (\u53e6\u4e09: AMD/META/SPCX)", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** MRVL 是今天新增卖压的最干净样本 — 30d 几乎没跌, 今天才被卖, 且驱动具名 (Lam 供应约束 + 光模块组抛售, 两条都打到它)。今天存在两个方向相反的机制 (融资紧张 vs 供给约束), 市场把两者都读成利空, 说明设备约束被理解为增长上限而非价格支撑。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-15 · -3.45% day · ▼ material
 **Tags:** `sector_rotation`, `ai_demand`
 **Confidence:** medium

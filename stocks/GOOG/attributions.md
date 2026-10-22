@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -3.36% day · ▼ material
+**Tags:** `sector_rotation`, `earnings_pre_print`
+**Confidence:** high
+
+**Primary cause.** AI 开支方整组下跌，无 GOOG 自身负面消息。||**今天的公因子是融资。** META 上调 2026 capex 下沿至 $1,350-1,450亿 + 季度 FCF 转负 + 新设无投票权股融资 → -7.91%; **四家大科技 (META/AMZN/GOOGL/MSFT) CDS 创数月新高 — 融资担忧第一次从边缘搬到投资级核心**。同时 2Y -17.3bp / 10Y -18.1bp 平行下行、TLT +2.03%、债市撤回加息押注 → 折现率给了近 20bp **顺风**而权益仍跌, 跌幅必须由风险溢价全额解释。参与度: 全场量比中位数 0.79x, 仅 10/35 过 1.0x。||**新判别轴「内生融资 vs 需要外部资本」**: MSFT (内生充裕、无增发信号) -2.02% 且是十只 AI 标的里**唯一仍在 MA50 上方的** (+2.8%, 30d +6.04%); GOOG -3.36%; AMZN -4.82%; META (FCF 转负 + 融资股票) -7.91%; SPCX (FY27 FCF -$670亿) -8.94%。**这解释了 MSFT 的例外 —— 不是因为便宜 (远期 22.0x 比 AVGO 16.7x / TSM 17.6x 贵)，也不是久期短，而是 capex 全部由内生现金流覆盖。10/28 MSFT 的 capex 口径是这个轴能否保留的直接检验。**||**市值口径: 自 10/06 以来 GOOG -$2,430亿，是 Mag7 里第二大的绝对流出** (NVDA -$6,230亿 第一)。同期 AAPL +$1,630亿 / LLY +$1,500亿 / WMT +$1,000亿 —— 轮动的来源与落点都已具名。||**🎯 10/28 财报与 MSFT capex 指引、GEV 财报、FOMC 同日 (四重叠加)。GOOG 要在已经知道「META 因上调 capex 下沿 + FCF 转负被罚 7.91%」的情况下给自己的数字 —— 这是一个罕见的、管理层拥有完整前例信息的指引日。** 具体看点与 MSFT 相同: (1) capex 是否上调; (2) 是否提及任何外部融资安排。||一条口径对照值得记: D.A. Davidson 的 Luria 在解释 META 时说 META「正在从 Google 抢份额」，广告销售增速在 20% 以上。**所以同一篇分析里 META 的基本面被认为强于 GOOG，而 META 跌 7.91%、GOOG 跌 3.36% —— 再次说明今天定价的不是竞争地位，是融资结构。**||位置: vs MA50 $340.03 偏离 -5.9%; 距 52w 高 $404.47 为 -20.92%; 远期 PE 20.8x。||5d -7.27% 是开支方里第二差 (仅好于 META -12.81%)，说明 GOOG 的卖压在 META 财报前就已经开始累积。
+
+**Sources.**
+- {"type": "credit", "title": "META / AMZN / GOOGL / MSFT \u56db\u5bb6 CDS \u521b\u6570\u6708\u65b0\u9ad8", "publisher": "Yahoo Finance"}
+- {"type": "computed", "title": "\u81ea 10/06 \u5e02\u503c -$2,430\u4ebf, Mag7 \u7b2c\u4e8c\u5927\u7edd\u5bf9\u6d41\u51fa", "publisher": "Yahoo Finance"}
+- {"type": "analyst", "title": "D.A. Davidson (Luria): META \u6b63\u5728\u4ece Google \u62a2\u4efd\u989d, \u5e7f\u544a\u589e\u901f 20% \u4ee5\u4e0a \u2014 \u800c META \u8dcc\u5e45\u662f GOOG \u7684 2.4 \u500d", "publisher": "Yahoo Finance"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** 同一篇卖方分析认为 META 基本面强于 GOOG, 而 META 跌幅是 GOOG 的 2.4 倍 — 这是今天「定价的不是竞争地位而是融资结构」的一个干净对照。10/28 GOOG 会在拥有完整前例信息的情况下给指引, 这让它的口径选择本身成为信息。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-09-23 · -3.71% day · ▼ material
 **Tags:** `macro_rates`, `sector_rotation`, `macro_inflation`
 **Confidence:** high

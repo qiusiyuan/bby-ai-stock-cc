@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -6.97% day · ▼ material
+**Tags:** `memory_pricing`, `flow_event`, `competitor_news`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 内存组 ETF，组内 beta。**本组唯一量比过 1.0x 的成员 (1.13x) —— 说明仍有被动卖盘在出，而个股 (MU 0.79 / SKHY 0.73 / SNDK 0.90) 都是半量。这个分布形状意味着今天内存组的卖压更多来自 ETF 层面的赎回，而非个股层面的主动减仓。**||**成本侧证据链今天拿到第三层 (客户官方指引) 与第四层 (设备厂官方口径):** (1) 10/15 Counterpoint — Q3 全球手机出货同比 -20%, 2012 年来最弱 Q3, 直接归因 DRAM/NAND 涨价; (2) 10/15 巴克莱下调 Dell/HPE — 内存成本过账虚增服务器营收不带毛利; (3) **10/22 NOK 下调自由现金流指引 + CEO 称供应挤压是「结构性成本上升，不只是短缺」并计划因成本通胀涨价 (客户自己的账, 最硬)**; (4) **10/22 Lam Research -9%, 点名「供应链约束」限制指引; AMAT -6% / ASML -4%**。Lam 这条让成本故事自我强化: 设备交不出 → 产能扩不上 → 内存价格维持高位更久 → 下游需求破坏继续。**今天市场在「价格 vs 数量」里明确选了数量。**||**CXMT 第 31 天 (自 9/21 首现)，六项技术细节仍然一项未动** —— ❌制程节点 ❌位密度 ❌DDR5/HBM 指认 ❌量产时间表 ❌产能数字 ❌第三方良率验证。而 DRAM ETF 自 9/22 峰值已打掉 **-28.1%**; 距 52w 高 $81.34 为 **-43.77%**; vs MA50 $56.82 偏离 **-19.5%**。||**一个零技术细节、已持续 31 天的供给预期，和一个已在账上的需求事实，现在共同支撑同一段跌幅。10/26 SK Hynix 本线财报是前者的免费裁决日。**||**宏观共因已被排除为跌因**: 2Y -17.3bp / 10Y -18.1bp 平行下行、TLT +2.03%、债市撤回加息押注 — 折现率给了近 20bp 顺风而权益仍跌, 跌幅必须由风险溢价全额解释。**参与度限定: 全场量比中位数 0.79x, 仅 10/35 过 1.0x、2/35 过 1.5x (NOK 1.83 / GEV 1.75, 两只都有具名新闻)。方向可信, 幅度不可信。**
+
+**Sources.**
+- Yahoo Finance: Chip stocks fall as equipment maker Lam Research cites 'supply chain constraints'
+- TIKR/Stocktwits: Nokia cuts cash flow view; CEO calls supply squeeze a structural cost increase
+- {"type": "computed", "title": "\u672c\u7ec4\u552f\u4e00\u91cf\u6bd4\u8fc7 1.0x (1.13x) vs \u4e2a\u80a1 0.73-0.90x \u2014 ETF \u5c42\u9762\u8d4e\u56de\u800c\u975e\u4e2a\u80a1\u51cf\u4ed3", "publisher": "workspace"}
+- {"type": "computed", "title": "CXMT \u7b2c 31 \u5929\u516d\u9879\u6280\u672f\u7ec6\u8282\u5168\u90e8\u4ecd\u4e3a \u274c; ETF \u81ea 9/22 \u5cf0\u503c -28.1%", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** ETF 是本组唯一放量的成员, 形状指向被动赎回。CXMT 预期进入第 31 天仍零技术细节, 而成本/需求侧已有四层证据 — 10/26 的本线财报会把两者分开。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-15 · -3.18% day · ▼ material
 **Tags:** `memory_pricing`, `flow_event`, `sector_rotation`, `competitor_news`
 **Confidence:** high

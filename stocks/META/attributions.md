@@ -4,6 +4,28 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -7.91% day · ▼ major
+**Tags:** `earnings_print`, `guidance_cut`, `secondary_offering`, `sector_rotation`, `prediction_passed`
+**Confidence:** high
+
+**Primary cause.** **🎯 10/15 报告的预测在它指定的日期、以它指定的机制兑现。** 10/15 原话: 「开支方 vs 供给方零重叠结构……一方的支出即另一方的收入，该分裂逻辑上不可长期维持，**10/21 META 与 10/28 GOOG+MSFT capex 指引会强制收敛**」。10/21 盘后 META 发布，10/22 **两个分布完全交错** —— 结构死于它被预测会死的那一天。||**财报内容。** Q3 2026 营收 **$646亿 (+26% 同比)**，超预期；但 (a) 上调全年费用指引，(b) 2026 AI 基础设施资本开支区间从此前的「$1,300亿起」收窄为 **$1,350-1,450亿** —— **下沿被抬高 $50亿**，(c) **季度自由现金流转负**，(d) 宣布新设一类**无投票权股票**用于融资。股价 -7.91% 至 $642.34，单日蒸发约 **$1,250亿**市值，**跌破 2025 年收盘价 — 年内涨幅全部抹平**。||**自 2012 年 IPO 以来第一次出现「财报后连续三次单日跌幅 ≥5%」** (Yahoo Finance 原文: "on track for its third straight drop of 5% or more the day after earnings, a first since its 2012 IPO")。||**跌的不是需求，是融资结构 —— 这是今天定价变量的整体切换。** 营收 +26% 是加速的，所以收入预期没被否证。被定价的是: FCF 转负 + 新设可出售的无投票权股 = **公司自己承认内生现金流不够**。D.A. Davidson 的 Gil Luria: 「他不会有足够的现金流来支撑，所以他必须融资，债和股都要。」Saxo: META 面临「AI 基础设施成本增长快于它们产生的利润」的风险，并点出「有利润的核心业务可以给宏大项目融资，而营收增长不必然转化为股东现金」。Truist: META 的 AI 投资「需要更长时间才能产生回报」。||**🔴 信用通道今天跨过一个门槛: 四家大科技 CDS 创数月新高 (META / AMZN / GOOGL / MSFT)。** 证据链递进: 10/08 Broadcom 为 OpenAI 安排 >$500亿 + SPCX $400亿 + Oracle 发债 (交易活动，可读成需求强) → 10/14 CoreWeave 债券收益率上行 (价格信号但限于非投资级 neocloud) → 10/15 Gartner 称 neocloud 将失去独立性 + Saxo 承认融资挤压会打到供应链 + 巴克莱下调 Dell/HPE (卖方研究，三个独立具名来源) → **10/22 投资级大科技自身的信用溢价在动 (第一次)**。**之前所有融资担忧都发生在边缘，可以辩称是高风险主体的个别问题；今天连 MSFT 和 GOOGL 的 CDS 都在走阔，这个辩护失效了。**||**交叠检验 (结构终结的硬证据)。** 开支方: MSFT -2.02 / GOOG -3.36 / AMZN -4.82 / META -7.91 (区间 -2.02% ~ -7.91%)。供给方: AVGO -4.06 / NVDA -4.29 / TSM -4.65 / INTC -7.59 / AMD -7.94 / MRVL -9.72 (区间 -4.06% ~ -9.72%)。**AMZN -4.82 落在 TSM -4.65 与 INTC -7.59 之间；META -7.91 落在 INTC -7.59 与 AMD -7.94 之间 —— 完全交错。** 对照 10/08 (开支方 -0.43% ~ -0.95% vs 供给方 -2.30% ~ -5.89%，零重叠) 与 10/15 (五家四正 vs 七家全跌，零重叠)。||**新的判别轴: 内生融资 vs 需要外部资本。** 按「钱从哪来」排序，今天的跌幅立刻变干净: MSFT (内生充裕、无增发信号) -2.02% 且**是十只 AI 标的里唯一仍在 MA50 上方的** (+2.8%, 30d +6.04%); GOOG (内生充裕但 10/28 要给指引) -3.36%; AMZN ($2,200亿 capex 待交答案) -4.82%; META (FCF 转负 + 融资股票) -7.91%; SPCX (FY27 FCF -$670亿 结构性为负) -8.94%。**这解释了之前解释不了的现象 —— MSFT 的例外不是因为便宜 (fwd 22.0x 比 AVGO 16.7x / TSM 17.6x 贵)，也不是久期短，而是 capex 全部由内生现金流覆盖。**||**参与度的真实变化。** 10/15 报告专门记录「美国大科技几乎无成交 (META 0.36x)」并据此判定「定向抛售非广泛降风险」。**今天 META 量比 1.41x — 比 10/15 高近 4 倍，是本轮序列第一次有开支方带真实成交量下跌。** 但全场中位数仍 0.79x，所以结论要分两层: **开支方这一侧的下跌现在有成交量背书，大盘整体仍是半量。**「幅度不可信」的限定对 META/GEV/NOK 三只不再适用，对其余 32 只仍适用。||**触发器状态: 价格线远未到，失效条件方向相反。** 距 thesis_break $450 仍有 +42.7% 缓冲。kill condition「连续两季营收增速低于 10% 同比」: 实际 **+26%**，未触发且方向相反。kill condition「法院判令分拆 Instagram 或 WhatsApp」: 未发生。**与 NOK/GEV/SPCX 同构 —— 预设失效条件全是需求/监管型，今天定价的是融资型。**||次要项: META 被新墨西哥州判赔 **$250亿** (4,300 万次以上消费者保护法违规) —— 金额级别首次进入「可影响估值」区间，但可上诉，当天新闻口径未将其列为主因。另: 自 10/06 市值变化 GOOG -$2,430亿 / META -$2,070亿 / SPCX -$2,860亿 / NVDA -$6,230亿 vs AAPL +$1,630亿 / LLY +$1,500亿 / WMT +$1,000亿 —— 轮动的落点已具名。
+
+**Sources.**
+- Yahoo Finance: [Investors are punishing Big Tech's biggest spenders. Meta is the latest casualty.](https://finance.yahoo.com/markets/article/investors-are-punishing-big-techs-biggest-spenders-meta-is-the-latest-casualty-174236447.html)
+- MT Newswires/Yahoo: [Update: Equities Slide Intraday as AI Spending Concerns Drive Tech Sell-Off — capex $135B-$145B, low end lifted from $130B, FCF negative](https://finance.yahoo.com/markets/stocks/articles/equities-slide-intraday-ai-spending-181625216.html)
+- {"type": "analyst", "title": "D.A. Davidson (Gil Luria): \u300c\u4ed6\u4e0d\u4f1a\u6709\u8db3\u591f\u7684\u73b0\u91d1\u6d41\u6765\u652f\u6491\uff0c\u6240\u4ee5\u4ed6\u5fc5\u987b\u878d\u8d44\uff0c\u503a\u548c\u80a1\u90fd\u8981\u300d", "publisher": "Yahoo Finance"}
+- {"type": "analyst", "title": "Saxo Bank: META \u9762\u4e34 AI \u57fa\u7840\u8bbe\u65bd\u6210\u672c\u589e\u957f\u5feb\u4e8e\u5229\u6da6\u7684\u98ce\u9669\uff1b\u8425\u6536\u589e\u957f\u4e0d\u5fc5\u7136\u8f6c\u5316\u4e3a\u80a1\u4e1c\u73b0\u91d1", "publisher": "Saxo"}
+- {"type": "analyst", "title": "Truist: META \u7684 AI \u6295\u8d44\u9700\u8981\u66f4\u957f\u65f6\u95f4\u624d\u80fd\u4ea7\u751f\u56de\u62a5", "publisher": "Truist Securities"}
+- {"type": "credit", "title": "META / AMZN / GOOGL / MSFT \u56db\u5bb6\u503a\u52a1\u4fdd\u9669\u6210\u672c (CDS) \u521b\u6570\u6708\u65b0\u9ad8", "publisher": "Yahoo Finance"}
+- {"type": "computed", "title": "\u5f00\u652f\u65b9\u533a\u95f4 -2.02%~-7.91% \u4e0e\u4f9b\u7ed9\u65b9\u533a\u95f4 -4.06%~-9.72% \u5b8c\u5168\u4ea4\u9519 \u2014 10/15 \u9884\u6d4b\u7684\u6536\u655b\u5df2\u5151\u73b0", "publisher": "workspace"}
+- {"type": "prediction_scored", "title": "10/15 \u9884\u6d4b\u300c10/21 META \u6307\u5f15\u4f1a\u5f3a\u5236\u6536\u655b\u96f6\u91cd\u53e0\u7ed3\u6784\u300d\u2014 \u5728\u6307\u5b9a\u65e5\u671f\u4ee5\u6307\u5b9a\u673a\u5236\u5151\u73b0\uff0c\u65b9\u5411\u4e3a\u5f00\u652f\u65b9\u5411\u4e0b\u9760\u62e2", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** 今天最重要的不是 META 跌了多少，而是定价变量从「利润在产业链里怎么分配」换成了「整条链能不能融到钱」。前者是关于谁赚的判断，后者是关于谁出得起的判断 — 后者会同时打击开支方、供给方和电力方，这正是今天看到的。10/28 MSFT 的 capex 口径是「内生融资」这个新轴能否保留的直接检验: 若 MSFT 上调 capex 但明确由内生现金流覆盖，轴成立；若也暗示外部融资，则整个开支方变成同一约束下的同一笔交易。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-14 · -3.27% day · ▼ material
 **Tags:** `macro_inflation`, `sector_rotation`, `pt_change`
 **Confidence:** high

@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -4.06% day · ▼ material
+**Tags:** `sector_rotation`, `competitor_news`
+**Confidence:** medium
+
+**Primary cause.** AI 供给方整组下跌，无 AVGO 自身消息。今天的公因子是融资: META 上调 capex 下沿 + FCF 转负 + 新设无投票权股 → -7.91%; **四家大科技 CDS 创数月新高 — 融资担忧第一次从边缘搬到投资级核心**。2Y -17.3bp / 10Y -18.1bp 平行下行、TLT +2.03% → **折现率给了近 20bp 顺风而权益仍跌**。参与度: 量比中位数 0.79x, 10/35 过 1.0x — 方向可信幅度不可信。||**AVGO 的位置在今天的横截面里值得单独记: 远期 PE 16.7x 是 AI 供给方里最低的 (低于 TSM 17.6x / MRVL 30.2x / AMD 32.3x / INTC 40.7x)，而 30d -10.02% 是组内第二差 (仅好于 INTC -14.37%)。** 对照 10/14 的记录「AVGO 唯一 30d 负 (-6.17%) 且跌最少 (-3.10%)」—— 一周后 30d 恶化到 -10.02% 而今天跌 4.06%，**所以「30d 已跌所以跌得少」这个保护今天只部分成立**，与全场「capitulation 取代 profit-taking」的新规律一致。||**9/16 建立的判据今天仍然成立且时间更紧: AVGO 的需求侧答案会在 10/28-10/29 的 hyperscaler capex 指引里免费拿到，比它自己 12/09 的财报提前六周。** 具体链路: AVGO 的定制 ASIC (TPU / Trainium / MTIA) 收入直接取决于 GOOG / AMZN / META 的 capex 配置，所以 10/28 GOOG + MSFT 与 10/29 AMZN 的指引是 AVGO 需求的直接读数。||位置: vs MA50 $358.35 偏离 **-9.6%**; 距 52w 高 $495.00 为 **-34.53%** (供给方第二深, 仅好于 INTC -39.65%); 下次财报 **12/09 (48 天后, 与 SPCX lockup 同日)**。
+
+**Sources.**
+- Yahoo Finance: Meta and chip stocks decline as AI trade comes under pressure: AlphaCheck
+- {"type": "computed", "title": "\u8fdc\u671f PE 16.7x \u4e3a AI \u4f9b\u7ed9\u65b9\u6700\u4f4e, \u800c 30d -10.02% \u4e3a\u7ec4\u5185\u7b2c\u4e8c\u5dee \u2014 10/14\u300c30d \u5df2\u8dcc\u6240\u4ee5\u8dcc\u5f97\u5c11\u300d\u7684\u4fdd\u62a4\u53ea\u90e8\u5206\u6210\u7acb", "publisher": "workspace"}
+- {"type": "research", "title": "9/16 \u5224\u636e: AVGO \u9700\u6c42\u4fa7\u7b54\u6848\u5728 10/28-10/29 capex \u6307\u5f15\u91cc\u63d0\u524d\u516d\u5468\u514d\u8d39\u5230\u624b (\u81ea\u8eab\u8d22\u62a5 12/09)", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** 无个股信息。关键是 9/16 建立的判据今天仍成立且只剩 6 天 — AVGO 的需求答案来自客户的 capex 指引而非自己的财报, 而它自己的财报在 48 天后且与 SPCX lockup 同日。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-14 · -3.10% day · ▼ material
 **Tags:** `macro_inflation`, `sector_rotation`, `executive_comment`
 **Confidence:** high

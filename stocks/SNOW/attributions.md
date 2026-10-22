@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -3.34% day · ▼ material
+**Tags:** `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** AI 软件层随整组下跌，无公司消息，量比 0.55x (半量)。今天的公因子是融资: META 上调 capex 下沿 + FCF 转负 + 新设无投票权股 → -7.91%; **四家大科技 CDS 创数月新高 — 融资担忧第一次从边缘搬到投资级核心**。2Y -17.3bp / 10Y -18.1bp 平行下行、TLT +2.03% → **折现率给了近 20bp 顺风而权益仍跌**。参与度: 量比中位数 0.79x, 10/35 过 1.0x — 方向可信幅度不可信。||**SNOW 是「倍数无关性」最有力的反例样本: 远期 PE 103.3x 为全书第二高 (仅次于 TSLA 176.9x)，今天只跌 3.34% —— 轻于 SNDK (远期 4.7x) 的 -9.31%、SKHY (3.9x) 的 -7.15%、DRAM (组内最低档) 的 -6.97%。** 配合今天利率是**下行**的，「加息打击高倍数/长久期股」这个假说第四次被否证且这次最干净 (连前提都不存在)。**真正把跌幅排出序列的是「是否在 AI 开支-供给-电力链的资本密集环节上」—— SNOW 是软件层, 不需要自己出 capex, 所以它在融资叙事里受伤最轻。这正是「内生融资 vs 需要外部资本」新轴的一个延伸: 不需要资本支出的环节最安全。**||位置: vs MA50 $331.87 偏离 -6.0%; 距 52w 高 $384.56 为 -18.88%; **下次财报 12/02 (41 天后)**。
+
+**Sources.**
+- {"type": "computed", "title": "\u8fdc\u671f PE 103.3x (\u5168\u4e66\u7b2c\u4e8c\u9ad8) \u4eca\u5929\u53ea\u8dcc 3.34%, \u8f7b\u4e8e\u8fdc\u671f 3.9-4.7x \u7684\u5185\u5b58\u7ec4 7-9% \u2014 \u500d\u6570\u65e0\u5173\u6027\u6700\u6709\u529b\u6837\u672c", "publisher": "workspace"}
+- {"type": "computed", "title": "\u8f6f\u4ef6\u5c42\u65e0\u81ea\u6709 capex \u9700\u6c42 \u2192 \u5728\u878d\u8d44\u53d9\u4e8b\u91cc\u53d7\u4f24\u6700\u8f7b, \u662f\u65b0\u8f74\u7684\u5ef6\u4f38", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** SNOW 的价值在于它是今天横截面的检验样本: 103.3x 远期只跌 3.34%, 彻底否掉倍数解释, 并给新轴补了一个延伸 — 不需要自己出 capex 的环节最安全。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-14 · -6.34% day · ▼ major
 **Tags:** `macro_inflation`, `sector_rotation`, `unattributed`
 **Confidence:** medium

@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -4.23% day · ▼ material
+**Tags:** `sector_rotation`, `production_milestone`
+**Confidence:** medium
+
+**Primary cause.** **本组今日最弱 (-4.23%)，且是在 Optimus 拿到量产确认的同一天。** KOID 覆盖更广的使能层 (物理 AI + 等权人形)，所以对 AI 链整体 beta 的暴露高于 HUMN 的纯 OEM+执行器定位 —— 这解释了为什么在一个 AI 链普跌日它跌得最多。远期 PE 32.2x。||详细的跨标的对照与久期框架修正见同日 HUMN 条目: **Optimus 已进入生产 + Cybercab 年底交付客户确认当日，TSLA -2.61% (5d +3.84% / 30d +3.52%) 而 HUMN -3.33% / KOID -4.23% / CROB -0.71% 全跌 —— 定价零外溢。三只提供的是人形行业 beta, 不是 Optimus 的 alpha。**||**久期框架修正: 今天 2Y -17.3bp / 10Y -18.1bp 的折现率顺风本应最有利于「最远 × 最不确定」象限, 三只仍跌; 对照 MSFT 30d +6.04% / AAPL +0.60%。10/15 记录的「确定性轴压倒久期轴」在今天顺风加倍 (10bp→18bp 且前端带动) 的条件下结果不变 —— 可升级为「久期轴的符号在风险偏好收缩时可以反过来」。**||位置: vs MA50 $35.81 偏离 -9.3%; 距 52w 高 $43.32 为 -25.03%; 距 52w 低 $27.74 为 +17.1% (优于 HUMN 的 +3.7%)。量比 0.87x。
+
+**Sources.**
+- {"type": "cross_stock", "title": "Optimus \u91cf\u4ea7\u786e\u8ba4\u5f53\u65e5\u4e09\u53ea ETF \u5168\u8dcc\u800c TSLA \u53ea\u8dcc 2.61% \u2014 \u5b9a\u4ef7\u96f6\u5916\u6ea2", "publisher": "workspace"}
+- Decrypt: Tesla's Profit Drops 43% as Musk Starts Building Robots — Optimus 已量产
+- {"type": "computed", "title": "KOID \u66f4\u5e7f\u4f7f\u80fd\u5c42\u5b9a\u4f4d \u2192 AI \u94fe\u6574\u4f53 beta \u66b4\u9732\u9ad8\u4e8e HUMN, \u89e3\u91ca\u7ec4\u5185\u4eca\u65e5\u6700\u5f31", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** 组内今日最弱, 原因是更广的使能层定位带来更高的 AI 链 beta。与 HUMN 共享同一条核心发现 (Optimus 定价零外溢) 和同一条框架修正 (久期轴符号可反转)。位置上比 HUMN 安全 (距 52 周低点 +17.1% vs +3.7%)。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-14 · -3.78% day · ▼ material
 **Tags:** `macro_inflation`, `sector_rotation`, `flow_event`
 **Confidence:** low

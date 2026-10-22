@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -9.31% day · ▼ major
+**Tags:** `memory_pricing`, `competitor_news`, `earnings_pre_print`, `analyst_downgrade`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **🚨 两条线同时收紧到全书最紧，而且是在一个没有公司新闻的日子里。** (1) 价格 $1,249.88 距 thesis_break_price $1,200 **仅 +4.2%** —— 10/15 时为 +12.1%，**一周压缩 7.9pp**; (2) **10/29 是预设的财报评分日 (state.yaml::earnings_watchlist, status: pending)，评分窗口 ±7d 自今天 (10/22) 正式打开。**||今天 -9.31% 的驱动有两条，都是外部的: (a) **Cramer 两天前 (10/20) 的具名警告** —— 「如果数据中心容量萎缩，SNDK 和 WDC 是最危险的持仓」，并指出它们的 YTD 涨幅使风险不对称; (b) 今天 NOK 与 Lam 共同确认的成本结构性上升。||**成本侧证据链今天拿到第三层 (客户官方指引) 与第四层 (设备厂官方口径):** (1) 10/15 Counterpoint — Q3 全球手机出货同比 -20%, 2012 年来最弱 Q3, 直接归因 DRAM/NAND 涨价; (2) 10/15 巴克莱下调 Dell/HPE — 内存成本过账虚增服务器营收不带毛利; (3) **10/22 NOK 下调自由现金流指引 + CEO 称供应挤压是「结构性成本上升，不只是短缺」并计划因成本通胀涨价 (客户自己的账, 最硬)**; (4) **10/22 Lam Research -9%, 点名「供应链约束」限制指引; AMAT -6% / ASML -4%**。Lam 这条让成本故事自我强化: 设备交不出 → 产能扩不上 → 内存价格维持高位更久 → 下游需求破坏继续。**今天市场在「价格 vs 数量」里明确选了数量。**||**🔴 这直接撞上 SNDK 评分卡的一条 Tier 1 门槛: 「non-GAAP 毛利率 (84.6% 峰值) 不快速回落」。** 内存/NAND 涨价对 SNDK 这个卖方是**卖价顺风**，但 NOK 的财报证明下游在被挤压并开始涨价转移给终端，而 Counterpoint 证明终端已经在萎缩 (手机出货 -20%)。**所以同一件事对 SNDK 是「价格好、数量坏」—— 10/29 的毛利率和出货量是唯一能把这两者分开的数据点。**||**一条已建立判据今天不适用，必须明说: 8/6 建立的 sell-the-news 判据 (带 >30% 5d 涨幅进财报 = 好数字打折) 本次不适用 —— 5d 为 -10.39%，是带着大幅下跌进财报，不是带着涨幅。** 这反而意味着好数字有被定价不足的空间，与 8/6 的情形相反。||**估值与位置**: 远期 PE **4.7x** (另有卖方按 10/19 价格算出 17.6 倍 trailing，对照 S&P 中位数 22.7x); 距 52w 高 $2,354.39 为 **-46.91%**; vs MA50 $1,599.03 偏离 **-21.8%**; 30d -26.16% 为本组第二差 (仅好于 SKHY -29.37%)。||**kill conditions 状态**: (1)「non-GAAP 毛利率连续两季压缩 (84.6% 峰值开始回落) = NAND 周期见顶」—— **10/29 是第一个检查点，今天无数据**; (2)「FY27 指引被下修，或『半数营收转 FCF』模型被悄悄放弃/walk back」—— 10/29 检验。**与今天的其他标的不同，SNDK 的 kill conditions 恰好覆盖了当前的实际风险 (毛利率与现金流转换)，这是全书少数触发器设计正确的案例。**||**宏观共因已被排除为跌因**: 2Y -17.3bp / 10Y -18.1bp 平行下行、TLT +2.03%、债市撤回加息押注 — 折现率给了近 20bp 顺风而权益仍跌, 跌幅必须由风险溢价全额解释。**参与度限定: 全场量比中位数 0.79x, 仅 10/35 过 1.0x、2/35 过 1.5x (NOK 1.83 / GEV 1.75, 两只都有具名新闻)。方向可信, 幅度不可信。**
+
+**Sources.**
+- 247wallst: [Cramer warns SanDisk and Western Digital are worst stocks if data center capacity shrinks](https://247wallst.com/investing/2026/10/20/cramer-warns-sandisk-and-western-digital-are-worst-stocks-if-data-center-capacity-shrinks/)
+- TIKR/Stocktwits: Nokia cuts cash flow view; CEO: supply squeeze is 'a structural cost increase, not just a shortage'
+- Yahoo Finance: Chip stocks fall as equipment maker Lam Research cites 'supply chain constraints'
+- {"type": "computed", "title": "thesis_break $1,200 \u7f13\u51b2\u4e00\u5468\u5185\u7531 +12.1% \u538b\u7f29\u5230 +4.2% (\u538b\u7f29 7.9pp); \u8bc4\u5206\u7a97\u53e3 10/22 \u6253\u5f00, \u8bc4\u5206\u65e5 10/29", "publisher": "workspace"}
+- {"type": "research", "title": "8/6 sell-the-news \u5224\u636e\u672c\u6b21\u4e0d\u9002\u7528 \u2014 5d \u4e3a -10.39% \u800c\u975e >+30%", "publisher": "workspace"}
+- Trefis: Could SanDisk Be The Value Stock For Your Portfolio? — 17.6x trailing vs S&P 中位 22.7x (按 10/19 价格)
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** SNDK 是今天风控上最紧的标的: 价格缓冲 +4.2% (全书最紧) 加上 10/29 评分日, 两条线同时到期。与其他标的不同, 它的 kill conditions (毛利率压缩 / FCF 模型 walk back) 恰好覆盖当前的实际风险, 所以 10/29 的评分是有意义的 — 不像 NOK/GEV/META 那样触发器与机制不重叠。8/6 的 sell-the-news 判据本次不适用, 这反而给好数字留了被定价不足的空间。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-15 · -4.10% day · ▼ material
 **Tags:** `memory_pricing`, `earnings_pre_print`, `sector_rotation`
 **Confidence:** high

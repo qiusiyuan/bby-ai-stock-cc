@@ -4,6 +4,28 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -1.63% day · ▼ minor
+**Tags:** `geopolitical_war`, `macro_oil`, `commodity_move`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **记录本条不是因为 -1.63% 够大 (不够), 而是因为一个具名地缘催化剂出现而能源股没跟 —— 以及因为 30 天口径揭示了一件比今天的跌幅重要得多的事。**||**具名催化剂: 伊朗风险第一次有了日期。** 《纽约时报》10/21 引述消息人士报道 —— **华盛顿与以色列已为对伊朗重启军事行动准备具体方案, 时点设在 11 月中期选举之后**; 报道点名的打击类别包含**伊朗能源基础设施**、核设施、导弹与无人机资产。另据 CNBC, 美国已令非紧急政府人员及家属撤离沙特阿拉伯 (与伊朗支持的也门胡塞武装冲突相关)。对照 10/08 (「据报考虑扩大打击 + 油轮遇袭」) 与 10/15 (「Chevron CEO Wirth 称缓冲库存已抽干」), **性质从「风险存在」变成「风险有日历」。**||商品反应到位且期限结构更有信息: **WTI $99.19 (+2.10%)、Brent $112.44 (+3.3%)**, **Brent 涨幅大于 WTI, WTI-Brent 价差拉宽到 $13.25** —— Brent 更直接反映海运与中东供给中断风险, **价差宽化本身就是对霍尔木兹类风险的定价, 比单看 WTI 更干净。**||**但股票全跌: SU -1.63% / HXE.TO -2.41% / CVX -0.22% / CNQ -0.21% ("Sector Update: Energy Stocks Decline Thursday Afternoon")。有两种读法, 数据只支持第二种:**||❌ **「能源失去了对冲属性」** —— **与 30d 数据直接矛盾**: WTI 30d **-3.21%** 而 SU **+12.77%** / CNQ **+7.50%** / HXE.TO **+7.37%** / CVX **+6.35%**。**原油跌了 3%, 油气股涨了 6-13%, 裂口 10-16pp。脱钩在一个月前就已发生, 而且方向对股票有利。**||✅ **「已脱钩并完成重定价的板块在 52 周高点附近获利了结」** —— 四只全部距 52 周高点 **1.1-3.3%** 以内 (CVX -1.12% / CNQ -2.09% / SU -3.13% / HXE.TO -3.34%), 全部在 MA50 上方 **6.3-11.8%**, 是 34 只标的里唯一整体还在均线上方的板块 (全场 26/34 跌破 MA50)。||**成交量是决定性证据: 今天全组量比 0.38x ~ 0.88x, 其中 CVX 0.38x 与 SU 0.55x 分别是 35 只标的里最低的两个。如果资金在系统性降风险、把能源也卖掉, 不可能是最低的成交量。更一致的解释是买盘今天去看 AI 链的火灾了, 能源在没有买盘的情况下自然小幅回落。**||**必须修正一条此前反复引用的旧结论。** 10/07 / 10/14 / 10/15 三份报告确认「实际利率压倒避险买盘」, 依据是「30d 四类地缘资产只有实物油涨 (WTI +6.12% / Brent +11.13% vs 金 -5.58% / 银 -11.84% / ITA -8.05%)」。**30 天窗口滚过九月中的油价高点后, 今天的读数是 WTI -3.21% / Gold -6.70% / Silver -13.98% / ITA -6.97% —— 四类全负。排序 (油最抗跌) 仍成立, 但「只有油涨」这个说法现在是错的, 不能继续引用。**||**另一条今天失效的机制解释: 10/07/10/14/10/15 用「实际利率上行」解释金银下跌。今天名义利率跌了 18bp, 而金仍跌 2.28% / 银跌 4.23% —— 实际利率今天对黄金是顺风。所以今天金银下跌的机制只能是强制平仓/追缴保证金, 不是实际利率。白银期货量比 27.4x 为全书记录以来最高的单一读数, 与「被迫减仓」一致, 与「主动看空白银」不一致。**||**两个待解锁的问题:** (1) **Wirth 的「库存已抽干」仍未被官方口径确认** —— 10/15 标注为 CEO 口头表态 (medium), 解锁条件是 EIA/IEA 确认; 今天仍无, 信心等级不变; **10/30 CVX 财报是这个说法第一次进入正式披露的机会**。(2) **市场同日给出了两个方向相反的政治定价** —— 油价按「选举后打伊朗」上涨, 而防务股按「民主党全胜」下跌 (ITA -1.42% / 30d -6.97%, "Defense Stocks Are Tumbling as Wall Street Bets on a Democratic Sweep"), 同时 Lockheed 创纪录订单却只是个股上涨 +9%。**这两者不可能同时正确。**||**风险提示: SU 30d +12.77% 为全组最强、MA50 上方 +11.8% 为全书最高 —— 它是 11/03 财报里 sell-the-news 风险最集中的一只 (8/6 判据: 带大幅涨幅进财报 = 好数字打折)。** HXE.TO 的 -2.41% 含汇率成分 (USD/CAD -0.43%, 加元走强; 以加元计价), 且作为 ETF 含中游与本地名字, 不完全对应 SU/CNQ 的上游敞口 —— 不要把它的相对弱势读成加拿大油气的信号。
+
+**Sources.**
+- New York Times (经 MT Newswires 转述): NYT: 华盛顿与以色列已为中期选举后对伊朗重启军事行动准备具体方案, 目标含伊朗能源基础设施、核设施、导弹与无人机资产
+- CNBC: CNBC: 美国令非紧急政府人员及家属撤离沙特阿拉伯 (胡塞冲突相关)
+- MT Newswires/Yahoo: [Update: US Equity Indexes Drop as AI Trade Loses Shine After Meta's Results While Crude Oil Jumps as Iran Warns of Invasion — WTI +2.2% $99.30 / Brent +3.3% $112.44](https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-drop-ai-174130917.html)
+- MT Newswires/Yahoo: Sector Update: Energy Stocks Decline Thursday Afternoon
+- {"type": "computed", "title": "30d \u8131\u94a9: WTI -3.21% vs SU +12.77% / CNQ +7.50% / HXE.TO +7.37% / CVX +6.35% \u2014 \u88c2\u53e3 10-16pp", "publisher": "workspace"}
+- {"type": "computed", "title": "\u91cf\u6bd4 CVX 0.38x / SU 0.55x \u4e3a 35 \u53ea\u6807\u7684\u6700\u4f4e\u4e24\u4e2a \u2014 \u4e70\u76d8\u7f3a\u5e2d\u800c\u975e\u5356\u76d8\u51fa\u73b0", "publisher": "workspace"}
+- {"type": "correction", "title": "\u65e7\u7ed3\u8bba\u4fee\u6b63: \u300c30d \u53ea\u6709\u5b9e\u7269\u6cb9\u6da8\u300d\u5df2\u5931\u6548 \u2014 \u4eca\u5929 WTI -3.21% / Gold -6.70% / Silver -13.98% / ITA -6.97% \u56db\u7c7b\u5168\u8d1f", "publisher": "workspace"}
+- {"type": "correction", "title": "\u65e7\u673a\u5236\u4fee\u6b63: \u540d\u4e49\u5229\u7387\u4eca\u5929\u8dcc 18bp \u800c\u91d1\u94f6\u4ecd\u8dcc \u2014 \u4eca\u5929\u91d1\u94f6\u4e0b\u8dcc\u662f\u5f3a\u5236\u5e73\u4ed3, \u4e0d\u662f\u5b9e\u9645\u5229\u7387 (SI=F \u91cf\u6bd4 27.4x \u4e3a\u5168\u4e66\u6700\u9ad8)", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · BRENT 112.44 · DXY 101.6 · GOLD 4055.4 · SILVER 54.99 · BTC 81063
+
+**Agent read.** 今天能源的日内背离不是关系破裂, 因为关系在一个月前就断了, 且方向对股票有利。决定性证据是成交量: CVX 0.38x / SU 0.55x 为全场最低两个 — 没有成交量的下跌不构成资金离场。本条同时修正了两条此前反复引用的旧结论 (「30d 只有油涨」与「实际利率解释金银下跌」), 两条在今天的数据下都不再成立。解锁条件是 10/30 CVX 财报对库存缓冲的正式表述。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-08 · +3.80% day · ▲ material
 **Tags:** `geopolitical_war`, `macro_oil`, `commodity_move`, `m_and_a`, `sector_rotation`
 **Confidence:** high

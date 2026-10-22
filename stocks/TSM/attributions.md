@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -4.65% day · ▼ material
+**Tags:** `sector_rotation`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** AI 供给方整组下跌 + 设备供应约束传染，无 TSM 自身负面消息。||具名驱动: **Lam Research -9% 点名「供应链约束」限制指引**; AMAT -6% / ASML -4%; 当天另有 "Chinese Competitors Aren't Eroding ASML's EUV Core Monopoly" (对 TSM 中性偏正)。||**今天的公因子是融资。** META 上调 2026 capex 下沿至 $1,350-1,450亿 + 季度 FCF 转负 + 新设无投票权股融资 → -7.91%; **四家大科技 (META/AMZN/GOOGL/MSFT) CDS 创数月新高 — 融资担忧第一次从边缘搬到投资级核心**。同时 2Y -17.3bp / 10Y -18.1bp 平行下行、TLT +2.03%、债市撤回加息押注 → 折现率给了近 20bp **顺风**而权益仍跌, 跌幅必须由风险溢价全额解释。参与度: 全场量比中位数 0.79x, 仅 10/35 过 1.0x。||**对照 10/15 的 TSM 归因: 那天 TSM 发财报, 营收同比 +41% / HPC 占营收 68% / 第六个连续纪录利润季度, 放量 1.52x 仍跌 2.55%** —— 当时的结论是「用三项排除了一整个解释分支: 『AI 需求走弱』被实证排除 (营收排除总量减速, HPC 占比排除靠成熟制程, 连续六季排除单季错配), 剩下只有融资/倍数/情绪」。**今天那三个候选里的「融资」拿到了四家大科技 CDS 创数月新高这个硬价格信号, 「倍数」被横截面否证 (远期 PE 跨 68 倍而跌幅与倍数无关)。按排除法, 10/15 留下的三选一今天收敛到了一个。**||位置: vs MA50 $433.83 偏离 -5.1%; 距 52w 高 $487.47 为 -15.52%; 远期 PE 17.6x; **下次财报 2027-01-14 — 全书最远的催化剂之一 (84 天后)**，所以 TSM 在未来一个季度里没有自己的话语权, 价格由客户的 capex 指引推动。||参与度: 量比 0.86x (半量); 全场中位数 0.79x。
+
+**Sources.**
+- MT Newswires/Yahoo: Lam Research Sinks 9% as Supply Constraints Cap Outlook; Applied Materials Drops 6%, ASML Holding Falls 4%
+- {"type": "credit", "title": "META / AMZN / GOOGL / MSFT \u56db\u5bb6 CDS \u521b\u6570\u6708\u65b0\u9ad8 \u2014 10/15 \u7559\u4e0b\u7684\u300c\u878d\u8d44/\u500d\u6570/\u60c5\u7eea\u300d\u4e09\u9009\u4e00\u91cc\u878d\u8d44\u62ff\u5230\u786c\u4fe1\u53f7", "publisher": "Yahoo Finance"}
+- {"type": "computed", "title": "\u8fdc\u671f PE \u8de8 68 \u500d (2.6x~176.9x) \u800c\u8dcc\u5e45\u4e0e\u500d\u6570\u65e0\u5173 \u2014 10/15 \u4e09\u9009\u4e00\u91cc\u7684\u300c\u500d\u6570\u300d\u88ab\u5426\u8bc1", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** 10/15 TSM 用三项排除了「AI 需求走弱」, 留下融资/倍数/情绪三选一。今天融资拿到 CDS 这个硬价格信号, 倍数被横截面否证 — 按排除法三选一收敛到融资。TSM 自己的下次财报在 84 天后, 所以它在未来一季没有话语权。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-15 · -2.55% day · ▼ minor
 **Tags:** `earnings_print`, `ai_demand`, `sector_rotation`
 **Confidence:** high

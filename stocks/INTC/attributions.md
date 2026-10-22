@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -7.59% day · ▼ major
+**Tags:** `competitor_news`, `sector_rotation`, `earnings_pre_print`
+**Confidence:** medium
+
+**Primary cause.** 芯片组传染，无公司新闻。具名驱动与 AMD/MRVL 同源: **Lam Research -9% 点名「供应链约束」限制指引**; "Chip Stocks Fall as Supply Warning Deepens AI Selloff: Marvell and AMD Sink 8%, **Intel Drops 7%**"。||**今天的公因子是融资，不是利率也不是需求。** META 上调 2026 capex 下沿至 $1,350-1,450亿 + 季度 FCF 转负 + 新设无投票权股融资 → -7.91%, 蒸发 $1,250亿市值, 年内涨幅全抹; 四家大科技 (META/AMZN/GOOGL/MSFT) CDS 创数月新高 — **融资担忧第一次从边缘 (neocloud/CoreWeave) 搬到投资级核心**。同时 2Y -17.3bp / 10Y -18.1bp 平行下行、TLT +2.03%、债市撤回加息押注 → **折现率给了近 20bp 顺风而权益仍跌, 跌幅必须由风险溢价全额解释**。||**INTC 属于「30d 已跌最多的今天跌最多」这一组 (30d -14.37%)，即 capitulation 而非 profit-taking** —— 对照 10/15 记录的有效规律「跌幅与 30d 涨幅正相关」，今天规律反转。||位置最差之一: **vs MA50 $102.47 偏离 -16.2%**; 距 52w 高 $142.35 为 **-39.65%**; 远期 PE 40.7x。||**🔥 日历校正: 财报已按 yfinance 从 10/22 校正到 10/29 (7 天后)，使 10/29 升为三重叠加日 (AMZN + INTC + SNDK 评分)。** 届时检验 Piper 的多空拆分: 指引 $15.8-16.8B 落**上端** + 数据中心/AI 延续 +59% 级增速 = 支持 high-teens CAGR 看多部分; 落**下端** = 「45% 市值押 foundry 夺 15 个百分点 CPU 份额」的假设更难支撑。||参与度限定: 全场量比中位数 0.79x, 仅 10/35 过 1.0x、2/35 过 1.5x (NOK 1.83 / GEV 1.75)。**方向可信, 幅度不可信** — 但该限定对 META (1.41x)/GEV (1.75x)/NOK (1.83x) 三只不再适用。
+
+**Sources.**
+- MT Newswires/Yahoo: Chip Stocks Fall as Supply Warning Deepens AI Selloff: Marvell and AMD Sink 8%, Intel Drops 7%
+- MT Newswires/Yahoo: Lam Research Sinks 9% as Supply Constraints Cap Outlook
+- {"type": "computed", "title": "\u8d22\u62a5\u65e5\u671f\u6309 yfinance \u6821\u6b63 10/22 \u2192 10/29; 10/29 \u56e0\u6b64\u6210\u4e3a\u4e09\u91cd\u53e0\u52a0\u65e5", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** 纯传染, 无个股信息。10/29 财报是指引区间落点的检验, 且与 AMZN、SNDK 评分日同天 — 当天 INTC 的价格会混入 AI capex 的整体读数, 需要分开读。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-10-15 · -4.14% day · ▼ material
 **Tags:** `sector_rotation`, `ai_demand`, `competitor_news`, `earnings_pre_print`
 **Confidence:** medium

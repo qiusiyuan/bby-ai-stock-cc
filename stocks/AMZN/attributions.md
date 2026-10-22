@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-22 · -4.82% day · ▼ material
+**Tags:** `sector_rotation`, `earnings_pre_print`
+**Confidence:** high
+
+**Primary cause.** AI 开支方整组下跌，无 AMZN 自身消息。||**今天的公因子是融资。** META 上调 2026 capex 下沿至 $1,350-1,450亿 + 季度 FCF 转负 + 新设无投票权股融资 → -7.91%; **四家大科技 (META/AMZN/GOOGL/MSFT) CDS 创数月新高 — 融资担忧第一次从边缘搬到投资级核心**。同时 2Y -17.3bp / 10Y -18.1bp 平行下行、TLT +2.03%、债市撤回加息押注 → 折现率给了近 20bp **顺风**而权益仍跌, 跌幅必须由风险溢价全额解释。参与度: 全场量比中位数 0.79x, 仅 10/35 过 1.0x。||**新判别轴「内生融资 vs 需要外部资本」**: MSFT (内生充裕、无增发信号) -2.02% 且是十只 AI 标的里**唯一仍在 MA50 上方的** (+2.8%, 30d +6.04%); GOOG -3.36%; AMZN -4.82%; META (FCF 转负 + 融资股票) -7.91%; SPCX (FY27 FCF -$670亿) -8.94%。**这解释了 MSFT 的例外 —— 不是因为便宜 (远期 22.0x 比 AVGO 16.7x / TSM 17.6x 贵)，也不是久期短，而是 capex 全部由内生现金流覆盖。10/28 MSFT 的 capex 口径是这个轴能否保留的直接检验。**||**AMZN 是「零重叠结构终结」的交叠证据之一: -4.82% 落在供给方 TSM -4.65% 与 INTC -7.59% 之间。** 对照 10/08 (开支方 -0.43%~-0.95% vs 供给方 -2.30%~-5.89%，零重叠) 与 10/15 (五家四正 vs 七家全跌，零重叠)，10/15 预测的收敛在 10/21 META 指引后的第一个交易日兑现。||**🎯 10/29 财报是 7/31 上调的 $2,200亿 capex 第一次交答案，且与 INTC、SNDK 评分日同天。** 预设的关键跟踪指标是 **AWS 营业利润率 (当前约 39%)** —— 若利润率下降 + 收入增速同时减速 = 卖出信号。**这是下一代空头论点 (折旧压 EPS) 的第一个检查点。** 在今天的新轴下，还要加看一条: AMZN 是否像 META 一样把 capex 的融资方式可见化 (发债 / 租赁 / SPV)。||位置: **跌破 MA50** ($255.98, 偏离 -2.4%); 距 52w 高 $287.20 为 -13.05%; 远期 PE 23.9x。||注意 AMZN 在 10/19-10/21 三天是上涨的 (30d 口径仅 -0.86%)，所以今天的 -4.82% 是把最近三天的涨幅一次性抹掉 —— 这与「有新闻的按新闻跌」一致: AMZN 没有自己的新闻，但它是 10/29 要给 capex 答案的下一个人。
+
+**Sources.**
+- Yahoo Finance: Investors are punishing Big Tech's biggest spenders. Meta is the latest casualty.
+- {"type": "credit", "title": "META / AMZN / GOOGL / MSFT \u56db\u5bb6\u503a\u52a1\u4fdd\u9669\u6210\u672c (CDS) \u521b\u6570\u6708\u65b0\u9ad8", "publisher": "Yahoo Finance"}
+- {"type": "computed", "title": "-4.82% \u843d\u5728\u4f9b\u7ed9\u65b9 TSM -4.65% \u4e0e INTC -7.59% \u4e4b\u95f4 \u2014 \u96f6\u91cd\u53e0\u7ed3\u6784\u7ec8\u7ed3\u7684\u4ea4\u53e0\u8bc1\u636e", "publisher": "workspace"}
+
+**Cross-assets.** SPY -1.44% · VIX 19.37 · TEN YEAR 4.957 · TWO YEAR 4.65 · WTI 99.19 · DXY 101.6 · GOLD 4055.4 · BTC 81063
+
+**Agent read.** 无个股信息, 但 AMZN 是 10/29 要交 capex 答案的下一个人, 所以今天的跌幅带有预期成分。在今天的新轴下, 10/29 除 AWS 利润率外还要加看融资方式是否可见化。
+ · Snapshot at `dashboard/2026-10-22.md`
+
+---
 ### 2026-08-31 · -2.18% day · ▼ minor
 **Tags:** `regulatory_negative`, `policy_us`, `competitor_news`
 **Confidence:** high
