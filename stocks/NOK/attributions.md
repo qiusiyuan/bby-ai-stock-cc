@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-26 · +6.14% day · ▲ material
+**Tags:** `analyst_upgrade`, `partnership_news`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **击穿 thesis_break $9.00 之后的第一次大反弹, 但没有收复风控线 —— 这是本条最重要的事实。** $8.64 仍在 $9.00 之下 4.0% (10/22 击穿时为 -12.4%, 四个交易日收窄 8.4pp)。||**三条具名驱动, 全部可核实:** (1) **Handelsbanken 上调至 Buy, 维持 €10 目标** (ad-hoc-news.de 10/26 09:26 GMT) —— 10 月唯一的上调动作; (2) **与 L&T Technology Services 签五年印度工程/R&D 战略合作** —— 六家以上印度媒体同步报道, LTTS 自身涨 3-4%, 说明这是双向确认的真实交易而非单方公告; (3) **Roth Capital 研报指 SpaceX 的 80,000 个蜂窝站点计划将利好 AST SpaceMobile / Ericsson / Nokia / NextNav** (17:44 GMT) —— **这是 NOK 与 SPCX 第一次出现直接业务连接**。另 timothysykes.com 口径把反弹归为「Q3 Beat Fuels AI-RAN Hype」。欧股侧: €7.27 盘前 → 收 €7.78 (+5.68% vs Xetra 收盘), ADR +6.14% 与本地盘一致。||**🔴 关键限定: 三条理由没有一条触及 10/22 下跌的真正原因。** 10/22 的具名原因是 (a) 下调自由现金流指引, (b) CEO 称供应挤压是「结构性成本上升, 不只是短缺」, (c) 计划因成本通胀涨价。**成本过账能力的问题今天一条都没被回答** —— Handelsbanken 的上调是卖方动作 (零运营事实), L&T 协议是营收侧而非成本侧, Roth 的站点论是对第三方计划的推论。所以今天的反弹在证据等级上弱于 10/22 的下跌 (后者是公司自己的指引与 CEO 原话)。||**成交量确认这一点: 量比 0.93x 低于全场中位数 0.85x 附近, 而 10/22 下跌时是 1.83x 全场最高。** 跌有量、涨无量 —— 本轮反复记录的「真实成交量只跟着具名公司新闻走」在这里的表现是: 公司自己的坏消息有量, 第三方的好消息没量。||**风控状态: 🚨 第 3 个交易日仍在 thesis_break 之下。** 价格也低于 Bear 目标区间 $8-9 的下沿, 而 bear case 预设的四条理由至今一条都没发生 —— 实际杀伤机制 (成本过账) 不在任何一条 kill condition 里, 这是本轮第二次记录同一个缺口 (另一个是 GEV)。
+
+**Sources.**
+- ad-hoc-news.de: Handelsbanken upgrades Nokia stock to Buy and keeps EUR 10 target
+- Seeking Alpha: Nokia and L&T Technology Services ink strategic 5-year R&D partnership in India
+- Foreign Policy Journal: Roth Capital: SpaceX plan for 80,000 cell sites should benefit AST SpaceMobile, Ericsson, Nokia and NextNav
+- timothysykes.com: NOK Stock Rebounds As Q3 Beat Fuels AI-RAN Hype
+- ad-hoc-news.de: Nokia stock gains 5.68 percent to EUR 7.78 versus Xetra close
+
+**Cross-assets.** SPY +0.71% · VIX 18.39 · TEN YEAR 4.99 · FIVE YEAR 4.82 · THIRTY YEAR 5.3 · WTI 101.32 · BRENT 115.3 · DXY 102.018 · GOLD 4027.5 · SILVER 53.97 · BTC 79704.67
+
+**Agent read.** 反弹幅度对、性质不对: 三条理由全在营收侧与卖方侧, 而 10/22 的杀伤在成本侧与公司自身指引。量比 0.93x vs 10/22 的 1.83x 进一步说明这是超跌反弹而非重新定价。仍在 thesis_break 之下 4.0%, 第 3 个交易日。下一个能真正回答成本过账问题的场合是下一季财报, 不在 90 天窗口内 —— 这意味着 NOK 在未来三个月没有任何公司级事件可以验证或否证风控线的突破。
+ · Snapshot at `dashboard/2026-10-26.md`
+
+---
 ### 2026-10-22 · -14.81% day · ▼ extreme
 **Tags:** `earnings_print`, `guidance_cut`, `executive_comment`, `prediction_passed`
 **Confidence:** high

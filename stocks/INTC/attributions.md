@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-26 · +4.04% day · ▲ material
+**Tags:** `unattributed`, `sector_rotation`, `earnings_pre_print`
+**Confidence:** low
+
+**Primary cause.** **+4.04% 为 AI capex 组最大涨幅, 而没有任何公司级消息 —— 置信度只能给 low。** 今天可取到的 INTC 相关报道全部是行业市场报告类 (「IPMI 全球战略商业报告」/「ASIC 设计服务市场报告 2026」), 这类报道零信息含量, 不构成催化剂。||**两条结构性解释, 两者都成立且互不排斥:**||(1) **超跌反弹。** INTC 30d **-6.91%** 是 AI capex 组内 (剔除 META/GOOG) 最差的一只, 而今天涨最多。这与 10/22 的发现正好反向跑了一遍 —— 10/22 写的是「最大跌幅集中在 30d 已跌最多的标的, 性质从 profit-taking 变 capitulation」, 今天是「最大涨幅集中在 30d 已跌最多的标的」。供给方五只的涨幅排序 (INTC +4.04 > NVDA +2.39 > AVGO +2.33 > MRVL +2.31 > TSM +1.40) 与 30d 跌幅倒序高度吻合。||(2) **财报前定位。** 10/29 交 Q3 + 指引 (日期已按 yfinance 校正: 10/22 → 10/29), 指引区间 $158-168亿。预设判据: 落上端 + DC/AI 延续 +59% 级增速 = 支持 high-teens CAGR 看多部分; 落下端 = 「45% 市值押 foundry 夺 15 个百分点 CPU 份额」的假设更难支撑。||**🔴 关键否证: 今天的涨幅不能归因于 Anthropic S-1 的传导。** S-1 具名的对手方是 AMZN/GOOG/MSFT ($2,690亿 不可取消合约), **没有具名任何芯片供应商**; 而被具名的三家今天是 +1.54% / +0.44% / -0.97%, 全部弱于未被具名的芯片层。**证据等级与价格反应完全倒挂** → S-1 解释了大盘方向 (Barron's 与 ^GSPC 口径直接点名), 解释不了 AI capex 组内分化。组内分化由「财报日历 + 超跌幅度」两个变量完全解释, 不需要 S-1 的传导假设。||**位置: $90.47, 低于 MA50 11.19%, 距 thesis_break $75 缓冲 +20.6%, 远期 PE 42.19x 为组内最高。** 量比 0.92x 略高于中位数但远未达 1.5x —— 全场 36 只今天零只过 1.5x。||**倍数无关性第五次确认 (且第一次在上涨日)**: 今天组内远期 PE 从 NVDA 13.57x 到 INTC 42.19x 横跨 3.1 倍, 而涨幅全在 +1.40%~+4.04% 窄带内, 且最贵的 INTC 涨最多。「加息打击高倍数股」在本轮已第五次被否证。||**待兑现的旧线索: 9/17 记录的「SK Hynix 与 Intel 就俄亥俄园区代工存储芯片重启谈判」** —— 当时的定性是「真实价值不是产能增量, 而是在美国关税/出口管制墙内获得 HBM 产能, 是绕开地缘风险的结构性解」。SK Hynix 10/28 财报与 INTC 10/29 财报相隔一天, **两场里任何一场提到该谈判进展, 都是对这条线索的免费更新。**
+
+**Sources.**
+- Research and Markets: Global Application-Specific Integrated Circuits (ASIC) Design Service Market Report 2026 (行业报告, 零信息含量)
+- yfinance calendar: [日期校正] INTC Q3 2026 earnings 2026-10-29 (yfinance), 指引 $15.8-16.8B
+- Quartz / SEC: Anthropic files for IPO and plans Nasdaq listing as ANT — S-1 未具名任何芯片供应商
+
+**Cross-assets.** SPY +0.71% · VIX 18.39 · TEN YEAR 4.99 · FIVE YEAR 4.82 · THIRTY YEAR 5.3 · WTI 101.32 · BRENT 115.3 · DXY 102.018 · GOLD 4027.5 · SILVER 53.97 · BTC 79704.67
+
+**Agent read.** 低置信度上涨, 无公司消息。价值在于它提供了今天最干净的横截面证据: 供给方涨幅排序 = 30d 跌幅倒序, 而 S-1 具名的云厂商反而弱 —— 这足以排除「S-1 传导到芯片层」的解释, 并把今天 AI capex 组的分化完整归因于「财报日历 + 超跌幅度」。10/29 的指引是 90 天内 INTC 唯一的自身催化剂, 且与 AMZN (AWS 利润率) + SNDK (评分日) 同日三重。
+ · Snapshot at `dashboard/2026-10-26.md`
+
+---
 ### 2026-10-22 · -7.59% day · ▼ major
 **Tags:** `competitor_news`, `sector_rotation`, `earnings_pre_print`
 **Confidence:** medium

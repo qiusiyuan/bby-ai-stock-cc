@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-26 · -1.16% day · ▼ minor
+**Tags:** `competitor_news`, `memory_pricing`, `earnings_pre_print`, `analyst_downgrade`
+**Confidence:** medium
+
+**Primary cause.** **记录本条不是因为 -1.16% 够大 (不够), 而是因为一条对三星直接有利的消息出现当天它是组内唯一下跌, 且成交量全组最低。**||**具名利好: Bernstein 称三星 3Q26 的 HBM 营收已反超 SK Hynix** (The Korea Herald 10/26 / Investing.com 10/22), 另 Chosunbiz 10/20「Samsung narrows SK hynix lead as HBM4 delays curb Korea chip gains」。这条消息对 10/15 建立的「三星既是内存卖方又是手机 OEM, 承受双向打击」要加一层: **若 HBM 已反超, 则卖方侧的收益比此前估计的大, 双向打击里利好的那一向被低估了。**||**而价格方向相反, 且量比 0.65x 为内存组最低。** 两种读法: (a) **10/27 财报前减风险** (比 SK Hynix 早一天) + 高盛下调 KOSPI 目标 25%; (b) 市场尚未消化 Bernstein 的说法。**量比 0.65x 更支持 (b)** —— 既没有人在买这条利好, 也没有人在恐慌卖。**一条本应重要的消息在零成交量下被忽略, 这本身是「市场尚未定价」的证据, 而不是「市场否决了它」的证据。**||**⚠️ 日期不确定**: 三星 Q3 完整业绩日期无法确认。10/08 已发布 preliminary guidance (Samsung Global Newsroom); yfinance 给 10/27; 去年完整业绩为 2025-10-30。本报告标为「10/27 (未核实)」。||**位置: ₩213,000, 30d -20.96%, 低于 MA50 16.28%, 远期 PE 2.95x。** 30d 跌幅介于 SK Hynix 本线 (-28.89%) 与 DRAM ETF (-11.81%) 之间。
+
+**Sources.**
+- The Korea Herald: Bernstein: Samsung overtook SK hynix in HBM revenue in 3Q26
+- Chosunbiz: Samsung narrows SK hynix lead as HBM4 delays curb Korea chip gains
+- Yahoo/Korea press: Goldman Sachs cuts Kospi target by 25% amid AI stock selloff
+- Yonhap News Agency: Samsung Electronics, SK hynix set to report Q3 earnings this week
+- Yahoo Finance: Why South Korea’s stock market represents the purest AI trade
+
+**Cross-assets.** SPY +0.71% · VIX 18.39 · TEN YEAR 4.99 · FIVE YEAR 4.82 · THIRTY YEAR 5.3 · WTI 101.32 · BRENT 115.3 · DXY 102.018 · GOLD 4027.5 · SILVER 53.97 · BTC 79704.67 · USDKRW 1325.31
+
+**Agent read.** 三星现在是两场裁决里更早的那一场 (10/27 vs SK Hynix 10/28), 且因为 Bernstein 的说法, 它对 HBM 份额的表述与 SK Hynix 的同等重要 —— 这是对此前「SK Hynix 的财报是 CXMT 的免费裁决场」逻辑的修正: 裁决现在需要两场, 而三星那场免费提前一天。日期本身未核实是一个需要在 10/27 当天确认的风险。
+ · Snapshot at `dashboard/2026-10-26.md`
+
+---
 ### 2026-10-15 · -9.48% day · ▼ extreme
 **Tags:** `competitor_news`, `memory_pricing`, `sector_rotation`
 **Confidence:** high

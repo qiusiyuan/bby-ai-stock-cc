@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-26 · +1.42% day · ▲ minor
+**Tags:** `analyst_upgrade`, `memory_pricing`, `earnings_pre_print`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** **记录本条是因为风控线与评分日同时逼近, 不是因为 +1.42% 够大。**||**⏰ 评分日 10/29, 还有 3 天 (评分窗口自 10/22 已开)。** 待评命题 (state.yaml::earnings_watchlist, status: pending): 「SNDK 从 NAND 周期股 re-rate 为结构性现金牛 —— FY27 指引 ($103-108亿 营收 / $44-46 EPS) 兑现 + 半数营收转 FCF 模型可信 + 毛利率 (84.6% 峰值) 不快速回落」。Tier 1 还含数据中心增速维持与 HBF design win 进展。||**🚨 风控: $1,255.58 距 thesis_break $1,200 仅 +4.6%** —— 全书第二近 (仅次于已击穿的 NOK)。10/15 时为 +12.1%, 10/22 为 +4.2%, **一周内几乎没有松动**。这是全书少数「kill condition 正确覆盖了当前真正在定价的风险」的标的: 预设的「毛利率快速回落」正是市场在定价的东西, 对照 NOK (实际杀伤是成本过账) / GEV (客户融资) / AVGO (倍数+信用) 三者的 kill condition 全是「需求崩塌/执行失败」型。||**两条方向相反的证据:**||🔴 逆风 (10/15 记录, 至今有效): **Counterpoint Q3 全球手机出货同比 -20%, 2012 年以来最弱 Q3, 直接归因 DRAM/NAND 涨价。** 这对「毛利率 84.6% 峰值不快速回落」这一条是**直接逆风** —— 需求破坏是已发生的事实而非预期。||🟢 顺风 (今天): **BofA 转多内存** (SPY 口径「Western Digital Rises 5%, SanDisk Gains 3%」), 但性质是卖方动作、零运营事实, 且 SNDK 实际收盘仅 +1.42% 为内存组涨幅最小。||**8/06 设下的 sell-the-news 判据本次不适用。** 原判据: 「带 >30% 的 5 日涨幅进财报 = 好数字打折」。今天 5d **-8.43%**, 方向与该判据设定的前提相反 —— **所以 10/29 不存在「涨太多打折」的风险, 风险全在数字本身。** 这与 10/08 的记录一致 (当时 5d -10.78%)。||**位置: 低于 MA50 20.82% (全组最深), 30d -19.10%, 远期 PE 4.71x, 距 52w 高 -46.7%。**
+
+**Sources.**
+- MT Newswires/Yahoo: Micron Climbs 4% as Bank of America Grows More Positive on Memory; Western Digital Rises 5%, SanDisk Gains 3%
+- Yahoo Finance: Sandisk Earnings Preview: What to Expect
+- Counterpoint Research: Counterpoint: Q3 全球手机出货同比 -20%, 2012 年以来最弱 Q3, 直接归因 DRAM/NAND 涨价 (10/15 记录, 至今有效)
+
+**Cross-assets.** SPY +0.71% · VIX 18.39 · TEN YEAR 4.99 · FIVE YEAR 4.82 · THIRTY YEAR 5.3 · WTI 101.32 · BRENT 115.3 · DXY 102.018 · GOLD 4027.5 · SILVER 53.97 · BTC 79704.67
+
+**Agent read.** 三天后评分, 而风控线缓冲一周未松动 (+4.2% → +4.6%)。两条证据方向相反但等级不同: 需求破坏是已发生事实 (hard), BofA 转多是卖方动作 (soft)。8/06 的 sell-the-news 判据不适用 (5d 为负), 所以 10/29 的全部风险在数字本身 —— 这实际上是好事: 判据干净、无情绪污染。SNDK 是本周三场连续裁决 (10/27 三星 / 10/28 SK Hynix / 10/29 SNDK) 的最后一场, 也是唯一一场同时结清一个预设评分卡的。
+ · Snapshot at `dashboard/2026-10-26.md`
+
+---
 ### 2026-10-22 · -9.31% day · ▼ major
 **Tags:** `memory_pricing`, `competitor_news`, `earnings_pre_print`, `analyst_downgrade`, `sector_rotation`
 **Confidence:** high

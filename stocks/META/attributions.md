@@ -4,6 +4,27 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-26 · -1.88% day · ▼ major
+**Tags:** `earnings_post_print`, `sector_rotation`, `macro_rates`, `guidance_raise`
+**Confidence:** high
+
+**Primary cause.** **5d -10.61% 触发阈值, 且今天是全场 36 只里**唯一在 risk-on 日逆市下跌且带成交量**的大科技 (量比 1.38x 为全场第二高, 仅次于 TSLA 1.43x)。**||**🔴 核心机制 (10/22 建立, 今天拿到第三层证据): META 是开支方四家里唯一一家零第三方 AI 实验室收入对价的。** Anthropic 的 S-1 披露 **AMZN / GOOG / MSFT 三家持有 $2,690亿 不可取消算力合约** (PPC Land; Reuters 称合约「不可取消」) —— 这把三家的 capex 从「无对价支出」变成「有合约对价的支出」。**META 自建模型、不对外卖算力, 所以它的 capex 没有任何合约化对价。** 这解释了为什么在一份把整条 AI 链抬起来的文件发布当天, META 是组内唯一下跌且成交量最高的一只。||**信用侧证据链第三层到位:** 10/20 FourWeekMBA「Meta 与 **Nvidia** 债务保险成本本月双双创纪录」; 10/22 **Reuters 与 Bloomberg 双源**确认「Meta 信用风险指标创纪录新高」; 10/23 The Economic Times「Meta 更大的预算、Tesla 更小的预算让华尔街不安」; 10/26 Tech Times 补一条结构性的 —— **Meta 的 Class C 股权结构让 Zuckerberg 可以在没有股东否决权的情况下为 AI 融资** (治理上中立, 定价上利空: 约束更少 = capex 上限更高 = 信用恶化空间更大)。**本窗口内 (10/20-10/26) 没有任何一篇报道信用价差收窄。**||**🔴 估值反向: META 是最便宜的开支方, 也是最弱的。** 远期 PE —— META **17.99x (最低)** / GOOG 20.46x / MSFT 22.48x / AMZN 23.88x; 1d —— META -1.88% (最差) / GOOG -0.97% / AMZN +0.44% / MSFT +1.54% (最好)。**倍数排序与表现排序完全反向。** 这是「加息打击高倍数股」在本轮的**第五次否证, 也是第一次在上涨日否证** (今天利率不动、市场上涨, 最贵的涨、最便宜的跌)。**倍数不是本轮的解释变量, 这一条现在可以当成已确立的结论用。**||**10/15 预测的裁决延续**: 10/15 写下「开支方 vs 供给方零重叠结构逻辑上不可长期维持, 10/21 META 指引会强制收敛」; 10/22 兑现 (两个分布完全交错, 且收敛方向是开支方向下靠拢)。**今天结构恢复但极性翻转**: 供给方五只 +1.40%~+4.04% 全正, 开支方四只 -1.88%~+1.54% 跨零, 两分布仅在 MSFT (+1.54) 与 TSM (+1.40) 之间有 0.14pp 重叠。**所以 10/15 的「不可长期维持」判断正确 —— 但维持不了的是极性, 不是分裂本身。**||**位置: $630.56, 低于 MA50 5.09%, 距 thesis_break $450 缓冲 +40.1%** (风控不紧张)。已报 (10/21), **90 天窗口内无自身催化剂** —— META 的下一个可验证点要等到下一季财报, 而它是开支方四家里唯一已经交完答卷的。
+
+**Sources.**
+- Reuters: Meta's credit risk indicator hits record high on increased AI spending plan
+- Bloomberg: Meta Credit Risk Gauge Hits Fresh High on AI Spending Plans
+- FourWeekMBA: Meta and Nvidia Debt Insurance Costs Hit Records This Month
+- Tech Times: Meta's Class C structure lets Zuckerberg fund AI without shareholder veto
+- PPC Land: Amazon, Google and Microsoft hold $269bn of Anthropic compute contracts
+- Yahoo Finance: Why Are Investors Buying Credit Default Swaps to Hedge AI-Related Debt?
+- TipRanks: Defiance launches AIBN — first US ETF for the Bonds Funding the AI Buildout
+
+**Cross-assets.** SPY +0.71% · VIX 18.39 · TEN YEAR 4.99 · FIVE YEAR 4.82 · THIRTY YEAR 5.3 · WTI 101.32 · BRENT 115.3 · DXY 102.018 · GOLD 4027.5 · SILVER 53.97 · BTC 79704.67
+
+**Agent read.** 今天 META 的全部信息都在「它没有的东西」里: 没有第三方 AI 收入对价、没有 90 天内的自身催化剂、没有任何一篇报道说它的信用价差收窄。而它有的是全场第二高的成交量和组内最低的远期 PE —— 两者同时存在意味着卖方是在明知便宜的情况下卖。「便宜」在本轮已五次被证明不是支撑。唯一可能改变判断的外部事件是 11 月中 ANT 的 IPO 定价: 若定价强劲, 整个 AI 信用担忧的前提 (没人能为这些算力付钱) 会被削弱, 而 META 作为纯 capex 无对价的一只受益最大。
+ · Snapshot at `dashboard/2026-10-26.md`
+
+---
 ### 2026-10-22 · -7.91% day · ▼ major
 **Tags:** `earnings_print`, `guidance_cut`, `secondary_offering`, `sector_rotation`, `prediction_passed`
 **Confidence:** high

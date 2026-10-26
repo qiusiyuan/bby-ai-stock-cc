@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-26 · +2.98% day · ▲ minor
+**Tags:** `analyst_upgrade`, `memory_pricing`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** **具名催化剂: BofA 转多内存。** SPY 新闻口径原文「Micron Climbs 4% as **Bank of America Grows More Positive on Memory**; Western Digital Rises 5%, SanDisk Gains 3%」(实际收盘 MU +2.98% / SNDK +1.42%, 盘中幅度大于收盘)。另 FXLeaders 口径「MU Stock Rebounds to $877.55 After Thursday's Sell-Off as SK Hynix Earnings Near」。||**🔴 性质定性: 卖方动作, 零运营事实。** 与 10/07 记录的「街最高目标价发布」同类 —— 当时的定性原文是「等同 9/08 AVGO 判据里被归为『零运营事实』的那类驱动」, **而那次 MU 的 +4.06% 在次日 (10/08) 被完整回吐 ($1,088 → $1,043)**。**今天量比 0.86x, 低于 10/07 的 1.19x** —— 同类驱动 + 更弱成交量, 所以本次上涨的持续性先验比 10/07 那次更差。||**30d 相对强度仍然真实, 但来源必须说清**: MU 30d **-2.18%** vs 组内 SK Hynix 本线 -28.89% / 三星 -20.96% / SNDK -19.10% / SKHY ADS -18.80% / DRAM ETF -11.81% —— **领先 9.6 至 26.7 个百分点。** 10/15 已校正过这条: 优势来自 9/30 已验证的财报 (Q4 FY26 全面超预期 + 上调指引), 而**不是**「周期对 MU 不适用」。||**🔴 验证窗口问题: 下次财报 12/23, 58 天后, 全书最远。** 这意味着 MU 的相对强度在未来两个月内**无法被自身数字验证或否证**, 只能靠 10/28 SK Hynix 的倍数与份额表述间接读。这是 9/30 scorecard 里写明的「独立验证点: 10/26 SK Hynix Q3」—— **该日期今天已校正为 10/28。**||**位置: $903.70, 低于 MA50 $981.24 **7.90%**, 距 thesis_break $650 缓冲 +39.0%, 远期 PE 4.37x。** 10/14 完成的「决定性窗口 10/06-10/14」裁决落在「跌破 MA50」一侧 (但该判据已于 10/08 因半量市场主动降级), 至今未收复 MA50。||**本组今天最干净的正面信号不在个股而在 ETF 结构**: DRAM ETF +2.70% **低于** SKHY (+4.09%) 与 MU (+2.98%), 且量比 0.69x 为组内第二低。对照 10/15 (ETF 跌幅与成交量**双双高于**成分股 = 主题级赎回) 与 10/22 (ETF 是组内唯一量比过 1.0x = 被动卖盘仍在出), **今天形状第一次反过来: ETF 涨得比成分股少、成交比成分股淡 → 主题级赎回压力结束了, 但主题级买盘没有回来。**
+
+**Sources.**
+- MT Newswires/Yahoo: Micron Climbs 4% as Bank of America Grows More Positive on Memory; Western Digital Rises 5%, SanDisk Gains 3%
+- FXLeaders: MU Stock Rebounds to $877.55 After Thursday's Sell-Off as SK Hynix Earnings Near
+- TipRanks / TIKR / ad-hoc-news / TradingKey: [日期校正] SK Hynix Q3 earnings = 2026-10-28 (非 10/26) — 四源确认
+
+**Cross-assets.** SPY +0.71% · VIX 18.39 · TEN YEAR 4.99 · FIVE YEAR 4.82 · THIRTY YEAR 5.3 · WTI 101.32 · BRENT 115.3 · DXY 102.018 · GOLD 4027.5 · SILVER 53.97 · BTC 79704.67
+
+**Agent read.** 具名但零运营事实的卖方驱动 + 比 10/07 更弱的成交量 → 持续性先验差, 10/07 的同类上涨次日被完整回吐。真正的新信息有两条: (1) 9/30 scorecard 写下的独立验证点日期从 10/26 校正为 10/28; (2) ETF 层面的主题赎回压力首次消失 (DRAM 量比 0.69x 为组内第二低且涨幅低于成分股)。MU 在 58 天内没有自身可验证的数字, 这是组内所有标的中验证窗口最长的 —— 相对强度论点在此期间既不能被确认也不能被推翻。
+ · Snapshot at `dashboard/2026-10-26.md`
+
+---
 ### 2026-10-22 · -5.94% day · ▼ material
 **Tags:** `memory_pricing`, `competitor_news`, `sector_rotation`, `analyst_upgrade`
 **Confidence:** high

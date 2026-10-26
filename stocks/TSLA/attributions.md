@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-26 · +5.21% day · ▲ material
+**Tags:** `m_and_a`, `executive_comment`, `analyst_upgrade`, `production_milestone`
+**Confidence:** high
+
+**Primary cause.** **10/22 记录的「全书最大不对称」在四个交易日里进一步扩大, 现已需要单独定性。** 10/21 财报是净利同比 -43% ($7.87亿 vs $13.7亿) + 下调销量目标; 自那天起 5d **+6.40%**, 今天单日 +5.21%, 量比 **1.43x 为全场 36 只最高**, 30d +9.10% 全书最强, 「10 月 Magnificent 7 第一名」。||**三条具名驱动, 全部不是汽车业务, 且其中两条是同一主题的两面:**||(1) **Barclays: SpaceX 合并可加速 Tesla 在 AI 与自动驾驶上的推进。** 这是合并期权从传闻升级为具名卖方正向框架 —— 对照 10/22 的两条材料 (Reuters: Musk 表态或推迟数周; CLSA: 掩盖了 Tesla 自身问题) 都是中立到负面措辞。||(2) **同一机制的反方同日被点名: Scott Galloway —「Tesla 是病人, SpaceX 是器官捐献者」。** 这句话精确指出合并期权的分配问题: 若协同为真, 方向是 SpaceX 的资产去补 Tesla 的缺口。**两家公司的股东在同一笔交易里不可能同时受益, 而今天 TSLA +5.21% / SPCX -0.40% —— 价格的分配与 Galloway 的描述一致, 不与 Barclays 的一致。**||(3) **Optimus**: Musk 称「如果有任何机器人在发布时能与 Optimus 匹敌, 我会震惊」; Gene Munster 称其为 Tesla 的「期权, 具有巨大价值」。另 Cybercab 年底可交付客户, 但 **Musk 明确绝大多数将由 Tesla 自持** —— 自持意味着营收确认推迟 + 资本占用增加, 措辞上是利空, 未被定价。||**反方证据同样具名且不弱**: 「Tesla 的 FSD 业务增长很快, 但投资者有个问题」; 「这个看跌价差组合将在 Tesla 股价走低时获利」—— 卖方在给做空提供工具, 但 put/call 0.63 说明实际仓位还没转向。||**估值位置: 远期 PE 179.74x 为全书最高 (SNOW 110.9x 第二)。** 净利 -43% + 下调销量目标 + 179.74x 并存, 意味着当前价格里汽车业务贡献接近于零, 全部是 FSD/Robotaxi/Optimus/合并期权的期权价值。||**humanoid 自然实验第二次完成, 结论加强**: 同一条 Optimus 消息下 HUMN +2.52% (捕获 48%) / KOID +1.63% (31%) / CROB +0.46% (9%); 对照 10/22 (Optimus 正面消息日, TSLA -2.61%) 三只跌 -3.33%/-4.23%/-0.71% = 捕获 128%/162%/27%。**三只 ETF 呈负向不对称: 下行约 145% / 上行约 40%** —— 恰好是能源组 (下行 28% / 上行 92%) 的镜像。可及载体是 TSLA 本身, 第二次确认。
+
+**Sources.**
+- Yahoo Finance: SpaceX Merger Could Accelerate Tesla's Push Into AI and Autonomous Driving: Barclays
+- Yahoo Finance: Scott Galloway on Tesla and SpaceX: “Tesla’s the Patient and SpaceX Is the Organ Donor”
+- Benzinga: Elon Musk Says He'd Be 'Stunned' If Any Robot Rivals Optimus At Launch: Gene Munster Calls It A Tesla 'Call Option' With 'Massive Value'
+- Motley Fool: Tesla Cybercabs Could Reach Customers by End of 2026, but Elon Musk Says Vast Majority Will Be TSLA-Owned
+- Yahoo Finance: Tesla stock leaves rest of the Magnificent 7 in the dust, surging to October's top spot
+- Motley Fool: Tesla's Full Self-Driving Business Is Growing Fast. But There's a Catch for Investors
+
+**Cross-assets.** SPY +0.71% · VIX 18.39 · TEN YEAR 4.99 · FIVE YEAR 4.82 · THIRTY YEAR 5.3 · WTI 101.32 · BRENT 115.3 · DXY 102.018 · GOLD 4027.5 · SILVER 53.97 · BTC 79704.67
+
+**Agent read.** 量比 1.43x 全场最高 = 这次上涨有成交量背书, 不是半量漂移 (本轮七份报告反复记录: 真实成交量只跟着具名公司新闻走)。但同样的背书意味着下一次反向的具名新闻会同样有成交量。10/22 写下「这是警告不是安慰」—— 四天后价格进一步 +6.40%, 该警告没有被证伪, 只是还没被触发。今天最该记住的是 Galloway 的那句而不是 Barclays 的: 价格在 TSLA/SPCX 之间的分配支持「器官捐献」而非「协同」。解锁条件是合并条款出现具体数字 (换股比例/估值/时间表) —— 在那之前两种论点预测的 TSLA 方向相反而数据无法分辨。
+ · Snapshot at `dashboard/2026-10-26.md`
+
+---
 ### 2026-10-22 · -2.61% day · ▼ minor
 **Tags:** `earnings_print`, `guidance_cut`, `production_milestone`, `m_and_a`
 **Confidence:** high

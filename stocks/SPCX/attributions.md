@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-26 · -0.40% day · ▼ minor
+**Tags:** `partnership_news`, `lockup_expiry`, `unattributed`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **记录本条不是因为 -0.40% 够大 (远不够), 而是因为本工作簿里最高证据等级的一条 SPCX 利好出现, 而价格完全没动 —— 这是「预测的机制被确认, 而预测的结果没有发生」最干净的一次。**||**新事实: Anthropic 的 S-1 披露 SpaceX 算力交易近乎翻倍至 $845 亿** (BigGo Finance; CNBC 另称交易「含太空开发」; Yahoo Finance 专文「Anthropic IPO: SpaceX stands to make out big from AI lab's compute spending」)。**证据等级是本轮所有 SPCX 消息里最高的: 交易对手方在 SEC 注册说明书里的强制披露** —— 对照 10/07 的「SPCX 寻求 $400亿 融资买 NVDA 芯片」(公司侧口径) 与 10/15 的乌克兰 Starlink 争议 (新闻口径)。||**🔴 这条机制在四个月前就被写下: 2026-06-18 的 SPCX 压力测试里, agent 反方论点第三条原文是「Anthropic/Google capacity deals positioning SPCX as AI infrastructure could re-rate before Dec 9 lockup」。机制今天被 SEC 文件确认且规模翻倍, re-rate 没有发生 —— 该条论点明确否证。**||**6/18 压力测试的中途读数 (正式评分日 12/09 与 2027-06-12):** 用户观点 (值约 $1.2 万亿 / 约现值一半) → 市值 $1.995 万亿, 需再跌约 40%, **尚未成立但方向正确**; agent 反方 Base 情景 (回撤 15-25%, 落点 $150-180) → 自 52w 高 $225.64 已 **-34.9%**, 现价 $146.90 **低于 $150 下沿**, **agent 的 Base 区间已被向下击穿**; 反方三条抗跌理由 —— (a) ~4% 流通盘稀缺性溢价 **削弱** (未阻止 -34.9%), (b) Nasdaq-100/CRSP 被动流机械地板 **削弱** (未阻止跌破 MA50 与 IPO 价), (c) Anthropic/Google 算力交易触发 re-rate **明确否证**。**→ 原分布 Bull 25%/Base 50%/Bear 25% 中 Bear 权重需上调, Base 区间需下移。12/09 才是最终评分。**||**为什么不涨 — 三个候选, 今天只能排除一个:** ~~(a) 没被注意到~~ **可排除** (至少 BigGo / CNBC / Yahoo 三家在美股时段报道); (b) **已被预期** 不可排除 (6/18 的 agent 自己就把该机制列为已知); (c) **价格被 lockup 主导, 业务消息权重趋零** 不可排除, 且与「1d -0.40% / 5d -0.72% / 30d -0.84% / 量比 1.00x」这组三窗口全平的形状最吻合。||**这笔收入同时是对手方风险。** Fortune 对 Anthropic 的镜像描述同样适用于供应商侧: Anthropic「负有数十亿算力债务, 而它自己的客户随时可以走」; The Stack 称文件显示它「任 hyperscaler 支配」。**$845亿 的付款方是一家 2026 上半年净亏 $807亿、靠 11 月 IPO 募资支撑 $4,300亿+ 算力义务的公司。** Reuters 称合约「不可取消」对 SpaceX 有利, 但不可取消的合约在付款方失去融资能力时同样收不到钱。**净效应为零 —— 这可能才是 -0.40% 最诚实的解释。**||**另一条新连接: Roth Capital 指 SpaceX 的 80,000 个蜂窝站点计划利好 AST SpaceMobile / Ericsson / Nokia / NextNav。** NOK 今天 **+6.14%** 而 SPCX 平 —— **下游供应商涨 6%, 上游发起方不动**, 同一条消息在两只股票上的定价差异再次指向解释 (c)。||**📋 thesis_break_price 仍为 `null` —— 连续第七份报告。** lockup 12/09 剩 **44 天** (8/20 上批解禁当日 -5.69% 并跌破 IPO 价)。**价格已被证明对利好不反应, 那么它对利空反应的幅度就无从校准** —— 今天的新信息让补风控线更紧迫, 不是更不紧迫。||**杠杆衰减样本 (SSPC, 2x 反向)**: 30 天标的只动 -0.84%, SSPC **-10.43%**。今天 SPCX -0.40% / SSPC +0.72% (1.8 倍, 日内倍数正常) → 问题在复利路径而非产品设计。**结论: SSPC 只在方向性快速下跌时有用, 横盘等 lockup 的场景下是纯成本 (30 天衰减 9.6pp)。**
+
+**Sources.**
+- BigGo Finance: SpaceX Compute Deal Nearly Doubles to $84.5 Billion in IPO Filing
+- Yahoo Finance: Anthropic IPO: SpaceX stands to make out big from AI lab's compute spending
+- Fortune: Anthropic's S-1 makes clear it's on the hook for billions in compute. Its customers can walk at any time
+- Foreign Policy Journal: Roth Capital: SpaceX plan for 80,000 cell sites should benefit AST SpaceMobile, Ericsson, Nokia and NextNav
+- Motley Fool: Elon Musk Warns of “Death and Consolidation” Across the AI Cloud Industry. Is SpaceX Really Different?
+- Quartz: Anthropic files for IPO and plans Nasdaq listing as ANT
+
+**Cross-assets.** SPY +0.71% · VIX 18.39 · TEN YEAR 4.99 · FIVE YEAR 4.82 · THIRTY YEAR 5.3 · WTI 101.32 · BRENT 115.3 · DXY 102.018 · GOLD 4027.5 · SILVER 53.97 · BTC 79704.67 · USDKRW 1325.31
+
+**Agent read.** 最高等级证据 + 零价格反应 = 价格被 lockup 主导。6/18 反方论点 (c) 明确否证 —— 机制为真, 结论为假, 这是本工作簿第一次出现这种形态的否证 (以往是机制和结论一起对或一起错)。优先动作与方向判断无关: 补 thesis_break_price (锚点候选: IPO 价已跌破 / 52w 低 $104.83 低 28.6% / MA50 $149.38 已在下方)。方向性解锁点按顺序是 11/03 财报 ($845亿 的确认节奏) 与 11 月中 ANT 定价 (付款方融资能力出清), 两者都在 12/09 lockup 之前, 顺序正确。
+ · Snapshot at `dashboard/2026-10-26.md`
+
+---
 ### 2026-10-22 · -8.94% day · ▼ major
 **Tags:** `sector_rotation`, `m_and_a`, `analyst_upgrade`, `flow_event`
 **Confidence:** high

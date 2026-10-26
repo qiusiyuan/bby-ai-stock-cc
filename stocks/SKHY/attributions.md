@@ -4,6 +4,27 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-26 · +4.09% day · ▲ material
+**Tags:** `memory_pricing`, `competitor_news`, `earnings_pre_print`, `prediction_recorded`, `analyst_upgrade`
+**Confidence:** medium
+
+**Primary cause.** **🔴 第一件事是修正一个被写进多份报告的错误日期: SK Hynix Q3 财报是 10/28, 不是 10/26 或 10/27。** 四源确认 —— TipRanks 10/26「SK Hynix Q3 Earnings **on October 28**: Analysts See 86% Upside」/ TIKR 10/26「Promises Shareholder Returns **on October 28**」/ ad-hoc-news.de 10/14「**Sets October 28 Earnings Date**」/ TradingKey 10/26「to Announce Shareholder Return Plan **Wednesday**」。所有 10/26 报道均为 preview 措辞, 无任何已发布业绩。价格侧旁证: 000660.KS 今日量比 **0.78x** 低于全场中位数, 不可能是财报日成交量。**→ 裁决推迟两天, 并与 GOOG + MSFT capex + GEV + FOMC 合并为五重叠加日 (本工作簿最密的一天)。**||**第二件事: ADS +4.09% vs 本线 -0.16% 的 4.25pp 缺口, 大概率是时区。** 韩国时段 (09:00-15:30 KST) 的 10/26 收盘发生在美股 10/26 收盘前约 13.5 小时 —— 本线没机会看到今天的 Anthropic S-1 反弹 (QQQ +1.11%) 与 BofA 转多内存 (SPY 口径「Micron Climbs 4% as Bank of America Grows More Positive on Memory」)。**SKHY ADS 是韩国内存在美股时段唯一可交易载体, 承接了全部这部分买盘。** 关键旁证: USD/KRW 今天 -0.05% 且距 52w 低仅 +0.44%, 韩元走强本应**压缩**美元计价溢价, 溢价反而扩张 → 扩张完全来自 ADS 自身买盘, 汇率这个干扰项在反方向工作, 这让时区解释更强。||**🔮 预测 (裁决 10/27 韩国时段)**: 溢价由 10/22 +42.74% → 10/23 +42.28% → 今天 **+48.25%** (两日扩张 5.97pp)。**时区滞后成立 → 000660.KS 10/27 补涨 ≥+3% (≥₩1,313,250), 溢价压缩回 <+45%; 结构摩擦成立 → 平盘或下跌, 溢价维持 ≥+46%。** 先验偏向时区滞后 (n=3, 2:1: 9/15 缺口 5.5pp 未收敛=结构胜; 10/13 缺口 6.9pp 收敛=滞后胜; 10/15 缺口 8.34pp, 10/16 ADS -6.58% 收敛=滞后胜)。**但前三次全是「本线先崩、ADS 跟不上」, 这次是「ADS 先涨、本线还没看到」—— 方向第一次反转, 所以同时检验该机制是否对称。** ⚠️ 污染: 10/27 是三星财报日 + SK Hynix 财报前一天, 定位行为混入 → 置信度 medium。||**第三件事: 一条直接打击 thesis 的消息被零成交量忽略。** **Bernstein 称三星 3Q26 HBM 营收已反超 SK Hynix** (The Korea Herald 10/26 / Investing.com 10/22); Chosunbiz 10/20「HBM4 延迟削弱韩国芯片涨幅」; 高盛下调 KOSPI 目标 **25%**。而 thesis 里 **Base (45%) 的前提原文含「SK Hynix maintains >50% HBM share」, Bear (20%) 的第一条触发器原文是「Samsung breaks through HBM4 qualification faster than expected」** —— 后者正是 Bernstein 说法的内容, **已部分点火**。→ agent 临时重新加权 **Bull 35→25% / Base 45→40% / Bear 20→35%**, 10/28 按实际份额口径重算。**限定: Bernstein 说的是 HBM「营收」反超, 不等于 HBM4「技术」领先或份额反超 (营收可因产品组合/ASP/合约时点反超), 所以 35% 的 Bear 权重是上限而非确定值。**||**位置: 现价 $142.62 低于 Base 下沿 $180 **20.8%**, 高于 Bear 上沿 $130 **9.7%** —— 卡在两档之间 (10/22 时为 -26.1% / +2.3%, 两项均改善)。距 52w 低 $124.80 +14.3%。远期 PE 4.07x (本线 2.73x / 三星 2.95x)。||**第四件事: CXMT 第 35 天, 六项技术细节仍一项未动** —— ❌制程节点 ❌位密度 ❌DDR5/HBM 指认 ❌量产时间表 ❌产能规模 ❌第三方良率。最新报道仍是 Tech Times 10/14「CXMT **Claims** Next-Gen DRAM Lead」。而价格已为此打掉本线 -28.89% / ADS -18.80% / 三星 -20.96% / ETF -11.81% (30d)。9/21 设下的判别问题 (只量产标准 DDR5 = 冲击商品 DRAM 价格 vs 做到 HBM = 冲击 HBM 溢价) 与解锁条件 (第三方良率验证) 至今均未满足。||**第五件事 (记录修正): ADS 溢价 30 日区间口径。** 此前引用的「+25.4% ~ +44.2%」与按**同日 ADS 收盘 ÷ 同日本线收盘 (同日 USD/KRW, 1 ADS = 1/10 普通股)** 统一重算的结果不一致。重算 26 个交易日: 区间 **+35.53% (10/12) ~ +55.07% (10/15)**, 均值约 +42.5%, 今天 +48.25% 在区间内位于上三分之一。两口径无法调和 (此前可能混用本线**次日**收盘)。**本报告之后一律用同日对同日口径并明示 FX 与 ADS 比例。** 修正后实质结论更强: 溢价在 26 个交易日始终于 +35.5%~+55.1% 之间**无趋势震荡**, 而同期两条线各跌 18.8% 与 28.9% —— 一个在标的腰斩过程中仍稳定震荡的 20pp 宽价差, 比「冲出上沿」事件更有力地支持结构性摩擦解释。7/31 研究的 +10% 复核线距今 **38.3pp**, 30 个交易日一次都没接近。
+
+**Sources.**
+- TipRanks: SK Hynix Q3 Earnings on October 28: Analysts See 86% Upside as Investors Eye Bigger Payouts
+- TIKR.com: SK Hynix Promises Shareholder Returns on October 28: Can It Pay a $12 Billion Special Dividend?
+- The Korea Herald / Investing.com: Bernstein: Samsung overtook SK hynix in HBM revenue in 3Q26
+- Chosunbiz: Samsung narrows SK hynix lead as HBM4 delays curb Korea chip gains
+- Yahoo/Korea press: Goldman Sachs cuts Kospi target by 25% amid AI stock selloff
+- Benzinga: SK Hynix Stock Rises: Korean Memory Giant Reportedly Weighs $12B Special Dividend From Kioxia Gains
+- MT Newswires/Yahoo: Micron Climbs 4% as Bank of America Grows More Positive on Memory; Western Digital Rises 5%, SanDisk Gains 3%
+
+**Cross-assets.** SPY +0.71% · VIX 18.39 · TEN YEAR 4.99 · FIVE YEAR 4.82 · THIRTY YEAR 5.3 · WTI 101.32 · BRENT 115.3 · DXY 102.018 · GOLD 4027.5 · SILVER 53.97 · BTC 79704.67 · USDKRW 1325.31
+
+**Agent read.** 三件独立的事同日: 日期错误被修正 (10/26→10/28, 五重叠加形成)、溢价因时区再度扩张并留下可裁决预测、thesis 的 Base 前提被 Bernstein 动摇。价格 +4.09% 与利空方向相反, 但涨幅发生在美股时段、驱动是 Anthropic S-1 与 BofA 卖方动作, 与 HBM 份额无关 —— 本线 -0.16% 与三星 -1.16% 才是 Bernstein 消息之后的韩国时段定价, 且两者量比 0.78x / 0.65x 说明市场尚未消化。10/28 五重叠加让股价失去归因能力, 唯一可用的是事先写死的六项表述判据 (CXMT 直接表述 / HBM 份额口径 / HBM4 进度 / $121亿 特别股息发不发 (双向解读必须事先定好) / 2027 capex 纪律 / 三星 10/27 的对称表述)。
+ · Snapshot at `dashboard/2026-10-26.md`
+
+---
 ### 2026-10-22 · -7.15% day · ▼ major
 **Tags:** `memory_pricing`, `prediction_passed`, `competitor_news`, `earnings_pre_print`, `flow_event`
 **Confidence:** high

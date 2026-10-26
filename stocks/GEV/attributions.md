@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-26 · +4.92% day · ▲ material
+**Tags:** `unattributed`, `sector_rotation`, `earnings_pre_print`
+**Confidence:** low
+
+**Primary cause.** **「零基本面定价」第三次连续出现, 这次方向向上。** 10/15 -3.02% (当日刚签 Venture Global 最高 $172亿 + 年内两次上调指引, 跌幅零基本面成分); 10/22 **-11.11%** (量比 1.75x, Barron's 点名 "Blame Meta" + "financing all the growth will be tough"); 今天 **+4.92%**, 而唯一的「新闻」是 BofA 维持 Buy $1,310 —— **这是 10/21、10/22、10/23、10/26 连续四天的重复报道, 不是新动作。** 置信度只能给 low。||**从 10/06 高点到 10/23 低点, GEV 在 12 个交易日跌 20.8%, 全程零公司级坏消息, 而财报一直在前面没发生。** 今天收回约四分之一。||**🔴 今天最重要的发现是一个否证: 「GEV 跟着 META 走」这个 10/22 建立的关系断了。** 逐日核对 —— 10/21 META +0.47% / GEV +4.00% (同向但幅度差 8.5 倍); 10/22 META -6.98% / GEV -10.64% (✅ 同向, 1.52 倍); 10/23 META -0.96% / GEV -1.50% (✅ 同向, 1.56 倍); **10/26 META -1.88% / GEV +4.92% (❌ 反向)**。→ 相关性是间歇的, 只在 META 大幅波动日出现, **不能用来做预测**。今天 +4.92% 更可能与 INTC +4.04% 同类: 30d 已跌多 + 财报前定位。||**put/call 1.58 是全书 36 只最高 (TSLA 0.63 / SPCX 1.14 / MU 0.76 对照), 期权隐含单日 ±5.7%。** 财报前两天, 现货在涨而期权在买保险 —— 今天的上涨没有得到衍生品市场的认可。||**位置: 同时跌破 MA50 ($945.37, -9.55%) 与 MA200 ($939.48, -8.98%)**, 自 52w 高 $1,195.94 回撤 28.5%, 低于最低卖方目标价 (JPMorgan $1,150) **25.6%**。10 月卖方两次下调 (Susquehanna → $1,270 / JPMorgan → $1,150), 零次上调。||**🔴 kill condition 错配第三次记录。** 预设 kill condition 是「hyperscaler 削减建设 >20%」, 而实际发生的是: META 10/21 **上调** capex 指引下沿 (按预设判据为利好) + GEV 跌 20.8% 零公司消息 + Barron's 给出的原因是 "**financing** all the growth will be tough"。**预设覆盖的是「客户不想建」, 实际在定价的是「客户建得起但借钱变贵」** —— 后者不触发任何现有 kill condition, 却直接压 Power 段利润率 (backlog 保留但转化节奏拖长、定价权转移)。||**10/28 的结构性难题: GEV 财报与 MSFT/GOOG capex 指引 + FOMC + SK Hynix 同日 (五重叠加), 股价反应不可归因。** 唯一解法是提前写死判据, 并只用电话会表述判读自身那一侧: Power 段营业利润率 + 融资相关表述 + Wind 段 break-even (后者是当天唯一不被叠加污染的一项)。
+
+**Sources.**
+- 24/7 Wall St.: The AI Power Bill Comes Due: Will GE Vernova's Q3 Earnings Oct. 28 Prove Its $176B Backlog Is Real?
+- ad-hoc-news.de: BofA keeps Buy rating for GE Vernova stock at USD 1,310 target (重复报道 10/21-10/26)
+- Investing.com Canada: GE Vernova options signal 5.7% move on Oct. 28 earnings
+- ad-hoc-news.de: Susquehanna trims target to USD 1,270 for GE Vernova stock
+- TipRanks: Defiance launches AIBN, billed as the first US ETF for the Bonds Funding the AI Buildout
+
+**Cross-assets.** SPY +0.71% · VIX 18.39 · TEN YEAR 4.99 · FIVE YEAR 4.82 · THIRTY YEAR 5.3 · WTI 101.32 · BRENT 115.3 · DXY 102.018 · GOLD 4027.5 · SILVER 53.97 · BTC 79704.67
+
+**Agent read.** 低置信度上涨: 唯一「新闻」是连续四天的重复报道。真正的信息有两条 —— (1) 「GEV 跟 META 走」被直接否证, 该简化模型只能解释 10/22 那一天, 不能做预测; (2) put/call 1.58 全书最高说明衍生品市场不认可今天的上涨。AI 信用通道在 10/24-10/26 仍在恶化 (Fortune 称 AI 牛市论有核心经济缺陷 / Apollo 称大科技之外无利润回报 / AIBN ETF 挂牌 / Musk 放贷挤压警告), 所以 10/22 的具名原因没有任何反向证据。最优先的动作与价格无关: 修 kill condition, 补一条客户融资侧的条件 (Power 段利润率连续两季收缩 / 客户预付款比例下降 / 大型 PPA 延期)。
+ · Snapshot at `dashboard/2026-10-26.md`
+
+---
 ### 2026-10-22 · -11.11% day · ▼ extreme
 **Tags:** `sector_rotation`, `competitor_news`, `earnings_pre_print`, `flow_event`
 **Confidence:** high
