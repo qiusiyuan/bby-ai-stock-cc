@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-28 · +1.60% day · ▼ major
+**Tags:** `earnings_print`, `earnings_post_print`
+**Confidence:** high
+
+**Primary cause.** **正常时段收 $321.89 / +1.60%, 但盘后财报后 $291.61 / −9.41% (ET 17:08 快照; 另一源 $294.40 / −9.39%)。方向与幅度按盘后记。** 数据取自 SEC 8-K Ex-99.1 原文 (accession 0001652044-26-000080), 非媒体转述。||**🔴 EPS「miss」不是经营问题, 这是本条归因最重要的一点。** 共识 EPS $3.02 实际 $2.12 (差 $0.90, −29.8%), 而同一份报表里**营业利润 +30% 至 $405.76亿、营业利润率由 31% 升到 31.8%、营收 +25% 至 $1,275.77亿 (第 13 个连续双位数增长季)**。差额全在一行: **`Other income (expense), net` 由上年同期 +$127.59亿 变成 −$82.21亿, 单季摆动 −$209.80亿**; 现金流量表给出构成: `Loss (gain) on debt and equity securities, net` 本季为 **+$90.48亿亏损** (上年同期 −$108.55亿收益)。这是 ASC 321 持有股权投资按市价重估, 不是业务事件。||**由此得出对估值直接有用的推论: GOOG 尾随 PE 16.09x 被投资收益美化。** 同表显示**今年前九个月 `Loss (gain) on debt and equity securities, net` 累计为 −$1,267.55亿收益**, 而前九个月净利 $2,012.39亿 → **今年至今报表利润约 63% 来自证券重估而非经营**。远期 21.11x 才是可用数字。||**🔴 三条媒体口径与 8-K 原文直接矛盾, 必须随记录保存**: (a)「revenue miss」(Reuters 框架) —— 实际营收 $1,275.77亿 vs 共识 $1,272.2亿 = **小幅超预期**; (b)「Search growth slows」(IBD 标题) —— 实际 Google Search & other **+12% 至 $633.50亿**, 且 Pichai 原话「**our year-over-year query growth rate is the highest it's been in the last five years**」= **反向错**; (c)「ad slowdown」(AFP) —— Google 广告合计 **+10.6%** 至 $820.12亿, YouTube 广告 +9.2%, 订阅/平台/设备 +11.0%。**而有一家说对了: Reuters 另一条标题「Alphabet's heavy cloud spending drives bigger-than-expected cash burn」, 与报表和 −9.41% 完全一致。** → **市场反应对的是正确的东西(现金消耗), 大部分媒体给的理由是错的。形态值得记: 盘后报道在半小时内写成, 取的是「EPS vs 共识」这个最容易拿到的数字, 而真正驱动价格的在现金流量表第二页。今后遇到「营收超预期 + EPS 大幅 miss」的组合, 第一个查的不是新闻, 是 Other income (expense), net 与 capex÷经营现金流。**||**真正的驱动是自由现金流: Q3 经营现金流 $422.90亿 (同比 −12.6%)、capex $513.55亿 (同比 +114%) → 自由现金流 −$90.65亿。季度轨迹: Q4 2025 +$245.51亿 → Q1 2026 +$101.16亿 → Q2 2026 −$58.55亿 → Q3 2026 −$90.65亿 = 连续两季为负且在加深; TTM 仍为 +$197.47亿。capex ÷ 经营现金流 = 121.4%。** 同季外部融资: **ATM 增发 12M Class A ($43亿) + 24M Class C ($81亿) = $124亿** (剩余额度 $276亿) + **高级无抵押债净募集 $287亿** = 本季 **$411亿**, 另有强制可转换优先股 (Series A/B, 季度股息 $15.63/股)。折旧 $83.69亿 vs $56.11亿 = +49% (capex 开始压 P&L)。||**经营层实际是一份强于 MSFT 的财报**: Google Cloud **+103% 至 $307.09亿** (创纪录; GCP 企业 AI 基础设施与解决方案驱动, 且**「TPU systems sales were also a meaningful contributor」**), Cloud 营业利润 **$111.21亿 vs $35.94亿 = +209%**, 利润率 **36.2% vs 23.7% 跳升 12.5pp**。Google Services +11% 至 $963.02亿。Alphabet-level activities (共享 AI 研发) 支出 −$76.55亿 vs −$44.67亿 = +71%。员工 204,757 vs 190,167。Pichai: 已达半万亿美元营收年化运行率; Gemini app 达 10 亿用户; 第一方模型 API 每分钟处理近 320 亿 token (同比 4 倍); YouTube Music+Premium 超 1.5 亿订阅。||**🚨 风控: thesis_break $280, 盘后 $291.61 → 缓冲 +4.15%, 进入 5% 危险区**, 成为 NOK (+0.9%) 之外第二只。盘中报告记录的缓冲是 +14.5%。注意**逼近的机制与风控线设定理由不同**: thesis.md 原文设 $280 的理由是「~24% below current; near bear-case scenario price」即度量「市场放弃成长定价」, 而今天逼近它的是自由现金流为负 + 投资重估亏损, 两条都不在设定时的情景里 —— **与 NOK 结构相同(击穿线的是成本过账能力, 触发器写的是需求与竞争)**。||**🔴 kill-condition 错配第十例, 且形态最极端 —— 不是「没触发」而是「被主动证伪」。** 三条原文逐条: #1「Search query **volume** declines YoY for two consecutive quarters」→ **被 Pichai 具名否定(查询量增速五年最高), 推得最远**; #2「DOJ wins structural remedy」→ 今天无进展; #3「Google Cloud loses market share to AWS/Azure for two consecutive quarters」→ **被数据直接否定(Cloud +103% vs Azure +48%, 增速 2.1 倍, 利润率跳升 12.5pp)**。**三条里两条在同一天被具名否定, 朝着更安全的方向走, 而价格跌进风控区。** 真正打穿价格的机制(capex 超过经营现金流→FCF 转负→需要外部资本)在三条里完全不存在, **与同日 META 的缺口是同一类型** → **建议给 GOOG 与 META 加同一条 kill condition(措辞统一便于横向比较): 「自由现金流(经营现金流−capex)连续两个季度为负, 或 capex ÷ 经营现金流连续两季超过 100%」。按此 GOOG 今天已触发(Q2 −$58.55亿 + Q3 −$90.65亿, 比率 121.4%), META 触发一半(首次为负待第二季确认)。这是本工作簿第一次有一条拟议触发器在提出当天就能回溯判定为已触发。**||未取到: Alphabet 全年 capex 指引 (电话会 16:30 ET 已开始但检索窗口内未取到指引数字) —— 连续两季负 FCF 之后, 管理层对 2027 capex 的口径决定 −9.41% 是一次性重定价还是趋势起点。
+
+**Sources.**
+- {"type": "filing", "title": "Alphabet Announces Third Quarter 2026 Results (SEC 8-K Ex-99.1, accession 0001652044-26-000080)", "publisher": "SEC EDGAR"}
+- Reuters: Alphabet's heavy cloud spending drives bigger-than-expected cash burn
+- MT Newswires: Alphabet Third-Quarter Results Miss Estimates as Capital Spending More Than Doubles
+- Investor's Business Daily: Google Earnings Miss As Cloud Computing Booms, Search Growth Slows
+- (aggregated): Alphabet Stock Falls 8% Even as Cloud Sales Double: Is AI Spending the Problem?
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-22 · -3.36% day · ▼ material
 **Tags:** `sector_rotation`, `earnings_pre_print`
 **Confidence:** high

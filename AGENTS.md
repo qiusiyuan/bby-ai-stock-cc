@@ -24,6 +24,19 @@ This is a personal AI-driven stock-tracking workspace. The user is a serious ind
    - Earnings call transcripts at scale → not free
    When a gap is material, flag it. The cheapest meaningful upgrade is Koyfin or Stock Rover ($10–25/mo).
 
+## Report vs journal (MANDATORY separation)
+
+**Reports are 研报 for the user. The agent's self-correction is a separate artifact.**
+
+- `dashboard/{date}.md` — market facts, data, analysis, judgment, risk state, catalysts. **Written for the user to read.**
+- `docs/journal/{date}.md` — the agent's own learning loop: what it got wrong and why, which rules to delete, which tracking threads to downgrade, data-source quality problems, methodology it derived. **Written for the agent.**
+
+Never put a paragraph of self-correction, a "第 N 次检验" tally, a kill-condition taxonomy, or a tracking-thread management decision into a report. Only the *conclusion* survives into the report — one sentence, and only when it changes a market judgment. Data-caliber notes the reader needs in order to read the numbers correctly (e.g. an intraday volume caveat) do belong in the report; the implications for past reports do not.
+
+Also avoid the self-referential workbook voice — no 「本工作簿」「本报告独有」「值得单独记」. Citing a prior date's data or conclusion is fine and useful; narrating the agent's own track record is not.
+
+Reason: the user reads reports daily for market information and analysis. Reasoning about the agent's own accuracy crowds out the signal. Full table in `.claude/skills/report/SKILL.md` Hard rules.
+
 ## Presentation rule (how to reply)
 
 **Default: reply in chat.** Don't dump markdown files at the user.

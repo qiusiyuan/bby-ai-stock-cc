@@ -148,6 +148,25 @@ Don't dump module outputs into chat — the dashboard is the report.
 
 ## Hard rules
 
+- **Report ≠ journal. Self-correction and methodology go to `docs/journal/{date}.md`, never into the report.** The report is a 研报 for the reader: market facts, data, analysis, judgment, risk state, catalysts. The agent's own learning loop is a separate artifact.
+
+  | ❌ Never in the report | ✅ Goes in `docs/journal/{date}.md` |
+  |---|---|
+  | 「10/27 的判断是错的，而且错在一个可以事先避免的理由上」+ 整段复盘 | the full post-mortem, what was missed, why |
+  | 「第七次检验、第七次否证 → 这条规则应当删除」 | the tally, the verdict on the rule, the replacement rule |
+  | 「kill-condition 错配第十个案例，形态最极端」+ 分类学表格 | the taxonomy, the case count, the design principles derived |
+  | 「建议把 CXMT 这条线降级 / 停止日度捕获率计算」 | tracking-thread management decisions |
+  | 「过去几份报告的判断需要复核」 | data-quality debt and what to re-check |
+  | 「这个形态值得单独记」/「可操作的纠正是…」 | any sentence whose subject is the agent's own process |
+
+  **What survives into the report is only the conclusion, in one sentence, and only when it changes a market judgment.** E.g. 「Brent−WTI 价差不作为伊朗跟踪指标」 is fine as a one-line read-note; *why it was retracted and how the error was found* is journal-only.
+
+  **Exception — data-caliber notes stay in the report** when the reader needs them to read the numbers correctly (e.g. "量比取于 ET 14:43，偏低 25–30%，只用相对排序"). Keep the *how to read it*; drop the *what this means for my past reports*.
+
+  Write the journal file in the same run as the report. If nothing to record, skip the file — don't write an empty one.
+
+- **No self-referential workbook voice.** Don't write 「本工作簿」「本报告独有」「值得单独记」「必须先记的一条」. State the finding; the reader doesn't need to know it's being tracked across reports. Referring to a *prior date's data or conclusion* is fine and useful (「10/22 记录的判别轴」); referring to *the agent's track record of being right or wrong* is not.
+
 - **Neutral voice — no second-person, no referential language.** The report is a standalone document read by an audience, not a chat reply. Never write "你的直觉是对的", "用户核心问题", "给用户的判断", "你持有的", "如果你要挑". Write the claim itself and let the evidence carry it.
 
   | ❌ Don't write | ✅ Write instead |
