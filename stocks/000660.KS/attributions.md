@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-28 · +16.63% day · ▲ extreme
+**Tags:** `earnings_print`, `guidance_raise`, `executive_comment`
+**Confidence:** high
+
+**Primary cause.** **Q3 2026 创纪录财报, 本工作簿记录过的最强单季数字。** 营收 104.62 万亿韩元 (+327.9% YoY, 首破 100 万亿 = 约 $755亿) / 营业利润 83.33 万亿 (+632.1% YoY, 共识约 77 万亿 → 超预期约 8%) / 营业利润率 **79.7%** (前季 76.3%, 创纪录) / 净利 39.78 万亿。||**核心指引是可核查的合同覆盖率而非措辞**: DRAM 与 HBM 产出「实质售罄至 2029」, 合同已覆盖 2027 与 2028 产能的**一半以上** (刻意保留部分产能应对市场变化与下一代产品)。HBM 销售负责人 Kim Ki-tae 原话「Customers are requesting more than twice the volume we can supply」。管理层驳斥 peak-AI, 称内存紧缺持续到 **2030**。2027 资本开支「大幅上升」(Yongin 第一座 fab 满产 + 国内外扩产)。||**🔴 自我修正: 10/27 报告把 79.7% 与 104.6 万亿判为「按内存行业历史标准不可能 (周期顶部通常 40-55%)」, 推测为累计 9 个月口径, 并写明「不以这三个绝对数字做任何加权调整」。今天官方口径确认三个数字全部是单季真实数字。** 致命的第四个数字是**前季营业利润率 76.3%** —— 累计口径不会有一个可比的、同口径的、仅低 3.4pp 的前季读数, 这一条单独就能否掉该假设, 而它在 10/27 的检索窗口内就可以找到。**教训: 「按历史标准不可能」是关于基准分布的判断, 不是关于这条数据的判断; 在被卖方事先建模到的结构性变化里, 历史分布正是最先失效的东西。可操作的查证动作只有一个 —— 找同口径的前一期读数。** 保留本身是对的 (不加权避免了在错误方向上调整), 但理由应写成「未取到前季同口径对照」。||**传导机制 (标题直接写明): 「KOSPI Surges as SK Hynix and Samsung Stocks Ease AI Debt Fears」—— 不是「内存股涨所以指数涨」, 而是「售罄到 2029 被读成 AI 需求是真的, 从而削掉了 10/14-10/22 那轮以融资/信用为核心的抛售的前提」。这是本月第一次有公司级硬数据从需求侧而不是信用侧攻击该论点。**||**设备链独立第二确认, 且是 10/22 的完整镜像**: 今天 Lam Research +5% / Applied Materials +4% / KLA +3% (标题「as SK Hynix Signals Memory Shortage Into 2030」) vs 10/22 Lam -9% 点名供应链约束限制指引。同一批公司、六天间隔、符号相反 —— 约束本身没变, 变的是它被读成「交不出设备→下游扩不上产→需求破坏」还是「交不出设备→紧缺更久→定价权更强」。||**被埋在 blowout 里的负面信息: 放弃 Solidigm 纳斯达克 IPO。** CEO Kwak Noh-jung 原话「鉴于市场状况, 此时难以完全实现预期收益」。Solidigm 是 2020 年从 Intel 收购的 NAND/SSD 业务 —— 一家内存龙头在内存最热的一天判断 NAND 资产不是上市的好时机。两种读法: (a) 口径差异 (售罄指引是 DRAM/HBM, NAND 与 DRAM 周期不同步, 更可能); (b) 估值窗口判断。**无论哪种, 对 10/29 SNDK (NAND) 的评分都是直接相关的逆风证据。**||**新结构信息: hyperscaler 对 HBM4 的兴趣在 8 层而非 12 层**, 公司解读为「把稀缺内存摊到更多加速器上」。这对「售罄」是支持 (宁愿买 8 层也要买 = 缺口是真的), 对 10/27 记录的「SK Hynix 赌层数」(SEDEX 2026) 是削弱 —— TSV 堆叠层数正是 thesis Moat 第一条的技术内容。第二种读法: 8 层够用意味着单颗加速器带宽需求没那么极端, 而这是整个 HBM 溢价叙事的基础。两种读法今天都无法证伪, 裁决点是 2027 年 2 月 Nvidia 出货的层数构成。||**股东回报口径分歧必须随记录保存**: Korea Herald (最详细, 给出可加总构成) 称 2026 全年约 **100 万亿韩元** (≥30 万亿股息 + ≥60 万亿回购/注销), 兑现「返还 50%+ 自由现金流」; 一条外媒标题称「$45 Billion Shareholder Pledge」; Investing.com 转述 Reuters 称「$7.5 bln」。100 万亿 ÷ 1,342.9 ≈ **$745亿** —— 三个数字 ($745亿/$450亿/$75亿) 相差一个数量级。采用 Korea Herald 口径, 其余标为未核对。细节: 8 月 40 万亿回购已完成注销在即; 董事会批准追加 20 万亿 (一半注销、一半员工薪酬不计入回报); **Q3 每股派息 20,000 韩元, 其中一半为与 Kioxia 投资收益挂钩的特别股息 → 裁决了 timeline.yaml 的 10/28「$121亿 Kioxia 特别股息」条目, 确认发生, 已回填。** CFO Kim Woo-hyun: 「The current share price does not fully reflect our earnings and cash flow.」||**CXMT 第 37 天, 而今天是 10/26 标记的「免费裁决日」(理由原文「HBM 份额第一不可能不被问到 CXMT」)。裁决结果: Korea Herald 对财报的完整报道里 CXMT 与任何中国内存厂商零次出现。连续第二次判别点落空。** 六项技术细节 (节点/位密度/DDR5-HBM 指认/时间表/产能/第三方良率) 仍一项未动。**这件事现在本身是信息: 一个 HBM 份额第一、营业利润率 79.7%、用「售罄到 2029 + 缺口到 2030」定调的公司, 在完整财报沟通里没有把中国供给当作需要前瞻性回应的议题。** 建议把 CXMT 跟踪从每日六项核对降级为「仅在出现第三方良率验证或具名客户 BOM 时激活」—— 10/14-10/22 期间它有价值 (价格已反映而证据未到), 现在价格已修复而证据仍未到, 缺口方向反了。||30d 仍为 **-19.88%** / MA50 下方 -8.72% / 距 52w 高 -50.22%。**+16.63% 之后仍在 MA50 下方, 单日涨幅不足以改变趋势结构。** 量比 0.92x 不足 1 倍 (韩国收盘真实数据) —— 对照 SKHY ADS 1.79x, 换手仍集中在美国可交易载体。下次财报 2027-01-26, **90 天内零公司级事件。**
+
+**Sources.**
+- Korea Herald: SK hynix's AI memory 'sold out' through 2029 as profits soar
+- Reuters: SK Hynix profit jumps 632%, memory chipmaker sees shortage lasting until 2030
+- (aggregated): KOSPI Surges as SK Hynix and Samsung Stocks Ease AI Debt Fears
+- (aggregated): Chip Equipment Stocks Rally as SK Hynix Signals Memory Shortage Into 2030: Lam Research Jumps 5%, Applied Materials Climbs 4%, KLA Gains 3%
+- Motley Fool: SK hynix (SKHY) Q3 2026 Earnings Call Transcript
+- RBC via TipRanks: SK hynix's Memory Upcycle Expected to Extend Through 2027, RBC Says
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-27 · +5.18% day · ▲ material
 **Tags:** `earnings_pre_print`, `sector_rotation`, `analyst_upgrade`
 **Confidence:** high

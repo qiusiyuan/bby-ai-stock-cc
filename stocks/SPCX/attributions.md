@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-28 · -3.41% day · ▼ material
+**Tags:** `competitor_news`, `geopolitical_trade`, `executive_comment`
+**Confidence:** high
+
+**Primary cause.** **反弹日里全场唯一的大跌, 而且今天第一次有具名的主权客户竞争新闻 —— 这解释了 10/26-10/27 那个反常状态。** 10/26 与 10/27 记录: Anthropic S-1 披露 SPCX 算力交易近乎翻倍至 **$845亿** (交易对手方的 SEC 强制披露, 本轮证据等级最高), 而两天累计只 +0.73%, 10/27 记为「机制确认、结论否证」。**今天的答案: 市场在为同一标的的另一侧风险重新定价, 而那一侧比算力合约更难对冲。**||三条具名事实: (1) **俄罗斯与印度同日公布 Starlink 替代方案** (IBD: 「Russia and India Reveal Starlink Alternatives. How Will SpaceX Stock React?」) + 同日**普京就 Musk 公开表态** (IBD: 「SpaceX Retreats As Russia's Putin Says This About Elon Musk」); (2) **Musk 把「SpaceX 建成移动运营商」的时间表推到「还需 2 到 3 年」, Verizon CEO 公开不同意** —— 这是对「Starlink 直连手机是电信股结构性威胁」那条叙事的**自我降级**; (3) 对冲面: **BofA 把 SPCX 列入 Top Stock Picks**, 同日 Falcon 9 送 27 颗 Starlink 卫星入轨; 另 「SpaceX Could Keep Starship Cost Savings Instead of Cutting Launch Prices」。||**(1) 与 10/15 记录的是同一根线并且延伸了。** 10/15 乌克兰指控 Starlink 军用连接被降速, Musk 回应「是 Starshield, 由美国政府控制」, 当时的判断原文是「该回应在推卸责任同时确认收入开关握在按政治逻辑决策的客户手里」。**今天: 不只是美国政府能关开关, 俄罗斯和印度正在自建替代品。前者是收入的可中断性, 后者是可寻址市场本身在被主权行为体切走 —— 这是性质上更重的一类风险。**||**🔴 kill-condition 错配第九个案例, 而缺口类型是新的。** `triggers.yaml` 五条原文: Starship 灾难性失败延迟货运节奏 >18 个月 / Starlink ARPU 连续两季低于 $50 / lockup 后任一 90 天窗口净内部人卖出超 $5B / 重大关联交易损害股东经济 / **重大监管行动吊销 Starlink 频谱或造成多国封禁**。第五条最接近, 但「俄罗斯和印度自建替代方案」既不是吊销频谱也不是封禁 —— **它是竞争, 而竞争在五条里完全不存在。** 前八个错配案例的缺口是「机制错了」(预设需求崩塌、实际是融资成本), 这次是「**维度缺了**」—— 五条全是执行与监管, 零条是竞争。**建议补一条: 「任一主权国家宣布已部署的 LEO 宽带星座达到商业服务规模, 或任一国家正式禁止 Starlink 商业运营」。**||**6/18 压力测试三条抗跌理由第三天复核, 现在是「两条削弱 + 一条否证」**: 稀缺性溢价 **进一步削弱** (30d 已转负 -4.88%, 且「稀缺」正在被主权替代品直接攻击); 被动流地板 **由成立转为削弱** (今天跌破 MA50 至 -3.95%, 连续第三天在 Base 下沿 $150 之下); Anthropic 交易重定价 **否证第三天** ($845亿 披露已三天, 累计价格反应约 -2.7%)。**10/26 写下的「Bear 权重需上调」今天第一次有具名理由而不只是价格证据。**||**对冲读数: SSPC (2x 反向) 5d +18.12% 而 SPCX 5d -9.91%, 比值 1.83x 接近 2x 设计杠杆 —— 说明下跌是连续的、非跳空的** (反向 ETF 在震荡市会因日度再平衡损耗显著低于名义杠杆)。连续下跌而非跳空更符合持续的被动/机构减仓, 而非单一事件冲击。||**「SPCX 已被从小盘太空组剥离」第二次确认, 表述更直接**: 今天「SpaceX stock slides back toward $140 as **smaller space names leave it behind**」, 10/27 是「Intuitive Machines Surges 9%...Rocket Lab Climbs 7%, **SpaceX Lags**」。两天两源同一方向。但同一窗口还有「Neocloud Stocks Like CoreWeave Rebound Despite Elon Musk Predicting 'Guppy-Level Death'」—— **neocloud 反弹而 SPCX 跌, 说明它也还没完全并入算力组。分类正在迁移但尚未完成, 这期间 SPCX 的日度读数归因可靠性最低。**||价格: $143.52, MA50 下方 -3.95% / 距 52w 高 **-36.39%** / 距 52w 低 +36.91% (区间正中) / 远期 PE 61.22x / 尾随 624.0x / put/call 0.80。**`thesis_break_price` 仍为 null —— 连续第 9 份报告** (用户无持仓纯跟踪, 按设计不弹卖出提醒)。**lockup 12/09 剩 42 天。**||下一步: **11/03 Q3 财报 (6 天后, 与中期选举 + AMD + SU 同日 → 单日价格不可归因)** —— 要找的是管理层对俄/印替代方案的口径 (是否承认影响可寻址市场) 与 Starlink 订阅数的国别拆分 (若披露)。**11/15 前后的 Anthropic IPO 定价若 SPCX 已并入算力组, 可能是比 11/03 财报更强的驱动。**
+
+**Sources.**
+- Investor's Business Daily: Russia and India Reveal Starlink Alternatives. How Will SpaceX Stock React?
+- Investor's Business Daily: SpaceX Retreats As Russia's Putin Says This About Elon Musk
+- Benzinga: Musk Says It “Will Take 2 or 3 Years” for SpaceX to Build a Mobile Carrier. Verizon CEO Disagrees.
+- (aggregated): SpaceX stock slides back toward $140 as smaller space names leave it behind
+- Benzinga: SPCX Finds A Spot On BofA’s Top Stock Picks List As Falcon 9 Delivers 27 Starlink Satellites To Orbit
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-26 · -0.40% day · ▼ minor
 **Tags:** `partnership_news`, `lockup_expiry`, `unattributed`, `sector_rotation`
 **Confidence:** high

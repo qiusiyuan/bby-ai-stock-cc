@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-28 · +5.57% day · ▲ material
+**Tags:** `sector_rotation`, `flow_event`, `earnings_print`
+**Confidence:** high
+
+**Primary cause.** **ETF 层 +5.57%, 低于韩国本线 (000660.KS +16.63% / 005930.KS +13.62%) 也低于两只美国纯内存成分 (SNDK +5.60%) 但高于 MU (+4.28%) —— 篮子含 WDC/MU/SNDK 等非纯 HBM 名字, 所以被稀释。** 驱动是 SK Hynix Q3 创纪录 + 「售罄至 2029」+「缺口到 2030」(完整内容见同日 000660.KS 条目)。||「Micron Climbs 4% as Bank of America Grows More Positive on Memory; Western Digital Rises 5%, SanDisk Gains 3%」、「AMD, Broadcom, and Micron stocks lead chip sector higher for third day in a row」、「Nasdaq Lags Despite Memory Chip Surge. Tech Earnings Can't Come Soon Enough.」||**最后一条标题是今天最准确的大盘描述: 内存大涨而纳指 (QQQ +0.38%) 几乎不动, 且 QQQ 仍在 MA50 下方 -0.15% 连续第三天。内存的修复没有外溢到指数层面。**||**量比 0.76x —— 连续第三份报告里 ETF 层量比在 0.7-1.2x 区间, 但今天必须加口径警告: 本记录写于 ET 14:43 (已走完约 73% 交易时段, 未含收盘集合竞价), 所有量比系统性偏低约 25-30%。全场盘中中位数 0.595x, 时段折算全日等效约 0.81x。因此今天不作「参与度半量」这类结论 —— 过去几份报告的「连续三天半量」判断如果同样基于盘中数据, 需在收盘后复核。** 今天唯一不受影响的量比结论是相对排序: SKHY 1.79x 与 GEV 1.77x 是全场唯二过 1.5x, 且两者都是今天出财报的标的。||30d 仍 **-3.61%** / MA50 下方 -5.12% / 距 52w 高 -34.43% / 距 52w 低 +104.02%。**组内四只 (本线 -8.72% / DRAM -5.12% / SKHY -3.03% / MU -1.19%) 在 +12~+17% 的单日涨幅之后全部仍在 MA50 下方 —— 今天修复的幅度不足以改变趋势结构。**||注: `stocks/DRAM/triggers.yaml` 无 thesis_break_price (ETF, 按 tracker 流程管理)。**接下来 56 天内存组零个公司级硬日历** (MU 12/23, SKHY 2027-01-27)。
+
+**Sources.**
+- 24/7 Wall St.: Micron Climbs 4% as Bank of America Grows More Positive on Memory; Western Digital Rises 5%, SanDisk Gains 3%
+- Barron's: Nasdaq Lags Despite Memory Chip Surge. Tech Earnings Can't Come Soon Enough.
+- (aggregated): AMD, Broadcom, and Micron stocks lead chip sector higher for third day in a row
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-27 · +4.41% day · ▲ material
 **Tags:** `sector_rotation`, `flow_event`, `earnings_pre_print`
 **Confidence:** high

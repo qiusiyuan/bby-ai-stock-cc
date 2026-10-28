@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-28 · +5.60% day · ▲ material
+**Tags:** `sector_rotation`, `earnings_pre_print`
+**Confidence:** medium
+
+**Primary cause.** **+5.60% 是 read-through, SNDK 自身零公司新闻 —— 而 read-through 的口径有问题: SK Hynix 的「售罄至 2029」指引是 DRAM/HBM, SNDK 是 NAND, 两者周期不同步。** 置信度记 medium 而非 high 正是因为这个口径错配。「SKHY Stock: ...Company's Q3 Beat Uplifts MU, SNDK, WDC」。||**🎯 明天 (10/29) 是 state.yaml::earnings_watchlist 的 scoring_date, status=pending。** claim 原文: 「SNDK 从 NAND 周期股 re-rate 为结构性现金牛 —— FY27 指引 ($10.3-10.8B rev / $44-46 EPS) 兑现 + 半数营收转 FCF 模型可信 + 毛利率 (84.6% 峰值) 不快速回落」。||**8/06 的 sell-the-news 判据 (带 >30% 的 5 日涨幅进财报 = 好数字被打折) 本次仍不适用: 5d 为 -0.02%, 不是 +30%。所以风险全在数字本身, 不在仓位拥挤度。** 注意 5d -0.02% 意味着本周涨幅**全部集中在今天这一天**。||**今天新增一条直接相关的逆风证据, 而且来自内存行业最权威的一方: SK Hynix 宣布放弃 Solidigm 的纳斯达克 IPO。** CEO Kwak Noh-jung 原话「鉴于市场状况, 此时难以完全实现预期收益」。Solidigm 是 SK Hynix 2020 年从 Intel 收购的 NAND/SSD 业务。**一家内存龙头在内存最热的一天 (自己营业利润率 79.7%、宣布售罄到 2029) 判断旗下 NAND 资产不是上市的好时机 —— 这是对「NAND 与 DRAM 周期不同步」最强的行为证据, 而 SNDK 今天 +5.60% 的跟涨部分正是建立在两者同步的假设上。**||其余口径: 「Did The Market Read SanDisk Stock Right?」、「Sandisk Stock Is Down 45% From Its High. History Suggests This Is What Happens Next.」、「Is Western Digital's Nightmare 3 Months Over? A Wall Street Pro Says Its Price Will Increase 130%」、「Lumentum vs. Sandisk: Which Tech Stock Is the Better Buy in November?」—— 全部是估值/历史类比, 零条公司事实。||风控: thesis_break $1,200, 缓冲 **+14.8%** (10/27 为 +8.7%, 两天放松 6.1pp)。MA50 下方 **-12.30%** (组内最深) / MA200 上方 +10.19% / 距 52w 高 **-41.47%** / 远期 PE 5.17x / put/call 0.76。||**kill conditions 四条里第一条「Non-GAAP 毛利率连续两季压缩 (84.6% 峰值开始回落) = NAND 周期见顶」明天直接裁决。** 第四条「HBF 到 2027 年中仍未拿下任何具名 design win = 重定价 call option 归零」明天是第一个检查点。SNDK 的触发器是本工作簿少数**正确覆盖当前真正在定价的风险**的一组 (10/22 曾记录此判断)。
+
+**Sources.**
+- (aggregated): SKHY Stock: Analyst Sees 175% Upside Potential For SK Hynix, Company's Q3 Beat Uplifts MU, SNDK, WDC
+- Korea Herald: SK hynix's AI memory 'sold out' through 2029 as profits soar (Solidigm Nasdaq IPO dropped)
+- Motley Fool: Sandisk Stock Is Down 45% From Its High. History Suggests This Is What Happens Next.
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-27 · +3.92% day · ▲ material
 **Tags:** `analyst_upgrade`, `earnings_pre_print`, `sector_rotation`
 **Confidence:** medium

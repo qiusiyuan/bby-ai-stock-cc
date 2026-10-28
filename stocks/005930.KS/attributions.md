@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-28 · +13.62% day · ▲ extreme
+**Tags:** `sector_rotation`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** **+13.62% 至 ₩242,000, 驱动是 SK Hynix 的财报而不是 Samsung 自己的消息 (Samsung 自己的 Q3 财报是 10/27)。** 「KOSPI Surges as SK Hynix and Samsung Stocks Ease AI Debt Fears」。||**今天信息量最高的一点是涨幅排序: 本线 SK Hynix +16.63% > Samsung +13.62%, 差 3.0pp。** 10/26 记录 Bernstein 称「三星 3Q26 HBM 营收已反超 SK Hynix」(Korea Herald), 并据此把 SKHY 的 Bear 权重临时上调至 25/40/35。**如果市场相信「反超」, 今天的排序应该相反。这是对该说法的轻度否证 —— 但只是市场行为证据, 不是事实证据** (今天两家口径里同样零个 HBM 份额百分比)。||10/26 的判断原文是「三星 -1.16% 是组内唯一下跌且量比 0.65x 组内最低 → 利好在零成交量下被忽略 = 尚未定价而非被否决」。10/27 +4.23% 是部分确认, 今天 +13.62% 是完整确认 —— **但今天确认的不是「反超」这条叙事, 而是整个韩国内存板块的重定价** (量比 0.82x 仍不足 1 倍, 涨幅仍低于 SK Hynix)。||**对 10/27 记录的「两家走相反架构」(SEDEX 2026: 三星赌速度 / SK Hynix 赌层数) 今天出现一条关键新证据: SK Hynix 披露 hyperscaler 对 HBM4 的兴趣在 8 层而非 12 层。若客户主流转向 8 层, 三星的速度优势比 SK Hynix 的层数优势更值钱; 若 12 层仍是主流, 相反。这把 2027 年 2 月 Nvidia 出货的裁决内容具体化了 —— 要看的不只是「三星有没有供货」, 而是「出货里 8 层占多少」。**||另: 「Samsung's AI boom comes with a $100 billion warning」、「Samsung Electronics exec: the investments that endure build more than factories」、「Apple's $2,000 foldable iPhone Duo faces a durability test」(Samsung 同时是手机 OEM 与内存卖方, 双向敞口)。||30d 仍 **-10.20%** / MA50 下方 -4.75% / MA200 上方 +2.75% / 距 52w 高 -35.38% / 远期 PE 3.35x。**+13.62% 之后仍在 MA50 下方。**
+
+**Sources.**
+- (aggregated): KOSPI Surges as SK Hynix and Samsung Stocks Ease AI Debt Fears
+- Reuters: SK Hynix profit jumps 632%, memory chipmaker sees shortage lasting until 2030
+- (aggregated): Samsung's AI boom comes with a $100 billion warning
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-27 · +4.23% day · ▲ material
 **Tags:** `sector_rotation`, `tech_breakthrough`
 **Confidence:** high

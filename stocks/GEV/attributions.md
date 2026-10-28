@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-28 · -1.30% day · ▼ minor
+**Tags:** `earnings_print`, `guidance_raise`, `m_and_a`
+**Confidence:** high
+
+**Primary cause.** **连续四天「零基本面定价」的记录今天终止, 而答案不在此前列出的任何一个候选假设里。** 四天的候选是: 客户信用通道 (Barron's 10/22 「Blame Meta」+「financing all the growth will be tough」)、「GEV 跟着 META 走」(10/27 已判定四样本两同两反、建议停止跟踪)、以及 10/27 的「Meta 选股权而非债务 = 绕开『客户发债变贵→建设放慢』通道, 对 GEV 是实质利好」(当时记为 confidence low、零口径支持)。||**今天的财报给出第四个: 机位预订转化率 (slot conversion)。** Q3 利润**近乎三倍**、backlog 达 **$1,967亿** 创纪录、**上调 2026 指引**、**扩大回购授权** —— 但新订单与新机位预订「**missed by a mile**」(IBD 标题原文)。BNP Paribas 的措辞更精确: 「meets high bar, but **slot conversions now in focus**」。GEV 的燃气轮机业务采用机位预订模式: 客户先付费锁定未来产能槽位, 之后再转为正式订单。问题不在已有 backlog, 而在 (a) 新增机位预订低于预期、(b) 已预订机位转正式订单的速度成为焦点。||**🔴 这个答案回溯证明 10/15 那天的判断是错的。** 当天 GEV 签 Venture Global 最高 $172亿 合同却跌 3.02%, 报道**自承「头条数字 > 确定承诺额」**, 而本工作簿当时记为「跌幅零基本面成分」。**「最高 $172亿」正是机位预订型合同的典型措辞 —— 上限大、确定承诺小。市场当天定价的正是今天财报确认的那个变量, 比公司披露早了 13 天。**||**共同形态 (与同日 SPCX、Brent-WTI 价差两条修正一起记): 三次错误都不是「数据看错」, 而是「在只有一个候选机制时, 把残差归因给了那个机制」。GEV 四天列出的三个假设全部围绕「客户融资」, 因为那是当时唯一在台面上的叙事。可操作纠正: 当一个标的连续多日无法归因时, 正确的记录方式是「无法归因」, 而不是在现有叙事里挑一个最接近的。本工作簿在 GEV 上连续四天做了后者。**||**kill condition 核对三条: #1「Hyperscalers (MSFT/GOOG/AMZN/META) 公开削减数据中心建设 >20%」今天方向仍相反 (Meta 为建设募股 $975亿 + backlog 创纪录 + 公司上调指引), 离触发更远; #2 (Wind 段 2026 亏损超 2025) 与 #3 (Power 段 margin 指引下调至 13% 以下) 今天公开报道层均未给出数字, 无法核对 —— 10/27 曾把 #3 标为今天要看的门槛。** **结论: kill-condition 错配第四次记录 (GEV 自身), 今天的缺口最具体 —— 三条里零条度量「机位预订转化率」, 而这恰好是公司自己的财报日被市场挑出来的那个变量。建议补一条: 「新增机位预订连续两季同比下降, 或已预订机位的正式订单转化率被管理层下调」—— 可直接从公司披露度量, 且它是 backlog 之外唯一能预示 backlog 未来方向的指标。**||**同日被忽略的实质变化: 以 $90亿 收购 Trench Group** (高压电网设备, 卖方 Triton Partners), 现金与债务各半, 预计 **2027 年末**交割。披露: 2028 预期营收 $19亿 / 调整后 EBITDA margin 约 36% / **13x 2028 调整后 EBITDA (协同前)** / backlog 与框架协议约 $50亿 / 夏洛特新厂 2027 年末开始生产 **765kV** 设备。三点: (1) **这是纵向整合而非扩张** —— 公告原文说明 Trench 是 GEV 的**既有供应商**; 在「交不出设备」的供应链环境里把上游买下来是对自身交付能力的投资, 与今天「机位转化速度」的问题直接相关; (2) **用 35.07x 远期 PE 的股权 (加债务) 买 13x EBITDA 的现金流, 倍数上增值 —— 但 $90亿 各半意味着约 $45亿 新增债务, 而这发生在 GEV 自己的客户正因融资成本推迟订单的环境里**; 同一份财报里「扩大回购授权」与「$45亿 新增债务」并存是资本配置的重新排序, 不是单向乐观; (3) 765kV 是电网硬件最高压一级, 对应数据中心集群与远端发电的长距离连接, 是 Electrification 段最靠 AI 需求的一块 —— 而产能要到 2027 年末。||**量比 1.77x 为全场第二高 (唯二过 1.5x, 另一只是同样出财报的 SKHY 1.79x)。put/call 1.14 全场第二高 (仅次于 TSLA 1.42)。** 10/26 曾录得 put/call 1.58 (全书最高) + 期权隐含 ±5.7%。**连续三份报告期权端持续买保护, 而今天是财报日 —— 财报日的高 put/call 通常在公布后快速回落 (事件风险解除); 若明天仍维持 1.1 以上, 说明保护买的不是财报而是后续的订单转化。**||价格: MA50 ($938.73) 下方 -5.89% / MA200 ($941.52) 下方 -6.16%, **两线相距仅 $2.79 几乎重合** (任何方向突破都缺乏技术缓冲)。距 52w 高 **-26.13%** / thesis_break $700 缓冲 **+26.2%** (10/22 曾压缩到 +17.6%)。**低于最低卖方目标价: JPM $1,150 低 23.2%, BofA $1,310 低 32.6%。**||今日对照结构: 一条标题把两个 cluster 直接对立 —— 「AI Power Stocks Fell 7% to 13% in a Week While Exxon and Chevron Just Hit Record Highs」。能源四只中三只距 52w 高在 3.2% 内, 而 GEV 距 52w 高 -26.13% 且双线下方。**「AI 电力需求」与「实物能源供给」被定价为两件完全不同的事: 前者是预期, 后者是当期现金流。**||需求侧新政策变量: 「CMS Energy CEO predicts data center 'progress' **after midterms**」—— 公用事业 CEO 自己把数据中心审批进度挂在 11/03 选举结果上。||**今晚 MSFT + GOOG 的 capex 指引对 GEV 的信息量大于 GEV 自己今天的财报, 因为 kill condition #1 的度量对象正是这四家。要找的具体表述: capex 绝对金额是否仍在上调, 以及措辞里有无「优化节奏」「分阶段」「审慎」这类暗示建设放慢的限定词。**
+
+**Sources.**
+- Investor's Business Daily: GE Vernova Stock Falls; 'New Orders And New Slots Missed By A Mile'
+- Investing.com: GE Vernova meets high bar, but slot conversions now in focus: BNP Paribas
+- (aggregated): GE Vernova profit nearly triples as backlog hits $196.7 billion
+- GE Vernova (press release): GE Vernova reports strong third quarter 2026 financial performance, raises 2026 guidance, and increases share repurchase authorization
+- StockTitan / MT Newswires: GE Vernova to Acquire Trench Group for $9 Billion
+- (aggregated): CMS Energy CEO predicts data center 'progress' after midterms
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-27 · +4.67% day · ▲ material
 **Tags:** `earnings_pre_print`, `unattributed`, `pt_change`
 **Confidence:** low

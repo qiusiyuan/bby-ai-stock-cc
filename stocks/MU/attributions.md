@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-28 · +4.28% day · ▲ material
+**Tags:** `sector_rotation`, `analyst_upgrade`
+**Confidence:** high
+
+**Primary cause.** **纯 read-through, MU 自身零公司新闻。** 驱动是 SK Hynix Q3 创纪录 +「售罄至 2029」+「缺口到 2030」(完整内容见同日 000660.KS 条目) + 卖方口径: Cramer「Micron **should be the biggest winner** as SK Hynix Predicts Memory Shortage Through 2030」、「SK Hynix Says Memory Is Sold Out Through 2029. Micron Is a Winner, Too」、BofA 转更正面。||**远期 PE 4.68x 为全书最低** (SKHY 4.20x / 本线 3.18x / Samsung 3.35x 更低但都是非美股主体)。MA200 上方 **+30.74%** 而 MA50 下方 -1.19% —— 组内离 MA50 最近的一只, 即跌得最少、修得最快。||**时序关系已反转, 这是今天该记的一条**: 10/15 报告记录「MU 的 30d 优势来自 9/30 已验证财报而非周期不适用; 下次财报 12/23 为 69 天后全书最远, 该相对强度在此前无法验证或否证」, 并把这记为 **MU 相对 SKHY/Samsung 的独立时序优势**。今天 SKHY 刚验证完数字而 MU 的下次财报还有 **56 天**, **所以时序优势已经从 MU 转到 SKHY —— 内存组现在最新的硬数据来自 SK Hynix 而不是 Micron。**||**MU 的 30d +4.55% 是组内唯一为正的**(DRAM -3.61% / SKHY -6.27% / 本线 -19.88% / Samsung -10.20% / SNDK -9.34%), 延续 10/15 建立的相对强度判断。但今天 MU 的 1d +4.28% 是「纯内存」标的里涨幅最小的, 即它参与反弹的程度最低 —— **跌得少所以修得少, 不是脱钩。**||**口径注意: 今天 MU 的涨幅零机器人成分。** 10/27 报告把 MU +2.77% 部分归因于 Musk「机器人需要的内存比地球上其他一切加起来都多」的表态。今天 MU +4.28% 的完整解释是 SK Hynix 的订单簿, 而今天没有任何机器人新闻。**因此 10/27 那条归因应下调置信度 —— 当天 MU 的涨幅更可能也是内存板块自身的, Musk 的表态是同日巧合而非驱动。**||风控: thesis_break $650, 缓冲 **+49.0%**。距 52w 高 -22.83% / 距 52w 低 +402.89% / put/call 0.63。另: 「Micron Technology (MU) Ex Dividend Date Lands As AI Memory Narrative Points To Value」、「Prediction: Micron's Next Earnings Cycle Could Reset Expectations for the Stock」。
+
+**Sources.**
+- (aggregated): Cramer: Micron “Should Be the Biggest Winner” as SK Hynix Predicts Memory Shortage Through 2030
+- 24/7 Wall St.: SK Hynix Says Memory Is Sold Out Through 2029. Micron Is a Winner, Too
+- (aggregated): AI chip giants are sending Wall Street a clear message
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-26 · +2.98% day · ▲ minor
 **Tags:** `analyst_upgrade`, `memory_pricing`, `sector_rotation`
 **Confidence:** medium

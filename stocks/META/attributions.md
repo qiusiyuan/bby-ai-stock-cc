@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-28 · -1.52% day · ▼ major
+**Tags:** `earnings_post_print`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **5d -12.44% 为全场最差, 30d -9.22%, 距 52w 低 +17.40% 是全书最近的个股, MA50 下方 -8.40%。而今天新增的事实是性质变化而非程度变化。**||**「Mark Zuckerberg's Meta Platforms Reported Negative Free Cash Flow for the First Time Since 2012」** (Motley Fool)。为什么这比 10/26-10/27 记录的那两条重: 前两条 (「唯一零第三方 AI 实验室收入对价」+「用股权绕开债务, 代价由现有股东而非信用市场承担」) 是关于**融资方式**的 (债 vs 股); 今天这条是关于**现金流本身的符号**。||**10/22 建立的「内生融资 vs 需要外部资本」判别轴连续第五天成立, 而今天 META 把自己推到了这条轴的端点。** 该轴解释 MSFT 为何是组内唯一在 MA50 上方的 (+3.16%, 30d +7.54%), 给出的理由原文是「capex 全由内生现金流覆盖」。**META 现在不是内生现金流不足以覆盖 capex, 而是内生自由现金流为负 —— 14 年来第一次。MSFT 与 META 的 30 天裂口达 16.8pp。**||市场层面旁证: **「BofA clients dump communication services stocks at record pace after Meta slump」—— record pace, 且是整个通信服务板块而非单只。**||**🔴 kill-condition 错配第七个案例, 缺口类型是「度量错」(新形态)。** `triggers.yaml` kill_conditions 三条原文: (1) 营收增速连续两季低于 10% YoY; (2) 法院命令剥离 Instagram 或 WhatsApp; (3) AI 助手导致 feed 使用时长可测量地下降 (财报披露)。**今天一条都没发生。** 但 re_read_triggers 里有一条**几乎命中**: 「**Operating margin drops below 35% while capex continues to rise**」—— 它抓到了「capex 上升」这个方向, 但度量选的是**营业利润率**而不是**自由现金流**。**一家公司可以在营业利润率远高于 35% 的同时自由现金流为负, 差额就是 capex。所以这条触发器的结构性缺陷是: 它把 capex 作为定性条件 (「while capex continues to rise」) 而不是定量扣除项。**||**建议修正措辞: 把该 re_read_trigger 改为「自由现金流 (营业现金流 − capex) 在任一季度转负, 或连续两季同比下降超过 30%」—— 直接度量今天实际发生的事, 而不是通过利润率间接推断。** 这正好印证已记录的那条反馈: 查 trigger 不只问「触发了吗」, 还要问「预设条件覆盖的是当前真正在定价的风险吗」。||**倍数与表现完全反向, 第六次记录: META 远期 PE 17.38x 是 AI capex 组第二低 (仅高于 NVDA 13.62x), 而 5d/30d 跌幅组内最差。** 今天折现率第一次真正上行 (5Y +5.8bp / 10Y +5.0bp), 组内远期 PE 跨 3.2 倍 (NVDA 13.62x 到 INTC 43.27x), 而涨幅第一的 MRVL 是 33.94x (第二贵)、跌幅最大的 META 是 17.38x (第二便宜)。**这是「加息打击高倍数股」第七次否证在组内的具体体现。**||其余今日口径: 「Meta's Muse Suite Rollout Makes the Recent Pullback a Buying Opportunity」、「NVIDIA, AMD and Broadcom May Invest in Meta, Their Own Biggest Customer. What That Signals」、「Nvidia & AMD Bet $4B on Meta」(10/27 记录的 $40亿 认购的延续报道)、「Liability looms over AI shopping」、Meta 与 Snap 面临青少年社交媒体成瘾案审理、「Aptos Advisor Leaves Post, Moves Meme-Fueled Campaign to Meta Stock」。||风控: thesis_break $450, 缓冲 **+35.7%** (宽), **但距 52w 低 +17.40% 是全书最近的个股**。距 52w 高 -21.68% / MA200 下方 -3.25% / put/call 0.46。10/21 财报已过, **90 天内 META 零个公司级硬日历** —— 下一个可归因事件是今晚 MSFT/GOOG 的 capex 指引作为同业对照。
+
+**Sources.**
+- Motley Fool: Mark Zuckerberg's Meta Platforms Reported Negative Free Cash Flow for the First Time Since 2012. Here's Why That Milestone Matters for Shareholders.
+- (aggregated): BofA clients dump communication services stocks at record pace after Meta slump
+- (aggregated): NVIDIA, AMD and Broadcom May Invest in Meta, Their Own Biggest Customer. What That Signals
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-27 · -1.64% day · ▼ minor
 **Tags:** `secondary_offering`, `partnership_news`, `flow_event`
 **Confidence:** high

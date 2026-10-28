@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-28 · +12.76% day · ▲ extreme
+**Tags:** `earnings_print`, `guidance_raise`
+**Confidence:** high
+
+**Primary cause.** **ADS 对本线 Q3 创纪录财报的映射 (完整财报内容见同日 000660.KS 条目)。量比 1.79x 为全场最高, 是唯二过 1.5x 的标的之一 (另一只是同样出财报的 GEV) —— 换手集中在有新信息的地方。**||**ADS +12.76% 对本线 +16.63% 落后 3.87pp, 其中 1.37pp 是纯汇率**: USD/KRW 今天 +1.37% 至 1342.9 (而 DXY 仅 +0.03%, 所以这不是美元因素, 是韩元在韩国最强财报日反而走弱)。**即 ADS 的「真实」落后约 2.5pp 而非 3.87pp。** 两个机械含义: SK Hynix 是出口商, 弱韩元提高折算后盈利; 跨市场比价必须同时看汇率。||**thesis 的六项 Key Metrics 逐项核对结果: 一项明确正面、一项正面无数字、一项方向性支持、两项完全未回答。** (1) HBM production share >50% → **零披露**, 完整报道里无任何份额百分比; (2) HBM3E/HBM4 良率 (thesis 原文「the moat lives here」) → **HBM4 与 HBM3E 良率均超内部目标, HBM4 预计 Q4 出货量与营收占比超越 HBM3E, HBM4 明年盈利能力「well above previous cycle peaks」** = 明确正面; (3) Samsung qualification progress (原文「code-red」) → **零披露, Samsung 零次出现**; (4) Conventional DRAM ASP → 间接 (「需求是能供的两倍以上」+ 合同覆盖 2027/2028 过半); (6) Capex execution ($280亿 承诺) → 2027 资本开支「大幅上升」, 正面但无具体金额。||**所以这份财报把 thesis 的分子验证了, 分母没动 —— 而 Bull/Base/Bear 的分歧 100% 在分母侧** (Base 前提原文「maintains >50% HBM share」, Bear 第一条原文「Samsung breaks through HBM4 qualification faster than expected」)。||**kill conditions 三条核对: #2「SK Hynix HBM 良率在下一代产品上跌破 70%」被今天的披露明确推远。这是本工作簿追踪的所有 kill condition 里第二次有一条被具名事件明确推远 (第一次是 10/27 AMD 的 #2)。** #1 (Samsung 通过 NVIDIA 认证) 今天零信息 —— 但涨幅排序本线 +16.63% > Samsung +13.62% (差 3.0pp) 是对 10/26 Bernstein「三星营收反超」说法的**轻度否证** (若市场相信反超, 排序应相反)。#3 (hyperscaler capex 合计下调 >20%) 由今晚 MSFT+GOOG、明天 AMZN 直接度量; 「合同覆盖 2027/2028 产能过半」是对它的间接反向证据。||**SKHY 的触发器是本工作簿里设计的正面范例**: 三条度量的都是具体的、可被公司披露直接回答的技术变量 (良率百分比、认证通过、capex 指引), 而不是「需求崩塌」这类抽象状态。对照同日 NOK (击穿而四条零触发)、META (距 52w 低最近而三条零触发)、GEV (三条零条度量真实风险)。||**价格相对 thesis 三档 (ADS 口径) 连续三天向 Base 靠回, 今天跳升一档**: 现价 $163.91 低于 Base 下沿 ($180-220) **8.9%** / 高于 Bear 上沿 ($100-130) **26.1%**。轨迹: 10/22 -26.1%/+2.3% → 10/26 -20.8%/+9.7% → 10/27 -19.3%/+11.8% → 今天 **-8.9%/+26.1%** (一天收窄 10.4pp)。10/22 时价格距 Bear 上沿仅 2.3% (市场几乎在定价 Bear), 今天是 +26.1%。距 Bull 下沿仍 -34.4%。||**10/26 临时重新加权的 25/40/35 (原始 35/45/20) 今天维持不动, 但理由第三次改变**: 10/26 是信息不足 (「营收反超 ≠ 技术领先」), 10/27 是信息不足, 今天是**三条新证据互相抵消** —— 良率超目标 (强, → Bull/Base, 直接否掉 kill #2) + 8 层而非 12 层需求 (中, → Bear, 削弱「赌层数」差异化) + 涨幅排序 (弱, → Base) + Solidigm IPO 放弃 (中, → Bear, 但 NAND≠DRAM 口径)。**净值为零。关键原则: 今天的证据全部落在「SK Hynix 自己的执行」这一侧, 而 25/40/35 的下调理由完全在「三星的进度」那一侧 —— 今天的信息不触及调整的依据。若仅按良率证据就上调 Bull, 等于用分子的改善去回答分母的问题。**||**建议把「HBM4 出货的 8 层 vs 12 层构成」加入 thesis 的 Key Metrics to Watch (现有六项里没有这一项), 并与 Key Metric #1 (HBM 份额 >50%) 并列 —— 因为在 8 层为主的市场里, 份额的含义与 12 层市场不同。** 这是今天唯一的**客户行为证据** (良率是公司自报无第三方验证, 8 层偏好是客户采购行为公司只能转述)。||风控: thesis_break $115, 缓冲 **+42.5%** (10/22 时约 +14%)。MA50 下方 -3.03% / 距 52w 高 -17.99% / 距 52w 低 +31.34% / 远期 PE 4.20x。**下次财报 2027-01-27 (90 天后), 期间零公司级事件 —— 价格只能由三类外部信息驱动: 设备链指引 (间接确认 2027 capex)、DRAM/HBM 现货价格 (间接确认「两倍需求」)、Samsung 与 Nvidia 口径 (直接裁决 Bear)。没有任何一个能证实或否证今天刚立起来的「售罄到 2029」核心主张。**||注: 按用户 10/28 明确要求, ADS 对本线溢价的预测-裁决跟踪线已从报告中剔除 (连跑 4 次, 信息价值递减)。溢价作为 thesis Key Metric #5 仍在文档中, 但不再逐日记录。
+
+**Sources.**
+- (aggregated): SKHY Stock: Analyst Sees 175% Upside Potential For SK Hynix, Company's Q3 Beat Uplifts MU, SNDK, WDC
+- 24/7 Wall St.: SK Hynix Jumps 8% After a 632% Profit Surge and a $45 Billion Shareholder Pledge. Micron and SanDisk Are Riding Along.
+- Korea Herald: SK hynix's AI memory 'sold out' through 2029 as profits soar
+- (aggregated): SK Hynix Is Losing Its US Leveraged Funds. Here's What the October 28 Report Has to Show
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-27 · +1.92% day · ▲ minor
 **Tags:** `prediction_passed`, `earnings_print`, `flow_event`
 **Confidence:** high

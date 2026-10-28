@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-28 · +3.54% day · ▲ material
+**Tags:** `unattributed`, `flow_event`
+**Confidence:** low
+
+**Primary cause.** **+3.54% 零个具名催化剂, 且今天 TSLA 是下跌的 (-1.31%) —— 完整的第四次自然实验分析见同日 CROB 条目。** confidence 记 low。||**put/call 0.05 —— 本质上没有期权市场, 连续两份报告同一读数。量比 0.42x。MA200 下方 -9.15%** (三只里最深), MA50 下方 -0.34%。距 52w 高 -26.01% / **距 52w 低 +13.78% —— 全部 active 标的里距 52 周低点最近的一只** (个股里最近的是 META +17.40%)。||**30 天 +1.54%, 与 KOID (+1.26%) 和 CROB (+0.60%) 相差不到 1pp, 而 TSLA +12.30% —— 裂口 10.8pp。三只内部高度一致是「它们跟踪人形行业 beta 而非 Optimus alpha」的核心证据。**||**建议 (同 CROB): 停止日度捕获率计算, 本 cluster 改事件驱动。日度读数的信息含量已低于噪音 (put/call 0.05 + 量比 0.42x + 30d 走平)。** 唯一能把 beta 变成 alpha 的事件类型是**具名订单** —— Optimus/Cybercab 的具名客户订单、具名交付量, 或任一成分股拿到 Tesla 确认订单。时间表承诺 (「年底交付」「进入生产」) 在过去四次实验里零次产生可测量的外溢。||90 天内零硬催化剂。groups.yaml 已记录核心错配: UBTech (9880.HK) 与 Unitree (未上市)、谐波减速器 (中国 A 股) 全部美股账户不可及。
+
+**Sources.**
+- (none)
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-22 · -3.33% day · ▼ material
 **Tags:** `sector_rotation`, `production_milestone`
 **Confidence:** high
