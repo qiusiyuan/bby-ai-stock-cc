@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-27 · +5.45% day · ▲ material
+**Tags:** `partnership_news`, `secondary_offering`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** **全场最强 (+5.45%), 原因具名且结构在本工作簿里前所未见: AMD 自己出钱认购客户的增发, 并把自己 10% 的股权作为购芯对价送出。**||Meta 把股权募资抬到近 $975亿 (已定价 $375亿: $250亿 普通股定价 $625/股 + 约 $125亿 强制可转债, 订单簿约 5 倍超额, 折价约 2.7%; 另计划最高 $600亿)。CNBC: Nvidia + AMD 合计出资 **$40亿** 认购; Stock Titan: **AMD 单独 $10亿, 且 Meta 通过购买 AMD 芯片最多可获得 1.6亿股 AMD 股票** —— 按今日 $560.26 名义约 $896亿, 约占 AMD 股本 10%。||**为什么市场给 +5.45% 而不是给稀释打折: AMD 的 kill condition #2 原文是「Hyperscaler customers publicly confirm Nvidia-only GPU procurement for 2027 cycle」, 今天的事件是这条触发器的字面反面。** 一家最大的 hyperscaler 公开确认多供应商采购, 并愿意用「买芯片换股权」锁定关系。这是本工作簿追踪的所有 kill condition 里**第一次有一条被具名事件明确推远** —— 前五次记录 (NOK/GEV/META/SPCX/TSLA) 全是「kill condition 与实际定价机制错配」。||**但同一笔交易把另一条 kill condition 拉近: #1「毛利率两季低于 48%」。** 1.6亿股 warrant 的会计处理 (若按公允价值计入收入成本) 会直接压毛利率指引, 而 thesis 的 Bear (25%) 第二条原文就是「gross margin compression from chasing hyperscaler custom-silicon at lower margins」。**一条被推远、一条被拉近, 交汇点是 11/03 财报的毛利率指引。**||**对照 NVDA 的 +0.90% (供给方最弱)**: NVDA 出资约 $30亿 (算术余数, CNBC 仅给出合计 $40亿 与 AMD 的 $10亿), 无对价披露。Meta 对 NVDA 已是既有客户, $30亿 买到的是维持; 对 AMD 是从零到一。同一笔交易对两个卖方的边际价值差异被今天的 5.45% vs 0.90% 量化。||**价格位置**: $560.26 正落在 thesis Base 区间 ($550-600, 45%) 内 —— 全书少见的「价格与 Base 一致」状态。量比 **0.96x 不足 1 倍**, 全场最强的一只没有成交量背书。
+
+**Sources.**
+- Stock Titan: AMD to Invest $1 Billion in Meta, Which Could Get 160 Million AMD Shares
+- CNBC: Nvidia, AMD to invest $4 billion in Meta as tech giants deepen AI partnership
+- Yahoo Finance: AMD stock rallies on expanded Meta AI infrastructure deal and broader chip rally
+- Yahoo Finance: Meta's deal with AMD, Nvidia, Broadcom: Is circular financing a risk?
+
+**Cross-assets.** SPY +0.57% · VIX 17.52 · TEN YEAR 4.993 · FIVE YEAR 4.84 · THIRTY YEAR 5.305 · WTI 100.66 · BRENT 110.07 · DXY 102.344 · GOLD 4075.9 · SILVER 54.45 · BTC 80650.73
+
+**Agent read.** 循环融资结构的最纯形态, 而市场给的是最强涨幅。定价逻辑可审计: 一条会直接击穿论点的尾部风险 (Nvidia-only 采购) 被具名事件移除, 代价是 10% 稀释 + $10亿 现金。11/03 财报的毛利率指引是两条 kill condition 的交汇点 —— 这是本次记录里唯一需要主动跟踪的数字。
+ · Snapshot at `dashboard/2026-10-27.md`
+
+---
 ### 2026-10-22 · -7.94% day · ▼ major
 **Tags:** `competitor_news`, `sector_rotation`, `guidance_cut`
 **Confidence:** high

@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-27 · +4.67% day · ▲ material
+**Tags:** `earnings_pre_print`, `unattributed`, `pt_change`
+**Confidence:** low
+
+**Primary cause.** **「零基本面定价」第四次连续记录, 这次在财报前一天。**||四次序列: 10/15 当日签 Venture Global 最高 $172亿 合同 + 年内两次上调指引, **跌 3.02%**; 10/22 公司零负面消息、财报还在六天后, **跌 11.11%** (量比 1.75x), Barron's 点名「Blame Meta」+「financing all the growth will be tough」; 10/26 唯一「新闻」是 BofA $1,310 目标价的连续第四天重复报道, **涨 4.92%**; 今天唯一消息面是财报前瞻, **涨 4.67%**。四天净变动 **-5.87%**。||今天检索到的唯一新公司事实是**科特迪瓦 372 MW 电厂订单**, 规模不足以解释 4.67%。前瞻口径三条: 24/7 Wall St 称 GEV 带着 **$1,760亿 backlog + 刚上调的指引**进财报而「股价一个月跌超 14%」; Motley Fool 指出真正重要的数字「以吉瓦计量」而非美元 backlog (有用的框架校正 —— 美元 backlog 含服务与价格, 吉瓦量度实际产能承诺); Insider Monkey 与 Foreign Policy Journal 都用 **66x 市盈率**作为主要反驳, 后者同时引用「2026 年 Q2 88% 的有机订单增长」。||**现货与期权今天给出相反信号: 股价 +4.67% 而 put/call 升到 1.34, 为全场第二高 (仅次于 QQQ 1.57) 且高于 10/26。** 财报在明天盘前所以含大量事件对冲成分, 但绝对水平在最后一天还在上升。||**kill condition 错配第四次记录, 今天方向第一次是反的。** #1 原文「Hyperscalers publicly cut data center buildout by >20%」—— 今天 Meta 不但没削减, 反而**为建设融资近 $975亿**, 这条触发器离触发更远了。更精确的版本: **Meta 选的是股权而非债务**, 等于绕开了 10/22 以来追踪的「客户发债变贵 → 建设放慢」通道, 对 GEV 是实质利好。这可能是今天 +4.67% 的真实机制, 但**没有任何口径明确这样连线**, 故 confidence 记 low。||技术位置: 价格同时在 MA50 ($942.64) 与 MA200 ($941.08) 下方 **5.05%** (两线相距仅 $1.56, $941-943 是技术共识位); 低于已知最低卖方目标价 (JPM $1,150) **22.2%**, 低于 BofA $1,310 **31.7%**。thesis_break $700 缓冲由 +22.2% 松到 **+27.9%**。||**「GEV 跟着 META 走」第三次样本, 应停止跟踪**: 10/22 与 10/23 同向 (约 1.5 倍放大), 10/21 与 10/26 反向, 今天 GEV +4.67% 而 META -1.64% **再次反向**。四样本两同两反 → 只能解释 10/22 那一天, 不能做预测。||⚠️ **归因限制: 10/28 GEV 自己出财报, 同日还有 GOOG 财报 + MSFT capex 指引 + FOMC。明天的单日价格是四件事的净值, 对任何 GEV 假设都不构成检验。** 要看的是财报内容: Power 段 margin 指引 (kill condition #3 门槛 13%) 与吉瓦口径的容量承诺。
+
+**Sources.**
+- Motley Fool: GE Vernova Reports Oct. 28. Here's the 1 Number That Matters More Than Its Multibillion-Dollar Backlog (Hint: It's Measured in Gigawatts).
+- 24/7 Wall St.: The AI Power Bill Comes Due: Will GE Vernova's Q3 Earnings Prove Its $176B Backlog Is Real?
+- Zacks: GE Vernova (GEV) Lands 372 MW Côte D'Ivoire Power Plant Order
+- Foreign Policy Journal: GE Vernova Builds $176B Backlog But 66x Earnings Multiple Raises Questions
+
+**Cross-assets.** SPY +0.57% · VIX 17.52 · TEN YEAR 4.993 · FIVE YEAR 4.84 · THIRTY YEAR 5.305 · WTI 100.66 · BRENT 110.07 · DXY 102.344 · GOLD 4075.9 · SILVER 54.45 · BTC 80650.73
+
+**Agent read.** 四次连续零基本面定价, 四天净 -5.87%。最可能的新机制是「Meta 用股权绕开信用市场 → 客户建设能力未受约束 → 对 GEV 利好」, 但无口径支持故置信度 low; 它若成立会以 hyperscaler 直签 gas 容量的 PPA 公告形式出现, 而不是以股价形式出现。明天的价格不可归因, 只看 Power 段 margin。
+ · Snapshot at `dashboard/2026-10-27.md`
+
+---
 ### 2026-10-26 · +4.92% day · ▲ material
 **Tags:** `unattributed`, `sector_rotation`, `earnings_pre_print`
 **Confidence:** low

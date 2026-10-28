@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-27 · +4.04% day · ▲ material
+**Tags:** `production_milestone`, `pt_change`, `m_and_a`
+**Confidence:** high
+
+**Primary cause.** **全书最大不对称进入第三个交易日并再次扩大, 而四天里零条汽车业务正面消息。**||10/21 财报是净利同比 -43% ($7.87亿 vs $13.7亿) + 下调销量目标。自那以来: 10/22 -2.61%, 10/23 -0.63%, 10/26 +5.21%, 今天 **+4.04%** —— 四个交易日累计 **+6.01%**, 5d **+9.03%**, 30d **+14.27%** 全书最强, MA50 上方 **+11.55%** 全组最高, 远期 PE **189.05x 全书最高**。||**今天的具名驱动, 第一条是可验证的运营里程碑而非分析师口径**: 「**Cybercabs Overtake Model Ys In Authorized Texas Robotaxi Fleet**」(Benzinga)。本工作簿第一次看到 Cybercab 在一个具体车队里的数量超过 Model Y —— 之前所有 Robotaxi 进展都是「部署城市数」或「里程」口径, 这次是**车队构成**口径。意义在于把「Robotaxi 是 Model Y 加软件」变成「Robotaxi 是一条独立硬件产品线」, 后者才支撑 189x 倍数。第二条是 ARK 重申 **$4,400** 长期目标 (现价的 10.8 倍), 口径明确是 Robotaxi thesis。||**四天里所有正面消息的清单: Optimus (Musk「会震惊」+ Munster「巨大价值」)、Cybercab 年底交付、SpaceX 合并框架、Cybercab 车队占比、ARK 目标价。没有一条关于交付量、中国销量、或汽车毛利率。** Barron's 的标题直说: 「Tesla's Profit Fell 43% and the Stock Held Up. Here's Why」。||**合并叙事的分配证据连续第二天指向同一方向。** 10/26 记录两个对立框架: Barclays 称合并可加速 Tesla 的 AI 与自动驾驶 (对 TSLA 正面) vs Galloway 称「Tesla 是病人, SpaceX 是器官捐献者」。两天分配是 TSLA +5.21% / +4.04% 对 SPCX -0.40% / +1.14% —— **累计 TSLA +9.46% 对 SPCX +0.74%, 比例 12.8 : 1**。若 Barclays 成立, 协同价值应在两边都体现; 实际只在一边。**这是支持 Galloway 而非 Barclays 的证据, 第二天。** 今天 Motley Fool 把两者并列为同一风险 (「3 Types of Investors Who Should Avoid SpaceX and Tesla Stocks as the Companies Explore a Potential Merger」), 而市场并未如此定价。||**kill-condition 错配第五个记录案例**: TSLA 的预设条件 (销量、FSD 监管、毛利率) 全部指向汽车业务, 而今天的价格完全由非汽车驱动。189.05x 与净利 -43% 并存意味着市场给汽车业务的贡献定价为零甚至为负 —— **当前 bull/base/bear 权重是否仍把汽车当主要变量, 值得在下一次 quarterly-review 重新打分。**||**humanoid 自然实验第三次, 结论从「负向不对称」加强为「上行捕获已归零」**: 今天 TSLA +4.04% 而 HUMN **-0.36%** / KOID +2.19% / CROB **-2.02%** = 捕获 -9% / 54% / -50%, **均值 -1.6%**。三次合计: TSLA 下跌时捕获约 **106%** (10/22), 上涨时 **29%** (10/26) 与 **-1.6%** (今天)。21 天裂口 TSLA +15.48% 对三只 -3.40/-4.06/-4.31 = **18.9-19.8pp 且方向相反**。||**今天最有信息量的一条附带发现: humanoid 叙事的受益者不在三只 ETF 里。** Optimus/机器人相关的正面新闻全部落在别处 —— **MU +2.77%** (Musk 称「Robots Will Need More Memory Than Everything Else on Earth」, 分析师看到内存的「much bigger volume story」) 与 **BlackBerry +5%** (「CEO Pitches QNX for Robots and Physical AI」, Mobileye/Aptiv 同步)。机制上: 机器人需要内存和软件是**现在就可计价的**需求, 人形 OEM 的收入仍是预期, 所以叙事利好优先重定价有当期收入的那一端。这验证了 groups.yaml 里写明的核心错配的第三种形态。
+
+**Sources.**
+- Benzinga: TSLA Stock Rises As Cybercabs Overtake Model Ys In Authorized Texas Robotaxi Fleet
+- 24/7 Wall St.: Tesla Rises 4% as ARK Reiterates $4,400 Long-Term Price Target on Robotaxi Thesis
+- Barron's: Tesla's Profit Fell 43% and the Stock Held Up. Here's Why
+- Motley Fool: 3 Types of Investors Who Should Avoid SpaceX and Tesla Stocks as the Companies Explore a Potential Merger
+- Benzinga: Elon Musk Says Robots Will Need More Memory Than 'Everything Else on Earth' — This Analyst Sees 'Much Bigger Volume Story' for Micron, SK Hynix
+
+**Cross-assets.** SPY +0.57% · VIX 17.52 · TEN YEAR 4.993 · FIVE YEAR 4.84 · THIRTY YEAR 5.305 · WTI 100.66 · BRENT 110.07 · DXY 102.344 · GOLD 4075.9 · SILVER 54.45 · BTC 80650.73
+
+**Agent read.** 三条支柱 (Robotaxi / Optimus / 合并期权) 同时承载 189x 倍数而汽车贡献被定价为零, 任何一条延期会同时打掉三条。合并期权的分配证据第二天指向 Galloway 而非 Barclays, 11/03 SPCX 财报的 FY27 融资缺口是第一个数字裁决。humanoid 的可及载体结论扩展: TSLA 本身 + MU (邻接当期收入), 三只 ETF 上行捕获已归零。
+ · Snapshot at `dashboard/2026-10-27.md`
+
+---
 ### 2026-10-26 · +5.21% day · ▲ material
 **Tags:** `m_and_a`, `executive_comment`, `analyst_upgrade`, `production_milestone`
 **Confidence:** high

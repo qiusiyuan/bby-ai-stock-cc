@@ -78,6 +78,12 @@ events:
   - { date: 2026-10-21, kind: earnings, ticker: TSLA, note: "Q3 2026 earnings (yfinance) — 关键: 中国降价是否换来销量 (若销量平或降则毛利率白丢), FSD/Robotaxi 部署进度 (168x fwd PE 的唯一支柱)" }
   - { date: 2026-11-03, kind: earnings, ticker: SPCX, note: "Q3 2026 earnings (yfinance) — FY27 自由现金流 -$67B 的融资需求是 8/27 预测反方的核心; 可靠性整改若拖慢发射节奏, 轨道 AI 数据中心收入时间表后移而现金焚烧不会同步后移" }
 
+  # ── 2026-10-27 补录: 连续两份报告标记为缺口的高影响事件 ──────────
+  - { date: 2026-11-03, kind: policy, ticker: macro, note: "**美国中期选举 — 本工作簿影响级最高的未录入事件 (10/22 与 10/26 两份报告均标记为缺口)。** 三条独立定价都以它为锚: (1) 10/22 ITA -1.42% / 30d -6.97% 被归因为按「民主党全胜」定价; (2) NYT 称美以对伊朗方案「设在中期选举后」; (3) 10/27 EnergyNewsBeat 标题「Deal or Escalate: U.S. Oil Back Under $100 One Week Before the Election」。注意同日叠加 AMD + SPCX + SU 三份财报 = 四重叠加日" }
+  - { date: 2026-11-15, kind: catalyst, ticker: macro, note: "**Anthropic IPO 定价窗口 (约 11 月中, 精确日待定)** — 10/26 S-1 公开递交, Nasdaq 代码 ANT, 22 家承销行。S-1 披露 AMZN+GOOG+MSFT 持有 $2,690亿 不可取消算力合约、SPCX 算力交易近乎翻倍至 $845亿、Broadcom 为其安排 $630亿 设备租赁融资。定价本身是「AI 建设方的融资可得性」最直接的市场裁决, 直接读到 AVGO / SPCX / 全 AI capex 组" }
+  - { date: 2026-12-16, kind: macro, ticker: macro, note: "**12 月 FOMC (~估计日期, 10/28 之后约 7 周; 2026 官方日程未核实)** — 10/27 市场口径 (CNBC / EBC) 一致把 12 月而非 10 月当作下一次加息的真实判别点。加息概率轨迹: 9/27 Polymarket 65% → 10/26 Kalshi(十月) 33% → 10/27 期货(本周) 10%。若 10/28 措辞指向 12 月, 这一天是本轮紧缩周期的终点或延续的裁决日" }
+  - { date: 2026-10-28, kind: catalyst, ticker: SKHY, note: "SK Hynix $121亿 Kioxia 特别股息裁决 (10/26 报告记录, 与 3Q26 财报同日)" }
+
   # ── Policy / geopolitical 已知窗口 ────────────────────────────
   - { date: 2026-Q3, kind: policy, ticker: macro, note: "EU TCMV decision on FSD (range — Sweden opposes, multi-state vote)" }
   - { date: 2026-12, kind: policy, ticker: macro, note: "FCC 6GHz spectrum / Starshield contract renewal window (estimate)" }

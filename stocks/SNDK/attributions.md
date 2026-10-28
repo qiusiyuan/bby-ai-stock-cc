@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-27 · +3.92% day · ▲ material
+**Tags:** `analyst_upgrade`, `earnings_pre_print`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** **财报与 🎯 评分日前两天 (10/29), 跟随内存板块反弹但 5d 仍为负。**||驱动是 BofA 转多内存 —— 同一篇报道点名「Micron Climbs 4% as Bank of America Grows More Positive on Memory; **Western Digital Rises 5%, SanDisk Gains 3%**」。另有多条财报前瞻: 「SanDisk's report could reignite the AI trade — or signal a warning」; 「Sandisk Stock Has Been Cut Nearly in Half Since June. Should You Buy It Before Thursday's Report?」; 「Chip Stocks Find Support Before Key Reports From Intel, Sandisk」。confidence 记 medium —— 板块驱动明确但无 SNDK 公司级事实。||**风控位置: thesis_break $1,200 缓冲由 10/26 的 +4.6% 松到 +8.7%** (今天 +3.92%), 但仍是未击穿名单里第二近的 (最近的 NOK 已击穿, 其次 SNDK +8.7%, 再次 GOOG +13.2%)。5d **-4.43%** / 30d -14.77% / 距 52w 高 **-44.58%** / MA50 下方 -17.50%。||**🎯 10/29 评分卡 (state.yaml::earnings_watchlist, status: pending, 窗口自 10/22 已开)**, thesis_claim 原文: 「SNDK 从 NAND 周期股 re-rate 为结构性现金牛 —— FY27 指引 ($10.3-10.8B rev / $44-46 EPS) 兑现 + 半数营收转 FCF 模型可信 + 毛利率 (84.6% 峰值) 不快速回落」。Tier 1 六项: 营收、EPS、non-GAAP 毛利率轨迹、数据中心增速、半数营收转 FCF 首个数据点、HBF design win 进展。||**8/06 的 sell-the-news 判据 (带 >30% 的 5d 涨幅进财报 = 好数字打折) 本次不适用 —— 5d 是 -4.43%。所以风险全在数字本身, 没有仓位拥挤的折扣效应。**||**一个有利的日历结构: SK Hynix 的 3Q26 创纪录读数已在 10/28 韩国时间给出 (营收首破 100 万亿韩元, 利润七倍), 即 SNDK 评分前有一份免费的 read-through。** 但两者口径不同 —— SK Hynix 是 DRAM/HBM 主导, SNDK 是 NAND。NAND 的毛利率轨迹是整个内存超级周期「价格能维持多久」的最早读数, 这是 10/29 最该看的单一数字。
+
+**Sources.**
+- 24/7 Wall St.: Micron Climbs 4% as Bank of America Grows More Positive on Memory; Western Digital Rises 5%, SanDisk Gains 3%
+- Yahoo Finance: SanDisk's report could reignite the AI trade — or signal a warning
+- Motley Fool: Sandisk Stock Has Been Cut Nearly in Half Since June. Should You Buy It Before Thursday's Report?
+
+**Cross-assets.** SPY +0.57% · VIX 17.52 · TEN YEAR 4.993 · FIVE YEAR 4.84 · THIRTY YEAR 5.305 · WTI 100.66 · BRENT 110.07 · DXY 102.344 · GOLD 4075.9 · SILVER 54.45 · BTC 80650.73
+
+**Agent read.** 评分前两天的最后一条可操作提醒: 门槛已预先承诺, 不能事后调整。5d 为负意味着 sell-the-news 判据不适用, 风险全在数字。最该看的单一数字是 non-GAAP 毛利率轨迹 —— 它是内存周期价格持续性的最早读数, 且 SK Hynix 的 DRAM 口径不能替代。
+ · Snapshot at `dashboard/2026-10-27.md`
+
+---
 ### 2026-10-26 · +1.42% day · ▲ minor
 **Tags:** `analyst_upgrade`, `memory_pricing`, `earnings_pre_print`, `sector_rotation`
 **Confidence:** medium

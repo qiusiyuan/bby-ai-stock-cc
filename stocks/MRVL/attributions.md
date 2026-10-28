@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-27 · +4.19% day · ▲ material
+**Tags:** `executive_comment`, `analyst_upgrade`, `pt_change`
+**Confidence:** high
+
+**Primary cause.** **供给侧叙事第一次出现反向证据, 而且是公司高管直接给的。**||Marvell COO 公开表态: 公司拥有「**all the demand and the supply**」以在明年达到 **$200亿** 营收 (Barron's)。这与 10/22 记录的成本侧证据链第四层**正好相反** —— 当时 Lam Research -9% 并点名「supply chain constraints」限制指引 (AMAT -6% / ASML -4%), 接在 10/15 Counterpoint 手机出货 -20% 与巴克莱下调 Dell/HPE 之后。**10/22 以来「设备交不出 → 产能扩不上 → 价格维持更久 → 下游继续被破坏」的自我强化链条, 今天第一次被一家公司明确否认在自己这一环成立。**||同时有多家上调预测与目标价 (Barchart: 「Analysts Hike Their Marvell Technology Forecasts and Price Targets」; Rosenblatt 把 MRVL 列入半导体首选), 以及明确的估值反驳 (「Marvell (MRVL) Stock Still Carries A Rich Price Despite Its 392% Run」)。||**技术位置罕见: 恰好站回 MA50 (+0.10%), 是全场 36 只里最接近均线的一只。** thesis_break $200 缓冲由 10/22 的 +16.9% 松到 **+21.8%**; 远期 PE 33.23x; 量比 **0.79x —— 涨 4.19% 而成交量不足 1 倍**, 与今天全场的形态一致 (中位数 0.855x, 仅 META 过 1.5x)。||归属于今天的「开支方 vs 供给方」分裂: MRVL 是供给方涨幅第二 (+4.19%, 仅次于 AMD 的 +5.45%), 而四家开支方里三家排在后四位。下一催化剂 12/01 Q3 FY27 财报 (35 天后) 是「all the demand and the supply」表态的兑现检验, 同时也检验 kill condition #2 (「光互联增速两季低于 30%」)。
+
+**Sources.**
+- Barron's: Marvell Stock Is Bouncing Back From a Near 9% Drop. Its COO Says It Has "All the Demand and the Supply" to Hit $20 Billion in Revenue Next Year
+- Barchart: Analysts Hike Their Marvell Technology Forecasts and Price Targets - How to Play MRVL?
+- Investing.com: Rosenblatt names top semiconductor picks amid data-center strength
+
+**Cross-assets.** SPY +0.57% · VIX 17.52 · TEN YEAR 4.993 · FIVE YEAR 4.84 · THIRTY YEAR 5.305 · WTI 100.66 · BRENT 110.07 · DXY 102.344 · GOLD 4075.9 · SILVER 54.45 · BTC 80650.73
+
+**Agent read.** 10/22 建立的成本/供给侧自我强化链条第一次收到反向证据, 来源是公司高管而非卖方。这条要和 Lam/AMAT/ASML 的设备侧证据并列跟踪, 因为两者可以同时为真 (设备紧张 ≠ 每个下游都缺货)。12/01 财报是兑现检验。
+ · Snapshot at `dashboard/2026-10-27.md`
+
+---
 ### 2026-10-22 · -9.72% day · ▼ major
 **Tags:** `competitor_news`, `sector_rotation`, `guidance_cut`
 **Confidence:** high

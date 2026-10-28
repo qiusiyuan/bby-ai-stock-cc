@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-27 · +3.61% day · ▲ material
+**Tags:** `m_and_a`, `partnership_news`, `earnings_pre_print`
+**Confidence:** high
+
+**Primary cause.** **两条具名公司消息, 财报在 10/29 (两天后)。**||(1) **以 $23亿 收购 Classiq, 搭建全栈量子计算平台** —— 量子板块同步跟涨 (IonQ +7% / Rigetti +8%)。(2) **与 Oracle 宣布扩大合作**, 支持 Oracle Cloud Infrastructure 上的企业与 agentic AI。||卖方口径分裂: Wedbush「looks beyond Q3 results」; 「Intel Quantum Acquisition Might Not Be Enough to Make It a Powerhouse」。另两条财报前瞻分别问数据中心营收与处理器营收能否推高 Q3。||**估值与动能的组合是 AI capex 组内最矛盾的一只: 远期 PE 43.09x 为组内最高, 而 21d -19.14% 为组内最差。** 两者只能靠 10/29 的指引解决。||thesis_break $75 缓冲由 10/22 的 +20.7% 松到 **+25.0%**; 量比 **0.84x** (涨 3.61% 而成交量不足 1 倍, 与全场形态一致); MA50 下方 -7.94%; 距 52w 高 -34.15%。||归属今天的「开支方 vs 供给方」分裂: INTC 是供给方涨幅第四 (+3.61%), 供给方五只 +0.90~+4.19% 全正。注意 INTC 是全组远期 PE 最高的一只而今天涨幅居前 —— 这是「加息打击高倍数股」第六次否证的一部分 (今天利率只动 +0.7bp, 前提本身不存在, 但横截面方向是**微弱正相关**: 最便宜的 NVDA 13.69x 涨 0.90%, 最贵的 INTC 43.09x 涨 3.61%)。||**10/29 的判别点 (10/22 原始 yaml 设定, 日期已按 yfinance 校正)**: 指引区间 $15.8-16.8B。落上端 + DC/AI 延续高增速 = 支持 high-teens CAGR 看多部分; 落下端 = 「45% 市值押 foundry 夺 15 个百分点 CPU 份额」的假设更难支撑。同日叠加 AMZN 财报与 SNDK 评分。
+
+**Sources.**
+- Investing.com: Intel to acquire Classiq to build full-stack quantum computing platform
+- 24/7 Wall St.: IonQ Jumped 7%, Rigetti Up 8% on Intel's $2.3 Billion Quantum Buy: "Full-Stack Quantum Computing Business"
+- Business Wire: Intel and Oracle Plan Expanded Collaboration to Support Enterprise and Agentic AI on Oracle Cloud Infrastructure
+- Investing.com: Intel faces test of recovery as Wedbush looks beyond Q3 results
+
+**Cross-assets.** SPY +0.57% · VIX 17.52 · TEN YEAR 4.993 · FIVE YEAR 4.84 · THIRTY YEAR 5.305 · WTI 100.66 · BRENT 110.07 · DXY 102.344 · GOLD 4075.9 · SILVER 54.45 · BTC 80650.73
+
+**Agent read.** 远期 PE 组内最高 (43.09x) 配 21d 组内最差 (-19.14%) 是一个不可长期维持的组合, 10/29 指引是唯一的解决方式。量子收购是叙事而非近期现金流, 不应进估值。
+ · Snapshot at `dashboard/2026-10-27.md`
+
+---
 ### 2026-10-26 · +4.04% day · ▲ material
 **Tags:** `unattributed`, `sector_rotation`, `earnings_pre_print`
 **Confidence:** low

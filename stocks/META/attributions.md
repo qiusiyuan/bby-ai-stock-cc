@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-27 · -1.64% day · ▼ minor
+**Tags:** `secondary_offering`, `partnership_news`, `flow_event`
+**Confidence:** high
+
+**Primary cause.** **全场唯一量比过 1.5x 的标的 (2.18x, 全场中位数 0.855x), 且是唯一值得注意的下跌股 —— 在一个纳指涨 1.27% 的日子里。**||**$250亿 普通股定价 $625/股**, 订单簿约 5 倍超额认购, 折价约 2.7%; 加约 $125亿 强制可转债 = 已定价 $375亿, 总目标近 **$975亿** (口径在 $950亿-$975亿 之间不一致, Motley Fool 与 ctol.digital 给 $97.5B/$975亿, CNBC 与 briefs.co 给 $95B)。**今天 META 收 $620.19, 低于发行价 $625 约 0.77% —— 新股第一天就在水下。**||**反方读法比正方更有解释力。** ainvest: 5 倍超额认购配 2.7% 折价「reflects fast bank placements rather than market demand」, 即这是银行包销的速度而不是市场的需求, 因此是**稀释信号而非需求信号**。支持它的是成交量 —— 2.18x 是全场唯一真正放量的读数。||**这是 10/22 建立的「内生融资 vs 需要外部资本」判别轴连续第四个交易日成立, 且今天是最极端的一次**: META 21d **-16.05%** 为 AI capex 组最差, MSFT 21d **+4.40%** 为组内唯一正收益且唯一在 MA50 上方, 两端裂口 **20.45pp**。10/28 MSFT 与 GOOG 同日财报 + capex 指引是该轴的正式裁决。||**kill-condition / bear-case 错配第六个记录案例。** META 的 thesis Bear (20%, 目标 ≤$400) 三条触发器是: AI 助手分流信息流发现、CPM 增长因隐私监管停滞、反垄断强制拆分 Instagram/WhatsApp —— **今天一条都没发生**。实际在定价的是 AI capex 的融资规模与股权稀释。现价 $620.19 低于 Base 目标 ($650, 50%) 约 4.6%, 落在 Base 与 Bear 之间。||**信用侧的新形态: 用股权绕开债务。** 10/08 以来追踪的通道是「客户发债变贵 → 建设放慢」(10/20 Meta 与 Nvidia 债务保险创纪录; 10/22 四家大科技 CDS 创数月新高; 10/26 Defiance 推出 AIBN 为 AI 建设融资的债券 ETF)。Meta 今天选择**股权而非债务**, 等于主动退出那个通道 —— 代价由现有股东承担而不是由信用市场承担。这对 GEV 等供应链是实质利好 (客户建设能力未被信用市场约束), 对 META 股东是直接成本。
+
+**Sources.**
+- Yahoo Finance: Stock Market Today, Oct. 27: Meta Raises Largest-Ever Equity Offering to Nearly $98 Billion to Fund AI Infrastructure Bet
+- ainvest (opinion): Meta's '5x Oversubscribed' $25 Billion Sale Is a Dilution Signal, Not a Demand Signal
+- briefs.co: Meta's $25 Billion Stock Sale Draws Five Times the Bids as It Chases $98 Billion for AI
+- Motley Fool: NVIDIA Is Buying a Piece of Meta: What the $3 Billion Stake Means
+
+**Cross-assets.** SPY +0.57% · VIX 17.52 · TEN YEAR 4.993 · FIVE YEAR 4.84 · THIRTY YEAR 5.305 · WTI 100.66 · BRENT 110.07 · DXY 102.344 · GOLD 4075.9 · SILVER 54.45 · BTC 80650.73
+
+**Agent read.** 判别轴第四次成立且最极端。最该记住的不是 -1.64%, 而是「全场唯一放量的标的是唯一下跌的那一只」+「收盘低于发行价」。bear case 三条触发器全未发生而价格在 Base 与 Bear 之间, 说明 thesis 的 bear 情景需要重写 —— 它漏掉了 AI capex 的融资维度。10/28 MSFT capex 是判别轴的裁决日。
+ · Snapshot at `dashboard/2026-10-27.md`
+
+---
 ### 2026-10-26 · -1.88% day · ▼ major
 **Tags:** `earnings_post_print`, `sector_rotation`, `macro_rates`, `guidance_raise`
 **Confidence:** high

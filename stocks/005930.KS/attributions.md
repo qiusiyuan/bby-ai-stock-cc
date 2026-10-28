@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-27 · +4.23% day · ▲ material
+**Tags:** `sector_rotation`, `tech_breakthrough`
+**Confidence:** high
+
+**Primary cause.** **+4.23% 至 ₩222,000, 完全反转 10/26 的形态 (当日是组内唯一下跌且量比 0.65x 组内最低)。**||驱动与本线同源: 补 10/26 美股 Anthropic 反弹 (「Asia stocks jump as Anthropic IPO filing revives AI trade」) + Sammy Fans 报道 **Q3 韩国 HBM 出口首破 50 万亿韩元** (两家同时受益的国家级口径, 非公司级份额数据) + BofA 预判两家会上调股东回报。||**10/26 的记录是「Bernstein 称三星 3Q26 HBM 营收已反超 SK Hynix (Korea Herald) 而三星当天 -1.16% 且量比 0.65x 组内最低 → 利好在零成交量下被忽略 = 尚未定价而非被否决」。今天 +4.23% 是对该判断的部分确认 —— 但量比仍只有 0.82x 不足 1 倍, 且涨幅低于 SK Hynix 本线的 +5.18%, 所以「反超」这条叙事仍未被单独定价, 今天涨的是整个韩国内存板块。**||**HBM4 进度出现两条互相矛盾的新证据**: Crypto Briefing 称三星 **2 月向 Nvidia 出货 12 层 HBM4**, 8 层版本计划 2027 (但其正文又称两家都在 2 月出 8 层, 竞争焦点在良率); ad-hoc-news 16 天前称 **SK Hynix 已开始 HBM4 量产出货**。若都成立则 SK Hynix 领先约一个季度, 与 10/26 引用的 Chosunbiz「HBM4 延迟」方向相反。证据等级 low。||**新的结构信息: 两家走相反架构。** Tech Times (SEDEX 2026): 「Samsung chases faster HBM4, SK Hynix goes taller」—— 三星赌速度, SK Hynix 赌堆叠层数。**这意味着「谁领先」短期内不是单维问题, 客户 (Nvidia) 的选择会在 2027 年 2 月的出货里给出第一个答案。** 这是 SKHY thesis 的 Bear 第一条触发器 (「Samsung breaks through HBM4 qualification faster than expected」) 的正式裁决窗口。||30d -17.63% / MA50 下方 -12.62% / 距 52w 高 -40.72% / 远期 PE 3.07x。另: 「Apple's $2,000 foldable iPhone Duo faces a durability test」—— 三星同时是内存卖方与显示面板供应方, 该条对其是双向暴露。
+
+**Sources.**
+- Reuters: Asia stocks jump as Anthropic IPO filing revives AI trade
+- Sammy Fans: AI demand boosts Samsung and SK Hynix as HBM exports cross 50 trillion won
+- Crypto Briefing: Samsung ships 12-layer HBM4 to Nvidia in February; 8-layer variants planned for 2027
+- Tech Times: Samsung chases faster HBM4, SK Hynix goes taller: Korea's AI memory war begins
+
+**Cross-assets.** SPY +0.57% · VIX 17.52 · TEN YEAR 4.993 · FIVE YEAR 4.84 · THIRTY YEAR 5.305 · WTI 100.66 · BRENT 110.07 · DXY 102.344 · GOLD 4075.9 · SILVER 54.45 · BTC 80650.73
+
+**Agent read.** 10/26 的「利好在零成交量下被忽略」部分确认 (今天涨了), 但量比仍 0.82x 且涨幅低于 SK Hynix 本线 → 「HBM 营收反超」这条叙事仍未被单独定价。最有价值的新信息是架构分叉 (三星赌速度 / SK Hynix 赌层数), 它把 SKHY 的 Bear 第一条触发器的裁决日锚定到 2027 年 2 月的 Nvidia 出货。
+ · Snapshot at `dashboard/2026-10-27.md`
+
+---
 ### 2026-10-26 · -1.16% day · ▼ minor
 **Tags:** `competitor_news`, `memory_pricing`, `earnings_pre_print`, `analyst_downgrade`
 **Confidence:** medium

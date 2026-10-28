@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-27 · +5.18% day · ▲ material
+**Tags:** `earnings_pre_print`, `sector_rotation`, `analyst_upgrade`
+**Confidence:** high
+
+**Primary cause.** **本线 +5.18% 至 ₩1,341,000, 全组最强, 且整段交易发生在自己的 3Q26 财报之前 (财报于韩国时间 10/28 公布)。**||驱动是补 10/26 美股的 Anthropic S-1 反弹 (Reuters: 「Global chip, AI stocks surge on Anthropic IPO cheer」; 「Asia stocks jump as Anthropic IPO filing revives AI trade」) + 两条卖方口径: Cantor Fitzgerald $250 目标称「selloff went too far」, BofA 4 天前预判 SK Hynix 与 Samsung 会上调股东回报 (今天被财报证实)。||**财报本身 (韩国时间 10/28, 美股 10/27 收盘后) 创纪录**: 营收 **104.6155 万亿韩元** (首次破 100 万亿), 营业利润 **83.3338 万亿韩元**, 营业利润率 **79.7%**, 股东回报计划约 100 万亿韩元 (约 $755亿)。Bloomberg: 「Profit Jumps Seven-Fold to Soothe Doubts Over AI Rush」; CNBC: 「sharply beats estimates」。||⚠️ **口径保留 (必须随此记录一起保存):** 79.7% 的营业利润率按内存行业历史标准不可能 (周期顶部优秀季度通常 40-55%), 且 104.6 万亿韩元约等于 $790亿 的单季营收是该公司历史规模的数倍。两种可能: (a) 该读数为**累计 (9 个月) 口径**而非单季, 韩国披露惯例常见; (b) 本轮超级周期确实到了无先例水平。检索到的来源之一 (Yahoo Finance 转述) 自己标注了「80% 的利润率对内存厂商看起来不可信, 核对原始发布前请视为未经证实」。**在 SK Hynix IR 原始发布 / DART 披露核对前, 不以这三个绝对数字作为任何加权调整依据** —— 可依据的只是方向性事实: 创纪录、大幅超预期、利润七倍、股东回报扩大。||**对 10/26 临时重新加权 (25/40/35) 的影响: 方向性正面但不足以逆转, 维持不动。** (i) Base 前提「maintains >50% HBM share」得到间接支撑 (量级与份额大幅流失不相容), 但**无任何来源给出 HBM 份额百分比**, 所以 Bernstein 的「三星营收反超」既未确认也未否证; (ii) Bear 第一条触发器「Samsung breaks through HBM4 qualification faster than expected」仍部分点火, 但今天的两条新证据互相矛盾 —— Crypto Briefing 称三星 2 月向 Nvidia 出货 12 层 HBM4 (正文又称两家都在 2 月出 8 层), 而 ad-hoc-news 16 天前称 SK Hynix **已开始 HBM4 量产出货**, 若都成立则 SK Hynix 领先约一个季度而非落后; (iii) **新结构信息: 两家走相反架构** (Tech Times/SEDEX 2026: 「Samsung chases faster HBM4, SK Hynix goes taller」) —— 三星赌速度, SK Hynix 赌堆叠层数, 客户选择的第一个答案在 2027 年 2 月的出货里。||另: Solidigm 据报商谈在美建厂 **$450亿** 投资; Sammy Fans 称 Q3 韩国 HBM 出口首破 50 万亿韩元。**CXMT 第 36 天: 六项技术细节仍一项未动 (节点/位密度/DDR5-HBM 指认/时间表/产能/第三方良率)** —— 10/26 曾把本线财报标为「免费裁决日」, 今天的财报里未检索到任何 CXMT 相关披露, 该判别点落空, 下一个窗口是 11/17 NVDA 或 12/23 MU。
+
+**Sources.**
+- CNBC: SK Hynix third-quarter profit sharply beats estimates on AI memory boost
+- Bloomberg: SK Hynix Profit Jumps Seven-Fold to Soothe Doubts Over AI Rush
+- en.sedaily: SK hynix Posts Record 79.7% Operating Margin in Third Quarter
+- Tech Times: Samsung chases faster HBM4, SK Hynix goes taller: Korea's AI memory war begins
+- Benzinga: SK Hynix's Solidigm Reportedly In Talks Over $45B Investment In US Chip Plant
+
+**Cross-assets.** SPY +0.57% · VIX 17.52 · TEN YEAR 4.993 · FIVE YEAR 4.84 · THIRTY YEAR 5.305 · WTI 100.66 · BRENT 110.07 · DXY 102.344 · GOLD 4075.9 · SILVER 54.45 · BTC 80650.73
+
+**Agent read.** 创纪录财报 + 预测裁决同日, 但三个绝对数字有口径疑问且 HBM 份额的关键数字缺失 → 10/26 的 25/40/35 维持。真正要追的是 IR 原始发布里的两件事: 营收是单季还是累计口径、以及有没有 HBM 份额表述。前者决定数字能否进估值, 后者是 Base 前提与 Bernstein 说法的唯一裁决。
+ · Snapshot at `dashboard/2026-10-27.md`
+
+---
 ### 2026-10-15 · -11.06% day · ▼ extreme
 **Tags:** `competitor_news`, `memory_pricing`, `sector_rotation`, `macro_inflation`
 **Confidence:** high

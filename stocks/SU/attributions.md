@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-27 · -4.10% day · ▼ material
+**Tags:** `macro_oil`, `geopolitical_war`, `flow_event`
+**Confidence:** medium
+
+**Primary cause.** **全场最弱 (-4.10%), 零公司级新闻, 组内唯一量比过 1 倍 —— 获利了结形态而非基本面重估。**||**宏观驱动是德黑兰和谈削掉战争溢价, 而关键在于基准: Brent -4.96% 而 WTI 只 -1.08%**, Brent-WTI 价差由 $14.05 塌到 $9.41 (-33%)。Reuters/Euronext: 原油「settled down by nearly $2 a barrel as traders focused on Middle East peace talks」; OilPrice: 「renewed Middle East diplomacy raised hopes of peace」。战争溢价是海运运输风险的定价, 存在于 Brent 而几乎不存在于 WTI (美国内陆)。**所以今天能源股必须对 Brent 口径归因。**||**10/26 的「不对称 beta」模型检验结果: 基准选错, 系数大致对。** 模型 (下行捕获 SU 31% / CVX 35% / CNQ 47% / HXE -3%, 均值 28%) 在两个口径下的表现:||• 对 **WTI (-1.08%)**: SU 380% / CVX 151% / CNQ 175% / HXE 123% → **模型全败**||• 对 **Brent (-4.96%)**: SU 82.7% / CVX **32.9%** / CNQ 38.1% / HXE 26.8% → **CVX 几乎精确命中 (模型系数 35%, 预测 -1.74% vs 实际 -1.63%)**, CNQ 方向对幅度偏低, HXE 的 -3% 系数被修正 (该系数一直是 n=1 拟合残差, 「油跌时 HXE 微涨」物理上不成立)||**修正的是基准不是不对称性。** 模型隐含假设「油价是一个变量」; 实际**地缘驱动的冲击走 Brent, 需求/库存驱动的走 WTI**, 两者 beta 不同。系数今后须按冲击来源分别标注。这是一次有信息量的失败。||**SU 是唯一真正的异常 (82.7% 捕获, 是其他三只 26.8-38.1% 的 2.2-3.1 倍), 解释不在油价里。** 四条可核查事实: (1) **零公司级新闻** —— 最新一条是 MarketWatch 10/26「Suncor Energy Inc. stock rises Monday」, 方向是涨; 无降级、无指引、无运营事故、无油砂政策; (2) **刚从 52 周高点回落** —— MarketWatch 记录 SU 于 **10/22 创 52 周高 C$112.80**, 10/26 收盘仅低于该高点 1.2%, 今天 -4.10% 把距离拉到 -5.02%; (3) **组内唯一量比过 1 (1.02x)** vs CVX 0.72x / CNQ 0.74x / HXE 0.94x —— 10/22 曾记录 CVX 0.38x / SU 0.55x 为全场最低并据此判断「买盘缺席非卖盘出现」, **今天卖盘第一次真的出现**; (4) **11/03 Q3 财报 (MarketScreener 确认美东 19:00 后), 7 天后, 与美国中期选举同日**。||**30 天脱钩仍成立且方向对股票有利**: WTI 30d **-4.89%** 而四只全正 (SU +6.05 / HXE +6.61 / CNQ +4.89 / CVX +4.80), 裂口 9.7-11.5pp; 对 Brent 30d +1.21% 裂口 3.6-5.4pp。连续第三份报告成立。||**实体侧紧张一条未缓解**: 美国战略储备处 **1982 年以来最低**, 汽油「Costlier Than Under Biden」; Reuters 指出油价仍「near the highest in six months as the Houthi」袭击持续; OPEC+ 周日预期**维持配额**而伊朗「Demands Implementation Under War Conditions」。今天出掉的只是和谈**预期**那一层。EnergyNewsBeat 把时间框架点明: 「Deal or Escalate: U.S. Oil Back Under $100 One Week Before the Election」—— 距 11/03 中期选举 7 天, 而 10/22 NYT 曾称美以方案「设在中期选举后」。
+
+**Sources.**
+- Reuters/Euronext: Oil falls near $2 as Middle East talks help ease supply worries
+- EnergyNewsBeat: Deal or Escalate: U.S. Oil Back Under $100 One Week Before the Election
+- MarketWatch: Suncor Energy Inc. stock rises Monday, still underperforms market
+- MarketScreener: Suncor Energy to release third quarter 2026 financial results
+- MT Newswires: Sector Update: Energy Stocks Fall Tuesday
+
+**Cross-assets.** SPY +0.57% · VIX 17.52 · TEN YEAR 4.993 · FIVE YEAR 4.84 · THIRTY YEAR 5.305 · WTI 100.66 · BRENT 110.07 · DXY 102.344 · GOLD 4075.9 · SILVER 54.45 · BTC 80650.73
+
+**Agent read.** 两条可复用的结论。(1) 能源股归因必须用 Brent 而非 WTI, 因为地缘冲击只在 Brent 上表达 —— 同一组不对称系数换分母就从成立变否证, CVX 在 Brent 口径下几乎精确。(2) Brent-WTI 价差本身是伊朗局势的最佳日度跟踪指标, 它量度的正是战争溢价。SU 的超额下跌由位置 (刚创 52w 高 + 唯一有卖盘) 解释, 11/03 财报是该假设的直接裁决。
+ · Snapshot at `dashboard/2026-10-27.md`
+
+---
 ### 2026-10-22 · -1.63% day · ▼ minor
 **Tags:** `geopolitical_war`, `macro_oil`, `commodity_move`, `sector_rotation`
 **Confidence:** high

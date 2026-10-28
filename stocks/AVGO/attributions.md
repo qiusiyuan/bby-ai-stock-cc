@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-27 · +4.00% day · ▲ material
+**Tags:** `partnership_news`, `analyst_upgrade`, `flow_event`
+**Confidence:** high
+
+**Primary cause.** **Broadcom 为 Anthropic 安排 $630亿 设备租赁融资, 10/26 标记的「风控线最近 × 催化剂最远」在一天内解决了一半。**||结构 (briefs.co / Yahoo Finance / ctol.digital): 总包 **$630亿**, 拆为约 **$420亿 贷款 + 最高 $210亿 投资级债券** (由安排行发行, 计划 **2027 年初**), 形式是**芯片租赁融资**而非直接采购, **Broadcom 承担 first lien** 信用支持; ctol 称 Broadcom 的 AI 背书总敞口最高达 **$725亿**。Yahoo 标题「Banks Eye $21 Billion of Bonds for Broadcom Chip-Financing Deal」。||**风控位置改善**: thesis_break $300 缓冲由 10/26 的 **+9.7% 松到 +14.1%**, 距 52w 低由 +13.5% 升到 +18.1%, 离开 10% 预警带。||**但结构性问题反而加重, 这是本条记录的核心。** Broadcom 现在既是卖方又是客户的信用担保人。「first lien」意味着 Anthropic 若违约, Broadcom 排在损失最前面。**这不是 10/08 以来追踪的「客户借钱变贵」(需求传导), 而是卖方把客户的信用风险搬到自己账上 (资产负债表传导) —— 一个新的传导通道。** Fitch 同日的措辞明确承认: 「affirms Broadcom at A- with positive outlook **despite AI backstop risks**」。||**兑现在远端**: $210亿 债券要到 2027 年初才发行, 所以 12/09 Q4 FY26 财报 (43 天后, AI capex 组最远) 只能看到承诺不能看到现金。**催化剂最远的问题没有被解决** —— 10/26 标记的组合里只有「风控线最近」这一半被修掉。||**11/15 前后的 Anthropic IPO 定价是这 $630亿 交易对手方信用风险的唯一市场裁决。** 若定价顺利, first lien 的实际风险下降; 若延期或折价, Broadcom 的背书敞口被重新定价。注: Michael Burry 今天明确表示 Anthropic 的 S-1 没有改变他的 AI 空头论点, 并点出「技术之外的财务风险」; Seeking Alpha 的反向口径是 Anthropic IPO 在为 Broadcom 的看多论点「derisking」。两种读法今天同时存在。||远期 PE 17.59x 为 AI capex 组第二低, 量比 1.13x, MA50 下方 -3.41%, 距 52w 高 -30.84%。
+
+**Sources.**
+- Yahoo Finance: Banks Eye $21 Billion of Bonds for Broadcom Chip-Financing Deal
+- briefs.co: Broadcom arranges $63B package to fund Anthropic's data-center gear
+- ctol.digital: Broadcom's AI backstops reach up to $72.5bn. Who takes the losses?
+- Investing.com: Fitch affirms Broadcom at 'A-' with positive outlook despite AI backstop risks
+- Barchart: Nasdaq Jumps 308 Points on Broadcom's Big Anthropic Deal: Stock Market Today
+
+**Cross-assets.** SPY +0.57% · VIX 17.52 · TEN YEAR 4.993 · FIVE YEAR 4.84 · THIRTY YEAR 5.305 · WTI 100.66 · BRENT 110.07 · DXY 102.344 · GOLD 4075.9 · SILVER 54.45 · BTC 80650.73
+
+**Agent read.** 收入侧的好消息掩盖了一个新的风险通道: 卖方承担 first lien = 客户信用风险上了卖方的资产负债表。这与 10/08-10/26 追踪的「客户借钱贵→建设放慢」是不同的机制, 应作为独立通道跟踪。裁决点不是 12/09 财报 (只看承诺) 而是 11/15 前后的 Anthropic IPO 定价。
+ · Snapshot at `dashboard/2026-10-27.md`
+
+---
 ### 2026-10-22 · -4.06% day · ▼ material
 **Tags:** `sector_rotation`, `competitor_news`
 **Confidence:** medium

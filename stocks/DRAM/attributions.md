@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-27 · +4.41% day · ▲ material
+**Tags:** `sector_rotation`, `flow_event`, `earnings_pre_print`
+**Confidence:** high
+
+**Primary cause.** **ETF 层涨幅 (+4.41%) 高于其任一美国成分股 (MU +2.77% / SKHY +1.92% / SNDK +3.92%), 说明涨幅主要来自韩国本线权重 (000660.KS +5.18% / 005930.KS +4.23%)。**||驱动是补 10/26 美股的 Anthropic S-1 反弹 (Reuters: 「Global chip, AI stocks surge on Anthropic IPO cheer」) + BofA 转多内存 + SK Hynix 3Q26 创纪录 (韩国时间 10/28, 美股 10/27 收盘后)。另: 「Money Surges into APAC ETFs as Investors Diversify」。||**量比 1.21x —— 连续第二份报告里 ETF 层的成交量高于其美国成分股 (MU 0.87x / SNDK 0.82x), 这是「买板块不买个股」的形态。** 对照 SKHY ADS 1.24x: 换手集中在**美国可交易的载体** (ADS + ETF) 而非韩国本线 (0.92x / 0.82x), 与「被动跟随前夜美股」一致。||30d -8.80% / MA50 下方 -10.47% / 距 52w 高 -37.96% / 距 52w 低 +93.0%。||注: `stocks/DRAM/triggers.yaml` 无 thesis_break_price (ETF, 按 tracker 流程管理)。其预设触发条件之一「DRAM 5 日跌超 15%」在 10/14-10/22 期间曾接近, 现 5d 为 +5.74%, 已远离。
+
+**Sources.**
+- Reuters: Global chip, AI stocks surge on Anthropic IPO cheer
+- 24/7 Wall St.: Micron Climbs 4% as Bank of America Grows More Positive on Memory; Western Digital Rises 5%, SanDisk Gains 3%
+- ETF Trends: Money Surges into APAC ETFs as Investors Diversify
+
+**Cross-assets.** SPY +0.57% · VIX 17.52 · TEN YEAR 4.993 · FIVE YEAR 4.84 · THIRTY YEAR 5.305 · WTI 100.66 · BRENT 110.07 · DXY 102.344 · GOLD 4075.9 · SILVER 54.45 · BTC 80650.73
+
+**Agent read.** ETF 的量比连续两天高于美国成分股 = 板块层面的被动买入, 而非个股选择。这个形态配合「换手集中在美国可交易载体」的观察, 支持 SKHY 溢价的结构性解释 (美国资金只能通过 ADS/ETF 表达对韩国内存的看法)。
+ · Snapshot at `dashboard/2026-10-27.md`
+
+---
 ### 2026-10-22 · -6.97% day · ▼ material
 **Tags:** `memory_pricing`, `flow_event`, `competitor_news`, `sector_rotation`
 **Confidence:** high
