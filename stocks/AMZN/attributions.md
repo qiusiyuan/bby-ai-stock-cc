@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-29 · -4.25% day · ▼ material
+**Tags:** `earnings_print`, `guidance_inline`
+**Confidence:** high
+
+**Primary cause.** **收盘 −4.25%(量比 2.09x 全场第二), 盘后财报后 −7.6% 至约 $225(隔夜 Blue Ocean ATS 报 $225.23 / −7.61%)。方向与幅度按盘后记。** 数据取自 SEC 8-K Ex-99.1 原文(accession 0001018724-26-000038), 非媒体转述。||**经营层是一份极强的财报**: 净销售额 $2,019亿 +12%(FX调整后+13%; Prime Day 时点变化拖累约400bp)/**营业利润 $281亿、营业利润率 13.9% 为 Amazon 史上最高**/**AWS $460亿 +39.3% 为近五年最快增速**, 年化运行率 $1,840亿/**AWS 营业利润 $178亿 vs $114亿**(AWS营业利润率约38.7%, 同比提升)/北美 $1,129亿 +6%(营业利润$87亿 vs $48亿)/国际 $431亿 +5%。Jassy: AWS 将是「**$1万亿 的生意**」, 2027与2028两年营收增速均超 **40%**。||**被定价的是现金流: 季度 capex $772.59亿 vs 去年同期$350.95亿 = +120%; 季度经营现金流 $424.22亿 → capex÷OCF = 182.1%。TTM 自由现金流由一年前 +$148亿 流入变成 −$424亿 流出(摆动$572亿), 公司原文把原因写成「主要反映对人工智能的投资」(PP&E 购置净额同比增加 $948亿)。经营现金流 TTM $1,683亿 +29%。** Reuters 把整天写成一句: 「**Amazon burns cash, Intel flags weak PC demand as AI boom's costs ripple across markets**」。||**★这是今天最重要的一条: AMZN 的数字排除了「现金流为负是 Alphabet 的个体选择」这个解释, 并给出三个样本里最极端的比率。同一个 7-9 月季度: MSFT 67.9%(FCF +$186.33亿, 盘后+2.28%→今天−0.16%)/GOOG 121.4%(−$90.65亿, 盘后−9.41%→今天−12.29%)/AMZN 182.1%(季度约−$335亿, TTM−$424亿, 盘后−7.6%)。惩罚幅度与比率单调对应, 而三家需求侧全部加速 → 10/22 建立的「内生融资 vs 需要外部资本」判别轴现在有了可每季计算的形式, 且已是 hyperscaler 的普遍状态而非个体选择。**||**报表 EPS 的下滑同样不是经营问题**: 净利 $207亿/摊薄EPS $1.89 低于去年 $212亿/$1.95, 公司明确说明主因是**去年同期来自 Anthropic 投资的 $95亿 税前收益**这个基数。与 GOOG 的 $209.80亿 证券重估摆动是同一种结构 → **对持有大额股权投资的公司, 看营业利润与 capex÷经营现金流, 不看报表 EPS。**||**昨天(10/28)预设的观察指标被决定性否定而价格仍跌**: timeline.yaml 原文「关键跟踪指标: AWS 营业利润率(当前约39%)。若利润率下降+收入增速同时减速=卖出信号」—— 实际 AWS 增速加速到 +39.3%(近五年最快)且营业利润率由约34.5%提升到约38.7%, **两项同时朝相反方向走, 而股票盘后跌7.6%**。即预设的判据抓错了变量, 真正的变量是 capex÷OCF。||**张力的核心(Jassy 口径最直白)**: 增长的可见性在提升(AWS $1万亿 目标 + 两年40%+增速指引), 而现金回收的时点仍然不可见(TTM FCF −$424亿)。市场今天不接受「增长会来、现在先垫付」这个框架。||风控: thesis_break $185, 收盘缓冲 +31.8%(盘后约 +21.7%)。MA50 下方 −4.27%, **MA200 上方仅 +0.17%**(即 MA200 约 $243.4, 盘后价已在其下方), 距 52w 高 −15.11%, 远期 PE 23.33x, put/call 0.39 组内偏低。建议加同一条触发器: 「自由现金流连续两季为负, 或 capex÷经营现金流连续两季超过100%」—— 按 TTM 口径已触发。
+
+**Sources.**
+- {"type": "filing", "title": "AMAZON.COM ANNOUNCES THIRD QUARTER RESULTS (SEC 8-K Ex-99.1, accession 0001018724-26-000038)", "publisher": "SEC EDGAR"}
+- Reuters: Amazon burns cash, Intel flags weak PC demand as AI boom's costs ripple across markets
+- MT Newswires: Amazon Third-Quarter Results Miss Views as AI Spending Drives Negative Cash Flow
+- Benzinga: AMZN Stock Drops 7% As AI Spending Soars Past Expectations, While E-Commerce Growth Cools
+- TechCrunch: AWS will be a $1T business, Jassy says. But first, it will spend big.
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-22 · -4.82% day · ▼ material
 **Tags:** `sector_rotation`, `earnings_pre_print`
 **Confidence:** high

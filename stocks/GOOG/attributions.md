@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-29 · -12.29% day · ▼ extreme
+**Tags:** `earnings_post_print`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **−12.29% 创纪录蒸发约 $5,000亿 市值, 史上最差财报日**(Barron's「Alphabet Is Having Its Worst Earnings Day Ever」/「Google Erases a Record $500 Billion as AI Eats Into Sales」)。量比 **4.62x 为全场最高**, 5d −11.98%, 30d −17.85%, MA50 下方 16.20%, MA200 下方 16.64%。整个通信服务板块被拖累(「Alphabet's Disappointing Earnings Decimate Communication Services」)。||**🚨风控: 现价 $282.32 距 thesis_break $280 仅 +0.8%, 距 52 周低点仅 +4.02%(10/28 为 +19.43%) —— 一天之内从距 52w 低第四位跳到第一位, 取代 NOK 成为全场最紧的一条风控线。两天累计 −20.5%。**||**驱动不是经营恶化。** 10/28 财报(SEC 8-K Ex-99.1)数字: 营收 $1,275.77亿 **+25%**(第13个连续双位数季, 小幅超共识$1,272.2亿)/营业利润 $405.76亿 **+30%**/营业利润率 31.8%(上年31%)/**Google Cloud +103% 至$307.09亿, 云营业利润 $111.21亿 +209%, 利润率 23.7%→36.2% 跳升12.5pp**/Search & other +12% 至$633.50亿。**真正打穿价格的是现金流: capex $513.55亿(+114%) 超过经营现金流 $422.90亿 → capex÷OCF = 121.4%, 自由现金流 −$90.65亿 连续第二季为负(Q2 −$58.55亿→Q3 −$90.65亿 在加深), 同季另募 $411亿 外部资本(ATM增发$124亿+高级无抵押债$287亿)。**||**今天的决定性新信息是 AMZN 给出了第三个样本并排除了「这是 Alphabet 的个体选择」: 同一个 7-9 月季度, MSFT capex÷OCF 67.9%(FCF +$186.33亿)/GOOG 121.4%(−$90.65亿)/**AMZN 182.1%(季度约−$335亿, TTM −$424亿)**。惩罚幅度严格按这个比率单调排序: MSFT 今天 −0.16%、GOOG −12.29%、AMZN 盘后 −7.6%。而三家的需求侧全部在加速(Azure +48%/Google Cloud +103%/AWS +39.3% 近五年最快) → **被定价的不是需求, 是现金。**||**EPS 的「miss」不是今天下跌的原因**: 共识$3.02 实际$2.12, 差额全在 `Other income (expense), net` 由 +$127.59亿 变 −$82.21亿(摆动 −$209.80亿), 构成是持有股权投资按市价重估。AMZN 同日是同一结构(净利下滑主因是去年同期 Anthropic 投资的 $95亿 税前收益基数) → **对持有大额股权投资的公司, 看营业利润与 capex÷经营现金流, 不看报表 EPS。** 另: GOOG 今年前九个月报表利润约 63% 来自证券重估($1,267.55亿收益/净利$2,012.39亿), 尾随 PE 被美化, 远期 18.65x 才是可用数字。||**三条 kill condition 在财报里有两条被具名数据明确否定, 而价格两天跌 20.5%**: #1「Search query volume 连续两季同比下降」→ Pichai 称同比查询量增速**五年来最高**, 被具名否定; #2「DOJ 结构性拆分」→ 无进展; #3「Cloud 连续两季流失份额给 AWS/Azure」→ Cloud +103% 是 Azure 增速的 2.1 倍、利润率跳升 12.5pp, 被数据否定。**真正打穿价格的机制(capex 超过经营现金流→FCF 转负→需要外部资本)在三条里完全不存在**, 与 META 的缺口类型相同(META 的 re_read_trigger 把 capex 当定性条件而非定量扣除项)。||**$280 这条线当初的设定理由(thesis.md 原文「~24% below current; near bear-case scenario price」)度量的是「市场放弃对 Alphabet 的成长定价」, 而逼近它的机制是现金流 —— 经营层面营收+25%/营业利润+30%/利润率扩张/Cloud 增速是 Azure 的2.1倍。即这条线正在被一个与设定理由不同的机制击穿**(与 NOK 结构相同: 击穿线的是成本过账能力而触发器写的是需求与竞争)。||按今天数据重新加权的情景(原 thesis 权重未针对现金流情景设定): Bull 30% $380-420(Cloud+103%与查询量五年最高增速被重定价+capex指引给出峰值路径)/Base 45% $300-340(经营质量最终压过现金流担忧但需两个季度)/Bear 25% $230-270(FCF 连续第三季为负+外部融资持续→跌破$280后以52w低$271为下一支撑)。||建议触发器: 给 GOOG/AMZN/META 加同一条「自由现金流连续两季为负, 或 capex÷经营现金流连续两季超过100%」—— 按此 GOOG 与 AMZN 已触发、META 触发一半, 统一措辞便于横向比较。下次公司口径: 财报已过, 90 天内无公司级硬日历。
+
+**Sources.**
+- {"type": "filing", "title": "Alphabet Announces Third Quarter 2026 Results (SEC 8-K Ex-99.1, accession 0001652044-26-000080)", "publisher": "SEC EDGAR"}
+- Barron's: Alphabet Is Having Its Worst Earnings Day Ever. Here's What It Means for Your ETFs
+- (aggregated): Google Erases a Record $500 Billion as AI Eats Into Sales
+- MT Newswires: Update: US Equity Indexes Decline as Alphabet's Disappointing Earnings Decimate Communication Services
+- Barron's: Alphabet Stock Drops 12%. Can Its Dividend Survive the AI Spending Boom?
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-28 · +1.60% day · ▼ major
 **Tags:** `earnings_print`, `earnings_post_print`
 **Confidence:** high

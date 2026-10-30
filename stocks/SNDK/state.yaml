@@ -2,7 +2,7 @@ ticker: SNDK
 active: true
 tags: [ai, memory]
 added: 2026-08-14
-last_checked: 2026-10-27
+last_checked: 2026-10-29
 last_quarterly_review: null
 last_annual_refresh: 2026-08-14
 max_weight_pct: null
@@ -12,4 +12,8 @@ earnings_watchlist:
   scoring_date: 2026-10-29   # 2026-10-01 校正: yfinance calendar + build_timeline 合并结果给出 10-29 (原记 11-04 为近似值)。评分窗口 ±7d 自 10/22 打开
   scoring_window: 7d
   thesis_claim: "SNDK 从 NAND 周期股 re-rate 为结构性现金牛 — FY27 指引 ($10.3-10.8B rev / $44-46 EPS) 兑现 + 半数营收转 FCF 模型可信 + 毛利率 (84.6% 峰值) 不快速回落"
-  status: pending            # pending | scored | invalidated
+  status: scored             # pending | scored | invalidated
+  scored_on: 2026-10-29
+  scored_verdict: validated  # Tier 1 两项可测量门槛全部超出上沿 (营收 $11,031M vs 承诺上沿 $10.8B; 非GAAP EPS $49.51 vs 上沿 $46); 毛利率 85.0% 继续上行而非回落; datacenter +61% QoQ。缺口: 「半数营收转FCF」8-K未披露待10-Q补评; HBF design win 未回答 (门槛2027年中)
+  scored_notes: "好数字换来 -5.32% + 隔夜 -4.29%; 8/06 sell-the-news 判据不适用 (进财报 5d 仅 +5.48%)。同日 Samsung 芯片利润+15倍仍跌4.13% = 板块已把好数字完整计入。唯一坏消息 Consumer -29% QoQ/-39% YoY 坐实 kill#3 后半边。⚠11/20 八拆一后须把 thesis_break_price 由 1200 改为 150"
+

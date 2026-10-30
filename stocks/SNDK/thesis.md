@@ -104,3 +104,44 @@ Quarterly | Datacenter revenue growth rate + gross-margin trend
 **Scoring date: 2026-11-04**(Q1 FY27 财报)。评分标准:(1) FCF 转化率是否兑现 Investor Day 口径;(2) 毛利率是否守住 80%+;(3) 是否首次出现长协/承诺产能的官方披露。**注意 11/4 只验一个季度，不验 FY30 —— 真正的周期属性测试是 FY27 全年能否穿越一次 NAND 价格回调。**
 
 *(记录于 dashboard/2026-08-17.md Semi Deep Dive §4;结构化索引 attributions/index.jsonl 2026-08-17 SNDK 已同步修正)*
+
+---
+
+### 2026-10-29 — 🎯 财报评分日：Q1 FY27 兑现，thesis 核心主张被证实（verdict: validated）
+
+**claim（2026-10-01 预先承诺）:**「SNDK 从 NAND 周期股 re-rate 为结构性现金牛 — FY27 指引 ($10.3-10.8B rev / $44-46 EPS) 兑现 + 半数营收转 FCF 模型可信 + 毛利率 (84.6% 峰值) 不快速回落」
+
+**实际（SEC 8-K Ex-99.1, accession 0001628280-26-068243；均为拆股前口径）:**
+
+| 门槛 | 实际 | 判定 |
+|---|---|---|
+| 营收 $10.3–10.8B | **$11,031M**（+23% QoQ / **+378% YoY**） | ✅ 超上沿 2.1% |
+| 非 GAAP EPS $44–46 | **$49.51**（GAAP $52.60，+20% QoQ） | ✅ 超上沿 7.6% |
+| 毛利率不快速回落（84.6% 前季峰值） | **GAAP 85.0% / 非 GAAP 85.1%**，继续上行 +0.4~0.5ppt；YoY 29.8%→85.0%（+55.2ppt） | ✅ 方向与担忧相反 |
+| 数据中心增速维持 | **Datacenter $4,802M，+61% QoQ**（上年同期 $269M）；占营收 11.7%→**43.5%** | ✅ 大幅超出 |
+| 「半数营收转 FCF」首个数据点 | **8-K 未披露 FCF**。代理：本季返还股东 **$50亿**（≈营收 45.3%），回购约 320 万股；两季累计 600 万股 ≈ 总股本 4% | ◐ **口径未取到，待 10-Q 补评** |
+| HBF design win | 8-K 零提及 | ❌ 未回答（kill #4 时间门槛在 2027 年中） |
+
+**Q2 FY27 指引再上调:** 营收 $12,200–12,600M（+11~14% QoQ，指引下沿已高于本季实际）、非 GAAP EPS **$55.00–57.00**、毛利率 84.4–85.4%（中枢与本季持平 = 管理层不预期回落）。另宣布 **8 拆 1 正向拆股**（11/09 登记 / 11/19 收盘后发行 / 11/20 拆股后开盘）。
+
+**verdict: validated（主体兑现）。** 两个可测量的 Tier 1 门槛全部超出上沿，毛利率继续上行而非回落；一项（FCF）口径未取到待 10-Q；一项（HBF）未回答且时间门槛未到。
+
+**对 8/17 记录的三条待验证项的回应:**
+- 「FCF 转化率是否兑现 Investor Day 口径」—— **仍未取到口径**，8-K 无 FCF 行。CEO Goeckeler 原话仅定性：「delivering **growing and durable free cash flow**」。这一环连续两次成为评分的缺口。
+- 「毛利率是否守住 80%+」—— **兑现且远超**（85.0%，指引中枢 84.4–85.4%）。8/17 撤回的「84.6% 几乎确定是周期峰值」这个撤回是对的：84.6% 不是峰值。
+- 「是否首次出现长协/承诺产能的官方披露」—— **零命中**。8-K 无 long-term agreement / committed capacity / take-or-pay 措辞。**去周期化仍然缺少可验证的会计事实这一环。**
+
+**结构性发现（超越原 claim 的表述）:** 一年之内 Consumer 段由占营收 **28.3% → 3.6%**，Datacenter 由 **11.7% → 43.5%**，毛利率 29.8% → 85.0%。这不只是同一业务的周期上行，而是**收入结构的替换**。它同时解释了毛利率的跃升（datacenter NAND 定价权远高于 consumer）以及 Consumer −39% YoY 为何没有伤到整体（已只剩 3.6%）。
+
+**唯一的坏消息:** **Consumer 段 $397M，−29% QoQ / −39% YoY。** 这坐实了 kill condition #3 的后半边（「消费段持续疲软」），而前半边（「数据中心增速大幅减速」）被 +61% QoQ 否定。同日 Intel 的 Q4 指引把同一机制写进公司口径：「PC demand will 'eventually' return after **outlasting memory prices**」。**内存涨价同时在创造 datacenter 收入和摧毁 consumer 需求，两边现在都有数字。** 需逐季跟踪是否扩散到 Edge 段（本季 Edge QoQ 已放缓到 +7%，YoY +320%）。
+
+**市场反应与 thesis 无关:** 收盘 **−5.32%**，隔夜再跌 **4.29% 至 $1,273**。Barron's：「Another Big Earnings Beat. **Investors May Have Wanted More.**」8/06 的 sell-the-news 判据（带 >30% 的 5 日涨幅进财报）**本次不适用** —— 进财报 5d 仅 +5.48%，仓位不拥挤。同日对照：Samsung 芯片利润同比 **15 倍**而股价 −4.13%。两个样本同日说明内存板块已把「数字会很好」完整计入，好数字不再产生上行。
+
+**三项待办:**
+1. **10-Q 发布后补评「半数营收转 FCF」** —— 本次唯一缺失的 Tier 1 门槛，且它正是 claim 里「结构性现金牛」的核心。
+2. **11/20 拆股后把 `triggers.yaml::thesis_break_price` 由 $1,200 调整为 $150**，否则风控线失效 8 倍。
+3. 跟踪 Consumer 段疲软是否扩散到 Edge 段。
+
+**kill conditions 状态:** #1（毛利率连续两季压缩）🔵 被推远；#2（指引下修 / FCF 模型 walk back）🔵 被推远（指引上调）；#3 ◐ 半边点火（consumer 坐实，datacenter 否定）；#4（HBF design win）⚪ 未回答，门槛在 2027 年中。
+
+*(评分记录于 dashboard/2026-10-29.md `## Earnings scorecard: SNDK`；结构化索引 attributions/index.jsonl 2026-10-29 SNDK 同步)*

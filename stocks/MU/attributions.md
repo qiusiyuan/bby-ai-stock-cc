@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-29 · -4.98% day · ▼ material
+**Tags:** `sector_rotation`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** **纯 read-through, MU 自身零公司新闻。** 驱动是 Samsung 财报 miss 冷却整个内存板块(完整内容见同日 005930.KS 条目)。「Micron Stock Falls as Samsung Earnings Show **the High Bar** for Memory Stocks」/「Micron Shares Fall 2.6% as Samsung Earnings Miss Forecasts Despite Record Chip Profit」/「Micron shares dip as Samsung's post-earnings selloff spreads to memory peers」。||**★组内唯一的实质变化在期权端: MU 的 put/call 由 10/28 的 0.63 跳到今天 1.49, 为全场最高。** 组内其余: DRAM 0.52 / SKHY 0.69 / SNDK 0.79 / Samsung n/a。MU 今天的跌幅(−4.98%)与 DRAM(−4.38%)、SNDK(−5.32%) 同量级, 量比 0.82x 也不高 —— 所以这个期权端变化不是由今天的跌幅驱动的。||两个可能的读法, 今天都无法证伪: (a) **MU 的下次财报在 12/23, 54 天后, 全书最远** —— 即它是组内唯一在接下来近两个月无法用自己的数字回应任何质疑的标的, 持有者用期权替代; (b) 远期 PE **4.50x 为全书最低**, 低倍数标的的期权成本低, 买保护更划算。||**与 10/28 的时序关系延续**: 10/15 曾把「下次财报 69 天后」记为 MU 的时序**劣势**, 10/28 确认时序优势已从 MU 转到刚出完数字的 SK Hynix。今天进一步: 本线 5d +24.78%(财报三天前)而 MU 5d +9.08%, 裂口 15.7pp —— **有新鲜数字的标的在板块回调中跌得更少。**||**今天两条「机器人需要内存」的标题被点名的是 MU, 而 MU 跌 4.98%**: 「**Musk: Robot RAM Needs 'Will Exceed Everything Else on Earth.' What That Means for Micron**」/「Robots could keep SK Hynix's memory boom going for years」。**即人形叙事今天在被它点名的标的身上没有被定价** —— 这与 10/28 的记录一致(当天把 MU 的涨幅部分归因于 Musk 的机器人内存表态, 而实际完整解释是 SK Hynix 的订单簿)。今天是同一结论的反向确认: 有叙事而无价格。||位置: $934.27, MA50 下方 −4.70%, MA200 上方 **+25.60%**, 距 52w 高 −25.56%, 距 52w 低 +385.11%, thesis_break $650 缓冲 **+43.7%**。30d −4.41% 仍是组内最好(DRAM −10.44 / SKHY −11.42 / SNDK −17.61 / Samsung −10.60)。||**接下来 54 天内存组零个公司级事件。** 唯一能第三方验证 SK Hynix「售罄到 2029」的途径是设备链(LRCX/AMAT/KLA)的下季指引; 而 DRAM/NAND 现货价格现在是**双向指标** —— 它同时决定 datacenter 收入(SanDisk datacenter +61% QoQ)与 consumer 需求破坏(SanDisk consumer −29% QoQ、Intel PC 疲软), 单看「涨价利好内存股」已经不够。
+
+**Sources.**
+- (aggregated): Micron Stock Falls as Samsung Earnings Show the High Bar for Memory Stocks
+- (aggregated): Micron shares dip as Samsung's post-earnings selloff spreads to memory peers
+- (aggregated): Musk: Robot RAM Needs “Will Exceed Everything Else on Earth.” What That Means for Micron
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-28 · +4.28% day · ▲ material
 **Tags:** `sector_rotation`, `analyst_upgrade`
 **Confidence:** high

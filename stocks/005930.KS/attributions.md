@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-29 · -4.13% day · ▼ material
+**Tags:** `earnings_print`
+**Confidence:** high
+
+**Primary cause.** **自己的财报: 芯片利润同比增长 15 倍, 股价 −4.13%。**「**Why Did Samsung Electronics Shares Fall Despite a Fifteenfold Increase in Chip Profit?**」量比 1.42x。||**这是今天内存组的触发事件, 而它说明被定价的是预期的高度而不是基本面。** 一条标题把机制写明: 「**Micron Stock Falls as Samsung Earnings Show the High Bar for Memory Stocks**」。连带效应: MU −4.98% / DRAM −4.38% / SNDK −5.32% / SKHY ADS −1.58%(「Sandisk and Micron Slide 5% as Samsung Miss Cools Memory Rally Ahead of Sandisk Earnings; SK Hynix Falls 3%, Western Digital Dips」/「Micron shares dip as Samsung's post-earnings selloff spreads to memory peers」/「Tech stocks hit hard after Samsung, Fortinet, and ServiceNow miss earnings」)。||**★同日 SanDisk 给出第二个独立样本: 营收 +378%、毛利率 85.0%(继续上行)、EPS 超承诺上沿 7.6%、指引再上调 11~15%、宣布8拆1 —— 股价 −5.32% 且隔夜再跌 4.29%。两家公司在同一天都给出极强的绝对数字、两家都跌。结论: 内存板块当前的定价已把「数字会很好」完整计入, 好数字不再产生上行, 只有「比很好更好」才有。**||**与 SK Hynix 本线的分化是今天最干净的个股证据: 两家同在韩国市场、同一交易时段, Samsung −4.13% 而 000660.KS +2.62%, 分化 6.75pp → 这不是时区因素, 是个股因素。** 区分点: Samsung 今天出了自己的财报并 miss; SK Hynix 没有新消息(下次财报 2027-01-27), 只延续 10/28 创纪录财报的动能并收到一条卖方口径「SK hynix Has Slumped Since September: Why **Rosenblatt Sees 175% Upside**」。本线 5d **+24.78% 为全场最强**, 而它的财报是三天前的 —— 这段涨幅至今未被任何新信息挑战, 因为它没有新信息可被挑战。||**对 SKHY thesis 的影响: 10/26 因 Bernstein「三星 3Q26 HBM 营收已反超 SK Hynix」而临时下调的 25/40/35 权重今天得到一条反向的市场行为证据** —— 若市场相信「三星反超」, 今天两家的排序应该相反(Samsung 跌而 SK Hynix 涨 6.75pp 的分化方向与「反超」叙事不符)。但这是市场行为证据而非事实证据: 今天两家的口径里同样零个 HBM 份额百分比。**权重维持不动; 真正的裁决点仍是 2027 年 2 月 Nvidia 的 HBM4 出货构成(含 8 层 vs 12 层占比)。**||CXMT: Samsung 今天的财报沟通里同样零次出现中国内存厂商(与 10/28 SK Hynix 财报一致)。供给侧论点仍无任何可验证技术细节。||位置: ₩232,000, MA50 下方 −8.33%, MA200 下方 −1.96%, 距 52w 高 −38.05%, 远期 PE 3.21x。另一条值得记的口径: 「Samsung's AI boom comes with a **$100 billion warning**」。下次财报 2027-01-26(与 SK Hynix、MSFT、GEV 同期)。
+
+**Sources.**
+- (aggregated): Why Did Samsung Electronics Shares Fall Despite a Fifteenfold Increase in Chip Profit?
+- (aggregated): Micron Stock Falls as Samsung Earnings Show the High Bar for Memory Stocks
+- 24/7 Wall St.: Sandisk and Micron Slide 5% as Samsung Miss Cools Memory Rally Ahead of Sandisk Earnings; SK Hynix Falls 3%, Western Digital Dips
+- (aggregated): SK hynix Has Slumped Since September: Why Rosenblatt Sees 175% Upside
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-28 · +13.62% day · ▲ extreme
 **Tags:** `sector_rotation`, `competitor_news`
 **Confidence:** high

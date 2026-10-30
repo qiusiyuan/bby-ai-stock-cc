@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-29 · -3.62% day · ▼ major
+**Tags:** `earnings_print`, `guidance_cut`
+**Confidence:** high
+
+**Primary cause.** **收盘 −3.62%, 盘后财报后重挫 16~23%**(Investing.com「Intel plunges 20% as weak Q4 forecast overshadows earnings beat」/ Reuters「Intel shares plunged 23% after hours... hit by chip supply constraints, big cash burn」/ CNBC 口径 −16%)。方向与幅度按盘后记; **本报告未取到 Intel Q3 的具体营收/EPS/毛利率与 Q4 指引数值**(IR 新闻稿与 8-K 附件在检索窗口内未取到正文), 故只用具名定性事实。||**三条具名原因**: (1) **Q3 beat 但 Q4 指引疲软** —— 「Intel Stock Tanks On Weak Q4 Guidance After Mixed Q3 Results」/「Intel Server Sales Jump 78%, Q4 Outlook Dims: Rapid Earnings Reaction」; (2) **供应瓶颈** —— 「Supply Constraints a Swing Factor for Intel, Seaport's Goldberg Says」/「INTC Stock Tumbles After-Hours After Q3 PC Slump And Supply Bottlenecks Cloud Fourth-Quarter Guidance」; (3) **现金消耗** —— Reuters 并列点名「big cash burn」。||**★今天最有信息量的一条: 内存涨价的需求破坏第一次打到具名持仓的损益表。** Intel 的公司口径原文是「**PC demand will 'eventually' return after outlasting memory prices**」。10/15 Counterpoint 给出的第一个硬数据是行业口径(Q3 全球手机出货同比 −20%, 直接归因 DRAM/NAND 涨价); 今天 Intel 把它变成公司口径, 且 PC 段(Client Computing)疲软是盘后大跌的具名原因之一。||**而 server 侧方向相反: server 营收 +78%。** 同日 SanDisk 的 datacenter 营收 +61% QoQ 到 $48.02亿、consumer 营收 −29% QoQ / −39% YoY。**两家公司在同一天从两个方向给出同一个事实: 内存价格上涨同时在创造 datacenter 收入和摧毁 consumer/PC 需求, 而两边现在都有数字。** 这是内存周期双刃第一次在同一天在两边都可见。||**资本配置的张力**: 10/26 宣布收购 Classiq(量子计算, 另有 $23亿 量子收购口径「Intel Just Made a $2.3 Billion Quantum Buy and Is Spending Again. **Can Cash Flow Keep Up?**」), 2026 年 8 月做过 **$200亿 普通股增发**(由 $150亿 上调定价)。在一家市场质疑现金流能否支撑 foundry 转型的公司里, 财报前三天宣布非核心收购, 把问题从「指引落区间哪一端」扩展到资本配置纪律。||**🚨风控: thesis_break $75, 收盘 $92.07 缓冲 +22.8% —— 但按盘后 −16~23% 的区间折算, 盘后价约 $70.9~$77.3, 即缓冲区间约 −5.5%~+3.1%, 跨在 $75 两侧。换言之 INTC 盘后可能已击穿 thesis_break, 也可能仍在其上方 3% 内。明天收盘价是唯一的裁决。****⚠这是明天开盘必须优先核对的一条: 若 INTC 开在 $75 以下, 它会和 GOOG(+0.8%)、NOK(+3.4%) 一起构成三只同时在危险区的局面。** 收盘位置: MA50 下方 −9.41%, MA200 上方 +6.10%, 距 52w 高 −35.32%, 距 52w 低 +179.93%, 远期 PE 42.59x 为组内最高, put/call 0.57, 5d +7.70%(进财报前一周是上涨的)。||下次公司口径要到 2027 年 1 月下旬。**建议: 把 INTC 移出 focus(今天财报已过, 90 天内无公司级事件), 但明天先确认是否击穿 $75。**
+
+**Sources.**
+- Reuters: Intel shares plunged 23% after hours ... hit by chip supply constraints, big cash burn
+- Investing.com: Intel plunges 20% as weak Q4 forecast overshadows earnings beat
+- (aggregated): Intel Server Sales Jump 78%, Q4 Outlook Dims: Rapid Earnings Reaction
+- (aggregated): Intel: PC demand will 'eventually' return after outlasting memory prices
+- (aggregated): Supply Constraints a Swing Factor for Intel, Seaport's Goldberg Says
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-27 · +3.61% day · ▲ material
 **Tags:** `m_and_a`, `partnership_news`, `earnings_pre_print`
 **Confidence:** high

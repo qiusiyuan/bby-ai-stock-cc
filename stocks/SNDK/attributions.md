@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-29 · -5.32% day · ▼ material
+**Tags:** `earnings_print`, `guidance_raise`, `prediction_passed`
+**Confidence:** high
+
+**Primary cause.** **🎯 财报评分日(state.yaml::earnings_watchlist scoring_date=2026-10-29), verdict = validated。预先承诺的 Tier 1 门槛全部兑现且全部超出上沿, 而股价收盘 −5.32%、隔夜再跌 4.29% 至 $1,273。** 数据取自 SEC 8-K Ex-99.1 原文(accession 0001628280-26-068243), 均为拆股前口径。||**claim 原文**:「SNDK 从 NAND 周期股 re-rate 为结构性现金牛 — FY27 指引($10.3-10.8B rev / $44-46 EPS)兑现 + 半数营收转 FCF 模型可信 + 毛利率(84.6%峰值)不快速回落」。||**逐项评分**: 营收门槛 $10.3-10.8B → 实际 **$11,031M**(+23% QoQ / **+378% YoY**), **超上沿 2.1%** ✅; 非 GAAP EPS 门槛 $44-46 → 实际 **$49.51**(GAAP $52.60, +20% QoQ), **超上沿 7.6%** ✅; 「毛利率不快速回落」→ **GAAP 85.0% / 非GAAP 85.1%, 继续上行 +0.4~0.5ppt**, YoY 由 29.8%→85.0%(+55.2ppt) ✅**方向与担忧相反, 84.6% 不是峰值**; 「数据中心增速维持」→ **Datacenter $4,802M, +61% QoQ**(上年同期$269M), 占营收 11.7%→**43.5%** ✅大幅超出; 「半数营收转 FCF 首个数据点」→ **8-K 未披露 FCF**, 代理读数是本季返还股东 $50亿(≈营收45.3%)、回购约320万股、两季累计600万股≈总股本4%, CEO 原话仅定性「growing and durable free cash flow」→ ◐**口径未取到, 待 10-Q 补评**; 「HBF design win」→ 8-K 零提及 → ❌未回答(kill#4 时间门槛在 2027 年中)。||**Q2 FY27 指引再上调**: 营收 $12,200-12,600M(+11~14% QoQ, **指引下沿已高于本季实际**)、非GAAP EPS **$55.00-57.00**、毛利率 84.4-85.4%(**中枢与本季持平 = 管理层不预期回落**)。另宣布 **8 拆 1 正向拆股**(11/09登记 / 11/19收盘后发行 / 11/20拆股后开盘)。||**★超越原 claim 表述的结构性发现: 一年之内 Consumer 段由占营收 28.3% → 3.6%, Datacenter 由 11.7% → 43.5%, 毛利率 29.8% → 85.0%。这不只是同一业务的周期上行, 而是收入结构的替换 —— datacenter 从几乎不存在变成最大段。它同时解释了毛利率为何能从29.8%跳到85.0%(datacenter NAND 定价权远高于consumer)以及 Consumer −39% YoY 为何没有伤到整体(已只剩3.6%)。**||**唯一的坏消息: Consumer 段 $397M, −29% QoQ / −39% YoY**, 坐实 kill condition #3 的后半边(「消费段持续疲软」), 而前半边(「数据中心增速大幅减速」)被 +61% QoQ 否定 → #3 半边点火。**同日 Intel 把同一机制写进公司口径: 「PC demand will 'eventually' return after outlasting memory prices」且 INTC 盘后 −16~23%。内存涨价同时在创造 datacenter 收入和摧毁 consumer 需求, 两边现在都有数字。** 需逐季跟踪是否扩散到 Edge 段(本季 Edge QoQ 已放缓到 +7%, YoY +320%)。||**为什么好数字换来 −5.32%**: Barron's「Another Big Earnings Beat. **Investors May Have Wanted More.**」**8/06 的 sell-the-news 判据(带>30%的5日涨幅进财报=好数字被打折)本次不适用** —— 进财报 5d 仅 **+5.48%**, 仓位不拥挤。同日对照: **Samsung 芯片利润同比15倍而股价 −4.13%**(「Why Did Samsung Electronics Shares Fall Despite a Fifteenfold Increase in Chip Profit?」)。两个样本同日说明内存板块已把「数字会很好」完整计入, 好数字不再产生上行(「Micron Stock Falls as Samsung Earnings Show **the High Bar** for Memory Stocks」)。||**kill conditions 状态**: #1(非GAAP毛利率连续两季压缩)🔵被本季数据明确推远(84.6%→85.1%); #2(FY27指引下修或FCF模型walk back)🔵被推远(指引上调+CEO重申); #3 ◐半边点火; #4(HBF design win)⚪未回答, 门槛2027年中。||**8/17 记录的三条待验证项的回应**: 「FCF 转化率是否兑现 Investor Day 口径」→ **仍未取到, 连续两次成为评分缺口**; 「毛利率是否守住80%+」→ 兑现且远超(85.0%), 8/17 撤回「84.6% 几乎确定是周期峰值」这个撤回是对的; 「是否首次出现长协/承诺产能的官方披露」→ **零命中**, 8-K 无 long-term agreement / committed capacity / take-or-pay 措辞, **去周期化仍缺可验证的会计事实这一环**。||**风控三项待办**: (1) 10-Q 发布后补评「半数营收转FCF」; (2) **11/20 八拆一后必须把 triggers.yaml::thesis_break_price 由 $1,200 改为 $150, 否则风控线失效8倍**; (3) 跟踪 Consumer 疲软是否扩散到 Edge。现价 $1,330.05 缓冲 +10.8%(隔夜$1,273口径 +6.1%), MA50 下方 −15.12%, MA200 上方 +5.95%, 距52w高 −43.51%, 远期 PE 4.99x。
+
+**Sources.**
+- {"type": "filing", "title": "Sandisk Reports Fiscal First Quarter 2027 Financial Results (SEC 8-K Ex-99.1, accession 0001628280-26-068243)", "publisher": "SEC EDGAR"}
+- Barron's: Sandisk Reports Another Big Earnings Beat. Investors May Have Wanted More.
+- Investing.com: Sandisk tops Q1 estimates and guides higher, sets 8-for-1 stock split
+- 24/7 Wall St.: Sandisk and Micron Slide 5% as Samsung Miss Cools Memory Rally Ahead of Sandisk Earnings
+- Motley Fool: Sandisk Revenue Up 378% on Datacenter, Edge
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-28 · +5.60% day · ▲ material
 **Tags:** `sector_rotation`, `earnings_pre_print`
 **Confidence:** medium

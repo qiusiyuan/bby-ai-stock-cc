@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-10-29 · -13.24% day · ▼ extreme
+**Tags:** `m_and_a`
+**Confidence:** high
+
+**Primary cause.** **−13.24% 为全场最大跌幅, 量比 2.06x。驱动是具名 M&A, 与今天的 AI capex 现金流主线完全无关 —— 这一点必须分开记。**「Stock Market Today, Oct. 29: **Marvell Falls on Lumentum Acquisition Talks**」。||Lumentum 是光通信/光模块公司, **年内已涨 135%**(10/28 报道口径「Lumentum Shares Jump 135% YTD: Can AI Momentum Sustain the Rally?」)。机制: 用自己的股票或现金去买一个已经涨了 135% 的标的, 市场定价的是**支付过高 + 整合风险 + 稀释**, 而不是 Marvell 自己的业务。||**两天完全反转**: 10/28 MRVL 还是 AI capex 组涨幅第一(+2.12%)且有卖方集体上调目标价(「Analysts Hike Their Marvell Technology Forecasts and Price Targets - How to Play MRVL?」+「Here Are Wednesday's Top Wall Street Analyst Research Calls: ...Marvell Technology...」), 今天 −13.24%。10/28 的归因里把它记为「纯卖方口径无公司事实」—— 今天出现的是公司事实, 而方向相反。||**🚨风控变化全场最快: thesis_break $200 的缓冲由 10/28 的 +24.4% 单日压缩到 +9.2%, 压缩 15.2pp 为全场最大。** MA50 下方 **−10.40%**(10/28 为上方 +1.94%), MA200 上方 +19.61%, 距 52w 高 −33.81%, 距 52w 低 +208.87%, 远期 PE 29.79x(10/28 为 33.94x), put/call 0.72。||kill conditions 三条(「数据中心营收增速连续减速」/「AWS Trainium 份额流失」类)今天零条触发 —— **收购支付过高这个维度在三条里不存在**, 与 SPCX(竞争维度缺)、GEV(机位转化维度缺)属于同一类「维度缺」缺口。||**对照组读数: 今天供给方是受损最小的一端**(NVDA −0.80% / TSM −1.75% / AVGO −1.94%), 而 MRVL −13.24% 是 4.6 倍于组内第二。**所以 MRVL 今天的跌幅里几乎没有板块成分, 应全额归因于收购谈判。** 这也意味着若收购作罢, 这 13% 里的大部分是可逆的。||下一个公司口径是 **12/01 财报(33 天后)** —— 若 Lumentum 收购落实, 那天要给对价、融资方式与协同的数字; 若作罢, 那天是估值修复的第一个窗口。在此之前无任何已排定事件能澄清这件事。
+
+**Sources.**
+- (aggregated): Stock Market Today, Oct. 29: Marvell Falls on Lumentum Acquisition Talks
+- Barron's: Alphabet, Marvell, ServiceNow, Fortinet, Caterpillar, Lilly, and More Stocks That Explain Today's Market
+- Zacks: Lumentum Shares Jump 135% YTD: Can AI Momentum Sustain the Rally?
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-27 · +4.19% day · ▲ material
 **Tags:** `executive_comment`, `analyst_upgrade`, `pt_change`
 **Confidence:** high
