@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-02 · +3.53% day · ▲ material
+**Tags:** `partnership_news`, `earnings_pre_print`
+**Confidence:** medium
+
+**Primary cause.** **+3.53% 为全场第二强, 且是四个交易日里第一次跑赢 TSLA。驱动是具名的: 「EchoStar Gains on SpaceX Talks」。** confidence 记 medium 因为今天的涨幅有三个无法分离的来源(见下)。||**EchoStar 的意义在于频谱。** EchoStar 持有大量美国无线频谱(AWS-4、H-block、600MHz 等), 而 SpaceX 直连手机业务(Starlink Direct to Cell)的瓶颈正是地面频谱授权。**10/28 Musk 把「SpaceX 建成移动运营商」的时间表推到「还需 2 到 3 年」、Verizon CEO 公开不同意 —— 一笔频谱交易会直接压缩这个时间表。**||**三条限定**: (a) 报道措辞是「talks」, 无条款、金额或排他性; (b) 上涨的是 EchoStar(被收购/交易方), SPCX 的 +3.53% 可能部分来自整体 risk-on(SPY +0.39%, 23/31 标的多数反弹)与超跌反弹(5d −5.05% / 30d −8.15%); (c) 10/28 的俄/印主权替代方案风险**四天零更新**, 既未证实也未否证。||**SSPC 三个时间尺度的读数说明这是震荡中的反弹而非趋势反转**: 今天 SPCX +3.53% vs SSPC −6.98%, 比值 **1.98x 接近完美 2x** = 干净的单向上涨日; 5 天 SPCX −5.05% vs SSPC +9.14%, 比值 1.81x; **30 天 SPCX −8.15% vs SSPC +4.55%, 比值仅 0.56x** —— 远低于 2x 设计杠杆, 差额是反向 ETF 在震荡市的日度再平衡损耗。**三者合起来: 30 天震荡下行, 5 天下跌, 今天单日反弹。**||**★明天 Q3 财报的语境被本周实质改善了。** 四天内 ORCL 募 $200亿、META 筹备至少 $200亿、MSFT 已发 $250亿、Google「seeks fresh billions」—— **融资可得性看起来不是问题, 被罚的是融资代价。** 本周给出的参照系很清晰: MSFT 发 $250亿 债后当日 **−0.16%**(capex÷OCF 67.9%), ORCL 用「债+股」混合募 $200亿 后 **−6.08%**(股权部分摊薄)。**即 SPCX 明天若能把 FY27 自由现金流 −$670亿 对应到具体的来源、时点与覆盖率, 这个金额本身不构成问题; 若只给金额不给覆盖率, 会按 ORCL 那一端定价。**||**Anthropic 今天的数字对 SPCX 是间接利好但程度有限**: Reuters「Anthropic's loss shrinks, revenue jumps ahead of blockbuster IPO」, 并新增日本发售最多 5,529亿日元(约 $35亿)。SPCX 与 Anthropic 的算力交易规模约 **$845亿**(10/26 S-1 披露)。对手方财务改善降低了信用风险, **但真正的裁决是约 11 月中的 IPO 定价**。一条评论最准: 「The numbers support the growth half of the AI trade. **They don't yet settle the funding half.**」||位置: $139.48, MA50 下方 −6.77%, 距 52w 高 **−38.18%**, 距 52w 低 +33.05%, 远期 PE 54.38x(10/29 为 61.37x), put/call 1.01。**thesis_break_price 仍为 null —— 连续第 11 份报告**(无持仓纯跟踪, 按设计不弹卖出提醒)。**lockup 12/09 剩 37 天。明天财报与中期选举 + AMD + SU 同日 → 单日价格不可归因。**||**kill_conditions 五条仍零覆盖竞争维度**(Starship 失败 / ARPU<$50 / 内部人卖出 / 关联交易 / 吊销频谱或多国封禁) —— 俄/印主权自建星座不在其中, 建议补一条。
+
+**Sources.**
+- Bloomberg: EchoStar Gains on SpaceX Talks; Lumentum, Marvell Reach Deal | Stock Movers
+- Reuters: Anthropic's loss shrinks, revenue jumps ahead of blockbuster IPO
+- Investing.com: Anthropic IPO filing tests the sustainability of the AI trade
+- (aggregated): Rocket Lab (RKLB) Is Emerging As A Key Launch Option For Commercial Stations
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-28 · -3.41% day · ▼ material
 **Tags:** `competitor_news`, `geopolitical_trade`, `executive_comment`
 **Confidence:** high

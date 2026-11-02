@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-02 · -9.31% day · ▼ extreme
+**Tags:** `m_and_a`
+**Confidence:** high
+
+**Primary cause.** **🚨 thesis_break $200 已击穿, 现价 $178.12 低于线 10.9%。** 原因从 10/29 的「收购谈判」变成「收购成交」: **以约 $1,150亿 全股票收购 Lumentum**, 目标是 AI 数据中心光互连(IBD 框架「Creating AI Connectivity Leader」)。量比 1.52x 为全场唯一过 1.5x 的标的。||**★今天最反常的一点: 买卖双方同跌, 而被收购方跌得更多。** MRVL −9.31%, **Lumentum 自己 −14.87%**。全股票收购中被收购方通常跟随收购方股价下跌(对价是股票), 但 −14.87% 对 −9.31% 的比例说明市场认为**交易本身的完成概率或条款存在问题**, 而不只是对价贬值。Yahoo 归因原文: 「execution, dilution, and **regulatory** risks became more visible」。光通信同业 Astera Labs −6.54%; Coherent 获上调(「deal highlights the value of **scarce AI optics**」)。||**三个关键条款今天全部未披露: 交换比例、对 Lumentum 的溢价、对 MRVL 股东的摊薄比例。这是今天最大的信息缺口, 最早的披露窗口是 12/01 财报(29 天后)。** 在此之前这笔交易的价值无法评估。||一条评论把性质说得最准: 「The deal doesn't have to mean the optical trade is over, but **the market is treating it as a regime change**」。||**融资形式的横截面(本周四个样本)把 MRVL 的跌幅放进了可解释的位置**: 纯债券 MSFT $250亿 → 当日 −0.16%; 债+股混合 ORCL $200亿 → **−6.08%**; 跨境债券筹备 META 至少$200亿 → −0.66%; **全股票收购 MRVL $1,150亿 → −9.31%**。排序逻辑是摊薄程度越高、条款越不透明, 惩罚越重 —— MRVL 是四者里摊薄最重且唯一完全不透明的。||**kill conditions 三条零条覆盖这个风险**: 原文是数据中心营收增速连续减速 / AWS Trainium 份额流失 / ROCm 类生态问题 —— **「自己发起的大规模全股票收购」这个维度不存在**。与 SPCX(竞争维度缺)、GEV(机位转化维度缺)、SNDK(NAND 价格维度缺)同属「维度缺」缺口。||位置: 5d **−23.81%**, 30d **−30.78%**, MA50 下方 **−26.22%**(10/29 为 −10.40%), 距 52w 高 **−46.01%**, 距 52w 低 +151.97%, 远期 PE 24.30x(10/29 为 29.79x), put/call 0.73。**10/28 时 MRVL 还是 AI capex 组涨幅第一(+2.12%)且有卖方集体上调目标价, 四个交易日后击穿风控线。**
+
+**Sources.**
+- Proactive: Marvell agrees to buy Lumentum in $115 billion all-stock deal
+- Investor's Business Daily: Marvell To Buy Lumentum For $115 Billion, Creating AI Connectivity Leader
+- Investing.com: Lumentum-Marvell deal: motives, dilution risks, and what it means for the optical trade
+- MT Newswires: Top Midday Stories: Anthropic Reports Q3 Net Loss of $23.29 Billion; Marvell to Acquire Lumentum for $115 Billion
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-29 · -13.24% day · ▼ extreme
 **Tags:** `m_and_a`
 **Confidence:** high

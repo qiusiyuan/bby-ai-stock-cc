@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-02 · +4.31% day · ▲ material
+**Tags:** `analyst_upgrade`, `pt_change`
+**Confidence:** high
+
+**Primary cause.** **+4.31% 为全场最强。驱动全部是卖方上调, 公司数字没有任何变化。** 「**AWS Growth Wins Amazon Stock a $330 Upgrade**」/「Amazon Soars 5% as **Phillip Securities Upgrades It to Buy After Earnings Sell-Off**」/「Why Wall Street Is Coming Back Around on Amazon Stock」。||**★10/29 盘后 −7.6% 的跌幅在三个交易日内基本收回**: 现价 $250.70 已高于 10/29 收盘的 $243.79。**而被卖的那个数字(capex÷经营现金流 182.1%、TTM 自由现金流 −$424亿)四天内没有变 —— 改变的是对它的解读权重。**||**★由此得出一条对判别轴的重要限定: capex÷经营现金流 解释了 10/29 的单日反应, 但不解释 30 天横截面。** 三家开支方的 capex÷OCF 排序是 MSFT 67.9% < GOOG 121.4% < AMZN 182.1%, 而 30 天表现排序是 **MSFT +3.72%(唯一正) > AMZN −3.00% > META −17.58% > GOOG −19.65%** —— **比率最差的 AMZN 现在 30 天第二好。**||30 天横截面更符合另一个变量: **是否有可以独立于 capex 叙述的增长故事。** AMZN 有 AWS +39.3%(近五年最快) + 零售营业利润率 13.9% 创历史新高; GOOG 有 Cloud +103% 但 capex 占比更刺眼且上季募 $411亿 外部资本; META 的 AI 支出被 **S&P 同日点名警告**(「Meta Stock Slips as S&P Delivers Stark Warning Over AI Spending」)而没有对应的营收加速。||**本周融资形式的横截面给了判别轴第二层**: 纯债券 MSFT $250亿 → 当日 −0.16%; 债+股混合 ORCL $200亿 → **−6.08%**(股权部分直接摊薄); META 筹备跨境债券 至少$200亿 → −0.66%; 全股票收购 MRVL $1,150亿 → −9.31%; **AMZN 今天无新融资公告 → +4.31%**。**即市场对融资金额不恐慌, 定价的是融资后的覆盖率与股东承担方式。**||位置: MA50 下方仅 **−1.35%**(组内第二好), MA200 上方(10/29 为 +0.17%, 今天价格更高), 距 52w 高 −12.71%, thesis_break $185 缓冲 **+35.5%**, 远期 PE 22.97x, put/call 0.54。下次财报约 2027 年 1 月下旬。||**建议给 AMZN 加同一条触发器**(与 GOOG/META 统一措辞便于横向比较): 「自由现金流连续两季为负, 或 capex÷经营现金流连续两季超过 100%」—— 按 TTM 口径已触发, 而今天 +4.31% 说明价格可以在触发状态下反弹, 这正是触发器作为「强制重读」而非「卖出信号」的用法。
+
+**Sources.**
+- (aggregated): AWS Growth Wins Amazon Stock a $330 Upgrade
+- 24/7 Wall St.: Amazon Soars 5% as Phillip Securities Upgrades It to Buy After Earnings Sell-Off
+- Motley Fool: Why Wall Street Is Coming Back Around on Amazon Stock
+- (aggregated): Meta Stock Slips as S&P Delivers Stark Warning Over AI Spending
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-29 · -4.25% day · ▼ material
 **Tags:** `earnings_print`, `guidance_inline`
 **Confidence:** high

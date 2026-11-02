@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-02 · -5.76% day · ▼ extreme
+**Tags:** `guidance_cut`, `earnings_post_print`
+**Confidence:** high
+
+**Primary cause.** **🚨 thesis_break $75 已确认击穿, 现价 $61.97 低于线 17.4%。** 10/29 报告标记的「盘后可能已击穿 $75, 明天收盘是唯一裁决」已裁决 —— 不仅击穿, 且四个交易日再跌 32.7%。**5d −31.50%, 30d −49.11% 为全书最差, MA50 下方 −38.36%, 距 52w 高 −56.47%。**||驱动仍是 10/29 财报的余波, 三条具名原因未变: Q3 beat 但 **Q4 指引疲软**、**供应瓶颈**、**现金消耗**(Reuters 原文「chip supply constraints, big cash burn」)。另 server 营收 +78% 而 PC 段受「memory prices」拖累。今天的增量口径: 「Intel Gets Price Target Revamp but Keeps One Major Catalyst」、「Analog Chip Stocks Buoy Philadelphia Semiconductor Index」(即半导体指数今天是被模拟芯片而非 Intel 支撑)。||**kill conditions 的错配在这里是最彻底的一例**: 原文写的是 foundry 执行与 CPU 份额维度(14A 制程里程碑、foundry 客户获取、Xeon 设计中标), 而实际击穿的是 **Q4 指引 + 供应瓶颈 + PC 端被内存涨价挤压**。**三条里零条度量「内存成本对 PC 需求的挤压」, 而这是本轮最直接的杀伤机制。**||**资本配置的背景值得随记录保存**: 2026 年 8 月做过 **$200亿 普通股增发**(由 $150亿 上调定价), 10/26 宣布收购 Classiq(量子计算, 另有 $23亿 口径)。在现金流被质疑的公司里, 增发 + 非核心收购 + Q4 指引疲软三者叠加。||**下次公司口径 2027-01-28(87 天后), 且与 NOK 同日** —— 两只已击穿风控线的标的在同一天给出下一个数字。**即「击穿后用公司数字自证」这条路对 INTC 关闭近三个月**, 价格只能由行业口径(内存价格、PC 出货)、卖方评级与宏观驱动。||远期 PE 34.31x(10/29 为 42.59x), put/call 0.45, 距 52w 低 +88.42%。**建议: 移出 focus(下次口径 87 天后, 日度跟踪不产生新信息), 但保留在风控名单。**
+
+**Sources.**
+- (aggregated): Intel Gets Price Target Revamp but Keeps One Major Catalyst
+- Reuters: Intel shares plunged after hours hit by chip supply constraints, big cash burn
+- (aggregated): Intel: PC demand will 'eventually' return after outlasting memory prices
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-29 · -3.62% day · ▼ major
 **Tags:** `earnings_print`, `guidance_cut`
 **Confidence:** high

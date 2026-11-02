@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-02 · -4.45% day · ▼ material
+**Tags:** `macro_oil`, `geopolitical_trade`
+**Confidence:** high
+
+**Primary cause.** **驱动是油价单日 −7.55%(WTI 由 10/30 的 $104.12 到 $96.26, Brent −8.37% 至 $103.94), 原因是美伊间接谈判有进展的预期。** 报道措辞含「**ahead of midterms**」: 「**Oil prices plunge on US-Iran detente hopes ahead of midterms**」/「European Stocks Close Mostly Higher; Oil Prices Fall on Hopes US-Iran Talks Resume」/「Stocks Rally as Oil Prices Tumble on Diplomatic Hopes」。||**★三周战争溢价一天清零: WTI 30 天现在只有 +0.26%**, 10/15 到 10/30 那段从 $97.97 到 $104.12 的上涨(驱动链条是霍尔木兹风险→10/28 胡塞袭击沙特 Ras Tanura→10/29「美国可能恢复对伊朗军事打击」)已完全回吐。||**★下行捕获率给出一个可用读数, 而它远高于模型**: SU **59%**(−4.45/−7.55) / CNQ **55%** / CVX **36%** / HXE.TO **30%**, 均值约 **45%**, 而 10/26 模型的下行系数均值是 **28%**。机制: 模型的下行样本来自 10 月初那段从高位回落、股票已有安全垫的时期, 而今天四只都贴近 52 周高点(−2.71% 到 −5.44%) —— **高位的下行捕获率高于低位。** 与 10/29 的上行侧读数(高位上行捕获率 45-83%, 低于模型的 89-113%)合起来构成完整形状: **捕获率是油价绝对水平的函数 —— 在区间上端, 上行钝化而下行放大, 即高油价区间的风险收益比不对称地变差。**||**捕获率排序与业务集中度一致**: 纯油砂/上游的 SU(59%) 与 CNQ(55%) 弹性最大, 综合型含炼化的 CVX(36%) 较低, 含中游的 HXE ETF(30%) 最低。**CVX 的炼化在油价下跌时是对冲 —— 「Refining Gains」正是其 10/30 财报的亮点之一, 这解释了 36% 的捕获率。**||**30 天脱钩重新出现但性质不同于 10 月那次**: 今天 WTI 30d +0.26%(基本走平)而四只 +6.90%~+12.86%, 裂口 6.6-12.6pp。这不是脱钩而是「beta<1 的正常状态 + 公司层面改善」—— CVX 的 10/30 财报上调自由现金流指引(「Chevron's Q3 Results Support **Higher Free Cash Flow Outlook**, Morgan Stanley Says」+ 创 52 周新高), SU 与 CNQ 的 30 天表现含加拿大重油贴水收窄的贡献。**明天 SU、11/05 CNQ 两份财报检验这个公司层面的部分有多少是真实的。**||**★今天最值得记的对称性**: 同一个市场同一周, 对三家 hyperscaler 因「自由现金流为负」罚掉上千亿市值, 对 CVX 因「自由现金流指引上调」给出 52 周新高。**被定价的是现金的处置, 不是增长。**||**一条对立定价需要分开**: 油价 **−7.55%** 按美伊缓和定价, 而同日防务 **ITA +2.24%**(5d +3.51%, MA50 由下方 −0.41% 转为上方 +0.12%, 52w 区间由第 19 升到第 31 百分位)按选举后国防预算定价。**两者不可能都由伊朗解释; 可能的分离是油价定价伊朗、ITA 定价明天的选举(Yardeni 的「民主党全胜 = 股市冷水」情景对防务预算是利空, 故 ITA 上涨隐含市场在下调该情景概率)。11/03 之后一周内分开裁决。** 另: NYT 此前称美以对伊朗方案「设在中期选举后」—— 若成立, 今天的缓和定价会在选举后被反向检验。||**油价暴跌的宏观下游影响落在 12/10 的 11 月 CPI 而非 11/12 的 10 月 CPI**(10 月调查窗口已过), 而 12/10 恰是 12/16 FOMC 前最后一份通胀数据。配合「Gas prices likely to drop below $4 a gallon in the next week」—— 这条链条今天没有被任何来源连起来。||位置: $75.89, 30d **+12.86% 组内最强**, MA50 上方 +6.68%, 距 52w 高 −5.44%, thesis_break $42 缓冲 **+80.7%**, 远期 PE 10.88x, put/call 0.58。**明天 Q3 财报(与中期选举 + AMD + SPCX 同日 → 单日价格不可归因)**, 要找的是 WCS-WTI 贴水与 AFFO 而非产量。**另: 11/01 OPEC+ 会议结果本次检索未取到 —— 在油价单日跌 7.55% 之后这是最重要的缺失输入。**
+
+**Sources.**
+- (aggregated): Oil prices plunge on US-Iran detente hopes ahead of midterms
+- (aggregated): Stock Market Midday, Nov. 2: Stocks Rally as Oil Prices Tumble on Diplomatic Hopes
+- Morgan Stanley via Investing.com: Chevron's Q3 Results Support Higher Free Cash Flow Outlook, Morgan Stanley Says
+- (aggregated): Gas prices likely to drop below $4 a gallon in the next week if oil prices keep declining, analyst says
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-27 · -4.10% day · ▼ material
 **Tags:** `macro_oil`, `geopolitical_war`, `flow_event`
 **Confidence:** medium

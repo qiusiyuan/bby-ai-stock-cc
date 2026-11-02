@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-02 · -2.87% day · ▼ material
+**Tags:** `competitor_news`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **🚨 thesis_break $1,200 已击穿, 现价 $1,117.89 低于线 6.8%。** 10/29 评分日时缓冲是 +10.8%, 四个交易日跌 16.0%。||**★这是一个干净的「thesis 对而价格错」案例, 而且原因不在公司。** 10/29 的评分结论(已写入 thesis.md, verdict=validated)是: 营收 $110.31亿 超承诺上沿 2.1% / 非GAAP EPS $49.51 超上沿 7.6% / **毛利率 85.0% 继续上行**(84.6% 不是峰值) / datacenter +61% QoQ / Q2 指引再上调 11~15% / 宣布 8 拆 1。**而今天的驱动是 Kioxia(铠侠)对 NAND 价格的谨慎展望** —— 一家非持仓、非美股的同业: 「SanDisk stock tumbles as **Kioxia warns on NAND price surge**」/「Japan's Kioxia Plunges After Cautious Memory Outlook」/「MU, SNDK, DRAM Inch Higher Overnight After Mixed Week: **Japan's Kioxia Plunges After Cautious Memory Outlook**」。||**两条相关的 kill condition 状态与价格完全脱节**: #1「非GAAP毛利率连续两季压缩」🔵 被 10/29 数据明确推远(84.6%→85.1%); #2「FY27 指引被下修或 FCF 模型 walk back」🔵 被推远(指引上调 11~15%)。**击穿的真实机制是行业价格预期, 而四条 kill condition 里没有一条度量 NAND 现货/合约价格。建议补一条。**||**★行业口径本周正式分裂, 且两侧的产品不同**: 看多来自 **DRAM/HBM** 侧 —— 「Micron Stock Climbs as **Memory Chip Shortages Could Last Until 2030**」/「SK Hynix Sees the Memory Shortage Lasting Through 2030. 2 Memory Stocks to Buy and Hold Until Then.」; 谨慎来自 **NAND** 侧 —— Kioxia。**组内 30 天跌幅与 NAND 暴露度正相关: 纯 NAND 的 SNDK −36.72% 最差, 业务最分散的 Samsung −8.03% 最好, 纯 HBM/DRAM 的 SKHY −20.16% 与本线 −13.26% 在中间, MU(两者兼有) −18.15%。** 这把 10/29 的「NAND ≠ DRAM」从段数据升级为跨标的横截面证据。||**内存涨价的下游破坏今天扩散到第三家公司, 且时点关键**: (1) 10/15 Counterpoint 行业口径(手机出货 −20%); (2) 10/29 Intel 公司口径(「PC demand will 'eventually' return after outlasting memory prices」+ 30d −49%); (3) **今天 Apple —— 「Apple's iPhone faces a $190 memory problem」, 而 AAPL 今天盘后出财报。** 若内存成本挤压进入 Apple 的毛利率指引, 「内存涨价」这个对内存股的利好会在同一周内被三家下游客户定价为成本冲击。||位置: MA50 下方 **−27.80%**, MA200 上方 +5.95%?(10/29 口径), 距 52w 高 **−52.52%**, 距 52w 低 +510.87%, 远期 PE **3.89x**, put/call 0.83。⚠**11/20 八拆一生效后必须把 thesis_break_price 由 $1,200 改为 $150, 否则风控线失效 8 倍。** 下次公司口径约 2027 年 1 月下旬。另: 「Sandisk (SNDK) Flags Memory Recovery As **AI Fund Unwind Tests Sector Confidence**」。
+
+**Sources.**
+- (aggregated): SanDisk stock tumbles as Kioxia warns on NAND price surge
+- (aggregated): MU, SNDK, DRAM Inch Higher Overnight After Mixed Week: Japan's Kioxia Plunges After Cautious Memory Outlook
+- (aggregated): Micron Stock Climbs as Memory Chip Shortages Could Last Until 2030
+- (aggregated): Apple's iPhone faces a $190 memory problem
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+
+
+---
 ### 2026-10-29 · -5.32% day · ▼ material
 **Tags:** `earnings_print`, `guidance_raise`, `prediction_passed`
 **Confidence:** high
