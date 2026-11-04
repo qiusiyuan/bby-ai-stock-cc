@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · -7.08% day · ▼ major
+**Tags:** `policy_us`, `m_and_a`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **-7.08%, 量比 1.91x。今天唯一一只受到两层独立打击的标的 —— thesis_break 击穿状态加深至 -20.1%。**||**第一层: 政策面。** 数据中心互联敞口, 随州级数据中心限制被卖(机制见 GEV/MU 同日条目)。||**第二层: 全股票收购的自反馈, 这一层是 MRVL 独有的。** 11/02 宣布以 **4.5 股 MRVL 换 1 股 Lumentum**、名义 **$1,150亿** 全股票交易; 当时对价值 $820 而 Lumentum 股价 $750。**MRVL 今天跌 7.08% → 对价同步缩水 → Lumentum 跟跌 10%。报道原话: 'Premium can quickly go negative.'** 这是一笔**会在收购方股价下跌时自我恶化**的交易: 跌得越多, 被收购方股东越可能反对。Coherent 同跌。||**明天 (11/05) Lumentum 出财报 —— 这是全股票对价的第一次市场测试, 比 MRVL 自己 12/01 的财报早 26 天。**「别人的财报先回答你的问题」的清晰一例。||**位置**: $159.80, **低于 thesis-break $200 达 -20.1%**, MA50 $238.51 下方 -33.0%, 距 52 周高 $329.88 为 -51.6%, 5d **-36.50%** / 30d -38.74%, 远期 PE 21.76x。**五条 kill condition 零触发**(AWS Trainium 设计内化 / 光互联两季增速低于 30% / 单一客户占比 >60% / 无故跌 >15% / 季报 miss)—— 其中「无故跌 >15%」严格说不触发, 因为 5d -36.50% **有**明显催化剂(政策 + 并购对价)。
+
+**Sources.**
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- tikr: Lumentum Sinks 10% With Marvell as Blue Wave Hits Data-Center Stocks: “Premium Can Quickly Go Negative”
+- tikr: Lumentum Fell to $750 With Marvell’s Offer Worth $820. Its November 5 Report Tests the Floor
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-11-02 · -9.31% day · ▼ extreme
 **Tags:** `m_and_a`
 **Confidence:** high

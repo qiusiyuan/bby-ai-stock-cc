@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · -5.12% day · ▼ material
+**Tags:** `policy_us`, `regulatory_negative`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **-5.12%, 量比 1.01x 为内存组最低。除了选举主线, 今天多了一条具名的新公司级坏消息, 而它与 DRAM 无关。**||**新事实: 美国商务部延迟批准 SK Hynix 在华扩产所需的美国制造设备许可, 而这件事正在阻碍它在纽约州建设大型 NAND 设施的计划。** 这是「美国限制对华设备许可 → 反过来卡住盟国企业在美国本土的投资」的新形态。||**把它和 10/28 财报里「放弃 Solidigm 纳斯达克 IPO」放在一起: SK Hynix 的 NAND 侧连续两次给出负面行为证据, 而 DRAM/HBM 侧的订单簿零变化。** 这进一步坐实 NAND 与 DRAM 周期不同步。||**thesis 六项 Key Metrics 状态**: 良率 — 10/28 明确正面(HBM4/HBM3E 均超内部目标), 今天零更新; capex — 零更新; ASP — Apple 的内存成本警告间接支持; **HBM 份额百分比与 Samsung 进度两项仍完全零披露, 自 10/28 起连续第五个交易日**。**分子侧已验证、分母侧未动, 而 Bull/Base/Bear 分歧 100% 在分母侧。**||**横截面: Samsung (005930.KS) 今天只跌 0.68%, 为全场最抗跌的半导体, 与 SKHY 裂口 4.44pp —— 与 10/28 的排序完全倒转**(当天本线 +16.63% > Samsung +13.62% > SKHY ADS +12.76%)。||**CXMT 跟踪线第 42 天: 六项技术细节仍一项未动。** 10/28 已建议降级为「仅在第三方良率验证或具名客户 BOM 出现时激活」, 本次沿用。||**位置**: $143.07, MA50 $168.16 下方 -14.9%, 距 thesis-break $115 缓冲 +24.4%, 远期 PE 3.38x, put/call 1.02。下一个自家硬数字 2027-01-27。
+
+**Sources.**
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- Investing.com: US China Export Controls Threaten SK Hynix's Multi-Billion-Dollar New York Chip Expansion Plan
+- MT Newswires: Market Chatter: SK Hynix Hits New York Chip Plant Roadblock
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-10-28 · +12.76% day · ▲ extreme
 **Tags:** `earnings_print`, `guidance_raise`
 **Confidence:** high

@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · -3.34% day · ▼ material
+**Tags:** `policy_us`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **-3.34%。今天的全部驱动是政治性的, 与公司运营零关系 —— 这使它成为一个干净的政治风险读数。**||**对照样本**: 10/28 TSLA 自己的新闻为零、处在折现率逆风日, 自然回撤 **-1.31%**。今天同样零公司运营新闻, 但多了一条具名政治负面, 跌 **-3.34%** —— **差额约 2pp 可归给政治风险溢价的重新定价。**||**事实**: Musk 是本次中期选举最大的个人捐资者, 投入 **$4.74亿** 而全面落败。IBD 标题直写 'Elon Musk's Big GOP Election Bet Fails'。风险通道三条, 报道口径一致: **政府合同、AI 监管、Robotaxi 审批**, 全部要面对一个取得调查权与预算影响力的民主党国会。||**被埋在下面的一条, 方向相反但落点在别处**: 报道称 Tesla 计划把 Optimus 产量做到**每周 2 万台**, 而被点名的受益供应商是**德州仪器**(为机器人提供大量芯片)而非英伟达。**这是 10/28 规律的第三次重复 —— 人形叙事的利好持续落在有当期收入的零部件端, 不落在 TSLA 本身, 也不落在三只人形 ETF 上。**||**支撑 30d +1.33% 的四条利好(Optimus / Cybercab 年底交付 / SpaceX 合并 / Robotaxi 车队占比)里, 至少两条的实现路径经过联邦或州级审批** —— 今天的事件直接提高了这两条的摩擦。||**位置**: $385.19, 远期 PE **178.39x 为全场最高**(第二高的 SNOW 96.00x, 裂口 1.86 倍), MA50 $372.11 上方 +3.5%, **MA200 $384.76 上方仅 +0.11%** —— 两线几乎重合而现价压在 MA200 上, 这是技术面上最干净的一条线。距 thesis-break $250 缓冲 **+54.1%**, put/call 1.19。**90 天内零公司级硬日历**(下一个 2027-01-27)。||**kill condition 今天暴露新缺口: 五条里没有一条度量监管/政治环境, 而今天 -3.34% 的全部内容就是监管环境。** 另 #4(汽车毛利率 ex-credits 连续两季低于 15%)的两季缓冲期恰好覆盖 178x 倍数最该被质疑的时段 = 条件的时间分辨率低于定价变化速度。
+
+**Sources.**
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- Investor's Business Daily: Tesla, SpaceX Dive As Elon Musk's Big GOP Election Bet Fails
+- Yahoo Finance: Elon Musk's $474 Million Election Bet Backfires
+- Motley Fool: Tesla Wants to Build 20,000 Optimus Robots a Week. Here's the Supplier That Gets Paid for Every Single One -- and It's Not Nvidia.
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-10-27 · +4.04% day · ▲ material
 **Tags:** `production_milestone`, `pt_change`, `m_and_a`
 **Confidence:** high

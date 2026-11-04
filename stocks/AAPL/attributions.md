@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · +5.31% day · ▲ material
+**Tags:** `policy_us`, `sector_rotation`, `executive_comment`
+**Confidence:** high
+
+**Primary cause.** **+5.31%, 量比 2.10x, 距 52 周高仅 -1.40%(多家报道称创记录高)。今天唯一一只被双重机制同时推高的标的。**||**双重性**: (a) 它**不建数据中心**, 所以州级政策限制不伤它; (b) 它是**内存涨价的受害方** —— 本周把 12 月季毛利率指引压到 45-46% 并明确归因于内存成本上升, 所以建设放慢直接改善它的成本线。Cramer 的 **'Apple winner'** 正是这个双重性, 原话 'slowdown in build means inventories can build of DRAMs'。**同一句话解释了 AAPL +5.31% 和 MU -7.00%, 这是今天最干净的一对镜像。**||**反面证据同日出现**: 盘后 Bloomberg 报道 Apple 正在**收紧员工 AI 使用预算**, 属更大范围成本削减的一部分。**一家刚接近 52 周高的公司在削 AI 开支, 与它 45-46% 的毛利率指引是同一条成本线** —— 今天的涨幅建立在「成本压力将缓解」的预期上, 而公司自己的行为仍在为成本压力做准备。||**位置**: $349.51, MA50 上方 +4.4%, 距 thesis-break $210 缓冲 +66.4%, 远期 PE 32.82x, put/call 1.07。**kill condition 相关的一条**: 「iPhone 毛利率两季低于 40%」—— 45-46% 的整体毛利率指引距此仍有空间, 但方向是向下的, 而今天定价的是这个方向会反转。
+
+**Sources.**
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- tikr: Ironically, the Blue Wave Could Make Hyperscalers “Good Businesses Again” by Forcing Capex Discipline
+- tikr: Cramer’s Blue Wave Call: “Apple Winner” as Slower Data Center Builds Ease the Memory Squeeze
+- tikr: Apple’s Pain Could Be Micron’s Gain as Memory Prices Surge
+- Bloomberg / Benzinga: Apple Reportedly Tightens the Belt On Employee AI Budgets Amid Cost-Cutting Drive
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-09-10 · +3.56% day · ▲ material
 **Tags:** `tech_breakthrough`, `sector_rotation`, `competitor_news`
 **Confidence:** high

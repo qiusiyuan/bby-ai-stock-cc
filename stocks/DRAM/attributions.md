@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · -5.31% day · ▼ material
+**Tags:** `policy_us`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **-5.31%, 量比 1.34x。ETF 跌幅小于其两只最大成分股(MU -7.00 / SKHY -5.12), 而韩国本线 Samsung 只跌 0.68%。**||**这个排序本身是今天最有信息量的横截面**: SNDK -7.91 > MU -7.00 > DRAM -5.31 > SKHY -5.12 > Samsung -0.68, 裂口 7.23pp。**ETF 跌幅小于成分股 + 韩国本线几乎没动 → 卖压集中在美国时段可交易的纯内存个股载体上, 不是全球性的内存重定价。**||**机制同组**: 民主党全胜 + 德州暂停令承诺 → 建设放慢 → 「库存可累积」(Cramer 原话 'slowdown in build means inventories can build of DRAMs')→ 涨价周期提前结束。**而现货侧证据方向相反**: Apple 本周因内存成本上升把 12 月季毛利率压到 45-46%。||**位置**: $45.11, MA50 $55.38 下方 -18.5%, 距 52 周高 $81.34 为 -44.6% / 距 52 周低 $26.14 为 +72.6%, put/call 0.70。**kill condition 相关两条**: 「DRAM 5 天跌 >15%」—— 5d **-16.65% 已触发**; 「主要 hyperscaler 发出 AI 基础设施 capex 削减信号」—— 今天是**州政府**而非 hyperscaler 发出信号, 字面不触发, 是同一类措辞缺陷(见 GEV #1)。||**同日结构性小新闻**: Roundhill T-REX 2X Long DRAM Daily Target ETF (RAM) 新增周度期权到期 —— 杠杆载体的期权流动性提升, 意味着本组日度波动的放大器增多。
+
+**Sources.**
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- tikr: Micron Sinks 6% as Democratic Sweep Stokes Fears of an AI “Slowdown in Build”
+- Tuttle Capital / Yahoo: Weekly Options Come to the 2X Long DRAM ETF (RAM)
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-10-28 · +5.57% day · ▲ material
 **Tags:** `sector_rotation`, `flow_event`, `earnings_print`
 **Confidence:** high

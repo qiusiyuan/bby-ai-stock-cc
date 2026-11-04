@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · +6.12% day · ▲ material
+**Tags:** `policy_us`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **+6.12%, 量比 2.20x, 在 MA50 上方 +4.8%, 距 52 周高 -7.4%。**||**为什么它的弹性最大, 有一组具体数字。** 自由现金流从 2024Q4 的 **+$178亿** 恶化到最近三个季度连续流出, **9 月季流出 $348亿**; AWS 上季增长 **39%**, backlog **$5,780亿**; **卖方不预期它在 2028 年前出现全年正自由现金流**; 管理层称新增产能一装好就被卖掉。**这个组合意味着任何让它少建一点的外力都会立刻在估值模型里体现 —— 分母侧的改善空间在四家里最直接。**||**机制同 MSFT**: 民主党全胜 + 州级数据中心限制 → 「被迫的 capex 纪律」被当作利好。BuccoCapital: 'The hypers would be good businesses again'。||**位置**: $266.03, 距 thesis-break $185 缓冲 +43.8%, 远期 PE 24.37x。**kill condition 五条零触发**(AWS 增长两季低于 15% / Azure 或 GCP 份额逼近 / 零售利润率两季不扩 / DOJ-FTC 结构性拆分 / Jassy 离职)—— AWS +39% 距第一条门槛极远。||**裁决点同为 2027 年 1 月的 2027 capex 指引。** 注意一个张力: 若 capex 真的被砍, backlog $5,780亿 的交付节奏也会受影响 —— 今天只定价了分母改善, 没定价分子风险。
+
+**Sources.**
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- tikr: Ironically, the Blue Wave Could Make Hyperscalers “Good Businesses Again” by Forcing Capex Discipline
+- Motley Fool: Alphabet, Amazon, and Microsoft All Surged Today. You Can Thank the Big Blue Wave.
+- Benzinga: Big Tech Stocks And Mag7 ETF Jumps After Democratic Sweep Raises Bets For Easing AI Capex
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-11-02 · +4.31% day · ▲ material
 **Tags:** `analyst_upgrade`, `pt_change`
 **Confidence:** high

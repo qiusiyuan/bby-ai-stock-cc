@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · -3.77% day · ▼ material
+**Tags:** `policy_us`, `sector_rotation`, `executive_comment`
+**Confidence:** high
+
+**Primary cause.** **-3.77%, thesis_break 击穿状态加深至 -22.3%(低于 $75)。5d -39.00% / 30d -52.47%, 距 52 周高 -59.1%。**||**今天最值得记的是一条正面公司事实没能托住价格: CEO Lip-Bu Tan 通过家族信托买入约 $970 万 自家股票, 而股价仍跌 3.77%。这是内部人买入第一次出现在击穿之后。**||**同日报道两面并存, 而后者仍在主导**: 「Intel 刚交出 15 年来最强的数据中心增长」vs「指引偏软 + 一起工厂事故」。另有报道称其为「Worst Day Since 1974」之后的 -47% 状态。||**kill condition #3「CEO 在 18 个月内离职」被今天的买入行为明确推远** —— 但在 thesis_break 已击穿的情况下, 这一条的边际价值有限。其余四条: #1(Apple 交易限于原型)无进展; #2(18A 良率低于 60%)无披露; #4(无故跌 >20%)—— 5d -39% **有**催化剂(财报指引 + 工厂事故), 严格不触发; #5(18A 量产时间滑过 2027H1)无更新。||**位置**: $58.27, MA50 $99.39 下方 -41.4%, 远期 PE 32.40x, 量比 1.56x, put/call 0.46。下一个硬日历 2027-01-28。
+
+**Sources.**
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- Benzinga: INTC Stock Dips Even After CEO Lip-Bu Tan Buys $9.7M Worth Of Intel Shares
+- Motley Fool: Intel Just Delivered Its Strongest Data Center Growth in 15 Years. Its Comeback Is Gaining Momentum
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-11-02 · -5.76% day · ▼ extreme
 **Tags:** `guidance_cut`, `earnings_post_print`
 **Confidence:** high

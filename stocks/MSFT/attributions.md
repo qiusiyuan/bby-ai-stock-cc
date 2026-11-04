@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · +6.68% day · ▲ major
+**Tags:** `policy_us`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **+6.68% 全场涨幅第一, 量比 2.15x, 距 52 周高仅 -0.60%。**||**机制可审计, 且是本工作簿记录以来第一次「开支方 vs 供给方」分裂由同一事件推向相反方向。** 过去四个月「AI 投入产出」叙事的全部内容是融资可持续性(10/14-10/22 信用抛售 / 10/20 Meta-Nvidia 债务保险创纪录 / 10/22 四家 CDS 新高 / 10/27 Meta 近 $975亿 股权募资绕开债市 / 10/29 三家按 capex÷经营现金流 67.9%/121.4%/182.1% 被严格排序惩罚), 问的都是「客户还能不能借到钱继续建」。**今天换成「客户就算有钱, 还能不能建」, 而这个问题对两侧符号相反: 建不了 = 少花钱 = 自由现金流回来。**||**论据有出处。** BuccoCapital 原话 **'The hypers would be good businesses again'** —— capex 下降而 diffusion(应用扩散)能追上建设进度, 同时实验室端收入不会掉因为它们是 compute constrained。Jim Cramer 的版本更具体: **微软是唯一一家上个季度主动调低 capex 计划的 hyperscaler, 而它当时得到了最好的市场反应**(股价还是跌了, 但跌得比同行少)。**今天政策把「自我约束」变成「行业约束」, 它是唯一一家已经在做的 —— 从「落后于 AI 竞赛」变成「提前做对了」。**||**10/22 建立的「内生融资 vs 需要外部资本」判别轴今天走到两侧裂口最大的一天**: MSFT 30d **+11.03%** 为开支方第一且是组内唯一既在 MA50 上方($515.34, +7.9%)又接近 52 周高的大型科技股, 而 META 30d **-15.33%** —— 裂口 **26.4pp**。||**四家开支方今天全正且涨幅排序值得记**: MSFT +6.68 > AMZN +6.12 > GOOG +3.25 > META +1.44。**排序与「已经在减 capex 的程度」一致, 与「理论减速空间」相反** —— GOOG 9 月季 capex $514亿(为 2024Q4 的 3.6 倍)且已指引 2027 大幅上升, 减速空间最大却涨最少。||**Mag 7 单日合计市值增加约 $6,000亿, 为史上第十大单日合计涨幅。** 道指 +3.10%(+1,500 点到 53,356)创 1986 年以来最强选举次日, 而 QQQ 只涨 0.97% —— 这不是普涨式风险偏好。||**位置**: $555.80, 距 thesis-break $310 缓冲 +79.3%, 远期 PE 22.99x。**裁决点: 2027 年 1 月的 Q4 财报 + 2027 capex 指引**, 而新国会同期就位 —— 今天的 +6.68% 定价的是一个两个月后才开始生效的政策环境。
+
+**Sources.**
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- tikr: Ironically, the Blue Wave Could Make Hyperscalers “Good Businesses Again” by Forcing Capex Discipline
+- Motley Fool: Alphabet, Amazon, and Microsoft All Surged Today. You Can Thank the Big Blue Wave.
+- tikr: The Mag 7 Just Got a $600B Blue-Wave Surprise
+- Barron's: Dow Heads for Best Post-Election Day Performance in Decades
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-10-28 · -0.06% day · ▲ material
 **Tags:** `earnings_print`, `guidance_inline`
 **Confidence:** high

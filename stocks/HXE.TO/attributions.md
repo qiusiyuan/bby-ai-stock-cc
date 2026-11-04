@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · -5.32% day · ▼ material
+**Tags:** `macro_oil`, `geopolitical_war`, `commodity_move`
+**Confidence:** high
+
+**Primary cause.** **-5.32%, 对 WTI -7.92% 的捕获率 67%(Brent 口径 64%)。**||**10/28 定下的读法今天成立, 而且是干净的一次**: 当时发现 HXE 的系数两天都反向, 原因是加元计价 TSX ETF + 加拿大央行加息使加元走强, 结论是「今后必须与 USD/CAD 同看, 单看不可归因」。**今天 USD/CAD 1.3971 几乎没动(-0.08%)尽管油价崩 8%, 所以今天的 -5.32% 基本是纯油价传导, 零汇率成分。**||**加元今天的反常值得单记**: 油价一天跌 8% 而加元几乎不动, 原因是同日 **TSX 大涨 800 点**(金融+电信领涨)抵消了能源拖累。**这意味着加元现在对油价的敏感度下降, 单看油价不能推加元方向** —— 对 USD→CAD 换汇判断同样适用。||**位置**: C$62.84, MA50 C$65.02 下方 -3.4%, 距 52 周高 C$70.41 为 -10.8%, **30d 仍 +1.39%**。无 thesis_break_price(ETF, 按 tracker 管理)。
+
+**Sources.**
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- MT Newswires: TSX Closer: The Index Jumps More Than 800 Points as Telecom and Financial Stocks Rally
+- Barron's: Lower Oil Prices Take Energy Stocks Down With Them
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-09-15 · +3.27% day · ▲ material
 **Tags:** `macro_oil`, `commodity_move`, `geopolitical_war`, `flow_event`, `sector_rotation`
 **Confidence:** high

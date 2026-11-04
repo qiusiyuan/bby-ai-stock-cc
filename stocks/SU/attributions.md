@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · -4.52% day · ▼ material
+**Tags:** `macro_oil`, `geopolitical_war`, `earnings_print`
+**Confidence:** high
+
+**Primary cause.** **-4.52% 而同日交出一份记录级的 Q3 财报 —— 这是今天最干净的「好数字被宏观完整盖掉」样本。**||**财报内容(全部正面)**: 净利翻倍以上、调整后资金流(AFFO)创历史新高、**同时上调股息和回购**; EPS 超预期 **+20.85%**, 营收超预期 **+27.26%**。||**股价跌 4.52%, 因为油价一天崩 8%(Brent -8.26% / WTI -7.92%, 美伊谈成预期, 见 CNQ 同日条目)。一份记录级的季报在这个背景下变成了不相关信息。**||**与 10/29 SNDK 同形态但原因不同**: SNDK 是「板块已把好数字完整计入」(进财报 5d 仅 +5.48%, sell-the-news 判据不适用); **SU 是「一个更大的公因子盖掉了个股因子」** —— 油价是能源股的分子假设, 它一天动 8% 的权重超过任何单季业绩。||**对 WTI -7.92% 的捕获率 57%(Brent 口径 55%)**, 在四只中段。能源四只排序: CNQ -7.39 > HXE.TO -5.32 > SU -4.52 > CVX -3.69, 与「上游纯度」排序一致。||**位置**: $72.04, **勉强守住 MA50 $71.43 上方 +0.9%**, 距 52 周高 -10.2%, **30d 仍 +5.97% 为能源四只最强**, 远期 PE 10.33x, 量比 1.58x。距 thesis-break $42 缓冲 **+71.5% 为全部持仓最宽之一**。kill #1「WTI 持续低于 $50 两季以上」零触发且距离 43.5%。
+
+**Sources.**
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- Bloomberg / Yahoo: Suncor Profit More Than Doubles as Cash Flow Hits Record High
+- Zacks: Suncor Energy (SU) Q3 Earnings and Revenues Surpass Estimates
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-11-02 · -4.45% day · ▼ material
 **Tags:** `macro_oil`, `geopolitical_trade`
 **Confidence:** high

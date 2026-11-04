@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · -7.39% day · ▼ major
+**Tags:** `macro_oil`, `geopolitical_war`, `earnings_pre_print`
+**Confidence:** high
+
+**Primary cause.** **-7.39% 为能源四只跌幅第一, 量比 2.92x 为全场第一。明天 (11/05) 出财报。**||**主因: 三周战争溢价一天内第二次被完整清零。** Brent -8.26% 到 $95.04(5d -17.59%), WTI -7.92% 到 $88.48, 双双收在 $100 以下。**定价的是政治概率而不是任何一条事实** —— 副总统 Vance 公开把共和党败选归因于美伊战争不受欢迎, 市场由此推论政府有政治动机谈成。Lipow Oil Associates 的 Andy Lipow 原话: 'I think that the election might be leading the market to conclude that Trump might now be inclined to make a deal.' **没有停火声明、没有新一轮会谈公告、没有任何官方进展。**||**CNQ 跌幅第一与 11/02 的排序完全倒转, 而机制是同一个。** 11/02 胡塞袭击沙特 Ras Tanura 最大出口终端 → 非海运替代桶溢价上升 → CNQ(最重的加拿大重油)涨幅第一。今天溢价清零 → 同一个溢价被完整抽走 → CNQ 跌幅第一。**这是「加拿大重油对地缘溢价的 beta 高于美国综合油」的第二次确认, 方向相反而幅度排序一致。**||**但不能把 -7.39% 全部归给油价: 量比 2.92x 为全场最高, 而它明天出财报** —— 财报前的量比异常意味着卖压里有一部分是仓位清理。**所以今天不是加拿大重油 beta 的干净读数。**||**对 WTI -7.92% 的捕获率 93%, 是四只里唯一接近 1:1 的**(SU 57% / CVX 47% / HXE.TO 67%); 对 Brent 口径为 89%。对照 10/28 发现的「上行捕获率在油价区间上端钝化」(当时 45-61%): **今天是下跌日而捕获率落在同一个 45-93% 区间内, 没有出现下行侧的放大。**||**位置**: $49.64, 跌破 MA50 $50.75 到下方 -2.2%, 距 52 周高 -11.8%, **30d 仍 +4.20%**, 远期 PE 11.23x。距 thesis-break $30 缓冲 **+65.5%**。kill #1「WTI 持续低于 $50 两季以上」—— WTI $88.48 距 $50 还有 43.5%, **零触发且距离极远**。||**明天财报要看的唯一变量: WCS-WTI 价差实际值** —— 它是加拿大重油 thesis 里唯一能被公司披露直接回答的变量, 且 kill condition 里有「WCS 价差扩大到 $20+ 超过 30 天」这一条。
+
+**Sources.**
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- Barron's: Lower Oil Prices Take Energy Stocks Down With Them
+- MT Newswires: Sector Update: Energy Stocks Fall Late Afternoon
+- Zacks: Canadian Natural to Report Q3 Earnings: What's in the Offing?
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-09-10 · -1.07% day · ▼ minor
 **Tags:** `commodity_move`, `geopolitical_war`, `macro_oil`, `macro_rates`, `sector_rotation`
 **Confidence:** medium

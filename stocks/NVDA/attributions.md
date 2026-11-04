@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · -3.17% day · ▼ material
+**Tags:** `policy_us`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **-3.17%, 远期 PE 12.58x 为全场最低, 这也是跌幅相对温和的原因。**||**机制**: 州级数据中心限制 → 建设放慢 → GPU 需求节奏后移。横截面上它跌得比 GEV(-9.30)/MRVL(-7.08)/MU(-7.00)都少, 与「估值已压缩到 12.58x, 政策风险的边际定价空间较小」一致。||**★11/17 Q3 FY27 财报是本工作簿未来 43 天内唯一的大型 AI 供给侧公司口径, 也是今天这场政策冲击的第一次量化裁决, 而它在时间上孤立** —— 今天到 11/17 只有 CNQ 一家公司出数字, 11/17 到 12/01 又有 14 天只有宏观。**所以这一份财报会独自承担「州级数据中心限制影响多少实际订单」这个问题的全部解释权, 是本窗口里杠杆最高的单一事件。**||**要看的不是营收数字, 而是管理层对 2027 年数据中心部署节奏的口径是否因州级政策改变** —— 那才是今天全市场定价的变量。||**位置**: $200.13, MA50 $221.15 下方 -9.5%, MA200 $204.39 下方 -2.1%, 距 52 周高 -17.8%, 距 thesis-break $150 缓冲 **+33.4%**, put/call 1.12, 量比 1.40x。||**同日一条小样本正面**: Hive 的 AI 云业务安排 $1.29亿 融资采购数千颗 Nvidia 芯片, 有多年客户合约支持 —— 规模不足以影响定价, 但方向上说明 neocloud 端的采购仍在继续。
+
+**Sources.**
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- Yahoo Finance: Hive lines up $129 million to buy Nvidia AI chips
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-10-22 · -4.29% day · ▼ material
 **Tags:** `sector_rotation`, `competitor_news`
 **Confidence:** high

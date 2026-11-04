@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · -7.91% day · ▼ major
+**Tags:** `policy_us`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **-7.91%, thesis_break 击穿加深至 -13.6%(低于 $1,200)。5d -26.15% / 30d -42.89%, 距 52 周高 -55.9%。**||**最值得记的一条: 10/29 评分日之后六个交易日股价又跌 26%, 而没有任何一条信息反驳过那天的数字。** 10/29 的 Tier 1 两项可测量门槛**全部超出承诺上沿**(营收 $110.31亿 vs 上沿 $108亿; 非 GAAP EPS $49.51 vs 上沿 $46), 毛利率 85.0% 继续上行而非回落, datacenter +61% QoQ。**跌的是倍数和需求持续性假设, 不是当期盈利。**||**今天的机制同内存组**: 建设放慢 → 库存可累积 → 涨价周期提前结束。但 SNDK 的读数不应被当作 DRAM 的读数 —— **NAND 与 DRAM 已有两条独立的不同步证据**: (a) 10/28 SK Hynix 在内存最热的一天放弃 Solidigm 纳斯达克 IPO; (b) 今天美国延迟批准 SK Hynix 在华扩产设备许可, 阻碍其纽约 NAND 新厂计划。**两条都来自同一家内存龙头对自己 NAND 资产的行为。**||**⚠ 操作性提醒: 11/20 八拆一生效, 届时须把 thesis_break_price 由 1200 改为 150**, 否则风控线会突然显示为「击穿 87%」。||**位置**: $1,037.40, MA50 $1,531.29 下方 -32.3%, 远期 PE 3.61x, 量比 1.32x。**kill #3 后半边(Consumer 段萎缩)已于 10/29 坐实**(Consumer -29% QoQ / -39% YoY)。
+
+**Sources.**
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- tikr: Sandisk Sinks 8% as Democratic Wave and Memory Price Worries Hit AI Stocks
+- Yahoo Finance: SanDisk Retreats 9%, Micron and Western Digital Fall 7% as Election and Memory Price Worries Weigh
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-11-02 · -2.87% day · ▼ material
 **Tags:** `competitor_news`, `sector_rotation`
 **Confidence:** high

@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · -7.00% day · ▼ major
+**Tags:** `policy_us`, `sector_rotation`, `executive_comment`
+**Confidence:** high
+
+**Primary cause.** **-7.00% 领跌内存组, 而跌的不是内存价格 —— 恰恰相反。**||**反向证据先记**: Apple 本周把 12 月季毛利率指引压到 **45-46%** 并明确归因于内存成本上升, Investing.com 称之为「unprecedented memory warning」。**现货侧的紧缺仍在, 证据方向与股价方向相反。**||**被重定价的是需求的持续时间, 而传导机制今天第一次被完整写明。** Cramer 原话: **'Apple winner… slowdown in build means inventories can build of DRAMs.'** 因果链: 民主党全胜 + 德州新州长承诺暂停新建数据中心 → 建设放慢 → 数据中心对内存的即时提货需求下降 → 买家从「抢不到」变成「可以等」→ 补库 → 现货见顶。**这从时间轴的另一端攻击 10/28 SK Hynix 的「售罄至 2029」: 那句话说的是产能被预订满, 没说这些预订对应的机房一定建得起来。**||**10/28 的全部涨幅已被完整抹掉, 而没有任何一条信息反驳过那天的数字。** 10/28 本线 +16.63% / MU +4.28% / SKHY +12.76%(单季营业利润率 79.7%, 营收首破 100 万亿韩元, 合同覆盖 2027-2028 产能一半以上)。五个交易日后 MU 跌 12.6% / SKHY 跌 19.1%。**订单簿零变化, 变的是订单能否落地。**||**Samsung 只跌 0.68% 是今天最有信息量的横截面。** 组内排序 SNDK -7.91 > MU -7.00 > DRAM -5.31 > SKHY -5.12 > Samsung -0.68, 裂口 7.23pp。**DRAM ETF 跌幅小于其两只最大成分股而韩国本线几乎没动 → 这是美国时段针对特定可交易载体的减仓, 不是全球性内存重定价。**||**kill condition 三条逐条零触发, 而缺口类型是「度量现货价格而市场在定价需求持续时间」**: #1(HBM 营收<$2B 或毛利率 QoQ 下降)— Apple 的成本警告是反向证据; #2(PC/mobile DRAM 价格指数两季跌 >20%)— **今天定价的正是这条的预期, 但事实零发生**; #3(Samsung HBM 份额回到 45%+)— 仍零披露。三条零触发而价格 30d -25.80%。||**位置**: $795.23, MA50 $972.08 下方 -18.2%, 距 52 周高 -36.6%, 远期 PE **3.83x**。距 thesis-break $650 缓冲 **+22.3%**。卖方共识 normalized EPS: FY2026 $75.52(实际) / FY2027 $176.50 / FY2028 $207.76。||**接下来 49 天内存组零公司级硬数字**(MU 自己 12/23)。**真正的第一个判据来自别人: 11/17 NVDA 财报** —— GPU 出货节奏直接决定 HBM 提货节奏, 要看的不是营收而是管理层对 2027 年数据中心部署节奏的口径是否因州级政策改变。
+
+**Sources.**
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- tikr: Ironically, the Blue Wave Could Make Hyperscalers “Good Businesses Again” by Forcing Capex Discipline
+- tikr: Micron Sinks 6% as Democratic Sweep Stokes Fears of an AI “Slowdown in Build”
+- Investing.com: Apple’s ’unprecedented’ memory warning adds fuel to wobbly Micron, SK hynix trade
+- Motley Fool: Why Micron Stock Is Falling Today
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-10-29 · -4.98% day · ▼ material
 **Tags:** `sector_rotation`, `competitor_news`
 **Confidence:** high

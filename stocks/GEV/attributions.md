@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · -9.30% day · ▼ major
+**Tags:** `policy_us`, `regulatory_negative`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **全场跌幅第一, 量比 2.17x 全场第二高。这是追踪 GEV 以来第一次有一条干净、可审计、与公司基本面完全无关的归因。**||**机制**: 民主党同时拿下参众两院, 并翻转德州/佐治亚/俄亥俄三个共和党州长席位。德州新州长 Gina Hinojosa(击败现任 Greg Abbott)竞选纲领含「对新建数据中心立即实施暂停令」。**德州占全美已规划数据中心产能约 27%(Wells Fargo)**; 高盛预计德州/佐治亚/密歇根实施附条件暂停令等待新立法, **会加码限制的各州合计占全美规划产能 45%**, 立法内容可能含取消税收优惠与收紧环境/用水/用电规则。||**量级的三条限定, 全部来自公司自己的披露**: (a) **只有约 20% 的已签燃气轮机产能服务数据中心**(年中口径); (b) 9 月末已签燃气设备 **122 GW**, 管理层预计年底 130 GW; (c) backlog 单季增 **$200亿** 到 **$1,970亿**, 回购授权翻倍到 $200亿。**backlog 是已承诺工作, 选举不会自动取消它** —— 受损的是尚未开工项目的新订单, 财务上最早要到 2027 年营收才体现。||**Evercore ISI 的 Amit Daryanani 原话把今天定性为情绪而非盈利**: 'Assuming a more restrictive data center development environment, this could create incrementally more negative sentiment for AI infrastructure exposed names.' 措辞是 sentiment 而不是 estimates。||**横截面说明 GEV 不是最受伤的, 且跌幅与数据中心敞口占比正相关**: Modine -21.4%(数据中心销售 +95% 到 $4.4亿, 但该段毛利率降 4.7pp 到 19.7%) / Sterling -21.5%(营收 +127%, backlog +78% 到 $61亿, 但 Q3 新签略少于完工) / Comfort Systems -15.1%(backlog $178亿 vs 一年前 $94亿) / Vertiv -12.9%(Q3 营收 +61% 到 $43亿, 有机订单翻倍以上) / Quanta -12%(backlog 创纪录 $637亿) / Vistra -12% / Constellation -7%。**GEV 的 -9.30% 属中段, 其 20% 敞口在组内偏低。**||**反向对照: Eaton 与 Caterpillar 今天未跌** —— Eaton 电气 backlog 9 月末同比 +46% 且周二上调有机增长指引; Caterpillar 发电业务 Q3 销售 +30%(主要为数据中心涡轮机与发动机)。**所以今天卖的不是「所有数据中心供应链」, 而是「未开工项目敞口高的」。**||**11/03 对照必须记: 昨天 GEV 还涨 6%**(Eaton 创纪录订单 + Bernstein 看好数据中心研报)。两天内同一标的从 +6% 到 -9.3%, 净 -3.8%, 而驱动完全不同 —— 政策冲击打断了一个正在形成的基本面修复。||**位置**: $832.83, 同时在 MA50 $930.29 下方 -10.5% 与 MA200 $946.80 下方 -12.0%(两线相距 $16.51; 11/02 时仅相距 $2.79 几乎重合), 距 52 周高 -30.4%, 距最低卖方目标 JPM $1,150 达 -27.6%。put/call 0.99(11/02 为 1.14)。距 thesis-break $700 缓冲 +19.0%。||**kill condition 四条零触发, 但 #1 今天暴露措辞缺陷**: 「Hyperscalers 公开削减数据中心建设 >20%」—— 若州级暂停令导致 hyperscaler 实际削减, 字面上会被触发, 但**触发者是州政府而非 hyperscaler 自主决定**; 条件设计意图是捕捉需求自发走弱而非供给侧被行政限制, 两者含义不同(需求消失 vs 需求延后)。**而 thesis 的 Bear 情景(25%, 目标 $700-750)原文正是「hyperscalers defer data center buildout」—— Bear 第一次有具名事件推进, 而 kill condition 仍零触发。**现价低于 Base 下沿($1,150)27.6%, 高于 Bear 上沿($750)11.0%。||**建议补一条 kill condition**: 「任一占全美规划数据中心产能 >15% 的州实施新建暂停令或等效限制」。德州一个州即 27%, 高盛口径受限各州合计 45%, 量级已超过任何单一 hyperscaler 削减能造成的影响。
+
+**Sources.**
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- tikr: Ironically, the Blue Wave Could Make Hyperscalers “Good Businesses Again” by Forcing Capex Discipline
+- tikr: GE Vernova Sinks 10%, Vistra Down 12% as Democrats Win Congress: “Incrementally More Negative Sentiment”
+- Barron's / Yahoo: Why a Democratic Sweep Is Crushing GE Vernova and More Industrial Stocks
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-10-28 · -1.30% day · ▼ minor
 **Tags:** `earnings_print`, `guidance_raise`, `m_and_a`
 **Confidence:** high

@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · +3.25% day · ▲ material
+**Tags:** `policy_us`, `sector_rotation`, `competitor_news`
+**Confidence:** medium
+
+**Primary cause.** **+3.25%, 但缓冲收紧到 +2.61% 成为未击穿名单里最近的一只, 距 52 周低只有 +5.85%。confidence 记 medium 因为两条相反方向的驱动无法分离。**||**最反直觉的一条: 理论上最受益的它涨得最少。** 四家开支方排序 MSFT +6.68 > AMZN +6.12 > GOOG +3.25 > META +1.44, 而 GOOG 9 月季 capex **$514亿**(约为 2024Q4 的 **3.6 倍**)且**已指引 2027 大幅上升**, 减速空间在四家里最大。「被迫纪律」的利好对它本应最大, 市场给的却最少。||**一个可能的解释是它同时承受一条独立的分流叙事**: OpenAI 今天宣称「ChatGPT 的搜索量已达 Google 的五分之一」。**必须记下口径保留**: 独立分析机构、Alphabet 自己的财报、以及这个比较缺失的基准, 三者都不支持该口径。||**反向的正面事实**: **Gemini 4 Carbon 在 Artificial Analysis 的 Intelligence Index 上排名第一**, 而 a16z 的 Martin Casado 称最好的前沿模型拿走 **80% 以上**的 AI 支出(按使用量加权)。另: 加州亿万富翁税公投正走向失败。||**风控是今天 GOOG 最重要的事实**: $287.30 距 thesis-break **$280** 只剩 **+2.61%**。5 天 -10.75% 把缓冲从 10/28 的 +14.5% 压到 +2.6%; MA50 $331.98 下方 -13.5%, 距 52 周高 -29.0%, put/call **0.32 为全场最低**。**五条 kill condition 零触发**(搜索量两季同比下降 / DOJ 结构性救济 / 云份额两季流失 / 无故跌 >15% / 季报 miss) —— **形态是「价格已逼近预设破位线而所有预设条件都没响」**, 这是 kill-condition 错配的又一例。||**今天的结构是「风控线最近 × 受益逻辑成立」, 两者方向相反。** 不应因为「开支方受益」就把它当加仓标的, 它同时是本 cluster 风控线最近的一只。
+
+**Sources.**
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- tikr: Ironically, the Blue Wave Could Make Hyperscalers “Good Businesses Again” by Forcing Capex Discipline
+- Motley Fool: Alphabet, Amazon, and Microsoft All Surged Today. You Can Thank the Big Blue Wave.
+- tikr: OpenAI Says ChatGPT’s Search Volume Is Now a Fifth of Google’s
+- tikr: Top VC: The Best AI Models Take “80% Plus” of Spend. And Alphabet’s Gemini Just Ranked No. 1
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-10-29 · -12.29% day · ▼ extreme
 **Tags:** `earnings_post_print`, `sector_rotation`
 **Confidence:** high

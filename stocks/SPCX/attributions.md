@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-04 · -3.81% day · ▼ material
+**Tags:** `policy_us`, `executive_comment`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **-3.81%。三条互不相关的负面同时压上, 而它们全部不是公司基本面。**||**(1) 「Musk 折价」第一次成为可量化的定价因子。** 他是本次中期选举最大的个人捐资者, 投入 **$4.74亿** 而全面落败; 报道把他称为选举的 'biggest loser'。Rocket Lab -4% / AST SpaceMobile / Planet Labs 同跌, 说明卖压扩散到整个太空组。**过去四个月 SPCX 的归因机制有三类(稀缺性溢价 / 被动流 / 收入可中断性), 今天是第四类: 创始人的政治资本。**||**(2) 更不友好的国会**: 民主党取得调查权与预算影响力, 会让 **Tesla-SpaceX 合并**与 SpaceX 的 AI 推进都更难。同日国防链同向: ITA -1.54% / Lockheed **-6.9%**(跌幅为 SPCX 的 1.8 倍) —— **Starshield 这条收入线现在同时面对「客户按政治逻辑决策」和「客户的决策者换了党」。**||**(3) 州级数据中心限制。但 Musk 对此给了一个有记录价值的反应: 他说太空数据中心 'looking pretty appealing right now'。** 这是今天唯一一条把 SPCX 从受害者重新框定为替代方案的信息。**性质必须讲清楚: 这是叙事不是收入** —— 从逻辑成立到现金流之间没有任何已知时间表, 而同一位 CEO 在 11/02 刚把「建成移动运营商」推到「还需 2-3 年」。||**SSPC(2x 反向) +7.78% vs SPCX -3.81% = 比值 2.04x, 精确等于设计杠杆** → 今天的下跌是**连续的、无跳空的**, 是正常换手而非流动性事件或被动基金集中减仓(对照 11/02 当时 1.83x)。||**🚨 结构性风险: `thesis_break_price` 仍为 null, 连续第 10 份报告 —— 而它是唯一在 35 天内有重大结构事件(12/09 lockup 到期)的持仓。两者相乘 = 12/09 当天若大跌, 工作簿没有任何预设判据能说明「这是正常还是破了」。**||**kill condition 错配加深**: 五条(Starship 失败 / ARPU<$50 / 内部人卖出 / 关联交易 / 吊销频谱或多国封禁)里**零条覆盖「创始人的政治资本」, 也零条覆盖「竞争对手是主权国家」**。10/28 记录的「维度缺」今天变成「两个维度缺」。||**6/18 三条抗跌理由现状**: 稀缺性溢价 **进一步削弱**(30d -8.39%, 稀缺正被主权替代品与政治折价同时攻击); 被动流地板 **削弱**(跌破 MA50 第 5 个交易日, 低于 Base 下沿 $150 达 -9.4%); Anthropic 重定价 **否证**第 7 个交易日。||**位置**: $135.92, MA50 $149.64 下方 -9.2%, 距 52 周高 -39.8% / 距 52 周低 +29.7%, 远期 PE 53.00x, put/call 1.49。**建议动作: 先定 thesis_break_price。三条可参考的锚 —— Base 下沿 $150(已跌破 9.4%)、52 周低 $104.83(距今 -22.9%)、IPO 定价区间下沿。**
+
+**Sources.**
+- AFP / Yahoo Finance: Stocks surge, oil tumbles after Trump's election rout
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+- tikr: Rocket Lab Falls 4%, SpaceX Down 4% as Midterms Make Musk the “Biggest Loser”
+- tikr: Musk Says Data Centers in Space “Looking Pretty Appealing Right Now” as SpaceX Sinks on Blue Wave
+- Motley Fool: Why SpaceX Stock Is Down Today
+
+**Cross-assets.** n/a
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-04.md`
+
+---
 ### 2026-11-02 · +3.53% day · ▲ material
 **Tags:** `partnership_news`, `earnings_pre_print`
 **Confidence:** medium
