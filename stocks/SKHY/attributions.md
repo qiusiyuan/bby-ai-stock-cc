@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-05 · -10.95% day · ▼ extreme
+**Tags:** `policy_us`, `sector_rotation`, `memory_pricing`, `macro_dollar`
+**Confidence:** high
+
+**Primary cause.** **板块冲击(大选驱动) + 汇率, 零公司级负面。**||**板块层**: 与 MU 同源 —— 41 项地方数据中心公投 40 项被否 + 议员呼吁 AI 暂停 + Qualcomm 点名「全行业内存动态」。||**汇率是今天最干净的一条分解**: 韩股本线 000660.KS ₩1,264,000 / **-9.59%**(真实收盘), ADS -10.95%, 超额跌幅 1.36pp; 而今日 USD/KRW +0.74% 而 DXY 仅 -0.06% —— 即 ADS 的超额跌幅几乎全部是韩元购买力而非股价。韩元走弱而美元不动 = 纯韩国资金流出。||**今日创新的 52 周低点**: 盘中最低 $122.50 即 52 周最低价本身。**7/28 的结构性观察至今成立且更极端: SKHY 从未在今天的价格下方交易过, 技术面零参考, 只有 thesis_break $115 作基本面地板(距今 -8.8%)。**上方 $150-170 是 IPO 首两周密集成交区(距今仅 +17.7%), 任何反弹到那里都会遇到巨大解套卖压。||**ADS 对韩股溢价 +36.4%**(₩1,264,000 ÷ 10 ÷ 1,352.88 = $93.43 对 $127.40), 位于 7/31 研究确立的历史区间 +19.3%~+42.4%(均值 +32.3%)偏上。该溢价是结构性的(流通 ADS 仅占股本 2.44%, 存管单向受限 → 套利通道无法抹平), 但对反弹的含义很具体: **即使公司股价反弹, ADS 持有者同时承担「股价回升」与「溢价压缩」两个相反方向的力, 而后者在流动性收缩时压缩最快。**||**基本面今天一条未被否证**: 10/27 Q3 营收 ₩104.62 万亿(+327.9%)/营业利润率 79.7%/「实质售完至 2029」/合约覆盖 2027-28 产能一半以上/良率超内部目标。||**未解决的分母侧**: Bernstein 称三星 3Q26 HBM 营收已反超(10/26 已记), 而 SK Hynix 10/27 对 HBM 份额百分比与三星进度两项**完全零披露**。下一个披露机会在 83 天后(2027-01-27)。||**大选归因分解**: 30d -33.83% 中选举后三天贡献 -14.18%, 占整月回撤 **41.9%**。
+
+**Sources.**
+- Benzinga: Musk Says “Data Centers In Space Looking Pretty Appealing Right Now” After Voters Sided Against Data Centers In 40 Of 41 Local Ballot Measures
+- Yahoo/24-7: IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears
+- Yahoo Finance: Chip stocks hammered as political shift raises AI infrastructure concerns
+- press: Stocks slide as investors worry about data centre backlash
+- 24/7 Wall St.: SanDisk Slides 7%, Micron and Western Digital Fall 5% as Lawmaker’s Call for AI Pause Extends Memory Rout
+- 24/7 Wall St.: Two Days Before Today's Selloff, Data Put Global September Chip Sales Up 146.8% Year to Year
+
+**Cross-assets.** SPY -3.53% · VIX 24.98 · TEN YEAR 4.837 · WTI 90.48 · BRENT 97.09 · DXY 101.45 · GOLD GLD 376.93 · SILVER SLV 47.38 · BTC 75864.13 · USDKRW 1352.88 · USDCNY 6.6574 · QQQ -5.28% · DJI -2.66%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-05.md`
+
+---
 ### 2026-11-04 · -5.12% day · ▼ material
 **Tags:** `policy_us`, `regulatory_negative`, `sector_rotation`
 **Confidence:** high

@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-05 · -9.05% day · ▼ major
+**Tags:** `policy_us`, `executive_comment`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **少见的干净归因: 下跌原因来自管理层自己的公开表态, 且方向是承认约束。** 41 项地方数据中心公投结果出来后 Musk 表示「太空数据中心现在看起来挺有吸引力」。||**两种读法, 市场选了反向那一边**: 正向读法是地面受限则轨道数据中心的长期 TAM 变大而 SpaceX 是唯一有运力做的(同日 ARK 逢跌买入 = 这条读法的资金投票); 反向读法是一家公司的 CEO 在核心客户群遭遇监管阻力时把替代方案描述为「有吸引力」, 等于确认现有收入路径的阻力是真的 —— 而太空数据中心无营收、无时间表、无定价, 用零现金流的远期选项对冲当期政策风险, 折现一算是负的。-9.05% 说明市场读的是后者。||**第三条独立信息**: 报道提到「选举结果提高了数据中心相关 IPO 的门槛」, 以及出租方寻求出售 SpaceX 的 $400 亿 AI 交易 —— 若成立意味着其 AI 算力业务的融资结构正在被重新议价。**11/15 前后 Anthropic 定价会间接回答这个问题**(S-1 显示 SPCX 算力交易近乎翻倍至 $845 亿)。||SSPC(2x 反向) +18.04%, 比值 1.99x ≈ 设计杠杆 → 下跌是连续非跳空, 符合持续被动减仓而非恐慌出清(后者才给可交易的底)。||**🚨 `thesis_break_price` 仍为 null, 第 10 份连续报告; lockup 剩 34 天。** 五条 kill condition(Starship 失败/ARPU<$50/内部人卖出/关联交易/吊销频谱或多国封禁)今天零触发, 而今天的下跌原因一条都不在其中 —— 这是 kill-condition 缺口的第二个新维度: **客户端的监管阻力**(10/28 的新维度是竞争)。
+
+**Sources.**
+- Benzinga: Musk Says “Data Centers In Space Looking Pretty Appealing Right Now” After Voters Sided Against Data Centers In 40 Of 41 Local Ballot Measures
+- Yahoo Finance: Chip stocks hammered as political shift raises AI infrastructure concerns
+- Yahoo/24-7: IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears
+- 24/7 Wall St.: Why SpaceX Stock Is Still Going Down
+- IBD: SpaceX Lessors Look To Sell $40 Bil AI Deal. ARK Buys The Dip On SPCX Stock.
+
+**Cross-assets.** SPY -3.53% · VIX 24.98 · TEN YEAR 4.837 · WTI 90.48 · BRENT 97.09 · DXY 101.45 · BTC 75864.13 · USDKRW 1352.88 · QQQ -5.28% · DJI -2.66%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-05.md`
+
+---
 ### 2026-11-04 · -3.81% day · ▼ material
 **Tags:** `policy_us`, `executive_comment`, `sector_rotation`
 **Confidence:** high

@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-05 · -7.64% day · ▼ major
+**Tags:** `policy_us`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **公因子(全部供给方共享)**: 11/03 中期选举后, 全美 41 项地方数据中心公投中选民在 40 项投反对票 + 德州新州长承诺暂停审批(该州占全美规划产能 27%) + 一位议员公开呼吁 AI 暂停。传导链是「需求无法被转化为订单」而非「需求下降」—— 这是本轮 AI 周期第一个**不能用资本解决**的约束。出钱方均跌 2.2%(四只全部跑赢 SPY -3.53%) 对供给方均跌 10.8%, 幅度差 4.9 倍。反向数据: 9 月全球半导体销售同比 +146.8%(抛售前两天发布), 基本面读数与价格方向完全相反。||**NVDA 独有: 零公司级负面, 但自 10 月高点以来市值已蒸发近 $1.4 万亿** —— 单一公司的回撤规模超过多数国家的 GDP, 而它同时是指数里权重最大的单一持仓(报道角度: 「Nvidia Is the Biggest Bet in Your Index Fund」), 所以它的跌幅通过被动资金传导到整个市场。||远期 PE **11.6x** 是组内最便宜的, 而跌幅 -7.64% 在供给方里偏小 —— 倍数今天再次不是跌幅的解释变量。||**11/17 财报(12 天后)是未来 43 天唯一的大型供给侧公司口径。** 关键不是营收, 是管理层对 2027 年数据中心部署节奏的口径是否因州级与地方审批变化而调整 —— 这是把今天的政治噪音换成数字的第一个机会。另有一条独立约束: 报道提到「Nvidia 面临 60 万颗芯片的中国瓶颈」。距 thesis_break $150 缓冲 +23.23%。
+
+**Sources.**
+- Benzinga: Musk Says “Data Centers In Space Looking Pretty Appealing Right Now” After Voters Sided Against Data Centers In 40 Of 41 Local Ballot Measures
+- Yahoo Finance: Chip stocks hammered as political shift raises AI infrastructure concerns
+- Yahoo/24-7: IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears
+
+**Cross-assets.** SPY -3.53% · VIX 24.98 · TEN YEAR 4.837 · WTI 90.48 · BRENT 97.09 · DXY 101.45 · BTC 75864.13 · USDKRW 1352.88 · QQQ -5.28% · DJI -2.66%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-05.md`
+
+---
 ### 2026-11-04 · -3.17% day · ▼ material
 **Tags:** `policy_us`, `sector_rotation`
 **Confidence:** high

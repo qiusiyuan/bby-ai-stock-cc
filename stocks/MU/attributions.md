@@ -4,6 +4,27 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-05 · -12.91% day · ▼ extreme
+**Tags:** `policy_us`, `sector_rotation`, `memory_pricing`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** **两层叠加: 大选驱动的板块冲击 + 两条 MU 独有的公司级负面。**||**板块层**: 11/03 中期选举后, 全美 41 项地方数据中心公投中选民在 40 项投反对票 + 德州新州长承诺暂停审批(德州占全美规划产能 27%) + 一位议员公开呼吁 AI 暂停。传导链是「需求无法被转化为订单」而非「需求下降」: 地方否决新建 → 规划产能无法开工 → 内存采购被推后 → 订单簿久期被拉长。出钱方均跌 2.2%(全部跑赢 SPY) 对供给方均跌 10.8%, 幅度差 4.9 倍。||**公司层第一条(最重要, 也是本轮周期第一条需求侧坏消息)**: Qualcomm 手机芯片营收同比 **-26%**, 并把疲软公开归因于「industry-wide memory dynamics」。这是内存涨价第一次被下游大客户点名为自己收入下滑的原因 —— 此前 10 月的所有下跌定价的都是「持续时间」(审批/融资/周期长度), 今天定价的是「涨价已经杀死了一部分终端需求」。对 MU 的打击比对纯 HBM 玩家更直接(通用 DRAM 敷口更大), 这解释了 MU -12.91% 比 SK Hynix 韩股 -9.59% 多跌 3.3pp。限定: 它说的是手机端对价格敏感, 而 HBM 长约卖给数据中心, 两个不同终端市场不同合约结构, 不可混为一谈。||**公司层第二条**: 台湾 $45 亿建厂计划遇阱(报道用词 unexpected roadblock / stalls), 具体障碍未说明。方向其实不明确 —— 在供不应求的市场里产能推迟对现有产能的定价权是正面的; 市场读成负面更多是与当日「审批成为瓶颈」主题共振。||**位置**: $692.58, 跌破 MA200 至下方 -8.3%(失去 7/28 曾记为「至少有 MA200 作长期 support」的优势), 远期 PE 3.33x, 距 thesis_break $650 仅 **+6.55%**(盘中最低 $655.86 距它 0.90%)。自盘中低点反弹 +5.60% 为四个候选最强。put/call 1.44 四只里最高。||**大选归因分解**: 30d 回撤 -36.49% 中, 09/25-11/02 贡献 -22.97%, 11/02-11/05 三个交易日贡献 -17.56% —— 即 **48.1% 的整月回撤集中在选举后 11.5% 的时间里**。
+
+**Sources.**
+- Benzinga: Musk Says “Data Centers In Space Looking Pretty Appealing Right Now” After Voters Sided Against Data Centers In 40 Of 41 Local Ballot Measures
+- Yahoo/24-7: IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears
+- Yahoo Finance: Chip stocks hammered as political shift raises AI infrastructure concerns
+- press: Stocks slide as investors worry about data centre backlash
+- 24/7 Wall St.: SanDisk Slides 7%, Micron and Western Digital Fall 5% as Lawmaker’s Call for AI Pause Extends Memory Rout
+- 24/7 Wall St.: Two Days Before Today's Selloff, Data Put Global September Chip Sales Up 146.8% Year to Year
+- 24/7 Wall St.: Sandisk Sinks 14%, Micron Down 10% as a Top Phone Chipmaker Blames Weak Sales on “Industry-Wide Memory Dynamics”
+
+**Cross-assets.** SPY -3.53% · VIX 24.98 · TEN YEAR 4.837 · WTI 90.48 · BRENT 97.09 · DXY 101.45 · GOLD GLD 376.93 · SILVER SLV 47.38 · BTC 75864.13 · USDKRW 1352.88 · USDCNY 6.6574 · QQQ -5.28% · DJI -2.66%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-05.md`
+
+---
 ### 2026-11-04 · -7.00% day · ▼ major
 **Tags:** `policy_us`, `sector_rotation`, `executive_comment`
 **Confidence:** high

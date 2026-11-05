@@ -4,6 +4,29 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-05 · -6.54% day · ▼ major
+**Tags:** `policy_us`, `sector_rotation`, `guidance_cut`, `government_stake`
+**Confidence:** high
+
+**Primary cause.** **今日 -6.54% 是供给方里最小的跌幅, 而这本身就是结论: 坏消息对 INTC 的边际信息量已近饱和。**||**大选归因分解 —— 本条记录的核心**: 30d 回撤 -55.83%(归一化口径)中, 09/25-11/02 贡献 **-51.24%**, 选举后三天仅贡献 -9.41% —— 即 **只有 16.9% 的回撤与大选有关**, 对照 MU 48.1% / AVGO 47.0% / SKHY 41.9%。且 51.2pp 中的绝大部分集中在**一天**: 10/30 单日跌约 **28.6%**(10/29 Q3 财报后), 原因是现金流重置(cash flow reset) + Q4 指引疲软 + 供应瓶颈 + **PC 端被内存涨价挤压**。**即使 41 项公投结果全部被推翻, INTC 的 51pp 跌幅一分钱回不来。**||**唯一的结构性特殊点: 大选对 INTC 同时打击上行与下行保护两端。** 美国政府持有其约 10% 股权(CHIPS Act 资助转为联邦股权), turnaround 叙事里有一整块是「主权背书 = 下行保护」。国会换手后这块背书的政治可持续性首次被质疑(今日标题「Intel Stock Has Plunged 50% in a Month. Trump’s Bad Week Is Getting Worse.」)。四只里唯一一只大选同时削弱了订单与安全垫的。||**四只里唯一站在内存周期错误一侧的**: MU/SKHY 卖内存, AVGO 的 ASIC 定价不由内存成本主导; **INTC 买内存** —— CCG(PC CPU)要与 OEM 一起承担 DRAM 涨价。推论: 内存多头论点成立则 PC 业务继续被挤压; 内存空头论点成立则整个半导体一起跌而 INTC 作为高 beta turnaround 又是 first to sell。**两种情况下都不是最优表达。**||**估值与资负表**: 远期 PE **30.3x**(四只里唯一还贵的; 另三只 3.0x/3.3x/15.4x), 滚动 PE None(仍亏损)。毛债约 $500 亿/现金约 $250 亿 → 净债 $250 亿 + capex 刚性 + 自由现金流假设刚被下调 = 四只里唯一一只资负表本身构成约束的。||**未出清信号**: put/call **0.39** 四只里最低 —— 跌 57% 后期权市场仍净偏 call, 是投机性多头仍在场而机构既没买保护也没买股的形态。同形态在 INTC 自己的归因记录里出现过两次(7/01 与 7/02, 当时记为「无机构 capitulation」), 两次之后都没有立即反转。且 52 周低 $32.89 在当前价下方 **39.6%**。||**公平记录的多头侧**: 内部人在低位真金白银买入(CEO Lip-Bu Tan 个人 $2,000 万, 浮亏 $480 万; 11/04 又买 $970 万)是最难伪造的信号; 且被打到 -61.7% 的股价一旦遇到 18A 具名客户或政府股权条款正面变化, 会给出四只里最大的单日弹幅。**所以正确定性不是「最差」, 是「概率最低、赔率最高、持续性最差」—— 期权型头寸的形状, 不是反弹型头寸的形状。**||**情景已失效**: 现价 $54.46 低于自己 Bear 下沿 $70 达 22.2%, 但三情景写于 2026-06-18 且 Bear 枚举的四个条件里**没有一条是「现金流重置」** → 正确读法是 Bear 情景过期而不是股价超跌 22%。**需一次完整 refresh-thesis。**
+
+**Sources.**
+- Benzinga: Musk Says “Data Centers In Space Looking Pretty Appealing Right Now” After Voters Sided Against Data Centers In 40 Of 41 Local Ballot Measures
+- Yahoo/24-7: IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears
+- Yahoo Finance: Chip stocks hammered as political shift raises AI infrastructure concerns
+- press: Stocks slide as investors worry about data centre backlash
+- 24/7 Wall St.: SanDisk Slides 7%, Micron and Western Digital Fall 5% as Lawmaker’s Call for AI Pause Extends Memory Rout
+- 24/7 Wall St.: Two Days Before Today's Selloff, Data Put Global September Chip Sales Up 146.8% Year to Year
+- Barron's: Intel Stock Has Plunged 50% in a Month. Trump’s Bad Week Is Getting Worse.
+- 24/7 Wall St.: Lip-Bu Tan Put $20 Million Into Intel and Is Down $4.8 Million
+- Simply Wall St: Intel (INTC) Stock Still Looks Below Fair Value After Cash Flow Reset
+
+**Cross-assets.** SPY -3.53% · VIX 24.98 · TEN YEAR 4.837 · WTI 90.48 · BRENT 97.09 · DXY 101.45 · GOLD GLD 376.93 · SILVER SLV 47.38 · BTC 75864.13 · USDKRW 1352.88 · USDCNY 6.6574 · QQQ -5.28% · DJI -2.66%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-05.md`
+
+---
 ### 2026-11-04 · -3.77% day · ▼ material
 **Tags:** `policy_us`, `sector_rotation`, `executive_comment`
 **Confidence:** high

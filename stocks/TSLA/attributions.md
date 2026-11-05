@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-05 · -11.24% day · ▼ extreme
+**Tags:** `policy_us`, `sector_rotation`, `executive_comment`
+**Confidence:** high
+
+**Primary cause.** **今天 TSLA 第一次有了具名的政治原因, 而不只是 beta 放大。** 报道口径是「民主党全胜让 SpaceX-Tesla 合并前景受到质疑」—— 合并需要反垄断、证券、可能还有国防相关审查, 三条审批路径的人事与优先级都随国会换手而变。||**这件事的意义在于: 10/22-11/04 支撑 TSLA 的四条利好(Robotaxi 扩张 / SpaceX 合并 / FSD 进展 / Optimus)全部属于「无验证日期的叙事型利好」, 今天其中一条第一次拿到了反向的具名证据, 而剩下三条的验证日期仍然不存在。**||Musk 当日两个表态都在确认约束而非机会: 「太空数据中心现在看起来挺有吸引力」(地面受阻) + 对德州选举结果的回应。德州是 Tesla 与 SpaceX 的双重运营基地。||**跌幅 -11.24% 是 SPY 的 3.2 倍、QQQ 的 2.1 倍**; 远期 PE 158.3x 全组最高, put/call 1.48 全组最高。对照 SNOW(90.9x)-5.29%: 排序仍按**确定性**而非倍数 —— SNOW 的收入与数据中心审批无关。||**结构性缺口: 83 天内零公司级硬日历**(下次 2027-01-27)。唯一会定期产生硬数字的来源是中国月度交付量, 而四条叙事型利好完全不涉及这个维度。距 thesis_break $250 缓冲 +36.75%, 四条 kill condition 零触发。
+
+**Sources.**
+- Benzinga: Musk Says “Data Centers In Space Looking Pretty Appealing Right Now” After Voters Sided Against Data Centers In 40 Of 41 Local Ballot Measures
+- Yahoo Finance: Chip stocks hammered as political shift raises AI infrastructure concerns
+- Yahoo/24-7: IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears
+- MarketWatch: SpaceX, Tesla stocks tumble as Democratic sweep raises questions on merger prospects, AI build-out
+
+**Cross-assets.** SPY -3.53% · VIX 24.98 · TEN YEAR 4.837 · WTI 90.48 · BRENT 97.09 · DXY 101.45 · BTC 75864.13 · USDKRW 1352.88 · QQQ -5.28% · DJI -2.66%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-05.md`
+
+---
 ### 2026-11-04 · -3.34% day · ▼ material
 **Tags:** `policy_us`, `sector_rotation`
 **Confidence:** high

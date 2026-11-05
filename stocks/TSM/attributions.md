@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-05 · -8.91% day · ▼ major
+**Tags:** `policy_us`, `sector_rotation`, `flow_event`
+**Confidence:** medium
+
+**Primary cause.** **公因子(全部供给方共享)**: 11/03 中期选举后, 全美 41 项地方数据中心公投中选民在 40 项投反对票 + 德州新州长承诺暂停审批(该州占全美规划产能 27%) + 一位议员公开呼吁 AI 暂停。传导链是「需求无法被转化为订单」而非「需求下降」—— 这是本轮 AI 周期第一个**不能用资本解决**的约束。出钱方均跌 2.2%(四只全部跑赢 SPY -3.53%) 对供给方均跌 10.8%, 幅度差 4.9 倍。反向数据: 9 月全球半导体销售同比 +146.8%(抛售前两天发布), 基本面读数与价格方向完全相反。||**TSM 独有: 量比 2.09x 为全场最高**(盘中口径, 实际全日等效更高) —— 在一个零公司级负面的日子里出现全场最高的成交, 更像被动与宏观资金在调整整个「AI 代工」敷口, 而不是对 TSM 本身的重新判断。||**与基本面的反差在这只上最极端**: 9 月全球半导体销售同比 +146.8%, 而 TSM 是这个数字的直接受益者与计量者。同时报道提到 11 月销售数据面临 $533 亿的季度门槛。||远期 PE 15.4x 与 AVGO 持平; 距 thesis_break $280 缓冲 +28.74%(四只被重罰的半导体里缓冲最宽); 下次口径 2027-01-14(70 天)。
+
+**Sources.**
+- Benzinga: Musk Says “Data Centers In Space Looking Pretty Appealing Right Now” After Voters Sided Against Data Centers In 40 Of 41 Local Ballot Measures
+- Yahoo Finance: Chip stocks hammered as political shift raises AI infrastructure concerns
+- Yahoo/24-7: IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears
+
+**Cross-assets.** SPY -3.53% · VIX 24.98 · TEN YEAR 4.837 · WTI 90.48 · BRENT 97.09 · DXY 101.45 · BTC 75864.13 · USDKRW 1352.88 · QQQ -5.28% · DJI -2.66%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-05.md`
+
+---
 ### 2026-10-22 · -4.65% day · ▼ material
 **Tags:** `sector_rotation`, `competitor_news`
 **Confidence:** high

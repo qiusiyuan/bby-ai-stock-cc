@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-05 · -13.26% day · ▼ extreme
+**Tags:** `policy_us`, `memory_pricing`, `flow_event`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **公因子(全部供给方共享)**: 11/03 中期选举后, 全美 41 项地方数据中心公投中选民在 40 项投反对票 + 德州新州长承诺暂停审批(该州占全美规划产能 27%) + 一位议员公开呼吁 AI 暂停。传导链是「需求无法被转化为订单」而非「需求下降」—— 这是本轮 AI 周期第一个**不能用资本解决**的约束。出钱方均跌 2.2%(四只全部跑赢 SPY -3.53%) 对供给方均跌 10.8%, 幅度差 4.9 倍。反向数据: 9 月全球半导体销售同比 +146.8%(抛售前两天发布), 基本面读数与价格方向完全相反。||**DRAM ETF 独有的读法: 跌幅(-13.26%)大于其成分股的跌幅均值**(MU -12.91 / SK Hynix 韩股 -9.59 / Samsung -8.20), 且量比 1.77x —— **ETF 跌得比成分股多 = 被动资金在整体撤出这个主题, 而不是在成分股之间重新配置。** 这是今天内存组里最清楚的一条资金流证据。||内存组今日幅度排序: SNDK -17.22 > DRAM -13.26 > MU -12.91 > SKHY -10.95 > SK Hynix 韩股 -9.59 > Samsung -8.20。排序逻辑是「消费电子敷口 > 被动撤出 > 公司特定负面 > 纯 HBM > 双向对冲」, 完全符合 Qualcomm 点名内存成本这条消息的传导路径。||**与 10/28 完全相反**: 当天排序是 SK Hynix +16.63% 领涨 / Samsung +13.62% / MU +4.28%, 由 HBM 纯度决定。**同一个组八个交易日内两次完全相反的排序, 两次都由当天的具名公司事实解释, 倍数在两次里都不是解释变量。**
+
+**Sources.**
+- Benzinga: Musk Says “Data Centers In Space Looking Pretty Appealing Right Now” After Voters Sided Against Data Centers In 40 Of 41 Local Ballot Measures
+- Yahoo Finance: Chip stocks hammered as political shift raises AI infrastructure concerns
+- Yahoo/24-7: IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears
+
+**Cross-assets.** SPY -3.53% · VIX 24.98 · TEN YEAR 4.837 · WTI 90.48 · BRENT 97.09 · DXY 101.45 · BTC 75864.13 · USDKRW 1352.88 · QQQ -5.28% · DJI -2.66%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-05.md`
+
+---
 ### 2026-11-04 · -5.31% day · ▼ material
 **Tags:** `policy_us`, `sector_rotation`
 **Confidence:** high

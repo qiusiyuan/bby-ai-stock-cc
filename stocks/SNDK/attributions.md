@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-05 · -17.22% day · ▼ extreme
+**Tags:** `policy_us`, `sector_rotation`, `memory_pricing`, `earnings_post_print`
+**Confidence:** high
+
+**Primary cause.** **公因子(全部供给方共享)**: 11/03 中期选举后, 全美 41 项地方数据中心公投中选民在 40 项投反对票 + 德州新州长承诺暂停审批(该州占全美规划产能 27%) + 一位议员公开呼吁 AI 暂停。传导链是「需求无法被转化为订单」而非「需求下降」—— 这是本轮 AI 周期第一个**不能用资本解决**的约束。出钱方均跌 2.2%(四只全部跑赢 SPY -3.53%) 对供给方均跌 10.8%, 幅度差 4.9 倍。反向数据: 9 月全球半导体销售同比 +146.8%(抛售前两天发布), 基本面读数与价格方向完全相反。||**SNDK 独有(今日全场最大跌幅)**: NAND 的终端结构里消费电子占比高于 DRAM, 而 SNDK 的 Consumer 段上季已 -29% QoQ / -39% YoY —— 今天 Qualcomm 点名「全行业内存动态」导致的需求破坏对它的敞口是组内最大的。||**10/29 刚被评分为 validated**(营收 $11,031M 超承诺上沿 $10.8B; 非GAAP EPS $49.51 超上沿 $46; 毛利率 85.0% 继续上行; datacenter +61% QoQ), **七个交易日后股价 -35.43%** —— 好数字已被完整计入且不提供任何保护。||击穿 thesis_break $1,200 达 -28.44%。⚠ **11/20 八拆一后须把 `thesis_break_price` 由 $1,200 改为 $150**(连续第三份报告提示)。
+
+**Sources.**
+- Benzinga: Musk Says “Data Centers In Space Looking Pretty Appealing Right Now” After Voters Sided Against Data Centers In 40 Of 41 Local Ballot Measures
+- Yahoo Finance: Chip stocks hammered as political shift raises AI infrastructure concerns
+- Yahoo/24-7: IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears
+
+**Cross-assets.** SPY -3.53% · VIX 24.98 · TEN YEAR 4.837 · WTI 90.48 · BRENT 97.09 · DXY 101.45 · BTC 75864.13 · USDKRW 1352.88 · QQQ -5.28% · DJI -2.66%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-05.md`
+
+---
 ### 2026-11-04 · -7.91% day · ▼ major
 **Tags:** `policy_us`, `sector_rotation`
 **Confidence:** high

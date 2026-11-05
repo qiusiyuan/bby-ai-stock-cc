@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-05 · -9.08% day · ▼ major
+**Tags:** `sector_rotation`, `policy_us`, `unattributed`
+**Confidence:** low
+
+**Primary cause.** **无具名公司级催化, 置信度低。** 今日 -9.08% 发生在零公司新闻的情况下(连续第六个交易日无更新), 量比 0.81x 为组内偏低 —— 在一个 VIX +50.4% 的日子里, 一只已深度击穿风控线的标的以低成交下跌, 更符合「无人接盘」而非「有人抛售」。||**击穿 thesis_break $9.00 加深到 -16.56%**(11/04 为 -8.2%, 一天恶化 8.4pp), 距 52 周高 **-57.0%**。击穿的原始理由(FCF 指引下调 + CEO 称供应挤压是结构性成本上升 + 计划涨价)仍未被任何新信息更新。||**下次公司口径 2027-01-28(84 天)** —— 与 INTC 同日, 两只深度击穿的标的在同一天给出下一个数字。在此之前 NOK 没有任何可以自证的机会。||本条按 `unattributed` 记录: 跌幅达到记录门槛但找不到当日具名原因, 宁可记为无法归因, 不在现有叙事里挑一个最接近的。
+
+**Sources.**
+- Benzinga: Musk Says “Data Centers In Space Looking Pretty Appealing Right Now” After Voters Sided Against Data Centers In 40 Of 41 Local Ballot Measures
+- Yahoo Finance: Chip stocks hammered as political shift raises AI infrastructure concerns
+- Yahoo/24-7: IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears
+
+**Cross-assets.** SPY -3.53% · VIX 24.98 · TEN YEAR 4.837 · WTI 90.48 · BRENT 97.09 · DXY 101.45 · BTC 75864.13 · USDKRW 1352.88 · QQQ -5.28% · DJI -2.66%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-05.md`
+
+---
 ### 2026-10-26 · +6.14% day · ▲ material
 **Tags:** `analyst_upgrade`, `partnership_news`, `sector_rotation`
 **Confidence:** high

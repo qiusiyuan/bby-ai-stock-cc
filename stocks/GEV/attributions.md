@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-05 · -6.32% day · ▼ major
+**Tags:** `policy_us`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **连续第二天纯政策驱动, 但证据等级升了一级。** 11/04 的输入是一个州长候选人的竞选承诺(政治意愿, 可变、可被诉讼、可被州议会阻挡); 今天的输入是 **41 个独立地方公投、40 个反对**(样本量 41、方向一致率 97.6% 的选民行为数据集)。对一家靠电网接入审批吃饭的公司, 后者的信息量高出一个数量级。||**机制**: 地方审批是建设链条最前端也最难绕过的一环 —— 没有土地用途变更、电网接入许可、取水批准, 项目连规划都不成立。而 GEV 的全部产品(燃气轮机/变压器/高压电网设备)都是在这一环通过之后才被采购的。||**这条对 backlog 质量提出新问题**: backlog $1,967 亿创纪录, 但 10/28 财报已暴露新订单与新机位预订「missed by a mile」(BNP: 「slot conversions now in focus」), 而 backlog 里有多少是机位预订(上限大、确定承诺小)公司未披露。若地方审批成为普遍约束, 机位预订转化率会直接下降。||**Bear 情景第三次实质前进而 kill condition 仍零触发**: Bear 原文是「hyperscalers defer data center buildout」, 11/04 出现州政府版本, 今天出现地方公投版本, 而 #1 的措辞只覆盖 hyperscaler 自主削减。**建议补第二条触发器: 「任一占全美规划数据中心产能 >10% 的州通过限制新建数据中心的立法或行政命令」—— 德州一州占 27%, 该条件今天已接近成立。**||缓冲从 11/04 的 +18.9% 两天降到 **+11.46%**; 同板块 Vistra -12% / Constellation -8% / Vertiv -9%(11/04 口径), GEV 不是最差的。下次口径 2027-01-27(83 天)。
+
+**Sources.**
+- Benzinga: Musk Says “Data Centers In Space Looking Pretty Appealing Right Now” After Voters Sided Against Data Centers In 40 Of 41 Local Ballot Measures
+- Yahoo Finance: Chip stocks hammered as political shift raises AI infrastructure concerns
+- Yahoo/24-7: IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears
+- Barron's: Why a Democratic Sweep Is Crushing GE Vernova and More Industrial Stocks
+- Motley Fool: Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?
+
+**Cross-assets.** SPY -3.53% · VIX 24.98 · TEN YEAR 4.837 · WTI 90.48 · BRENT 97.09 · DXY 101.45 · BTC 75864.13 · USDKRW 1352.88 · QQQ -5.28% · DJI -2.66%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-05.md`
+
+---
 ### 2026-11-04 · -9.30% day · ▼ major
 **Tags:** `policy_us`, `regulatory_negative`, `sector_rotation`
 **Confidence:** high

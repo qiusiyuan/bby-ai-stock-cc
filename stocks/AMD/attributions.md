@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-05 · -14.67% day · ▼ extreme
+**Tags:** `policy_us`, `sector_rotation`, `earnings_post_print`
+**Confidence:** high
+
+**Primary cause.** **公因子(全部供给方共享)**: 11/03 中期选举后, 全美 41 项地方数据中心公投中选民在 40 项投反对票 + 德州新州长承诺暂停审批(该州占全美规划产能 27%) + 一位议员公开呼吁 AI 暂停。传导链是「需求无法被转化为订单」而非「需求下降」—— 这是本轮 AI 周期第一个**不能用资本解决**的约束。出钱方均跌 2.2%(四只全部跑赢 SPY -3.53%) 对供给方均跌 10.8%, 幅度差 4.9 倍。反向数据: 9 月全球半导体销售同比 +146.8%(抛售前两天发布), 基本面读数与价格方向完全相反。||**AMD 独有**: 11/03 财报数据中心营收 +97%, 11/04 是组内**唯一上涨的半导体**(+1.01%, 当时判为「靠财报数据独立托住」)。**今天 -14.67% 把财报涨幅两天内全部还回并超出** —— 即一份强财报在政策冲击下只提供了一个交易日的保护。这是对 11/04「AMD 靠自身数据绝缘」那条判断的直接否证。||距 thesis_break $380 仅 **+9.76%**; 远期 PE 25.6x 为四大 AI 芯片里第二贵; 下次口径 2027-02-02(89 天)。
+
+**Sources.**
+- Benzinga: Musk Says “Data Centers In Space Looking Pretty Appealing Right Now” After Voters Sided Against Data Centers In 40 Of 41 Local Ballot Measures
+- Yahoo Finance: Chip stocks hammered as political shift raises AI infrastructure concerns
+- Yahoo/24-7: IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears
+
+**Cross-assets.** SPY -3.53% · VIX 24.98 · TEN YEAR 4.837 · WTI 90.48 · BRENT 97.09 · DXY 101.45 · BTC 75864.13 · USDKRW 1352.88 · QQQ -5.28% · DJI -2.66%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-05.md`
+
+---
 ### 2026-10-27 · +5.45% day · ▲ material
 **Tags:** `partnership_news`, `secondary_offering`, `competitor_news`
 **Confidence:** high

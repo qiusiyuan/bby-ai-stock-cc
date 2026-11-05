@@ -4,6 +4,26 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-05 · -7.89% day · ▼ major
+**Tags:** `policy_us`, `sector_rotation`, `flow_event`
+**Confidence:** high
+
+**Primary cause.** **纯板块冲击, 零公司级负面 —— 四个候选里唯一一只今天没有自己坏消息的。**||**驱动**: 41 项地方数据中心公投 40 项被否 + 德州暂停审批承诺 + 议员呼吁 AI 暂停。传导是「XPU 订单交付时点推后 → 订单久期拉长」。||**🚨 今日击穿 thesis_break $300 至 -0.07%, 而该点位与 52 周低 $289.96 相距仅 3.4%。盘中最低 $292.80 落入 9/16 thesis 原文标注的「$290-300 决策区」并守住, 收 $299.80 —— 四只里唯一一只在事先定义好的规则位上止跌的, 也是唯一未创 52 周新低的。**||**9/16 记录的「最雾反驳的空头论点」今天在价格上实现了**: 不是指引落空, 而是「市场按周期股给倍数」。当前远期 PE 15.4x, 正落在内存股 12-15x 与优质半导体 20x+ 之间。这条论点无法被任何单季财报证伪。重要的推论: **当一个空头论点已被完整定价, 它就不再是下行风险而变成了上行的条件**。||**生意未被该事件碰到**: XPU 是 2-3 年协同设计周期的长约, 采购发生在机房开工之前很久; VMware 是纯订阅制企业软件, 与审批零相关, 贡献 $200-250 亿/年 FCF —— 另三只完全没有这东西。Q3 FY26 营收 $295.9 亿(+85.5%), AI 半导体 $167.0 亿(+221%), Q4 AI 指引 $217 亿, $3,500 亿两年管道, 六个已具名 XPU 客户。||**脖颈仍在客户去单一化**(8/19 Google→Marvell; 9/02 前后 Qualcomm→Amazon), 而 AVGO **从未披露 XPU 客户集中度** → 风险幅度不可量化, 而不可量化的风险在恐慌环境里按最坏情况定价。||**信息到达最快**: 12/09 财报 34 天; 且 11/15 前后 Anthropic IPO 定价是一个**指名自己的中间读数** —— S-1 披露 Broadcom 为其安排 $630 亿设备租赁融资。||**大选归因分解**: 30d -15.18% 中选举后三天贡献 -7.13%, 占整月回撤 **47.0%** —— 四只里大选占比最高之一, 但绝对幅度最小。
+
+**Sources.**
+- Benzinga: Musk Says “Data Centers In Space Looking Pretty Appealing Right Now” After Voters Sided Against Data Centers In 40 Of 41 Local Ballot Measures
+- Yahoo/24-7: IREN Falls 5%, CoreWeave Drops 4% as Texas Election Stokes Data Center Moratorium Fears
+- Yahoo Finance: Chip stocks hammered as political shift raises AI infrastructure concerns
+- press: Stocks slide as investors worry about data centre backlash
+- 24/7 Wall St.: SanDisk Slides 7%, Micron and Western Digital Fall 5% as Lawmaker’s Call for AI Pause Extends Memory Rout
+- 24/7 Wall St.: Two Days Before Today's Selloff, Data Put Global September Chip Sales Up 146.8% Year to Year
+
+**Cross-assets.** SPY -3.53% · VIX 24.98 · TEN YEAR 4.837 · WTI 90.48 · BRENT 97.09 · DXY 101.45 · GOLD GLD 376.93 · SILVER SLV 47.38 · BTC 75864.13 · USDKRW 1352.88 · USDCNY 6.6574 · QQQ -5.28% · DJI -2.66%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-05.md`
+
+---
 ### 2026-10-27 · +4.00% day · ▲ material
 **Tags:** `partnership_news`, `analyst_upgrade`, `flow_event`
 **Confidence:** high
