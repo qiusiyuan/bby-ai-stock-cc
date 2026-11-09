@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +8.01% day · ▲ major
+**Tags:** `sector_rotation`
+**Confidence:** low
+
+**Primary cause.** **+8.01% 为深跌镜像反弹, 无具名催化剂; 仍击穿 $1,200 达 -24.84%。**||**无公司级新闻**: 当日全部为估值/情绪类(Bernstein 称有 259% 上行空间 / 「超卖: 便宜货还是价值陷阱」/ Zacks 价值股推荐 / 「拆股哪只更好买: META vs SNDK」)。||**好数字无保护的持续验证**: 10/29 刚被评为 **validated**(营收 $11,031M 与非 GAAP EPS $49.51 双超承诺上沿, 毛利率 85.0% 继续上行, datacenter +61% QoQ), 此后股价 30d **-47.34%**。即「财报超预期」在当前环境里完全不构成价格保护 —— 这与 11/05 的记录一致。||**NAND ≠ DRAM(口径关键)**: SNDK 30d -47.34% 远超内存组其余(MU -30.29% / SKHY -26.33% / Samsung -30.13% / DRAM ETF -30.08%), 离群幅度 17pp。原因是产品(NAND 而非 DRAM/HBM)与合约结构不同, 且叠加了杠杆 ETF 的连锁抛售。**不可与 DRAM/HBM 混为一谈。**||**待办(连续第四份报告提示)**: **11/20 八拆一生效后须把 stocks/SNDK/triggers.yaml::thesis_break_price 由 $1,200 改为 $150。**||**位置**: $901.97, MA50 下方 -39.6%, MA200 下方 -29.2%; 距 52 周高 $2,354.39 为 -61.7%; 远期 PE 3.1x(全组最低); 量比 0.80x; put/call 0.68。下次自身口径 2027 年 1 月下旬。
+
+**Sources.**
+- TIKR: Sandisk Lost 51% in a Month. Bernstein Sees 259% Upside From Here
+- MarketBeat: Sandisk Shares Are Oversold: Bargain or Value Trap?
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -17.22% day · ▼ extreme
 **Tags:** `policy_us`, `sector_rotation`, `memory_pricing`, `earnings_post_print`
 **Confidence:** high

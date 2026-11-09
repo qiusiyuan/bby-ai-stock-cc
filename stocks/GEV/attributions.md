@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +7.43% day · ▲ major
+**Tags:** `guidance_raise`, `policy_us`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** **11/05 记录的「AI 建设第一次遇到不能用资本解决的约束」今天拿到第一条事实反驳 —— 买方还在签电。但反驳有明确边界。**||**催化剂一(主因)**: Constellation Energy 上调全年指引 —— 2026 调整后经营性 EPS 从 $11.50-12.50 上调到 **$12.50-12.80**(分析师预期 $12.22); Q3 调整后经营性收益 $5.06/股(去年同期 $3.04); **年内已签约长期购电协议约 8,500MW, 含 Amazon 与 Google**; CEO Joe Dominguez 明确「新增电力上线不由现有用户承担成本」。这同时回答了 11/05 的两个问题: (a) 数据中心还在签长期电力合约吗? 在签; (b) 地方选民反对的核心理由(电费转嫁居民)成立吗? 发电方口径是不成立。同板块反应: Bloom Energy +14% / Vertiv +10% / GEV +7.43%。||**催化剂二(政策, 今天最被低估的一条)**: Trump 11/08 周日晚在 Truth Social 呼吁全体参议员投票通过 **S.5653** —— 收窄联邦项目环评范围、设定许可期限、指示 FERC 为大型算力负荷建立电费支付者保护机制, 把其 'RATEPAYER PROTECTION PLEDGE'(数据中心自建自付电力)写入法律。法案由共和党 Capito/Lee 与民主党 Whitehouse/Heinrich 四人 9/30 共同提出, **至今未出委员会**。Trump 要求在 2027 年 1 月民主党接管国会前通过 —— 有明确截止但无确定日期。||**方向分叉(关键)**: S.5653 对 GEV 与开支方方向相反 —— 保住「电可以建」(利好 GEV 的 122GW 在手订单执行确定性), 但把电力成本从电费支付者转到数据中心业主(MSFT 截至 2026 年 6 月财年资本支出已达 $1,160 亿、为 FY2022 的 $239 亿近五倍, 成本上升)。这是 11/04「同一事件第一次把开支方与供给方推向相反方向」的续集, 但推的方向换了。||**反驳的边界(必须记)**: 11/05 定价的是**地方审批权**(41 项公投 40 项被否 + 德州候任州长承诺暂停审批, 德州占全美规划产能 27%), Constellation 回答的是**购电合同** —— 能签到电不等于能建成数据中心。今天的新闻里德州候任州长 Gina Hinojosa 承诺在该州立规前暂停新项目许可这条**仍然成立**。两件事同时为真, 所以今天的修复是局部的。||**自身基本面与价格脱节**: Q3 订单有机 **+96% 至 $293 亿**, 在手燃气设备 **122GW**(年底预计 ≥130GW), 而**数据中心仅占其在手燃气容量约 20%**(Q2 口径)—— 11/04 市场把它跌 10%(同日 Vistra -12%)是按纯数据中心敞口定价的, 实际另外 80% 来自常规电力需求、更新换代与国际订单(今日另拿一笔德国风机订单 + 20 年服务协议)。分析师预期营收从 2025 年 $381 亿增至 2028 年 $613 亿。||**位置**: $831.65, 风控缓冲从 11/05 的 +11.46% 回到 **+18.81%**(退出接近区); MA50 下方 -9.7%, MA200 下方 -12.3%; 30d -12.39%; 远期 PE 32.2x(11/06 收盘约 33x 为近一年低位, 历史均值 54x, 今日回到约 35x); **put/call 1.64 为全组最高** = 保护买盘最重, 与政策不确定性一致。
+
+**Sources.**
+- TIKR: [GE Vernova Soars 7% as Constellation Raises Guidance, Easing Data-Center Moratorium Fears](https://www.tikr.com/blog/ge-vernova-soars-7-as-constellation-raises-guidance-easing-data-center-moratorium-fears)
+- TIKR: [Trump Urges Senate to Make Data Centers "Pay for Their Own Electricity." Power Builders Stand to Gain](https://www.tikr.com/blog/trump-urges-senate-to-make-data-centers-pay-for-their-own-electricity-power-builders-stand-to-gain)
+- Stocktwits: GE Vernova Secures New German Wind Turbine Order — Adds 20-Year Service Agreement
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -6.32% day · ▼ major
 **Tags:** `policy_us`, `sector_rotation`
 **Confidence:** high

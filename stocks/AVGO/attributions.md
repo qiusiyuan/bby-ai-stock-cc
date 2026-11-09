@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +9.23% day · ▲ major
+**Tags:** `sector_rotation`, `partnership_news`
+**Confidence:** medium
+
+**Primary cause.** **本轮下跌中第一条被修复的 thesis_break 线 —— 两个交易日从 $299.80 回到 $320.79。**||**无公司级催化剂**: 当日 AVGO 自身新闻只有两条非价格相关项(向 CNCF 贡献 VM API 开源项目; 确认 12/09 发布 Q4 及 FY2026 财报)。涨幅 +9.23% 判为板块叙事修复 + 30 天跌幅最轻带来的相对抗跌优势被买回。||**击穿修复的结构含义**: 11/05 AVGO 当日新增击穿 $300(收 $299.80, 盘中最低 $292.80, 距 52 周低 $289.77 仅 +0.98%)—— 当时被记为「最干净的一次规则定义的二元判断落地」。两个交易日后这条线被收复, 缓冲 +6.93%。五条击穿线里修复的恰好是「最新发生、幅度最浅」那一条, 另外四条(INTC -21.89% / MRVL -22.21% / SNDK -24.84% / NOK -8.56%)全部收窄但仍在击穿状态。||**为什么是 AVGO 先修复**: 30d **-8.23%** 为供给方最轻(对照 MRVL -38.22% / INTC -49.51% / NVDA -22.42% / TSM -13.64%), 远期 PE 16.5x; 即它在 11/05 的抛售里受损最小, 反弹时弹性也最先恢复。||**提前到达的判据**: 自身口径 12/09(30 天), 但 **约 11/15 的 Anthropic IPO 定价会先给出一个间接读数** —— S-1 披露 Broadcom 为 Anthropic 安排 **$630 亿设备租赁融资**, AVGO 是这笔交易的直接当事方。定价成功与否即「AI 建设方融资可得性」的市场裁决, 比 AVGO 自己的财报早 24 天。||**位置**: $320.79, MA50 下方 -7.5%, MA200 下方 -12.4%; put/call 1.04; 量比 0.65x(盘中口径)。
+
+**Sources.**
+- Yahoo Finance: Broadcom Inc. to Announce Fourth Quarter and Fiscal Year 2026 Financial Results on Wednesday, December 9, 2026
+- _Data:_  ()
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -7.89% day · ▼ major
 **Tags:** `policy_us`, `sector_rotation`, `flow_event`
 **Confidence:** high

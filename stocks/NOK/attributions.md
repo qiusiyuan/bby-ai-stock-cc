@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +7.51% day · ▲ major
+**Tags:** `sector_rotation`, `unattributed`
+**Confidence:** low
+
+**Primary cause.** **+7.51% 完全无具名催化剂, 判为板块 beta 回弹; 击穿收窄 8.0pp 是四条里最多的。**||**无新闻**: 当日无任何 NOK 公司级口径。单日 +7.51% 在全场排第五, 但它既不在 AI 算力叙事修复的核心(非芯片), 也没有政策或订单消息 —— 判为低价股在风险偏好回升日的高弹性。||**击穿状态**: 仍击穿 thesis_break $9.00 达 **-8.56%**(11/05 为 -16.56%, **单日收窄 8.0pp 为四条击穿线里最多**); 距 52 周低 $5.86 为 +40.4%, 距 52 周高 $17.45 为 -52.8%。||**信息路径关闭**: 下次自身口径 2027-01-28(80 天)—— 与 INTC 同日, 两只都是接下来近三个月无法自证的击穿标的。||**位置**: $8.23, MA50 下方 -15.2%, MA200 下方 -20.5%; 30d -18.63%; 远期 PE 17.0x; **量比 0.38x 偏低** = 涨幅大但成交不配合, 这是判为 beta 而非资金进场的一条依据; put/call 0.43。
+
+**Sources.**
+- _Data:_  ()
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -9.08% day · ▼ major
 **Tags:** `sector_rotation`, `policy_us`, `unattributed`
 **Confidence:** low

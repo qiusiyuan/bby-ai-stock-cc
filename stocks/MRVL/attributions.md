@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +10.19% day · ▲ major
+**Tags:** `sector_rotation`
+**Confidence:** low
+
+**Primary cause.** **+10.19% 无具名公司级催化剂, 深跌反弹; 击穿收窄 8.6pp 但仍在击穿状态。**||**无催化剂确认**: 当日 MRVL 自身新闻全部为回顾/估值类(「从纪录高位跌 58%, 历史上前 4 次这么深之后发生了什么」/「$1,150 亿交易后仍低于高点 57%: 卖还是加」/ ETF 买入 $1,310 万 / BofA 与 TD Cowen 此前退后)。判为板块 beta 回弹 + 深跌标的的高弹性。||**仍未决的核心项**: $1,150 亿全股票收购 Lumentum 的对价价值 —— 自宣布以来已蒸发超过三分之一(11/05 口径)。这是整条线上唯一能被公司口径解决的问题。||**击穿状态**: 仍击穿 thesis_break $200 达 **-22.21%**(11/05 为 -30.78%, 收窄 8.6pp); 距 52 周高 $329.88 为 **-52.8%**; 30d -38.22% 为 AI capex 组内第二差(仅好于 INTC 的 -49.51%)。||**12/01 财报(22 天)是四条仍在击穿状态的风控线里最近的一个判别点** —— 对照: INTC/NOK 要等 2027-01-28(80 天), SNDK 等 2027 年 1 月下旬。||**位置**: $155.59, MA50 下方 -33.2%, MA200 下方 -16.1%; 远期 PE 21.2x; **put/call 0.34 为全组最低** = 看跌保护买得最少, 在击穿状态下这是一个值得注意的不对称。
+
+**Sources.**
+- The Motley Fool: Marvell Stock Fell 58% From Its Record. History Says What Followed Its Last 4 Drops This Deep.
+- TIKR: Marvell Is 57% Below Its High After a $115 Billion Deal: Is It Time to Sell, or Load Up?
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -13.37% day · ▼ extreme
 **Tags:** `policy_us`, `sector_rotation`, `m_and_a`
 **Confidence:** high

@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +6.40% day · ▲ material
+**Tags:** `sector_rotation`, `macro_rates`
+**Confidence:** low
+
+**Primary cause.** **+6.40% 无具名催化剂; 真正的信息价值是它作为「长久期无盈利」样本对今天利率判断的印证。**||**无公司级新闻**: 判为高 beta 回弹。||**利率的反向印证(本条的价值所在)**: SNOW 远期 PE **96.5x** 为全组第二高(仅次于 TSLA 175x), 是「长久期、现金流全在远端」最纯的样本之一。今天 11/06 非农 +16.5 万(预期 +6.5 万)把 12 月加息概率从 66.9% 推到 **80%**, 而 SNOW 涨 6.40%、10Y 只动 +1.5bp、TLT -0.09%、DXY -0.48%。**四条同时成立只有一个解释: 市场把 12 月这次加息定价成「终点前的最后一次」而非紧缩周期重启** —— 终端利率预期未变, 所以长端不动、最长久期资产不受罚。||**检验点**: 11/12 CPI。若通胀也偏强,「最后一次」的假设被挑战, 届时长端与美元会同时重定价, 而 SNOW 这类 96.5x 倍数的标的是第一受罚方。||**位置**: $293.54, MA50 下方 -10.3%, MA200 上方 +21.6%; 30d -10.54%; 距 thesis_break $155 缓冲 +89.4%(全组最厚); 量比 0.42x; put/call 0.52。下次自身口径 2026-12-02(23 天)。
+
+**Sources.**
+- _Data:_  ()
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-10-22 · -3.34% day · ▼ material
 **Tags:** `sector_rotation`
 **Confidence:** medium

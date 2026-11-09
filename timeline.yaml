@@ -98,6 +98,9 @@ events:
   - { date: 2026-12-11, kind: macro, ticker: macro, note: "PPI November (~估计, CPI 次日)" }
   - { date: 2027-01-08, kind: macro, ticker: macro, note: "NFP December (一月首个周五)" }
 
+  - { date: 2026-11-20, kind: corporate, ticker: SNDK, note: "**八拆一 (8-for-1 stock split) 生效** — 当日必须把 stocks/SNDK/triggers.yaml::thesis_break_price 由 1200 改为 150, 并把 thesis/digest 内所有绝对价位除以 8。连续四份报告提示未执行" }
+
   # ── Policy / geopolitical 已知窗口 ────────────────────────────
   - { date: 2026-Q3, kind: policy, ticker: macro, note: "EU TCMV decision on FSD (range — Sweden opposes, multi-state vote)" }
   - { date: 2026-12, kind: policy, ticker: macro, note: "FCC 6GHz spectrum / Starshield contract renewal window (estimate)" }
+  - { date: 2027-01, kind: policy, ticker: macro, note: "**S.5653 参议院投票窗口 (有截止无日期)** — 收窄联邦项目环评范围 + 设定许可期限 + 指示 FERC 为大型算力负荷建立电费支付者保护 (把 Trump 的 RATEPAYER PROTECTION PLEDGE 立法化, 要求数据中心自建自付电力)。共和党 Capito/Lee + 民主党 Whitehouse/Heinrich 于 2026-09-30 提出, 至今未出委员会。Trump 2026-11-08 公开要求在民主党 1 月接管国会前通过。**方向分叉: 通过 → GEV 在手 122GW 执行确定性上升, 但 hyperscaler 电力成本上升 (MSFT FY2026 capex $1,160亿); 不通过 → 11/05 的「建不了」叙事重获支点**" }

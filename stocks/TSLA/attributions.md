@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +5.49% day · ▲ material
+**Tags:** `production_milestone`, `executive_comment`
+**Confidence:** medium
+
+**Primary cause.** **三条方向互相矛盾的公司级新闻同日落地, 而价格只跟了板块 beta。**||**新闻一(最实质, 市场完全未定价)**: Cybertruck 停产。Musk 本人确认 Tesla 对已收订金负责并将**退还大量买家订金**, 同时表示需加开一个班次把积压订单做完再停产。这是 Tesla 近年第一次**主动终止一条已量产的整车产品线**。对估值是双向的: 移除一个长期拖累毛利的低量产品(正面), 但同时是「Tesla 新品类执行能力」的一次公开否证(负面)—— 而后者正是支撑 175x 远期 PE 的核心假设之一(Robotaxi / Optimus 都是新品类)。||**新闻二(方向正确但不可计量)**: Robotaxi 服务进入新城市。**未披露城市名、车队规模或监管条件**, 所以无法判断属于「地理扩张」还是「试点增加」。在 90 天内无任何公司级硬日历的情况下, 这类无法量化的进展会反复成为日内涨跌的理由。||**新闻三(唯一可量化的坏消息)**: 中国总销量 **+10%**, 但**中国境内销量跌至四年低点**。两个数字同时成立意味着增长全部来自从中国出口到其他市场 —— 中国工厂产能利用率靠外销维持, 本土需求在萎缩。直接对应 watch item「EU/中国销量」。||**归因判断**: +5.49% 与 QQQ +3.30% 的相关性比与任何一条公司新闻都高; 三条新闻净方向偏负(停产 + 中国境内四年低点 vs 一条不可计量的 Robotaxi 进展)而股价涨 5.49%, 所以今天的涨幅判为板块 beta 而非新闻定价。||**位置**: $377.89, **精确卡在两条均线之间** —— MA50 $372.72 上方 +1.4%, MA200 $383.51 下方 -1.5%; 30d +5.72%(全组少数正收益); 5d -6.42%; 距 thesis_break $250 缓冲 +51.2%; **远期 PE 175x 为全组最高**; put/call 0.78; 量比 0.43x。||**日历空窗**: 90 天内零公司级硬日历(下次财报 2027-01-27, 六重叠加日)。12/16 FOMC 是 175x 倍数对折现率敏感性的直接测试。
+
+**Sources.**
+- Yahoo Finance: [Musk says Tesla on the hook for Cybertruck deposits after cancellation](https://finance.yahoo.com/markets/stocks/article/musk-says-tesla-on-the-hook-for-cybertruck-deposits-after-cancellation-162604829.html)
+- Investor's Business Daily / Yahoo Finance: Overall Tesla China Sales Rise 10%, Sales Inside China Sink To 4-Year Low; Robotaxi Launches New Market
+- Entrepreneur: Elon Musk Is Killing Cybertrucks — But Says Tesla Needs to Add an Extra Shift to Get Backlog Orders Done Before Production Ends
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -11.24% day · ▼ extreme
 **Tags:** `policy_us`, `sector_rotation`, `executive_comment`
 **Confidence:** high

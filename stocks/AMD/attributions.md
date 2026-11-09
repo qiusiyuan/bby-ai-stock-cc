@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +11.82% day · ▲ major
+**Tags:** `partnership_news`, `analyst_upgrade`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** **全场最大单日涨幅, 具名催化剂有两条, 但被定价的是第三件事 —— 结构含义。**||**催化剂一(盘前)**: 与 Google Cloud 扩大合作 —— 第五代 EPYC 服务器 CPU 将支持 Google 首个带硬件级机密计算的 TPU 系统 **TPU 8tx**, AMD 的 CPU 负责数据准备与支撑任务。**金额与出货量均未披露**。AMD EPYC 目前已被 **10 家以上 hyperscaler 与 AI 实验室**部署(与 NVIDIA GPU / AMD Instinct / 各家定制 AI 芯片并存)。盘前 +4% 至约 $464.66, 盘中扩大到 **+11.82%**。||**催化剂二**: Oppenheimer 以「数据中心成功不可否认」(undeniable data center success)为由上调。具体评级与目标价未能从一手来源核实, 仅标题口径, 不作为硬证据。||**真正被定价的(第三件事)**: 涨幅(+11.82%)远超这笔生意本身的规模(未披露金额、CPU 而非加速器), 所以市场定价的不是收入, 是**「hyperscaler 的 AI 系统里 CPU 层与加速器层可以分开采购」被一个具名大客户确认了**。Google 用自家 TPU 做加速、用 AMD 的 CPU 做数据准备, 整条链路里英伟达的位置是可选的。这与同日 NVDA -4.88% 构成一组: 市场在同一天把「AI 算力需求」和「英伟达」拆成两件事, AMD 是「替代路径」这一侧的主要受益者。||**风控线**: 11/05 时距 thesis_break $380 只剩 **+9.76%** 并被记为「接近」, 今天缓冲 **+32.13%** —— 四个交易日扩大 22.4pp。这说明在当前波动率下, 一条基于绝对价位的 thesis_break 线可以在四个交易日内从「即将触发」走到「远离」, 击穿本身不构成行动理由。||**位置**: $502.11, MA50 下方 -8.3%, 重回 MA200 上方 +20.4%; 30d -17.40%; 远期 PE 28.4x; 量比 1.07x。下次自身口径 2027-02-02(85 天)—— 真正的裁决在 hyperscaler 的 capex 口径(2027-01-27), 不在 AMD 自己的财报里。
+
+**Sources.**
+- Yahoo Finance: [Google Hands AMD Major Win in AI Chip Race](https://finance.yahoo.com/technology/ai/articles/google-hands-amd-major-win-165949443.html)
+- TIKR: AMD Soars 12% on "Undeniable" Data Center Success per Oppenheimer Upgrade
+- 24/7 Wall St.: AMD Just Eased Wall Street's AI Spending Scare
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -14.67% day · ▼ extreme
 **Tags:** `policy_us`, `sector_rotation`, `earnings_post_print`
 **Confidence:** high

@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +6.47% day · ▲ material
+**Tags:** `sector_rotation`, `memory_pricing`
+**Confidence:** low
+
+**Primary cause.** **一天补回 6.5pp 风控缓冲, 但今天这轮涨不含任何需求侧新信息 —— 11/05 那条真正的坏消息没有被反驳。**||**当日可找到的全部内存口径(三条, 全部不涉及出货量/合约价/终端订单)**: (1) Barron's「Micron Stock Gets Some Relief as This Big Threat Got Kicked Into the Long Grass」—— 正文被付费墙截断, 只能读到副标题「内存芯片竞争担忧可能被夸大」, **不构成硬证据**; (2) 回购规模讨论(现金 $734.8 亿 / FY26 调整后 FCF $623.1 亿 / 3.5x 远期 PE 对应的回购空间)—— 估值论证而非需求信息; (3) Zacks 等「超卖/价值」类标题。||**仍悬着的 11/05 坏消息**: 11/05 的归因里最关键一条是 **Qualcomm 把手机芯片营收同比 -26% 公开归因于「industry-wide memory dynamics」** —— 内存涨价第一次被下游大客户点名为自身收入下滑的原因。在那之前 10 月所有下跌定价的都是「持续时间」(审批/融资/周期长度), Qualcomm 那条定价的是「涨价已杀死一部分终端需求」。**今天的 +6.47% 没有回答这个问题**, 只是把 11/05 的跌幅收回一部分(rebased 从 61.6 回到 69.0, 而 11/04 是 74.7)。||**韩股未参与(口径关键)**: SK Hynix 本线 ₩1,136,000 **仅 +0.35%**、Samsung ₩189,900 **+0.64%**(均为真实收盘)—— 韩国市场在美股这轮大涨之前已收盘, 所以今天的涨幅里没有任何亚洲时段确认, 美股 ADS 与 ETF 实质在抢跑 11/10 的韩国开盘。||**ETF 零分散**: MU 30d -30.29% 对 DRAM ETF 30d -30.08%, **差距仅 0.21pp** —— 整轮下跌里 ETF 完全没有提供分散作用, 因其成分高度集中于同一批内存厂, 冲击是周期级而非公司级时两者行为一致。||**HBM 纯度与跌幅排序一致**: SK Hynix 本线 30d **-38.26%** > Samsung -30.13% ≈ MU -30.29% —— HBM 敞口最大的跌最多, 与「AI 数据中心建设被推后」这个归因方向吻合。反向检验要等 11/10 韩国时段。||**位置**: $734.65, 距 thesis_break $650 缓冲从 11/05 的 +6.55% 回到 **+13.02%**; MA50 下方 -23.3%, **MA200 下方仅 -3.1%**(11/05 曾在 MA200 下方 -8.3%); 远期 PE 3.5x(全组最低); 量比 0.57x; put/call 0.74。下次自身口径 2026-12-23(44 天)。
+
+**Sources.**
+- Barron's / Yahoo Finance: [Micron Stock Gets Some Relief as This Big Threat Got Kicked Into the Long Grass](https://finance.yahoo.com/m/e38a4a3c-6530-3954-9118-6aa88fe89efa/micron-stock-gets-some-relief.html)
+- TIKR: Micron Will "Buy Back a Hundred Billion Dollars" of Stock at Four Times Earnings
+- _Data:_  ()
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -12.91% day · ▼ extreme
 **Tags:** `policy_us`, `sector_rotation`, `memory_pricing`, `competitor_news`
 **Confidence:** high

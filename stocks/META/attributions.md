@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +5.29% day · ▲ material
+**Tags:** `analyst_upgrade`, `policy_eu`
+**Confidence:** medium
+
+**Primary cause.** **开支方内部第一次出现具名的相对排序 —— 卖方开始用「AI 投入的回报」而不是「AI 投入的规模」来排 hyperscaler。**||**催化剂(主因)**: JPMorgan 把 **META 与 AMZN 加入 Analyst Focus List, 把 GOOG 移出**, 理由是 AI 投入回报与云增长更强。结果 META **+5.29%** / AMZN +3.61% / GOOG +2.02% —— META 是开支方四家里涨幅最大的。||**框架变化(最该记的一点)**: 10/29 那份报告的框架是「三家开支方按 capex÷经营现金流比率被惩罚, 市场惩罚严格按比率排序」—— 一把统一的尺子。今天的变化是卖方换了尺子: 从「投入规模」换成「投入回报」。对照 30d: AMZN +9.14% / MSFT +6.78% / META -10.23% / GOOG -14.59% —— 开支方内部离散度 23.7pp(供给方为 41.3pp, 是开支方的 1.7 倍)。||**反向项**: EU 起草针对社交媒体成瘾性设计与 AI 聊天机器人的限制条例(媒体报道, 草案阶段, 无即期定价)。另 Time 独家: 前 Meta 与 OpenAI 承包商 Sama 因诉讼清算。||**位置**: $642.41, MA50 下方 -5.0%, MA200 上方 +1.8%; 5d +5.88%; 距 thesis_break $450 缓冲 +42.8%; 远期 PE 18.1x; **put/call 1.41 偏高**; 量比 0.37x(开支方普遍低量)。下次自身口径 2027-01-27(六重叠加日)。
+
+**Sources.**
+- TIKR: Meta Soars 5% as JPMorgan Picks It Over Alphabet for Its Analyst Focus List
+- Stocktwits: META, AMZN Stocks Jump As JPMorgan Picks Pair Over Alphabet — Sees Stronger AI Returns, Cloud Growth
+- Yahoo Finance: EU drafts curbs targeting addictive social media features and AI chatbots
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-10-28 · -1.52% day · ▼ major
 **Tags:** `earnings_post_print`, `sector_rotation`
 **Confidence:** high

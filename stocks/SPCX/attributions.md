@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +5.71% day · ▲ material
+**Tags:** `regulatory_positive`, `executive_comment`, `partnership_news`
+**Confidence:** high
+
+**Primary cause.** **NASA 合同给 SPCX 装上一条与 AI capex 周期完全无关的政府收入线 —— 本轮下跌以来第一次。两日市值增加超 $1,000 亿。**||**催化剂一(主因)**: NASA 11/07 在肯尼迪航天中心公布 **CLPS(Commercial Lunar Payload Services)十年版**合同, 原合同上限由 $26 亿提至 $42 亿、新一轮**总上限 $100 亿**, 八家公司入选, 已披露的五家为 **SpaceX / Blue Origin / Intuitive Machines(LUNR) / Firefly(FLY) / Voyager(VOYG)**; **Rocket Lab 落选**。NASA 署长 Jared Isaacman: 「我们在逐个任务地建造月球基地」—— 即这是 IDIQ 式资格框架而非确定收入, 每家仍须逐个任务竞标, 单家金额未公布。||**定价性质(关键限定)**: 今天涨的是**可竞标资格**而非营收。但资格有真实价值, 原因在周期属性: 政府月球基地预算的驱动是国会拨款与国家航天政策, 与 hyperscaler 的 capex÷现金流比率、与地方数据中心公投、与 12 月加息路径都无关。在 11/05 那种「AI 建设链条被定向抛售」的环境里, 这是 SPCX 唯一一条不被同一个公因子打到的收入线 —— 也解释了为什么 SPCX 的 30d(-2.43%)远轻于 MU(-30.29%) / MRVL(-38.22%)。||**催化剂二**: Chamath 称 SpaceX 来自 Anthropic 的收入「可能 2-3 倍增长」, 论点是数据中心建设被地方政治冻结 → 地面算力供给受限 → 天基算力需求上升。**这把 11/05 的逻辑反向使用了**。S-1 已披露 SPCX 与 Anthropic 的算力交易近乎翻倍至 **$845 亿**。这条逻辑的检验点不在 SPCX, 在约 11/15 的 Anthropic IPO 定价 —— 定价成功则 $845 亿合同可信度上升, 失败或大幅折价则此线仅为说法。||**同板块**: 自 11/05 收盘起太空股涨约 25%-60%(Firefly 领涨), Rocket Lab 虽落选但两日涨近 30%(Q3 财报前), AST SpaceMobile +11%(与乐天的日本卫星合资)。同期 Nasdaq +约 4%。板块年内仍为负收益。||**位置**: $141.94, MA50 下方 -4.9%(MA200 n/a, 上市不足一年); 30d -2.43%; 远期 PE 53.3x; **put/call 1.23 偏高**, 与 lockup 临近的保护需求一致。||**最近的结构性风险**: **12/09 post-IPO 180 天 lockup 到期剩 30 天, 且与 AVGO 财报同日** —— 届时 SPCX 价格无法单独归因, 解禁抛压与 AI 建设叙事会在同一天作用。||**持仓状态**: 无持仓, 纯跟踪, 不触发卖出提醒。
+
+**Sources.**
+- Yahoo Finance: [SpaceX, Rocket Lab blast higher as NASA hands out $10 billion in moon base awards](https://finance.yahoo.com/markets/article/spacex-rocket-lab-blast-higher-as-nasa-hands-out-10-billion-in-moon-base-awards-164320855.html)
+- TIKR: Chamath: SpaceX's Revenue From Anthropic "Could 2 to 3x" as the Data Center Freeze Bites
+- 24/7 Wall St.: Rocket Lab Jumps 9% Ahead of Earnings, AST SpaceMobile Surges 11% on Japan Satellite Venture With Rakuten; SpaceX Rises 6%
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -9.05% day · ▼ major
 **Tags:** `policy_us`, `executive_comment`, `sector_rotation`
 **Confidence:** high

@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +5.25% day · ▲ material
+**Tags:** `sector_rotation`, `macro_dollar`
+**Confidence:** low
+
+**Primary cause.** **ADS 在韩股收盘后独立定价, 实质是在抢跑 11/10 的韩国开盘; 其中约 0.4pp 来自汇率而非股价。**||**韩股本线未参与**: SK Hynix 000660.KS ₩1,136,000 **仅 +0.35%**(真实收盘), Samsung 005930.KS ₩189,900 +0.64% —— 韩国市场在美股大涨前已收盘。SKHY ADS +5.25% 没有任何亚洲时段的确认。||**汇率成分**: USD/KRW 1,344.23 / **-0.89%**(韩元走强), 同日 DXY 只跌 0.48% —— 多出的 0.41pp 是纯韩国资金回流, 对 ADS 的美元对标价是顺风。**11/05 时方向相反**(韩元跌 0.74% 而 DXY 不动, 当时 SKHY 的超额跌幅几乎全是汇率)。||**HBM 纯度最高跌最多**: 本线 30d **-38.26%** 为内存组最差(Samsung -30.13% / MU -30.29% / DRAM -30.08%)—— 与「AI 数据中心建设被推后则 HBM 敞口最大者受损最重」的归因方向一致。若建设叙事修复, 排序应当反转, 但今天本线只涨 0.35% 所以这个检验要等 11/10。||**位置**: ADS $134.03, 距 thesis_break $115 缓冲 **+16.55%**(11/05 为 +10.78%); 距 52 周低 $122.20 仅 **+9.7%**; MA50 下方 -19.4%; 远期 PE 3.2x; 量比 0.52x。下次自身口径 2027-01-27(79 天, 全组最远之一), 本线 Q4 为 2027-01-26。
+
+**Sources.**
+- _Data:_  ()
+- _Data:_  ()
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -10.95% day · ▼ extreme
 **Tags:** `policy_us`, `sector_rotation`, `memory_pricing`, `macro_dollar`
 **Confidence:** high

@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +6.25% day · ▲ material
+**Tags:** `sector_rotation`
+**Confidence:** low
+
+**Primary cause.** **+6.25% 机械跟随 MU; 本条记录的价值在于确认 ETF 在本轮周期里零分散作用。**||**零分散**: DRAM 30d **-30.08%** 对 MU 30d **-30.29%**, 差距仅 **0.21pp**。成分高度集中于同一批内存厂, 当冲击是整个内存周期而非单一公司时, ETF 与单票行为一致 —— 即在这条线上用 ETF 替代单票不降低风险, 只降低单票特有的上行(MU 的 3.5x 远期 PE 与回购能力)。||**对照 SNDK**: SNDK 30d -47.34% 离群 17pp, 因为它是 NAND 而非 DRAM/HBM —— 真正的分散来自产品线而非持仓数量。||**位置**: $41.75, MA50 下方 -23.2%; 距 52 周高 $81.34 为 -48.7%, 距 52 周低 $26.14 为 +59.7%; 量比 0.63x; put/call 0.78。无自身财报日历。
+
+**Sources.**
+- _Data:_  ()
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -13.26% day · ▼ extreme
 **Tags:** `policy_us`, `memory_pricing`, `flow_event`, `sector_rotation`
 **Confidence:** high

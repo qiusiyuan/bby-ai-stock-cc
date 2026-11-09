@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +3.61% day · ▲ material
+**Tags:** `analyst_upgrade`
+**Confidence:** medium
+
+**Primary cause.** **与 META 同一条催化剂; 30d +9.14% 是开支方里最稳的一只。**||**催化剂**: JPMorgan 把 **AMZN 与 META 加入 Analyst Focus List, 把 GOOG 移出**, 理由是 AI 投入回报与云增长更强。AMZN +3.61% / META +5.29% / GOOG +2.02%。||**开支方内部排序**: 30d —— AMZN **+9.14%** / MSFT +6.78% / META -10.23% / GOOG -14.59%。AMZN 是四家里 30 天最强的, 且距 52 周高仅 -6.5%。这与 10/29 那份报告记录的「市场惩罚严格按 capex÷经营现金流比率排序」框架相容: AMZN 的比率在三家里最低。||**位置**: $268.65, MA50 上方 +5.8%, MA200 上方 +10.1%(开支方里均线位置最好的); 5d +9.37%; 距 thesis_break $185 缓冲 +45.2%; 远期 PE 24.6x; put/call 1.20; 量比 0.56x。下次自身口径 2027 年 1 月下旬。
+
+**Sources.**
+- 24/7 Wall St.: Meta and Amazon Rise 5% as JPMorgan Names Them Top Internet Picks; Alphabet Gains 3% Despite Losing Its Spot
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-04 · +6.12% day · ▲ material
 **Tags:** `policy_us`, `sector_rotation`
 **Confidence:** high

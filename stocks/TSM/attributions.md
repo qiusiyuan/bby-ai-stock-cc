@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +4.18% day · ▲ material
+**Tags:** `sector_rotation`
+**Confidence:** low
+
+**Primary cause.** **+4.18% 为全链条代工的板块 beta, 无具名催化剂; 离散度最低的一只。**||**无公司级新闻**: 判为 ^SOX +4.33% 的同步跟随 —— TSM 的 +4.18% 几乎精确等于指数涨幅, 这符合它「给所有人代工」的结构: 组内任何一家拿到订单它都受益, 所以它的 beta 最接近 1、离散度最低。||**对照 11/05**: 当日 TSM -8.91%、**量比 2.09x 为全场最高**, 今天量比回到 0.60x —— 即 11/05 的恐慌性放量没有在反弹日重现, 反弹是低量的。||**位置**: $391.12, MA50 下方 -9.2%, MA200 下方 -2.3%; 30d -13.64%(AI capex 组内中位); 距 thesis_break $280 缓冲 +39.7%; 远期 PE 16.7x; put/call 0.80。下次自身口径 2027-01-14(66 天)。
+
+**Sources.**
+- _Data:_  ()
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -8.91% day · ▼ major
 **Tags:** `policy_us`, `sector_rotation`, `flow_event`
 **Confidence:** medium

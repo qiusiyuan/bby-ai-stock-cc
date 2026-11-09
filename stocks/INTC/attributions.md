@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · +4.09% day · ▲ material
+**Tags:** `sector_rotation`
+**Confidence:** low
+
+**Primary cause.** **击穿收窄 5.5pp 但 30d -49.51% 仍是 AI capex 组内最差; 今日唯一新口径是叙事而非数字。**||**无实质催化剂**: 当日新闻为边缘/工业 AI 工具推进(叙事)、「25 年才回到互联网泡沫峰值, 6 个月又丢掉」(Yahoo Chart of the Day)、Cramer 对政府作为第一大股东的评论。+4.09% 判为板块 beta。||**本轮主因回顾(非政策)**: 10/29 Q3 财报后 10/30 单日约 **-28.6%**, 报道口径是现金流重置 + Q4 指引疲软 + 供应瓶颈 + **PC 端被内存涨价挤压** —— 最后这一条与 Qualcomm 的「industry-wide memory dynamics」是同一个传导。||**击穿状态**: 仍击穿 thesis_break $75 达 **-21.89%**(11/05 为 -27.39%, 收窄 5.5pp); 距 52 周高 $142.35 为 **-58.8%**; **远期 PE 32.7x —— 四条击穿线里唯一倍数还贵的**(对照 MRVL 21.2x / SNDK 3.1x / NOK 17.0x)。||**信息路径关闭**: 下次自身口径 2027-01-28(80 天)—— 接下来近三个月没有「用自己的财报自证」的机会, 价格只能由行业数据、卖方评级与宏观驱动。||**位置**: $58.58, MA50 下方 -39.8%, MA200 下方 -32.7%; 量比 0.50x; put/call 0.51。
+
+**Sources.**
+- Yahoo Finance: Intel took 25 years to get back to its dot-com peak — and lost it in 6 months: Chart of the Day
+- Stocktwits: AMD, AVGO, INTC, MU: Chip Stocks Inch Higher As Investors Look Past Midterms-Led Selloff, Nvidia Controversy
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -6.54% day · ▼ major
 **Tags:** `policy_us`, `sector_rotation`, `guidance_cut`, `government_stake`
 **Confidence:** high

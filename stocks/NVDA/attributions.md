@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-09 · -4.88% day · ▼ material
+**Tags:** `regulatory_negative`, `executive_comment`, `policy_us`
+**Confidence:** high
+
+**Primary cause.** **纯公司治理事件，与 AI 需求完全无关 —— 今天全场最干净的一次「个股特质风险」与「板块叙事」分离。**||**事件**: 11/08(周日)董事会声明「鉴于近期关于创始人兼 CEO Jensen Huang 成为外国情报行动目标的报道」启动独立调查; 同时表示「没有理由认为国家安全或英伟达机密受到损害」。Huang 已在内部邮件中向员工承认婚外情并向家人致歉。关系对象 Alice Huang 被指为中国情报人员, 曾任新加坡数据中心公司 MegaSpeed 高管 —— 该公司正因涉嫌向中国走私英伟达芯片受调查。Trump 公开表示 Huang 应留任(「我没听说他做了任何错事」)。||**裂口量化**: 费城半导体指数 ^SOX 9,796.62 / **+4.33%**(ET 10:02), NVDA 同时刻 **-4.77%** —— **5.1pp 反向裂口**。同组对照: AMD +11.82% / MRVL +10.19% / AVGO +9.23% / TSM +4.18% / INTC +4.09%, 组内仅 NVDA 下跌。非估值轮动(NVDA 远期 PE 11.2x 为组内最低), 非需求消息(当日无任何 AI 需求转差新闻)。||**卖方一致性**: 四家口径一致 —— 不会被免职, 但 Huang 作为公司在华盛顿与北京唯一代言人的角色受损。Patrick Moorhead(Moor Insights): 除非调查有实质发现否则不会被推走, 但其「公司面孔」角色有风险。Matt Bryson(Wedbush): 董事会初始声明降低了免职概率, 但移除 Huang 会是重大负面(他的管理风格高度亲力亲为), 且会削弱其在 AI 与贸易上游说美国官员的可信度。Jordan Klein(Mizuho): 这个风险「**无法被对冲掉**」, 预计调查不会发现严重不当行为, 但会笼罩 11/17 财报。Stacy Rasgon(Bernstein): 需求不受影响, 但华盛顿审查上升、可能给两党批评者提供弹药。||**off-thesis 性质(最该记的一点)**: thesis 原文治理段落写的是「Governance risk is lower than many peers(无超级投票权结构)」, 而 bear case(20% / $150)三条全部关于定制芯片与 capex 周期。**今天实现的风险不在任何一个情景里** —— 它给 $150 的 bear 目标增加了第二条到达路径, 且这条路径不需要 AI 需求转差。||**位置**: $177.54, 量比 **2.36x 为全场最高**(盘中口径, 系统性偏低 25-35%, 所以真实放量更极端)。MA50 下方 -18.9%, MA200 下方 -13.1%, 距 52 周低 $164.27 仅 +8.1%, 距 thesis_break $150 缓冲 +18.4%。远期 PE 11.2x。||**判别点**: 11/17 Q3 财报(8 天)—— 90 天窗口内最近的公司级硬日历, 且是唯一带着治理不确定性进场的一份。当天会同时定价「AI 需求的实际数字」与「Huang 风险的真实折价幅度」。
+
+**Sources.**
+- Yahoo Finance: [Analysts say Nvidia CEO unlikely to be ousted over affair, but raise questions about company's future](https://finance.yahoo.com/technology/article/analysts-say-nvidia-ceo-unlikely-to-be-ousted-over-affair-but-raise-questions-about-companys-future-165238577.html)
+- Fly On Wall Street / Yahoo Finance: [Quarterly Reports and an Independent Board Inquiry Frame the Chip Sector's Week](https://finance.yahoo.com/markets/stocks/articles/quarterly-reports-independent-board-inquiry-170200762.html)
+- Yahoo Finance: Trump says Jensen Huang should stay on as Nvidia CEO: 'I haven't heard he's done anything wrong'
+
+**Cross-assets.** SPY +2.30% · QQQ +3.30% · DJI +2.04% · VIX 20.52 · TEN YEAR 4.874 · WTI 87.64 · DXY 101.81 · BTC 74814.54 · USDKRW 1344.23 · SOX +4.33%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-09.md`
+
+---
 ### 2026-11-05 · -7.64% day · ▼ major
 **Tags:** `policy_us`, `sector_rotation`
 **Confidence:** high
