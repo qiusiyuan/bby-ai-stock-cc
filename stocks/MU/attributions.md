@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-10 · -3.70% day · ▼ material
+**Tags:** `macro_rates`, `analyst_downgrade`, `partnership_news`
+**Confidence:** high
+
+**Primary cause.** **-3.70%, 首次跌破 MA200 ($759.78); 距 thesis-break $650 缓冲仅 +8.6%, 进入 10% 预警带。而公司侧当日实为好消息。**||**公司侧 (正面)**: MU 以 **$10 亿参与 Anthropic IPO 的 $260 亿供应商认购**; Goldman Sachs 分析师 James Schneider 称估值「便宜到无法忽视」。唯一负面是 BofA 把 MU / NVDA / LRCX 移出 US 1 名单 (维持买入评级)。||**所以今天的跌幅是纯折现率事件。** 10 月 CPI 双超预期, 10Y +14bp 到 5.008%。内存承接了今日最大的纯利率惩罚 (MU -3.70% / SKHY -4.32% / DRAM -4.38%), 仅次于各有公司原因的 GEV 和 NVDA。机制是双重的: ① 周期股在周期底部盈利确定性最低 — forward P/E 3.4x 不是「便宜」, 是市场对峰值盈利不可持续的定价, 折现率上行对「两年后盈利可能腰斩」的现金流序列压缩更厉害; ② HBM 产能扩张本身资本密集, 回报在 2028 年之后, 10Y 从 4.87% 到 5.01% 直接提高这些项目的 WACC。||**一只有好消息、估值 3.4x、刚被顶级投行喊便宜的股票跌 3.70%** — 这是当前市场状态最干净的描述: 好消息不被定价, 只有折现率被定价。同日 TSMC 10 月营收 +59.7% 创纪录只换来 +0.31%, 是同一现象的另一个样本。||**价格破论但论据不成立**: 距 thesis-break $650 仅 +8.6%, 而该价位的设定理由是「HBM 故事失败 + 传统 DRAM 周期反转」。当前无任何 kill_condition 触发 — HBM 营收门槛因 Q4 FY26 起改按终端市场披露而不可直接测量, 但代理证据 (数据中心合计 $342.8 亿 = 营收 63.2%) 方向向上; DRAM 定价指数无崩盘; Samsung 未宣称 HBM 份额回到 45%+。**这是倍数压缩, 不是基本面破坏。**||**10/29 评分卡结论未变**: 「AI 长期领头股」基本面成立, 「下一个 NVDA」的重定价机制被证伪 — 盈利 run-rate 三个月 +33% 而倍数压缩 34-42%。今天的 3.4x 是那个压缩继续进行的读数。||**位置**: $706.00, MA50 $952.49 / MA200 $759.78 双线下方; 量比 0.62x (盘中口径)。||**下次检验**: 11/17 NVDA 对 Blackwell/Rubin 出货的指引 (HBM 需求的上游读数, 比内存公司自己的话更可信); 12/23 MU Q1 FY27 财报 — **进财报时缓冲可能已不足 8.6%**, 且 10/29 评分卡三项待补数据 (FY27 capex 最关键 / 库存天数 / HBM 份额表述) 在这份财报里。
+
+**Sources.**
+- Investing.com: Micron stock is a screaming buy at current valuation levels: Goldman Sachs
+- Motley Fool: Nvidia, Alphabet, and Micron Just Agreed to Buy $26 Billion of Stock in One of Their Biggest Customers
+- Yahoo Finance: Micron, Nvidia and Lam Research Removed From BofA's Top Stock List
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.86% · QQQ -1.47% · VIX 20.75 · TEN YEAR 5.008 · WTI 86.2 · DXY 102.33 · BTC 73138.87 · USDKRW 1343.7 · TLT -1.60%
+
+**Agent read.** MU 进入 10% 预警带, 但触及 $650 时要先问 kill_condition 是否同步触发。如果价格破论而论据仍不破 (当前状态), 那是 trigger 定得太高而非基本面变坏, 应校准 trigger 而不是行动。12/23 财报的口径陷阱必须提前记住: HBM 营收不再单列, 所有历史 HBM 门槛须改用「数据中心合计」口径 (Q4 FY26 基准 $342.8 亿 = 营收 63.2%)。
+ · Snapshot at `dashboard/2026-11-10.md`
+
+---
 ### 2026-11-09 · +6.47% day · ▲ material
 **Tags:** `sector_rotation`, `memory_pricing`
 **Confidence:** low

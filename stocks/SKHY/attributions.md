@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-10 · -4.32% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`, `macro_dollar`
+**Confidence:** high
+
+**Primary cause.** **今天出现了一个罕见且信息量很高的形态: SK Hynix 在首尔收涨 +6.69% (至 1,212,000 韩元), 同一天美国 ADS 收 -4.32% — 首尔的涨幅在美国时段被全数交还。**||**时区把一个交易日切成两半, 中间插进了 CPI。** 首尔在美东凌晨收盘, 当时信息集是: 内存板块已连跌三个交易日、SK Hynix 自高点 -57%、**2027 与 2028 产能已有一半签约锁定**、Samsung 芯片利润同比 +15 倍。外资与机构在此信息集下回流, KOSPI +4.39% 并触发买方 sidecar。然后美东 8:30 CPI 发布 (headline +0.4% / core +0.3% 双超预期), 10Y 跳升 14bp 到 5.008%, ADS 开盘后交还全部涨幅。||**核心读法: 两个市场在用不同框架定价同一组资产。首尔把内存当 AI 资产 (看 HBM 订单与产能签约), 纽约把内存当利率资产 (看折现率与倍数)。** 同一个公司、同一个 24 小时、相反方向。||**韩元加了一层逆风**: USD/KRW 今日 -1.39% 到 1,343.70, 距 52 周最强 (1,319.52) 仅 1.8%。对以美元计价收入、韩元计成本的 SK Hynix, 韩元升值压缩美元收入折算回韩元后的利润率。**首尔的 +6.69% 是在成本端逆风中取得的**, 这让它更像情绪反弹而非基本面重估。||**同业对照**: Samsung (005930.KS) +5.41% 至 ₩198,900 — 但那同样是韩国时段、CPI 之前的价格, 不是独立强势。DRAM ETF -4.38%, 跌幅大于 MU (-3.70%) 和 SKHY (-4.32%) 中任一只, 且 30d -34.87% 为四只最差 → **离场的是主题型被动资金 (ETF 层面赎回), 不是对个股有观点的主动资金。**||**基本面**: forward P/E 3.0x; 2027/2028 产能已签约一半; 自高点 -57%; 多家卖方称其可能低于公允价值 64%。四条 kill_conditions (Samsung 通过 NVDA HBM 认证 / 良率跌破 70% / hyperscaler capex 集体砍 >20%) 无一触发。||**位置**: $128.57, MA50 $165.54 下方 22%; 距 thesis-break $115 缓冲 +11.8%; 量比 0.46x (盘中口径)。
+
+**Sources.**
+- Yahoo Finance: SK hynix Stocks Jump 6.69% as Seoul Chip Rally Lifts KOSPI 4.39%
+- Yahoo Finance: Seoul Brakes on Buying Again as KOSPI Jumps Nearly 5%. Will It Stick This Time?
+- Yahoo Finance: SK hynix Is Down 57% From Its High With Half of 2027 and 2028 Capacity Already Contracted
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.86% · QQQ -1.47% · VIX 20.75 · TEN YEAR 5.008 · WTI 86.2 · DXY 102.33 · BTC 73138.87 · USDKRW 1343.7 · TLT -1.60%
+
+**Agent read.** 这条的复用价值在跨市场框架分歧本身: 当首尔与纽约对同一组内存资产给出相反方向时, 比较时段而非比较日收益。实践含义 — 读 SKHY/Samsung 的强弱必须用美国时段数据, 用首尔收盘会系统性高估。另外 DRAM ETF 跌幅大于全部成分是被动资金撤离主题的标志, 这比个股跌幅更能说明资金性质。
+ · Snapshot at `dashboard/2026-11-10.md`
+
+---
 ### 2026-11-09 · +5.25% day · ▲ material
 **Tags:** `sector_rotation`, `macro_dollar`
 **Confidence:** low

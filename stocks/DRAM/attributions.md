@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-10 · -4.38% day · ▼ material
+**Tags:** `macro_rates`, `flow_event`
+**Confidence:** high
+
+**Primary cause.** **-4.38%, 跌幅大于 MU (-3.70%) 与 SKHY (-4.32%) 中任何一只; 30d -34.82% 亦为内存四标的里最差。**||**一个 ETF 理论上是成分的加权平均, 跌得比全部成分都多只能来自两个来源: 成分里有跌更多的 (ETF 还含 Samsung / Kioxia / Western Digital 等), 或 ETF 自身净赎回导致折价。30d 对比支持后者 — DRAM -34.82% vs MU -33.70% vs SKHY -31.13%。**||**结论: 离场的是主题型被动资金, 不是对个股有观点的主动资金。** 这比任何单只个股的跌幅更能说明当前资金的性质 — 市场在撤出「内存/HBM」这个主题标签, 而不是在对某家公司的 HBM 执行力做判断。||**驱动是纯折现率**: 10 月 CPI headline +0.4% / core +0.3% 双超预期, 10Y +14bp 到 5.008%, 12 月 25bp 完全定价 + 50bp 概率 13.6%。内存三只 (-3.70% / -4.32% / -4.38%) 在整个组合里跌幅仅次于各有公司原因的 GEV (-7.16%) 与 NVDA (-6.10%) — **内存是今天纯因利率而跌得最多的板块**。||**同日的反向信息**: 首尔时段 SK Hynix +6.69%、Samsung +5.41%、KOSPI +4.39% 触发买方 sidecar; MU 获 $10 亿 Anthropic 认购资格 + Goldman 喊便宜。全部未能在美国时段留下痕迹。||**位置**: $39.95, MA50 $54.03 下方 26%; 量比 0.66x (盘中口径)。
+
+**Sources.**
+- _Data:_  ()
+- Barron's: The AI Stock Selloff Overlooks Good News—and Earnings Growth
+
+**Cross-assets.** SPY -0.86% · QQQ -1.47% · VIX 20.75 · TEN YEAR 5.008 · WTI 86.2 · DXY 102.33 · BTC 73138.87 · TLT -1.60%
+
+**Agent read.** 复用点: 当一个主题 ETF 的跌幅持续大于其全部可见成分时, 读为被动赎回而非基本面, 并且这个信号在 30d 维度比 1d 维度更可靠 (1d 可能是成分权重噪音)。对内存主题的实践含义 — 在被动资金仍在撤出期间, 个股层面的好消息 (MU 的 Anthropic 认购、SK Hynix 的产能签约) 不会被定价。
+ · Snapshot at `dashboard/2026-11-10.md`
+
+---
 ### 2026-11-09 · +6.25% day · ▲ material
 **Tags:** `sector_rotation`
 **Confidence:** low

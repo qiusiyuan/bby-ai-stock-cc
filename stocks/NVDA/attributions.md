@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-10 · -6.10% day · ▼ material
+**Tags:** `regulatory_negative`, `policy_us`, `executive_comment`
+**Confidence:** high
+
+**Primary cause.** **-6.10% 量比 2.10x (全场最高), 跌至距 52 周低点 $164.27 仅 2.1%; 两条当日新增、彼此独立、且与 AI 需求完全无关的法律消息。**||**① FBI 已介入调查 CEO Jensen Huang** — 11/09 时仍为董事会层级的独立调查, 今日升级为联邦执法层级。NVDA triggers.yaml kill_condition 第五条即为「Jensen Huang departure」; FBI 调查不等于离职, 但它把这条从尾部风险挪进可定价概率, 而 thesis 的 bull/base/bear 三档里没有任何一档对应 CEO 法律风险。||**② The Information 报道约 24 万片受管制 GPU (约 $75 亿) 经一个与「北京情报资产」相关的网络流入中国** — 独立于 Huang 调查的第二条出口管制线。它不是新规, 但它是推动新规的前置事件。||**扩散检验 (本条的关键)**: 跌幅传到服务器组装商 (SMCI -4% / DELL -6% / HPE -2%), 但未传到芯片同行 — AVGO **+2.39%**、TSM **+0.31%**、AMD 约 0%。同日 TSMC 公布 10 月营收同比 **+59.7% 创纪录**, 市场只给 TSM +0.31%。**市场把这件事定价为 NVDA 的公司事件, 不是 AI 的行业事件。**||**与板块脱钩进入第二天且扩大**: 11/09 NVDA -4.88% 而 ^SOX +4.33%; 11/10 NVDA -6.10% 而 AVGO +2.39%。两日 NVDA -10.7% 对 AVGO +11.4%, 相对表现差 **22 个百分点**。NVDA 不再是 AI 板块的代理变量。||**价格 vs thesis**: 现价 $167.77 落在 bear 目标 $150 与 base 目标 $250 之间, 距 bear 目标仅 11.8%。但 bear 情景的三个条件无一成立 (定制硅加速→AVGO 涨的是自己的收入不是 NVDA 的流失证据; AI capex 收缩→TSMC +59.7% 创纪录; AMD/INTC 补上软件差距→无新证据)。**市场给的是 bear 级价格, 理由是三档情景里都没有的第四件事。**||**同日另两条**: BofA 将 NVDA/MU/LRCX 移出 US 1 名单 (维持买入); Goldman 称芯片股「超卖」。NVDA 同时是 Anthropic IPO $260 亿供应商认购的七家之一 — 当日最大的多头 AI 催化剂里有它, 而它跌 6.10%。||**位置**: MA50 $217.94 / MA200 $204.26 双线下方 20%+; forward P/E 10.5x; 距 thesis-break $150 缓冲 +11.8%。re_read_trigger 第一条「down >15% on no obvious broad-market catalyst」已触发 (5d -18.83% vs SPY 5d -1.08%)。||**检验点**: 11/17 财报 (7 天后)。结构性不对称 — 好数字只能回答需求, 解决不了法律问题; 坏数字会把两个问题叠加。
+
+**Sources.**
+- The Information (转载): NVIDIA Stocks Slide as Report Alleges $7.5 Billion in Chips Reached China
+- Yahoo Finance: The Nvidia Scandal Just Got Real as the FBI Probes CEO Jensen Huang
+- Yahoo Finance: Super Micro Falls 4% as NVIDIA's Slide Drags AI Server Stocks; Dell Drops 6%, HPE Declines 2%
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.86% · QQQ -1.47% · DJI -0.60% · VIX 20.75 · TEN YEAR 5.008 · WTI 86.2 · DXY 102.33 · GOLD 4024.5 · BTC 73138.87 · USDKRW 1343.7 · TLT -1.60%
+
+**Agent read.** NVDA 的问题已经与 AI 需求脱钩, 而 thesis 的三档情景框架读不到它。需要补第四情景维度 (CEO/法律/治理), 否则 $167.77 这个价位无法用现有框架解释。扩散检验是本条最有复用价值的部分: 同一天 AVGO/TSM 上涨 + TSMC 营收创纪录 + SMCI/DELL/HPE 下跌, 三组证据一致指向「公司事件而非行业事件」。11/17 财报是不对称事件, 不要指望好数字解决法律问题。
+ · Snapshot at `dashboard/2026-11-10.md`
+
+---
 ### 2026-11-09 · -4.88% day · ▼ material
 **Tags:** `regulatory_negative`, `executive_comment`, `policy_us`
 **Confidence:** high

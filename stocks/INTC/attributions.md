@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-10 · -3.54% day · ▼ material
+**Tags:** `macro_rates`, `guidance_cut`, `analyst_upgrade`
+**Confidence:** medium
+
+**Primary cause.** **-3.54%, 但真正的数字是 30d -50.60% — 全组合最大的 30 天跌幅。52 周高 $142.35 → 现价 $57.27。thesis-break $75 已击穿 -23.6%。**||**当日叙事是分裂的**: RBC 称管理层视 2027 为增长年 (数据中心强势预计抵消 PC 疲软, 且服务器需求超过供给); 但 **CFO 自己警告 2027 存在「knothole」(瓶颈期)**。同日还有 DataKrypto 与 Intel 合作把加密执行 (FHE) 做成 AI 基础设施的标准属性 — 技术合作, 无近期营收含义。||**最该注意的是估值结构**: forward P/E **32.0x** 为组合内第二高 (仅次于 TSLA 174x)。**在一只跌了一半的股票上同时出现最高的远期倍数, 说明盈利预期的下调速度快于股价的下跌速度。** 这与 MU (fPE 3.4x) / SKHY (3.0x) / SNDK (2.9x) 的形态完全相反 — 后三者是「盈利在高位、倍数被压到地板」, INTC 是「股价腰斩、盈利预期跌得更快」。两种形态的后续路径不同: 前者需要盈利维持, 后者需要盈利止跌。||**kill_conditions 三条无一触发**: Apple 交易范围未被揭示为仅限原型; 18A 良率未有跌破 60% 的报道; Lip-Bu Tan 未离职。re_read_trigger「Stock down >20% on no obvious catalyst」已触发 (30d -50.60%)。||**利率分量**: 10 月 CPI 双超预期 + 10Y +14bp。INTC 的 turnaround 现金流 (14A 制程、foundry 客户、Xeon 设计赢单) 全部在远端且确定性低, 属久期光谱左端。||**位置**: $57.27, MA50 $96.70 / MA200 $87.18 双线深度下方; 量比 0.49x (盘中口径)。下次自身口径 2027-01-28 财报 (与 AAPL / NOK 同日)。
+
+**Sources.**
+- MT Newswires: Intel Sees 2027 Growth as Data-Center Strength Offsets PC Weakness, RBC Says
+- Yahoo Finance: Intel's Harsh Base Case for the Remainder of 2026 (CFO warns of a 2027 'knothole')
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.86% · QQQ -1.47% · VIX 20.75 · TEN YEAR 5.008 · WTI 86.2 · DXY 102.33 · BTC 73138.87 · TLT -1.60%
+
+**Agent read.** INTC 与内存三只是两种相反的「便宜」形态, 这个区分值得复用: 低倍数+高盈利 (MU/SKHY/SNDK) 的风险是盈利腰斩; 高倍数+腰斩股价 (INTC) 的风险是盈利继续下调。判别方法是看 forward P/E 的方向 — 股价跌而 fPE 升 = 分母跌得更快 = 盈利预期仍在下修。INTC 已击穿 thesis-break 23.6% 而 kill_conditions 全未触发, 与 SNDK/MRVL/NOK 同属「价格破论、论据未破」, 但 INTC 是四只里唯一盈利预期在恶化的, 所以它的击穿更可能是真实的而非 trigger 定得太高。
+ · Snapshot at `dashboard/2026-11-10.md`
+
+---
 ### 2026-11-09 · +4.09% day · ▲ material
 **Tags:** `sector_rotation`
 **Confidence:** low

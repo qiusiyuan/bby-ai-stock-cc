@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-10 · +0.12% day · ▲ minor
+**Tags:** `macro_oil`, `geopolitical_war`, `macro_rates`
+**Confidence:** high
+
+**Primary cause.** **5d -10.26% 越线, 但当日 +0.12% — 今天是过去两周第一次出现「油跌而油股不跌」的脱钩。**||**油价侧**: WTI $86.20 (-0.75%), 5d -10.29%, 自 10/19 高点 **-16.5%**; Brent 盘中短暂跌破 $90 为 8 月以来最低, 本月累计约 -20%; 美国汽油均价 $3.9788/加仑, **7 月以来首次跌破 $4**。驱动是**伊朗与乌克兰两条线同时出现外交突破预期, 战争溢价被清空** (Rubio 当日就伊朗表态)。||**为什么股不跟跌 — 两个机制同时指向同一方向**: ① **久期最短的资产在折现率上行日相对受益**。10 月 CPI 双超预期、10Y +14bp 到 5.008%, 而油气公司的现金流是当期的 (今天采出今天卖掉收现金), 14bp 对它几乎无影响; 同日 GEV (现金流在 2030 年代) 跌 7.16%。今天油气的「不跌」本质是**相对估值重排, 不是对油价的看多**。② **油价下跌的原因是地缘缓和, 而地缘缓和同时降低了尾部风险**。战争溢价消失既是分子利空, 也是风险溢价利好; 对长寿命储量资产 (20 年以上), 后者比「今天是 $86 还是 $103」更重要。||**30d 全部跑赢原油**: WTI -3.56% 而 SU +0.10% / CNQ +1.97% / CVX +3.02%。上行时三只完整跟上甚至略超 (10/19 峰值均在归一化 115 附近), 下行时守住起点 — beta 小于 1 且在变小。||**公司侧**: CNQ 当日无公司新信息; 与 SU 的 30d 归一化轨迹几乎完全重合, 两者相关性极高。||**结构性差异值得记**: CVX 的 5d -6.53% 明显小于 SU -10.44% / CNQ -10.26%, 差距近 4 个百分点, 而三者当日 1D 几乎相同。CVX 的一体化 (炼化 + 下游) 在油价快速下跌时真的起了对冲作用 (原油跌价降低炼化原料成本), 代价是 12.8x vs 10.7x 的估值溢价。||**跟踪指标需要切换**: 10/28 时 WTI $103 / Brent $112, 战争溢价是主要变量; 今天战争溢价基本清零, 主导变量变成**供给纪律 — OPEC+ 配额决定**。地缘头条的边际信息量已下降。||**位置**: $48.10, forward P/E 10.7x; 距 thesis-break 缓冲 +60.3%; 量比 0.47x (盘中口径)。
+
+**Sources.**
+- Yahoo Finance: Oil Falls to Lowest Level Since August (Brent briefly below $90 as Iran and Ukraine diplomacy hopes accelerate selloff)
+- AP: Average U.S. Gasoline Price Dips below $4 for First Time since July
+- Yahoo Finance: 3 Airline Stocks To Watch As Oil Prices Fall (Brent and WTI both down about 20% this month)
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.86% · QQQ -1.47% · VIX 20.75 · TEN YEAR 5.008 · WTI 86.2 · DXY 102.33 · USDCAD 1.41885 · TLT -1.60%
+
+**Agent read.** 复用点有三。一是在折现率上行日, 久期最短的板块会表现为「不跌」, 这是相对估值重排而非方向判断, 且这个相对优势会在 Fed 停止加息后消失。二是地缘缓和对长寿命储量资产是双向的 (分子利空 + 风险溢价利好), 所以油股对「和平」的 beta 远小于油价的 beta。三是跟踪指标到了切换时点: 从地缘头条切到 OPEC+ 配额 + WCS-WTI 价差 (后者直接决定加拿大重油的实现价格)。注意: Brent-WTI 价差已不作为伊朗判据。
+ · Snapshot at `dashboard/2026-11-10.md`
+
+---
 ### 2026-11-04 · -7.39% day · ▼ major
 **Tags:** `macro_oil`, `geopolitical_war`, `earnings_pre_print`
 **Confidence:** high

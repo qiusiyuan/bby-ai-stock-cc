@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-10 · -5.30% day · ▼ material
+**Tags:** `macro_rates`, `flow_event`, `unattributed`
+**Confidence:** medium
+
+**Primary cause.** **-5.30%, thesis-break 击穿幅度从 11/09 的 -24.84% 重新扩大到 -30.0%; 30d -51.47%, 自 52 周高点 $2,354 累计 -64%。当日无公司新闻。**||**最可能的来源是拥挤多头的被动减仓, 而非新信息。** 13F 显示 Leopold Aschenbrenner 的 Situational Awareness 在 6/30 把 **28.1% 的 13F 持仓**放在 SNDK 上, 之后跌 63%; 另有 10 家大型基金同期新建或加仓。一只被高度集中持有的股票在深度亏损状态下的无消息下跌, 形态上就是被动减仓。||**基本面与价格的裂口在扩大, 不是收窄。** 10/29 财报评分结论仍然成立且未被任何新数据挑战: Tier 1 两项可测量门槛双双超出承诺上沿 (营收 $110.31 亿 vs 上沿 $108 亿; 非 GAAP EPS $49.51 vs 上沿 $46), 毛利率 85.0% **继续上行而非回落** (kill#1 未触发), datacenter +61% QoQ。四条 kill_conditions 无一触发。||**forward P/E 2.9x 为组合最低** — 但这是周期股在峰值盈利上的倍数, 按定义会显示为便宜, 分母本身可能腰斩。||**待执行事项 (连续第五份报告提示)**: **11/19-20 八拆一生效**, triggers.yaml::thesis_break_price 须由 1200 改为 150, thesis / digest 内所有绝对价位除以 8。媒体报道生效日为 11/19, timeline.yaml 记 11/20, 须以公司公告核实。||**自证窗口**: 下次财报 2027-01 下旬 — 近三个月内无机会。||**位置**: $839.50, MA50 $1,477.92 / MA200 $1,276.07 双线深度下方; 量比 0.92x (盘中口径, 折算全日约 1.7x)。
+
+**Sources.**
+- Yahoo Finance: Leopold Aschenbrenner Bought Sandisk Before It Fell 63%. Is He Wrong, or Early?
+- Yahoo Finance: Leopold Aschenbrenner and 10 Other Big Funds Bought Sandisk. It's Down 54% Since.
+- Motley Fool: Sandisk Stock Has Collapsed by 65%, but It's Still Undergoing an 8-for-1 Stock Split on Nov. 19
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.86% · QQQ -1.47% · VIX 20.75 · TEN YEAR 5.008 · WTI 86.2 · DXY 102.33 · GOLD 4024.5 · BTC 73138.87 · TLT -1.60%
+
+**Agent read.** SNDK 是「价格破论、论据未破」最极端的样本: 基本面在 10/29 刚被定量验证超出承诺上沿, 11 天后价格把击穿幅度扩大到 -30%。这种组合的两种解释里, SNDK 明确属于「thesis_break_price 定得太高, 把倍数压缩误当成基本面破坏」而非「市场看到了 kill_conditions 没覆盖的东西」—— 因为毛利率这个最直接的周期判据仍在上行。八拆一后 trigger 必须重设, 这是比价格更要紧的待办。
+ · Snapshot at `dashboard/2026-11-10.md`
+
+---
 ### 2026-11-09 · +8.01% day · ▲ major
 **Tags:** `sector_rotation`
 **Confidence:** low

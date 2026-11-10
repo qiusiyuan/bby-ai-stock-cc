@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-10 · -7.16% day · ▼ major
+**Tags:** `macro_rates`, `executive_comment`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **-7.16% 为今日全场最差, 且把 11/09 的 +7.43% 完整还回。thesis-break 缓冲从约 +18% 收窄到 +10.0%, 为全组合最紧的有效缓冲。**||**① 利率 (主导项)**: 10 月 CPI headline +0.4% / core +0.3% 双超预期, 10Y +14bp 到 5.008%, 12 月 25bp 完全定价 + 50bp 概率 13.6%。GEV 是全组合久期最长的资产 — 122GW 在手订单在 2027-2032 逐步交付, 现金流几乎全在终值。按 29.8x forward P/E 结构, 14bp 对应理论估值压缩 3-5%, 解释约一半跌幅。||**② AI 融资可得性 (当日新增项, 也是最重要的一条)**: GEV / Vertiv / Bloom Energy 一周内跌 10-24%, 而**三家 Q3 业绩都不差**。业绩好而股价跌 20% = 市场重定价的不是当期经营, 是订单簿的兑现概率。**Musk 11/06 公开称「SoftBank 正在违约他们的涡轮机订单」** — 第一次有具名买方被指认取消燃气轮机订单, 而 SoftBank 股价一个月跌 45% (AI 押注出问题)。这是「AI 项目的融资能力决定电力设备订单兑现」这条因果链第一次有可观察个案。||**③ 对冲项不足**: GEV 当日两则公告均正面 — 路易斯安那变压器产能扩建 $3,450 万; 德国 Stadtwerke Heidenheim 订购 3 台 5.5MW 陆上风机 (2027-12 投运, 20 年服务协议); 氢燃料航改型燃气轮机在 Greenville 新氢测试设施取得两项里程碑。但 $3,450 万相对当日约 $560 亿市值变动是噪音级别。||**TRIGGER 覆盖缺口 (本条最该复用的部分)**: 现有三条 kill_conditions 覆盖 hyperscaler 需求意愿 / Wind 执行 / Power 定价权。今天真正在定价的是**第四维度: 买方的融资能力**。SoftBank 违约不是因为「不想建」(第一条读不到), 是因为「借不到钱建」。在 10Y 5.0% 环境下, 同一机制会影响其他非 hyperscaler 买方 (neocloud / 主权基金 / 私募基建)。可补条件: 「任一具名买方公开取消或延期 >1GW 燃气轮机订单」或「122GW 在手订单季度兑现率连续两季下滑」。||**结构性问题**: 下次自身口径数据是 **2027-01-27 财报 — 78 天后**。一个在手 122GW、技术路线在推进、Q3 不差的公司, 要在零自证机会的 78 天里承受融资担忧重定价。||**位置**: $769.95, MA50 $918.86 下方 16% / MA200 $949.27 下方 19%; 52 周区间 36% 分位; 量比 1.23x (盘中口径, 重点股中第二高)。re_read_trigger 第一条 5d -16.15% 已达 15% 门槛, 但「no obvious macro catalyst」前提不完全满足 (今天有 CPI)。
+
+**Sources.**
+- Yahoo Finance: GE Vernova, Vertiv, and Bloom Energy Just Lost 10% to 24% in a Week. Here's What Set Off the AI Power Sell-off.
+- Yahoo Finance: Musk: "SoftBank Is Defaulting on Their Turbine Orders." That's a Warning for GE Vernova
+- Yahoo Finance: GE Vernova to spend $34.5M expanding Louisiana transformer manufacturing capacity
+- Yahoo Finance: GE Vernova Stock In Focus After Germany Wind Turbine Order (Stadtwerke Heidenheim, 3x 5.5MW)
+
+**Cross-assets.** SPY -0.86% · QQQ -1.47% · VIX 20.75 · TEN YEAR 5.008 · WTI 86.2 · DXY 102.33 · GOLD 4024.5 · BTC 73138.87 · TLT -1.60%
+
+**Agent read.** 两个独立结论。一是 GEV 现在是组合里风险结构最差的一只: 缓冲 +10.0% 最紧 + 下跌主因不在 kill_conditions 覆盖范围 + 78 天无自证机会, 三条同时成立。二是 trigger 设计的通用教训 — 查 trigger 不只问「触发了吗」, 要问「预设条件覆盖的是当前真正在定价的风险吗」。SoftBank 案例把「买方融资能力」这个维度暴露了出来, 而现有三条读不到。解锁点: 11/18 Anthropic IPO 首日 (AI 融资可得性最直接裁决) + 是否出现第二个具名买方取消订单 (第二例会把个案变成模式)。
+ · Snapshot at `dashboard/2026-11-10.md`
+
+---
 ### 2026-11-09 · +7.43% day · ▲ major
 **Tags:** `guidance_raise`, `policy_us`, `competitor_news`
 **Confidence:** high

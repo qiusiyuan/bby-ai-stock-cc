@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-10 · -2.33% day · ▼ minor
+**Tags:** `macro_rates`, `m_and_a`, `flow_event`
+**Confidence:** medium
+
+**Primary cause.** **-2.33% (5d -12.19% 越线), 30d -42.63%; thesis-break $200 已击穿 -24.5%。自 6 月高点 -51%, 但 2026 年至今仍 +82%。**||**主因仍是 10/28 起的 $1,150 亿全股票收购 Lumentum**: 全股票对价意味着 MRVL 股价下跌会压低 Lumentum 的实际收购价, 形成反馈 — Lumentum 本周跌 11%, 其管理层称「我们的需求再强不过了」(九月季度营收 +136%), 但股价由 MRVL 的股价驱动。B. Riley 即便下调目标价后仍给 $250, 称抛售过度; 该行指出 10/28 以来的跌幅大部分可归因于 Lumentum 交易 + 民主党国会全胜。||**叠加项**: ① 利率 — 10 月 CPI 双超预期, 10Y +14bp, MRVL 的 AWS Trainium SerDes / 光互联收入在远端; ② 被动资金 — ETF 在 11/06 净卖出 MRVL $1.344 亿。||**估值结构**: forward P/E 20.5x。NVDA 曾投资 $20 亿、Jensen Huang 曾给出万亿市值论、上季数据中心 +46% — 这些是 2026 年 +82% 的来源, 现在被收购整合风险和利率同时压制。||**kill_conditions 三条无一触发** (AWS 未宣布把 Trainium 设计主要收回自做 / 光互联未出现连续两季低于 30% 增长 / 单一 hyperscaler 集中度未升破 60%)。re_read_trigger「down >15% on no obvious news」已触发。||**12/01 财报是本季唯一自证窗口** — 在击穿状态下进财报, 焦点是 Lumentum 整合与 Trainium 2/3 爬坡。||**位置**: $151.00, MA50 $231.82 / MA200 $185.70 双线下方; 量比 0.58x (盘中口径)。
+
+**Sources.**
+- Yahoo Finance: Lumentum Sinks 11% in a Week as Marvell's All-Stock Offer Shrinks: "Our Demand Couldn't Be Stronger"
+- Yahoo Finance: Even After a Cut, B. Riley's $250 Target Says Marvell's Selloff Went Too Far
+- Yahoo Finance: ETFs Are Net Sellers of Marvell Technology (MRVL) on Nov. 6 (net -$134.4M)
+
+**Cross-assets.** SPY -0.86% · QQQ -1.47% · VIX 20.75 · TEN YEAR 5.008 · WTI 86.2 · DXY 102.33 · BTC 73138.87 · TLT -1.60%
+
+**Agent read.** 全股票收购在收购方股价下跌期会产生反馈环: MRVL 跌 → Lumentum 实际对价下降 → Lumentum 跌 → 交易完成概率与条款被重新质疑 → MRVL 再跌。这个机制在 11/02 已记录, 今天仍是主因。12/01 财报是打断这个环的唯一机会。
+ · Snapshot at `dashboard/2026-11-10.md`
+
+---
 ### 2026-11-09 · +10.19% day · ▲ major
 **Tags:** `sector_rotation`
 **Confidence:** low

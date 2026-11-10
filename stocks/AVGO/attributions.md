@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-10 · +2.39% day · ▲ minor
+**Tags:** `partnership_news`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **+2.39% 为今日全组合唯一实质上涨, 继 11/09 的 +8.78% 之后两日累计 +11.4%; 市值回到 $1.5 万亿上方 — 近一年最好的两日表现。**||**催化剂具名且清晰**: Anthropic 公布 IPO 价格区间 (估值约 $1.0-1.4 万亿, Nasdaq 代码 ANT, Wedbush 称发行规模可能达 $900 亿), **AVGO 是七家按 IPO 价认购的供应商之一, 七家合计 $260 亿** (已知金额: GOOG $100 亿 / AMD $25 亿 / MU $10 亿; 另有 NVDA / MSFT / AMZN)。AVGO 此前已在 Anthropic S-1 中披露为其安排 **$630 亿设备租赁融资**。||**信息质量警告**: 这 $260 亿里**只有一笔在 SEC 文件中获确认**, 且 Anthropic 本人称部分定价报道「不准确」。今天 AVGO +2.39% / AMD +2.66% (盘中) / AMZN +0.59% 是在为尚未确认的消息定价。||**AVGO 接棒成为 AI 板块的代理变量。** 两日 NVDA -10.7% 对 AVGO +11.4%, 相对表现差 22 个百分点, 而原因与 AI 需求完全无关 (NVDA 是 FBI 调查 CEO + 24 万片 GPU 流入中国)。11/09 报告记录的「市场第一次把 AI 交易和英伟达拆成两件可反向定价的事」今天没有收敛而是扩大。Goldman 同日称芯片股「超卖」并给出买入名单。||**但缓冲很薄**: 距 thesis-break $300 只剩 **+9.0%** — 这两天的强势是从一个很深的坑里爬出来的 (30d 仍 -7.88%, MA50 $345.87 / MA200 $366.13 双线下方)。||**真正的需求端答案提前到 11/18 而非 12/09 财报。** AVGO 既为 Anthropic 安排 $630 亿租赁融资又认购其股权 — Anthropic 的融资能否兑现, 比 AVGO 自己的季度数字更能说明定制 ASIC 订单簿里有多少是靠 AVGO 自己垫资实现的。||**位置**: $327.12, forward P/E 16.8x, 量比 0.65x (盘中口径)。下次自身口径 **12/09 财报 — 与 12 月 FOMC 第二天、SPCX 锁定期到期同日**, 三重叠加。
+
+**Sources.**
+- Yahoo Finance: Broadcom Stocks Rise 2.69% as It Joins $26 Billion Anthropic Placement
+- Yahoo Finance: Google, Nvidia and Microsoft Are Among 7 Tech Giants Putting $26 Billion Into Anthropic's IPO (only one commitment in an SEC filing)
+- Yahoo Finance: Broadcom Just Had Its Best Day in Nearly a Year, Back Above $1.5 Trillion
+- Business Insider: Goldman Sachs calls chip stocks 'oversold.' Here are the names it says to buy.
+
+**Cross-assets.** SPY -0.86% · QQQ -1.47% · VIX 20.75 · TEN YEAR 5.008 · WTI 86.2 · DXY 102.33 · BTC 73138.87 · TLT -1.60%
+
+**Agent read.** 两条独立结论。一是循环融资 (circular financing) 第一次以 $260 亿的可计量规模出现在 AI 建设里 — 供应商用自己的股本为一个支出计划远超收入的客户的 IPO 背书。多头读法是供应商最了解客户的真实算力消耗, 空头读法是收入从「客户自有现金购买」变成「供应商垫资购买」, 质量下降。裁决日是 11/18 IPO 首日, 不是今天。二是 AVGO 已取代 NVDA 成为 AI 板块的有效代理变量, 后续读板块强弱应用 AVGO + TSM 而非 NVDA。注意缓冲只剩 +9.0%。
+ · Snapshot at `dashboard/2026-11-10.md`
+
+---
 ### 2026-11-09 · +9.23% day · ▲ major
 **Tags:** `sector_rotation`, `partnership_news`
 **Confidence:** medium

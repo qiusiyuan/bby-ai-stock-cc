@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-10 · +0.51% day · ▲ minor
+**Tags:** `sector_rotation`, `macro_dollar`, `policy_china`
+**Confidence:** low
+
+**Primary cause.** **5d +10.32% 为今日全组合唯一的正向越线项; CROB 也是三只人形 ETF 里唯一站在 MA50 ($20.89) 上方的。在一个久期资产普跌日里这件事需要解释。**||**过去 30 天的排序与「内容纯度」完全反向**: CROB +1.78% > HUMN -5.58% > KOID -7.40%。按人形主题的内容纯度, HUMN (最纯 OEM + 执行器) 应最受益, KOID (更广使能层) 次之, CROB (中国机器人, 非专门人形) 最不相关。实际结果反了。||**最可能的解释是折现率锚不同, 而非人形主题进展**: ① 中国资产整体走强 — KWEB 今日仅 -1.19% (优于 QQQ -1.47%), 5d +3.18%; USD/CNY 6.6677 距 52 周低点仅 0.3%, 人民币处于一年来最强。② HUMN / KOID 持仓以美日欧公司为主, 受 10Y 5.008% 直接压缩; **CROB 持仓是中国上市公司, 其折现率锚定中国国债与人民币流动性, 而 PBoC 的方向与 Fed 相反。**||**对板块 thesis 的修正**: research/sectors/2026-08-17-optimus-supply-chain.md 记录的核心错配是「内容最纯的 (中国减速器供应链) 买不到, 买得到的内容最稀」。今天的数据补了一条: **在可及的三只里, 内容最不纯的那只反而提供了最好的风险分散 — 因为它的折现率锚在另一个央行。** 这不是对人形主题的验证, 是对久期分散的验证。代价是 CROB 的风险从「人形不成功」变成「人形不成功 + 中国市场风险」。||**量比是本条最该注意的数字**: CROB 0.35x / KOID **0.25x (全组合最低)** / HUMN 0.85x (盘中口径)。一个在久期资产普跌日里「不跌」的无盈利主题, 更可能是因为没有卖盘而不是有买盘。**今天三只的小幅波动不构成价格信号, 只是缺乏成交的结果。** 真正的重定价会在有流动性的日子发生。||**主题侧零新闻**: watch_items 五条 (Optimus Gen3/V3 发布 / Fremont 量产确认 / 任一供应商拿到 Tesla 确认订单 / UBTech-Unitree 订单与 IPO / 谐波减速器估值回落) 全部无更新。TSLA 当日 -0.64%, Musk 公开发言集中在 Cybertruck 定金与 SpaceX 算力, 未提 Optimus。未来 78 天 (至 2027-01-27 TSLA 财报) 无任何可验证催化剂。
+
+**Sources.**
+- _Data:_  ()
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.86% · QQQ -1.47% · VIX 20.75 · TEN YEAR 5.008 · DXY 102.33 · USDCNY 6.6677 · KWEB -1.19% · TSLA -0.64%
+
+**Agent read.** confidence 低是故意的: +10.32% 的 5 日涨幅在 0.35x 量比下不具备统计意义, 且无任何主题新闻支撑。有复用价值的是折现率锚的区分 — 在 Fed 加息、PBoC 不加息的环境里, 中国标的对美国长久期主题提供真实的分散价值, 这个机制与人形主题本身无关, 适用于任何中美双挂的主题板块。实践警告: 不要把低量比下的「不跌」读成韧性。
+ · Snapshot at `dashboard/2026-11-10.md`
+
+---
 ### 2026-10-28 · +4.18% day · ▲ material
 **Tags:** `unattributed`, `flow_event`
 **Confidence:** low

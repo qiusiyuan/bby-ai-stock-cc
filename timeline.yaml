@@ -80,8 +80,9 @@ events:
 
   # ── 2026-10-27 补录: 连续两份报告标记为缺口的高影响事件 ──────────
   - { date: 2026-11-03, kind: policy, ticker: macro, note: "**美国中期选举 — 本工作簿影响级最高的未录入事件 (10/22 与 10/26 两份报告均标记为缺口)。** 三条独立定价都以它为锚: (1) 10/22 ITA -1.42% / 30d -6.97% 被归因为按「民主党全胜」定价; (2) NYT 称美以对伊朗方案「设在中期选举后」; (3) 10/27 EnergyNewsBeat 标题「Deal or Escalate: U.S. Oil Back Under $100 One Week Before the Election」。注意同日叠加 AMD + SPCX + SU 三份财报 = 四重叠加日" }
-  - { date: 2026-11-15, kind: catalyst, ticker: macro, note: "**Anthropic IPO 定价窗口 (约 11 月中, 精确日待定)** — 10/26 S-1 公开递交, Nasdaq 代码 ANT, 22 家承销行。S-1 披露 AMZN+GOOG+MSFT 持有 $2,690亿 不可取消算力合约、SPCX 算力交易近乎翻倍至 $845亿、Broadcom 为其安排 $630亿 设备租赁融资。定价本身是「AI 建设方的融资可得性」最直接的市场裁决, 直接读到 AVGO / SPCX / 全 AI capex 组" }
-  - { date: 2026-12-16, kind: macro, ticker: macro, note: "**12 月 FOMC (~估计日期, 10/28 之后约 7 周; 2026 官方日程未核实)** — 10/27 市场口径 (CNBC / EBC) 一致把 12 月而非 10 月当作下一次加息的真实判别点。加息概率轨迹: 9/27 Polymarket 65% → 10/26 Kalshi(十月) 33% → 10/27 期货(本周) 10%。若 10/28 措辞指向 12 月, 这一天是本轮紧缩周期的终点或延续的裁决日" }
+  - { date: 2026-11-10, kind: catalyst, ticker: macro, note: "✅ **Anthropic 公布 IPO 价格区间 (原估 11/15, 提前)** — 估值约 $1.0-1.4万亿, Nasdaq 代码 ANT, Wedbush 称发行规模可能达 $900亿。**七家供应商合计 $260亿 按 IPO 价认购: GOOG $100亿 / AMD $25亿 / MU $10亿 / 另有 NVDA、MSFT、AVGO、AMZN。但仅一笔在 SEC 文件中获确认, Anthropic 自称部分定价报道「不准确」**。另披露将向 SpaceX 支付「每月超 $30亿」算力费" }
+  - { date: 2026-11-18, kind: catalyst, ticker: macro, note: "**Anthropic IPO 上市首日 (区间已于 11/10 公布, 挂牌日待确认, 惯例为定价区间后约 1-2 周)** — 这是「AI 建设方的融资可得性」最直接的市场裁决。首日表现直接读到 AVGO / SPCX / MU / AMD / GOOG / MSFT / AMZN。供应商认购 = 供应商用自己的资产负债表为客户的融资背书, 若破发则 $260亿 同时成为七家的减值项" }
+  - { date: 2026-12-09, kind: macro, ticker: macro, note: "**12 月 FOMC — 日期已核实为 12/08-09 (CNBC 11/10 CPI 报道)**, 原记 12/16 为推算误差。10/27 市场口径一致把 12 月当作下一次加息的真实判别点。加息概率轨迹: 9/27 Polymarket 65% → 10/26 Kalshi(十月) 33% → 10/27 期货(本周) 10% → 11/09 期货 80% → **11/10 Oct CPI 后 25bp 已被完全定价(100%), 50bp 概率 13.6%(报告前约 0%)**。裁决点已从「加不加」变成「加 25 还是 50」" }
   - { date: 2026-10-28, kind: catalyst, ticker: SKHY, note: "SK Hynix $121亿 Kioxia 特别股息裁决 (10/26 报告记录, 与 3Q26 财报同日) — ✅ 已裁决 10/28: Q3 每股派息 20,000 韩元, 其中**一半为与 Kioxia 投资收益挂钩的特别股息**, 口径确认" }
 
   # ── 2026-10-28 补录: macro 日历在 10/28 FOMC 之后整段缺失 ──────────
@@ -90,11 +91,11 @@ events:
   # 以下日期按惯例推算 + 核对星期, 官方日程未逐一核实。
   - { date: 2026-10-29, kind: macro, ticker: macro, note: "Q3 GDP 初值 + 核心 PCE 月度 + 初请失业金 (investing.com 10/28 口径: Thursday's docket = GDP, core PCE, jobless claims) — **10/28 FOMC 两位委员投票主张加息之后的第一份硬数据**, 核心 PCE 是 Fed 正式目标口径, 直接决定 12/16 加息概率" }
   - { date: 2026-11-06, kind: macro, ticker: macro, note: "NFP October (十一月首个周五) — 中期选举后第三天。就业走弱 + 通胀黏着 = stagflation 定价, 对久期资产最差组合" }
-  - { date: 2026-11-12, kind: macro, ticker: macro, note: "CPI October (~估计, 第二周周四) — 10/28 FOMC 声明「despite inflation surge」仍按兵不动, 这是 12 月加息路径的第一个通胀判据" }
-  - { date: 2026-11-13, kind: macro, ticker: macro, note: "PPI October (~估计, CPI 次日) — 10/28 WTI $103 / Brent $112 的能源传导进入这份生产端读数" }
-  - { date: 2026-11-25, kind: macro, ticker: macro, note: "PCE inflation October (~估计, 感恩节前最后一个工作日) — Fed 正式口径, 12/16 FOMC 前倒数第二份通胀数据" }
-  - { date: 2026-12-04, kind: macro, ticker: macro, note: "NFP November (十二月首个周五) — 12/16 FOMC 前最后一份就业数据" }
-  - { date: 2026-12-10, kind: macro, ticker: macro, note: "CPI November (~估计, 第二周周四) — **12/16 FOMC 前最后一份通胀数据, Polymarket 12 月加息概率 82% 的最终判据**" }
+  - { date: 2026-11-10, kind: macro, ticker: macro, note: "✅ **CPI October 实际发布日 (原估 11/12, 提前两天)** — headline +0.4% MoM (预期 +0.3%, 前值 +0.6%), core +0.3% MoM (预期 +0.2%)。无 YoY 读数: 2025 政府停摆导致 BLS 未采集 2025 年 10 月基数。Waller 事前已说 core「约 0.3」就该把 50bp 放上桌" }
+  - { date: 2026-11-11, kind: macro, ticker: macro, note: "PPI October (CPI 次日) — 10/28 WTI $103 / Brent $112 的能源传导进入这份生产端读数; 但 11/10 WTI 已跌到 $86, 能源传导方向在数据发布与当下之间已反转" }
+  - { date: 2026-11-25, kind: macro, ticker: macro, note: "PCE inflation October (~估计, 感恩节前最后一个工作日) — Fed 正式口径。**注意: 落在 12/08-09 FOMC 之后? 否 — 在之前, 是 FOMC 前最后一份通胀数据**" }
+  - { date: 2026-12-04, kind: macro, ticker: macro, note: "NFP November (十二月首个周五) — 12/08-09 FOMC 前最后一份就业数据, 也是会议前最后一份硬数据" }
+  - { date: 2026-12-10, kind: macro, ticker: macro, note: "CPI November (~估计, 第二周周四) — **FOMC 日期核实为 12/08-09 后, 这份数据落在会议之后, 不再是 12 月决议的判据**; 它读的是 1 月会议路径" }
   - { date: 2026-12-11, kind: macro, ticker: macro, note: "PPI November (~估计, CPI 次日)" }
   - { date: 2027-01-08, kind: macro, ticker: macro, note: "NFP December (一月首个周五)" }
 
