@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · -4.15% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** **-4.15% 为内存复合体内最大跌幅，但 thesis-break 击穿幅度从 11/10 的 -30.0% 收窄到 -21.9%(两日改善 8.1pp)，5d +16.20% 为组合第三强。** 30d -47.58%，自 52 周高点 $2,354.39 累计 -60.2%。||**零公司级催化剂** — 今日下跌来自两个公因子(Huang 辞职的 AI 链情绪 + 10Y +11bp)。||**30 天脱队的原因已被 30d 归一化曲线确认为 NAND/消费端特殊因素，不是 DRAM/HBM 周期共因**: SNDK -47.58% vs MU -27.62% / SKHY -29.01% / DRAM -29.74%(三者相差仅 2.1pp)。SNDK 的脱队从 10/29 财报日(归一化 77.33)开始、到 11/05(46.89)走完，之后与其余三条同步反弹 — 时间窗口与 Consumer 分部 -29% QoQ / -39% YoY 的披露完全重合。||**基本面仍是「倍数压缩而非基本面破坏」**: 10/29 财报两项可测量 Tier 1 门槛全部超出上沿(营收 $11,031M vs 承诺上沿 $10.8B；非 GAAP EPS $49.51 vs 上沿 $46)，毛利率 85.0% 继续上行而非回落，datacenter +61% QoQ。forward P/E 3.24x。||**⚠️ 11/20 八拆一生效(8 天后)，连续第六份报告提示未执行**: triggers.yaml::thesis_break_price 须由 1200 改为 **150**，thesis/digest 内所有绝对价位除以 8。不改则 11/20 之后「击穿 -21.9%」这个读数因口径错 8 倍而完全失效。
+
+**Sources.**
+- _Data:_  ()
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · DXY 103.19 · NVDA -4.58% · AVGO +5.65% · AMD +5.22%
+
+**Agent read.** 可复用一点：**当一个成员的 30 天跌幅显著脱离同组(此处 -47.58% vs 其余三者 -27~-30%)，用归一化曲线定位脱队的起止日期，再把那个窗口与已知披露对齐** — 这比读新闻更快地把「板块共因」与「个体特质」分开。此处结论明确：SNDK 的超额跌幅属于 NAND 消费端，DRAM/HBM 周期无责。||待办风险(非价格)：11/20 拆股改期是硬期限。目前组合里有一条将在 8 天后数值错 8 倍的风控线。
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-11-10 · -5.30% day · ▼ material
 **Tags:** `macro_rates`, `flow_event`, `unattributed`
 **Confidence:** medium

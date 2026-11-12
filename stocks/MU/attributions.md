@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · -2.11% day · ▲ major
+**Tags:** `macro_rates`, `sector_rotation`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** **5d +21.00% 越线(当日 -2.11%)。本条记录的核心是一个被验证的判断：11/10 写下「MU 价格逼近破论位而破论的理由不成立 — 这是倍数压缩，不是基本面破坏」，两天后价格离开了那个位置。**||thesis-break 缓冲从 11/10 的 **+8.6%**(当时已进入 10% 预警带) 回到 **+22.2%**。同时 **收复 MA200 $763.68**(11/10 曾首次跌破)。MA50 $947.20 仍在上方。||**内存复合体内最抗跌 + 领涨**: 5d MU +21.00% > DRAM +17.77% > SNDK +16.20% > SKHY +10.86%；当日 MU -2.11% 为四者中最小跌幅。**MU 是四者里唯一已收复 MA200、唯一缓冲回到 20% 以上的。质量排序与价格排序一致。**||**零公司级催化剂** — 五日反弹不含任何需求侧新信息。今日下跌来自两个公因子(Huang 辞职 + 10Y +11bp)。**所以「破论理由不成立」这个判断得到验证的方式是价格回归，而不是新证据出现** — 这一点必须说清楚，否则会把倍数修复误读为基本面确认。||forward P/E 3.82x — 周期股峰值盈利上的倍数，分母可能腰斩，低倍数不等于低久期。||**下一个强制披露: 12/23 财报**(Q1 FY27)，首次使用终端市场新口径(Cloud Memory / Core Data Center / Mobile and Client / Automotive and Embedded)，HBM 不再单列。未来 scorecard 的门槛须改用「数据中心合计」口径(Q4 FY26 基准 $342.8 亿 = 营收 63.2%)。
+
+**Sources.**
+- _Data:_  ()
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · DXY 103.19 · NVDA -4.58% · AVGO +5.65% · AMD +5.22%
+
+**Agent read.** **可复用的一条判别法：当价格逼近预设破论位而 kill_condition 全部未触发时，默认假设是「破论位定得太高」而非「市场看到了判据没覆盖的东西」 — 但这个假设只能由价格回归来证实，不能由新证据证实(因为没有新证据恰恰是前提)。** MU 这次是干净的正面样本：11/10 判断、11/12 验证、机制清楚(倍数压缩)。||注意不要过度外推：同一天同样处于「价格破论、论据未破」状态的还有 SNDK / INTC / MRVL / NOK 四只，它们的击穿幅度也在两日内全部收窄。**但五日反弹是全书性的(AI 链上几乎每个名字都涨)，所以价格改善不构成对任一只的个体验证。** MU 的区别在于它还同时收复了 MA200 且在组内领涨 — 那是相对强度证据，不只是 beta。
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-11-10 · -3.70% day · ▼ material
 **Tags:** `macro_rates`, `analyst_downgrade`, `partnership_news`
 **Confidence:** high

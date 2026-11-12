@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · +4.58% day · ▲ material
+**Tags:** `sector_rotation`, `memory_pricing`
+**Confidence:** high
+
+**Primary cause.** **首尔 +4.58% 至 ₩208,000，为今日内存复合体最大涨幅 —— 但这是首尔收盘价，读的是 11/11 美股的反弹，不是今天的信息。**||同一时段美国内存全线下跌：MU -2.11% / DRAM -2.82% / SKHY -3.44% / SNDK -4.15%。**不可把 Samsung 的 +4.58% 读成内存板块在反弹。**||5d -4.59% 为负(美国 SKHY 5d +10.86%、MU 5d +21.00%)—— 首尔的五日反弹幅度明显小于美股，说明韩国本线对本轮 AI 链反弹的参与度更低。||forward P/E 2.69x。30d -21.63%，为内存复合体内 30 天跌幅最小的一只(对照 SKHY -29.01% / DRAM -29.74% / SNDK -47.58%)—— **Samsung 的多元化业务结构(手机、显示、代工)在本轮内存回撤中提供了真实的缓冲，这是它与纯内存标的的结构性区别。**||**下一个强制披露 2027-01-26 财报。**
+
+**Sources.**
+- _Data:_  ()
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · DXY 103.19 · NVDA -4.58% · SKHY ADS -3.44%
+
+**Agent read.** **Samsung 的 30 天跌幅显著小于纯内存标的，这是业务多元化的量化证据，不是内存周期判断的证据。** 用它做内存周期的读数会低估周期的严重性；用它做「多元化 vs 纯标的」的对照则有效。||时区规则同 000660.KS：首尔收盘价对应上一个美股交易日的信息集，比较强弱只能比同一时段。
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-10-29 · -4.13% day · ▼ material
 **Tags:** `earnings_print`
 **Confidence:** high

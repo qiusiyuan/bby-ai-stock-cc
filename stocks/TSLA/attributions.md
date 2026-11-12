@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · +0.25% day · ▲ extreme
+**Tags:** `executive_comment`, `regulatory_negative`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** **5d +14.01% 越线，且 30d +10.65% —— 组合内唯一同时实现五日与三十日双正的 AI 相关持仓。当日 +0.25%、量比 0.33x。首次站上 MA50($374.35) 与 MA200($382.83) 双线(11/10 曾卡在两线之间)。**||**本条的核心：四条方向互斥的公司级消息同日落地，价格一条都没定价。这与 11/09 完全同形态(当日三条互相矛盾的消息落地，价格只跟了板块 beta)。三个交易日内重复两次 —— 当前 TSLA 的定价权不在公司新闻手里。**||**① Cybertruck 停产进入收尾** —— 11/09 已确认停产并退还订金，今天新增「Cybercab 能否证明转向合理」的追问 + 第三方有意接手生产。负面但规模可量化(Cybertruck 从未对营收构成实质贡献)。||**② SEC 推进 2018 年「funding secured」推文案的投资者赔付** —— 八年后的法律尾巴。金额量级远小于当期 FCF，但它是治理类风险的一次具体计价，**而今天恰好是 NVIDIA 因治理问题损失创始人的同一天**。有媒体直接把两者并列(「监管的十字准星瞄准这两只 Mag 7，其中一只处境更糟」)。**市场现在会把 TSLA 与 NVDA 放进同一个治理风险篮子比较，而此前两者从不被这样对比。**||**③ 最实质的一条：自研芯片计划的资金缺口。** 有报道测算 Musk 的芯片计划「要花一万亿美元，而 Tesla 的现金流覆盖不了」。这直接攻击估值核心构件 —— **181.5x 的 forward P/E 完全建立在 FSD/Robotaxi/Optimus 的远期变现上，而这三者都需要自有算力。若算力靠外部融资而非内生现金流，则远期现金流的折现分母变大(利率)且分子被稀释(融资)。在 10Y 5.11% 的环境里，这是四条消息里唯一可能改变估值框架的一条，而市场未定价。**||**④ Musk 称聘用 Jensen Huang「将是荣幸」** —— 纯叙事。与 SPCX 侧「Musk 考虑聘请前 NVIDIA CEO」是同一条线。||另：Tesla 员工持股基金出现意外的 Microsoft 建仓同时保留 NVDA 持仓(13F 口径，非当日驱动)，方向与今日全市场向近端现金流资产倾斜一致。||thesis-break $250 缓冲 **+56.7%**(11/10 为 +50.3%)，组合第三厚。
+
+**Sources.**
+- Yahoo Finance: Musk's Chip Plan Is "Gonna Cost a Trillion Dollars." Tesla's Cash Flow Can't Cover It
+- Yahoo Finance: Elon Musk's 'Funding Secured' Post to Take Tesla Private Still Cost Him 8 Years Later: SEC Moves to Close Payout to TSLA Investors
+- 247wallst: Tesla Vs. Nvidia: The Regulatory Crosshairs are Trained on These Two Mag 7 Shares, One is Worse Off
+- Yahoo Finance: Tesla to Wind Down Cybertruck: Can Cybercab Justify the Shift?
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · DXY 103.19 · NVDA -4.58% · AVGO +5.65% · AMD +5.22%
+
+**Agent read.** **最该留下的一条：TSLA 的 trigger 存在与 GEV 同类的结构性缺口 —— 预设判据里没有一条覆盖「自研算力的融资可得性」。** 11/10 对 GEV 发现「trigger 未覆盖客户的融资维度」；今天 TSLA 暴露的是「自身算力的融资维度」。**181.5x 倍数依赖的远期变现需要算力，而算力的资金来源不在任何预设判据里。** 这是待补判据，不是今天的信号。||第二条：**量比 0.33x 的「消息不被定价」不等于「消息被否决」。** 四条互斥消息(尤其一万亿美元资金缺口)仍是未定价的存量信息。三日内两次出现同形态，说明当前环境下 TSLA 的公司新闻需要等到有流动性的日子才会被定价 —— 最近的强制定价窗口是 2027-01-27 Q4 财报。
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-11-09 · +5.49% day · ▲ material
 **Tags:** `production_milestone`, `executive_comment`
 **Confidence:** medium

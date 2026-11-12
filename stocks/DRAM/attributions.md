@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · -2.82% day · ▲ extreme
+**Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** **5d +17.77% 越线(当日 -2.82%)。本次 ETF 的表现回归正常 —— 今日 -2.82% 介于 MU(-2.11%) 与 SKHY(-3.44%)/SNDK(-4.15%) 之间，即成分的加权平均，未重复 11/10 的「ETF 跌幅大于全部成分」异常(当时 -4.38% 大于 MU -3.70% 与 SKHY -4.32%)。**||30d -29.74% 与 MU(-27.62%)/SKHY(-29.01%) 相差 2.1pp 以内 —— **确认 ETF 在本轮周期里零分散作用**，这与 11/09 的记录一致(当时 DRAM 30d -30.08% vs MU 30d -30.29%，差 0.2pp)。||MA50 $53.58 下方 18.7%，52 周区间 $26.14-$81.34，位于区间下半部。零公司级催化剂，涨跌全部来自两个公因子(Huang 辞职 + 10Y +11bp)。
+
+**Sources.**
+- _Data:_  ()
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · DXY 103.19 · NVDA -4.58% · AVGO +5.65% · AMD +5.22%
+
+**Agent read.** **持有 DRAM ETF 作为内存敞口的分散工具，在本轮周期里没有提供分散 —— 连续三次记录(11/09、11/10、11/12) 显示它的 30 天表现与 MU 的差距在 2pp 以内。** 若目的是分散，这只 ETF 不达成目的；若目的是以单一标的表达内存周期观点，它有效。**唯一的例外行为是 11/10 的「跌幅大于全部成分」，今天未重复 —— 那更可能是单日流动性而非结构问题。**
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-11-10 · -4.38% day · ▼ material
 **Tags:** `macro_rates`, `flow_event`
 **Confidence:** high

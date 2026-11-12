@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · +2.02% day · ▲ minor
+**Tags:** `partnership_news`, `executive_comment`, `sector_rotation`
+**Confidence:** low
+
+**Primary cause.** **+2.02%，但本条记录的重点不是涨幅 — 是 SpaceX 承诺向新建 AI 园区投入 $740 亿，这把 SPCX 从「AI capex 周期的无关资产」改写成「AI capex 周期的参与方」，方向与 11/09 刚建立的判断相反。**||**11/09 的判断**: NASA 合同被记为「给 SPCX 装上一条与 AI capex 周期完全无关的政府收入线 — 本轮下跌以来第一次」。今天的 $740 亿把那条独立性部分抵消 — SPCX 的资产负债表上现在同时有政府收入线**和** AI capex 支出线，它既是 AI 周期的受益者也是出资方。**对「AI 建设是否能持续融资」这个问题的敞口从接近零变成实质性暴露，而该问题的裁决日是 6 天后的 11/18 Anthropic IPO 首日。**||**与 11/05 的对读**: 当日 Musk 在 41 项数据中心公投被否后说「太空数据中心现在看起来挺有吸引力」，被记为「管理层自己承认约束」，市场选了负面读法(-9.05%)。今天 $740 亿是把那句话变成资本承诺，市场选了正面读法(+2.02%)。**同一条逻辑线，七天内市场给了相反的符号。**||**今日另两条实质消息**: Starship Flight 15 临近发射；State Street 增持。另有与 Qualcomm 的直连手机业务新协议(媒体口径偏谨慎)。||**归因置信度低的理由**: 媒体把 +2.02% 归因于「Musk 考虑聘请前 NVIDIA CEO」，但量比仅 0.65x，且同日有 $740 亿 AI 园区与 Flight 15 两条更实质的消息。**把 2% 涨幅归给一条人事传闻，在同时存在两条资本层面消息的情况下是归因懒惰。更合理的读法是 $740 亿基本没有被定价 — 正面和负面都没有。**||**结构性风险提醒**: 12/09 lockup 到期(27 天后)，与 AVGO 财报 + 12 月 FOMC 撞在同一天 —— **lockup 的影响当天将无法与宏观影响分离**。而 SPCX 的 thesis_break_price 仍为 null，是组合内唯一一只在 27 天内有已知结构性供给事件却无任何预设价格判据的持仓。||Goldman Sachs 指出 Anthropic IPO 存在 $660 亿的问题 — 这不是 SPCX 的消息，但它是 11/18 裁决日的前置警告。
+
+**Sources.**
+- Yahoo Finance: SpaceX Commits $74B To New AI Campuses While Musk Eyes Hiring Former Nvidia CEO, Starship Readies Flight 15
+- Yahoo Finance: Goldman Sachs sees $66 billion problem with Anthropic's blockbuster IPO
+- Yahoo Finance: Why SpaceX Stock Popped After Nvidia's CEO News
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · DXY 103.19 · NVDA -4.58% · AVGO +5.65% · AMD +5.22%
+
+**Agent read.** **最该复用的是「敞口改写」这个事件类型 — 它比价格变动重要得多，而价格当天通常不反映它。** 一笔 $740 亿的资本承诺改变的是这只持仓在组合里的风险因子构成(从「政府收入线，与 AI 周期无关」变成「同时是 AI 出资方」)，而当天只涨 2% 且量比 0.65x。**遇到大额资本承诺公告，先更新风险因子映射，再看价格。**||第二点：同一条逻辑线(太空数据中心)在 11/05 被定价为负(-9.05%)、11/12 被定价为正(+2.02%)。**当市场在七天内对同一逻辑给出相反符号时，说明它没有稳定观点 — 此时价格不含信息，等强制裁决(11/18 Anthropic 首日)。**||待办(非交易)：12/09 lockup 前必须给 SPCX 设 thesis_break_price，否则当天无判据可依，且当天叠加 FOMC 与 AVGO 财报使归因不可拆。
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-11-09 · +5.71% day · ▲ material
 **Tags:** `regulatory_positive`, `executive_comment`, `partnership_news`
 **Confidence:** high

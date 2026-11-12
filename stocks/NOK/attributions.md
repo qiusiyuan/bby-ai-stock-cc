@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · -1.07% day · ▲ extreme
+**Tags:** `sector_rotation`, `unattributed`
+**Confidence:** low
+
+**Primary cause.** **5d +11.93% 越线(当日 -1.07%)，击穿幅度从 11/10 的 -9.4% 收窄到 -7.2%(两日改善 2.2pp，为四条击穿线里改善最小)。**||**完全无具名催化剂** —— 连续多个交易日无公司级新闻。判为板块 beta 回弹。这与 11/09 的记录同形态(当时 +7.51% 亦完全无具名催化剂，击穿收窄 8.0pp 为四条里最多)。||30d -19.48%，52 周区间 $5.86-$17.45(现价 $8.35 位于区间 21% 分位)。forward P/E 17.3x。MA50 $9.60 / MA200 $10.37 双线下方。**下一个强制披露 2027-01-28，77 天后。**||**NOK 既不在 AI 算力链上也不在内存链上，它的五日 +11.93% 没有任何叙事可依附** —— 这使它成为「本轮五日反弹是全书性 beta 而非选择性重估」的最佳证据之一。
+
+**Sources.**
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · DXY 103.19 · NVDA -4.58% · AVGO +5.65% · AMD +5.22%
+
+**Agent read.** **NOK 的用途是作为「纯 beta 对照组」。** 它不在今天任何一条叙事线上(非 AI 算力、非内存、非能源、非电力)，所以它的五日 +11.93% 量化了本轮反弹中不含叙事的部分。推论：AMD 的 +43.86%、AVGO 的 +25.11% 里约有 10-12pp 可能只是同一个 beta，叙事贡献的是超出 NOK 的那部分。**这个对照法可在任何全书性反弹日复用 —— 先找组合里最没有故事的那只，用它的涨幅做基线。**
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-11-09 · +7.51% day · ▲ major
 **Tags:** `sector_rotation`, `unattributed`
 **Confidence:** low

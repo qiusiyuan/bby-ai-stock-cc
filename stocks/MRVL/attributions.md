@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · -1.60% day · ▲ extreme
+**Tags:** `sector_rotation`, `m_and_a`, `macro_rates`
+**Confidence:** low
+
+**Primary cause.** **5d +24.37% 越线(当日 -1.60%)，thesis-break 击穿幅度从 11/10 的 -24.5% 收窄到 -17.0%(两日改善 7.5pp)。30d 仍 -38.03%。**||**无具名催化剂驱动五日涨幅** — MRVL 今日唯一公司级新闻是「任命三名新独立董事」(治理，非业务)。五日 +24.37% 属 AI 链全书性反弹的一部分(AMD +43.86% / AVGO +25.11% / MU +21.00%)，MRVL 在其中排第三。||**Lumentum 全股票收购仍在进行**，且 Lumentum 当前股价低于 Marvell 的收购报价(媒体问「这个价差是便宜货吗」) — 全股票交易中标的折价通常反映对收购方股价的担忧或对交割的疑虑。**交易规模在可及来源中出现不一致口径(一处称约 $800 亿，此前记录为约 $1,150 亿)，未经核实，不作为判断依据。**||forward P/E 22.6x。**下一个强制披露: 12/01 财报(19 天后)** — 在击穿 -17.0% + 收购进行中的状态下交数字，是四条击穿线里最早到达的自证窗口。
+
+**Sources.**
+- Yahoo Finance: Marvell Appoints Three New Independent Directors to its Board
+- Yahoo Finance: Lumentum Trades Below Marvell's Buyout Offer. Is the Gap a Bargain?
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · DXY 103.19 · NVDA -4.58% · AVGO +5.65% · AMD +5.22%
+
+**Agent read.** confidence 低是故意的：五日 +24.37% 无任何具名公司催化剂，是 beta。有复用价值的一点：**MRVL 是四条击穿线(SNDK/INTC/MRVL/NOK)里最早有强制披露的(12/01，19 天后)** — 这使它成为检验「破论位定得太高 vs 市场看到判据未覆盖的东西」这个二元问题的第一个实验。12/01 之后应回看：数字好而击穿未修复 → 破论位的问题；数字差 → 市场是对的。||全股票收购中标的持续折价是一个值得单独跟踪的指标，但当前交易规模口径不一致，须先核实再用。
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-11-10 · -2.33% day · ▼ minor
 **Tags:** `macro_rates`, `m_and_a`, `flow_event`
 **Confidence:** medium

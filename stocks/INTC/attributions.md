@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · -0.74% day · ▲ extreme
+**Tags:** `sector_rotation`, `competitor_news`, `executive_comment`
+**Confidence:** medium
+
+**Primary cause.** **5d +18.73% 越线(当日 -0.74%)，击穿幅度从 11/10 的 -23.6% 收窄到 -17.3%(两日改善 6.3pp)。30d -48.30% 仍为全组合最大 30 天跌幅，52 周高 $142.35 → 现价 $62.04(-56.4%)。**||**今天最有信息量的不是涨跌，是两条具名负面：**||**① 媒体直接称「INTC 是 NVIDIA 董事会炸弹的真正输家」。** 机制清楚：市场今天买入的每一条替代 NVIDIA 的路径(AVGO 定制 ASIC +5.65% / AMD 第二供应商 +5.22% / GOOG 自研 TPU +2.72%)**全部通过台积电实现**。所以 INTC 的代工翻身叙事在这次大规模份额重估里一无所获 —— 它既不是被替代者，也不是替代者。TSM 同日 -1.34% 也下跌，两条合起来说明今天是客户内部份额再分配(对代工厂零和)，不是 AI 总需求重估。||**② INTC CEO Lip-Bu Tan 公开表示 AI boom 前方会有一次「healthy pullback」。** 一家持仓公司的 CEO 公开预期自己所在周期会回调，这在此前的记录里没有先例。与 Jeffrey Gundlach 今日「回避 AI 的 blast radius」同向，但 **CEO 的证据等级更高 —— 他看得到订单簿。**||另有 BofA 五星分析师下调 2027 年目标价。||**仍处「价格破论、kill_condition 未触发」状态**: 两条预设判据(14A 制程里程碑、代工客户赢单含 Apple 回归)今天都无新证据，所以无法区分「破论位定得太高」与「市场看到了判据未覆盖的东西」。forward P/E 34.6x(亏损转盈早期倍数，不具可比性)。MA50 $95.63 / MA200 $87.35 双线深度下方。**下一个强制披露 2027-01-28，77 天后。**
+
+**Sources.**
+- Yahoo Finance: Intel Is the Real Loser in Nvidia's "Boardroom Bombshell". Here's the Number That Matters
+- Yahoo Finance: Intel CEO Lip-Bu Tan sees a 'healthy pullback' ahead in the AI boom
+- Yahoo Finance: BofA 5-Star Analyst Trims Intel Stock Price Target for 2027
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · DXY 103.19 · NVDA -4.58% · AVGO +5.65% · AMD +5.22%
+
+**Agent read.** **两条可复用的机制。① 大规模份额重估中，要问「重估的路径都经过谁」。** 今天替代 NVIDIA 的三条路径(AVGO/AMD/GOOG)全部在台积电投片，所以 INTC 作为代工挑战者在一次历史级的份额洗牌中零收益 — 这比任何估值分析都更直接地说明它的代工 thesis 目前不在市场的考虑范围内。② **CEO 公开预期自己行业回调，是一个高证据等级的负面信号，应单独记录并设定复核日期。** Lip-Bu Tan 看得到订单簿，而卖方和媒体看不到。复核点: 2027-01-28 财报 — 若届时指引确认 pullback，则今天这条表态应被追认为本轮最早的内部预警。
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-11-10 · -3.54% day · ▼ material
 **Tags:** `macro_rates`, `guidance_cut`, `analyst_upgrade`
 **Confidence:** medium

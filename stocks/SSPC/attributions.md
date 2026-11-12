@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · -3.86% day · ▼ extreme
+**Tags:** `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **-3.86%，5d -27.74%。作为 SPCX 的 2x 反向 ETF，机械跟随：当日实际倍数 1.91x(-3.86% 对 SPCX +2.02%)，跟踪正常。**||5d -27.74% 对 SPCX 5d +15.33% —— 理论值应为 -30.7%，实际 -27.74% 略优，差异来自路径平滑(SPCX 五日为较平稳的上行而非剧烈震荡，复利衰减因此较小)。||52 周区间 $6.00-$24.66，距 52 周低点 +37.2%。MA50 $8.67 下方，MA200 n/a(上市未满 200 日)。||**本条无独立信息价值** —— SSPC 的唯一用途是确认 SPCX 的方向性走势是真实成交而非报价噪音。今天两者方向严格相反、倍数接近 2x，确认 SPCX 的 +2.02% 是干净价格。
+
+**Sources.**
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · DXY 103.19 · NVDA -4.58% · AVGO +5.65% · AMD +5.22%
+
+**Agent read.** **2x 反向 ETF 的记录价值只有两条：① 确认标的的价格是真实成交(方向严格相反 + 倍数接近 2x)；② 量化复利衰减的实际幅度(本次五日实际 -27.74% 优于理论 -30.7%，因路径平滑)。** 不要为 SSPC 单独构建叙事。若未来出现倍数显著偏离 2x 或方向同向，那才是需要调查的信号(流动性或跟踪误差问题)。
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-10-15 · +7.42% day · ▲ major
 **Tags:** `sector_rotation`, `flow_event`
 **Confidence:** high

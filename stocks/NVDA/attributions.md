@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · -4.58% day · ▼ material
+**Tags:** `regulatory_negative`, `executive_comment`, `policy_us`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** **Jensen Huang 辞去 NVIDIA 总裁、CEO 兼董事，即日生效。CFO Colette Kress 任临时 CEO（兼留 CFO 职务），资深董事 Harvey C. Jones 出任公司史上首位董事长，永久 CEO 搜寻启动。** 量比 3.70x 为全场最高（且为 ET 13:39 盘中口径，实际更高）。||**事件链的终局**: 11/08(周日) 董事会就 Huang 相关传闻启动独立调查 → 11/09 NVDA -4.88% → 11/10 FBI 介入曝光，NVDA -6.10% 跌至距 52 周低点 2.1% → 11/12 辞职。三个交易日走完「调查→执法→离职」。||**公告本身只说辞职，未给理由。** Huang 向员工公开为对妻子不忠致歉，但否认危害国家安全或泄露公司机密。媒体报道的两段关系：一方被指为新加坡 AI 公司 Megaspeed(NVIDIA 重要客户) 关联商人，美方将其列为中国国安部疑似人员；另一段据 NYT 报道涉及一名直接向其汇报的 NVIDIA 副总裁。**这些指控均未经 NVIDIA 或监管机构确认。**||**本条记录最该留下的一句 — thesis 的 bear 路径已从「多一条」变成「已实现」**: 11/09 记录过「Bear(20% / $150) 的三条路径全部关于需求与竞争，今天实现的是一条治理/政治路径；概率分布的数字不变，但 $150 的 bear 目标现在有了第二条到达路径，且这条路径不需要 AI 需求转差」。今天那条路径走完了 — CEO 已不在。现价 $165.78 距 bear 目标 $150 仅 **9.5%**，距 thesis-break 同为 $150 缓冲 +10.5%(11/10 为 +11.8%)，距 52 周低点 $148.80 仅 +11.4%。||**治理折价与估值折价的区别，是本次归因的核心机制**: forward P/E 已降至 **10.4x**，为全组合除内存周期股外最低。如果这是估值问题，10.4x 配 AI 龙头的地位应构成支撑；但治理折价不会被好财报修复 — 它要等「新管理层能守住 CUDA 生态客户信心」这件事被证明，而这需要数个季度。**所以 10.4x 的低倍数今天不构成买入理由，它是折价性质改变的结果而非错误定价。**||**市场把钱投给了每一条不依赖 Huang 的算力路径（这是今天最干净的横截面）**: AVGO +5.65%(定制 ASIC) / AMD +5.22%(第二供应商 GPU) / GOOG +2.72%(自研 TPU)。而 **TSM -1.34% 与 INTC -0.74% 同时下跌**，这两条是最有信息量的 — TSM 下跌证明今天不是对 AI 总需求的重估(若是，代工龙头会跟涨)，而是客户内部份额再分配，对代工厂是零和；INTC 下跌更直接：替代 NVIDIA 的路径都通过台积电实现，所以 INTC 的代工翻身叙事在这次重估里一无所获。||**政治介入是一个新变量**: Trump 公开建议 NVIDIA 聘请 Apple 董事长 Tim Cook 接任，称「只有一个人」能替代 Huang；Musk 称「能聘到 Huang 将是荣幸」。总统对单一上市公司 CEO 人选的公开表态本身提高了治理不确定性，而非降低。||**看空侧的两条独立声音**: Michael Burry 称 NVIDIA 的问题比 Jensen Huang 更大；Jeffrey Gundlach 称正在回避 AI 的 blast radius。||**指数完全没有定价这件事**: SPY +0.08%、^GSPC +0.08%、VIX 17.72(5d -37.12%)。一家约 $4 万亿公司的创始人在财报前五天离职，而波动率指数在五日下跌 37% 后继续趴在 MA50 附近。
+
+**Sources.**
+- Yahoo Finance: [Jensen Huang Resigns from NVIDIA, Shares -10%](https://finance.yahoo.com/markets/stocks/articles/jensen-huang-resigns-nvidia-shares-141200158.html)
+- Coinspeaker: [Jensen Huang Resigns as Nvidia CEO After Second Affair Bombshell: Who Is Colette Kress?](https://www.coinspeaker.com/jensen-huang-resigns-as-nvidia-ceo-after-second-affair-bombshell/)
+- Fox Business: Trump says 'there is only one man' to replace Jensen Huang as Nvidia CEO
+- _Corroboration:_ 
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · DXY 103.19 · AVGO +5.65% · AMD +5.22% · TSM -1.34% · INTC -0.74%
+
+**Agent read.** 可复用的机制有三条。① **治理折价 ≠ 估值折价**: fPE 10.4x 在治理事件下不构成支撑，因为修复条件是「新管理层守住生态」而非「下季度数字好」，后者数周可验证，前者数季度。遇到任何创始人型 CEO 离任，优先问「折价性质变了吗」而不是「现在便宜吗」。② **份额再分配 vs 总量重估的判别指标是中立代工厂**: 当龙头跌而替代品涨时，看路径中立的供应商(此处 TSM)。它涨 = 总量重估；它跌 = 零和的份额再分配。这个判别只需一个数据点，比读分析师报告快。③ **叙事与数据的时滞方向决定不对称**: 今天 NVDA 的坏消息 5 天后被财报检验，AVGO 27 天、AMD 82 天。坏消息被快速检验、好消息长期无检验 — 这个结构对 NVDA 不利而与基本面无关。记录此点以便 11/17 复盘：若 NVDA 财报数字强，则「治理折价」的幅度可被量化(数字强而股价不涨 = 纯治理折价)。
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-11-10 · -6.10% day · ▼ material
 **Tags:** `regulatory_negative`, `policy_us`, `executive_comment`
 **Confidence:** high

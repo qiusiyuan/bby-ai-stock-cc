@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · -1.34% day · ▲ extreme
+**Tags:** `sector_rotation`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** **5d +15.50% 越线，但本条记录的价值全在当日的 -1.34% —— TSM 今天下跌是全场最有信息量的单一数据点。**||在一个 NVIDIA 失去创始人、市场买光所有替代算力路径的日子里(AVGO +5.65% / AMD +5.22% / GOOG +2.72%)，**路径中立的代工龙头下跌 1.34%。这证明今天不是对 AI 总需求的重估** —— 若市场在上调 AI 总量，无论哪条路线赢都在台积电投片，TSM 会跟涨；若在下调总量，TSM 会是最大跌幅之一。它小幅下跌意味着市场定价的是**客户内部份额再分配，对代工厂是零和**。||同日 INTC -0.74% 也下跌，与此互相印证：替代 NVIDIA 的路径全部经过台积电，所以代工挑战者在这次洗牌里零收益。||forward P/E 17.4x，MA50 $430.34 下方、**MA200 $401.37 上方**。**下一个强制披露 2027-01-14 财报** —— 代工口径的 AI 需求总量读数，领先于其绝大多数客户。
+
+**Sources.**
+- _Data:_  ()
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · DXY 103.19 · NVDA -4.58% · AVGO +5.65% · AMD +5.22%
+
+**Agent read.** **这是本工作区目前最干净的「份额再分配 vs 总量重估」判别样本，值得作为模板复用：当龙头跌而替代品涨时，只需看一个数据点 —— 路径中立的上游供应商。它涨 = 总量被上调；它跌/平 = 零和的份额洗牌。** 一个数据点就能定性，比读任何分析师报告快。||推论：今天 AVGO/AMD 的涨幅不含「AI 需求变好」的成分，纯粹是从 NVDA 手里转移的预期份额。因此若 11/17 NVDA 财报给出强需求指引，AVGO/AMD 不一定同涨(份额叙事可能反转)；若给出弱指引，三者可能同跌(总量下调叠加)。**这个非对称是今天 TSM 的下跌揭示的。**
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-11-09 · +4.18% day · ▲ material
 **Tags:** `sector_rotation`
 **Confidence:** low

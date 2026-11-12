@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · +5.65% day · ▲ material
+**Tags:** `competitor_news`, `sector_rotation`, `analyst_upgrade`
+**Confidence:** high
+
+**Primary cause.** **+5.65% 为今日全组合最大涨幅，第四个连续交易日领涨，五日累计 +25.11% — 且 AVGO 是全组合唯一 30 天为正的 AI 链持仓(+6.14%)。** thesis-break 缓冲从 11/10 的 +9.0% 扩张到 **+21.6%**。||**催化剂具名且单一：NVIDIA 创始人辞职 → 定制 ASIC 替代叙事重估。** 分析师明确表态「NVIDIA 继任不确定性为 Google TPU 与 Broadcom 打开大门」；Tom Lee 称 Huang 离职不改变其看多科技的判断，并点名 AVGO / AMD 领涨芯片。||**四连强的催化剂链条(每一天的原因都不同，这是关键)**: 11/09 +8.78%(以供应商身份加入 Anthropic $260 亿 IPO 认购) → 11/10 +2.39%(同一催化剂延续) → 11/11 +3.99% → 11/12 +5.65%(Huang 辞职的替代受益)。**前两天的驱动是「客户的融资可得性」，后两天是「竞争对手的治理崩塌」 — 两个完全不同的机制，碰巧同向。** 不可把四连强当作一个趋势读；它是两个独立事件的叠加。||**本条记录的核心警告：零硬数据。** 今天 AVGO 自身没有任何订单、份额、产能或客户披露。+5.65% 全部来自第三方对竞争格局的推断。定制 ASIC 的份额是否真的在扩张，要等 **12/09 财报**(27 天后)。||**技术位的一条**: MA200 $366.39 就在现价上方 0.5%($364.73)。收复 MA200 是本轮反弹的技术确认点，今天差一步未完成。MA50 $345.45 已站上。||**估值**: forward P/E 18.7x — 在定制 ASIC 龙头地位 + 唯一 30d 正的组合里，这个倍数不构成压力。但需要注意 5 日 +25.11% 的涨幅意味着倍数在五天内扩张了约 25%，而盈利预期无对应上调。
+
+**Sources.**
+- Yahoo Finance: Nvidia succession uncertainty opens door for Google TPU and Broadcom, analyst says
+- Yahoo Finance: Broadcom Stocks Climb 4.54% as Custom AI Chips Gain Appeal After NVIDIA Shake-Up
+- Stocktwits: Tom Lee Says Jensen Huang Exit Doesn't Change His Bullish Tech Outlook: AVGO, AMD Stocks Lead Chip Rally
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · NVDA -4.58% · AMD +5.22% · TSM -1.34%
+
+**Agent read.** 可复用的两点。① **四连强里每一天的原因不同，不要合并成一个趋势**: 11/09-10 的驱动是客户融资(Anthropic 认购)，11/11-12 的驱动是对手治理崩塌。两个机制的可持续性完全不同 — 前者会在 11/18 Anthropic 上市日被裁决，后者会在 NVIDIA 找到永久 CEO 时消散。把四天当一个趋势会高估持续性。② **倍数在五天内扩张 25% 而盈利预期未上调 = 纯估值重估**，需要 12/09 财报提供分子端的确认。记下对照：AVGO 等 27 天自证，AMD 等 82 天，NVDA 只等 5 天 — 在三者里 AVGO 的时滞最适中。若 11/18 Anthropic 破发，AVGO 会同时失去两个驱动中的一个并计提认购减值，这是当前最具体的下行路径。
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-11-10 · +2.39% day · ▲ minor
 **Tags:** `partnership_news`, `sector_rotation`
 **Confidence:** high

@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-12 · +5.22% day · ▲ material
+**Tags:** `competitor_news`, `sector_rotation`, `analyst_upgrade`
+**Confidence:** high
+
+**Primary cause.** **+5.22%(量比 1.51x)，5 日 +43.86% 为全组合最强五日表现 — 但 30 日仍 -5.51%，说明这是从 11/05 深坑(归一化 63.80)的反弹，不是趋势性新高。** 距 thesis-break $380 缓冲 +53.1%。||**催化剂：NVIDIA 创始人辞职 → AMD 作为唯一通用 GPU 替代被重估。** 与 AVGO(定制 ASIC 路径)同源但机制不同 — AVGO 受益于「客户自研」，AMD 受益于「第二供应商」。两者今天同涨说明市场在为「不是 NVIDIA」这个属性本身付费，而非为某条具体技术路线付费。||**底仓逻辑在 11/09 已建立**: 当日 +11.82% 为全场最大单日涨幅，催化剂是与 Google Cloud 扩大合作(第五代 EPYC 支持 Google Cloud)+ 分析师上调。所以今天不是孤立事件，是 11/09 已启动的重估在遇到 NVIDIA 治理崩塌后的加速。||**本条最重要的一句：AMD 的下一次强制披露在 2027-02-02，距今 82 天 — 全组合最长的叙事-数据时滞。** 五日 +43.86% 的涨幅在未来 82 天内没有任何公司级数字可以检验。期间唯一的外部判据是 11/17 NVDA 财报(竞争格局)与 12/09 AVGO 财报(定制 ASIC 份额)，两者都是间接证据。**这是 AMD 当前最大的脆弱点，而它与基本面无关，纯粹是日历结构。**||**估值**: forward P/E 32.9x，MA50 $552.93 / MA200 $421.69 双线上方。52 周区间 $188.22–$658.52 — 现价 $581.79 位于区间 84% 分位，距 52 周高点仅 -11.7%。**五天前它在区间 50% 以下。**
+
+**Sources.**
+- Yahoo Finance: AMD and Broadcom rally after Nvidia chief Jensen Huang's shock resignation
+- Yahoo Finance: Nvidia, AMD, Broadcom: The AI Stock Winners and Losers After Jensen Huang's Ousting
+- _Data:_  ()
+
+**Cross-assets.** SPY +0.08% · QQQ +0.06% · VIX 17.72 · TEN YEAR 5.109 · NVDA -4.58% · AVGO +5.65%
+
+**Agent read.** 可复用的两点。① **市场为「不是 NVIDIA」这个属性付费，而不是为技术路线付费** — AMD(第二供应商通用 GPU) 与 AVGO(客户自研 ASIC) 是互相竞争的两条路线，今天同涨 5%+ 证明定价的是「替代性」本身。这意味着当 NVIDIA 找到可信的永久 CEO 时，两者会同时失去这部分溢价，无论哪条技术路线更优。② **把「叙事-数据时滞」作为一个独立的风险维度记录**: AMD 82 天、AVGO 27 天、NVDA 5 天。涨幅最大的那只时滞最长 — 这是系统性的，因为刚公布财报的公司在反弹时自然处于披露周期的远端。下次见到「5 日 +40%+ 且 30 日为负」的组合，先查下一次财报日期再评估持续性。
+ · Snapshot at `dashboard/2026-11-12.md`
+
+---
 ### 2026-11-09 · +11.82% day · ▲ major
 **Tags:** `partnership_news`, `analyst_upgrade`, `competitor_news`
 **Confidence:** high
