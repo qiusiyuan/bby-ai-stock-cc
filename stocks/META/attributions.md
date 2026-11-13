@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-13 · +2.87% day · ▲ minor
+**Tags:** `sector_rotation`, `regulatory_negative`
+**Confidence:** medium
+
+**Primary cause.** **+2.87% 是组合内今日唯一显著上涨的大型科技股**，且是唯一收正的长久期名字。但 30 天仍 -11.89%，且本周已跌破 MA200 —— 这是超跌反弹，不是趋势反转。||**机制：开支方受益于对 capex 的怀疑。** 今天供给方全线重挫(AMD -9.20% / AVGO -4.93% / MRVL -4.97%)而开支方基本持平或上涨(META +2.87% / MSFT +0.27% / AMZN -0.65% / GOOG -1.02%)。开支方的分子是广告与云业务的当期收入，与 AI 投入产出无关；供给方的分子直接等于开支方的 capex。当市场怀疑 capex 可持续性时，供给方的分子先被怀疑，开支方反而因「省下来的钱是利润」而相对受益。||forward P/E 18.0x —— 在大型科技里偏低，提供了折现率缓冲。缓冲距 thesis-break $450 为 +42.55%。||**同日两条负面消息未被定价**：(1) META 向两名青少年支付合计 $700 万和解社交媒体成瘾指控，另有约 9,800 起案件待处理；(2) United Airlines 成为首家禁止 META 的 AI agent「Muse」进行预订的航空公司，CEO 引述安全风险与 FAA 顾虑。||技术面提示：本周跌破 200 日均线并显示其他弱势信号，有卖方提出看空交易结构。
+
+**Sources.**
+- Fortune / Yahoo: Meta reportedly paid 2 teens a combined $7 million to settle social media addiction claims as 9,800 more cases loom
+- Fortune / Yahoo: United is the first airline to ban bookings from Meta's AI agent, Muse — CEO Scott Kirby cites security risks and FAA concerns
+- Investor's Business Daily: As Meta Platforms Continues To Weaken, A Bearish Trade May Be In Order — stock crossed below the 200-day moving average this week
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.54% · QQQ -1.34% · VIX 19.42 · TEN YEAR 5.141 · DXY 103.378 · NVDA -2.22% · MSFT +0.27% · GOOG -1.02% · AMZN -0.65%
+
+**Agent read.** **今天的开支方/供给方分化方向与 11/04 记录的形态相反，机制也不同 —— 两者不要混淆。** 11/04 民主党全胜把「AI 建设可持续性」从「客户有没有钱」换成「客户能不能被允许建」，第一次把开支方与供给方推向相反方向(约束在许可侧)。今天的分化约束在融资侧：怀疑 capex 的可持续性 → 供给方分子被怀疑 → 开支方因节省而相对受益。**同一个「分化」现象有两种不同成因，判别方法是看当天的主导新闻是许可类还是融资/利率类。**||**这是「AI 投入产出」叙事从乐观转向怀疑时的标准形态：开支方受益于怀疑，供给方受损于怀疑。** 可作为后续判别 AI 叙事阶段的指标 —— 若某日开支方与供给方同涨，叙事在乐观期；若分化，叙事在怀疑期；若同跌，则是总量重估(今天不是)。||信心标 medium：+2.87% 没有正向催化剂支撑，同日两条负面消息(和解 + United 封禁 AI agent)均未被定价。涨幅更可能来自超跌反弹 + 轮动承接，而非对 META 的重估。
+ · Snapshot at `dashboard/2026-11-13.md`
+
+---
 ### 2026-11-09 · +5.29% day · ▲ material
 **Tags:** `analyst_upgrade`, `policy_eu`
 **Confidence:** medium

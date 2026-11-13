@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-13 · -3.96% day · ▼ material
+**Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** **-3.96%，无公司级消息，纯板块 beta + 折现率。** 五日仍 +11.14%，今天回收其中一部分；30 天 -28.65%，低于 MA50 $943.46。||驱动一：Jensen Huang 辞职后的 AI 硬件抛售第二日。今日内存复合体跌幅排序按对 NVIDIA 的暴露度排列(SNDK -7.44% > SKHY -4.65% > MU -3.96% > DRAM -3.79% > Samsung -0.96%)，MU 居中。||驱动二：10 月核心 PPI 月率 +0.5% 与 9 月持平、总指数同比 6.5% 为 2022 年以来最快；10Y 站上 5.141%，DXY 创 19 个月新高。||分子未变：指引仍指向约 $615 亿的季度营收量级。forward P/E 3.7x。缓冲从 11/12 的 +22.2% 单日收窄 4.2pp 至 +17.98%。||信心标 medium：无 MU 特有催化剂，归因只能落在板块与利率。
+
+**Sources.**
+- Yahoo Finance: Micron Stocks Fall 3.96% as Nvidia CEO Exit Drags Memory Shares Lower — guide called for about $61.5 billion in quarterly revenue
+- Motley Fool: Why Micron Stock Was Sliding Today — malaise about the broader AI sector seemed to sink in following Jensen Huang's resignation
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.54% · QQQ -1.34% · VIX 19.42 · TEN YEAR 5.141 · DXY 103.378 · NVDA -2.22% · SKHY -4.65% · SNDK -7.44%
+
+**Agent read.** **今天的走势与 9/30 评分卡 verdict 的后半句一致：「AI 长期领头股」基本面成立，「下一个 NVDA」的重定价机制被证伪。** 分子未变(指引 $615 亿量级)，倍数继续压缩(3.7x)。这是评分卡预判的延续，不是新信息。||**可复用的一条：MU 当前被当作「NVIDIA 的供应链」交易，而不是被当作「内存周期」交易。** 证据是今日跌幅排序按 NVIDIA 暴露度而非周期敞口排列。推论：11/17 NVDA 财报对 MU 的影响大于 MU 自己 12/23 财报之前的任何消息。查 MU 的近端风险时应先看 NVDA 日历，再看 MU 日历。||低倍数不提供支撑的机制见同日 SNDK 条目 —— 周期股的 3x 倍数表达的是对峰值盈利可持续性的不信任，不是对分子的低估。
+ · Snapshot at `dashboard/2026-11-13.md`
+
+---
 ### 2026-11-12 · -2.11% day · ▲ major
 **Tags:** `macro_rates`, `sector_rotation`, `memory_pricing`
 **Confidence:** medium

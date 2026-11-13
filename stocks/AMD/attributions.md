@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-13 · -9.20% day · ▼ major
+**Tags:** `sector_rotation`, `competitor_news`, `macro_rates`
+**Confidence:** high
+
+**Primary cause.** **-9.20% 为今日全组合最大跌幅，而五日仍为 +18.35% —— 本周一度 +30%，单日交还约一半。**||**昨日的「不是英伟达」交易被完整撤回，且撤回是不对称的。** 11/12 Jensen Huang 辞职即日生效，当日 NVDA -4.58% 而 AMD +5.22%、AVGO +5.65%，被读作客户份额的零和再分配。今天 NVDA 仅 -2.22%，是四家重伤者里跌幅最小的，AMD 是最大的 —— 跌幅是 NVDA 的 4.1 倍。如果 11/12 真的是份额重估，份额一旦转移不会一天内转回，NVDA 今天应继续弱于对手。实际相反。||**因此 11/12 的涨幅不是对 AMD 未来现金流的重估，而是叙事触发的动量买入与空头回补。** 这类定价的半衰期不取决于基本面被证伪，只取决于市场重新算一遍需要多久 —— 答案是一天。||**第二层驱动是折现率。** 10 月核心 PPI(剔食品/能源/贸易) 月率 +0.5% 与 9 月持平、同比 4.9%，总指数同比 6.5% 为 2022 年以来最快；10Y 站上 5.141% 并连续第二日高于 MA50 5.06%，DXY 创 19 个月新高。AMD forward P/E 30.0x 是今天四家重伤者里倍数最高的，久期损伤最重。||**Michael Burry 同日加倍做空纳斯达克 100**，与 Tom Lee「买 NVDA 跌幅」形成对立仓位。||缓冲从 11/12 的 +53.1% 单日消耗 13 个百分点至 +39.86%。
+
+**Sources.**
+- Yahoo Finance: AMD Tumbles 11%, Broadcom and Intel Slide 6% as Chip Rally Reverses
+- Yahoo Finance: AMD Stocks Fall 6.46% After 30% Weekly Surge on Nvidia Leadership Shock
+- Motley Fool: Why Advanced Micro Devices Stock Is Down Today — giving back part of the gains it picked up when Jensen Huang resigned
+- _Data:_  ()
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.54% · QQQ -1.34% · VIX 19.42 · TEN YEAR 5.141 · DXY 103.378 · NVDA -2.22% · AVGO -4.93% · MRVL -4.97%
+
+**Agent read.** **可复用的判别规则：当一条叙事的受益方在反转日跌得比叙事的受害方更多时，那条叙事定价的是仓位而不是现金流。** 今天是这个形态最干净的样本 —— AMD 跌幅是 NVDA 的 4.1 倍，而两者昨天方向相反。下次遇到「X 的坏消息利好 Y」的交易时，检验方法是看反转日的相对幅度，而不是看叙事是否被证伪。||**第二条：时滞长度决定了未来两个半月的驱动。** AMD 的下一个自证日期是 2027-02-02(81 天后)，是 AI capex 板块内时滞最长的(NVDA 4 天 / MRVL 18 天 / AVGO 26 天)。没有近端事件可以验证或否证本周的 +18%，意味着它只能被叙事与利率驱动。**时滞最长 + 倍数最高 = 本轮最脆弱的组合**，这解释了为什么今天它跌最多。||bull(30%/$700+) 与 base(45%/$550-600) 的区别是份额，而今天的下跌与份额无关。现价 $531.45 落在 base 区间下沿。概率分布无需调整，但应注意 bear(25%/$300) 现在多了一条不需要份额丢失的到达路径：仓位挤压 + 折现率，两者都与 CUDA 护城河无关。
+ · Snapshot at `dashboard/2026-11-13.md`
+
+---
 ### 2026-11-12 · +5.22% day · ▲ material
 **Tags:** `competitor_news`, `sector_rotation`, `analyst_upgrade`
 **Confidence:** high

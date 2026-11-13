@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-13 · -4.97% day · ▼ material
+**Tags:** `m_and_a`, `sector_rotation`, `macro_rates`
+**Confidence:** high
+
+**Primary cause.** **-4.97%，30 天 -42.59% 为 AI capex 板块内最深回撤；thesis-break $200 击穿扩大至 -21.86%(11/12 -17.0%)。**||**MRVL 今天有一条自己的驱动：Lumentum 全股票收购的换股价差扩大到 18%。** MRVL 以约 $1,150 亿全股票收购光网络厂商 Lumentum，NVIDIA 在 Lumentum 另持约 $20 亿权益。全股票交易的价差扩大意味着市场对交易完成概率的定价下降 —— 而 NVIDIA 的治理动荡直接增加了这笔交易的不确定性，因为交易逻辑建立在长期 AI 数据中心开支之上。||**叠加板块 beta 与折现率**：核心 PPI 月率 +0.5% 连续两月不回落，10Y 5.141%，forward P/E 21.3x。||**反向证据**：有卖方指出 MRVL 业务在加速且存在一笔未充分定价的 Google 交易，认为市场方向错了。MRVL 今年仍 +81%。两种读法并存，12/01 财报(18 天后)是裁决点 —— 它需要同时回答业务与并购两条线。
+
+**Sources.**
+- Yahoo Finance: Marvell Stocks Fall 6.6% as Lumentum Deal Spread Widens to 18% — Nvidia's leadership shake-up is testing Marvell's $115 billion all-stock bid
+- Yahoo Finance: Marvell Technology (MRVL) Dropped — all-stock deal valued near US$115b ties the chip designer more tightly to long term AI data center spending
+- Yahoo Finance: Marvell Stock Could Have a Bigger AI Opportunity Than Investors Realize — shares lost nearly 40% in a month, yet business is accelerating and a quiet Google deal could rewrite the numbers
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.54% · QQQ -1.34% · VIX 19.42 · TEN YEAR 5.141 · DXY 103.378 · NVDA -2.22% · AMD -9.20% · AVGO -4.93%
+
+**Agent read.** **MRVL 是今天板块内唯一同时承受三层压力的名字：折现率 + 板块 beta + 并购特有风险。** 这解释了为什么它的 30 天回撤(-42.59%)远大于 AVGO(-2.47%)，尽管两者同属定制 AI 硅。**全股票并购在标的股价下跌时会自我强化：收购方股价跌 → 对价价值跌 → 价差扩大 → 交易完成概率定价下降 → 收购方进一步承压。** 这是一条与 AI 需求完全无关的下行机制，查 MRVL 的触发器时必须单独覆盖。||当前 triggers.yaml::thesis_break_price $200 已击穿 -21.86% 且连续扩大，但它测量不到并购风险。更有信息量的预设条件应是：Lumentum 换股价差超过 25%、或交易被宣布终止/重新定价。||12/01 财报是 AI capex 板块内第二近的自证日期(NVDA 4 天 / MRVL 18 天 / AVGO 26 天 / AMD 81 天)。时滞较短对 MRVL 是优势 —— 它不需要像 AMD 那样靠叙事撑两个半月。
+ · Snapshot at `dashboard/2026-11-13.md`
+
+---
 ### 2026-11-12 · -1.60% day · ▲ extreme
 **Tags:** `sector_rotation`, `m_and_a`, `macro_rates`
 **Confidence:** low

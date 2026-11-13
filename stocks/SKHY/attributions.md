@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-13 · -4.65% day · ▼ material
+**Tags:** `sector_rotation`, `macro_rates`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** **首尔日内逆转约 7.7 个百分点：早盘一度 +4.63%，收盘 000660.KS -3.03%(₩1,216,000)；其美股 ADS 再跌 -4.65%，比首尔低约 1.6pp。**||**早盘上涨的定价输入是「内存周期仍紧、HBM 需求未变」；反转的输入是 NVIDIA 相关风险 —— 外资在首尔净卖出 SK Hynix 约 ₩8,720 亿。** 这意味着 Huang 辞职带来的 AI 链风险传导在亚洲时段就已完成，并非美国时段才开始。ADS 与首尔收盘之间约 1.6pp 的差额才是美国时段的增量跌幅。||**反转的方向与幅度证明驱动是 NVIDIA 暴露度而非内存供需，证据在 Samsung 对照：005930.KS -0.96%，跌幅不到 SK Hynix 的三分之一。** 若今天定价的是内存周期，Samsung 的敞口更大、应跌更多；实际是 HBM 份额最高、对 NVIDIA 暴露度最高的 SK Hynix 跌最多。||**今日内存复合体的跌幅顺序 = 对 NVIDIA 的暴露度顺序**：SNDK -7.44% > SKHY -4.65% > MU -3.96% > DRAM -3.79% > Samsung -0.96%。||宏观叠加：10 月核心 PPI(剔食品/能源/贸易) 月率 +0.5% 与 9 月持平、总指数同比 6.5% 为 2022 年以来最快；10Y 站上 5.141%，DXY 创 19 个月新高。||反向证据(未能托住价格)：INTC CEO Lip-Bu Tan 今日在 Yahoo Finance Invest 会议表示「明年内存短缺会更严重」—— 一个来自客户端的供需判断，叙事与价格在同一天分离。||缓冲从 11/12 的 +19.4% 降至 +14.17%。forward P/E 3.2x。政策线：参议员推动将 CXMT 列入实体清单(未裁定)。
+
+**Sources.**
+- Yahoo Finance: SK hynix Stocks Fall 3.03% as Nvidia Leadership Shock Hits Key HBM Supplier — shares reversed an early 4.63% gain in Seoul as foreign investors sold chipmakers
+- Yahoo Finance: SK Hynix Stocks Slip as NVIDIA Exposure Turns From Asset to Risk — foreign investors sell a net 872 billion won of SK hynix
+- Yahoo Finance Invest 2026: Intel CEO Lip-Bu Tan: a healthy AI correction is coming, memory shortages will worsen next year, CPU recovery cycle ahead
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.54% · QQQ -1.34% · VIX 19.42 · TEN YEAR 5.141 · DXY 103.378 · NVDA -2.22% · SKHY SEOUL -3.03% · SAMSUNG -0.96%
+
+**Agent read.** **本条替换了一个先前写错的方法论结论，修正后的工具更窄但成立。** 错误版本称「ADS 与本地上市股当日反向，差额即美国时段纯驱动」—— 该结论基于一个过期的首尔报价(+3.47% 实为 11/12 收盘)。真实数据是两地同向下跌。**修正后可用的工具是：ADS 减去本地收盘的差额 = 美国时段的增量跌幅(今天约 1.6pp)，而本地市场的日内逆转幅度(今天 7.7pp) = 亚洲时段已完成的传导。** 两者相加才是全天驱动的分解，不能只看其一。||**第二条(成立且今天第二次确认)：Samsung 的小跌幅是业务多元化的量化证据，不是内存周期判断的证据。** 今天 -0.96% 对 SK Hynix -4.65%，差额归于 HBM/NVIDIA 敞口差异。用 Samsung 读内存周期会低估周期的严重性。||**第三条：今天跌幅排序按 NVIDIA 暴露度而非内存周期位置排列，说明内存板块正被当作 NVIDIA 供应链交易。** 推论是 11/17 NVDA 财报对 MU/SKHY/DRAM 的影响大于它们自身的任何基本面消息；MU 自己的 12/23 财报在这之后 36 天，太晚。||**流程教训：读 /tmp 缓存前必须校验 fetched_at。** 本次用到的 000660.KS 文件是 11/12 的残留，导致一个核心结论被写反。纠正动作：fetch 前清空 /tmp/wl_*.json 与 /tmp/pulse_*.json。
+ · Snapshot at `dashboard/2026-11-13.md`
+
+---
 ### 2026-11-12 · -3.44% day · ▼ material
 **Tags:** `macro_rates`, `sector_rotation`, `competitor_news`
 **Confidence:** medium

@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-13 · -4.93% day · ▼ material
+**Tags:** `analyst_downgrade`, `pt_change`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **-4.93%，交还 11/12 的 +5.65%，但今天是整个 AI capex 板块里唯一有分析内容的个股动作。**||**Rothschild & Co Redburn 将 AVGO 从 Buy 下调至 Neutral，目标价由 $595 砍至 $398(-33%)，理由原文：Broadcom 的 AI 增长依赖 Anthropic 和 OpenAI 自己付得起钱，而这不会很快发生。**||**这条理由的关键在于它不属于竞争格局，而属于客户偿付能力。** 11/10 的盘面已建立同一条轴 —— 热 CPI 之后惩罚排序按「谁和谁的客户要借钱」而非 P/E 倍数(GEV -7.16% fPE 29.8x 远大于 SNOW -0.54% fPE 95.2x)。11/12 的「份额再分配」看似是这条轴的例外；今天例外被撤销，原轴重新生效，且卖方把机制写进了研报。||**11/12 记录的两条腿现在可以分开结算。** 当时把四连强(11/09 +8.78% / 11/10 +2.39% / 11/11 +3.99% / 11/12 +5.65%)拆成两个机制：11/09-10 是客户融资可得性(以供应商身份加入 Anthropic $260 亿 IPO 认购)，11/11-12 是对手治理崩塌。预判后者会在 NVIDIA 找到永久 CEO 时消散 —— 实际只用了一天。而前者今天被 Redburn 反向定价：供应商认购客户 IPO 意味着用自己的资产负债表为客户融资背书，11/09 读作利好(客户能融到钱)，今天读作风险(客户付不起则 $260 亿同时成为七家减值项)。**同一个事实，两种相反读法，11/18 挂牌首日裁决。**||技术位：MA200 $366.39 在 11/12 仅差 0.5% 未收复，今天 $346.38 已回落至 MA50 $345.24 附近。缓冲从 +21.6% 降至 +15.46%。
+
+**Sources.**
+- Yahoo Finance: Broadcom Sinks 7% as Rothschild Redburn Downgrade Slashes Target to $398: 'Unlikely to Occur Quickly'
+- Yahoo Finance: Is Rothschild & Co Redburn Wrong to Give Up on Broadcom? Downgraded to Neutral Nov 13, PT $595→$398
+- Yahoo Finance: Broadcom Stocks Fall 4.59% as 24% Weekly Rally Cools Before Nvidia Results
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.54% · QQQ -1.34% · VIX 19.42 · TEN YEAR 5.141 · DXY 103.378 · NVDA -2.22% · AMD -9.20% · MRVL -4.97%
+
+**Agent read.** **本条是 11/12 预判的直接结算，结论是预判方向对但时间尺度估错。** 11/12 写下「对手治理崩塌这条腿会在 NVIDIA 找到永久 CEO 时消散」—— 实际一天就消散，不需要等到永久 CEO 上任。**教训：由对手不确定性驱动的受益定价，半衰期取决于市场重算一遍的速度，而不取决于不确定性何时解除。**||**更重要的是今天 Redburn 把定价轴从份额明确切回融资。** 这意味着 AVGO 的下行路径现在有两种性质完全不同的版本：(a) 估值问题 —— 倍数因折现率压缩，可逆；(b) 资产质量问题 —— 若 Anthropic/OpenAI 付不起，$260 亿认购成为减值，不可逆。**11/18 挂牌首日的收盘相对发行价是区分这两者的单一数据点，它比 12/09 AVGO 自家财报更有分辨力** —— 因为财报只能回答份额，不能回答客户能否付款。||时滞对照：AVGO 等 26 天自证(12/09，且与 FOMC + SPCX 锁定期同日，归因会被污染)。三者同日意味着当天必须用 12/08 收盘作基准、把 AVGO 盘后与 FOMC 盘中分段读，否则无法分离。
+ · Snapshot at `dashboard/2026-11-13.md`
+
+---
 ### 2026-11-12 · +5.65% day · ▲ material
 **Tags:** `competitor_news`, `sector_rotation`, `analyst_upgrade`
 **Confidence:** high

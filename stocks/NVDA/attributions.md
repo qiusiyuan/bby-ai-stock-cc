@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-13 · -2.22% day · ▼ minor
+**Tags:** `earnings_pre_print`, `sector_rotation`, `macro_rates`
+**Confidence:** high
+
+**Primary cause.** **-2.22% —— 关键事实是 NVDA 今天是四家重伤者里跌幅最小的。** AMD -9.20% / MRVL -4.97% / AVGO -4.93% / NVDA -2.22%。量比 1.62x(ET 14:05 盘中，全日约 2.5x) 为组合最高。||**这个相对幅度否证了 11/12 的「份额零和再分配」读法。** 11/12 Huang 辞职即日生效，NVDA -4.58% 而 AVGO +5.65% / AMD +5.22%，被读作客户份额转移。但份额一旦转移不会一天内转回 —— 若那是真实的份额重估，今天 NVDA 应继续弱于对手。实际是 NVDA 跌最少、昨天涨最多的 AMD 跌最多。**所以 11/12 定价的是仓位，不是现金流。**||驱动：11/17 财报前观望(Huang 离任后首份，临时 CEO Colette Kress 主持) + 核心 PPI 不回落推高 10Y 至 5.141% + DXY 19 个月新高。||**两个极端仓位同日表达在同一事件上**：Tom Lee 称 NVDA 是「AI 里最好的风险回报」并建议买 Huang 离职后的跌幅；Michael Burry 加倍做空纳斯达克 100。||现价 $162.50 距 thesis-break $150 缓冲 +8.33%(11/12 +10.5% / 11/10 +11.8%，连续收窄)，距 52 周低 $148.80 仅 +9.21%。forward P/E 10.3x。Trump 在 Truth Social 公开指定接任人选。
+
+**Sources.**
+- Investor's Business Daily: Nvidia Stock Braces For AI Chipmaker's First Report Without Jensen Huang
+- Benzinga: Tom Lee Says 'Buy The Dip' In NVDA After Huang Exit Even As Bitcoin Plunges Below $70,000: 'Best Risk/Reward In AI'
+- Yahoo Finance: AMD Stocks Fall 6.46% After 30% Weekly Surge — Michael Burry publicly doubled his bet against the Nasdaq 100
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.54% · QQQ -1.34% · VIX 19.42 · TEN YEAR 5.141 · DXY 103.378 · AMD -9.20% · AVGO -4.93% · MRVL -4.97% · BTC 68832.8
+
+**Agent read.** **跌幅最小但换手最高(量比盘中 1.62x ≈ 全日 2.5x)，这个组合读作分歧在放大而非收敛。** 价格小动 + 成交大增 = 多空双方在同一价位大量换手，典型的重大事件前形态。||**本条最该留下的一句：11/12 的份额再分配读法在 24 小时内被相对幅度否证。** 判别工具是反转日的相对跌幅，不是叙事是否被新闻证伪。这条规则可直接复用到下一次「X 的坏消息利好 Y」的交易上。||**缓冲在最薄的位置迎接最大的事件风险**：+8.33% 连续三次报告收窄(11/10 +11.8% → 11/12 +10.5% → 今日 +8.33%)，而 11/17 财报在 4 天后。11/12 已记录：bear(20%/$150) 的三条原设路径全是需求与竞争路径，而 11/12 实现的是治理/政治路径 —— $150 的 bear 目标有了第二条不需要 AI 需求转差的到达路径。今天缓冲降至 +8.33%，这条第二路径的距离进一步缩短。概率分布数字不变。
+ · Snapshot at `dashboard/2026-11-13.md`
+
+---
 ### 2026-11-12 · -4.58% day · ▼ material
 **Tags:** `regulatory_negative`, `executive_comment`, `policy_us`, `competitor_news`
 **Confidence:** high

@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-13 · -7.44% day · ▼ major
+**Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** **-7.44%，连续第二日下跌且跌幅扩大(11/12 -4.15%)；30 天 -49.55%，一个月腰斩。**||**基本面与价格完全脱钩，且脱钩方向是基本面好、价格跌。** 上季营收增长 378%、毛利率 85%、数据中心环比 +61%；10/29 评分卡判定 validated —— 营收 $11,031M 超承诺上沿 $10.8B，非 GAAP EPS $49.51 超上沿 $46，毛利率 85.0% 继续上行而非回落。Evercore ISI 今日维持目标价不变，暗示 167% 上行。forward P/E 3.0x。距 52 周高 $2,354.39 回撤 -63.1%。||**无公司级坏消息。** 今天的驱动是板块 beta：Jensen Huang 辞职后的 AI 硬件抛售第二日 + 10Y 站上 5.141% + DXY 19 个月新高。信心标为 medium 而非 high，因为没有任何 SNDK 特有的催化剂，归因只能落在板块与折现率上。||**为什么 3.0x 的倍数不构成支撑：** 市场当前不在对 NAND 的当期盈利定价，而是在对「峰值盈利能持续多久」定价。若周期顶点 EPS 被腰斩，3x 的实际倍数就是 6x，而周期股在周期中段的历史倍数本就在 6-10x。**低倍数在周期股上不是安全边际，而是市场对分母的不信任被显式表达。**||唯一已坐实的坏消息来自 10/29：Consumer 段环比 -29% / 同比 -39%，坐实预设 kill#3 的后半边。
+
+**Sources.**
+- Motley Fool: Why Sandisk Stock Is Falling Today — falling for a second day as fallout from Nvidia's CEO exit hits AI hardware stocks
+- Yahoo Finance: Sandisk Stocks Fall 7.2% as Chip Selloff Hits Days Before 8-for-1 Split — 378% revenue growth and 85% gross margin
+- Evercore ISI / Yahoo: Evercore Doubled Down On Sandisk Stock Target Despite Slide — 167% upside; long-term customer commitments could soften next memory downturn
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.54% · QQQ -1.34% · VIX 19.42 · TEN YEAR 5.141 · DXY 103.378 · NVDA -2.22% · MU -3.96% · SKHY -4.65%
+
+**Agent read.** **本条是组合内「触发器口径失效」最极端的一例，值得作为判别样本留存。** 一个基本面被评分卡 validated、倍数压到 3.0x 的名字，却因 thesis_break_price 设在 $1,200(接近历史高位区)而长期显示击穿。**触发器测量的是价格，而当前被定价的风险是 NAND 周期的分母(峰值盈利可持续性) —— 两者不是同一个东西。** 查 trigger 时不能只问「触发了吗」，还要问「预设条件覆盖的是当前真正在定价的风险吗」。更有信息量的预设条件应是：Consumer 段连续两季环比为负、毛利率跌破 75%、或 NAND 合约价环比转负。||**11/20 八拆一生效(7 天后)**：triggers.yaml::thesis_break_price 须由 1200 改为 150，thesis/digest 内绝对价位除以 8。连续第七份报告提示未执行。拆后若口径未更新，「击穿 -27.69%」读数直接失效(拆后价约 $108 对门槛 $1,200)。||**可复用的一条：基本面 validated 不保护价格，当市场怀疑的是分母的可持续性而非分子的真实性。** 10/29 当天好数字换来 -5.32% + 隔夜 -4.29%，今天继续 -7.44% —— 这是同一机制连续两周的表现，不是单日噪声。
+ · Snapshot at `dashboard/2026-11-13.md`
+
+---
 ### 2026-11-12 · -4.15% day · ▼ material
 **Tags:** `macro_rates`, `sector_rotation`, `memory_pricing`
 **Confidence:** medium

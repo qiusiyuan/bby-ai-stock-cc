@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-13 · -2.85% day · ▼ minor
+**Tags:** `macro_rates`, `macro_inflation`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **-2.85% 是最纯粹的久期损伤 —— 无公司级坏消息，当日唯一的公司新闻是正向的**(氢燃料适配航改型燃气轮机获新验证；另有一项核电项目延期)。||10 月核心 PPI(剔食品/能源/贸易) 月率 +0.5% 与 9 月持平、同比 4.9%；总指数同比 6.5% 为 2022 年以来最快。10Y 站上 5.141%，连续第二日高于 MA50 5.06%。GEV forward P/E 30.5x，估值主要由 2028 年以后的现金流构成，直接被折现率压制。||**与 11/10 建立的判别轴一致，且 GEV 是那条轴上最清楚的样本。** 11/10 热 CPI 后 GEV -7.16%(fPE 29.8x) 跌幅远大于 SNOW -0.54%(fPE 95.2x)，结论是惩罚排序按「谁和谁的客户要借钱」而非倍数高低 —— GEV 的客户是 hyperscaler 与公用事业(举债建设)，SNOW 的客户是企业软件预算。今天同机制再现：**GEV -2.85% 而 SNOW -2.98%，两者接近，但 GEV 倍数只有 SNOW 的三分之一 —— 倍数低三倍而跌幅相同，意味着 GEV 单位估值承受的压力是 SNOW 的三倍。**||卖方反向：Evercore ISI 与 Morgan Stanley 均维持 $1,350 目标价(相对 11/11 收盘 +67%)。一年涨幅 +47.2%。||缓冲 +13.60%(距 thesis-break $700)，为组合内第三薄。低于 MA50 $912.63 达 12.9%。
+
+**Sources.**
+- Simply Wall St / Yahoo: Why Is GE Vernova (GEV) Balancing Hydrogen Turbine Progress With A Nuclear Delay? — new validation of hydrogen ready aeroderivative gas turbines
+- Yahoo Finance: GE Vernova Has Slid Since Summer: Why Evercore ISI Sees 67% Upside — closed 31% below its June 30 high; Evercore kept $1,350 target
+- Yahoo Finance: GE Vernova Sinks 12%, Vertiv Down 12% in a Week as Data Center Backlash Hits AI Power — after Democrats won Congress and SoftBank took a $3B stake action
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.54% · QQQ -1.34% · VIX 19.42 · TEN YEAR 5.141 · DXY 103.378 · NVDA -2.22% · SNOW -2.98%
+
+**Agent read.** **本条给 11/10 的「融资轴」提供了第三次确认，而且今天的对照比 11/10 更干净。** 11/10 是 GEV 跌幅远大于 SNOW(倍数低而跌更多)；今天是两者跌幅相同但倍数差三倍 —— **单位估值承压 3 倍**。两天的形态不同，但指向同一结论：折现率上行时，惩罚排序取决于客户的融资需求而非自身倍数。||**触发器口径问题**：$700 测量价格，而当前被定价的两个真实风险是 (a) 折现率(10Y 是否站稳 5% 以上) 与 (b) 许可与地方政治(11/05 记录的 41 项公投 40 项被否 + 2027-01-15 S.5653 走向)。两者都不会先表现为股价跌到 $700。更有信息量的预设条件：10Y 收盘连续 5 日高于 5.25%、单季度新增公投否决率超 50%、或 S.5653 在 2027-01-15 前未出委员会。||**不要用 $1,350 目标价判断下行风险已被定价** —— 目标价基于在手订单与电力需求的分子假设，今天压 GEV 的是分母，两者不在同一维度。
+ · Snapshot at `dashboard/2026-11-13.md`
+
+---
 ### 2026-11-10 · -7.16% day · ▼ major
 **Tags:** `macro_rates`, `executive_comment`, `sector_rotation`
 **Confidence:** high

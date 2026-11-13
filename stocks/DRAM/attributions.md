@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-13 · -3.79% day · ▼ material
+**Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
+**Confidence:** high
+
+**Primary cause.** **-3.79% 作为内存复合体的篮子读数，介于 MU(-3.96%) 与 SKHY(-4.65%)/SNDK(-7.44%) 之间，略好于两者。** 差额说明 ETF 内的非 HBM 成分提供了约 0.7 个百分点的缓冲。||今日内存跌幅排序按对 NVIDIA 的暴露度排列：SNDK -7.44% > SKHY -4.65% > MU -3.96% > DRAM -3.79% > Samsung -0.96%。DRAM 作为篮子自然落在中位。||驱动：Jensen Huang 辞职后 AI 硬件抛售第二日 + 核心 PPI 月率 +0.5% 不回落推高 10Y 至 5.141% + DXY 19 个月新高。||五日 +6.91%，30 天 -32.01%，低于 MA50 $53.30。无 thesis_break_price(tracker 口径)。
+
+**Sources.**
+- _Data:_  ()
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.54% · QQQ -1.34% · VIX 19.42 · TEN YEAR 5.141 · DXY 103.378 · MU -3.96% · SKHY -4.65% · SNDK -7.44%
+
+**Agent read.** **ETF 篮子的价值在于它给出了「纯内存 beta」的基准线，用来判断个股的超额来自哪里。** 今天 SNDK 相对 DRAM 超跌 3.65pp(NAND + 已击穿触发器 + 最高 beta)，SKHY 超跌 0.86pp(NVIDIA 暴露度最高)，MU 超跌 0.17pp(基本等于 beta)。**MU 今天几乎没有个股 alpha，是纯板块跟随** —— 这与「无公司级消息」的归因一致，互为佐证。||内部排序与基本面质量排序一致这一点在 11/12 已记录；今天第二次成立。
+ · Snapshot at `dashboard/2026-11-13.md`
+
+---
 ### 2026-11-12 · -2.82% day · ▲ extreme
 **Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
 **Confidence:** medium

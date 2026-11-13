@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-13 · -3.23% day · ▼ material
+**Tags:** `competitor_news`, `partnership_news`, `macro_rates`
+**Confidence:** high
+
+**Primary cause.** **-3.23%，30 天 -50.37% 为组合内个股最大一个月跌幅；thesis-break $75 击穿扩大至 -21.03%(11/12 -17.3%)。**||**INTC 今天有具体原因而非纯 beta：NVIDIA 治理动荡使双方后续联合产品的确定性下降。** NVIDIA 以 $23.28/股买入的 $50 亿 INTC 持股现值约 $125 亿(账面大幅获利)，但这笔投资的战略价值在于后续的 Xeon-NVDA 联合路线图，而 Huang 离任后这条路线图的执行确定性降低。||叠加折现率：核心 PPI 月率 +0.5% 不回落，10Y 5.141%，forward P/E 33.1x —— 这是组合内长久期名字里第二高的倍数，而 INTC 的盈利尚未恢复。||**反向证据(未能托住价格)**：CEO Lip-Bu Tan 今日在 Yahoo Finance Invest 会议公开表示「一次健康的 AI 回调正在到来，明年内存短缺会更严重，CPU 将出现复苏周期」—— 这是在押注周期而非押注份额。半导体 ETF 当日仍有约 $7,900 万的机构买入 INTC。||低于 MA50 $94.96 达 37.6%。
+
+**Sources.**
+- Yahoo Finance: Intel Stocks Fall 4.55% as Nvidia Shake-Up Clouds Its $5 Billion Partner Bet — Nvidia's stake bought at $23.28 a share is now worth about $12.5 billion, but the next round of joint deals looks less certain
+- Yahoo Finance Invest 2026: Intel CEO on company's turnaround, foundry bets, and the AI boom — why a healthy AI correction is coming, why memory shortages will worsen next year, and why he sees a CPU recovery
+- Yahoo Finance: AMD Tumbles 11%, Broadcom and Intel Slide 6% as Chip Rally Reverses
+- _Data:_  ()
+
+**Cross-assets.** SPY -0.54% · QQQ -1.34% · VIX 19.42 · TEN YEAR 5.141 · DXY 103.378 · NVDA -2.22% · AMD -9.20% · TSM -2.05%
+
+**Agent read.** **INTC 是「NVIDIA 动荡」这条叙事里被双向误读的名字。** 11/12 它与 TSM 同跌(-0.74%)被用作证据，说明 Huang 辞职是份额零和再分配而非 AI 总量重估 —— 当时的推理成立。今天它继续跌，但原因换了：不是份额，而是 NVIDIA 持股背后的联合路线图确定性。**同一个事件在两天内通过两条不同机制作用于同一只股票，不应合并读为一个趋势。**||**fPE 33.1x 配 30d -50.37% 是一个需要注意的组合**：倍数高而价格崩，意味着盈利预期也在同步下修(分子分母同时恶化)。这与 MU/SNDK 的 3x 倍数崩盘性质不同 —— 后者是分母不被信任，前者是分子还没建立。||CEO 的「明年内存短缺更严重」是来自客户端的供需判断，可作为内存复合体(MU/SKHY/DRAM)的第三方佐证留存；但今天它没能托住任何一只内存股的价格，说明叙事层在当前环境下不定价。
+ · Snapshot at `dashboard/2026-11-13.md`
+
+---
 ### 2026-11-12 · -0.74% day · ▲ extreme
 **Tags:** `sector_rotation`, `competitor_news`, `executive_comment`
 **Confidence:** medium
