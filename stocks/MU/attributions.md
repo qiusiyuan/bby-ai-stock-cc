@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -6.65% day · ▼ material
+**Tags:** `regulatory_negative`, `policy_us`, `memory_pricing`
+**Confidence:** high
+
+**Primary cause.** 双重打击，两条都是今日新增的风险轴。||**第一条(法律, 全新)**: 联邦法官驳回 MU/Samsung/SK Hynix 的动议，让「三家刻意削减常规 DRAM 产量以抬高价格」的反垄断集体诉讼进入实体审理。这与过去一年所有空头论点都不同 — 此前的担忧是「周期会反转」(关于分子/盈利持续性)，这条诉讼问的是「这一轮涨价的性质是什么」(关于市场该给这个盈利什么倍数)。法官没有裁定主张成立，只是拒绝了「这个主张连审都不必审」的动议，但对定价的影响不需要等判决: 「涨价源于稀缺」与「涨价源于协同」变成未决问题，支撑高倍数的论据(结构性供给紧张、客户长约)被打问号，即使 EPS 不变倍数也要降。另有尾部: 若败诉，美国反垄断可判三倍损害赔偿。||**第二条(政策)**: 芯片远程访问新规点名 MU 的 **$146 亿中国相关营收**。管理层口径是中国占比正在淡出，但该口径今天不被接受 — 新规管的不是「卖给中国」而是「卖给任何会被中国远程访问的算力」，这个范围管理层自己也无法量化。||5d 仅 -0.89%: 周内曾有反弹，今天一天吃掉全部。量比 0.62x = 买盘消失而非卖盘涌出。||距 thesis_break_price $650 缓冲 +11.8%。
+
+**Sources.**
+- Yahoo Finance: Micron Stocks Sink Nearly 7% After Judge Lets DRAM Supply Lawsuit Proceed
+- Yahoo: Market Chatter: Micron, Samsung, SK Hynix Fail to Get DRAM Price-Fixing Lawsuit Dismissed
+- Yahoo: Micron Has $14.6 Billion in China-Linked Revenue. Are These New U.S. Chip Export Rules a Threat?
+- _Corroboration:_ SKHY -5.60% / Samsung -5.38% / DRAM ETF -6.33% — 聚集度印证诉讼是主因之一
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** 内存复合体从今天起有三条风险轴而非两条: 轴一周期(分子)、轴二折现率(分母)、轴三涨价的法律性质(对分子的信任)。轴三既不改变分子也不改变分母，它改变市场对分子的信任，因此无法用财报修复。10/29 评分卡的结论今天第二次被印证: 「AI 长期领头股」基本面成立，但「下一个 NVDA」的重定价机制被证伪 — 盈利 run-rate 三个月 +33% 而倍数从 12.1x 压到 8.0x。倍数压缩是本轮内存行情的主线不是插曲，今天新增的诉讼轴恰好加深了这个不信任。
+
+
+---
 ### 2026-11-13 · -3.96% day · ▼ material
 **Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
 **Confidence:** medium

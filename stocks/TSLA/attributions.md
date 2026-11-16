@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -3.16% day · ▼ material
+**Tags:** `sector_rotation`, `production_milestone`
+**Confidence:** medium
+
+**Primary cause.** **今天的下跌与 TSLA 自己的新闻无关 — 公司级消息全为利好。** 驱动是高 beta 跟跌(QQQ -2.40%)，信心标 medium。||**同日两条扩张性消息**: (1) 向柏林工厂投入 **€30 亿(约 $34 亿)**，目标建成**年产 100 万辆无人驾驶 Cybercab** 的基地，2027 上半年动工(待建筑许可)；(2) 开始向受邀的私人客户销售 Cybercab — Robotaxi 从演示转向商业交付的第一步。||资本配置信号值得单独读: **把 Cybercab 产能放在欧洲而非德州或 Fremont**，意味着 Tesla 在押注欧洲的 Robotaxi 监管路径会在 2028-2029 打开。对 FSD/Robotaxi 这条 optionality，欧洲产能是比任何一次 FSD 版本发布都更硬的承诺 — 它是不可逆的资本支出，不是软件更新。||(3) 第三方: Barclays 给出「SpaceX 以全股票收购 Tesla」情景，按 11/13 价格合并市值近 $3.5 万亿。这条消息的作用不在概率(极低)，而在于它暴露 SpaceX 上市后 Musk 旗下两家公司第一次有了连续的市场报价，而「谁买谁」的方向已不自明。||**核心数据: 30d -0.22% vs QQQ -12.25% — 12 个百分点的脱钩，本书最干净的一条分化。** 距 thesis_break_price $250 缓冲 **+51.2%**(全书最宽裕之一)。站在 MA50 $375.22 上方 +0.7%，MA200 $382.47 下方 -1.2%。量比 0.49x。
+
+**Sources.**
+- Yahoo: Tesla goes all-in on the Cybercab with upcoming €3B Berlin Gigafactory expansion
+- Yahoo: Tesla Wants to Build 1 Million Cybercabs Near Berlin — construction set to begin in the first half of 2027
+- Barron's / Yahoo: Tesla to sell Cybercabs to 'select' customers
+- Yahoo Finance: Tesla Stocks Fall 2.8% as SpaceX Merger Talk Turns to Who Buys Whom
+- _Corroboration:_ QQQ -2.40% / NVDA -4.11%；TSLA 30d -0.22% vs NVDA 30d -34.64%
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** TSLA 已完整脱钩于 AI 复合体。三种解释待裁决: (1) TSLA 从未真正被定价为 AI 股 — 估值靠汽车销量 + FSD optionality，所以 AI 去估值时它不在扣减名单上；(2) TSLA 已经先跌完了 — 自 52 周高回撤 -24.2% vs NVDA -35.8% / MU -42.1%，去估值发生在更早的周期；(3) Robotaxi 叙事正在接过 AI 叙事的资金 — 11/05 后 AI 建设遇到物理约束，而 Robotaxi 的约束是监管而非物理，资金可能在两条长久期叙事间迁移。12 月可部分检验: 若 11/17 NVDA 财报不及预期而 TSLA 继续走平或上涨，解释 3 权重上升；若跟跌则只是 beta 滞后，解释 1 被削弱。
+
+
+---
 ### 2026-11-12 · +0.25% day · ▲ extreme
 **Tags:** `executive_comment`, `regulatory_negative`, `sector_rotation`
 **Confidence:** medium

@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -3.95% day · ▼ material
+**Tags:** `policy_us`, `analyst_downgrade`, `regulatory_negative`
+**Confidence:** high
+
+**Primary cause.** 芯片远程访问新规(多篇以「AMD、Broadcom 因更严格的美国芯片规则下跌」为标题)+ 11/13 Redburn「客户付不起」下调(Neutral, PT $595→$398)仍在叙事中 + 今日「NVDA 收紧 AI 融资」报道与该下调同向叠加。||**管理层今日重申 2027 年 AI 芯片营收翻倍至 $1,150 亿 — 完全无效。**||但相对强度是全书半导体最好的: **5d +4.33% 是全书半导体唯一的正收益**，30d -8.05% 也是半导体板块最轻的伤(对照 MRVL -45.75% / INTC -52.00% / MU -31.70% / TSM -22.35%)。||距 thesis_break_price $300 缓冲 +11.1%。自 52 周高 $495.00 回撤 -32.7%。量比 0.56x。||另一条噪音: ACC 获准在 EU 普通法院的 Broadcom 法律特权案中介入 — 第三条同期法律风险(与 MU 反垄断、INTC 股东诉讼并列)。
+
+**Sources.**
+- Yahoo Finance: Broadcom Stocks Slide 4.76% as Downgrade Keeps AI Financing Fears in Focus
+- Yahoo: Broadcom Management Says AI Chip Revenue to Double to $115 Billion in 2027, Giving Bulls Plenty to Cheer
+- Yahoo: AMD, Broadcom stocks sink on tighter US chip rules
+- Yahoo: ACC Granted Leave to Intervene Before EU General Court in Broadcom Legal Privilege Case
+- _Corroboration:_ AMD -4.88% / NVDA -4.11% / MRVL -6.14% 同跌；AVGO 5d 为板块唯一正收益
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** AVGO 是半导体里相对强度最好的(5d +4.33% / 30d -8.05%)，但管理层给出 2027 年 AI 营收翻倍至 $1,150 亿的指引仍换来 -3.95%，说明连最强的叙事也无法在规则不确定时被定价。Redburn 11/13 的「客户付不起」与今天「NVDA 收回客户融资」是同一条轴的两个观察 — 客户的融资能力。12/09 财报(与 SPCX 解禁、FOMC 同日)需要对这条轴给出回应，而不只是重复营收指引。
+
+
+---
 ### 2026-11-13 · -4.93% day · ▼ material
 **Tags:** `analyst_downgrade`, `pt_change`, `sector_rotation`
 **Confidence:** high

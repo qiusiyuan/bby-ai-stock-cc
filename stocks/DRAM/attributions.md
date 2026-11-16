@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -6.33% day · ▼ material
+**Tags:** `regulatory_negative`, `policy_us`, `memory_pricing`, `flow_event`
+**Confidence:** high
+
+**Primary cause.** 内存篮子 ETF，跟随成分股的双重打击: DRAM 价格操纵集体诉讼未获驳回(MU/Samsung/SK Hynix) + 芯片远程访问新规。||**跌幅(-6.33%)大于其绝大多数成分**(仅 MU -6.65% 更深，SKHY -5.60% / Samsung -5.38% 均更浅)，说明这是 ETF 层面的整体减配，不是个股选择。||30d **-35.60%**；自 52 周高 $81.34 回撤 **-51.2%**。量比 0.71x = 缩量。无 thesis_break_price(篮子工具)。
+
+**Sources.**
+- Yahoo: Market Chatter: Micron, Samsung, SK Hynix Fail to Get DRAM Price-Fixing Lawsuit Dismissed
+- MT Newswires / Yahoo: Top Midday Stories: US Moves to Block Remote Access to Advanced AI Chips
+- _Corroboration:_ MU -6.65% / SKHY -5.60% / Samsung -5.38% / SNDK -7.53%；DRAM 跌幅接近最差成分
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** ETF 跌幅接近最差成分而非成分加权中位数，是整个内存主题被减配的直接证据。配合全书普遍 <1.0x 的量比，读法是「买盘消失」而非「卖盘涌出」—— 后者一两天可以出清，前者需要买方主动回来，而买方正在等 11/17 NVDA 财报。
+
+
+---
 ### 2026-11-13 · -3.79% day · ▼ material
 **Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
 **Confidence:** high

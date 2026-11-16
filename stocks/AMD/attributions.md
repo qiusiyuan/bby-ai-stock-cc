@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -4.88% day · ▼ material
+**Tags:** `policy_us`, `regulatory_negative`, `m_and_a`
+**Confidence:** high
+
+**Primary cause.** 芯片远程访问新规直接点名影响(多篇报道以「AMD、Broadcom 因更严格的美国芯片规则下跌」为标题)，叠加 NVDA 财报前的 AI 板块普遍减仓。||**同日三条公司级利好全部无效**: (1) 完成 **$82 亿收购 World Labs**，李飞飞出任 EVP 兼首席科学家 — 顶级具身智能/空间智能人才落地；(2) AMD 驱动的 **Lux 超算在橡树岭国家实验室开放**，TOP500 第 14 位，成为 DOE Genesis Mission 的首个 AI factory；(3) **$25 亿 Anthropic 持股**。||5d 仅 -0.11%: 本周曾有反弹(11/12 曾 +5.22%，当时市场为「不是 NVIDIA」这个属性付费)，今天连同 11/13 的回吐一起被抹平。这印证了 11/13 的判断 — 11/12 定价的是仓位而非现金流。||距 thesis_break_price $380 缓冲 +33.7%。量比 0.84x。||2x 杠杆对照: NVDL(2x NVDA)today -9%，说明杠杆工具在板块下跌中的衰减放大。
+
+**Sources.**
+- Yahoo: AMD, Broadcom stocks sink on tighter US chip rules, CoreWeave and Nebius shares drop
+- Yahoo: AMD Completes World Labs Acquisition, Appoints Fei-Fei Li as Chief Scientist — $8.2 billion
+- Yahoo: AMD-Powered Lux Supercomputer Opens to Scientific Users at Oak Ridge, Becoming First AI Factory for DOE's Genesis Mission
+- Yahoo Finance: AMD Stocks Fall 4.25% as $2.5 Billion Anthropic Stake Meets AI Profit-Taking
+- _Corroboration:_ NVDA -4.11% / AVGO -3.95% / MRVL -6.14% 同跌 — 新规是共同因子
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** AMD 5d -0.11% 把 11/12 的 +5.22% 完整还了回去。11/12 市场为「不是 NVIDIA」这个属性付费(份额零和再分配叙事)，11/13 开始撤回，今天抹平 — 三天完成一个完整的叙事往返。结论与 11/13 一致: 那次定价的是仓位而非现金流。今天 $82 亿收购 + 李飞飞 + TOP500 第 14 三条利好同日无效，进一步说明当前体制下公司级能力提升不被定价。
+
+
+---
 ### 2026-11-13 · -9.20% day · ▼ major
 **Tags:** `sector_rotation`, `competitor_news`, `macro_rates`
 **Confidence:** high

@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -3.08% day · ▼ material
+**Tags:** `sector_rotation`, `partnership_news`
+**Confidence:** medium
+
+**Primary cause.** AI capex 板块 beta(芯片远程访问新规 + NVDA 财报前减仓)，无 AMZN 特有的负面催化剂，故信心 medium。||**同日公司级消息以中性偏多为主**: (1) Blackstone 数据中心 REIT(BXDC)以 **$50 亿 AWS 交易**完成其首笔投资，BXDC 股价大涨 — 对 AWS 的数据中心需求是第三方背书；(2) **Anthropic IPO 本周(11/18)**，AMZN 为主要投资方；(3) 节日营销推进。||负面: 加拿大仓库达成**北美首份工会合同** — 长期劳动成本结构问题，短期影响有限。||另一条间接负面: **ULA Vulcan 发射失败并丢失 Amazon 的 Leo 卫星载荷** — Amazon Leo(Starlink 竞争者)的部署进度被推后。||**核心数据: 30d +2.80% — 与 TSLA 并列为 QQQ -12.25% 的一个月里最抗跌的两只。** 距 thesis_break_price $185 缓冲 +39.7%。站在 MA50 $254.81 与 MA200 $244.69 上方。量比 0.65x。
+
+**Sources.**
+- Yahoo: Blackstone's Data Center REIT Makes First Investment With $5B AWS Deal
+- Yahoo: Amazon's Big Week: First a New James Bond, Then Anthropic's IPO
+- Yahoo: Amazon faces first North American union contract at Canadian warehouse
+- Yahoo: AST SpaceMobile Sinks 8% as ULA's Vulcan Rocket Failure Rattles Space Stocks — ULA loses Amazon Leo satellites
+- _Corroboration:_ MSFT -0.82% / GOOG -3.36% / META -2.34% 同跌；AMZN 与 MSFT 为 30d 最抗跌的 hyperscaler
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** AMZN 与 MSFT 是今天「有地板」的那一类 — 当期现金流覆盖远期承诺，所以规则冲击只打击增量部分而非全额。AMZN 30d +2.80%、MSFT 30d -1.06%，两者都站在 MA50/MA200 上方，而链条下游(MRVL -45.75% / INTC -52.00%)全在双均线下方 40%+。今天的惩罚排序验证了 11/10 建立的判别轴并扩展一维: 不只是「谁和谁的客户要借钱」，还包括「谁的收入依赖一个刚被改写规则的市场」。
+
+
+---
 ### 2026-11-09 · +3.61% day · ▲ material
 **Tags:** `analyst_upgrade`
 **Confidence:** medium

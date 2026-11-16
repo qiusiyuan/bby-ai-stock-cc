@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -4.11% day · ▼ material
+**Tags:** `policy_us`, `regulatory_negative`, `earnings_pre_print`
+**Confidence:** high
+
+**Primary cause.** 美国政府出手限制「远程访问」先进 AI 芯片 — 管制从芯片物理流向扩展到算力访问权，即受限主体不能再通过云/远程租用合法留在美国或第三国的 GPU。叠加 11/17 财报前一日的事件风险（后 Jensen Huang 时代第一份，预期约 $1,080 亿营收）。||传导不经过利率: 10Y 今日 -0.76% 至 5.12%、TLT +0.17%，折现率是松的。路径是「TAM 被切掉一块且规模无法量化 → 卖方 2027/2028 终端需求假设出现不可验证缺口 → 财报前一日无人愿意持仓等答案」。||量比 1.32x 为全书少数放量者之一（全书普遍 <1.0x），说明这是真实的持仓转手而非缩量下跌。||触发器状态: 现价 $156.15 距 thesis_break_price $150 仅 +4.1%，距 52 周低 $148.80 +4.94%。kill condition「Jensen Huang departure」已于 11/12 坐实；再读条件「BIS 对华出口管制收紧」今日触发；「股价无明显大盘催化下跌>15%」已达 30d -34.64%。三条预设条件同时命中。||关键: $150 同时是 thesis-break 与 thesis 内 bear case 的目标价 — 市场已基本把 bear case 定价完成，而财报在明天。||反向证据须并存: 8/27 记录显示当时「beat 也 fail-to-rally」的预测被彻底证伪，NVDA 两日累计约 +9%、量比 1.67x。即 NVDA 在绝对强度足够的财报面前有能力推翻 de-rating 叙事。
+
+**Sources.**
+- MT Newswires / Yahoo: Top Midday Stories: US Moves to Block Remote Access to Advanced AI Chips
+- Yahoo: Stock Market Today: Nasdaq-100 Sinks as Nvidia Faces Its First Earnings Without Jensen Huang
+- Yahoo: Trump Backs Jensen Huang's Return to Nvidia as Sam Altman Says 'Heroes Have Flaws'
+- _Corroboration:_ AMD -4.88% / AVGO -3.95% / TSM -5.39% / MRVL -6.14% 同跌；CoreWeave 与 Nebius 同跌 — 新规影响面覆盖 neocloud
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** 今天是本轮回撤第一个「利率让路、AI 依然被卖」的交易日。10Y 跌 0.76% 而 QQQ 跌 2.40%、VIX +19.48% — 边际卖方不再对资金成本定价，而对规则定价。新规的杀伤力不在于切掉多少 TAM，而在于没人能算出切掉多少。11/17 财报要回答的真正问题不是营收（$1,080 亿已被预期），而是管理层能否给新规敞口一个量化区间: 给得出则不确定性被定价，给不出则倍数继续被压。
+
+
+---
 ### 2026-11-13 · -2.22% day · ▼ minor
 **Tags:** `earnings_pre_print`, `sector_rotation`, `macro_rates`
 **Confidence:** high

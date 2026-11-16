@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -3.27% day · ▼ material
+**Tags:** `sector_rotation`, `unattributed`
+**Confidence:** low
+
+**Primary cause.** 人形/物理 AI 使能层 ETF，无 ETF 级或成分级新闻(数据拉取中新闻字段为空)，信心 low。||与 HUMN(-3.69%, 量比 1.55x)、CROB(-3.41%, 量比 0.18x)同向。**30d -13.08% 与 HUMN 的 -13.75% 几乎相同，尽管两者持仓结构不同** — KOID 覆盖更广的使能层(含物理 AI)，HUMN 更集中在人形 OEM 与执行器。||距 52 周低 $27.74 +15.5%；自 52 周高 $43.32 回撤 -26.1%；双均线下方(MA50 $34.62 / MA200 $36.45)。量比 0.86x。||结构性背景: 今天利率放松(10Y -0.76%)而最长久期资产跌幅更大，说明压制来自分子的可信度而非分母。
+
+**Sources.**
+- _Corroboration:_ HUMN -3.69% / CROB -3.41% 同向；QQQ -2.40% 对照。三只均无新闻
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** KOID 与 HUMN 的 30 天跌幅趋同(-13.08% vs -13.75%)是本组最有信息量的事实: 市场没有在区分「人形 OEM」与「更广的使能层」，即人形仍是一个整体主题交易而非有内部分化的板块。在这个阶段，标的选择(HUMN vs KOID)的边际收益远小于配置决策(配不配这个主题)。
+
+
+---
 ### 2026-10-22 · -4.23% day · ▼ material
 **Tags:** `sector_rotation`, `production_milestone`
 **Confidence:** medium

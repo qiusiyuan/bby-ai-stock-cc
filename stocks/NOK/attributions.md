@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -3.10% day · ▼ material
+**Tags:** `sector_rotation`, `partnership_news`
+**Confidence:** low
+
+**Primary cause.** AI/电信板块 beta，无 NOK 特有的新负面催化剂，信心 low。||**唯一公司级消息为利好**: 欧洲科技企业组成 **AI Gigafactory Northern 联盟** — 跨北欧与波罗的海地区的联邦式多站点 AI 基础设施，NOK 参与。股价仍跌 3.10%。||老问题未解(卖方口径): AI 与云业务增长前景改善，但重组成本、现金转化弱、电信资本开支不均衡，使 2027 年展望蒙阴。||**已破 thesis_break_price $9 达 -13.1%**；30d -23.33%；自 52 周高 $17.45 回撤 -55.2%；双均线下方(MA50 $9.52 / MA200 $10.39)。量比 0.56x。
+
+**Sources.**
+- Yahoo: European technology leaders form AI Gigafactory Northern consortium to build trusted, sustainable AI infrastructure
+- Yahoo: Nokia Falls 3.4% in a Week as AI Growth Collides With Cash Flow Risks
+- _Corroboration:_ AI 板块普跌；NOK 无自身增量坏消息
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** NOK 已破位 -13.1% 且 30d -23.33%，但破位是在零增量坏消息、量比 0.56x 的情况下完成的。欧洲 AI 基础设施联盟参与是真实的业务机会，但在现金转化未改善前市场不给定价。2027-01-28 财报是下一个节点。该标的连续多日无决策价值的跟踪线特征已显现 — 若后续仍无增量，可考虑降级为低频跟踪。
+
+
+---
 ### 2026-11-12 · -1.07% day · ▲ extreme
 **Tags:** `sector_rotation`, `unattributed`
 **Confidence:** low

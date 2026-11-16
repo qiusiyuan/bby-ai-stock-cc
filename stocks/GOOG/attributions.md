@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -3.36% day · ▼ material
+**Tags:** `policy_us`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** **无公司级坏消息 — 今日 GOOG 的全部消息都是正面的，股价仍跌 3.36%。** 利好: 卖方论述「GOOG 可能是最完整的 NVIDIA 替代方案」(自研 TPU 的垂直整合)、搜索份额回升、参与 $30 亿预付能源交易、Altimeter $50 亿投 Anthropic(GOOG 为 Anthropic 主要投资方)。||驱动是 AI capex 板块整体 beta: 芯片远程访问新规 + NVDA 财报前减仓。信心标 medium — 没有 GOOG 特有的催化剂。||**触发器警报: 现价 $282.69 距 thesis_break_price $280 仅 +0.96%** — 明天就可能被机械触发。距 52 周低 $271.54 +4.11%；自 52 周高 $404.47 回撤 **-30.1%**。量比 0.51x(极度缩量)。||**这条触发器本身需要先被裁决。** $280 是在一个不同的价格体制下设定的；GOOG 回撤的原因(AI 复合体整体去估值 + 10/29 的单日跳水)并不是该 thesis 预设的破位理由。当前真正在定价的 GOOG 风险是「若 AI 算力需求整体被改写，自研 TPU 的垂直整合优势还值多少」—— 这个风险 $280 这条线没有编码。
+
+**Sources.**
+- Yahoo: Why Alphabet (GOOGL) May Be the Most Complete NVIDIA Alternative
+- Yahoo: Google and Meta Tell Two Different Stories as Search Rebounds
+- Yahoo: Google Parent to Take Part in $3 Billion in Prepaid Energy Deals
+- _Corroboration:_ META -2.34% / AMZN -3.08% / MSFT -0.82% 同跌 — hyperscaler 整体回落，MSFT 最抗跌
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** GOOG 是本报告里触发器问题最尖锐的案例: 缓冲 0.96%，而触发的理由与预设的破位理由完全脱钩。按「查 trigger 不只问触发了吗，还要问预设条件覆盖的是当前真正在定价的风险吗」的方法，这条线在触发前必须先裁决它意味着「论点被否证」还是「回撤够深」。两者对应完全不同的处理。同样的问题适用于 SKHY($115, 缓冲 8.2%) 与 GEV($700, 缓冲 9.6%)。
+
+
+---
 ### 2026-11-04 · +3.25% day · ▲ material
 **Tags:** `policy_us`, `sector_rotation`, `competitor_news`
 **Confidence:** medium

@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -5.60% day · ▼ material
+**Tags:** `regulatory_negative`, `policy_us`, `memory_pricing`
+**Confidence:** high
+
+**Primary cause.** 与 MU 同源的双重打击: DRAM 价格操纵集体诉讼未获驳回(法官让「协同削减常规 DRAM 产量抬价」的指控进入实体审理) + 芯片远程访问新规。本地盘领跌 Kospi -7.89%，外资抛售韩国科技。||**今天的反差在全书最极端**: 同日披露的是 80% 毛利率 + ₩100 万亿派息计划 + 五年 ₩1.4 万亿(约 $10.5 亿)韩国芯片供应链投资 — 三条全为利好，股价仍跌 5.60%。||相对强度与绝对位置的矛盾: SKHY 是内存四只里跌得最少的(三个月 -23.1% vs MU 30d -31.7%)，但距 52 周低 $122.20 仅 **+1.82%**，距 thesis_break_price $115 仅 **+8.2%** — 本书第三紧的触发器。即「相对强度」建立在一个已经很低的绝对位置上。||量比 0.59x = 缩量下跌，买盘消失。
+
+**Sources.**
+- Yahoo Finance: SK hynix Stocks Sink 7.89% Despite 80% Margin and 100 Trillion Won Payout
+- Yahoo: Market Chatter: Micron, Samsung, SK Hynix Fail to Get DRAM Price-Fixing Lawsuit Dismissed
+- Yahoo: Market Chatter: SK Hynix Plans $1 Billion Investment in South Korean Chip Supply Chain
+- _Corroboration:_ MU -6.65% / Samsung -5.38% / DRAM -6.33% 同向；SKHY 跌幅最小
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** SKHY 是本组基本面最强的一只(80% 毛利率为同业最高)，跌幅最小印证了这一点；但 52 周低点就在脚下 1.82%，说明相对强度无法抵御板块的绝对去估值。thesis_break $115 的缓冲只剩 8.2%，需要先裁决这条线在当前体制下是否仍代表「论点被否证」—— 当前真正在定价的风险是「HBM 涨价的合法性与可持续性」，而 $115 这条线并没有编码这个风险。
+
+
+---
 ### 2026-11-13 · -4.65% day · ▼ material
 **Tags:** `sector_rotation`, `macro_rates`, `competitor_news`
 **Confidence:** high

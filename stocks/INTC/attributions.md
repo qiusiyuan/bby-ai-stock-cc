@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -6.52% day · ▼ material
+**Tags:** `regulatory_negative`, `policy_us`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** 公司级坏消息 + 板块 beta 叠加。||**公司级(新增)**: 投资者提起股东集体诉讼，指控 Intel 在 PC 业务放缓上的信息披露存在问题(股价此前已跌 29%)。这是法律风险，不是执行风险 — 但它在一个已经 30 天腰斩的标的上增加了尾部。||**板块**: 芯片远程访问新规。||**30 天 -52.00% 为全书最差**；自 52 周高 $142.35 回撤 **-60.8%**；已破 thesis_break_price $75 达 **-25.6%**。||量比 0.49x — 这不是恐慌出清，是没有买盘。**30 天腰斩一半是在低量下完成的**，这比高量恐慌更难在短期修复，因为它需要买方主动回来。||对照组: 同日有卖方文章直接比较「Micron vs Intel: 毛利率告诉投资者为什么其中一个到 2027 年底是明确的不可投」—— 即卖方在用毛利率把 INTC 从 AI 叙事中排除。
+
+**Sources.**
+- Yahoo: Intel stock falls after investors file class action lawsuit against the company
+- Yahoo: Intel Faces a Shareholder Suit After a 29% Stock Drop
+- Yahoo: Why Is Intel Facing a Shareholder Lawsuit Over Its PC Slowdown?
+- _Corroboration:_ AMD -4.88% / TSM -5.39% 同跌，但 INTC 跌幅更大 — 诉讼是增量
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** INTC 已破位 -25.6% 且 30 天 -52%，但破位理由与预设脱钩 — thesis 预设的破位理由是制程/foundry 客户失败，实际破位叠加的是 PC 业务与诉讼。量比 0.49x 的腰斩说明这是一个被放弃而非被抛售的标的。2027-01-28 财报是下一个可能改变叙事的节点，在此之前没有机制让买盘回来。
+
+
+---
 ### 2026-11-13 · -3.23% day · ▼ material
 **Tags:** `competitor_news`, `partnership_news`, `macro_rates`
 **Confidence:** high

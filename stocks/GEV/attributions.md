@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -4.52% day · ▼ material
+**Tags:** `sector_rotation`, `policy_us`
+**Confidence:** medium
+
+**Primary cause.** **纯 beta 传导，零公司级坏消息。** GEV 今天 -4.52% 大于 QQQ(-2.40%)、大于 SPY(-1.83%)、大于 AVGO(-3.95%)，接近半导体跌幅水平。但今天的三条逆风对 GEV 现金流**没有一条有直接传导**: 芯片远程访问新规管算力访问权(GEV 卖燃气轮机与电网设备，不受管制)；DRAM 反垄断诉讼无关；NVDA 收紧 AI 融资仅间接可能影响数据中心建设进度，而 GEV 在手订单已签。||市场把 GEV 归类为「AI 数据中心电力需求」的衍生品，AI 叙事下跌时按衍生品 delta 卖出。||**同日 GEV 的实际消息是正面的**: 持续拿到燃气设备大单 + 电网基础设施在手订单扩张 + 一年 +44% + 年内三次上调指引(FCF 指引从 $50-55 亿持续上移)。||**触发器警报: 距 thesis_break_price $700 缓冲 +9.6%**(进入 10% 警告区)；自 52 周高 $1,195.94 回撤 **-35.9%**；双均线下方(MA50 $909.29 -15.7% / MA200 $951.18 -19.4%)。量比 0.66x。||同业对照: Bloom Energy(BE)今日下跌，forward P/E 降至 39.2x(18 个月低位) — 整个「AI 电力」子板块在同步去估值。
+
+**Sources.**
+- Yahoo: Is GEV Boosting Its Position in the Global Power Infrastructure Market? — securing major gas equipment contracts and expanding grid infrastructure backlog
+- Yahoo: GE Vernova Has Ripped 44% in a Year: Is It Too Late to Buy? — raised 2026 guidance three times
+- Yahoo: BE Stock Falls Overnight: Retail Flags Valuation Concerns As Forward P/E Nears 18-Month Low
+- _Corroboration:_ QQQ -2.40% / AVGO -3.95%；GEV 跌幅大于两者而无自身坏消息
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** GEV 是本书基本面与价格背离第二严重的标的(仅次于 SNDK)。三种读法待裁决: (1) 市场对 AI 电力主题整体去估值，与 GEV 执行无关 → 在手订单 4-8 季度兑现后价格跟上；(2) 市场在提前定价数据中心建设的实际延迟(11/05 的 41 项公投 40 项被否 = 物理约束；今天 NVDA 收紧融资 = 资金约束) → 在手订单转化被推迟；(3) 之前涨太多，只是把 AI 溢价还回去。裁决点在 1/15 前的 S.5653 投票窗口: 通过 → 执行确定性上升但 hyperscaler 电力成本上升；不通过 → 读法 (2) 权重上升。
+
+
+---
 ### 2026-11-13 · -2.85% day · ▼ minor
 **Tags:** `macro_rates`, `macro_inflation`, `sector_rotation`
 **Confidence:** high

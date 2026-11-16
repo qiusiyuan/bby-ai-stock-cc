@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -7.53% day · ▼ major
+**Tags:** `sector_rotation`, `regulatory_negative`, `memory_pricing`
+**Confidence:** medium
+
+**Primary cause.** **连续第三日下跌且跌幅扩大(11/12 -4.15% → 11/13 -7.44% → 11/16 -7.53%)，期间零公司级坏消息。** 30 天 -51.98%，自 52 周高 $2,354.39 回撤 **-65.2%**。||**基本面与价格完全反向，且反向方向是基本面好、价格跌**: 上季营收 +378%、非 GAAP 毛利率 85.0% 仍在上行(非回落)、数据中心环比 +61%、forward P/E 约 3.0x。10/29 评分卡判定 validated — 营收 $11,031M 超承诺上沿 $10.8B、非 GAAP EPS $49.51 超上沿 $46。卖方今日仅微调 fair value $2,105 → $2,047(小幅校准，非推翻)。||今天的驱动是板块 beta: 芯片远程访问新规 + NVDA 事件第三日 + DRAM 反垄断诉讼(NAND 不在诉讼范围内，但内存板块整体被减配)。信心标 medium 而非 high，因为没有任何 SNDK 特有的催化剂。||量比 0.80x = 缩量，不是恐慌出清。||**已破 thesis_break_price $1,200 达 -31.8%**，但该破位与预设的 kill condition(「毛利率连续两季压缩」)完全脱钩 — 毛利率仍在上行。||**11/20 八拆一生效**: 须把 triggers.yaml::thesis_break_price 由 1200 改为 150，thesis/digest 内全部绝对价位除以 8。已连续五份报告提示未执行。
+
+**Sources.**
+- Motley Fool: Why Sandisk Stock Keeps Going Down — Nvidia scandal kept driving Sandisk lower for a third straight day
+- Yahoo: Sandisk (SNDK) Stock Fair Value Edges Lower As Analysts Weigh AI Demand And Cyclicality — $2,105 to $2,047
+- Yahoo: Why Micron and SanDisk Stocks Are Falling Before Nvidia Earnings
+- _Corroboration:_ MU -6.65% / SKHY -5.60% / DRAM -6.33% 同向；SNDK 跌幅最大却理由最少
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** 11/13 写下的「3.0x 不构成支撑」今天进一步被证实。市场定价的不是当期盈利，而是「峰值盈利能持续多久」 — 若周期顶点 EPS 被腰斩，3x 的实际倍数就是 6x，而周期股在周期中段的历史倍数本就在 6-10x。低倍数在周期股上不是安全边际，是市场对分母不信任的显式表达。今天新增的 DRAM 诉讼轴(虽不直接涉及 NAND)恰好加深了整个内存板块对「涨价合法性」的不信任。价格破位与预设破位理由脱钩(毛利率仍上行)，说明当前下跌不是该公司基本面论点被否证，而是板块风险定价方式变了。
+
+
+---
 ### 2026-11-13 · -7.44% day · ▼ major
 **Tags:** `sector_rotation`, `macro_rates`, `memory_pricing`
 **Confidence:** medium

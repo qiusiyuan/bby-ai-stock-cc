@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -0.32% day · ▼ minor
+**Tags:** `tech_breakthrough`, `production_milestone`, `analyst_upgrade`, `competitor_news`
+**Confidence:** high
+
+**Primary cause.** **记录原因不是跌幅，而是一个命名催化剂 + 全书最强的相对表现。SPCX -0.32% vs QQQ -2.40% = +2.08pp alpha，在同板块跌 4-7% 的一天里。**||**(1) Starship 飞行 15 成功实现上级回收** — 此前的回收只做到助推器(第一级)，上级(飞船本体)一直靠溅落或损毁结束。这次成功捕获意味着完整的两级可重用在工程上被验证一次。Bank of America 与 Wells Fargo 当日均定性为「通向全可重用的关键一步」。||为什么权重高于常规发射成功: Starlink 与 Starshield 的单位经济学全部建立在发射成本上。助推器回收已把成本降一个数量级，上级回收决定能否再降一个数量级。**这是成本端的结构性改变，影响所有未来业务线的毛利率假设，而非某一条的收入。**||**(2) Citi 将目标价由 $240 上调至 $280**(相对 $138.66 约 +102%)，维持 Buy。||**(3) 竞争格局同日改善**: ULA 的 Vulcan 发射失败并丢失 Amazon 的 Leo 卫星载荷。美国重型发射市场本只有 SpaceX 与 ULA 两个可用选项，其中一个今天证明不可靠；丢失的载荷属于 Starlink 的直接竞争者(Amazon Leo)，其部署进度被推后。AST SpaceMobile -8%，说明市场把这次失败读成整个「非 SpaceX 太空资产」的折价。||**(4) 噪音**: Musk 公开点名 Bezos 的 SpaceX 竞争者；Barclays 给出「SpaceX 以全股票收购 Tesla」的情景分析(合并市值近 $3.5 万亿)。||位置: $138.66，MA50 $148.72 下方 -6.8%，自 52 周高 $225.64 回撤 -38.5%。量比 0.68x 无异常。||**距 12/09 post-IPO 180 天锁定期解禁 23 天。** 无 thesis_break_price(纯跟踪，非持仓)。
+
+**Sources.**
+- Benzinga / Yahoo: SpaceX advances Starship reusability with successful upper-stage catch, says Bank of America
+- Yahoo: SPCX Stock: Wells Fargo Says Starship Catch Could Accelerate SpaceX's Path To Full Vehicle Reusability — Citi raised PT to $280 from $240
+- Barron's / Yahoo: Musk Plans Next Starship After Flight 15 Catch. ULA Loses Amazon Payload.
+- Yahoo: AST SpaceMobile Sinks 8% as ULA's Vulcan Rocket Failure Rattles Space Stocks
+- _Corroboration:_ SSPC(2x 反向) 仅 +0.69%，与 -0.32% 的 2 倍关系吻合；QQQ -2.40% / 半导体 -4%~-7.5% 对照
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** 今天 SpaceX 的竞争护城河在同一天因自己变强和对手变弱而双向拉宽 — 这是本书自 SPCX 上市以来最清晰的 idiosyncratic-beats-beta 信号，且发生在 12/09 锁定解禁前 23 天。关于解禁的一个重要区分: 解禁本身不创造卖压，它只解除一个约束。真正决定 12/09 走向的是解禁时内部人面对的价格相对其入场位置，以及当时市场对长久期资产的整体风险偏好。以当前位置(距高点 -38.5%)和当前风险偏好(VIX 23.06、BTC 30d -20.36%)推演，解禁日的风险偏好条件比价格条件更重要。另: 11/18 Anthropic IPO 对 SPCX 直接可读 — 两者同属「一级市场巨额吸金的长久期科技资产」，Tom Lee 今日指出 ETH 在 Anthropic IPO 前的滑落重复了 SpaceX IPO 前的形态(这类事件从二级流动性池抽水)。若 Anthropic 首日强劲则验证这类资产需求仍在；若破发，SPCX 在解禁前三周多一条逆风。
+
+
+---
 ### 2026-11-12 · +2.02% day · ▲ minor
 **Tags:** `partnership_news`, `executive_comment`, `sector_rotation`
 **Confidence:** low

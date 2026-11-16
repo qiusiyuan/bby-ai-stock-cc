@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -5.39% day · ▼ material
+**Tags:** `policy_us`, `regulatory_negative`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **今天 TSM 是「好消息完全无效」最干净的样本 — 三条利好同日被无视。**||利好: (1) **十月营收同比 +59.7%，创 2026 年新高**；(2) 与 GlobalFoundries 签 **$20 亿封装协议**，可缓解 AI 封装(CoWoS)瓶颈，2028 ramp；(3) **$5 亿认购 Anthropic**。||股价仍 -5.39%。驱动是芯片远程访问新规 — 作为代工端，TSM 对规则没有定价权，它的客户(NVDA/AMD/AVGO)的 TAM 被切，TSM 的产能利用假设就被切。||量比 **0.98x 为全书第二高**(仅次于 NVDA 1.32x)，说明这是有真实参与度的下跌，不是流动性空洞。||距 thesis_break_price $280 缓冲 +34.7% — 本组里较宽裕。自 52 周高 $487.47 回撤 -22.6%。
+
+**Sources.**
+- Yahoo Finance: TSMC Stocks Slide 5.7% Despite October Sales Jumping 59.7% to a 2026 High
+- Yahoo: TSM's $2 Billion Packaging Deal Could Ease a Critical AI Bottleneck
+- Yahoo: Chip stocks fall on US semiconductor restrictions: AlphaCheck
+- _Corroboration:_ NVDA -4.11% / AMD -4.88% / AVGO -3.95% 同跌；TSM 跌幅大于其主要客户
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** TSM 跌幅(-5.39%)大于它的主要客户 NVDA(-4.11%)、AMD(-4.88%)、AVGO(-3.95%)，这个排序值得记: 代工端承担客户 TAM 风险的总和，却无法像客户那样通过产品定价转嫁。十月营收 +59.7% 创新高被完全无视，印证今天市场重估的是规则不是数字 — 已实现的营收数据无法回答「新规切掉多少未来需求」这个问题。
+
+
+---
 ### 2026-11-12 · -1.34% day · ▲ extreme
 **Tags:** `sector_rotation`, `competitor_news`
 **Confidence:** high

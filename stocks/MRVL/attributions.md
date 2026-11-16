@@ -4,6 +4,25 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -6.14% day · ▼ material
+**Tags:** `m_and_a`, `policy_us`, `regulatory_negative`
+**Confidence:** high
+
+**Primary cause.** 三条叠加，其中第三条是本书唯一的**自我强化下行循环**。||**(1) 芯片远程访问新规** — MRVL 作为 AI 互联/定制芯片供应商被直接点名影响。||**(2)「NVDA 收紧 AI 融资」报道** — 11/10 建立的融资轴重新生效，但主体变了: 11/10 是「客户借不到钱」，今天是「供应商不再替客户垫钱」。后者更难修复，因为它来自供应商自己对客户信用的判断，而供应商掌握的客户信息比市场多。AI 连接性(互联/光模块)是这条线上最敏感的环节。||**(3) Lumentum 全股票收购的反噬(机制独特)**: MRVL 以全股票方式收购 Lumentum($1,150 亿)，MRVL 股价下跌 → 全股票对价从宣布时的 $1,132/股缩水到约 **$657/股** → Lumentum 股东面对的交易价值腰斩，Lumentum 今日 **-8.32%** → 市场质疑交易能否完成/是否需重新谈判/稀释假设失效 → MRVL 再跌。**MRVL 自宣布收购以来 -42%。**||今日公司级利好(与 Penguin Solutions 合作，DDR4 内存扩展 + 跨机架高带宽低延迟内存共享以加速推理)完全被淹没。||**已破 thesis_break_price $200 达 -26.4%**，30 天 -45.75% 为全书第三差。量比 0.46x = 极度缩量。||下一催化: **12/01 财报** — 第一个可以就 Lumentum 交易给出说明的机会。
+
+**Sources.**
+- Yahoo Finance: Marvell Stocks Slide 6.88% as Nvidia Financing Pullback Report Hits AI Connectivity Bet
+- Yahoo Finance: Lumentum Stocks Sink 8.32% as Marvell Slide Shrinks Deal Value Below $660 — down from $1,132 when the $115 billion deal was announced
+- Motley Fool: Why Marvell Stock Is Down Today — pending all-stock Lumentum deal adds dilution risk
+- Business Wire / Yahoo: Marvell and Penguin Solutions Collaborate to Address Data Center AI Memory and Accelerate Inference at Scale
+- _Corroboration:_ AMD -4.88% / AVGO -3.95% / NVDA -4.11% 同跌，但 MRVL 跌幅最大 — 自有的交易风险是增量
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** MRVL 与本组其他成员机制上不同，值得单独记: 其他成员是板块 beta，MRVL 是一个在下跌中反噬自己的资本结构决定。全股票收购在收购方股价崩塌时会形成闭环 — 对价缩水 → 交易价值被质疑 → 收购方再跌。这个循环无法靠板块反弹打破，只能靠重新谈判对价、改为现金对价、或终止交易。12/01 财报是第一个可验证节点。
+
+
+---
 ### 2026-11-13 · -4.97% day · ▼ material
 **Tags:** `m_and_a`, `sector_rotation`, `macro_rates`
 **Confidence:** high

@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-16 · -3.41% day · ▼ material
+**Tags:** `sector_rotation`, `unattributed`
+**Confidence:** low
+
+**Primary cause.** 中国机器人纯标的 ETF，无 ETF 级或成分级新闻，信心 low。||**量比 0.18x 为全书最低 — 这个价格是极少量交易形成的。** 30d 只跌 4.59%，看起来是人形三只里最抗跌(HUMN -13.75% / KOID -13.08%)，但在 0.18x 成交量下「抗跌」可能只是没有人卖，而不是有人买。**在极低流动性标的上，相对强度不是可靠信号。**||宏观背景: 同日 KWEB -1.42%(30d -7.96%，距 52 周低仅 +0.27%)，中国股票整体极弱；而人民币处 52 周最强(USD/CNY 6.65)。中国经济数据偏弱压制伦敦矿业股。||距 52 周低 $18.11 +11.2%；自 52 周高 $33.01 回撤 -39.0%；MA50 $20.79 下方 -3.1%(无 MA200)。
+
+**Sources.**
+- _Corroboration:_ HUMN -3.69% / KOID -3.27% 同向；KWEB -1.42% 中国资产整体弱
+- Proactive / Yahoo: Miners lead London fallers as weak China data and metal prices hit sector
+
+**Cross-assets.** SPY -1.83% · VIX 23.06 · 10Y 5.12 · WTI 85.49 · DXY 103.57
+
+**Agent read.** CROB 的 0.18x 量比使其价格信号基本不可用。它 30d 只跌 4.59% 不应被读作强度。这个标的的跟踪价值目前主要在于「中国机器人供应链的可及性」这个结构性问题，而非日度价格 — 建议按低频(周/月)而非日度跟踪，以免低流动性噪音污染板块判断。
+
+
+---
 ### 2026-11-10 · +0.51% day · ▲ minor
 **Tags:** `sector_rotation`, `macro_dollar`, `policy_china`
 **Confidence:** low
