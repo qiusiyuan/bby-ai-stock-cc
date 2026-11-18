@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · -2.53% day · ▼ material
+**Tags:** `sector_rotation`, `m_and_a`, `macro_rates`
+**Confidence:** medium
+
+**Primary cause.** **−2.53%，5d −14.11%，30d −49.06% 为 AI capex 板块内最深回撤; thesis-break $200 击穿扩大至 −27.51%。**||**今天最有信息量的一点: MRVL 没有参与「不是 NVIDIA」的上涨。** 同日 AVGO +3.39% / AMD +3.34% / AMZN +3.80%，而 MRVL −2.53% —— 市场不把它算作 NVDA 替代方案的受益者。这与 11/16 记录的机制一致: MRVL 的问题是**自我强化下行循环**(NVDA 收回给客户的 AI 融资 → MRVL 全股票收购 Lumentum 的对价从 $1,132 跌到 $657 → 收购可信度下降 → 股价再跌)。这个循环与 AI 需求强弱无关，所以 NVDA 的 $130B 指引救不了它。||**破位但无任何预设 kill condition 触发** —— 与 SNDK/INTC/NOK 构成连续第三份报告出现的同一组合(价格破位与 kill condition 系统性错配)。||**12/01 财报是四只破位股里第一个基本面裁决点**，也是 Lumentum 对价循环能否止住的唯一硬数据。||位置: $144.97，量比 0.44x。
+
+**Sources.**
+- _Corroboration:_ AVGO +3.39% / AMD +3.34% 上涨而 MRVL −2.53% = 不被算作替代方受益者; ^SOX +0.05%
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** MRVL 是「不是 NVIDIA」主题的反例: 它同属定制芯片/AI 互联，却在替代方大涨日下跌。原因是其跌因是并购对价循环而非竞争地位。12/01 财报是裁决日。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -6.14% day · ▼ material
 **Tags:** `m_and_a`, `policy_us`, `regulatory_negative`
 **Confidence:** high

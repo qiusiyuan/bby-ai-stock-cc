@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · +0.83% day · ▲ minor
+**Tags:** `macro_rates`, `sector_rotation`, `unattributed`
+**Confidence:** low
+
+**Primary cause.** 5d −12.27% 越线(当日 +0.83%)。**无 ETF 级或成分级新闻，信心 low。**||**驱动单一且清晰: 折现率。** 三只人形 ETF 5 日全部跌超 9%(HUMN −12.27% / CROB −13.86% / KOID −9.09%)而同期 QQQ −4.19%，跑输 5–10 个百分点。这个板块现金流全在远期(Optimus 量产、人形出货、减速器需求)，当期盈利为零 —— 久期最长，对折现率最敏感。12 月加息概率从 11/09 的 66.9% 升到今日 95%，正好对应三只跑输最多的窗口。**它们比 SPCX、比 SNOW 更敏感，因为连收入都还没有。**||**「人形纯度」排序今天不成立，但要打折扣**: 11/12 记录过跌幅与纯度完全反向且连续第三次成立(HUMN 最纯跌最多)。今天排序是 KOID +0.90% > HUMN +0.83% > CROB −1.65%。但三只量比分别 0.31x / 0.35x / 0.27x，是全部 34 只标的里最低一档 —— 不到 1 个百分点的排序差异没有统计意义。**正确读法: 今天三只基本持平，纯度排序既未成立也未被推翻。**||30 日口径仍支持纯度假说: HUMN −14.83%(最纯，最差) / KOID −13.44% / CROB −8.75%。||板块结构性错配未变: 最纯的内容(中国减速器供应链)美股账户买不到; 买得到的三只里内容最稀的流动性反而相对最好。
+
+**Sources.**
+- _Corroboration:_ KOID +0.90% / CROB −1.65% 同组; QQQ 5d −4.19% vs 三只 −9% 至 −14%; 12 月加息概率 95%
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** 这个板块当前只有一个变量在定价(折现率)，所以 12/09 FOMC 的点阵图与终端利率措辞是唯一值得等的事。量比 0.27–0.35x 意味着这三只的价格信号质量本身就低 —— 不要用 1 个百分点内的日度差异做任何判断。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -3.69% day · ▼ material
 **Tags:** `sector_rotation`, `unattributed`
 **Confidence:** low

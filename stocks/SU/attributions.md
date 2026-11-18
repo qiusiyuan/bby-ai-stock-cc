@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · -4.66% day · ▼ material
+**Tags:** `macro_oil`, `commodity_move`
+**Confidence:** high
+
+**Primary cause.** −4.66%，与 CNQ(−4.84%) / CVX(−4.43%) 高度一致，三只跌幅集中在 0.4 个百分点区间内 —— 全部由 WTI −4.73% 解释，无 SU 特有催化剂。||驱动同源: 供给过剩展望 + 霍尔木兹风险溢价消退 + 美国原油库存上升; 同日报道确认「中东动荡加剧而油价仍跌」，地缘腿被主动定价为不重要。||**SU 的位置介于纯上游与综合型之间，与其业务混合度一致**: 30 日 −4.55%，略好于纯上游 CNQ(−4.36% 实际略差)但远不如综合型 CVX(+0.68%)。30 日归一化曲线显示 SU 在 10/30 见顶 112.0 后持续回落至今天的 91.7。||30 日仅 −4.55% 说明这是单日事件而非趋势破坏。||**位置**: $65.04，距 thesis-break $42 缓冲 **+54.86%**，是能源三只里最安全的。
+
+**Sources.**
+- _Corroboration:_ CNQ −4.84% / CVX −4.43% 同向; WTI −4.73%
+- Investing.com: Oil slides on surplus outlook as Hormuz risk premium fades
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** 无 SU 特有信息，本条主要作为能源板块同步性的记录。三只 1 日跌幅的 0.4pp 离散度极低 = 纯商品传导，无个股分化。分化只出现在 30 日口径的业务结构上。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-10 · +0.20% day · ▲ minor
 **Tags:** `macro_oil`, `geopolitical_war`, `macro_rates`
 **Confidence:** high

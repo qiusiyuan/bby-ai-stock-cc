@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · +3.39% day · ▲ material
+**Tags:** `sector_rotation`, `competitor_news`, `earnings_print`
+**Confidence:** high
+
+**Primary cause.** **+3.39% 且 5d +2.30% 为全持仓唯二正值; 30d 仅 −6.20% 是供给方里唯一接近持平的 —— custom ASIC 替代叙事的主要承接方。**||**驱动**: NVDA 毛利率指引 74.9% → 71–72% 被读作「增量 AI 营收的利润会更分散」，AVGO 作为 custom silicon 龙头(TPU / Trainium / MTIA)是直接受益方。同日另有报道做「Broadcom 的现金状况优于 NVDA」的对比。||**归一化曲线是本条最有信息量的部分**: 30 日归一化看，AVGO 在 **11/05 触底 80.9 后持续抬升，今天回到 98.96 —— 接近回到 30 天前的起点**，而 NVDA 的曲线从 10/08 起几乎单调下行至 65.99。两条线在 11/05 之后彻底分叉。||**未被回答的质疑**: 11/13 Rothschild & Co Redburn 以「客户付不起」把 AVGO 下调至 Neutral(PT $595→$398)，当日 AVGO −4.93%。这条质疑**没有被回答，只是被价格暂时压过去了**。它的裁决日是 **12/09 财报** —— 而那天同时是 12 月 FOMC 决议日与 SPCX 解禁日，三事件叠加，当天价格无法单独归因。||**位置**: $353.18，距 thesis-break $300 缓冲 **+17.73%** —— 在一个上涨日里仍是全持仓第四近的破位缓冲，说明 30 天前的高位距今仍有距离。量比 0.52x。
+
+**Sources.**
+- _Corroboration:_ ^SOX +0.05%; AMD +3.34% / AMZN +3.80% 同向; NVDA −2.19%
+- Yahoo Finance: Broadcom's Cash Holds Up Better Than Nvidia's
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** AVGO 是当前「利润池再分配」叙事里仓位最拥挤的一只(5d 唯二正值、30d 供给方最佳)。但 11/13 Redburn 的「客户付不起」是一条针对其客户融资能力的结构性质疑，未被任何数据回答。12/09 财报是裁决日，而它与 FOMC/解禁同日 —— 不要用当天价格判断财报好坏。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -3.95% day · ▼ material
 **Tags:** `policy_us`, `analyst_downgrade`, `regulatory_negative`
 **Confidence:** high

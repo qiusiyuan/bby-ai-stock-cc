@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · +0.07% day · ▲ minor
+**Tags:** `sector_rotation`, `unattributed`
+**Confidence:** low
+
+**Primary cause.** 5d −10.01% 越线(当日 +0.07%，基本持平)。**无任何 NOK 特有催化剂，信心 low。**||thesis-break $9 击穿 −15.61%，属「破位但无预设 kill condition 触发」四只之一(与 MRVL / SNDK / INTC 同组)，连续第三份报告出现同一组合。||30d −28.48%。唯一相关的前瞻事件是 **2026-12-15 FCC 6GHz 频谱窗口**(估计日期)，这是 NOK 与 SPCX 共同的政策催化点。||位置: $7.59，量比 0.45x。下一财报 2027-01-28。
+
+**Sources.**
+- _Corroboration:_ 无公司级新闻; QQQ +0.69% 而 NOK +0.07%
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** NOK 连续多日无催化剂、低量、破位状态。这条线的信息产出在下降 —— 若未来三次仍为「破位 + 无催化剂 + 不改变任何决策」，应提议降级为简表行而不再逐日归因。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -3.10% day · ▼ material
 **Tags:** `sector_rotation`, `partnership_news`
 **Confidence:** low

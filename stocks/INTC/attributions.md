@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · -0.96% day · ▼ material
+**Tags:** `sector_rotation`, `unattributed`
+**Confidence:** low
+
+**Primary cause.** −0.96%，5d −12.58%，**30d −51.70% 为全组合个股最大一个月跌幅**; thesis-break $75 击穿 −27.15%。||**今日无 INTC 特有催化剂，信心 low。** 但一个观察值得记: INTC 同样**没有参与**今日「不是 NVIDIA」的上涨(AVGO/AMD/AMZN 涨 3.3–3.8%)。NVDA 把 Q4 毛利率指引砍到 71–72% 对 INTC 的代工叙事理论上是中性偏利好(供应链成本上行说明先进封装/HBM 产能紧张，利好第二供应源)，今天完全没有体现。||这与 11/12 的记录一致: 当日 NVDA −4.58% 而 INTC −0.74% 同跌，被用作「零和再分配而非 AI 总量重估」的证据。今天 ^SOX +0.05% 第三次给出同一结论，INTC 再次是零和的另一端。||已记录的问题仍未解除: 代工转型尚无客户确认 + 11/16 的股东集体诉讼(指控 PC 业务放缓的信息披露问题)。||**破位但无预设 kill condition 触发**，属连续第三次出现的错配组合。||位置: $54.64，量比 0.40x。
+
+**Sources.**
+- _Corroboration:_ ^SOX +0.05%; AVGO +3.39% / AMD +3.34% 上涨而 INTC −0.96%
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** INTC 连续多次在替代方上涨日下跌，说明市场不把它算在任何一个受益方阵营里 —— 既不是 NVDA 的替代，也不是供应链的受益者。这是比价格更重要的定性信息。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -6.52% day · ▼ material
 **Tags:** `regulatory_negative`, `policy_us`, `sector_rotation`
 **Confidence:** high

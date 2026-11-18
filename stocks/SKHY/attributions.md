@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · -0.24% day · ▼ material
+**Tags:** `memory_pricing`, `earnings_print`, `regulatory_negative`
+**Confidence:** high
+
+**Primary cause.** **5d −14.02% 越线。SKHY 是内存复合体里距破位最近的一只(距 $115 缓冲 +6.36%)，因此是双股联动破位的先行指标。**||与 MU 同源: NVDA Q4 指引 $130B(+12.3% QoQ)证实 HBM 需求，且其毛利率指引 74.9% → 71–72% 的成本上行里 HBM 采购价被点名 —— 这在 SKHY 的表里是价格实现。但复合体整体只是企稳未重估，因为约束条件在另外两轴(远程访问新规、DRAM 价格操纵诉讼)，今天两条都没动。||**11/16 的两条利好仍未被定价**: 80% 毛利率 + ₩100 万亿派息，当日 SKHY 仍 −5.60%。今天 −0.24%，仍未反映。||**kill condition 状态**: 第一条「Samsung 通过 NVIDIA HBM3E/HBM4 认证」—— 无任何确认信息; 第三条「hyperscaler capex 指引集体同比削减 >20%」—— 今日 NVDA $130B 指引指向反向。三条全未触发。||**与 Samsung 的横比不可靠**: Samsung(005930.KS) 5d 仅 −2.11% vs SKHY −14.02%，差 12 个百分点，表面像份额转移信号。但首尔收盘时点早于美股，其日度口径读的是前一日美股，**跨市场短周期横比不可用**。30 日口径才可比: Samsung −29.46% vs SKHY −31.38% vs MU −35.30%，三者差距收窄到 6 个百分点以内，**无显著份额分化证据**。||**位置**: $122.31。30 日归一化曲线显示 SKHY 全程最抗跌(今天 71.55 vs MU 67.79 vs DRAM 68.70)，但它距破位最近 —— 抗跌与安全不是同一件事，破位距离取决于预设水位而非跌幅。
+
+**Sources.**
+- {"type": "primary", "title": "NVIDIA Q3 FY2027: Q4 revenue guide $130.0B", "publisher": "NVIDIA"}
+- _Corroboration:_ MU −1.21% / Samsung −1.07% / DRAM +0.51% 同步企稳
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** SKHY 距破位 +6.36% 是复合体的先行信号 —— 它跌破 $115 将先于 MU 跌破 $650。注意区分「抗跌」与「安全」: SKHY 30 日跌幅最小但距破位最近，因为两者由不同东西决定。按用户此前要求，ADS 对首尔的溢价/折价这条线已剔除，不再逐日计算。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -5.60% day · ▼ material
 **Tags:** `regulatory_negative`, `policy_us`, `memory_pricing`
 **Confidence:** high

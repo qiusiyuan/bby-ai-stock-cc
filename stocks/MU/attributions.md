@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · -1.21% day · ▼ material
+**Tags:** `memory_pricing`, `earnings_print`, `regulatory_negative`, `macro_rates`
+**Confidence:** high
+
+**Primary cause.** **5d −13.25% 越线。本条的核心是: 内存复合体今天拿到了它最想要的那份需求证据，然后几乎没动(MU −1.21%)。**||**需求端被第三方完整证实**: NVDA 把 Q4 营收指引上调到 **$130.0B ±3%**(环比再 +12.3%)，且这个数字假设中国数据中心算力收入为零。要交付 $130B 的加速器，HBM 用量是机械推导出来的 —— 这是内存能拿到的最硬的需求确认，来自客户自己的公开指引而非卖方预测。||**更直接的是毛利率**: NVDA 把 Q4 毛利率指引从本季实际 74.9% 下调到 **71–72%**(约 3 个百分点，按 $130B 计约 $39 亿毛利)，成本上行来源里 HBM 采购价被反复点名。**同一笔钱，在 NVDA 的表里是成本压缩，在 MU 的表里是价格实现。** 这是本轮周期里买卖双方第一次在同一份文件里把这件事量化。||**MU 的预设 re-read trigger 被反向触发**: triggers.yaml 写着「**NVIDIA guide down materially on Blackwell shipments — reduces HBM demand pull**」。今天 NVDA 不是 guide down，是 guide up 12.3%。预警线的设计方向是对的，而现实走了它的反面 —— 在这条线上 MU 的 thesis 得到支持。||**但为什么股价不涨: 约束条件已经换了。** 11/16 之后复合体同时承受三条独立风险轴 —— (1) **需求/周期**: 今日被 NVDA 证实，是唯一改善的一轴; (2) **监管/出口管制**: 11/16 远程访问新规未解除，今日无新信息; (3) **法律**: DRAM 价格操纵集体诉讼未获驳回(法官让「三家协同削减常规 DRAM 产量抬价」的指控进入实体审理)，未解除。||**第三轴造成一个不对称**: 它质疑的不是涨价能否持续，而是**涨价本身是否合法**。需求越强、价格实现越好，潜在损害赔偿基数越大。所以 NVDA 今天证实的高 HBM 价格，对第一轴是利好，对第三轴却是加码 —— 两条轴互相抵消，这解释了为什么需求确认没换来重估。||**破位风险是双股联动的**: MU 距 $650 缓冲 **+8.28%**，SKHY 距 $115 缓冲 +6.36%，两只都在 10% 警戒带内。它们由同一组驱动决定，不会独立触发; SKHY 更近，是先行指标。||**位置**: $703.79，30 日归一化曲线显示 11/05 触底 63.4 后两次反弹均未站稳前高(10/28 的 94.9)。
+
+**Sources.**
+- {"type": "primary", "title": "NVIDIA Q3 FY2027: Q4 revenue guide $130.0B, Q4 GM guide 71-72% vs 74.9% actual", "publisher": "NVIDIA", "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"}
+- _Corroboration:_ SKHY −0.24% / Samsung −1.07% / DRAM ETF +0.51% 同步企稳; SNDK −2.39% 为 NAND 独立故事
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** 需求不是当前的约束条件 —— 这是今天最该留下的结论。三轴里只改善一轴，不足以构成重估。下一个硬数据是 12/23 MU 财报的 HBM 定价与毛利率，它是把 NVDA 成本压缩翻译成 MU 收入的唯一途径。同时要跟 DRAM 价格操纵诉讼的实体审理进展，它决定第三轴收敛还是扩大。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -6.65% day · ▼ material
 **Tags:** `regulatory_negative`, `policy_us`, `memory_pricing`
 **Confidence:** high

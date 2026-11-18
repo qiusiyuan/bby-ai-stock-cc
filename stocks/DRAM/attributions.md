@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · +0.51% day · ▲ minor
+**Tags:** `memory_pricing`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** **5d −12.75% 越线(当日 +0.51%) —— 内存篮子 ETF 是今天复合体里唯一转正的，而主要成分 MU(−1.21%) / SKHY(−0.24%) / Samsung(−1.07%) 全部微跌。**||ETF 涨而主要成分跌，指向**非 HBM 权重在支撑** —— 篮子里常规 DRAM/模组/设备类成分今天强于 HBM 三巨头。这与当日叙事一致: NVDA 证实的是 HBM 需求，而 HBM 三家同时承受远程访问新规与价格操纵诉讼两条风险轴，非 HBM 成分不受这两条影响。||30 日归一化曲线显示 DRAM 居中(今天 68.70，MU 67.79 / SKHY 71.55 / SNDK 48.12)，作为篮子读数行为正常。||对照 11/16: 当日 DRAM −6.33% 跌幅**大于**其绝大多数成分，当时读作双重打击(价格操纵诉讼 + 远程访问新规)的放大。今天反向 —— ETF 比成分强。两次方向相反说明 ETF 与成分的偏离没有稳定方向，不宜用偏离本身做信号。||位置: $39.13，无 thesis_break_price(ETF/tracker 格式)。
+
+**Sources.**
+- _Corroboration:_ MU −1.21% / SKHY −0.24% / Samsung −1.07% 全跌而 DRAM +0.51%
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** DRAM ETF 与成分股的偏离在 11/16(ETF 跌更多)与今天(ETF 涨而成分跌)方向相反 —— 所以这个偏离不是可用信号，只能用来识别「哪部分权重在动」。本次指向非 HBM 成分。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -6.33% day · ▼ material
 **Tags:** `regulatory_negative`, `policy_us`, `memory_pricing`, `flow_event`
 **Confidence:** high

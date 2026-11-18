@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · +3.80% day · ▲ material
+**Tags:** `sector_rotation`, `competitor_news`, `earnings_print`
+**Confidence:** high
+
+**Primary cause.** **+3.80% 为全组合最大涨幅，且 30d +2.99% 是开支方里仅次于 AAPL 的本月表现 —— AMZN 是「不是 NVIDIA」交易第三次出现时的最大受益者。**||**驱动**: NVDA 昨夜 Q3 FY27 交出营收 +103% YoY 但把 Q4 毛利率指引从 74.9% 砍到 71–72%。市场的解读是「AI 需求是真的，但 NVDA 在利润池里的份额不安全」—— 让出的毛利流向供应链(HBM 卖方)与替代方案(custom ASIC)。AMZN 在这个结构里双重受益: 既是自研 Trainium 的替代路径方，又是算力买方(NVDA 单位成本上升不等于 AMZN 支出上升，但 custom silicon 让它有议价权)。||**零和结构第三次被同一指标确认**: ^SOX 今日仅 **+0.05%**。半导体整体持平而内部 AVGO +3.39% / AMD +3.34% 对 NVDA −2.19% / MRVL −2.53% —— 这是客户份额零和再分配，不是 AI 总量重估。如果市场在上调 AI 总需求，^SOX 不会持平。这个判别轴 11/12 首次使用(当日 TSM −1.34% / INTC −0.74% 同跌证明零和)，今天第三次有效。||**与 11/12 的关键区别**: 11/12 的同类交易在一天后(11/13)被完整撤回(AMD −9.20% / AVGO −4.93%)，因为它建立在治理冲击(CEO 离任)上 —— 那是对 NVDA 的怀疑而非对替代方的论证，仓位调完即回吐。今天的再分配发生在 NVDA 基本面被完整证实的当天，有毛利率让渡作为具体依据，性质更结构化。||**开支方内部 22 个百分点的分化**: AMZN 30d +2.99% / MSFT −3.94% / META −14.45% / GOOG −19.40%。市场不再把 hyperscaler 当成一类资产 —— AMZN 与 MSFT 抗跌(零售/企业软件现金流能自付 capex)，GOOG 与 META 被重罚。||**位置**: $267.70，距 thesis-break $185 缓冲 +44.70%; 量比 0.47x(盘中口径) —— 涨幅不是靠放量堆出来的。
+
+**Sources.**
+- {"type": "primary", "title": "NVIDIA Q3 FY2027 results: Q4 GM guide 71-72% vs 74.9% actual", "publisher": "NVIDIA"}
+- _Corroboration:_ ^SOX +0.05% 持平 = 零和; AVGO +3.39% / AMD +3.34% 同向; NVDA −2.19%
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** ^SOX 持平是本条最该保留的一个数字。以后每次出现「某 NVDA 替代方大涨」，先看 ^SOX: 板块涨 = 总量叙事，板块平 = 零和再分配。这是一个单指标、低成本、三次有效的判别工具，保留。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -3.08% day · ▼ material
 **Tags:** `sector_rotation`, `partnership_news`
 **Confidence:** medium

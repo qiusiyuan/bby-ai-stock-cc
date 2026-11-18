@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · -4.43% day · ▼ material
+**Tags:** `macro_oil`, `commodity_move`
+**Confidence:** high
+
+**Primary cause.** **−4.43% 跟随 WTI −4.73%，但 30 日 +0.68% 是能源三只里唯一为正 —— 这是业务结构而非估值的证据。**||驱动与 CNQ/SU 同源: 供给过剩展望 + 霍尔木兹风险溢价消退 + 美国库存上升，且同日有报道确认「中东动荡加剧而油价仍跌」(地缘腿失效)。||**结构性对冲的量化**: CVX 30d +0.68% vs CNQ −4.36% / SU −4.55%，差距约 5 个百分点; 30 日归一化曲线显示 CVX 在 11/05 之后始终贴着 100 线横盘，而 SU/CNQ 跌到 92–97 区间。机制是综合型内生对冲 —— 原油下跌压缩上游收入，但同时扩张炼化的裂解价差(下游的投入成本就是原油)。三只的破位缓冲都在 47.54%–54.86% 的同一区间，所以这不是估值差异。||**实用含义**: 在一个「地缘腿失效、供需腿指向过剩」的环境里，综合型结构优于纯上游。这条判断的下一个验证点是 **2027-01-29 CVX 财报**的炼化段表现。||**位置**: $206.55，距 thesis-break $140 缓冲 +47.54%。
+
+**Sources.**
+- Investing.com: Oil slides on surplus outlook as Hormuz risk premium fades
+- _Corroboration:_ CNQ −4.84% / SU −4.66% 同向但 30 日分别 −4.36%/−4.55% vs CVX +0.68%
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** CVX 的 30 日为正给出了一个可复用的结论: 油价下行周期里，下游炼化敞口是真实的内生对冲，值约 5 个百分点/月。这不是估值保护，是业务组合保护 —— 所以它在油价继续下跌时会持续生效。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-04 · -3.69% day · ▼ material
 **Tags:** `macro_oil`, `geopolitical_war`
 **Confidence:** high

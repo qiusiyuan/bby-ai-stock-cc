@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · +3.34% day · ▲ material
+**Tags:** `sector_rotation`, `competitor_news`, `earnings_print`
+**Confidence:** high
+
+**Primary cause.** **+3.34% 是份额再分配的直接对象，但只收复了本周跌幅的一半多(5d 仍 −5.91%)。**||驱动与 AVGO/AMZN 同源: NVDA 毛利率指引下调被读作利润池分散，AMD 作为最直接的 GPU 替代方受益。||**波动性是全持仓最高档**: 11/12 +5.22% → 11/13 **−9.20%**(本周一度 +30%，单日交还约一半) → 11/16 −4.88% → 今日 +3.34%。30 日归一化曲线显示 11/05 见底 65.2 后反弹近 30% 至 84.1，但仍远低于起点。这种幅度的来回说明 AMD 上的仓位是交易性的而非配置性的 —— 它是「不是 NVIDIA」主题里 beta 最高的表达方式，也是最容易被完整撤回的那一个。||**11/13 的教训仍然有效**: 那天 AMD 跌 9.20% 而 NVDA 只跌 2.22%，证明 11/12 的再分配定价的是仓位不是现金流。今天的 +3.34% 相对克制(远小于 11/12 的 +5.22%)，可能说明市场这次的加仓更谨慎 —— 但也可能只是盘中尚未走完。||**位置**: $520.24，距 thesis-break $380 缓冲 +36.91%; 量比 0.66x。
+
+**Sources.**
+- _Corroboration:_ ^SOX +0.05%; AVGO +3.39% / AMZN +3.80% 同向; NVDA −2.19%; 11/13 AMD −9.20% 为完整撤回先例
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** AMD 是这个主题里最不该追的一只: 11/12→11/13 已演示过单日交还一半涨幅。它的 30d −19.45% 与 AVGO 的 −6.20% 相差 13 个百分点，说明市场给 custom ASIC(AVGO)的信任度高于通用 GPU 替代(AMD)。排序上 AVGO 优于 AMD。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -4.88% day · ▼ material
 **Tags:** `policy_us`, `regulatory_negative`, `m_and_a`
 **Confidence:** high

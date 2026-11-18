@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · -2.39% day · ▼ major
+**Tags:** `memory_pricing`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** **5d −20.40% / 30d −54.02%，均为全组合最深 —— 但关键是 SNDK 不属于 HBM 周期读数，必须单独归因。**||**定位区分**: SNDK 是 NAND 而非 DRAM/HBM。NVDA 今日证实的 HBM 需求**不直接传导到 NAND**; 11/16 的 DRAM 价格操纵集体诉讼也**不涉及 NAND**。所以把 SNDK 的 −54% 算作内存周期或 HBM 故事的读数是错的。||**30 日归一化曲线明显脱离另外三条**: SNDK 今天 48.12，而 MU 67.79 / SKHY 71.55 / DRAM 68.70。腰斩后再无修复，而另三条在 11/11、11/12、今日有三次反弹尝试。这个形态差异本身就是「独立故事」的证据。||**基本面与价格完全脱钩且方向相反**: 10/29 财报 Tier 1 两项可测门槛全部超出上沿(营收 $11,031M vs 承诺上沿 $10.8B; 非 GAAP EPS $49.51 vs 上沿 $46)，毛利率 85.0% 继续上行而非回落，datacenter +61% QoQ —— 评分 verdict 为 validated。此后连续下跌: 11/12 −4.15% → 11/13 −7.44% → 11/16 −7.53% → 今日 −2.39%，期间零公司级坏消息。唯一的坏消息是 Consumer −29% QoQ / −39% YoY(坐实 kill#3 后半边)。||**⚠️ 数据口径错误(连续第五次提示未执行)**: SNDK 于 **2026-11-20 执行 8 拆 1**。拆股后必须把 triggers.yaml::thesis_break_price 由 1200 改为 **150**，并把 thesis/digest 内所有绝对价位除以 8。**在修正之前，本条记录的破位缓冲 −35.15% 是错的**，且系统性偏向「已深度破位」方向。
+
+**Sources.**
+- _Corroboration:_ MU −1.21% / SKHY −0.24% / DRAM +0.51% 企稳而 SNDK 独跌 2.39%，30 日曲线脱离复合体
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** 两条要记: (1) SNDK 不能当 HBM 读数，它是 NAND，30 日曲线形态已与复合体脱离; (2) 11/20 拆股调整是一个有确定日期、改动极小、不改就出错的动作，已提示五次未执行 —— 「在报告里提示」对这类任务无效，应改为在 timeline.yaml 标 action_required 并让 /report 在未调整前直接显示 n/a 而不是输出已知错误的缓冲值。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -7.53% day · ▼ major
 **Tags:** `sector_rotation`, `regulatory_negative`, `memory_pricing`
 **Confidence:** medium

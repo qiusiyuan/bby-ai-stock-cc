@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · +0.85% day · ▲ minor
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **记录原因不是 +0.85% 的涨幅，是 GOOG 今天触破 thesis-break $280(收 $279.97，缓冲 −0.01%) —— 而且是在上涨日破位。**||**破位的性质**: 不是今天的卖盘造成的。11/16 时缓冲还有 +0.96%，是过去 30 天 −19.40% 的累积结果刚好在今天穿线。这类破位没有可归因的当日事件，所以不会出现在任何单日归因里 —— 它只能通过触发器扫描发现。||**三条预设 kill condition 无一触发，而且无一相关**: (1) 搜索查询量连续两季同比下降(AI 替代确认) — 无证据; (2) DOJ 赢得结构性救济(强制出售 Chrome/Android 或拆分搜索与广告) — 无新信息; (3) Google Cloud 连续两季流失份额给 AWS/Azure — 无证据。四条 re_read_triggers 里只有最泛的那条触发(「无明显消息下跌超 15%」)，其余三条(财报不及预期、搜索营收增速低于 6%、Gemini 落后一代超 12 个月)全未触发 —— 事实上 11/16 的卖方论述把 GOOG 称为「可能是最完整的 NVIDIA 替代方案」(自研 TPU 垂直整合)，与「Gemini 落后」正好相反。||**实际跌因**: 折现率 + 板块倍数压缩。12 月加息概率从 11/09 的 66.9% 升到今天 95%，GOOG 作为 AI capex 开支方被按「资金成本上升」重估。这一维度**完全不在预设清单内**。||**所以机械执行与机械忽略都是错的。** 正确动作是重写触发条件，让它包含资金成本/倍数压缩维度。这是触发器错配的第 5、6 个案例(另一个是同日的 GEV)，模式已稳定: 长久期标的的 kill condition 全写在竞争/运营维度，而加息周期里主导价格的是折现率，结果预设条件在最需要它的时候全部沉默。||**口径**: triggers.yaml 注释写「~24% below current」已严重过时(现价对 $280 实际为 0%)，绝对价位 $280 仍有效，注释百分比不可引用。||**开支方内部分化**: AMZN 30d +2.99% vs GOOG −19.40%，相差 22 个百分点。区分点不是 capex 规模，是自研算力路径可信度与现金流即时性 —— AMZN 有 Trainium 且零售现金流自付 capex; GOOG 虽有 TPU 但被按 AI capex 风险敞口定价。
+
+**Sources.**
+- _Corroboration:_ 同日 AMZN +3.80% / MSFT +0.53% / META −0.29%; 12 月加息概率 95%(24/7 Wall St.)
+- 24/7 Wall St.: Traders Now See a 95% Chance the Fed Hikes Rates in December
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** 本条的价值全在触发器设计上，不在价格上。GOOG 的 thesis 没有被这 30 天的下跌证伪 —— 搜索、Cloud、反垄断三条线都没有坏消息。被证伪的是 triggers.yaml 的设计: 它无法区分「个股 thesis 坏了」与「整个板块被重新折现」。建议补两条: 30 日跌幅超 X% 且板块 ETF 跌幅小于其一半 → 个股问题，重读 thesis; 30 日跌幅超 X% 且板块同步 → 倍数压缩，不触发卖出但记录一次。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -3.36% day · ▼ material
 **Tags:** `policy_us`, `sector_rotation`
 **Confidence:** medium

@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · +0.31% day · ▲ minor
+**Tags:** `earnings_print`, `policy_china`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** **5d −12.71% 越线(当日 +0.31%)。本条的价值在一个被 NVDA 财报降低的风险。**||NVDA 的 Q4 营收指引 $130.0B 明确**假设中国数据中心算力收入为零**。这意味着中国这块已经被从 NVDA 的模型里完整拿掉 —— 对 TSM 而言，**这反而降低了未来出口管制消息的边际杀伤力**: 如果最大客户的指引里中国已经是零，再出新的对华管制就不会再砍一次它的代工订单预期。||对照 11/16: 当日 TSM −5.39% 是「好消息完全无效」最干净的样本 —— 十月营收同比 **+59.7% 创 2026 年新高**、与 GlobalFoundries 的合作等三条利好同日被无视，股价仍跌 5.39%。今天 +0.31% 是企稳，但 5 日仍 −12.71%。||**同日另一个零和证据**: TSM +0.31% 基本持平，而 AVGO +3.39% / AMD +3.34% 大涨。TSM 为所有这些芯片代工 —— 如果市场在上调 AI 总量，TSM 应该跟涨。它不涨，再次确认今天是客户份额零和再分配(^SOX +0.05%)。||位置: $360.81，距 thesis-break $280 缓冲 **+28.86%**。下一催化剂 2027-01-14 财报。
+
+**Sources.**
+- {"type": "primary", "title": "NVIDIA Q4 FY27 guide assumes no Data Center compute revenue from China", "publisher": "NVIDIA"}
+- _Corroboration:_ ^SOX +0.05%; AVGO/AMD 涨 3.3%+ 而 TSM 仅 +0.31% = 零和第三次确认
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** NVDA 把中国归零这件事对 TSM 是风险对冲 —— 出口管制的边际杀伤力下降，因为最大客户的预期里已经不含中国。这是一个容易被当成纯利空的事件里的利多侧面，值得保留。TSM 的不涨同时是零和判别轴的第三个证据点。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -5.39% day · ▼ material
 **Tags:** `policy_us`, `regulatory_negative`, `sector_rotation`
 **Confidence:** high

@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · -4.84% day · ▼ material
+**Tags:** `macro_oil`, `commodity_move`, `geopolitical_war`
+**Confidence:** high
+
+**Primary cause.** **−4.84% 为全组合最大跌幅。WTI 单日 −4.73% 至 $81.94 基本解释全部跌幅 —— 但真正该记的是地缘这条腿失效了。**||**油价下跌的三条公开理由**: 供给过剩展望、霍尔木兹海峡风险溢价消退、美国原油库存上升(Investing.com / Oilprice.com)。三条都是常规周期性利空。||**第四条才是关键，且方向相反**: 同日另有报道「加拿大商品: 中东动荡加剧，但油价仍跌」(MT Newswires)。这说明市场今天不是因为地缘缓和而卖油，而是**在地缘恶化的同时仍然卖油** —— 地缘风险不是消失了，是被主动定价为不重要了。||**判别轴(可复用)**: 如果油价在冲突升级的同时下跌，驱动力就在供给端和需求端，不在地缘端。过去数月能源持仓看涨论证里一直有「伊朗/霍尔木兹」这条腿，今天被市场自己否掉。剩下的论证只有供需，而当前供需的公开展望是过剩。||**汇率是双向的，不构成第二重打击(本条的一个修正)**: USD/CAD 正好在 52 周高 1.43，加元处过去一年最弱。但对加拿大上游而言三条渠道互相对冲 —— 收入端中性(原油以美元定价); 成本端利好(运营成本以加元发生，加元弱则美元成本下降，毛利率扩张); 股价折算利空(NYSE 价格跟随 TSX 按即期汇率折算)。净效果模糊。今天 CNQ 的 −4.84% 基本全部由 WTI 的 −4.73% 解释，汇率不是独立驱动因子。||**三只的结构差异(30 日口径)**: CNQ −4.36% / SU −4.55% / **CVX +0.68%**。CVX 是唯一 30 日为正的 —— 综合型(上游+下游炼化+化工)在原油下跌时炼化裂解价差扩张形成内生对冲。30 日归一化曲线显示 CVX 在 11/05 后始终贴着 100 线，而 SU/CNQ 跌到 92–97。这 5–8 个百分点的间距是业务组合差异，不是估值差异(三只破位缓冲都在 47–55% 的同一区间)。**CNQ 是三只里对 WTI beta 最高的，也是过剩环境里最脆弱的。**||**位置**: $45.43，距 thesis-break $30 缓冲 **+51.43%** —— 这是周期波动，不是 thesis 问题。
+
+**Sources.**
+- Investing.com: Oil slides on surplus outlook as Hormuz risk premium fades
+- MT Newswires: Canada Commodities: Crude Oil Prices Lower Despite Increased Unrest in The Middle East
+- Oilprice.com: US Oil Inventories On the Rise
+- _Corroboration:_ SU −4.66% / CVX −4.43% 同向; WTI −4.73%; USD/CAD 1.43 在 52 周高
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** 不要再把伊朗/霍尔木兹当作能源持仓的看涨依据 —— 今天市场在中东动荡加剧的同时把油价卖下 4.73%，这条腿已被明确否掉。唯一能反转「过剩」叙事的是 OPEC+ 的供给端行动(无日期)。若要在三只里排序: 综合型(CVX)在过剩环境下结构优于纯上游(CNQ)，30 日 5 个百分点差距是直接证据。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-10 · +0.12% day · ▲ minor
 **Tags:** `macro_oil`, `geopolitical_war`, `macro_rates`
 **Confidence:** high

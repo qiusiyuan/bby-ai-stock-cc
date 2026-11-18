@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-18 · -2.19% day · ▼ material
+**Tags:** `earnings_print`, `guidance_inline`, `sector_rotation`, `executive_comment`
+**Confidence:** high
+
+**Primary cause.** **Q3 FY27 四项全面超标，唯一下调的是毛利率指引 —— 而股价跌到自己 bear 目标价 $150 上方 1.37%。**||**实际数字(公司新闻稿)**: 营收 $115.8B (+20% QoQ / **+103% YoY**，上年同期 $57.0B); Data Center $107.6B (+21% QoQ / +110% YoY，占总营收 92.9%); non-GAAP EPS $2.68 (+111% YoY); non-GAAP 毛利率 74.9% (环比 −0.1pt，基本持平)。**Q4 指引营收 $130.0B ±3%(环比再 +12.3%)，且明确假设中国数据中心算力收入为零。**||**唯一的坏数字**: Q4 毛利率指引 **71.0–72.0%**，相对本季 74.9% 砍掉 2.9–3.9 个百分点。按 $130B 营收计约 $39 亿毛利，几乎等于一个季度的全部运营费用(指引 $107 亿)。市场的读法不是「需求不行」而是「这一轮增量营收的单位经济性在变差」—— Vera Rubin 爬坡成本、HBM 采购价上行(与 DRAM/HBM 涨价是同一枚硬币两面)、以及中国归零前提下仍需维持的供应链冗余。||**治理层叠加两条**: (1) 公司仍是**临时 CEO**(CFO Colette Kress 兼任)，新闻稿前瞻声明明确写有「领导层过渡及新 CEO 搜寻」; (2) Bill Ackman 公开质疑董事会在 Jensen Huang 离任中是否尽到信义义务。一家刚交出 +103% 增长的公司同时没有正式 CEO 并被大股东质疑董事会 —— 这是打倍数而非打盈利的组合。||**与 thesis 的对照(本条最该留下的部分)**: 现价 $152.05 已在 bear 目标 $150 上，但 thesis 里 bear(20%) 写明的三条机制**全部被今天的数据否证** —— 定制芯片未夺走总量(^SOX 仅 +0.05%，是零和不是萎缩)、AI capex 未收缩(Q4 指引 +12.3%)、软件差距无证据。真正在定价的是 thesis 概率分布里从未单列的第四条路径: **毛利率**。thesis 的 reverse-DCF 明确写着 $210 时市场假设「毛利率守住 70%+」，今日指引 71–72% **只剩 1–2 个百分点余量**; 另一条预设卖出条件「毛利率跌破 65%」尚有 6–7 个百分点。所以 **70% 是估值框架地板，65% 是卖出线**，下一份财报的毛利率比营收重要得多。||另需记入: 「Jensen Huang 离任或治理恶化」本身就列在 thesis 的 disconfirming events(would make me sell)里，**已于 11/12 实际发生**，今日 Ackman 事件使其延续。11/13 曾记录「bear 的 $150 目标现在有了第二条到达路径，且不需要 AI 需求转差」—— 今天这条路径又多了一条(毛利率)，而需求端反而更强了。||**位置**: $152.05，距 thesis-break $150 仅 **+1.37%**(全持仓最近)，距 52 周低 $148.80 仅 2.18%; 量比 1.17x 为全场最高(盘中口径，折全日约 1.5–1.6x) = 今天唯一有真实成交支撑的下跌。
+
+**Sources.**
+- {"type": "primary", "title": "NVIDIA Announces Financial Results for Third Quarter Fiscal 2027", "publisher": "NVIDIA", "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"}
+- Yahoo Finance: Ackman blasts Nvidia board over Jensen Huang exit, questions fiduciary duties
+- MT Newswires: U.S. Stocks Slip After Nvidia Earnings Fail to Soothe Nerves
+- _Corroboration:_ 同日受益方 AMZN +3.80% / AVGO +3.39% / AMD +3.34% / 东京 Advantest +4.56%，而 ^SOX 仅 +0.05% = 零和再分配第三次确认
+
+**Cross-assets.** SPY +0.11% · QQQ +0.69% · SOX +0.05% · VIX 24.06 · 10Y 5.06 · WTI 81.94 · DXY 103.75 · GOLD 3741 · BTC 63173
+
+**Agent read.** 价格在 bear，理由不在 bear。三条预设 bear 机制被否证而股价到了 bear 目标，说明市场定价的是一条 thesis 没列的路径(毛利率/利润池份额)。可执行的门槛已经明确: 70% 毛利率是估值框架地板，65% 是预设卖出线，当前指引 71-72%。下一份财报看毛利率不看营收。
+ · Snapshot at `dashboard/2026-11-18.md`
+
+---
 ### 2026-11-16 · -4.11% day · ▼ material
 **Tags:** `policy_us`, `regulatory_negative`, `earnings_pre_print`
 **Confidence:** high
