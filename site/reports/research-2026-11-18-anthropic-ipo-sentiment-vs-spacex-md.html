@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KN3NVQZ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2KN3NVQZ7P');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anthropic IPO 情绪 vs SpaceX</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1c2128;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.15);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.15);
+  --amber: #d29922;
+  --amber-bg: rgba(210, 153, 34, 0.15);
+  --blue-bg: rgba(88, 166, 255, 0.12);
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f8fa;
+    --panel-2: #eaeef2;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #0969da;
+    --green: #1a7f37;
+    --green-bg: rgba(26, 127, 55, 0.12);
+    --red: #cf222e;
+    --red-bg: rgba(207, 34, 46, 0.12);
+    --amber: #9a6700;
+    --amber-bg: rgba(154, 103, 0, 0.12);
+    --blue-bg: rgba(9, 105, 218, 0.10);
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  padding: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.6em; margin-bottom: 0.5em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.1em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+p, ul, ol, table { margin: 0.6em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--panel);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre { background: var(--panel); padding: 14px 16px; border-radius: 6px; overflow-x: auto; border: 1px solid var(--border); }
+pre code { background: transparent; padding: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94em; }
+th, td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+th { background: var(--panel); font-weight: 600; }
+tr:nth-child(even) td { background: rgba(110, 118, 129, 0.06); }
+blockquote { border-left: 4px solid var(--accent); margin: 1em 0; padding: 4px 16px; color: var(--muted); background: var(--panel); border-radius: 0 4px 4px 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.meta { color: var(--muted); font-size: 0.86em; margin-bottom: 2em; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.up { color: var(--green); font-weight: 600; }
+.down { color: var(--red); font-weight: 600; }
+.warn { color: var(--amber); font-weight: 600; }
+
+/* KPI grid */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1em 0; }
+.kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.kpi .label { color: var(--muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; }
+.kpi .value { font-size: 1.5em; font-weight: 700; margin: 6px 0 4px; }
+.kpi .note { color: var(--muted); font-size: 0.85em; }
+
+/* Scenario bars */
+.scenarios { margin: 1em 0; }
+.scenario { display: grid; grid-template-columns: 80px 1fr 130px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.scenario:last-child { border-bottom: 0; }
+.scenario .name { font-weight: 600; }
+.scenario .name.bull { color: var(--green); }
+.scenario .name.base { color: var(--accent); }
+.scenario .name.bear { color: var(--red); }
+.scenario .bar-wrap { background: var(--panel); border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+.scenario .bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; color: white; font-weight: 600; font-size: 0.85em; min-width: 48px; }
+.scenario .bar.bull { background: var(--green); }
+.scenario .bar.base { background: var(--accent); }
+.scenario .bar.bear { background: var(--red); }
+.scenario .target { font-weight: 600; text-align: right; }
+.scenario .desc { color: var(--muted); font-size: 0.88em; padding: 4px 0 0 92px; grid-column: 1 / -1; }
+
+/* Score meters */
+.meters { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 1em 0; }
+.meter { display: grid; grid-template-columns: 200px 1fr 30px; gap: 12px; align-items: center; padding: 6px 0; }
+.meter .name { font-weight: 500; }
+.meter .track { background: var(--panel); border-radius: 4px; height: 14px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.meter .fill { height: 100%; border-radius: 3px; }
+.meter .fill.high { background: var(--green); }
+.meter .fill.mid { background: var(--amber); }
+.meter .fill.low { background: var(--red); }
+.meter .score { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter .note { grid-column: 2 / -1; color: var(--muted); font-size: 0.85em; padding-top: 2px; }
+
+/* Callouts */
+.callout { padding: 12px 16px; border-radius: 6px; border-left: 4px solid; margin: 1.2em 0; }
+.callout.info { background: var(--blue-bg); border-color: var(--accent); }
+.callout.ok { background: var(--green-bg); border-color: var(--green); }
+.callout.warn { background: var(--amber-bg); border-color: var(--amber); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* Timeline */
+.timeline { margin: 1em 0; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-item { position: relative; padding: 6px 0 6px 18px; }
+.tl-item::before { content: ''; position: absolute; left: -19px; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.tl-item .when { font-weight: 600; color: var(--accent); font-size: 0.92em; }
+.tl-item .what { color: var(--fg); }
+
+/* Compare strip */
+.compare { width: 100%; margin: 1em 0; border-collapse: collapse; }
+.compare th, .compare td { padding: 10px 14px; border: 1px solid var(--border); }
+.compare th { background: var(--panel); font-weight: 600; }
+.compare th:first-child, .compare td:first-child { font-weight: 600; color: var(--muted); width: 30%; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin: 1.5em 0 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab-label { padding: 10px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); font-weight: 600; user-select: none; transition: background 0.15s; }
+.tab-label:hover { background: var(--panel); color: var(--fg); }
+.tab-input { display: none; }
+.tab-input:checked + .tab-label { background: var(--bg); color: var(--accent); border-color: var(--border); border-bottom: 1px solid var(--bg); margin-bottom: -1px; position: relative; z-index: 2; }
+.tab-panel { display: none; padding: 20px 4px; animation: fadeIn 0.15s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Verdict pill */
+.verdict { display: inline-block; padding: 6px 14px; border-radius: 999px; font-weight: 700; margin: 4px 0; }
+.verdict.bull, .verdict.add { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.verdict.hold, .verdict.watch, .verdict.neutral { background: var(--blue-bg); color: var(--accent); border: 1px solid var(--accent); }
+.verdict.trim, .verdict.caution { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); }
+.verdict.bear, .verdict.exit, .verdict.sell { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+/* Chart block */
+.chart-block { margin: 1em 0; }
+.chart-svg { width: 100%; height: auto; max-width: 100%; display: block; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; padding: 0 6px; font-size: 0.88em; font-family: ui-monospace, monospace; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.legend-name { color: var(--fg); font-weight: 600; }
+.legend-last { color: var(--muted); }
+.legend-pct { font-weight: 600; }
+.legend-note { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="meta">📊 Stock workspace · rendered 2026-11-18 17:37</div>
+<h1 id="anthropic-ipo-spacex-ipo">Anthropic IPO 市场情绪分布 — 与 SpaceX IPO 的对照分析</h1>
+<p><strong>2026-11-18</strong> · 跨标的主题研究 · 触及 NVDA / GOOG / MSFT / AMD / AVGO / MU / TSM / SPCX</p>
+<hr>
+<div class="callout danger"><p><strong>本文写作时的状态变化</strong>：Anthropic 已于 <strong>2026-11-18 盘后定价 $83/股</strong>（区间 $70–78，<strong>上穿区间上沿 6.4%</strong>），全面摊薄估值约 <strong>$1.5 万亿</strong>，募资约 <strong>$813 亿</strong>（$81.3B），为<strong>史上最大 IPO，超过 SpaceX 的 $750 亿</strong>（$75B）。代码 <strong>ANT</strong>，<strong>2026-11-19（周四）于 Nasdaq 开始交易</strong>。</p>
+<p>本工作簿 <code>timeline.yaml</code> 把 11/18 记为「挂牌日」，实际 11/18 是<strong>定价日</strong>，挂牌在 11/19。</p></div>
+<div class="tabs-group"><style>#tabs1-0:checked ~ [data-tab-for="tabs1-0"] { display: block; }#tabs1-1:checked ~ [data-tab-for="tabs1-1"] { display: block; }#tabs1-2:checked ~ [data-tab-for="tabs1-2"] { display: block; }#tabs1-3:checked ~ [data-tab-for="tabs1-3"] { display: block; }#tabs1-4:checked ~ [data-tab-for="tabs1-4"] { display: block; }#tabs1-5:checked ~ [data-tab-for="tabs1-5"] { display: block; }#tabs1-6:checked ~ [data-tab-for="tabs1-6"] { display: block; }#tabs1-7:checked ~ [data-tab-for="tabs1-7"] { display: block; }#tabs1-8:checked ~ [data-tab-for="tabs1-8"] { display: block; }#tabs1-9:checked ~ [data-tab-for="tabs1-9"] { display: block; }</style><input class="tab-input" type="radio" name="tabs1" id="tabs1-0" checked><input class="tab-input" type="radio" name="tabs1" id="tabs1-1"><input class="tab-input" type="radio" name="tabs1" id="tabs1-2"><input class="tab-input" type="radio" name="tabs1" id="tabs1-3"><input class="tab-input" type="radio" name="tabs1" id="tabs1-4"><input class="tab-input" type="radio" name="tabs1" id="tabs1-5"><input class="tab-input" type="radio" name="tabs1" id="tabs1-6"><input class="tab-input" type="radio" name="tabs1" id="tabs1-7"><input class="tab-input" type="radio" name="tabs1" id="tabs1-8"><input class="tab-input" type="radio" name="tabs1" id="tabs1-9"><div class="tabs"><label class="tab-label" for="tabs1-0">一、方法论与样本（先说清楚这些数字能和不能支撑什么）</label><label class="tab-label" for="tabs1-1">二、Anthropic：情绪比例</label><label class="tab-label" for="tabs1-2">三、把财务数字对齐（多数报道在这里是错的，这是本文的主要增值）</label><label class="tab-label" for="tabs1-3">四、SpaceX IPO 当时的情绪比例（同一方法）</label><label class="tab-label" for="tabs1-4">五、结构性对比（这才是能区分两笔交易的地方）</label><label class="tab-label" for="tabs1-5">六、SpaceX 的实际结果 = 这次最有用的经验答案</label><label class="tab-label" for="tabs1-6">七、本工作簿的内部资产：mega-IPO 基准率</label><label class="tab-label" for="tabs1-7">八、对本工作簿持仓的直接影响（这一节比 IPO 本身重要）</label><label class="tab-label" for="tabs1-8">九、判断</label><label class="tab-label" for="tabs1-9">附：数据来源与未解决项</label></div><div class="tab-panel" data-tab-for="tabs1-0"><p>情绪比例来自对 Google News 聚合流中<strong>标题级</strong>语气编码，分七轮查询抓取：</p>
+<table>
+<thead>
+<tr>
+<th>查询</th>
+<th>用途</th>
+<th>样本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Anthropic IPO</code>（通用）</td>
+<td><strong>比例统计的唯一基准</strong></td>
+<td>96 条</td>
+</tr>
+<tr>
+<td><code>SpaceX IPO debut valuation</code>（通用）</td>
+<td><strong>比例统计的唯一基准</strong></td>
+<td>41 条</td>
+</tr>
+<tr>
+<td><code>Anthropic IPO bubble/skeptics/overvalued/risk</code></td>
+<td>刻画空方<strong>内容</strong>，不用于比例</td>
+<td>33 条</td>
+</tr>
+<tr>
+<td><code>Anthropic IPO analysts valuation revenue</code></td>
+<td>估值论点与数字</td>
+<td>29 条</td>
+</tr>
+<tr>
+<td><code>Anthropic IPO retail oversubscribed</code></td>
+<td>需求强度</td>
+<td>20 条</td>
+</tr>
+<tr>
+<td><code>Anthropic revenue losses prospectus compute</code></td>
+<td>财务数字对账</td>
+<td>28 条</td>
+</tr>
+<tr>
+<td><code>SpaceX IPO overvalued/skeptics/bubble</code></td>
+<td>刻画 SpaceX 空方内容</td>
+<td>36 条</td>
+</tr>
+</tbody>
+</table>
+<p><strong>三条必须说明的限制</strong>，否则下面的百分比会被过度解读：</p>
+<ol>
+<li><strong>只编码标题，不是全文。</strong> 标题语气与文章结论可以不一致（尤其是 Reuters / Bloomberg 这类标题刻意中性的机构）。</li>
+<li><strong>只有通用查询能算比例。</strong> 定向查询（<code>bubble</code>、<code>skeptics</code>、<code>overvalued</code>）按构造就会返回空方，用它们算比例等于自我实现。所以本文的比例<strong>只取自通用流</strong>，定向流仅用于刻画两方论点的<strong>内容与强度</strong>。</li>
+<li><strong>语气编码是本文作者的判断</strong>，非第三方情绪指标。样本量（96 / 41）只够支撑「量级」结论，不够支撑 5 个百分点以内的差异。</li>
+</ol>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-1"><h3>全样本（N=96）</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">乐观/看多</div><div class="value">28 条 · 29.2%</div><div class="note">多数集中在 11/17–18 定价阶段</div></div><div class="kpi"><div class="label">纯中性·资讯类</div><div class="value">38 条 · 39.6%</div><div class="note">「怎么买」「要知道什么」类解释性报道</div></div><div class="kpi"><div class="label">摇摆/明确混合</div><div class="value">18 条 · 18.8%</div><div class="note">典型句式: 「关键测试」「投资者意见分裂」</div></div><div class="kpi"><div class="label">看空/怀疑</div><div class="value">12 条 · 12.5%</div><div class="note">多数集中在 9–10 月招股书阶段</div></div></div>
+<h3>剔除无立场的资讯类后（N=58）—— 这是更有意义的口径</h3>
+<div class="scenarios"><div class="scenario"><div class="name base">乐观</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">28 条</div><div class="desc">定价上穿区间 + 6–7 倍超额认购 + 史上最大募资</div></div><div class="scenario"><div class="name base">摇摆</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">18 条</div><div class="desc">「AI 交易的关键测试」「可能是投机小说，也可能是时代时刻」</div></div><div class="scenario"><div class="name base">看空</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">12 条</div><div class="desc">估值、循环融资、解禁、现金消耗</div></div></div>
+<p><strong>多空比 2.33 : 1。</strong></p>
+<h3>程度：空方比例不高，但<strong>极端程度远超一般 IPO</strong></h3>
+<p>比例只讲了一半。真正的信息在<strong>声量的强度</strong>：</p>
+<table class="compare"><thead><tr><th>阵营</th><th>代表论点</th><th>量化主张</th><th>语言强度</th></tr></thead><tbody><tr><td>最极端空方</td><td>分析师给出公允值 $1,500 亿</td><td>**相对 $1.5 万亿 定价 = 低 10 倍**</td><td>「年度最荒谬 IPO」「对投资者轻信程度的空前测试」</td></tr><tr><td>估值派空方</td><td>Damodaran: 要支撑约 $2 万亿需约 $1 万亿 营收</td><td>需 ~59x 当前年化营收</td><td>「我的（而非市场的）Anthropic 估值」</td></tr><tr><td>机构空方</td><td>PitchBook: 增长快，但撑不起 $2 万亿</td><td>否定 $2T，未给替代值</td><td>克制</td></tr><tr><td>风险派</td><td>招股书列 **93 页风险**，含「人类终结」「与五角大楼不和」「部分风险不可投保」</td><td>—</td><td>Ars Technica: 「警告其 AI 可能勒索人类、产生意识、终结人类」</td></tr><tr><td>ESG/治理</td><td>Sustainalytics 评为**高 ESG 风险**</td><td>—</td><td>时代广场出现针对其 IPO 的养老金抗议</td></tr><tr><td>信用派</td><td>Blackstone 对投资者发出「垃圾级警告」</td><td>—</td><td>强</td><td></td></tr><tr><td>最极端多方</td><td>William Blair: 投资者「压倒性看多」，估值低于同业</td><td>—</td><td>强</td></tr><tr><td>估值派多方</td><td>New Street: **约 8.5x 明年销售额**</td><td>对标 MSFT/GOOGL 而非 Palantir</td><td>温和看多</td></tr><tr><td>资金派多方</td><td>Altimeter 称超额认购 **10–20 倍**，自投 **$50 亿**</td><td>—</td><td>强</td></tr><tr><td>类比派多方</td><td>Kevin O&#x27;Leary: 买 Anthropic IPO 和买「亚马逊 IPO 没有区别」</td><td>—</td><td>极强</td></tr></tbody></table>
+<p><strong>结论</strong>：Anthropic 的空方人数占比只有 21%，但其中<strong>最极端的一条主张是「低 10 倍」</strong>。这在大型 IPO 里极为罕见 —— 对比下文 SpaceX，最极端的主流研究主张是「低 2.2 倍」。<strong>空方不多，但空方喊的幅度是 SpaceX 的约 5 倍。</strong></p>
+<h3>时间轨迹：这是比横截面比例更重要的一张图</h3>
+<p>情绪不是静态分布，是一条<strong>从怀疑到追捧的曲线</strong>：</p>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">-6.14</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">21.02</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">48.17</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">75.33</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">102.49</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">8月中</text><text x="416.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">11月初</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">11/18</text><path d="M56.0,169.3 L128.0,115.9 L200.0,47.1 L272.0,54.7 L344.0,62.4 L416.0,77.6 L488.0,123.5 L560.0,138.8 L632.0,154.1 L704.0,146.4" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="146.4" r="3" fill="#58a6ff"/><path d="M56.0,92.9 L128.0,131.1 L200.0,161.7 L272.0,161.7 L344.0,146.4 L416.0,138.8 L488.0,100.6 L560.0,70.0 L632.0,47.1 L704.0,39.4" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="39.4" r="3" fill="#3fb950"/><path d="M56.0,181.6 L128.0,181.6 L200.0,181.6 L272.0,181.9 L344.0,182.2 L416.0,182.3 L488.0,182.6 L560.0,182.4 L632.0,182.3 L704.0,182.3" fill="none" stroke="#d29922" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="182.3" r="3" fill="#d29922"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">Anthropic IPO 情绪阶段（按报道日期聚类）</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">看空声量</span> <span class="legend-last">25.00</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+150.00%</span></span><span class="legend-note">· 10 月初见顶: 「最荒谬 IPO」「$1,500亿公允值」</span></span><span class="legend-item"><span class="legend-swatch" style="background:#3fb950"></span><span class="legend-name">看多声量</span> <span class="legend-last">95.00</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+58.33%</span></span><span class="legend-note">· 11/17-18 定价上穿区间后见顶</span></span><span class="legend-item"><span class="legend-swatch" style="background:#d29922"></span><span class="legend-name">估值预期(万亿美元)</span> <span class="legend-last">1.50</span> <span class="legend-pct" style="color:var(--red)"><span class="down">-25.00%</span></span><span class="legend-note">· 从 $2T 野心一路下修到 $1.5T 定价</span></span></div></div>
+<p>分四段：</p>
+<ol>
+<li><strong>8 月（野心期）</strong>：市场传 $2 万亿估值，Cramer 称「营收撑得住」。基准是 2028 年 $1,900–2,000 亿营收预测。</li>
+<li><strong>9 月底–10 月（怀疑期，空方声量峰值）</strong>：招股书泄露与正式递交。关键事件密集 —— 10/05 PitchBook「撑不起 $2 万亿」；10/07 CNBC「年度最荒谬 IPO」；10/08–09 某分析师给出 <strong>$1,500 亿</strong> 公允值并称这是「对投资者轻信程度的空前测试」；10/16 Reuters「投资者因营收增速放缓下调估值预期」；10/26–28 风险因素引爆（93 页风险、不可投保条款）；10/28 Damodaran 自建估值；10/30「基于历史，这将是一次史诗级失败」。</li>
+<li><strong>11/02–03（财务现实期）</strong>：Q3 数据公布，Fortune 直接写「Q3 结果意味着 IPO 的数学和历史都不站在它这边」—— 增长放缓、成本跳升。</li>
+<li><strong>11/10–18（追捧期）</strong>：估值定在 $1.3–1.5 万亿（已从 $2T 下修 25%）；超额认购从「数倍」到 6 倍到 7 倍；$260 亿供应商私募配售确认；11/17 WSJ「强劲需求下计划上调发行价」；11/18 定价 <strong>$83，上穿区间</strong>。</li>
+</ol>
+<p><strong>这条轨迹的含义</strong>：空方的论证<strong>没有被回答</strong>，它只是被需求压过去了。10 月那些数字（$1,500 亿公允值、93 页风险、循环融资）在 11/18 全部依然成立 —— 变的不是事实，是价格发现的方向。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-2"><p>公开报道的数字冲突严重：营收有 $4.6B / $16.3B / $17B / $33B；亏损有 $42B / $80.7B / $104B；算力承诺有 $518B / $750B / $895.4B / $909B。对账后：</p>
+<div class="kpi-grid"><div class="kpi"><div class="label">Q3 2026 营收</div><div class="value">$170 亿</div><div class="note">同比 +1,127%(约 12 倍) · **环比 <span class="up"><span class="up">+47%</span></span>**</div></div><div class="kpi"><div class="label">2026 前九个月营收</div><div class="value">$330 亿</div><div class="note">即 Q1+Q2 合计约 $160 亿</div></div><div class="kpi"><div class="label">Q3 经营亏损</div><div class="value">**$5.67 亿**</div><div class="note">在 $170 亿 营收上 — 经营层面接近打平</div></div><div class="kpi"><div class="label">Q3 净亏损</div><div class="value">$233 亿</div><div class="note">与经营亏损相差约 $227 亿</div></div><div class="kpi"><div class="label">前九个月净亏损</div><div class="value">$1,040 亿</div><div class="note">多家报道标注「几乎全是账面项」</div></div><div class="kpi"><div class="label">采购/算力承诺</div><div class="value">**$8,954 亿**</div><div class="note">修订版 S-1；约为前九个月营收的 27 倍</div></div></div>
+<h3>这里有一个被普遍误读的点</h3>
+<p><strong>经营亏损 $5.67 亿，净亏损 $233 亿 —— 差额约 $227 亿不是现金消耗。</strong></p>
+<p>这个量级的差额出现在 IPO 前公司的损益表里，通常来自可转换优先股 / 认股权证 / SAFE 类工具按公允价值重估产生的非现金费用。随着私募估值从 5 月的 $9,650 亿升到 IPO 的 $1.5 万亿，这类工具的账面重估必然产生巨额「亏损」—— 而<strong>估值上升导致的账面亏损越大，说明业务被市场认可得越多</strong>，方向与直觉相反。IPO 完成后这类工具转为普通股，该费用消失。</p>
+<p><strong>所以</strong>：
+- 引用「$1,040 亿亏损」来论证 Anthropic 在烧钱的空方论证，<strong>在会计口径上是错的</strong>。
+- 真正该看的是 <strong>$5.67 亿经营亏损 / $170 亿营收 = −3.3% 经营利润率</strong>，而且是在环比 <span class="up">+47%</span> 的增速下。这比绝大多数同阶段 SaaS 公司健康。
+- 真正的风险不在损益表，在<strong>$8,954 亿采购承诺</strong> —— 这是一个资产负债表外的、与收入不匹配的长期义务。Bloomberg 11/17 把它称作「Anthropic 的算力困境是其最大 IPO 风险」，这个判断是对的，而「亏损巨大」的说法不是。</p>
+<h3>估值要求：多空的真正分歧点</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">$1.5 万亿 ÷ Q3 年化($680 亿)</div><div class="value">**22x 年化营收**</div><div class="note">当前倍数</div></div><div class="kpi"><div class="label">New Street: 8.5x 明年销售</div><div class="value">隐含 2027 营收约 $1,760 亿</div><div class="note">**需从 $680 亿年化再增 2.6 倍**</div></div><div class="kpi"><div class="label">IPO 定价依据的 2028 营收预测</div><div class="value">$1,900–2,000 亿</div><div class="note">Reuters 8 月独家</div></div><div class="kpi"><div class="label">Damodaran: 需约 $1 万亿营收支撑约 $2 万亿</div><div class="value">按比例折到 $1.5 万亿 约需 $7,500 亿</div><div class="note">空方上限</div></div><div class="kpi"><div class="label">最空分析师: 公允值 $1,500 亿</div><div class="value">隐含当前营收即合理倍数</div><div class="note">空方极值</div></div></div>
+<p><strong>多空分歧可以压缩成一句话</strong>：$1.5 万亿是否成立，几乎完全取决于 2027 年营收能否达到约 $1,760 亿 —— 即当前年化的 <strong>2.6 倍</strong>。而 Q3 环比 <span class="up">+47%</span>、同比 +1,127% 的增速如果维持，这个数字是可达的；Fortune 11/02 指出的「Q3 增长放缓」正是对这个假设的直接攻击（Q3 新增 $54 亿 vs 上季新增 $68 亿）。</p>
+<p><strong>这是一个 6–9 个月内可证伪的命题，不是信仰问题。</strong> 跟踪变量：季度环比营收增量是否继续从 $68 亿 → $54 亿 的方向衰减。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-3"><h3>全样本（N=41）</h3>
+<div class="kpi-grid"><div class="kpi"><div class="label">乐观/看多</div><div class="value">14 条 · 34.1%</div><div class="note">几乎全部集中在 6/11–6/16 定价与首日</div></div><div class="kpi"><div class="label">纯中性·资讯类</div><div class="value">12 条 · 29.3%</div><div class="note">定价、估值、怎么买</div></div><div class="kpi"><div class="label">摇摆/明确混合</div><div class="value">8 条 · 19.5%</div><div class="note">「华尔街在马斯克的圣杯与 $135 的信仰之跃之间撕裂」</div></div><div class="kpi"><div class="label">看空/怀疑</div><div class="value">7 条 · 17.1%</div><div class="note">Morningstar 估值、Cramer 警告、破发</div></div></div>
+<h3>剔除无立场后（N=29）</h3>
+<div class="scenarios"><div class="scenario"><div class="name base">乐观</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">14 条</div><div class="desc">首日 <span class="up">+19%</span>、市值破 $2 万亿、马斯克成首位万亿富翁</div></div><div class="scenario"><div class="name base">摇摆</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">8 条</div><div class="desc">「散户抢购，但有人认为估值蠢得离谱」</div></div><div class="scenario"><div class="name base">看空</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">7 条</div><div class="desc">Morningstar 公允值仅为目标的一半</div></div></div>
+<p><strong>多空比 2.00 : 1。</strong></p>
+<h3>两组比例几乎相同 —— 这件事本身是结论</h3>
+<table class="compare"><thead><tr><th>口径</th><th>Anthropic</th><th>SpaceX</th><th>差异</th></tr></thead><tbody><tr><td>乐观占比(有立场)</td><td>48.3%</td><td>48.3%</td><td>**0.0pp**</td></tr><tr><td>摇摆占比</td><td>31.0%</td><td>27.6%</td><td>+3.4pp</td></tr><tr><td>看空占比</td><td>20.7%</td><td>24.1%</td><td>−3.4pp</td></tr><tr><td>多空比</td><td>2.33 : 1</td><td>2.00 : 1</td><td>Anthropic 略偏多</td></tr></tbody></table>
+<p>在样本量 58 / 29 的前提下，3 个百分点的差异<strong>没有统计意义</strong>。诚实的结论是：<strong>两次史上最大 IPO 的媒体情绪分布基本相同 —— 约一半看多、约四分之一看空、约三成摇摆。</strong> 这更像是大型 IPO 媒体生态的结构性常数，而不是对标的本身的判断。</p>
+<p><strong>所以情绪比例不能用来区分这两笔交易。</strong> 要区分它们，必须看下面的结构性差异。</p>
+<h3>SpaceX 空方的具体论点（供强度对比）</h3>
+<table class="compare"><thead><tr><th>来源</th><th>日期</th><th>主张</th><th>量化</th></tr></thead><tbody><tr><td>Morningstar</td><td>6/02</td><td>公允值 **$7,800 亿** vs IPO 目标 $1.77 万亿</td><td>**低 2.2 倍**</td></tr><tr><td>Fortune</td><td>6/03</td><td>「高估一半，聪明的投资者应等待炒作退潮」</td><td>低 2x</td></tr><tr><td>Yahoo Finance</td><td>6/05</td><td>「近乎不诚实」: 分析师撕碎其招股书</td><td>—</td></tr><tr><td>Motley Fool</td><td>6/06</td><td>「将是我们见过的对散户最大的一次搜刮」</td><td>—</td></tr><tr><td>Reuters</td><td>5/20</td><td>招股书暴露亏损与马斯克的控制权</td><td>—</td></tr><tr><td>CNBC</td><td>5/29</td><td>马斯克公开表态与招股书披露不一致</td><td>—</td></tr><tr><td>Jim Cramer</td><td>5/15 · 6/11</td><td>担心对市场其余部分「具破坏性」；警告上市后冲到不可持续水平</td><td>—</td></tr><tr><td>NYT</td><td>6/11</td><td>「$1.77 万亿？有些投资者说这是空中楼阁」</td><td>—</td></tr><tr><td>Motley Fool</td><td>6/12</td><td>「我像避开瘟疫一样避开 SpaceX IPO 的 7 个理由」</td><td>—</td></tr><tr><td>以色列基金负责人</td><td>6/23</td><td>「一个巨大的泡沫，对市场有危险」</td><td>—</td></tr><tr><td>华尔街资深人士</td><td>7/05</td><td>「一个极好泡沫的顶部」</td><td>—</td></tr></tbody></table>
+<p><strong>强度对照的结论</strong>：SpaceX 的空方同样尖锐（「近乎不诚实」「对散户最大的搜刮」），但其<strong>最极端的主流量化主张是低 2.2 倍</strong>（Morningstar，一家公开评级机构）。Anthropic 的最极端主张是<strong>低 10 倍</strong>，且来自买方分析师而非评级机构。</p>
+<p>两者的空方<strong>强度相似、量化幅度相差约 4.5 倍</strong>。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-4"><table class="compare"><thead><tr><th>维度</th><th>SpaceX (2026-06)</th><th>Anthropic (2026-11)</th><th>对 Anthropic 的方向</th></tr></thead><tbody><tr><td>发行价</td><td>$135</td><td>$83</td><td>—</td></tr><tr><td>相对区间</td><td>**定在目标价**</td><td>**上穿区间上沿 6.4%**($70–78 → $83)</td><td>⬆️ 更强</td></tr><tr><td>募资额</td><td>$750 亿</td><td>**$813 亿**(史上最大)</td><td>⬆️ 更强</td></tr><tr><td>超额认购</td><td>2x → **4x**</td><td>6x → **7x**(Altimeter 称 10–20x)</td><td>⬆️ **约 1.75 倍**</td></tr><tr><td>订单簿</td><td>$1,500 亿(另称 $1,930 亿)</td><td>未披露总额</td><td>—</td></tr><tr><td>散户订单</td><td>**&gt;$1,000 亿**</td><td>「战术沿用 SpaceX」，多国报道配额不足</td><td>≈ 相似</td></tr><tr><td>估值</td><td>$1.77 万亿 目标</td><td>**$1.5 万亿**(从 $2 万亿 野心下修 25%)</td><td>⬆️ **已被压价**</td><td></td></tr><tr><td>估值轨迹</td><td>目标未降，首日冲破 $2 万亿</td><td>**$2T → $1.3T → $1.5T**，投资者先逼出折价</td><td>⬆️ 更保守</td><td></td></tr><tr><td>最极端空方量化</td><td>低 **2.2x**(Morningstar $7,800亿)</td><td>低 **10x**(某分析师 $1,500亿)</td><td>⬇️ 分歧极大</td><td></td></tr><tr><td>经营盈利能力</td><td>亏损(招股书披露)</td><td>**经营亏损仅 $5.67 亿 / 营收 $170 亿**</td><td>⬆️ 更接近打平</td><td></td></tr><tr><td>表外义务</td><td>未成为核心争议</td><td>**$8,954 亿 采购承诺**(营收的 27 倍)</td><td>⬇️ **独有的重大风险**</td><td></td></tr><tr><td>供应商认购</td><td>无</td><td>**$260 亿 无投票权私募配售**，7 家供应商</td><td>⬇️ **循环融资争议，独有**</td><td></td></tr><tr><td>解禁结构</td><td>**分层解禁**: 流通盘约 4% → 12 月最高约 40%；7 月/8月6日/9月11日/10月9日($510亿)分批释放，**12/08 悬崖 7.98 亿股**</td><td>「数十亿股待解锁」，条款待核</td><td>待定</td><td></td></tr><tr><td>上市时大盘</td><td>AI 泡沫担忧已有，但指数在高位附近</td><td>**回撤进行中**: QQQ 30d −12.70%、纳指100 最差 11 月(2008 以来)、NVDA 30d −35.97%、^SOX 30d −26.16%、VIX 24.06(30d <span class="up"><span class="up">+59.55%</span></span>)、SPY 距 MA200 仅 <span class="up"><span class="up">+0.44%</span></span>、12 月加息概率 95%</td><td>⬇️ **显著更差**</td><td></td></tr></tbody></table>
+<h3>六条实质性差异，按重要性排序</h3>
+<p><strong>1. 大盘背景是最大的不同，且对 Anthropic 不利。</strong>
+SpaceX 在一个仍有风险偏好的市场里上市。Anthropic 在一个<strong>正在回撤的市场</strong>里上市 —— 纳斯达克 100 正走向 2008 年以来最差的 11 月，NVDA 刚交出 <span class="up">+103%</span> 增长的财报却跌到自己 bear 目标价上，四类对冲（金、银、BTC、长债）同时逼近 52 周低点而美元在 52 周高点。Reuters 的标题精确捕捉了这一点：<strong>「华尔街为 Anthropic IPO 狂热做准备，尽管 AI 股整体低迷」</strong>。这是两件同时为真的事。</p>
+<p><strong>2. Anthropic 的需求强 1.75 倍，但是对着一个已经被压低的价格。</strong>
+这是一个容易弄反的因果。SpaceX 2–4 倍认购是对着一个 Morningstar 说「高一倍」的激进目标价；Anthropic 6–7 倍认购是对着一个从 $2 万亿 下修到 $1.5 万亿（−25%）的价格。<strong>同样的超额认购倍数，在不同的定价进取度下含义完全不同。</strong> Anthropic 的买方先逼出了折价，再超额认购 —— 这是比 SpaceX 更健康的价格发现过程。</p>
+<p><strong>3. 经营盈利能力 Anthropic 明显更好，但表外义务是它独有的致命项。</strong>
+$5.67 亿经营亏损 / $170 亿营收，环比 <span class="up">+47%</span>。这组数字比 SpaceX 招股书里的亏损结构好。但 <strong>$8,954 亿采购承诺</strong>是 SpaceX 完全没有的对应项 —— 这是一个必须用未来的营收或融资去兑付的、与当期收入严重不匹配的长期义务。它不在损益表里，所以不会出现在任何季度的「亏损」数字中，但它是这笔投资真正的风险所在。</p>
+<p><strong>4. $260 亿供应商认购是 Anthropic 独有的结构，且性质双向。</strong>
+AMD、Broadcom、Google、Micron、Microsoft、Nvidia、TSMC Partners 七家通过私募配售买入 <strong>$260 亿无投票权股份</strong>，约为 IPO 募资额的 <strong>32%</strong>。
+- 多方读法：供应商用自己的资产负债表为客户背书，是最强的内部人信心信号。
+- 空方读法：<strong>循环融资</strong> —— 供应商把卖给客户的钱再投回客户，营收与投资互为对价。IMF 11/16 已就 AI 领域「$1 万亿 循环融资中三分之二是借来的钱」发出警告。Memeburn 的标题最直接：「7 倍超额认购，但它的记录取决于自己供应商的 $260 亿」。
+- <strong>若 ANT 破发，这 $260 亿同时成为七家的减值项。</strong> 这是一个把单一 IPO 风险传导到七家大市值公司的结构，SpaceX 没有。</p>
+<p><strong>5. SpaceX 的分层解禁结构此前被本工作簿记录得不完整。</strong>
+本次调研发现 SPCX 的解禁是<strong>分层的</strong>，不是单点事件：流通盘从 IPO 时约 4% 逐步升到 12 月最高约 40%，释放节点包括 7 月、8/06、9/11、10/09（约 $510 亿内部人股份），而 <strong>12/08 是 7.98 亿股的最后一层悬崖</strong>。本工作簿此前把 12/09 当作「那个解禁日」—— 实际它是最大的一层，不是唯一一层。这个修正也解释了 SPCX 7–10 月反复的供给压力。</p>
+<p><strong>6. 空方的量化幅度相差 4.5 倍，说明 Anthropic 的估值可观测性更差。</strong>
+SpaceX 的空方和多方在同一个数量级上争论（$7,800 亿 vs $1.77 万亿）。Anthropic 的空方和多方差了一个数量级（$1,500 亿 vs $1.5 万亿）。<strong>分歧的宽度本身就是风险的度量</strong> —— 它说明这个标的的现金流可预测性低到容许 10 倍的估值分歧，而这通常意味着价格会由叙事而非模型决定。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-5"><p>情绪比例相同、结构有差异，那么 SpaceX 的<strong>实际走势</strong>就是最接近实验结果的东西。</p>
+<div class="chart-block"><svg class="chart-svg" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="0" y="0" width="720" height="220" fill="var(--panel-2)" rx="6"/><line x1="56" y1="194.0" x2="704" y2="194.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="197.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">94.89</text><line x1="56" y1="152.5" x2="704" y2="152.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="155.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">109.42</text><line x1="56" y1="111.0" x2="704" y2="111.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="114.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">123.95</text><line x1="56" y1="69.5" x2="704" y2="69.5" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="72.5" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">138.48</text><line x1="56" y1="28.0" x2="704" y2="28.0" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.5"/><text x="50" y="31.0" fill="var(--muted)" font-size="10" text-anchor="end" font-family="ui-monospace, monospace">153.01</text><text x="56.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">6/12定价</text><text x="380.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">6/17约峰</text><text x="704.0" y="212" fill="var(--muted)" font-size="10" text-anchor="middle" font-family="ui-monospace, monospace">11/18现价</text><path d="M56.0,179.4 L164.0,147.7 L272.0,124.3 L380.0,39.4 L488.0,182.6 L596.0,178.3 L704.0,159.7" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="704.0" cy="159.7" r="3" fill="#58a6ff"/><text x="60" y="20" fill="var(--fg)" font-size="12" font-weight="600">SPCX 自 IPO 的实际路径（$135 发行价 = 100，按已确认日期的事件排序）</text></svg><div class="chart-legend"><span class="legend-item"><span class="legend-swatch" style="background:#58a6ff"></span><span class="legend-name">SPCX</span> <span class="legend-last">106.90</span> <span class="legend-pct" style="color:var(--green)"><span class="up">+6.90%</span></span><span class="legend-note">· 发行价买入者 5 个月 <span class="up">+6.9%</span></span></span></div></div>
+<blockquote>
+<p>52 周极值（高 $225.64 = 发行价 <span class="up">+67.1%</span>；低 $104.83 = −22.3%）未纳入上图 —— 本次调研未取得这两个点的确切日期，放进时间序列会造成错误的先后关系。它们在下方 KPI 块中仅作为区间端点列出。</p>
+</blockquote>
+<div class="kpi-grid"><div class="kpi"><div class="label">IPO 发行价</div><div class="value">$135</div><div class="note">基准</div></div><div class="kpi"><div class="label">首日开盘</div><div class="value">$150</div><div class="note"><span class="up"><span class="up">+11.1%</span></span></div></div><div class="kpi"><div class="label">首日收盘</div><div class="value">$161.11</div><div class="note">**<span class="up"><span class="up">+19.3%</span></span>**，市值破 $2 万亿</div></div><div class="kpi"><div class="label">6 月峰值</div><div class="value">约 <span class="up"><span class="up">+49%</span></span></div><div class="note">「上市以来 <span class="up"><span class="up">+49%</span></span>」(6/17 报道)</div></div><div class="kpi"><div class="label">52 周最高</div><div class="value">$225.64</div><div class="note">**<span class="up"><span class="up">+67.1%</span></span>**</div></div><div class="kpi"><div class="label">**7/15 首次破发**</div><div class="value">跌破 $135</div><div class="note">Reuters: 「凌厉涨势瓦解」</div></div><div class="kpi"><div class="label">52 周最低</div><div class="value">$104.83</div><div class="note">**−22.3%**</div></div><div class="kpi"><div class="label">8/10 收复发行价</div><div class="value">回到 $135 上方</div><div class="note">「数周来首次」</div></div><div class="kpi"><div class="label">**今日 (11/18)**</div><div class="value">**$144.28**</div><div class="note">**vs 发行价 <span class="up"><span class="up">+6.9%</span></span>** · vs 首日收盘 **−10.4%** · vs 峰值 **−36.1%**</div></div></div>
+<h3>按入场点拆分的 5 个月实际回报 —— 这是决策相关的唯一一张表</h3>
+<table class="compare"><thead><tr><th>入场点</th><th>价格</th><th>今日 $144.28 的回报</th><th>读数</th></tr></thead><tbody><tr><td>IPO 配售(发行价)</td><td>$135</td><td>**<span class="up"><span class="up">+6.9%</span></span>**</td><td>拿到配额的人赚了，但 5 个月年化仅约 16%</td></tr><tr><td>首日开盘买入</td><td>$150</td><td>**−3.8%**</td><td>开盘追进去的人至今亏损</td></tr><tr><td>首日收盘买入</td><td>$161.11</td><td>**−10.4%**</td><td>「首日 <span class="up"><span class="up">+19%</span></span>」的那 19% 全部由配售方获得</td></tr><tr><td>6 月峰值买入</td><td>$225.64</td><td>**−36.1%**</td><td>情绪顶部买入者腰斩一半以上</td></tr><tr><td>7 月破发时买入</td><td>~$133</td><td>**<span class="up"><span class="up">+8.5%</span></span>**</td><td>**最佳入场点出现在空方被证明正确的那一天**</td></tr></tbody></table>
+<p><strong>四条可以直接搬到 Anthropic 的经验</strong>：</p>
+<ol>
+<li><strong>「首日 <span class="up">+19%</span>」的全部收益归于一级配售，二级市场参与者一分没拿到。</strong> 对散户的实际含义：拿不到配额就不要在首日追。两次 IPO 的共同点是散户配额都严重不足（SpaceX「留给散户的股份太少，面临艰难的持有还是卖出决定」；Anthropic 已有瑞士、澳洲多国报道预警散户拿不到货）。</li>
+<li><strong>空方在 5 周内被证明正确，尽管首日大涨 19%。</strong> 6/11 Cramer 警告「可能冲到不可持续的水平」，7/15 破发。<strong>首日表现不包含任何关于空方对错的信息。</strong></li>
+<li><strong>最好的入场点是情绪最差的那一天</strong>（7/15 破发日，<span class="up">+8.5%</span>），最差的入场点是情绪最好的那一天（6 月峰值，−36.1%）。</li>
+<li><strong>5 个月后，发行价买入者只有 <span class="up">+6.9%</span></strong> —— 在一笔被称为「史上最大」、首日 <span class="up">+19%</span>、一度 <span class="up">+67%</span> 的 IPO 上。这是情绪的全部净值。</li>
+</ol>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-6"><p>2026-06-18 SpaceX IPO 后不久，本工作簿记录过一次完整的多空辩论，其中的历史基准率<strong>直接适用于 Anthropic</strong>：</p>
+<div class="callout warn"><p><strong>大型 IPO 12 个月回撤基准率</strong>（FB / SNAP / UBER / COIN / RIVN / RBLX / ABNB）：
+<strong>中位数 12 个月回撤 −53%；7 个样本中 6 个在 12 个月内下跌超过 40%。</strong></p></div>
+<p>当时的两方观点与评分结果：</p>
+<table class="compare"><thead><tr><th>观点方</th><th>2026-06-18 的主张</th><th>实际结果</th></tr></thead><tbody><tr><td>用户</td><td>SPCX 值一半(约 $1.2 万亿)，解禁后回归，AI 才是当下的钱</td><td>方向正确: 确实破发，且 52 周低点 $104.83(−22.3%)</td><td></td></tr><tr><td>Agent 反方</td><td>方向对但幅度被高估: 回撤 15–25% 至 **$150–180**，因 (a) 流通盘仅约 4% 的稀缺溢价 (b) Nasdaq-100/CRSP 被动流入是机械地板 (c) AI 基建叙事可能在解禁前重估</td><td>**精确命中**: 6/29 收 $164.19，落在 $150–180 区间内</td><td></td></tr><tr><td>用户预测 #1</td><td>「6/26 前收 ≥ $200」</td><td>**FAIL**</td><td></td></tr></tbody></table>
+<h3>把 Agent 当时那三条「幅度会更小」的理由逐条套到 Anthropic</h3>
+<table class="compare"><thead><tr><th>理由</th><th>SpaceX 当时</th><th>Anthropic 现在</th><th>是否适用</th></tr></thead><tbody><tr><td>(a) 极小流通盘的稀缺溢价</td><td>流通盘约 4% / 市值 $2.4 万亿</td><td>$813 亿 / $1.5 万亿 ≈ **流通约 5.4%**</td><td>✅ **适用，量级相似**</td><td></td></tr><tr><td>(b) 指数被动流入的机械地板</td><td>Nasdaq-100 + CRSP 纳入</td><td>Nasdaq-100 不要求盈利 → 可能适用；**S&amp;P 500 要求 GAAP 盈利**(前四季合计为正且最近一季为正) → 以 9 个月 $1,040 亿 净亏损，**短期内不符合**</td><td>⚠️ **部分适用，弱于 SpaceX**</td><td></td></tr><tr><td>(c) AI 基建叙事带来重估</td><td>SPCX 当时是「被重新归类为 AI 基建」</td><td>Anthropic **本身就是 AI 叙事**</td><td>⚠️ **反向**: 无可重估空间，且是泡沫论的最纯表达</td><td></td></tr></tbody></table>
+<p><strong>这个检验的结论值得单独记住</strong>：Agent 在 SpaceX 上判断「幅度小于用户预期」的三条理由里，<strong>只有第一条（小流通盘）完整适用于 Anthropic</strong>。第二条更弱（S&amp;P 500 盈利门槛挡住最大的被动资金池），第三条反向（Anthropic 没有「被重新归类」的空间，它已经是叙事的中心）。</p>
+<p><strong>因此：如果用同一套框架，对 Anthropic 的回撤幅度预期应当比当时对 SpaceX 的 15–25% 更大，而不是更小。</strong></p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-7"><h3>$260 亿私募配售的七家，<strong>全部是本工作簿的跟踪标的</strong></h3>
+<table class="compare"><thead><tr><th>供应商</th><th>今日价格</th><th>今日</th><th>30 日</th><th>在本工作簿的状态</th></tr></thead><tbody><tr><td>NVDA</td><td>$152.05</td><td>−2.19%</td><td>−35.97%</td><td>距 thesis-break $150 仅 <span class="up"><span class="up">+1.37%</span></span></td></tr><tr><td>GOOG</td><td>$279.97</td><td><span class="up"><span class="up">+0.85%</span></span></td><td>−19.40%</td><td>**thesis-break $280 已触线 (−0.01%)**</td></tr><tr><td>MSFT</td><td>$508.90</td><td><span class="up"><span class="up">+0.53%</span></span></td><td>−3.94%</td><td>缓冲 <span class="up"><span class="up">+64.16%</span></span></td></tr><tr><td>AMD</td><td>$520.24</td><td><span class="up"><span class="up">+3.34%</span></span></td><td>−19.45%</td><td>缓冲 <span class="up"><span class="up">+36.91%</span></span></td></tr><tr><td>AVGO</td><td>$353.18</td><td><span class="up"><span class="up">+3.39%</span></span></td><td>−6.20%</td><td>缓冲 <span class="up"><span class="up">+17.73%</span></span>，12/09 财报</td></tr><tr><td>MU</td><td>$703.79</td><td>−1.21%</td><td>−35.30%</td><td>缓冲 <span class="up"><span class="up">+8.28%</span></span>(警戒带内)，12/23 财报</td></tr><tr><td>TSM</td><td>$360.81</td><td><span class="up"><span class="up">+0.31%</span></span></td><td>−23.59%</td><td>缓冲 <span class="up"><span class="up">+28.86%</span></span></td></tr></tbody></table>
+<p><strong>这是一个集中度极高的新风险轴</strong>，此前未被记录：</p>
+<ol>
+<li><strong>七家全部是跟踪标的，无一例外。</strong> $260 亿按发行价 $83 买入无投票权股份 —— 若 ANT 破发，减值同时落在这七家的损益表上。</li>
+<li><strong>其中两家已在破位边缘</strong>（NVDA <span class="up">+1.37%</span>、GOOG 已触线），一家在警戒带内（MU <span class="up">+8.28%</span>）。ANT 破发会对这三家形成额外压力，而这个压力源<strong>不在任何一家的预设 kill condition 里</strong>。</li>
+<li><strong>MU 的出现尤其值得注意</strong> —— Micron 既是 Anthropic 的 HBM 供应商（卖内存收钱），又是其股东（出钱买股）。这是循环融资在本工作簿内最直接的一个实例。NVDA 今日把 Q4 毛利率指引砍到 71–72%，成因之一是 HBM 采购成本上行；而 HBM 的卖方（MU）又在用这笔收入的一部分买 Anthropic 的股票。<strong>钱在一个闭环里转了一圈。</strong></li>
+<li><strong>方向是双向的</strong>：若 ANT 首日大涨，这 $260 亿立即产生账面收益，对七家是利好；本工作簿 11/16 已记录过这个判别逻辑。</li>
+</ol>
+<h3>ANT 首日表现是一个免费的、对整条 AI 链的集体裁决</h3>
+<p>D.A. Davidson 的 Gil Luria 在 CNBC 的表述最准确：<strong>「Anthropic IPO 可能抬升也可能击沉 AI 交易」</strong>。对本工作簿的实用含义是：</p>
+<p>11/19 的 ANT 开盘价，是市场对「AI 建设方的融资可得性」给出的第一个公开价格。它同时读到七家跟踪标的，而且不需要等任何一家自己的财报。这比 12/09 的 AVGO 财报早 20 天。</p>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-8"><div class="callout danger"><p><strong>情绪比例无法区分这两笔交易（两者都是约 48% 看多 / 约 24% 看空），所以不要用情绪做判断。能区分它们的是四件事，其中三件对 Anthropic 不利。</strong></p></div>
+<table class="compare"><thead><tr><th>对 Anthropic 更有利</th><th>对 Anthropic 更不利</th></tr></thead><tbody><tr><td>需求强 1.75 倍(6–7x vs 2–4x)且上穿区间</td><td>**大盘背景显著更差** — 回撤进行中 vs 高位附近</td></tr><tr><td>**估值已被压低 25%**($2T 野心 → $1.5T 定价)</td><td>**$8,954 亿表外采购承诺**，SpaceX 无对应项</td></tr><tr><td>**经营层面接近打平**($5.67亿 / $170亿)</td><td>**$260 亿循环融资**，且交易对手全是跟踪标的</td></tr><tr><td>流通盘约 5.4%，稀缺溢价机制与 SpaceX 相似</td><td>**空方量化幅度极端 4.5 倍**(低 10x vs 低 2.2x) = 估值可观测性更差</td></tr><tr><td>—</td><td>**被动资金地板更弱**: S&amp;P 500 盈利门槛短期挡住(SpaceX 的第二条支撑不适用)</td></tr></tbody></table>
+<h3>可证伪的预测（评分日 2027-05-19，即挂牌后 6 个月）</h3>
+<p>基于 mega-IPO 基准率（中位数 12 个月回撤 −53%，6/7 样本跌超 40%）+ SpaceX 的实际路径 + 上述结构差异：</p>
+<div class="scenarios"><div class="scenario"><div class="name bull">Bull</div><div class="bar-wrap"><div class="bar bull" style="width:0%">0%</div></div><div class="target">ANT 6 个月后 &gt; $100 (vs $83 <span class="up">+20%</span>)</div><div class="desc">2027 营收兑现至约 $1,760 亿轨道 + Nasdaq-100 纳入落地 + AI 交易在 12 月 FOMC 后重启</div></div><div class="scenario"><div class="name base">Base</div><div class="bar-wrap"><div class="bar base" style="width:0%">0%</div></div><div class="target">ANT 6 个月后 $60–90 (−28% ~ <span class="up">+8%</span>)</div><div class="desc">首日有涨幅但不持久；2–8 周内跌破 $83；此后由季度营收增量决定区间</div></div><div class="scenario"><div class="name bear">Bear</div><div class="bar-wrap"><div class="bar bear" style="width:0%">0%</div></div><div class="target">ANT 6 个月后 &lt; $60 (−28% 以上)</div><div class="desc">季度营收增量继续衰减($68亿→$54亿→更低) + $8,954 亿承诺引发融资疑虑 + 大盘回撤延续</div></div></div>
+<p><strong>最具体的一条可证伪判断</strong>：</p>
+<blockquote>
+<p><strong>ANT 将在挂牌后 8 周内（即 2027-01-14 之前）至少有一次收盘价跌破 $83 发行价。</strong> 依据：SpaceX 用了 <strong>5 周</strong>（6/12 → 7/15）就破发，而 Anthropic 面对的大盘背景更差、表外义务更重、被动资金地板更弱 —— 唯一比 SpaceX 有利的是定价已被压低 25%，这应当延长而非消除破发时间。给 8 周而非 5 周正是为这个折价留出余量。</p>
+</blockquote>
+<p><strong>必须跟踪的三个变量</strong>（按信息量排序）：
+1. <strong>季度营收环比增量</strong>：$68 亿 → $54 亿 的衰减是否继续。这单独决定 $1.5 万亿 是否成立。
+2. <strong>$8,954 亿采购承诺的履约与再融资节奏</strong> —— 这是真正的风险所在，而不是损益表上的「亏损」。
+3. <strong>指数纳入的实际裁决</strong> —— Nasdaq-100 是否纳入、以及 S&amp;P 500 的盈利门槛何时可能满足。这决定被动资金地板的厚度。</p>
+<div class="callout info"><p><strong>Don't</strong>：不要用「$1,040 亿净亏损」做空方论证 —— 这几乎全是 IPO 前股权工具的非现金重估，估值涨得越多这个数字越大。也不要用 6–7 倍超额认购做多方论证 —— SpaceX 2–4 倍认购后首日仍 <span class="up">+19%</span>，而 5 个月后发行价买入者只剩 <span class="up">+6.9%</span>，超额认购倍数对 6 个月后的价格没有预测力。
+<strong>If acting</strong>：真正解锁判断的是三件事 —— (1) <strong>11/19 ANT 开盘与首日收盘</strong>，它同时给七家跟踪标的（NVDA/GOOG/MSFT/AMD/AVGO/MU/TSM）的 $260 亿配售定价；(2) <strong>首个公开季度的营收环比增量</strong>，验证或否证 $1,760 亿的 2027 轨道；(3) <strong>若 ANT 破发</strong>，按 SpaceX 的经验，最佳入场点出现在破发日附近（SPCX 7/15 破发日买入至今 <span class="up">+8.5%</span>，为全部入场点最优），而非首日。</p></div>
+<hr></div><div class="tab-panel" data-tab-for="tabs1-9"><p><strong>主要来源</strong>：Google News 聚合流（7 轮查询，共约 283 条标题）；TechCrunch 11/18 定价报道（$83 / 区间 $70–78 / $1.5 万亿全面摊薄 / 5 月私募 $9,650 亿 / 七家 $260 亿无投票权配售）；CNBC、Reuters、Al Jazeera、Forbes 的 $813 亿募资一致报道；CNBC 11/02（Q3 营收 $170 亿 / 采购承诺 $8,954 亿）；多源对账的 Q3 经营亏损 $5.67 亿 与净亏损 $233 亿。</p>
+<p><strong>未能核实的项</strong>（不要当作已确认）：
+- <strong>Anthropic 的解禁条款细节</strong> —— 仅见「数十亿股待解锁」的标题，未取得分层时间表。这是与 SpaceX 对比时最大的缺口，因为 SPCX 的分层解禁正是其 7–10 月供给压力的来源。
+- <strong>发行股数</strong> —— 定价前报道为 8.25 亿股，与 $813 亿 / $83 推算的约 9.79 亿股不符，可能含超额配售权。
+- <strong>$260 亿配售是否计入 $813 亿募资</strong> —— 报道口径不一（另有 $904 亿、$945 亿 的目标数字），本文按「$813 亿 IPO + $260 亿独立私募配售」处理并标注存疑。
+- <strong>Q3 同比增速口径冲突</strong> —— 同时见到 <span class="up">+47%</span>（Motley Fool，疑为环比）与 +1,127%（MarketWatch，疑为同比），本文按环比 <span class="up">+47%</span> / 同比约 12 倍处理。
+- <strong>ANT 的指数纳入资格</strong> —— S&amp;P 500 的 GAAP 盈利门槛为公开规则，但其对 Anthropic 的具体适用未经官方确认。</p></div></div>
+</body>
+</html>

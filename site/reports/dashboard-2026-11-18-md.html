@@ -171,7 +171,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
 </style>
 </head>
 <body>
-<div class="meta">📊 Stock workspace · rendered 2026-11-18 12:05</div>
+<div class="meta">📊 Stock workspace · rendered 2026-11-18 17:37</div>
 <h1 id="daily-report-2026-11-18">Daily Report 2026-11-18</h1>
 <blockquote>
 <p><strong>数据口径</strong>：本页行情取自 ET 13:38 的盘中快照（美股未收盘）。量比分母为 30 日全日均量，盘中取值系统性偏低约 25–30%，<strong>只用于横向相对排序，不要当绝对值读</strong>。涨跌幅为盘中对前收，收盘可能偏离。</p>
@@ -594,7 +594,9 @@ MRVL $144.97（破位 −27.51%，30d −49.06%）/ SNDK $778.21（−35.15%，3
 <p>今日 <strong>无任何个股达到 🔥 阈值</strong>（|1d| ≥ 5% 或量比 ≥ 1.5x 的全日口径）。最大单日跌幅 −4.84%（CNQ）、最大涨幅 <span class="up">+3.80%</span>（AMZN）。这是一个<strong>宽度大但强度低</strong>的交易日：9 只 5 日跌幅超 10%，但今天没有一只崩盘。</p></div><div class="tab-panel" data-tab-for="tabs1-2"><div class="callout warn"><p>未来 90 天 26 个事件，其中 3 个在 7 天内。<strong>最密的一天是 2026-12-09 — 三件事叠加：12 月 FOMC 决议（第二日）+ AVGO 财报 + SPCX 解禁到期。</strong> 这是一个「宏观折现率 + 单一公司需求裁决 + 单一公司供给冲击」同日落地的结构，当天任何一只的价格都是三个信号的净值，看价格本身无法归因。倒数第二密的是 2027-01-27（6 份财报：GEV / IBM / META / MSFT / SKHY / TSLA）。</p></div>
 <h3>🔥 7 天内</h3>
 <ul>
-<li><strong>2026-11-18（今日）· Anthropic IPO 挂牌 — 未发生。</strong> <code>timeline.yaml</code> 把今日记为估计挂牌日（定价区间 $1–1.4 万亿于 11/10 公布）。核查结果：Yahoo 已登记代码 <strong>ANT</strong>（Anthropic, PBC），但截至 ET 13:45 无任何价格、成交或 52 周数据 — <strong>尚未开始交易，挂牌日仍未确认</strong>。该事件的读数意义不变：七家供应商按发行价认购的 $260 亿，是「供应商用自己的资产负债表为客户融资背书」；若破发，$260 亿同时成为七家的减值项。直接读到 AVGO / MU / AMD / GOOG / MSFT / AMZN / SPCX。</li>
+<li><strong>2026-11-18（今日）· Anthropic 完成定价，挂牌在明日 11/19。</strong> <code>timeline.yaml</code> 把今日记为估计挂牌日 —— 实际今日是<strong>定价日</strong>。盘后确认：发行价 <strong>$83/股</strong>，上穿 $70–78 区间上沿 6.4%，全面摊薄估值约 <strong>$1.5 万亿</strong>，募资约 <strong>$813 亿</strong>，<strong>为史上最大 IPO，超过 SpaceX 的 $750 亿</strong>。代码 <strong>ANT</strong>，11/19 于 Nasdaq 开始交易（盘中查询 <code>ANT</code> 时返回全 null，与「已定价未挂牌」一致）。
+  估值轨迹值得记：8 月传 $2 万亿 → 10/16 投资者因营收增速放缓下调预期 → 11/02 压到约 $1.5 万亿 → 定价上穿区间。<strong>即买方先逼出 25% 折价，再超额认购 6–7 倍</strong>（SpaceX 当时是 2–4 倍且定在目标价）。
+  七家供应商按发行价认购的 <strong>$260 亿无投票权股份</strong>（AMD、Broadcom、Google、Micron、Microsoft、Nvidia、TSMC Partners）—— <strong>七家全部是本工作簿跟踪标的</strong>，其中 NVDA 距破位 <span class="up">+1.37%</span>、GOOG 已触线、MU 在警戒带内。若 ANT 破发，$260 亿同时成为七家的减值项，而这个压力源不在任何一家的预设 kill condition 里。完整对照分析见 <code>research/2026-11-18-anthropic-ipo-sentiment-vs-spacex.md</code>。</li>
 <li><strong>2026-11-20（2 天后）· SNDK 八拆一生效。</strong> 当日必须把 <code>stocks/SNDK/triggers.yaml::thesis_break_price</code> 由 1200 改为 <strong>150</strong>，并把 thesis / digest 内所有绝对价位除以 8。<strong>这是连续第五份报告提示未执行</strong> — 在它被修正之前，SNDK 的所有破位缓冲计算都是错的（现报 −35.15%）。</li>
 <li><strong>2026-11-25（7 天后）· 10 月 PCE 通胀。</strong> Fed 的正式通胀口径。关键定位：它落在 <strong>12/08–09 FOMC 之前</strong>，是会议前最后一份通胀数据。在 12 月加息概率已达 95% 的背景下，这份数据的作用不是决定「加不加」，而是决定「加 25 还是 50」—— 11/10 的 CPI 之后 50bp 概率已从约 0% 升到 13.6%。</li>
 </ul>
