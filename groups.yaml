@@ -29,12 +29,6 @@ focus:
 #   - User: "X 加进 {cluster}" / "X 从 {cluster} 移走" → agent edits members
 #   - Order matters — earlier clusters render as earlier tabs.
 focus_clusters:
-  - name: Anthropic
-    kind: stock
-    members: [ANT]
-    description: Anthropic (ANT) — 2026-11-19 Nasdaq 上市，$83 定价 / $81.3B 募资，史上最大 IPO（超 SpaceX $75B）。AI 纯标的中市值最大者，同时是 AMZN/GOOG/MSFT 的被投方与 NVDA/AVGO/TSM/MU 的客户 —— 既是 AI capex 的需求端代表，也是「AI 收入能否兑现」这条叙事的唯一直接可交易表达。
-    watch_items: [IPO 后首月价格发现, lockup 到期日（待招股书确认）, ARR/营收披露节奏, 算力承诺与 capex 合约（AMZN Trainium / GOOG TPU / NVDA）, 首份季报日期, 93 页风险因子中被市场重新定价的条目, 对 NVDA/AVGO/MU 的需求端 read-through, 指数纳入（S&P/Nasdaq-100）时点]
-
   - name: TSLA
     kind: stock
     members: [TSLA]
@@ -57,7 +51,7 @@ focus_clusters:
   - name: AI capex
     kind: sector
     members: [GOOG, AMZN, MSFT, META, NVDA, TSM, AVGO, MRVL, INTC]
-    external_refs: [OpenAI, Anthropic, xAI, Reflection AI]
+    external_refs: [OpenAI, xAI, Reflection AI]  # Anthropic 已于 2026-11-19 上市 (ANT)，不再是 external ref — 作为 focus 成员跟踪
     description: Hyperscaler capex 开支方 + AI 算力底层 (含 AVGO custom ASIC 龙头 + MRVL AWS Trainium互联 + INTC turnaround / foundry / Xeon-NVDA DGX 路径)；判断 "AI 投入产出" 叙事走向
     watch_items: [hyperscaler earnings capex guide, AI revenue ramp signals, talent moves (e.g. Jumper → Anthropic), VC funding rounds, OpenAI/Anthropic ARR disclosures, AVGO custom-silicon (TPU/Trainium/MTIA) wins, MRVL Trainium 2/3 SerDes ramp, INTC 14A process milestones, "INTC foundry customer wins (Apple return?)", INTC Xeon design wins, US government equity stake actions]
 
