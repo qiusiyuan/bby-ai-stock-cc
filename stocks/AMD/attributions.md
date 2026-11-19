@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-19 · -8.52% day · ▼ major
+**Tags:** `regulatory_negative`, `policy_us`, `policy_china`
+**Confidence:** high
+
+**Primary cause.** AMD -8.52%，量比 1.61x（盘中读数，实际偏低 25-30%）—— 今日跟踪标的中唯一由公司特定负面消息驱动的大跌。起因是 Hunterbrook Media 发布报告质疑 AMD 的出口管制合规与中国收入口径（「AMD stock drops after Hunterbrook Media raises export control concerns」/「AMD Faces Its Own China Questions After Hunterbrook Report」）。这是政策线而非需求线，但与同日 TSMC 与 Samsung 暂停部分对华芯片出货（「as US tightens export curbs」）是同一条线: 出口管制从 11/16 的「限制远程访问先进 AI 芯片（封租用）」推进到今天的「封实物出货 + 质疑既有收入口径」，三个交易日内两次升级，两次都伴随板块下跌 —— 定价的是规则而不是需求。AMD 的 break 缓冲仍有 +27.62%（break $380），30 日 -21.87%。注意 AMD 同时是 Anthropic $260 亿供应商配售的七家之一，但今日下跌与 ANT 无关。第一个正面回答这个质疑的机会是 2027-02-02 的 Q4 财报。
+
+**Sources.**
+- Yahoo Finance: [AMD stock drops after Hunterbrook Media raises export control concerns](https://finance.yahoo.com/)
+- Yahoo Finance: [AMD Faces Its Own China Questions After Hunterbrook Report](https://finance.yahoo.com/)
+- Yahoo Finance: [TSMC and Samsung halt some chip shipments to China as US tightens export curbs](https://finance.yahoo.com/)
+
+**Cross-assets.** SPY PCT -1.10% · QQQ PCT -2.40% · SOX PCT -0.83% · NVDA PCT -1.18% · AVGO PCT -1.13% · TSM PCT -1.37% · INTC PCT +3.74%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-19.md`
+
+---
 ### 2026-11-18 · +3.34% day · ▲ material
 **Tags:** `sector_rotation`, `competitor_news`, `earnings_print`
 **Confidence:** high

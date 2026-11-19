@@ -4,6 +4,24 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-19 · -1.18% day · ▼ major
+**Tags:** `earnings_post_print`, `sector_rotation`, `flow_event`
+**Confidence:** high
+
+**Primary cause.** NVDA $149.18 —— **首次跌破 thesis_break_price $150（缓冲 -0.55%）**，11/16 时还是 +4.1%。今日仅 -1.18%，但 5 日 -10.24% / 30 日 -35.27%。性质: 这是在交出一份 11/18 财报（营收 $115.8B +103% YoY / Data Center $107.6B +110% / Q4 指引 $130B 再 +12.3% 且假设中国算力收入为零）之后的第二个交易日跌破自己的 bear 目标价。价格在 bear，而 bear case 写明的三条机制全部被那份财报否证 —— 真正在定价的是 11/18 记录过的第四条路径: 利润池份额（Q4 毛利率指引 74.9%→71-72%，约 $39 亿毛利，而 thesis 的 reverse-DCF 明确假设毛利率守住 70%+，只剩 1-2pp 余量；预设卖出线 65% 尚有 6-7pp）。今日的两个增量成因: (1) ANT 挂牌把资金从板块抽走 —— 「Nvidia, Broadcom, and Micron stocks erase gains as Anthropic goes public」，且 NVDA 是 ANT $260 亿供应商配售的七家之一，市场把配售读作支出而非资产; (2) post-Huang 折价未消化 —— 「Nvidia Stock Can't Shake Post-Huang Hangover. Anthropic Debut Also Not Providing a Boost.」，Jensen Huang 11/12 辞任 CEO 的折价仍在定价中；另有 Bessent 公开呼吁 NVIDIA「dramatic shakeup」。同日 GOOG 也首次跌破 $280（-0.74%），但 GOOG 今日仅跌 0.46%，是被 SPY 跌破 MA200 拖过线的，性质与 NVDA 不同。决策含义: 已破位，需要判断的是 $150 这个数字是否还反映当初的逻辑，而不是等更多数据。
+
+**Sources.**
+- Barron's: [Nvidia Stock Can't Shake Post-Huang Hangover. Anthropic Debut Also Not Providing a Boost.](https://www.barrons.com/)
+- Yahoo Finance: [Nvidia, Broadcom, and Micron stocks erase gains as Anthropic goes public](https://finance.yahoo.com/)
+- Yahoo Finance: [NVIDIA Doubled Its Revenue in Its First Quarter Without Huang. Here's Our Price Target.](https://finance.yahoo.com/)
+- Yahoo Finance: [Nvidia Holders' Real Risk Sits With Its Neocloud Buyers](https://finance.yahoo.com/)
+
+**Cross-assets.** SPY PCT -1.10% · QQQ PCT -2.40% · SOX PCT -0.83% · ANT PRICE 97.42 · GOOG PCT -0.46% · AVGO PCT -1.13% · AMD PCT -8.52% · MU PCT +0.07%
+
+**Agent read.** 
+ · Snapshot at `dashboard/2026-11-19.md`
+
+---
 ### 2026-11-18 · -2.19% day · ▼ material
 **Tags:** `earnings_print`, `guidance_inline`, `sector_rotation`, `executive_comment`
 **Confidence:** high

@@ -105,3 +105,9 @@ events:
   - { date: 2026-Q3, kind: policy, ticker: macro, note: "EU TCMV decision on FSD (range — Sweden opposes, multi-state vote)" }
   - { date: 2026-12, kind: policy, ticker: macro, note: "FCC 6GHz spectrum / Starshield contract renewal window (estimate)" }
   - { date: 2027-01, kind: policy, ticker: macro, note: "**S.5653 参议院投票窗口 (有截止无日期)** — 收窄联邦项目环评范围 + 设定许可期限 + 指示 FERC 为大型算力负荷建立电费支付者保护 (把 Trump 的 RATEPAYER PROTECTION PLEDGE 立法化, 要求数据中心自建自付电力)。共和党 Capito/Lee + 民主党 Whitehouse/Heinrich 于 2026-09-30 提出, 至今未出委员会。Trump 2026-11-08 公开要求在民主党 1 月接管国会前通过。**方向分叉: 通过 → GEV 在手 122GW 执行确定性上升, 但 hyperscaler 电力成本上升 (MSFT FY2026 capex $1,160亿); 不通过 → 11/05 的「建不了」叙事重获支点**" }
+
+  # ── 2026-11-19 补录: ANT (Anthropic) 加入跟踪 ──────────────────
+  - { date: 2026-11-19, kind: catalyst, ticker: ANT, note: "**Anthropic (ANT) Nasdaq 挂牌首日** — $83 定价 (区间 $70-78，上穿上沿 6.4%)，募资 $81.3B 为史上最大 IPO (超 SpaceX $75B)，全面摊薄估值约 $1.5 万亿。开盘 $111.50 (+34.3%)，盘中高 $113.31，低 $94.04。$260 亿供应商无投票权私募配售的七家 (AMD/AVGO/GOOG/MU/MSFT/NVDA/TSMC Partners) 全部是跟踪标的" }
+  - { date: 2026-12-19, kind: catalyst, ticker: ANT, note: "Nasdaq-100 年度重构 (~估计日期，每年 12 月第三个周五前后公告) — Nasdaq-100 不要求盈利，是 ANT 最可能的第一个被动资金地板。S&P 500 要求 GAAP 盈利 (前四季合计为正且最近一季为正)，以九个月 $1,040 亿净亏损短期内不符合" }
+  - { date: 2027-01-14, kind: prediction, ticker: ANT, note: "🎯 评分: 「ANT 在挂牌后 8 周内至少有一次收盘价跌破 $83 发行价」 — 记录于 2026-11-18。依据: SpaceX 用 5 周破发，而 Anthropic 大盘背景更差 / 表外义务更重 ($8,954 亿采购承诺) / 被动资金地板更弱，唯一有利项是定价已被压低 25%，故给 8 周而非 5 周", scorecard: "research/2026-11-18-anthropic-ipo-sentiment-vs-spacex.md" }
+  - { date: 2027-05-19, kind: prediction, ticker: ANT, note: "🎯 评分: ANT bull/base/bear 分布 (以 2026-11-19 的 $97.42 为基准) — bull 25% >$110 / base 50% $65-95 / bear 25% <$65。关键跟踪变量: 季度营收环比增量是否继续从 $68亿→$54亿 衰减", scorecard: "stocks/ANT/thesis.md" }
