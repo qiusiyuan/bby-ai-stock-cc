@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -6.68% day · ▼ material
+**Tags:** `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** **距预设 thesis-break $700 仅 +0.82% — 跟踪名单里最窄的缓冲。一个 1% 的交易日就会破位。而今天没有任何公司级利空。**||**纯分母事件，三个数字确认**: (1) 量比 0.96x — 未放量，不是集中抛售; (2) 当日无任何公司级负面消息，且有两条正面 — Bernstein 维持 $1,298 目标价 (+72% 上行)、Poland 为私营小型模块化反应堆 (SMR) 开放 CfD 差价合约支持; (3) 跌幅 −6.68% 为 SPY −1.98% 的 3.4 倍，与久期分层一致 (当日 QQQ/DIA 跌幅比 5.4 倍)。||**驱动**: Fed 十月纪要披露部分官员主张十月加息、50bp 已上桌。GEV 的价值建立在未来十年的在手订单 (122GW) 上，折现率每上移一档，这类资产损失最大。||**分子与价格完全背离**: GEV 在 2026 年已有三次指引上调，而股价较 7 月高点下跌 34% (52 周口径 −41.0%)。这是本月基本面与价格脱钩持续时间最长的一例 — 比 SNDK (10/29 Tier 1 全部超承诺上沿、三周后再跌 46%) 时间更长。||**预设 kill condition 与当前风险错配**: 破位线依据是「Power 段利润率崩塌 + Wind 亏损」的 bear 情形。当前实际: 三次指引上调、Power 段无利润率恶化披露、Wind break-even 为既有 watch item。**价格即将跌穿一条为完全不同原因设计的线。**||**唯一能改变分母叙事的政策事件在 2027-01-15**: S.5653 参议院投票窗口 (有截止无日期) — 收窄联邦项目环评范围 + 设定许可期限 + 指示 FERC 为大型算力负荷建立电费支付者保护。通过 → 许可周期缩短直接改变现金流时点，等效于降低久期，122GW 执行确定性上升; 不通过 → 11/05 的「建不了」叙事重获支点。法案自 2026-09-30 提出至今未出委员会，Trump 已于 2026-11-08 公开要求在民主党 1 月接管国会前通过。||**卖方分歧同日出现**: Bernstein $1,298 (+72%) vs Erste Group 质疑 2027; GEV 被列入「分析师转向看空」名单第 7 位。
+
+**Sources.**
+- Yahoo: [72% Upside for GE Vernova? Bernstein Thinks So, and Here's How It Gets to $1,298](https://finance.yahoo.com/)
+- Yahoo: [Poland opens door to CfD support for private small nuclear reactors](https://finance.yahoo.com/)
+- _Corroboration:_ 量比 0.96x 未放量; QQQ −3.47% / DIA −0.51% 久期分层比 5.4 倍; 无公司级利空
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** confidence 给 medium 因为归因是排除法得出的 (无公司消息 + 未放量 + 跌幅符合久期分层)，不是直接催化剂。若明日破位，正确处理是「预设条件需要修正」而非「thesis 被否证」— 那条线是为 Power 利润率崩塌 + Wind 亏损设计的，这两件事都没发生。裁决数据是 1/27 财报里 Power 段利润率: 若仍在扩张而股价已破位，则预设线失效; 若收缩，则预设条件第一次与价格对齐。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-18 · -0.07% day · ▼ minor
 **Tags:** `macro_rates`, `sector_rotation`
 **Confidence:** medium

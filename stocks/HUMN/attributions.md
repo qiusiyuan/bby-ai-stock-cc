@@ -4,6 +4,21 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -5.62% day · ▼ material
+**Tags:** `macro_rates`, `flow_event`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** **−5.62%，但真正的异常是量比 3.75x — 全部 35 只跟踪标的里最高的一只 (第二高是 HXE.TO 1.59x)。**||**无任何板块级消息**: Optimus Gen3/V3 发布、Fremont 量产确认、任一供应商拿到 Tesla 确认订单、UBTech/Unitree 订单与 IPO 进展、谐波减速器估值回落 — 五条 watch item 今日全部无信息。||**所以下跌本身是纯折现率事件**: 该主题的定位是纯长久期、无当期盈利，对利率与风险偏好极敏感。Fed 纪要把 50bp 摆上桌，这类资产的折现率敏感度最高。||**但 3.75x 量比不是纯 beta 能解释的**: 对照同样无消息、同样长久期的标的 — GEV 0.96x / TSLA 0.68x / SPCX 0.74x，全部缩量。HUMN 的 3.75x 意味着有实际持仓调整在发生。ETF 的 AUM 规模较小，单笔机构赎回即可产生该量比，不宜过度解读为散户恐慌; 更可能是**配置型资金削减主题 ETF 敞口**，与 HXE.TO 放量 1.59x 机制相同。||**可验证的后续判别**: 若后续几个交易日量比回落而价格不续跌 = 一次性赎回; 若量比持续高于 2x = 趋势性撤出。||**三只的分化方向**: 30 日口径 CROB −10.52% < KOID −17.98% < HUMN −20.01%，即中国机器人宽基最抗跌、最纯的人形 OEM 最弱。与板块 thesis 的核心错配叙事方向一致 — 在风险偏好收缩时「最纯」等于「最高 beta」。注意 CROB 是中国机器人宽基，不是 thesis 关注的减速器供应链 (谐波减速器)，两者内容纯度不同。
+
+**Sources.**
+- _Corroboration:_ KOID −5.37% (量比 1.26x) / CROB −3.22% (量比 0.63x); QQQ −3.47%; 无任何板块级消息
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** 量比 3.75x 是今天唯一一个无法用折现率解释的流量信号，需要跟进 3-5 个交易日。若确认为趋势性撤出，该主题在加息周期里的可持有性需要重新评估 — 它没有任何当期现金流可以提供地板。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-18 · +0.83% day · ▲ minor
 **Tags:** `macro_rates`, `sector_rotation`, `unattributed`
 **Confidence:** low

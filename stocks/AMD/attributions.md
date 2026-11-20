@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -10.54% day · ▼ extreme
+**Tags:** `sector_rotation`, `geopolitical_trade`, `analyst_downgrade`
+**Confidence:** medium
+
+**Primary cause.** **−10.54%。三条归因叠加，无单一主因，故 confidence 给 medium。**||(1) **ANT 下跌的外溢** — 当日市场口径明确为「AMD Stock Is Getting Crushed by Anthropic's Drop and a Short Report」。AMD 是 ANT 11/19 $260 亿供应商配售的七家之一，ANT 今日 −10.90%、盘中触及发行价，配售敞口被读作损失。||(2) **做空报告** — 与 11/19 的 Hunterbrook 报告 (质疑中国收入口径) 同一条线延续。||(3) **中国风险** — 美国新规生效 + TSMC 停单，AMD 的对华敞口被重新定价。||**结构性意义: 「不是 NVIDIA」交易的受益方反转**。11/18 AMD +3.34%，当日判别依据是 ^SOX 仅 +0.05% (板块内零和再分配)。今天 ^SOX −8.12%，AMD −10.54% 跑输 NVDA −6.64% 近 4 个百分点。份额交易的三个受益方 (AVGO −11.10 / AMD −10.54 / MRVL −9.07) 今天全部跑输龙头。||**位置**: 距预设 thesis-break $380 缓冲 +15.2%。下一个硬数据是 2027-02-02 Q4 财报，是破位警戒名单之外最远的一个。
+
+**Sources.**
+- Barron's: [AMD Stock Is Getting Crushed by Anthropic's Drop and a Short Report](https://www.barrons.com/)
+- Yahoo: [AMD Falls on China Risk; Ross Tumbles on Q4 Guidance | Stock Movers](https://finance.yahoo.com/)
+- _Corroboration:_ ^SOX −8.12%; AVGO −11.10% / MRVL −9.07% 同为「不是 NVIDIA」受益方反转; ANT −10.90%
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** 三条归因里只有第一条是今天新增的 (ANT 配售敞口被读作损失)，另两条是延续。最有价值的是结构性读数: AMD 作为份额交易受益方的角色今天失效，说明市场不再做「谁从 NVDA 手里拿份额」这道相对选择题。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-19 · -8.52% day · ▼ major
 **Tags:** `regulatory_negative`, `policy_us`, `policy_china`
 **Confidence:** high

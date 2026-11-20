@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -12.10% day · ▼ extreme
+**Tags:** `memory_pricing`, `analyst_downgrade`, `macro_rates`, `sector_rotation`
+**Confidence:** medium
+
+**Primary cause.** **跌穿预设 thesis-break $650，现低于该线 6.63%，为首次破位。fPE 压到 2.92x。**||**第四条风险轴出现**: 11/18 记录的三轴框架是 (1) 需求/周期 — 当日被 NVDA 的 $130B Q4 指引完整证实; (2) 监管/出口管制 — 11/16 远程访问新规未解除; (3) 法律 — DRAM 价格操纵集体诉讼进入实体审理。今天新增第四条: **定价预期** — TrendForce 把 2027 年 NAND 价格展望转为看空。||**第四条与前三条的区别**: 前三条都是「涨价能否持续」或「涨价是否合法」的外围问题，第四条直接否证涨价本身的延续。||**公司口径与第三方口径正面冲突**: 11/19 MU 的 CTO 还在说「2027 年内存更紧、75% 产能已售出」，当日盘中 +6.63% 收 +0.07%。一天之后第三方研究机构给出相反的 2027 价格方向，MU 跌 12.1%。**同一个 2027 年，公司说更紧，研究机构说更松，市场选了后者。**||**confidence 标为 medium 的原因 — 口径不一致**: TrendForce 的看空对象是 **NAND** (闪存)，而 MU 的收入主体是 **DRAM 与 HBM** (服务器内存)。两者是不同产品、不同产能、不同定价周期，历史上周期经常错位。今天的跌幅分布只部分体现了这个区分 (SNDK 纯 NAND −14.45% / MU −12.10% / SKHY −10.05% / DRAM −10.23%)，差距仅 2.4-4.4pp，远小于业务结构差异应产生的分化。**市场把 NAND 的坏消息按复合体整体定价了**，因此本条归因的因果链存在外溢成分，不给 high。||**30 日口径的分叉证据**: Samsung −30.11% / SKHY −36.57% / MU −41.01% / SNDK −59.4%，排序与 NAND 敞口占比正相关，离散度 29pp。对照 11/18 记录的「三者差距收窄到 6pp 以内、无显著份额分化证据」 — **NAND vs DRAM 的分叉在月度口径上已出现，日度口径还没有。**||**与 SKHY 双股联动破位**: 11/18 预判「SKHY 是双股联动破位的先行指标」，今日两只同日破位，SKHY 跌幅略小但先到位，预判成立。||**宏观叠加**: Fed 十月纪要披露部分官员主张十月加息、50bp 上桌，周期股估值对利率高度敏感 — 分子 (定价预期) 与分母 (折现率) 同时恶化。
+
+**Sources.**
+- Yahoo: [SanDisk Tumbles 8% as TrendForce Turns Bearish on 2027 NAND Prices; Micron Falls 5%, SK Hynix Slides 4%](https://finance.yahoo.com/)
+- Barron's: [Micron Stock Plunges 13% as Barron's Calls Memory Stocks Agonizingly Cheap](https://www.barrons.com/)
+- _Corroboration:_ SKHY −10.05% 同日破位 / DRAM −10.23% / SNDK −14.45% / 005930.KS −7.01% / KOSPI −4.6%
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** 需求确认 (11/18) 没有换来重估，定价预期转负立即换来破位 — 本轮内存定价的边际变量是价格路径，不是销量路径。12/23 MU 财报里 HBM (现按 Cloud Memory / Core Data Center 口径披露) 的环比定价与毛利率是唯一的裁决数据: 若 HBM 定价仍上行而 NAND 下行，今天的同幅下跌是错价; 若两者同向下行，第四轴成立。预设的四条 kill condition 全部未触发，破位原因不在表内。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-18 · -1.21% day · ▼ material
 **Tags:** `memory_pricing`, `earnings_print`, `regulatory_negative`, `macro_rates`
 **Confidence:** high

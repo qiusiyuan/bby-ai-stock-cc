@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -11.10% day · ▼ extreme
+**Tags:** `competitor_news`, `analyst_downgrade`, `pt_change`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **−11.10% 为跟踪名单当日第二大跌幅，距预设 thesis-break $300 仅剩 +2.72% 缓冲，距 52 周低 $289.77 仅 −6.0%。归因直指 thesis 核心前提。**||**催化剂**: 供应链分析师 Ming-Chi Kuo 报告 — **Google 削减 2027 年 Broadcom 设计 AI 芯片 (TPU) 的出货计划，同时准备增加 MediaTek 设计的替代方案出货**。||**为什么这条直接否证 thesis**: AVGO 的 thesis 建立在 custom ASIC 的「供应商不可替代性」上 — hyperscaler 想摆脱 NVIDIA 的议价能力，于是转向定制化，AVGO 作为设计方拿到份额。今天 Google 证明了它想摆脱的不只是 NVIDIA 的议价能力，**而是任何单一供应商的议价能力**。定制化路线仍成立，但定制化的设计方也要进入价格竞争。||**这同时杀死了「不是 NVIDIA」交易**: 11/12 与 11/18 两次出现「卖 NVDA、买 AVGO/AMD/MRVL」的份额零和交易，判别依据是 ^SOX 几乎不动 (11/18 仅 +0.05%)。今天 ^SOX −8.12%，而三个受益方全部跑输 NVDA (AVGO −11.10 / AMD −10.54 / MRVL −9.07 vs NVDA −6.64)。**判别轴从零和翻成负和。**||**卖方同日跟进**: Goldman Sachs 将目标价下调至 $460；Redburn 下调评级 (标题措辞为「尽管 AI 增长 221%」)，即下调理由不是增速而是结构。||**零和的另一端是 GOOG**: GOOG 当日 +0.04%，是大型科技里唯一未跌的一只。削减供应商开支对 GOOG 是现金流改善，对 AVGO 是失单 — 这是今天板块内唯一一组可清晰识别的零和。||**财报时点**: 12/09 Q4 财报与 12 月 FOMC 同日，届时可能已在破位线之下。该财报的性质被今天改变了 — 从「验证 2027 AI 营收翻倍至 $1,150 亿」变成「回答供应商可替代性」。
+
+**Sources.**
+- Investing.com (Ming-Chi Kuo): [Google reportedly cuts Broadcom-designed TPU plans, eyes more MediaTek chips](https://www.investing.com/)
+- Yahoo: [Goldman Sachs Cut Its Broadcom Target to $460, and the Reason Has Nothing to Do With Broadcom's Earnings](https://finance.yahoo.com/)
+- _Corroboration:_ GOOG +0.04% 为零和另一端; MRVL −9.07% 同为 ASIC/互联设计方; ^SOX −8.12%
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** thesis 的核心前提被客户行为直接否证，而不是被竞争对手或宏观否证 — 这是最难反驳的一类证据。唯一的反证途径是 12/09 财报给出 Google 之外的客户锁定量 (Trainium / MTIA 的具体承诺)。在此之前，AVGO 的破位风险高于 GEV 之外的任何跟踪标的，且与 GEV 不同，它的破位有公司级理由。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-18 · +3.39% day · ▲ material
 **Tags:** `sector_rotation`, `competitor_news`, `earnings_print`
 **Confidence:** high

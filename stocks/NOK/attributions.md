@@ -4,6 +4,22 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -7.73% day · ▼ major
+**Tags:** `unattributed`, `sector_rotation`, `macro_rates`
+**Confidence:** low
+
+**Primary cause.** **−7.73% 而无任何公司级利空，量比 0.78x 缩量。confidence 给 low — 找不到对应的催化剂。**||**昨日的利好完全失效**: 11/19 公布「2027 年 IP 与光网络业务增长至多 30%，AI 订单激增，尽管存在供应约束」。今天跌 7.73%。||**其他近期正面信息同样无效**: ASUS 专利授权协议强化许可业务; Dell'Oro 数据显示 Nokia 在 3Q 2026 移动核心网市场与 Huawei / Ericsson 共同扩大领先。||**可能的解释 (未确认)**: (1) ADR 整体承压 — 11/19 已记录「在美交易的欧洲 ADR 周四集体下跌」; (2) 作为低价股在风险偏好收缩时流动性溢价扩大; (3) AI 网络叙事与半导体板块的关联定价 (^SOX −8.12%)。三条都不构成可验证的归因。||**位置**: 低于预设 thesis-break $9 达 23.1%，破位已持续。预设 kill condition 未触发。
+
+**Sources.**
+- Yahoo: [Nokia Sees Up to 30% IP and Optical Growth in 2027 as AI Orders Surge, Despite Supply Constraints](https://finance.yahoo.com/)
+- _Corroboration:_ 量比 0.78x 缩量; ^SOX −8.12%; 无公司级利空
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** 标 unattributed 比编一个故事好。NOK 是跟踪名单里连续多日「利好无效 + 无利空 + 缩量下跌」最典型的一只，这个组合本身是信息: 它说明该标的当前没有价格发现，只有被动的流动性调整。1/28 Q4 财报是唯一能强制重新定价的事件。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-18 · +0.07% day · ▲ minor
 **Tags:** `sector_rotation`, `unattributed`
 **Confidence:** low

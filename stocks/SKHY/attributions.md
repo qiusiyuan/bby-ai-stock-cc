@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -10.05% day · ▼ extreme
+**Tags:** `memory_pricing`, `m_and_a`, `macro_rates`
+**Confidence:** medium
+
+**Primary cause.** **跌穿预设 thesis-break $115，现低于该线 6.77%，为首次破位。11/18 预判「SKHY 是内存复合体里距破位最近的一只、是双股联动破位的先行指标」今日被完整验证 — 与 MU 同日破位且先到位。**||**同源驱动**: TrendForce 2027 NAND 看空 (与 MU 同条)。confidence 标 medium 的原因同 MU — 看空对象是 NAND，而 SKHY 的核心资产是 DRAM/HBM，存在外溢成分。||**公司级动作方向为正但时点逆周期**: SK Hynix 将通过把持有的 Kioxia (日本 NAND 厂) 债券转为股份，**成为 Kioxia 第一大股东**。即在 NAND 2027 定价预期转负的同一天确认扩大 NAND 敞口。短期是中性偏空信号 (增加对刚被看空产品线的敞口); 若 TrendForce 看空被证伪，会反转为低位整合的正面事实。||**韩国本土同步**: 000660.KS 首尔跌 5.92%，Samsung (005930.KS) 跌 7.01%，KOSPI 当日 −4.6%。ADS 与本土当日差 4.1pp — 跨市场日度口径不可直接比较 (首尔收盘早于美股)，这是时区差而非估值差。||**预设 kill condition 状态**: 三条全部未触发。「Samsung 通过 NVIDIA HBM3E/HBM4 认证」— 无任何确认信息; 「hyperscaler capex 指引集体削减 >20%」— 11/18 NVDA $130B 指引指向反向; 第三条同样未触发。||**宏观叠加**: Fed 纪要 50bp 上桌，周期股折现率敏感。
+
+**Sources.**
+- Yahoo/Korea JoongAng Daily: [SK Hynix to Be Kioxia's Top Shareholder](https://finance.yahoo.com/)
+- Yahoo: [South Korea's Stock Market Sinks 4.6% as KOSPI Heavyweights SK Hynix and Samsung Fall 6% After Wall Street's AI Selloff](https://finance.yahoo.com/)
+- _Corroboration:_ MU −12.10% 同日破位 / DRAM −10.23% / SNDK −14.45%
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** 先行指标的角色成立，这条判别方式可以继续用: SKHY 的破位距离总是短于 MU，因为预设水位设得更近而非因为更弱。30 日口径 SKHY −36.57% 介于 Samsung −30.11% 与 MU −41.01% 之间，与 NAND 敞口占比排序一致。Kioxia 转股是一个需要跟进的新敞口 — 它把 SKHY 的 NAND 占比提高了，而 NAND 恰是今天被看空的那条线。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-18 · -0.24% day · ▼ material
 **Tags:** `memory_pricing`, `earnings_print`, `regulatory_negative`
 **Confidence:** high

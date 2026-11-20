@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -9.07% day · ▼ extreme
+**Tags:** `m_and_a`, `sector_rotation`, `macro_rates`
+**Confidence:** medium
+
+**Primary cause.** **−9.07%，30d −54.26% 为 AI capex cluster 当日最差。破位已持续，低于预设 thesis-break $200 达 37.0%。**||**公司级线索延续**: Lumentum 收购对价争议未解 — Lumentum CEO 当日公开承认「股东并不满意 (shareholders are not happy)」这笔交易。11/16 记录的机制是 MRVL 全股票收购 Lumentum 的对价由 $1,132 降至 $657，形成自我强化的下行循环 (股价越跌、对价越低、卖方越不满)。今天该循环继续: 股价再跌 9.07%，对价进一步缩水。||**结构性**: 与 AVGO 同为 ASIC / 互联设计方。Google 削减 Broadcom TPU 转 MediaTek 的消息对 MRVL 是同类风险 — 它的 thesis 核心是 AWS Trainium 2/3 的 SerDes 互联，同样依赖单一大客户的供应商选择。今天未有针对 MRVL 的客户换供应商消息，但该风险的可信度被 AVGO 的案例整体提高。||**量比 0.81x** — 缩量，与 INTC / TSLA 同属「买方撤单」而非「集中抛售」。||**12/01 Q3 财报是破位八只里第一份硬数据**，距今 11 天。这是检验「价格破位 ≠ thesis 破位」这个判断的第一个机会。
+
+**Sources.**
+- Yahoo: [Lumentum's CEO Admits Shareholders Are Not Happy About the Marvell Deal](https://finance.yahoo.com/)
+- Yahoo: [Credo Sinks 6%, Marvell Down 5% as Cramer Says Nvidia Woes Are Overwhelming the Good News](https://finance.yahoo.com/)
+- _Corroboration:_ AVGO −11.10% 同为 ASIC 设计方; CRDO −6% 同为互联; ^SOX −8.12%
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** Google 换掉 Broadcom 这件事对 MRVL 的意义大于当日跌幅所体现的 — MRVL 对 AWS Trainium 的依赖集中度高于 AVGO 对 Google 的依赖，而今天证明了大客户愿意换设计方。12/01 财报应重点看 Trainium 的订单可见性表述，而非当期营收。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-18 · -2.53% day · ▼ material
 **Tags:** `sector_rotation`, `m_and_a`, `macro_rates`
 **Confidence:** medium

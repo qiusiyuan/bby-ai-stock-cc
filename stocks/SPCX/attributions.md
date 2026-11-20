@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -6.23% day · ▼ material
+**Tags:** `secondary_offering`, `macro_rates`, `partnership_news`
+**Confidence:** high
+
+**Primary cause.** **明确的公司级归因: SpaceX 发行 320 亿美元债券购买 NVIDIA 芯片，最大一笔票息 8.26%，绝大部分收益率在 8% 以上，用于租赁约 473 亿美元的 GPU 设备。发行时点是其最大算力租户 Anthropic (ANT) 上市次日。**||**8.26% 是关键数字**: 在 10Y 为 4.944% 的环境里，8.26% 意味着约 330bp 的信用利差 — 高收益级定价。这是债券市场对「借钱买 GPU、把 GPU 放到轨道上」收取的风险补偿。此前跟踪的 watch item 是「bond/notes offering activity」(活动)，今天这条升级成了「价格」(票息)，成为可逐期比较的硬数字。||**与 Fed 的交互**: Fed 纪要把 50bp 加息摆上桌，而 SPCX 刚把 320 亿美元融资成本锁定在 8%+。锁定票息在加息周期里本身中性偏好 (固定成本)，但它公开暴露了这个商业模式对资金成本的敏感度，且定在很高的位置。||**与 ANT 的循环结构第一次被量化，市场选了空头读法**: 多头口径 — Anthropic 刚通过史上最大 IPO ($813 亿) 拿到现金，作为租户信用质量上升，加上 Alphabet 的租金，这笔借款合理。空头口径 — ANT 上市第二日跌 10.9%、盘中触及 $83.05 (距发行价 5 美分)，股权价值两日内较开盘缩水 22.3%，而 SPCX 的 320 亿债务是刚性的。**两条口径读同一事实，分歧在于 ANT 股价是否是其付租能力的代理。** 今天 SPCX −6.23% 与 ANT −10.90% 同向，市场暂选后者。||**11/16 的护城河优势完全失效**: 那天 Starship 飞行 15 成功回收上级 + ULA Vulcan 失败丢失 Amazon Leo 载荷，SPCX −0.32% vs QQQ −2.40% 是本轮回撤唯一的赢家表现。四个交易日后跑输 QQQ (−6.23% vs −3.47%)。发射业务的竞争优势没变，改变的是资本结构的可见性。||**解禁结构**: 12/09 上市 180 天解禁，距今 19 天，且与 12 月 FOMC 决议、AVGO 财报同日。解禁前三周背上 320 亿新债 — 解禁日的供给侧同时有股票解锁与新增债务在表。||**新传导路径**: HSBC 当日上调 TSLA 评级至 $359 目标价，理由明确挂在 SpaceX 合并传闻上。若该定价方式扩散，TSLA 与 SPCX 的相关性会上升 (今日分别 −5.88% 与 −6.23%，几乎同幅)。||**无持仓，纯跟踪**: thesis_break_price 为 null，按既定处理不生成卖出提醒。
+
+**Sources.**
+- Investor's Business Daily: [SpaceX Sells $32 Bil Of Debt For AI Chips. But Yields, Orbital Deployment Raise Concerns.](https://www.investors.com/)
+- Yahoo: [SpaceX Eyes At Least $32 Billion of AI Chip Debt the Day Its Biggest Compute Tenant Goes Public](https://finance.yahoo.com/)
+- _Corroboration:_ ANT −10.90% 同向; SSPC (2x 反向) +12.43% 为机械倍数; fPE 47.3x 为跟踪名单最高之一
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** 8.26% 给了一个此前不存在的硬指标: 下一次发行的票息高于或低于 8.26%，就是一个干净的信用质量读数。这比任何发射里程碑都更能衡量其资本结构压力。12/09 三重日 (解禁 + FOMC + AVGO 财报) 之后价格的归因会很困难 — 三条信号的净值无法从价格反推，需要提前记录各自的预期方向。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-16 · -0.32% day · ▼ minor
 **Tags:** `tech_breakthrough`, `production_milestone`, `analyst_upgrade`, `competitor_news`
 **Confidence:** high

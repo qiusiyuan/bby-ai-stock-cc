@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -14.45% day · ▼ extreme
+**Tags:** `memory_pricing`, `analyst_downgrade`
+**Confidence:** high
+
+**Primary cause.** **当日全场最大跌幅。归因是今天最干净的一条: TrendForce 转向看空 2027 年 NAND 价格，而 NAND 是 SNDK 唯一的产品线。**||**拆股口径说明**: 同日八拆一 (8-for-1) 生效。盘面上曾显示 −87%，那是拆股的显示效应，真实跌幅为 −14.45% 至 $80.75 (跌 $13.72)。5d −27.0% / 30d −59.4% 已为拆后可比口径。fPE 2.24x。||**triggers.yaml 已同步**: thesis_break_price 由 1200 调整为 **150** (1200 ÷ 8)。按新口径当前价低于破位线 **46.2%**。该调整在 timeline.yaml 中已提示四份报告，今日执行。||**基本面与价格脱钩达本月最大**: 10/29 评分时 Tier 1 两项可测量门槛全部超出承诺上沿 — 营收 $11,031M vs 承诺上沿 $10.8B; 非 GAAP EPS $49.51 vs 上沿 $46; 毛利率 85.0% 继续上行而非回落; datacenter +61% QoQ (当日另有口径称数据中心组合增长 1,700%)。三周后股价再跌 46%。||**预设 kill condition 状态**: 四条全部未触发。第一条「非 GAAP 毛利率连续两季压缩」— 毛利率 85% 仍在上行; 第二条「FY27 指引被下修」— 未下修; 第三条「数据中心营收减速 + 消费段疲软」— 后半边已于 10/29 坐实 (Consumer −29% QoQ / −39% YoY)，前半边未成立; 第四条「HBF 到 2027 年中无具名 design win」— 门槛未到。||**re_read_trigger 状态**: 「SNDK 单日因 NAND 定价新闻 (非大盘 risk-off) 跌 >20%」— 今日 −14.45% 未达 20% 门槛，但驱动类型完全匹配该条的设计意图 (NAND 定价新闻而非大盘)。「跌破 MA50 并放量」— 已深跌破 MA50，但量比 0.88x 未放量。
+
+**Sources.**
+- Investing.com: [SanDisk slides over 14% as bearish NAND pricing outlook hits chip stocks](https://www.investing.com/)
+- Yahoo: [Sandisk stock begins trading at 8-for-1 split, shares sink](https://finance.yahoo.com/)
+- _Corroboration:_ MU −12.10% / SKHY −10.05% / WDC 与 Seagate 同步下跌; 市场口径称内存板块为 abject disaster
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** 这是跟踪名单里基本面评分与价格脱钩最彻底的一只: Tier 1 全部超承诺上沿，三周后再跌 46%。机制是周期股的定价对象不是本期利润而是远期价格路径 — TrendForce 改的正是这条路径。预设的 kill condition 全部按本期基本面恶化设计，因此在价格已跌穿破位线 46% 时仍一条未触发。下一个裁决数据是 2027 年实际 NAND 合约价的首批披露，无确定日期。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-18 · -2.39% day · ▼ major
 **Tags:** `memory_pricing`, `sector_rotation`
 **Confidence:** medium

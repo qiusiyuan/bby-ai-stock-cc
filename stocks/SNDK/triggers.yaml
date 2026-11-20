@@ -2,7 +2,7 @@
 # SNDK is a NAND cyclical with an AI-storage/HBF re-rating call option. The core risk is a cycle roll-over
 # disguised as a "cheap" (low forward-P/E-on-peak-earnings) stock.
 
-thesis_break_price: 1200   # 用户确认：8/7 震荡低位附近，更早预警的安全垫（>7/29 低点 $1016）
+thesis_break_price: 150   # 2026-11-20 八拆一 (8-for-1) 生效后由 1200 除以 8 得出。拆股前依据：用户确认 8/7 震荡低位附近，更早预警的安全垫（>7/29 低点 $1016 → 拆后 $127）
 
 kill_conditions:
   - "Non-GAAP 毛利率连续两季压缩（84.6% 峰值开始回落）= NAND 周期见顶"

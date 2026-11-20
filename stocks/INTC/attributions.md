@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -4.33% day · ▼ material
+**Tags:** `partnership_news`, `macro_rates`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **连续第二个交易日「foundry 硬进展被完整吞掉」。今天的公司级消息是正面的: Wedbush 称 Microsoft 可能给 Intel 一笔关键 AI 芯片订单，且有独立报道称 INTC 已赢得 Microsoft AI 芯片业务。股价仍 −4.33%。**||**两日净效应约为零，而消息内容是转型 thesis 最想要的那一类**: 11/19 签下 18A 首个外部客户 — 当日盘中 +7.87% → 收 +3.74%; 11/20 Microsoft AI 芯片订单 — −4.33%。两天合计约 −0.6%。||**为什么这是今天最有诊断价值的一条**: INTC 同时满足「低估值」与「好消息」两个条件，而两者同时失效。这为「不要用低 fPE 抄底」提供了直接证据 — 今天的卖压不来自估值，也不来自公司基本面，而来自折现率与板块风格 (^SOX −8.12%)。||**另一条增量**: 当日另有报道称 Meta 与 Microsoft 并未削减服务器 CPU 订单，AMD 与 Intel 可能因此受益 — 这是 Xeon 一侧的需求确认。同样未被定价。||**距预设 thesis-break $75 低 28.9%，破位已持续。30d −49.09%，接近腰斩。预设 kill condition 未触发 — foundry 连得两个客户，与「foundry thesis 显著受损」方向相反。**||**量比 0.74x** — 缩量下跌，是买方撤出报价而非集中抛售。
+
+**Sources.**
+- Yahoo: [Intel Wins Microsoft AI Chip Business as Foundry Turnaround Faces New Test](https://finance.yahoo.com/)
+- Yahoo: [Wedbush: Microsoft May Give Intel a Crucial AI Chip Win](https://finance.yahoo.com/)
+- _Corroboration:_ ^SOX −8.12%; 量比 0.74x 缩量; 11/19 18A 首个外部客户同样被吞
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** 这是「好消息 + 低估值同时失效」的最干净样本，可以作为判断当前 regime 的基准线: 只要 INTC 这类消息继续无效，说明定价变量仍是折现率而非基本面; 一旦这类消息开始被定价，regime 就变了。foundry 连续两个外部客户是真实的结构性进展，与价格方向相反，预设 kill condition 正确地未触发。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-18 · -0.96% day · ▼ material
 **Tags:** `sector_rotation`, `unattributed`
 **Confidence:** low

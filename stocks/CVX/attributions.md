@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · +1.64% day · ▲ minor
+**Tags:** `sector_rotation`, `macro_rates`, `macro_oil`
+**Confidence:** medium
+
+**Primary cause.** **+1.64% — 当日跟踪名单最大涨幅 (唯二正收益之一，另一只是 SU +0.11%)。30d −0.16% 基本走平，在 QQQ 30d −17.19% 的背景下跑赢 17 个百分点。**||**不是油价驱动**: WTI −0.19%、USO −0.10%，商品端几乎静止。今天买能源股的钱在交易风格，不在交易油价。||**风格机制**: Fed 纪要把 50bp 加息摆上桌 → 折现率上行 → 近端现金流 + 低估值 + 股息的组合是唯一被买入的东西。CVX 在能源三只里现金流久期最短、股息最稳，因此最抗跌 (30d CVX −0.16% vs SU −11.35% vs CNQ −10.41%)。||**公司级消息方向混合**: 正面 — 开始在希腊进行海上油气勘探; 负面 — Trump 公开庆祝「18 年来最大的汽油价格跌幅」(对消费者利好、对 CVX/XOM 是利空); 另有口径称「Chevron 的 39% 涨幅建立在供给挤压之上」。价格端的利空被风格端的买盘压过。||**量比 0.45x** — 极度缩量上涨，不是资金涌入，是卖压消失。||**一个反常现象**: 油轮每天遭袭而油价在跌 (当日市场口径明确提出该矛盾)。地缘风险溢价完全不在油价里 — WTI $83.05 低于 MA50 ($94.13) 与 MA200 ($88.29)。UBS 当日称「油价交易者忽略了一个供给风险」，这是一个无时间表的看涨期权。||**位置**: 距预设 thesis-break $140 缓冲 +49.9%。
+
+**Sources.**
+- Yahoo: [Chevron to begin offshore oil and gas exploration in Greece](https://finance.yahoo.com/)
+- Barron's: [Trump Cheers the Biggest Drop in Gasoline in 18 Years. Not Good for Exxon and Chevron](https://www.barrons.com/)
+- _Corroboration:_ SU +0.11% / CNQ −0.49% / HXE.TO −1.28% (量比 1.59x 放量); WTI −0.19% 几乎不动
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** 今天的相对强势来自风格而非基本面改善 — WTI 不动、汽油价格大跌、地缘溢价为零，三条都不构成能源的多头依据。防御价值真实 (30 日跑赢 QQQ 17pp)，上行催化剂缺失。个股缩量 (SU 0.43x / CVX 0.45x / CNQ 0.67x) 而 ETF 放量 (HXE.TO 1.59x) 说明是配置型资金在调板块权重，不是个股选择。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-18 · -4.43% day · ▼ material
 **Tags:** `macro_oil`, `commodity_move`
 **Confidence:** high

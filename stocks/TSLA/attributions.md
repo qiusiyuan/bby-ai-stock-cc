@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -5.88% day · ▼ material
+**Tags:** `analyst_upgrade`, `sector_rotation`, `macro_rates`
+**Confidence:** medium
+
+**Primary cause.** **下跌 5.88% 而当日两条公司级消息方向都是正的，且缩量 (量比 0.68x)。**||**两条正面消息**: (1) HSBC 上调评级，目标价 $359，**理由明确挂在 SpaceX 合并传闻上** — 不是 FSD、Robotaxi 或交付量; (2) 提出 31 亿美元德州多晶硅精炼厂计划，垂直整合继续向上游延伸 (与此前锂精炼厂同一逻辑)。||**归因三层，按确定性排序**: (1) 久期 — Fed 纪要披露 50bp 上桌，长久期成长股整体折价，QQQ −3.47% 是公因子; (2) EV 同业 beta — Rivian −5% / Lucid −4%，三家同向且幅度接近，是风格层卖出而非 TSLA 特有; (3) 量比 0.68x — 全场普遍放量 (NVDA 1.39x / TSM 1.48x / HUMN 3.75x) 而 TSLA 只有 30 日均量的 68%。跌 5.88% 却缩量 = 卖方不在抛售，买方撤出报价。||**新出现的、thesis 未覆盖的路径**: HSBC 把目标价挂在 SpaceX 合并传闻上，意味着卖方开始把 TSLA 当作 SpaceX 的部分替代敞口定价。若这个定价方式扩散，TSLA 与 SPCX 的相关性会上升 — 今天两者分别 −5.88% 与 −6.23%，几乎同幅。而 SPCX 在 12/09 有解禁，这是一条此前不存在的传导路径。thesis.md 的 bull case 建立在 FSD/Robotaxi optionality 上，不含「SpaceX 敞口代理」这一项。||**位置**: 距预设 thesis-break $250 缓冲 **+40.96%**，是重点名单里缓冲最厚的一只。30d −7.92% vs QQQ 30d −17.19%，跑赢 9.3pp，是大型科技里 30 日第三抗跌 (次于 AAPL +2.84% / AMZN −4.48%)。五条 watch item (FSD 监管 / NHTSA 调查 / 中国月度交付 / Robotaxi 扩张 / EU TCMV 裁决) 今日全部无新信息。
+
+**Sources.**
+- Yahoo: [Tesla Falls 4% Despite HSBC Upgrade and $359 Target Tied to SpaceX Merger Talk; Rivian Drops 5%, Lucid Slides 4%](https://finance.yahoo.com/)
+- Yahoo: [Tesla proposes $3.1 billion Texas polysilicon refinery](https://finance.yahoo.com/)
+- _Corroboration:_ Rivian −5% / Lucid −4% 同向; 量比 0.68x 缩量; QQQ −3.47%
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** 缩量下跌通常比放量下跌更容易被一根正面消息修复，但也说明目前没有承接盘。需要跟进的新变量是 SpaceX 敞口代理这条定价方式是否扩散 — 若扩散，TSLA 的波动来源会部分转移到一个 thesis 不跟踪的标的上，且 12/09 SPCX 解禁会直接传导。不应把 HSBC 的 $359 当作独立看多依据: 它的理由挂在一个未被任何一方确认的传闻上。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-16 · -3.16% day · ▼ material
 **Tags:** `sector_rotation`, `production_milestone`
 **Confidence:** medium

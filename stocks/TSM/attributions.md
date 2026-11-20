@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -7.60% day · ▼ major
+**Tags:** `policy_us`, `geopolitical_trade`, `regulatory_negative`
+**Confidence:** high
+
+**Primary cause.** **−7.60%，量比 1.48x (全场第三高)。归因明确: 因一项新的美国规则生效，TSMC 暂停部分对华芯片订单。台湾股市录得 1991 年以来最差一周。**||**这是出口管制从「规则」进入「执行」的第一个企业级证据**: 11/16 记录的「美国限制远程访问先进 AI 芯片」当时的问题是「联邦公报查无条文 — BIS 自 10/15 仅 4 条发布均无关」，即规则意图可见但条文不可验证。今天不同 — TSMC 的停单是一个可验证的企业动作，规则已经在产生实际的供给中断。||**范围不限于单一公司**: 台湾股市 1991 年以来最差一周说明这不是 TSMC 特有事件，而是整个台湾半导体产业链在重新定价地缘与管制风险。Samsung 同期也被报道暂停部分对华出货 (11/19 记录)。||**与 NVDA 的调查是同一根轴的两端**: 加州总检察长 + 国会调查 NVIDIA 芯片是否流入中国 (查「有没有违规」)，而 TSMC 停单是执行层面 (查「规则怎么执行」)。监管在同时推进两端。||**距预设 thesis-break $280 缓冲 +16.2%** — 在 8 只破位 + 2 只警戒的背景下仍有缓冲，但 30d −28.23% 说明缓冲在快速消耗。||**11/16 的对照**: 那天 TSMC 公布十月营收 +59.7% 创 2026 新高，TSM 当日 −5.39%。基本面与价格脱钩已持续，今天新增的是基本面本身出现了可量化的损伤 (订单暂停)。
+
+**Sources.**
+- Barron's: [TSMC Is Halting Some China Chip Orders as a New U.S. Rule Kicks In](https://www.barrons.com/)
+- Yahoo: [TSMC Stocks Fall 4.76% as Taiwan Logs Worst Week Since 1991](https://finance.yahoo.com/)
+- _Corroboration:_ ^SOX −8.12%; NVDA 加州 AG 传票 + 国会调查同指中国流向; AMD −10.54% 亦被归因于中国风险
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** 11/16 的开放问题 (规则意图可见但条文不可验证) 今天有了答案: 不必等条文，看企业动作。TSMC 停单是比任何联邦公报检索都更可靠的执行证据，这条判别方式可以继续用 — 对华管制的实际约束程度，读供应商的停单公告而不读监管发布。下一个可观察点是停单范围是否扩大到先进制程 (当前报道为部分订单，未界定节点)。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-18 · +0.31% day · ▲ minor
 **Tags:** `earnings_print`, `policy_china`, `sector_rotation`
 **Confidence:** medium

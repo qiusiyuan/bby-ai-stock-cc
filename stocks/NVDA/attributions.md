@@ -4,6 +4,23 @@ Append-only log of meaningful price moves with cited causes. Companion to the JS
 
 ---
 
+### 2026-11-20 · -6.64% day · ▼ material
+**Tags:** `regulatory_negative`, `policy_us`, `executive_comment`, `sector_rotation`
+**Confidence:** high
+
+**Primary cause.** **连跌第七个交易日，较 52 周高点 −43%，跌穿预设 thesis-break $150 达 9.14%。今天的卖出理由是一条 thesis 三档情形都没有写的轴。**||**新增风险轴 = 法律与披露**: 加州总检察长向 NVIDIA 发出传票，同时国会议员启动调查。两项调查的共同问题是 (1) 公司芯片是否流入中国、(2) 对投资者的披露是否充分。加州总检察长公开措辞为此事「亮起刺眼的红旗 (raises bright red flags)」。||**第二条新增**: Jensen Huang 离任后市场对领导层延续性的疑虑集中爆发，焦点是其个人与 TSMC 的「握手协议」式供应链关系能否移交，以及年度产品节奏能否维持。||**对照 11/18**: 那天 bear case 指名的三条机制 (营收减速 / Data Center 失速 / 指引下修) 全部被财报否证 — 营收 $115.8B (+103% YoY) / Data Center $107.6B (+110%) / Q4 指引 $130B (+12.3% QoQ)。唯一恶化项是 Q4 毛利率指引 74.9% → 71-72%，而预设卖出线 65% 尚有 6-7pp 余量。**今天的下跌与这四条全部无关。**||**thesis bear 机制今天反而被削弱**: thesis 的 bear case (20%, 目标 $150) 写的是「custom silicon 加速 → Trainium/TPU 侵蚀份额」。而今天 Google 削减了 Broadcom 设计 TPU 的 2027 出货量。**价格进入 bear 区间 (现价低于 bear 目标 9.1%)，而 bear 指名的机制在退出。**||**估值不再是约束**: fPE 8.21x，而公司自己的指引是下一财年增长至多 70%。11/19-11/20 两日内 INTC 连续拿到 foundry 硬进展却连续两日被吞掉，是「好消息 + 低估值同时失效」的同期对照。||**kill condition 覆盖缺口**: triggers.yaml 里没有任何一条覆盖「监管/司法调查」或「关键人离任」。这是本月第四次出现同类错配 (另三例: MU/SKHY 的定价预期轴、AVGO 的供应商可替代性、GEV 的折现率)。
+
+**Sources.**
+- Investopedia/Yahoo: [Nvidia Sinks 7% on New Probes as California AG Says Scandal Raises Bright Red Flags](https://finance.yahoo.com/)
+- 24/7 Wall St.: [Following Jensen Huang Exit, Investors Fear Nvidia's AI Lead Will Collapse](https://247wallst.com/videos/following-jensen-huang-exit-investors-fear-nvidias-ai-lead-will-collapse/)
+- _Corroboration:_ ^SOX −8.12% 全板块重定价; AVGO −11.10 / AMD −10.54 / MRVL −9.07 均跑输 NVDA，「不是 NVIDIA」交易反转
+
+**Cross-assets.** SPY -1.98% · QQQ -3.47% · SOX -8.12% · VIX 31.78 · 10Y 4.944 · WTI 83.05 · DXY 103.83 · GOLD 3519.1 · BTC 58988
+
+**Agent read.** 价格已低于 bear 目标而 bear 机制在削弱，说明当前定价的不是 thesis 里的任何一档。下一个可验证节点是调查范围的界定 — 若是披露问题，尾部是罚款与诉讼；若是出口违规，尾部包含对华业务的结构性限制，两者量级差一个数量级。12/09 FOMC 之前折现率仍是主导变量。
+ · Snapshot at `dashboard/2026-11-20.md`
+
+---
 ### 2026-11-19 · -1.18% day · ▼ major
 **Tags:** `earnings_post_print`, `sector_rotation`, `flow_event`
 **Confidence:** high
